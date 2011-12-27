@@ -88,9 +88,11 @@
   </header>
 
 
-<div class="entry-content"><p>So I managed to get the Celtx screenwriting (and general preproduction) software up and running on my shiny new AA1, and in the interests of sharing the knowledge I thought I&#8217;d post how I did it. Please note, this should also work as general recipe for installing any software not available under the package manager in Linpus Light Linux (provided there are no additional dependencies).<br/>
-First of all you need to download the software from the downloads page of the Celtx website, <a href="http://www.celtx.com/download.html">here</a>. I&#8217;d recomend getting the straight up Linux version in your choice of language (frustratingly there is no option for British English, though). There is an Asus eee specific version, but that just clears up some dependencies and doesn&#8217;t really provide you with anything extra.<br/>
-First of all you&#8217;ll need a terminal, so hit Alt+F2, type &#8220;terminal&#8221; (without the quotes) and hit enter. A terminal should have popped up. If you&#8217;re a Linux novice, don&#8217;t worry, you should just be able to copy and paste everything from this page.<br/>
+<div class="entry-content"><p>So I managed to get the Celtx screenwriting (and general preproduction) software up and running on my shiny new AA1, and in the interests of sharing the knowledge I thought I&#8217;d post how I did it. Please note, this should also work as general recipe for installing any software not available under the package manager in Linpus Light Linux (provided there are no additional dependencies).</p>
+
+<p>First of all you need to download the software from the downloads page of the Celtx website, <a href="http://www.celtx.com/download.html">here</a>. I&#8217;d recomend getting the straight up Linux version in your choice of language (frustratingly there is no option for British English, though). There is an Asus eee specific version, but that just clears up some dependencies and doesn&#8217;t really provide you with anything extra.</p>
+
+<p>First of all you&#8217;ll need a terminal, so hit Alt+F2, type &#8220;terminal&#8221; (without the quotes) and hit enter. A terminal should have popped up. If you&#8217;re a Linux novice, don&#8217;t worry, you should just be able to copy and paste everything from this page.<br/>
 Now you need to unpackage the software. I put it in /opt, because it generally seems to be a dumping ground for user installed applications (as far as I can tell). Type these in the terminal one at a time:</p>
 
 <pre><code>cd /opt
@@ -165,7 +167,8 @@ StartupNotify=true
 
 <p>and hit enter. Lastly, we just need to tell Linpus to display Celtx on the desktop:</p>
 
-<blockquote><p>vim /home/user/.config/xfce4/desktop/group-app.xml</p></blockquote>
+<pre><code>vim /home/user/.config/xfce4/desktop/group-app.xml
+</code></pre>
 
 <p>You should now be looking at an XML file. You need to find this:</p>
 
@@ -177,9 +180,11 @@ StartupNotify=true
 <pre><code>&lt;app sequence="2"&gt;/usr/share/applications/Celtx.desktop&lt;/app&gt;
 </code></pre>
 
-<p>Be sure to increase the &#8220;sequence&#8221; numbers on the other &#8221;<app>&#8221; entries as well, to make sure there are no duplicates.<br/>
-That&#8217;s about all there is to it. If you reboot the machine you should now find that you have an icon for Celtx on the desktop. After you put some .celtx files on the machine, you might want to right click on one and select &#8220;properties&#8221;, then tell Limpus to open the file type with Celtx (otherwise it&#8217;ll just treat it like a zip file).<br/>
-This is quite a long post and I have work to do, but I might return in the next couple of days with some things to say about Celtx itself. Happy hunting!<br/>
+<p>Be sure to increase the &#8220;sequence&#8221; numbers on the other &#8221;<app>&#8221; entries as well, to make sure there are no duplicates.</p>
+
+<p>That&#8217;s about all there is to it. If you reboot the machine you should now find that you have an icon for Celtx on the desktop. After you put some .celtx files on the machine, you might want to right click on one and select &#8220;properties&#8221;, then tell Limpus to open the file type with Celtx (otherwise it&#8217;ll just treat it like a zip file).</p>
+
+<p>This is quite a long post and I have work to do, but I might return in the next couple of days with some things to say about Celtx itself. Happy hunting!<br/>
 PS Thanks to the users of the forums on aspireoneuser.com for the knowledge which was needed to work this out.</p>
 </div>
 
@@ -229,7 +234,7 @@ PS Thanks to the users of the forums on aspireoneuser.com for the knowledge whic
         <a class="basic-alignment left" href="/blog/2008/08/18/my-digital-life-ill-see-your-eee-and-raise-you-one/" title="Previous Post: I'll see your eee and raise you One">&laquo; I'll see your eee and raise you One</a>
       
       
-        <a class="basic-alignment right" href="/blog/2008/08/30/beside-the-seaside-beside-the-sea/" title="next Post: ...beside the seaside, beside the sea.">...beside the seaside, beside the sea. &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2008/09/02/well-here-i-am/" title="next Post: Well... Here I am...">Well... Here I am... &raquo;</a>
       
     </p>
   </footer>
@@ -248,10 +253,6 @@ PS Thanks to the users of the forums on aspireoneuser.com for the knowledge whic
       </li>
     
       <li class="post">
-        <a href="/blog/2008/08/30/beside-the-seaside-beside-the-sea/">...beside the seaside, beside the sea.</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one/">Celtx on the Acer Aspire One</a>
       </li>
     
@@ -261,6 +262,10 @@ PS Thanks to the users of the forums on aspireoneuser.com for the knowledge whic
     
       <li class="post">
         <a href="/blog/2008/08/12/is-it-still-limping-if-youre-doing-it-with-both-legs/">Is it still limping if you're doing it with both legs?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2008/08/05/eclecticism/">Eclecticism</a>
       </li>
     
   </ul>
