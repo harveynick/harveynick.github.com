@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Celtx on the Acer Aspire One - HarveyNick</title>
+  <meta name="author" content="Nick Johnson">
+
+  
+  <meta name="description" content="So I managed to get the Celtx screenwriting (and general preproduction) software up and running on my shiny new AA1, and in the interests of sharing &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://harveynick.github.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="HarveyNick" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">HarveyNick</a></h1>
+  
+    <h2>Mostly Hacking, With a Little Bit of Colour</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:harveynick.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Celtx on the Acer Aspire One</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-08-24T21:23:58+01:00" pubdate data-updated="true">Aug 24<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>So I managed to get the Celtx screenwriting (and general preproduction) software up and running on my shiny new AA1, and in the interests of sharing the knowledge I thought I&#8217;d post how I did it. Please note, this should also work as general recipe for installing any software not available under the package manager in Linpus Light Linux (provided there are no additional dependencies).<br/>
+First of all you need to download the software from the downloads page of the Celtx website, <a href="http://www.celtx.com/download.html">here</a>. I&#8217;d recomend getting the straight up Linux version in your choice of language (frustratingly there is no option for British English, though). There is an Asus eee specific version, but that just clears up some dependencies and doesn&#8217;t really provide you with anything extra.<br/>
+First of all you&#8217;ll need a terminal, so hit Alt+F2, type &#8220;terminal&#8221; (without the quotes) and hit enter. A terminal should have popped up. If you&#8217;re a Linux novice, don&#8217;t worry, you should just be able to copy and paste everything from this page.<br/>
+Now you need to unpackage the software. I put it in /opt, because it generally seems to be a dumping ground for user installed applications (as far as I can tell). Type these in the terminal one at a time:</p>
+
+<pre><code>cd /opt
+
+sudo tar -xf /home/user/Downloads/Celtx.tar.gz
+</code></pre>
+
+<p>Now, if you type &#8220;ls&#8221; you should see a directory named celtx. So far so good. Next you need to add a link so Celtx can be run from the command line, like this:</p>
+
+<pre><code>sudo ln -s /opt/celtx/celtx /usr/bin/celtx
+</code></pre>
+
+<p>In theory that&#8217;s all you need to do. Now if you type &#8220;celtx&#8221; on the command line (or after hitting Alt+F2) the program will run. We can make it a lot easier than that, though. Next we need an icon to represent it on the desktop. There are two options here. First of all you could use an existing one. Type this:</p>
+
+<pre><code>sudo thunar /usr/share/pixmaps
+</code></pre>
+
+<p>A file manager window should pop up and if you scroll down you&#8217;ll find all the system icons. If you find one you want to use for Celtx: cool, if you don&#8217;t then you&#8217;re other option is to make one. I&#8217;m not going to get into that, but if you want to do it please bare in mind that is has to be a png, it has to be 90px x 90px in size and it has to be placed in that directory. I found on on the web and resized it myself. Assuming you have the icon you want in the downloads directory and it&#8217;s called &#8220;celtx.png&#8221;, you would type this to get it in the right place:</p>
+
+<pre><code>sudo mv /home/user/Downloads/celtx.png /usr/share/pixmaps/celtx.png
+</code></pre>
+
+<p>That done we need to create a desktop entry for it. You need to use a text editor for this. I used &#8220;vim&#8221;, so that&#8217;s what the directions here will say. &#8220;vim&#8221; can be pretty hard to use at first, though, so if you&#8217;re not linux minded you might want to find a tutorial on the web, or replace the &#8220;vim&#8221; command with something else (mousepad is one option that might be easier to use and more familiar). We start by (basically) creating the file:</p>
+
+<pre><code>sudo vim /usr/share/applications/Celtx.desktop
+</code></pre>
+
+<p>If you&#8217;re using vim, hit &#8220;i&#8221; (the word insert should appear at the bottom) and then paste the following into the file:</p>
+
+<pre><code>[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Celtx
+Name[zh_TW]=Celtx
+Name[zh_TW]=Celtx
+Name[zh_CN]=Celtx
+Name[de]=Celtx
+Name[it]=Celtx
+Name[fr]=Celtx
+Name[es]=Celtx
+Name[pt]=Celtx
+Name[nl]=Celtx
+Name[ja]=Celtx
+Name[ru]=Celtx
+GenericName=Celtx
+GenericName[zh_TW]=Celtx
+GenericName[zh_CN]=Celtx
+GenericName[de]=Celtx
+GenericName[it]=Celtx
+GenericName[fr]=Celtx
+GenericName[es]=Celtx
+GenericName[pt]=Celtx
+GenericName[nl]=Celtx
+GenericName[ja]=Celtx
+GenericName[ru]=Celtx
+Comment=Write and edit media scripts
+Exec=celtx
+Icon=Celtx.png
+Terminal=false
+Type=Application
+StartupWMClass=celtx-bin
+MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;application/x-shockwave-flash;
+X-Desktop-File-Install-Version=0.10
+Categories=Work;
+StartupNotify=true
+</code></pre>
+
+<p>Be sure to replace &#8220;Celtx.png&#8221; with whatever the icon you want to use is called. Also, all those language options are possibly not strictly necessary, but I copied most of this from another file and left them in to be on the safe side. Likewise, I could probably have done something a bit more clever with the &#8220;MimeType&#8221; bit, but decided not to bother. Next, save and exit the file. In &#8220;vim&#8221;, you hit escape, then type:</p>
+
+<pre><code>:wq
+</code></pre>
+
+<p>and hit enter. Lastly, we just need to tell Linpus to display Celtx on the desktop:</p>
+
+<blockquote><p>vim /home/user/.config/xfce4/desktop/group-app.xml</p></blockquote>
+
+<p>You should now be looking at an XML file. You need to find this:</p>
+
+<pre><code>&lt;id&gt;6&lt;/id&gt;
+</code></pre>
+
+<p>And insert this underneath it:</p>
+
+<pre><code>&lt;app sequence="2"&gt;/usr/share/applications/Celtx.desktop&lt;/app&gt;
+</code></pre>
+
+<p>Be sure to increase the &#8220;sequence&#8221; numbers on the other &#8221;<app>&#8221; entries as well, to make sure there are no duplicates.<br/>
+That&#8217;s about all there is to it. If you reboot the machine you should now find that you have an icon for Celtx on the desktop. After you put some .celtx files on the machine, you might want to right click on one and select &#8220;properties&#8221;, then tell Limpus to open the file type with Celtx (otherwise it&#8217;ll just treat it like a zip file).<br/>
+This is quite a long post and I have work to do, but I might return in the next couple of days with some things to say about Celtx itself. Happy hunting!<br/>
+PS Thanks to the users of the forums on aspireoneuser.com for the knowledge which was needed to work this out.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">harveynick</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-08-24T21:23:58+01:00" pubdate data-updated="true">Aug 24<span>th</span>, 2008</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/guides/'>Guides</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://harveynick.github.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one/" data-via="harveynick" data-counturl="http://harveynick.github.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2008/08/18/my-digital-life-ill-see-your-eee-and-raise-you-one/" title="Previous Post: I'll see your eee and raise you One">&laquo; I'll see your eee and raise you One</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2008/08/30/beside-the-seaside-beside-the-sea/" title="next Post: ...beside the seaside, beside the sea.">...beside the seaside, beside the sea. &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2008/09/02/well-here-i-am/">Well... Here I am...</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2008/08/30/beside-the-seaside-beside-the-sea/">...beside the seaside, beside the sea.</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one/">Celtx on the Acer Aspire One</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2008/08/18/my-digital-life-ill-see-your-eee-and-raise-you-one/">I'll see your eee and raise you One</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2008/08/12/is-it-still-limping-if-youre-doing-it-with-both-legs/">Is it still limping if you're doing it with both legs?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("harveynick", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/harveynick" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @harveynick</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Nick Johnson -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
