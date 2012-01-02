@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Guides | HarveyNick]]></title>
   <link href="http://harveynick.github.com/blog/categories/guides/atom.xml" rel="self"/>
   <link href="http://harveynick.github.com/"/>
-  <updated>2011-12-27T22:32:07+00:00</updated>
+  <updated>2012-01-01T14:33:09+00:00</updated>
   <id>http://harveynick.github.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -21,6 +21,9 @@
     <content type="html"><![CDATA[<p>So I managed to get the Celtx screenwriting (and general preproduction) software up and running on my shiny new AA1, and in the interests of sharing the knowledge I thought I'd post how I did it. Please note, this should also work as general recipe for installing any software not available under the package manager in Linpus Light Linux (provided there are no additional dependencies).</p>
 
 <p>First of all you need to download the software from the downloads page of the Celtx website, <a href="http://www.celtx.com/download.html">here</a>. I'd recomend getting the straight up Linux version in your choice of language (frustratingly there is no option for British English, though). There is an Asus eee specific version, but that just clears up some dependencies and doesn't really provide you with anything extra.</p>
+
+<!-- more -->
+
 
 <p>First of all you'll need a terminal, so hit Alt+F2, type "terminal" (without the quotes) and hit enter. A terminal should have popped up. If you're a Linux novice, don't worry, you should just be able to copy and paste everything from this page.<br/>
 Now you need to unpackage the software. I put it in /opt, because it generally seems to be a dumping ground for user installed applications (as far as I can tell). Type these in the terminal one at a time:</p>
@@ -40,7 +43,7 @@ sudo tar -xf /home/user/Downloads/Celtx.tar.gz
 <pre><code>sudo thunar /usr/share/pixmaps
 </code></pre>
 
-<p>A file manager window should pop up and if you scroll down you'll find all the system icons. If you find one you want to use for Celtx: cool, if you don't then you're other option is to make one. I'm not going to get into that, but if you want to do it please bare in mind that is has to be a png, it has to be 90px x 90px in size and it has to be placed in that directory. I found on on the web and resized it myself. Assuming you have the icon you want in the downloads directory and it's called "celtx.png", you would type this to get it in the right place:</p>
+<p>A file manager window should pop up and if you scroll down you'll find all the system icons. If you find one you want to use for Celtx: cool, if you don't then you're other option is to make one. I'm not going to get into that, but if you want to do it please bare in mind that is has to be a png, it has to be 90px x 90px in size and it has to be placed in that directory. I found one on the web and resized it myself. Assuming you have the icon you want in the downloads directory and it's called "celtx.png", you would type this to get it in the right place:</p>
 
 <pre><code>sudo mv /home/user/Downloads/celtx.png /usr/share/pixmaps/celtx.png
 </code></pre>
@@ -50,7 +53,7 @@ sudo tar -xf /home/user/Downloads/Celtx.tar.gz
 <pre><code>sudo vim /usr/share/applications/Celtx.desktop
 </code></pre>
 
-<p>If you're using vim, hit "i" (the word insert should appear at the bottom) and then paste the following into the file:</p>
+<p>If you're using vim, hit "i" (the word "insert" should appear at the bottom) and then paste the following into the file:</p>
 
 <pre><code>[Desktop Entry]
 Version=1.0
@@ -110,12 +113,13 @@ StartupNotify=true
 <pre><code>&lt;app sequence="2"&gt;/usr/share/applications/Celtx.desktop&lt;/app&gt;
 </code></pre>
 
-<p>Be sure to increase the "sequence" numbers on the other "<app>" entries as well, to make sure there are no duplicates.</p>
+<p>Be sure to increase the "sequence" numbers on the other "&lt;app>" entries as well, to make sure there are no duplicates.</p>
 
 <p>That's about all there is to it. If you reboot the machine you should now find that you have an icon for Celtx on the desktop. After you put some .celtx files on the machine, you might want to right click on one and select "properties", then tell Limpus to open the file type with Celtx (otherwise it'll just treat it like a zip file).</p>
 
-<p>This is quite a long post and I have work to do, but I might return in the next couple of days with some things to say about Celtx itself. Happy hunting!<br/>
-PS Thanks to the users of the forums on aspireoneuser.com for the knowledge which was needed to work this out.</p>
+<p>This is quite a long post and I have work to do, but I might return in the next couple of days with some things to say about Celtx itself. Happy hunting!</p>
+
+<p>PS Thanks to the users of the forums on aspireoneuser.com for the knowledge which was needed to work this out.</p>
 ]]></content>
   </entry>
   

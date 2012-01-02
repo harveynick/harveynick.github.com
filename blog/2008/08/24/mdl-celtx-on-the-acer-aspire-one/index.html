@@ -92,6 +92,9 @@
 
 <p>First of all you need to download the software from the downloads page of the Celtx website, <a href="http://www.celtx.com/download.html">here</a>. I&#8217;d recomend getting the straight up Linux version in your choice of language (frustratingly there is no option for British English, though). There is an Asus eee specific version, but that just clears up some dependencies and doesn&#8217;t really provide you with anything extra.</p>
 
+<!-- more -->
+
+
 <p>First of all you&#8217;ll need a terminal, so hit Alt+F2, type &#8220;terminal&#8221; (without the quotes) and hit enter. A terminal should have popped up. If you&#8217;re a Linux novice, don&#8217;t worry, you should just be able to copy and paste everything from this page.<br/>
 Now you need to unpackage the software. I put it in /opt, because it generally seems to be a dumping ground for user installed applications (as far as I can tell). Type these in the terminal one at a time:</p>
 
@@ -110,7 +113,7 @@ sudo tar -xf /home/user/Downloads/Celtx.tar.gz
 <pre><code>sudo thunar /usr/share/pixmaps
 </code></pre>
 
-<p>A file manager window should pop up and if you scroll down you&#8217;ll find all the system icons. If you find one you want to use for Celtx: cool, if you don&#8217;t then you&#8217;re other option is to make one. I&#8217;m not going to get into that, but if you want to do it please bare in mind that is has to be a png, it has to be 90px x 90px in size and it has to be placed in that directory. I found on on the web and resized it myself. Assuming you have the icon you want in the downloads directory and it&#8217;s called &#8220;celtx.png&#8221;, you would type this to get it in the right place:</p>
+<p>A file manager window should pop up and if you scroll down you&#8217;ll find all the system icons. If you find one you want to use for Celtx: cool, if you don&#8217;t then you&#8217;re other option is to make one. I&#8217;m not going to get into that, but if you want to do it please bare in mind that is has to be a png, it has to be 90px x 90px in size and it has to be placed in that directory. I found one on the web and resized it myself. Assuming you have the icon you want in the downloads directory and it&#8217;s called &#8220;celtx.png&#8221;, you would type this to get it in the right place:</p>
 
 <pre><code>sudo mv /home/user/Downloads/celtx.png /usr/share/pixmaps/celtx.png
 </code></pre>
@@ -120,7 +123,7 @@ sudo tar -xf /home/user/Downloads/Celtx.tar.gz
 <pre><code>sudo vim /usr/share/applications/Celtx.desktop
 </code></pre>
 
-<p>If you&#8217;re using vim, hit &#8220;i&#8221; (the word insert should appear at the bottom) and then paste the following into the file:</p>
+<p>If you&#8217;re using vim, hit &#8220;i&#8221; (the word &#8220;insert&#8221; should appear at the bottom) and then paste the following into the file:</p>
 
 <pre><code>[Desktop Entry]
 Version=1.0
@@ -180,12 +183,13 @@ StartupNotify=true
 <pre><code>&lt;app sequence="2"&gt;/usr/share/applications/Celtx.desktop&lt;/app&gt;
 </code></pre>
 
-<p>Be sure to increase the &#8220;sequence&#8221; numbers on the other &#8221;<app>&#8221; entries as well, to make sure there are no duplicates.</p>
+<p>Be sure to increase the &#8220;sequence&#8221; numbers on the other &#8220;&lt;app>&#8221; entries as well, to make sure there are no duplicates.</p>
 
 <p>That&#8217;s about all there is to it. If you reboot the machine you should now find that you have an icon for Celtx on the desktop. After you put some .celtx files on the machine, you might want to right click on one and select &#8220;properties&#8221;, then tell Limpus to open the file type with Celtx (otherwise it&#8217;ll just treat it like a zip file).</p>
 
-<p>This is quite a long post and I have work to do, but I might return in the next couple of days with some things to say about Celtx itself. Happy hunting!<br/>
-PS Thanks to the users of the forums on aspireoneuser.com for the knowledge which was needed to work this out.</p>
+<p>This is quite a long post and I have work to do, but I might return in the next couple of days with some things to say about Celtx itself. Happy hunting!</p>
+
+<p>PS Thanks to the users of the forums on aspireoneuser.com for the knowledge which was needed to work this out.</p>
 </div>
 
 
@@ -225,6 +229,8 @@ PS Thanks to the users of the forums on aspireoneuser.com for the knowledge whic
   <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://harveynick.github.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one/" data-via="harveynick" data-counturl="http://harveynick.github.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one/" >Tweet</a>
   
   
+  <div class="g-plusone" data-size="medium"></div>
+  
   
 </div>
 
@@ -249,23 +255,23 @@ PS Thanks to the users of the forums on aspireoneuser.com for the knowledge whic
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2008/09/02/well-here-i-am/">Well... Here I am...</a>
+        <a href="/blog/2009/01/02/objects-of-desire/">Objects of Desire</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one/">Celtx on the Acer Aspire One</a>
+        <a href="/blog/2008/10/24/an-open-letter/">An Open Letter</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2008/08/18/my-digital-life-ill-see-your-eee-and-raise-you-one/">I'll see your eee and raise you One</a>
+        <a href="/blog/2008/10/04/sasanack/">Sasanach</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2008/08/12/is-it-still-limping-if-youre-doing-it-with-both-legs/">Is it still limping if you're doing it with both legs?</a>
+        <a href="/blog/2008/10/02/why-bristol-depressed-me-and-other-stories/">Why Bristol Depressed Me, and Other Stories...</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2008/08/05/eclecticism/">Eclecticism</a>
+        <a href="/blog/2008/09/30/flip-side/">Flip side</a>
       </li>
     
   </ul>
@@ -299,7 +305,7 @@ PS Thanks to the users of the forums on aspireoneuser.com for the knowledge whic
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2011 - Nick Johnson -
+  Copyright &copy; 2012 - Nick Johnson -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -309,6 +315,14 @@ PS Thanks to the users of the forums on aspireoneuser.com for the knowledge whic
 
 
 
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
 
 
 
