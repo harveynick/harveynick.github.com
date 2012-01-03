@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Web Frameworks, Desktop Application and My Newly Melted Brain - HarveyNick</title>
+  <meta name="author" content="Nick Johnson">
+
+  
+  <meta name="description" content="Let&#8217;s get the preliminaries out of the way: Hello, long time no see, how have you been? Etc&#8230; So, whilst writing up my PhD (experiments &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.harveynick.com/blog/2009/09/01/web-frameworks-desktop-application-and-my-newly-melted-brain">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/Harveynick" rel="alternate" title="HarveyNick" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28082281-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">HarveyNick</a></h1>
+  
+    <h2>Ladies' nerd, nerd's nerd, nerd about town...</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/Harveynick" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.harveynick.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Web Frameworks, Desktop Application and My Newly Melted Brain</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-09-01T00:14:07+01:00" pubdate data-updated="true">Sep 1<span>st</span>, 2009</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Let&#8217;s get the preliminaries out of the way: Hello, long time no see, how have you been? Etc&#8230;</p>
+
+<p>So, whilst writing up my PhD (experiments finally finished!) and working three days a week (going fully full time at the end of September!) I have a fair bit on my plate at the moment. So obviously I&#8217;ve also started cooking up a side project&#8230;</p>
+
+<!-- more -->
+
+
+<p>I don&#8217;t want to talk too much about what it actually is (mostly because I don&#8217;t know how &#8220;open&#8221; I want it to be yet), but it&#8217;s definitely going to require a web service. It might also require a fully fledged website (lets call this the spotify model), or it might just use a desktop application which connects to the service when it needs to (lets call this the iTunes model). Then again it might have both, with the desktop application providing some extra functionality which is hard to do over the web or in the browser. I think there&#8217;s also scope for a mobile application, so lets throw iPhone and (what the hell) Android into the pot as well.</p>
+
+<p>I had a bit of a poke around with some web development frameworks first, since this is probably the bit I know least about.</p>
+
+<p>One of the first solutions I came across was <a href="http://www.djangoproject.com/">Django</a>, which is based on the <a href="http://www.python.org/">python</a> language. It looks good, through I have some issues with its handling of &#8220;one to many&#8221; relationships. Python is a language I have limited experience with, but it gets a lot of love, and people are putting a lot of work into into making it better. It also has good integration with native libraries. So that&#8217;s nice. It&#8217;s also named after Monty Python, which only raises my opinion of it.</p>
+
+<p>I&#8217;ll essentially skip over <a href="http://turbogears.org/">TurboGears</a> and <a href="http://www.web2py.com/">Web2Py</a>, two other python based frameworks I did some reading about. Django seems like the best choice out the python based frameworks I&#8217;ve looked at.</p>
+
+<p>Soon afterwards I discovered <a href="http://grails.org/">Grails</a> which is based on the very cool <a href="http://groovy.codehaus.org/">groovy</a> dynamic language. Groovy, as well as being fun to say, is implemented directly on top of Java, by far the language I&#8217;m most comfortable with. The are a lot of existing Java libraries, and groovy has <em>perfect</em> integration with them. Groovy and grails have some serious weight behind them, also.</p>
+
+<p>One framework I hadn&#8217;t really considered was <a href="http://rubyonrails.org/">Ruby on Rails</a>, which is in many ways the daddy here. This is mostly because I dismissed <a href="http://www.ruby-lang.org/">Ruby</a> as a language out of hand. It looks mental. For reasons I&#8217;ll come to in a minute, I&#8217;ve re-evaluated this desision, and will be having a good long look at it. On the one hand it&#8217;s been around a good long while, so has had the oportunity to become more refined. On the other hand, it was the first of its kind, which means it might also be stuck with some bad early design desicions. It&#8217;s the original, this might not make it the best. I don&#8217;t know yet.</p>
+
+<p>In order to build this&#8230; thing, I&#8217;ll need data representation, I&#8217;ll need algorithms for processing this data, and I&#8217;ll need ways of displaying it. I&#8217;d rather not have to deal with multiple implementations in different languages, particularly with the algorithms.<br/>
+Problem.</p>
+
+<p>If I want to make desktop applications, python is a possibility. It has good bindings to GTK and QT for linux, and Cocoa for OSX (there&#8217;s probably also something which will work on windows, and at some point I&#8217;ll probably have to care about this). Java will work anywhere, but it&#8217;s quite difficult to make a desktop application with Java which won&#8217;t look like crap. My priority in this area is going to be OSX, and Java does not measure up here. I had not considered Ruby, until I came across MacRuby, which is a <em>very</em> interesting idea. It&#8217;s not a bridge or a set of bindings, you see, it sits right on top of the objective-c runtime. All of a sudden, Ruby and Rails are a contender.</p>
+
+<p>In the mobile space, things get shitty. iPhone requires objective-c, Android requires Java.</p>
+
+<p>Bugger.</p>
+
+<p>So here&#8217;s where I am: I think groovy is a better language than python (and probably ruby), and I think grails is a better framework than django (I&#8217;ll get back to you regarding rails)&#8230; but I&#8217;m not sure I want Java hanging around my neck when it comes to building a desktop application. I might also need some serious grunt in the algorithm stakes, and I&#8217;m not sure I want to do that in a scripting language. Yes, I need to be able to implement it quickly, but I also need it to run quickly. I&#8217;m not sure I want to do that in either C or C++. Java would be good for this (and yes, it&#8217;s plenty fast). Objective-c is an option I haven&#8217;t discounted.</p>
+
+<p>The search continues&#8230; any thoughts?</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">harveynick</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-09-01T00:14:07+01:00" pubdate data-updated="true">Sep 1<span>st</span>, 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/geek/'>Geek</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.harveynick.com/blog/2009/09/01/web-frameworks-desktop-application-and-my-newly-melted-brain/" data-via="harveynick" data-counturl="http://www.harveynick.com/blog/2009/09/01/web-frameworks-desktop-application-and-my-newly-melted-brain/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2009/02/26/spending-to-make/" title="Previous Post: Spending to make...">&laquo; Spending to make...</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2009/09/06/the-right-kind-of-holiday/" title="next Post: The right kind of holiday">The right kind of holiday &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2010/10/08/wow-oh-wow/">WoW oh WoW</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/10/07/what-in-the-name-of-all-thats-holy-is-a-clockwork-aphid/">What in the Name of all that's Holy is a Clockwork Aphid?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/08/24/its-hestontastic/">It's Hestontastic!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/08/15/musical-arithmetic/">Musical Arithmetic</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/08/05/location-location-location/">Location Location Location</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/07/27/a-couple-more/">A couple more...</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/07/18/looking-forwards/">Looking Forwards</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/06/19/identity/">Identity</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/03/15/trailer-trash/">Trailer Trash</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/02/07/and-another-couple-of-things/">...And Another Couple Of Things</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("harveynick", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/harveynick" class="twitter-follow-button" data-show-count="false">Follow @harveynick</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/103951349449629293779?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Nick Johnson -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'harveynick-com';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

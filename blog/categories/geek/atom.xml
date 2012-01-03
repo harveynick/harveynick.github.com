@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Geek | HarveyNick]]></title>
+  <link href="http://www.harveynick.com/blog/categories/geek/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2012-01-03T23:58:47+00:00</updated>
+  <id>http://www.harveynick.com/</id>
+  <author>
+    <name><![CDATA[Nick Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[What in the Name of all that's Holy is a Clockwork Aphid?]]></title>
+    <link href="http://www.harveynick.com/blog/2010/10/07/what-in-the-name-of-all-thats-holy-is-a-clockwork-aphid/"/>
+    <updated>2010-10-07T16:24:15+01:00</updated>
+    <id>http://www.harveynick.com/blog/2010/10/07/what-in-the-name-of-all-thats-holy-is-a-clockwork-aphid</id>
+    <content type="html"><![CDATA[<p>Clockwork Aphid is the name I'm giving to a side project I've had sitting at the back of head for a little while. I'm actually going to try and build it now. What it actually is is quite big and hard to explain, so I'm going to do it gradually, over time. This way I also get to maintain a little bit of mystery. Here's what I will say up front, though:</p>
+
+<!-- more -->
+
+
+<ul>
+<li>It's a programming project;</li>
+<li>It's connected to computer games;</li>
+<li>It's also connected to... another form of digital entertainment which is (arguably) related to computer games;</li>
+<li>In the beginning at least, I'm going to make the code I write open source.</li>
+</ul>
+
+
+<p>The actual name "Clockwork Aphid" comes from the name of the group I helped field to the "Dare to be Digital" computer game creation competition several years ago. We didn't get in, but we proposed a game called "Bad Penny" which I still think was a bloody good idea. Some of the elements of that project are contained in this one also, but the name Bad Penny was chosen for a good reason. It was very appropriate for the type of game we were proposing. This project is potentially bigger, though, and I don't want to limit the scope.</p>
+
+<p>As for the Clockwork Aphid name itself? I just plain thought it sounded good then and I still think it sounds good now.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Location Location Location]]></title>
+    <link href="http://www.harveynick.com/blog/2010/08/05/location-location-location/"/>
+    <updated>2010-08-05T19:47:54+01:00</updated>
+    <id>http://www.harveynick.com/blog/2010/08/05/location-location-location</id>
+    <content type="html"><![CDATA[<p>One of the few things I've missed since abandoning the good ship Windows PC for the Mac... er... Zeppelin (why not?) is magazines. I used to really enjoy reading the PC gaming and hardware mags. Oftentimes they were pitched at about the right level for me. I felt neither patronised nor confused. I'm afraid to say that this is not the case with Mac magazines. For the most part they tend to aim a little low, tech wise (no kidding, right?). I did also try Linux magazines, but generally found them to be way too dry and not especially well written. Once again, quelle surprise. Quelle surprise beaucoup.</p>
+
+<!-- more -->
+
+
+<p>So I was, as I'm sure you can imagine, quite overjoyed to discover <a href="http://www.wired.co.uk/">Wired</a> magazine. A platform agnostic tech magazine pitched about the right level (ish) for me, tech wise, whilst also having some focus on the business side of technology? Win! If you're not reading it already, I highly recommend it. So, when Wired decided to give the cover story to location based social networks, concentrating on <a href="http://foursquare.com/">Foursquare</a> and <a href="http://gowalla.com/">Gowalla</a>, I though "sure, what the hell?" and gave them both a go.</p>
+
+<p>That was a good couple of weeks ago now, and I can categorically say that I'm not sure if I like them or not. Nor am I sure which of the two I prefer. The idea, basically, is that you periodically tell them where you are.</p>
+
+<p>Where are you going? Wait, there's more.</p>
+
+<p>It's a game of sorts, you see. Foursquare awards you points for visiting places (more if they're new places) while Gowalla gives you badges in your"passport." Both of them also award you bonuses for various things, and Foursquare declares you the "Mayor" of locations if you visit them more than anybody else. There is a bit more to it than this, of course, there's a social aspect, connected to both locating your friends and finding out where is currently "happening," (this is the correct term, yes?) but I think I've given you the gist.</p>
+
+<p>On balance: foursquare seems to do more in terms of the whole "life as a game" idea, and makes it feel more worthwhile to visit places multiple times... but Gowalla has a MUCH better design, and the badges and pins (achievements) it gives you are much prettier, but lacks the competitiveness of Foursquare. I think, at this point, I would tentatively recommend both, but particularly Foursquare if you're a competitive sort. Either way, feel free to friend me if you do give them a try (it's free).</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Identity]]></title>
+    <link href="http://www.harveynick.com/blog/2010/06/19/identity/"/>
+    <updated>2010-06-19T15:01:16+01:00</updated>
+    <id>http://www.harveynick.com/blog/2010/06/19/identity</id>
+    <content type="html"><![CDATA[<p>As you may or may not know, I'm currently in Australia. In fact, I've now been here for a little over a month. I'll blog about it sooner or later, but not yet. This is largely because I don't know what I'm going to say. This trip has been an alarming combination of coolness and frustration so far, and I don't want to let too much of the later slip out. That would be highly unprofessional of me, and possibly not great either for my employer or my career.</p>
+
+<p>This post shall be about something else.</p>
+
+<!-- more -->
+
+
+<p>I have a side project that I've chomping at the bit to get started on, and while I've been here I've worked up a couple of fairly good ideas for it. I can't start work on it, though, because I only have my work computer with me, and a studiously avoid doing any side projects or personal work on it, just to be on the safe side, intellectual property wise. Aside from reading up on things and doing some scribblings on paper, the other thing I can do is set up a bit of infrastructure.</p>
+
+<p>I'm going to make the project public, both in terms of open sourcing the code and blogging about the ideas behind it (at least to begin with). But where, though? Here's my dilema: I'm HarveyNick on wordpress, Tumblr, Twitter* and now BitBucket (the place I'll be hosting the code - side note: I'll be going with Mercurial for revision control). Should I write the blog entries here (and have them trickle down to tumblr and twitter), and host the code directly under HarveyNick's account on BitBucket? Let's say I name the project after my old band, the repository would be</p>
+
+<pre><code>bitbucket.org/harveynick/hinge  
+</code></pre>
+
+<p>Which stamps my ownership on it quite heavily. Likewise, if I put blog entries here: same situation. In some senses that's a good thing. Right now, it's my project. I might not always want it to be that way, though. Getting other people involved might also be good. I tend to work better (a lot better) when I have someone to bounce ideas off. So let's consider option 2; I put the project under another umbrella, and give myself (ie the harveynick identity) access to it. Let's say I go with one of the names my old band was thinking of switching to after some assholes in Chicago threatened to sue us. That would put it here:</p>
+
+<pre><code>bitbucket.org/deadcitywalking/hinge  
+</code></pre>
+
+<p>I could then start a deadcitywalking.wordpress.com blog to talk about it, and perhaps link the entries here. Should other people start playing in this particular sandpit, then they could perhaps add their own entries to this blog.</p>
+
+<p>You're probably not interested in this. I'm mostly just thinking out loud. But if you have any thoughts, I'd love to hear them.</p>
+
+<p>* Why do I have all three of these? I'm not entirely sure yet, other than because they're there.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[...And Another Couple Of Things]]></title>
+    <link href="http://www.harveynick.com/blog/2010/02/07/and-another-couple-of-things/"/>
+    <updated>2010-02-07T22:16:05+00:00</updated>
+    <id>http://www.harveynick.com/blog/2010/02/07/and-another-couple-of-things</id>
+    <content type="html"><![CDATA[<p>Something I forgot to mention in my last post was my trying to look at the iPad from a developer's perspective. I talked before about a programming side project that I've had bouncing around in my head for a while. Previously, I mentioned that I wasn't sure if it was a website, an application, or some combination of the two. Then again I could see some use cases in which a laptop might be a bit cumbersome and a smart phone too small and underpowered. In which case neither the application of the website is entirely satisfactory. I'm actually now starting to think that the iPad could be the exact right platform for it. Perhaps I should actually start working my way through the Objective-C text book I've had sitting on my shelf for over a year now...</p>
+
+<!-- more -->
+
+
+<p>I have another couple of side projects, some programmery and some writery that have me giving the thing a more than slightly critical glance.</p>
+
+<p>That's not the point of this post, though. The fact of the matter is that, although it might sometimes seem that way, Apple does not have a monopoly on multi touch user interfaces. If you want to see a particularly impressive example that neither you nor I (nor the governments of some small countries, I suspect) can afford, look no further than the <a href="http://www.perceptivepixel.com/index.html">Perceptive Pixel</a> website. Another cool example showing someone playing with a multi-touch implementation of the Warcraft 3 real time strategy game can be found below:</p>
+
+<p><iframe src="http://www.youtube.com/embed/KtKkOhMqVhY" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+
+<p>That's the sort of thing Apple <em>should</em> have shown at their event, in my opinion. There's also another tablet doing the rounds called the "Joojoo," which is apparently African for "magic." You should be impressed already. I bet you didn't think "African" was a language, did ya? That was news to me, too. This tablet looks one hell of a lot like the iPad, but is has a 12.1" multitouch screen and features a flash supporting web browser. It costs about the same as the starting price of the iPad, also. Sounds like a better deal, you say? Unfortunately I just listed its entire feature list. Web browsing is all it does and it doesn't seem to have any capability for offline use. It also has a seriously dodgy past and it's makers are being sued as a result. What? You want to see it? Oh. Here:</p>
+
+<p><img class="center" src="http://realvision.ae/blog/wp-content/uploads/2009/12/joojoo.jpg" title="&#34;The JooJoo&#34;" alt="&#34;The JooJoo&#34;"></p>
+
+<p>I think this device is kinda cool, but way too limited. Like the iPad, iPhone, and iPod Touch it features an onscreen soft keyboard... but now I very good one from what I've seen. There's a <a href="http://www.engadget.com/2009/12/08/joojoo-tablet-hands-on-video/">video</a> of the company's CEO demonstrating the device and having a bit of trouble working the keyboard. Not a good sign. The hardware looks pretty cool though, the sort of thing a person might be tempted to buy with the intention of hacking. Not me though. I don't like having to act as my own tech support when it comes to the hardware and operating system.</p>
+
+<p>Perhaps I'm done talking about the iPad and it's ilk, and I'll soon find something else to prattle on about... or perhaps I'll be back soon with a bunch of use cases the think will have to fulfil in order for me to consider buying one, perhaps in the context of these side project I seem to refuse to go into any detail about. Alright, here's a clue which might have meaning to about one person reading this: Bad Penny.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[That iPad thing]]></title>
+    <link href="http://www.harveynick.com/blog/2010/02/03/that-ipad-thing/"/>
+    <updated>2010-02-03T23:24:46+00:00</updated>
+    <id>http://www.harveynick.com/blog/2010/02/03/that-ipad-thing</id>
+    <content type="html"><![CDATA[<p>Originally, right after I got around the watching the keynote presentation which launched the iPad, I was going to write a blog post about how disappointed I was. I thought they'd screwed the pooch and I, for one, was seriously underwhelmed.</p>
+
+<p>Needless to say, I didn't quite get around to writing it. Since then I've read all the criticism by the naysayers and Apple haters, all the gushing praise from the fanatics and all the stuff in between from the more sensible people*. Now, after some reflection, I find myself somewhere in the middle. I flip back and forwards between thoughts of "that could be awesome," and "that's far too much of a compromise."</p>
+
+<!-- more -->
+
+
+<p>Ironically, the thing that's bringing me around to the idea is the very thing which people seem to be complaining about the most. Specifically: "It's just an iPod Touch with a bigger screen," which, in fairness, is exactly what I was thinking. It's not a bad thing, though. The iPod Touch (and iPhone) have a <em>spectacular</em> interface. The touch controls work well enough and the device is responsive enough to make you feel is though you're interacting with your music or the internet or your emails in a very direct manor. As a matter of fact, the main limitation of the interface is the small size of the screen. Ah hah...</p>
+
+<p>I think what actually happened is that Apple made a mess of the keynote. Yes, the first person shooter was very pretty, but not really ideal for the interface. A real time strategy game, something like command and conquer, could really sing on this thing. The iWork apps look pretty cool, but a multi-touch version of iMovie or GarageBand could have been seriously impressive. They really didn't make me believe that I could comfortably read a book on this thing... but if they'd announced text books for the iBooks store and placed an iPad next to the pile of books you usually need each year... well, then we'd have been talking. If they'd have shown how you could search the contents of a text book, spot light style, I might have been sold. Instead they left me to have to think of these things by myself.</p>
+
+<p>I still not 100% certain I know what it's for, though. Does it replace my laptop? Does it go alongside my laptop? Would I use on the sofa? Probably. On a short journey? Can't see me getting it out on the bus. A long journey? Yes, I think so. Sitting in a coffee shop? Maybe. It would take up less room on the table. Sitting in the park? A tad more risky. But still, I don't know. I'm disinclined to spend £500+ on something which is just a toy. I think I can live without multi-tasking, but there needs to be a better system to allows different apps to work together. What use are great OmniGraffle and Pages apps if I can't insert a diagram from the former into the latter?</p>
+
+<p>Bottom line: I'll go and have a play with one after they come out. Then we'll see.</p>
+
+<p>PS For my parents, though, the damn thing is almost perfect.</p>
+
+<p>* Well... I say "all"... what I actually mean is "some."</p>
+]]></content>
+  </entry>
+  
+</feed>
