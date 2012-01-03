@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[HarveyNick]]></title>
-  <link href="http://harveynick.github.com/atom.xml" rel="self"/>
-  <link href="http://harveynick.github.com/"/>
-  <updated>2012-01-01T14:33:09+00:00</updated>
-  <id>http://harveynick.github.com/</id>
+  <link href="http://www.harveynick.com/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2012-01-03T00:26:11+00:00</updated>
+  <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -14,10 +14,70 @@
 
   
   <entry>
+    <title type="html"><![CDATA[It Kneads the Dough]]></title>
+    <link href="http://www.harveynick.com/blog/2009/01/04/it-kneads-the-dough/"/>
+    <updated>2009-01-04T19:06:02+00:00</updated>
+    <id>http://www.harveynick.com/blog/2009/01/04/it-kneads-the-dough</id>
+    <content type="html"><![CDATA[<p>I like bread. I like it lot. So I was quite please when my parents gave me there bread machine and associated recipe book a couple of years ago. Their reasoning was (believe it or not) that I was the only one actually able to make bread with it. Their own attempts closely resembled articles suitable for construction, rather than ones suitable for mastication.</p>
+
+<p>So I&#8217;ve used it on and off since then. Sometimes the bread was good (the sweet potato bread, for example, is awesome), sometimes it was bad (chick pea bread: no, no, no). Just lately I&#8217;ve been using it with renewed vigour, since I&#8217;ve resolved to avoid mass produced bread. Why (you might ask)? The short answer is that the methods used are damaging to the environment, in some respects the economy, and also to the digestive tract of the person who consumes it (which in my case would be me). The long answer is<br/>
+<a href="http://www.dolectures.co.uk/speakers/andrew-whitley">here</a>.</p>
+
+<!-- more -->
+
+
+<p>Out of curiosity I decided to have a crack at the San Francisco sour dough recipe in the book. This takes about a week to make in total, uses no yeast (none that <em>you </em>add, anyway), and only uses the machine for the kneading and some of the mixing.</p>
+
+<p>On the whole I&#8217;m not that impressed with it. I don&#8217;t actually know what sour dough is supposed to taste like (oops), but this one doesn&#8217;t taste that great and didn&#8217;t rise very well. That last one could be my fault, since I definitely messed up some of the timing.<br/>
+Ahem.</p>
+
+<p>Usually with a bread machine, the timing goes something like this:</p>
+
+<ol>
+<li>Put ingredients in the machine and push go.</li>
+<li>Wait a couple of hours (about four in the case of my machine, depending on the recipe).</li>
+<li>Remove bread from machine.</li>
+</ol>
+
+
+<p>That, you see, is the brilliance of it. It&#8217;s very simple and requires a distinct lack of effort on your part (aside from a scrupulous accuracy in the measurements). With the sour dough it&#8217;s more like this:</p>
+
+<ol>
+<li>Mix some stuff in a bowl.</li>
+<li>Wait three days.</li>
+<li>Add some stuff to the bowl.</li>
+<li>Wait two days.</li>
+<li>Add some more stuff to the bowl.</li>
+<li>Wait twelve hours.</li>
+<li>Put the contents of the bowl and some other things in the machine and push go on the dough setting.</li>
+<li>Wait the time it takes to start mixing plus ten minutes.</li>
+<li>Turn off the machine.</li>
+<li>Wait eight hours.</li>
+<li>Add some more stuff to the machine</li>
+<li>Run an complete dough cycle (about two hours).</li>
+<li>Take the dough out of the machine and knock it back.</li>
+<li>Wait two hours.</li>
+<li>Put it in the oven.</li>
+<li>Wait twenty-five minutes.</li>
+<li>Turn the oven down.</li>
+<li>Wait ten minutes.</li>
+<li>Remove bread from the oven.</li>
+</ol>
+
+
+<p>Couple this <em>small</em> amount of added complexity with the fact that I discovered I was missing a key ingredient around step 11 (which due to the timing was at 6 am)*, what you end up with is a near complete loss of the simplicity, an inferior product, and a dirty flappy paddle bread tin thing which is even harder to wash than it would have been if you&#8217;d actually baked the bread in it.</p>
+
+<p>The point, in case you were starting to doubt that I had one, is that from now on I shall only be making relatively simple breads in the machine (and they can bloody well cook in there, as well). For fancier, more exciting breads I think I may well tread the same path as <a href="http://www.dougalstanton.net/blog">Dougal</a> (who pointed me in the direction of the above video), buy myself a copy of <a href="http://www.amazon.co.uk/Dough-Richard-Bertinet/dp/1856267628/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1231095568&amp;sr=8-1">this</a> and prepare to get my hands dirty.</p>
+
+<p>* Erm&#8230; and fell asleep for an hour too long around step 14.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Objects of Desire]]></title>
-    <link href="http://harveynick.github.com/blog/2009/01/02/objects-of-desire/"/>
+    <link href="http://www.harveynick.com/blog/2009/01/02/objects-of-desire/"/>
     <updated>2009-01-02T02:31:07+00:00</updated>
-    <id>http://harveynick.github.com/blog/2009/01/02/objects-of-desire</id>
+    <id>http://www.harveynick.com/blog/2009/01/02/objects-of-desire</id>
     <content type="html"><![CDATA[<p>I haven&#8217;t blogged in some, so it seemed only natural that I should do the churlish thing and write about items I would like, but do not have, post Christmas.</p>
 
 <p>First of all is a pod based coffee maker. When walking through House of Fraiser pre Christmas my beautiful and wonderful girlfriend had cause to exclaim &#8220;These are so cool*!&#8221; What she was talking about was a Nespresso machine (or more precisely a table full of them). Basically you pop a little pod of coffee in the top, push a button and really quite good espresso (or something a lot like it) comes out of the spout. Boom. Simple and fast, without any fuss or the need to do much in the way of cleaning. This appeals to me. A lot.</p>
@@ -39,9 +99,9 @@
   
   <entry>
     <title type="html"><![CDATA[An Open Letter]]></title>
-    <link href="http://harveynick.github.com/blog/2008/10/24/an-open-letter/"/>
+    <link href="http://www.harveynick.com/blog/2008/10/24/an-open-letter/"/>
     <updated>2008-10-24T15:46:54+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/10/24/an-open-letter</id>
+    <id>http://www.harveynick.com/blog/2008/10/24/an-open-letter</id>
     <content type="html"><![CDATA[<p>Dear Road User,</p>
 
 <p>Should you be located in the UK and in possession of an automobile, you may have noticed a strange lever positioned to the left of your steering wheel (the circular device which changes the direction of your car). If you are of the inquisitive sort you may have also discovered a causal relationship (or at least a very strong correlation) between pushing this appendage in either of the upwards or downwards directions, and the flashing of two sets of orange lights positioned down the sides of your car.</p>
@@ -61,9 +121,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sasanach]]></title>
-    <link href="http://harveynick.github.com/blog/2008/10/04/sasanack/"/>
+    <link href="http://www.harveynick.com/blog/2008/10/04/sasanack/"/>
     <updated>2008-10-04T16:10:09+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/10/04/sasanack</id>
+    <id>http://www.harveynick.com/blog/2008/10/04/sasanack</id>
     <content type="html"><![CDATA[<p>Helen&#8217;s comment on my previous entry put me in mind of what I&#8217;ve felt as the Scottish attitude towards England and the English more or less ever since I arrived here (seven years ago!). It goes something like this:</p>
 
 <blockquote><p>The English? Bastards! We hate &#8216;em! Oh, but we&#8217;re not talking about you, of course. Dear me, no. More tea? Scone?</p></blockquote>
@@ -85,9 +145,9 @@ Him: Aye&#8230; well&#8230; fair play to you, then.</p>
   
   <entry>
     <title type="html"><![CDATA[Why Bristol Depressed Me, and Other Stories...]]></title>
-    <link href="http://harveynick.github.com/blog/2008/10/02/why-bristol-depressed-me-and-other-stories/"/>
+    <link href="http://www.harveynick.com/blog/2008/10/02/why-bristol-depressed-me-and-other-stories/"/>
     <updated>2008-10-02T23:01:01+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/10/02/why-bristol-depressed-me-and-other-stories</id>
+    <id>http://www.harveynick.com/blog/2008/10/02/why-bristol-depressed-me-and-other-stories</id>
     <content type="html"><![CDATA[<p>So.</p>
 
 <p>It&#8217;s not that I feel that Bristol is an intrinsically bad or depressing place. My attitude to it was coloured by the fact that I was a little tired of travelling, tired in general and didn&#8217;t entirely want to be there. Also, and this is the key fact, I&#8217;d just got back from Iceland. I liked Iceland a lot, despite the twelve hour days I felt almost no stress the entire I was there. There&#8217;s something very chilled about the place, and there was almost no traffic congestion, even considering that we drove through the middle of Reykjavik every morning during hush hour. But there&#8217;s something else.</p>
@@ -114,9 +174,9 @@ Him: Aye&#8230; well&#8230; fair play to you, then.</p>
   
   <entry>
     <title type="html"><![CDATA[Flip side]]></title>
-    <link href="http://harveynick.github.com/blog/2008/09/30/flip-side/"/>
+    <link href="http://www.harveynick.com/blog/2008/09/30/flip-side/"/>
     <updated>2008-09-30T20:54:06+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/09/30/flip-side</id>
+    <id>http://www.harveynick.com/blog/2008/09/30/flip-side</id>
     <content type="html"><![CDATA[<p>Two updates in one day shocker!</p>
 
 <p>The last one was a little downcast, though, and I felt a need to pass on something awesome by way of balance. Here it is:</p>
@@ -145,9 +205,9 @@ That is all.</p>
   
   <entry>
     <title type="html"><![CDATA[Ferðalangur]]></title>
-    <link href="http://harveynick.github.com/blog/2008/09/30/ferc3b0alangur/"/>
+    <link href="http://www.harveynick.com/blog/2008/09/30/ferc3b0alangur/"/>
     <updated>2008-09-30T16:12:18+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/09/30/ferc3b0alangur</id>
+    <id>http://www.harveynick.com/blog/2008/09/30/ferc3b0alangur</id>
     <content type="html"><![CDATA[<p>I&#8217;ve been traveling around for work for the vast majority of the last month, so generally speaking I&#8217;ve been anything but at a loose end. Evenings were full of work or spent with the colleagues / friends I was traveling with. But now I&#8217;m back and finding that I don&#8217;t know what to do with myself a lot of the time. It&#8217;s giving me time to think about things, and that never ends well.</p>
 
 <!-- more -->
@@ -169,9 +229,9 @@ That is all.</p>
   
   <entry>
     <title type="html"><![CDATA[Being Yvan Petillot]]></title>
-    <link href="http://harveynick.github.com/blog/2008/09/16/being-yvan-petillot/"/>
+    <link href="http://www.harveynick.com/blog/2008/09/16/being-yvan-petillot/"/>
     <updated>2008-09-16T22:19:27+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/09/16/being-yvan-petillot</id>
+    <id>http://www.harveynick.com/blog/2008/09/16/being-yvan-petillot</id>
     <content type="html"><![CDATA[<p>So.</p>
 
 <p>There I was, sitting across from a senior manager from Thales and two Professors, one each from Cambridge and Robert Gordon&#8217;s Universities, discussing the precise definition of the term “emergent behaviour”&#8230;</p>
@@ -205,9 +265,9 @@ That is all.</p>
   
   <entry>
     <title type="html"><![CDATA[Well... Here I am...]]></title>
-    <link href="http://harveynick.github.com/blog/2008/09/02/well-here-i-am/"/>
+    <link href="http://www.harveynick.com/blog/2008/09/02/well-here-i-am/"/>
     <updated>2008-09-02T20:42:40+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/09/02/well-here-i-am</id>
+    <id>http://www.harveynick.com/blog/2008/09/02/well-here-i-am</id>
     <content type="html"><![CDATA[<p>&#8230;In Iceland!</p>
 
 <p>I wanted to come here for a long time (this is no secret), and as the result of a highly unsubtle campaign of strategic hint dropping, here I find myself. It&#8217;s not under ideal circumstances, though. I&#8217;m here for work and so I&#8217;ll be spending most of my time working 12 hour days, doing fiddly embedded computer programming and ridding about in boats waiting for robots to do their thing. I&#8217;m also here with my boss (or someone far higher up the chain of command than myself, at least), and though he&#8217;s a really nice guy there&#8217;s always going to be a significant disconnect. He&#8217;s not my first choice(s)* to share this experience with. I&#8217;d rather be here with my friends. My friends are awesome, you see.</p>
@@ -233,9 +293,9 @@ That is all.</p>
   
   <entry>
     <title type="html"><![CDATA[Celtx on the Acer Aspire One]]></title>
-    <link href="http://harveynick.github.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one/"/>
+    <link href="http://www.harveynick.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one/"/>
     <updated>2008-08-24T21:23:58+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one</id>
+    <id>http://www.harveynick.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one</id>
     <content type="html"><![CDATA[<p>So I managed to get the Celtx screenwriting (and general preproduction) software up and running on my shiny new AA1, and in the interests of sharing the knowledge I thought I&#8217;d post how I did it. Please note, this should also work as general recipe for installing any software not available under the package manager in Linpus Light Linux (provided there are no additional dependencies).</p>
 
 <p>First of all you need to download the software from the downloads page of the Celtx website, <a href="http://www.celtx.com/download.html">here</a>. I&#8217;d recomend getting the straight up Linux version in your choice of language (frustratingly there is no option for British English, though). There is an Asus eee specific version, but that just clears up some dependencies and doesn&#8217;t really provide you with anything extra.</p>
@@ -343,9 +403,9 @@ StartupNotify=true
   
   <entry>
     <title type="html"><![CDATA[I'll see your eee and raise you One]]></title>
-    <link href="http://harveynick.github.com/blog/2008/08/18/my-digital-life-ill-see-your-eee-and-raise-you-one/"/>
+    <link href="http://www.harveynick.com/blog/2008/08/18/my-digital-life-ill-see-your-eee-and-raise-you-one/"/>
     <updated>2008-08-18T22:53:47+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/08/18/my-digital-life-ill-see-your-eee-and-raise-you-one</id>
+    <id>http://www.harveynick.com/blog/2008/08/18/my-digital-life-ill-see-your-eee-and-raise-you-one</id>
     <content type="html"><![CDATA[<p>My good friend Dougal got himself an Asus eee pc (relatively) recently. He likes it a lot. I like the idea of it, but not so much the implementation. On his version at least, the screen is too small for me, and the later versions are a bit too pricey. I love the idea of a small, light and eminently carriable laptop though. It&#8217;s the premise I originally bought my MacBook under, but I found even that machine to be too bulky and heavy to carry around constantly. The MacBook Air might work, but it&#8217;s very expensive (from the direction I&#8217;m looking at it from, anyway) and not really something I&#8217;d be prepared to pull out of my bag and start working on while sitting on the Meadows.</p>
 
 <!-- more -->
@@ -383,9 +443,9 @@ Speaking of which&#8230;</p>
   
   <entry>
     <title type="html"><![CDATA[Is it still limping if you're doing it with both legs?]]></title>
-    <link href="http://harveynick.github.com/blog/2008/08/12/is-it-still-limping-if-youre-doing-it-with-both-legs/"/>
+    <link href="http://www.harveynick.com/blog/2008/08/12/is-it-still-limping-if-youre-doing-it-with-both-legs/"/>
     <updated>2008-08-12T14:54:11+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/08/12/is-it-still-limping-if-youre-doing-it-with-both-legs</id>
+    <id>http://www.harveynick.com/blog/2008/08/12/is-it-still-limping-if-youre-doing-it-with-both-legs</id>
     <content type="html"><![CDATA[<p>On Friday night I went to the Silent Disco and danced away until 4 am. On the whole I think it was excellent. I think it (or some progression of it) might well be the future of night clubs. It was £10 entry, which might seem a little expensive, but is really no more than the entry to a lot of clubs in Edinburgh. The music was also quite mainstream, and not the hardcore dance I was expecting, which is good because I think his sort of thing is a lot more fun when you can shout along with the words. Especially when you can take of your headphones and watch everyone dancing away without there being any apparent music.</p>
 
 <!-- more -->
@@ -412,9 +472,9 @@ Speaking of which&#8230;</p>
   
   <entry>
     <title type="html"><![CDATA[Eclecticism]]></title>
-    <link href="http://harveynick.github.com/blog/2008/08/05/eclecticism/"/>
+    <link href="http://www.harveynick.com/blog/2008/08/05/eclecticism/"/>
     <updated>2008-08-05T15:02:46+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/08/05/eclecticism</id>
+    <id>http://www.harveynick.com/blog/2008/08/05/eclecticism</id>
     <content type="html"><![CDATA[<p>Seems the Facebook app does not do what it&#8217;s supposed to. Never mind, I shall content myself with the (better) Wordpress interface. Maybe I&#8217;ll look into writing a Facebook app which interfaces with my RSS feed. That would be cool.</p>
 
 <p>I thought I would write a music related post, since I found a couple of things on YouTube which piqued my interest. First an entirely serious one:</p>
@@ -475,9 +535,9 @@ Speaking of which&#8230;</p>
   
   <entry>
     <title type="html"><![CDATA[Starting again... again.]]></title>
-    <link href="http://harveynick.github.com/blog/2008/08/03/starting-again-again/"/>
+    <link href="http://www.harveynick.com/blog/2008/08/03/starting-again-again/"/>
     <updated>2008-08-03T22:36:54+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/08/03/starting-again-again</id>
+    <id>http://www.harveynick.com/blog/2008/08/03/starting-again-again</id>
     <content type="html"><![CDATA[<p>Blogging.</p>
 
 <p>By my count I&#8217;ve had three previous attempts (on different services), none of which has entirely worked out. The problems which cause this to be are multiple, but two in particular tend to stand out. Firstly, I tend to write long rambling posts which take a lot of effort, and secondly I tend to not believe that anyone is actually reading them.</p>

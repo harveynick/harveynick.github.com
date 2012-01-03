@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Guides | HarveyNick]]></title>
-  <link href="http://harveynick.github.com/blog/categories/guides/atom.xml" rel="self"/>
-  <link href="http://harveynick.github.com/"/>
-  <updated>2012-01-01T14:33:09+00:00</updated>
-  <id>http://harveynick.github.com/</id>
+  <link href="http://www.harveynick.com/blog/categories/guides/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2012-01-03T00:26:11+00:00</updated>
+  <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Celtx on the Acer Aspire One]]></title>
-    <link href="http://harveynick.github.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one/"/>
+    <link href="http://www.harveynick.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one/"/>
     <updated>2008-08-24T21:23:58+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one</id>
+    <id>http://www.harveynick.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one</id>
     <content type="html"><![CDATA[<p>So I managed to get the Celtx screenwriting (and general preproduction) software up and running on my shiny new AA1, and in the interests of sharing the knowledge I thought I'd post how I did it. Please note, this should also work as general recipe for installing any software not available under the package manager in Linpus Light Linux (provided there are no additional dependencies).</p>
 
 <p>First of all you need to download the software from the downloads page of the Celtx website, <a href="http://www.celtx.com/download.html">here</a>. I'd recomend getting the straight up Linux version in your choice of language (frustratingly there is no option for British English, though). There is an Asus eee specific version, but that just clears up some dependencies and doesn't really provide you with anything extra.</p>

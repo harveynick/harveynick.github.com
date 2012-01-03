@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Travel | HarveyNick]]></title>
-  <link href="http://harveynick.github.com/blog/categories/travel/atom.xml" rel="self"/>
-  <link href="http://harveynick.github.com/"/>
-  <updated>2012-01-01T14:33:09+00:00</updated>
-  <id>http://harveynick.github.com/</id>
+  <link href="http://www.harveynick.com/blog/categories/travel/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2012-01-03T00:26:11+00:00</updated>
+  <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Why Bristol Depressed Me, and Other Stories...]]></title>
-    <link href="http://harveynick.github.com/blog/2008/10/02/why-bristol-depressed-me-and-other-stories/"/>
+    <link href="http://www.harveynick.com/blog/2008/10/02/why-bristol-depressed-me-and-other-stories/"/>
     <updated>2008-10-02T23:01:01+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/10/02/why-bristol-depressed-me-and-other-stories</id>
+    <id>http://www.harveynick.com/blog/2008/10/02/why-bristol-depressed-me-and-other-stories</id>
     <content type="html"><![CDATA[<p>So.</p>
 
 <p>It's not that I feel that Bristol is an intrinsically bad or depressing place. My attitude to it was coloured by the fact that I was a little tired of travelling, tired in general and didn't entirely want to be there. Also, and this is the key fact, I'd just got back from Iceland. I liked Iceland a lot, despite the twelve hour days I felt almost no stress the entire I was there. There's something very chilled about the place, and there was almost no traffic congestion, even considering that we drove through the middle of Reykjavik every morning during hush hour. But there's something else.</p>
@@ -43,9 +43,9 @@
   
   <entry>
     <title type="html"><![CDATA[Being Yvan Petillot]]></title>
-    <link href="http://harveynick.github.com/blog/2008/09/16/being-yvan-petillot/"/>
+    <link href="http://www.harveynick.com/blog/2008/09/16/being-yvan-petillot/"/>
     <updated>2008-09-16T22:19:27+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/09/16/being-yvan-petillot</id>
+    <id>http://www.harveynick.com/blog/2008/09/16/being-yvan-petillot</id>
     <content type="html"><![CDATA[<p>So.</p>
 
 <p>There I was, sitting across from a senior manager from Thales and two Professors, one each from Cambridge and Robert Gordon's Universities, discussing the precise definition of the term “emergent behaviour”...</p>

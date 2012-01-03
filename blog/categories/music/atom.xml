@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Music | HarveyNick]]></title>
-  <link href="http://harveynick.github.com/blog/categories/music/atom.xml" rel="self"/>
-  <link href="http://harveynick.github.com/"/>
-  <updated>2012-01-01T14:33:09+00:00</updated>
-  <id>http://harveynick.github.com/</id>
+  <link href="http://www.harveynick.com/blog/categories/music/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2012-01-03T00:26:11+00:00</updated>
+  <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Flip side]]></title>
-    <link href="http://harveynick.github.com/blog/2008/09/30/flip-side/"/>
+    <link href="http://www.harveynick.com/blog/2008/09/30/flip-side/"/>
     <updated>2008-09-30T20:54:06+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/09/30/flip-side</id>
+    <id>http://www.harveynick.com/blog/2008/09/30/flip-side</id>
     <content type="html"><![CDATA[<p>Two updates in one day shocker!</p>
 
 <p>The last one was a little downcast, though, and I felt a need to pass on something awesome by way of balance. Here it is:</p>
@@ -43,9 +43,9 @@ That is all.</p>
   
   <entry>
     <title type="html"><![CDATA[Eclecticism]]></title>
-    <link href="http://harveynick.github.com/blog/2008/08/05/eclecticism/"/>
+    <link href="http://www.harveynick.com/blog/2008/08/05/eclecticism/"/>
     <updated>2008-08-05T15:02:46+01:00</updated>
-    <id>http://harveynick.github.com/blog/2008/08/05/eclecticism</id>
+    <id>http://www.harveynick.com/blog/2008/08/05/eclecticism</id>
     <content type="html"><![CDATA[<p>Seems the Facebook app does not do what it's supposed to. Never mind, I shall content myself with the (better) Wordpress interface. Maybe I'll look into writing a Facebook app which interfaces with my RSS feed. That would be cool.</p>
 
 <p>I thought I would write a music related post, since I found a couple of things on YouTube which piqued my interest. First an entirely serious one:</p>
