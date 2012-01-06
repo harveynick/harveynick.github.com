@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Fractal Errata - HarveyNick</title>
+  <meta name="author" content="Nick Johnson">
+
+  
+  <meta name="description" content="Some of the particularly sharp/anal ones amongst you might have noticed that while the technique for generating fractal lanscapes I previously &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.harveynick.com/blog/2010/10/22/fractal-errata">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/Harveynick" rel="alternate" title="HarveyNick" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28082281-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">HarveyNick</a></h1>
+  
+    <h2>My voice is my passport. Verify me.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/Harveynick" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.harveynick.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Fractal Errata</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-10-22T17:41:33+01:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2010</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Some of the particularly sharp/anal ones amongst you might have noticed that while the technique for generating fractal lanscapes I <a href="http://harveynick.wordpress.com/2010/10/19/youre-speaking-my-landscape-baby/">previously described</a> works (and works well), it&#8217;s not 100% <em>correct</em>. Specifically, the fact that it uses the the same scaling factor for nodes created by the diamond and square steps isn&#8217;t quite right.</p>
+
+<!-- more -->
+
+
+<p>Why is this? Because they generate nodes which adhere to different levels of detail, that&#8217;s why. Lets go back to that last diagram for the post which described the algorithm:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/fractallandscape9.png"></p>
+
+<p>Now while you&#8217;ll note that both steps add nodes that can be addressed using fractions with two as their denominator, the distance of the nodes created by the diamond step to their parents is greater than those created by the square step.</p>
+
+<p>The nodes created by the square step are orthogonal to their parents, so the distance between them is proportional to a half, which as luck would have it has the same as the denominator as the fractions used to address the node. How convenient!</p>
+
+<p>The nodes created by the diagonal step, on the other hand, are diagonal to their parents. This means that the distance to their parents is the pythagorean root of this same distance, so in this specific case:</p>
+
+<blockquote><p>sqrt(½*½+½*½) = sqrt(¼+¼) = sqrt(½) = something</p></blockquote>
+
+<p>Once again, the key fraction used to work this out has the same denominator as those used to address the node in the landscape. Thus, if d is equal to the denominator we&#8217;re using to address a node, the basic scaling factor used to offset a new node from its parents would be the following:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">diamond</span> <span class="n">step</span><span class="p">)</span> <span class="nb">range</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">d</span> <span class="o">*</span> <span class="mi">1</span><span class="o">/</span><span class="n">d</span> <span class="o">*</span> <span class="mi">2</span><span class="p">),</span><span class="err"> </span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">d</span> <span class="o">*</span> <span class="mi">1</span><span class="o">/</span><span class="n">d</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)]</span>
+</span><span class='line'><span class="k">else</span> <span class="nb">range</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="n">d</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="n">d</span><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>As I said before, this won&#8217;t make a lot of difference, but it will be more correct and that&#8217;s important to some people. Myself included.</p>
+
+<p>For comparison purposes this is the effect this change has on the example landscape I&#8217;ve been using. The original landscape looks like this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/image8.png"></p>
+
+<p>The updated landscape looks like this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/image11.png"></p>
+
+<p>There&#8217;s some difference visible, but not a huge amount. Mostly, it&#8217;s just increased the range the data are occupying and expanded the bell curve accordingly. Hence, more high points and more low points, but the land is the same basic shape.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">harveynick</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-10-22T17:41:33+01:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/hacker/'>Hacker</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.harveynick.com/blog/2010/10/22/fractal-errata/" data-via="harveynick" data-counturl="http://www.harveynick.com/blog/2010/10/22/fractal-errata/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2010/10/22/now-in-eye-popping-3d/" title="Previous Post: Now In Eye Popping 3D!">&laquo; Now In Eye Popping 3D!</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2010/10/22/fractal-errata/">Fractal Errata</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/10/22/now-in-eye-popping-3d/">Now In Eye Popping 3D!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/10/20/some-random-landscapes/">Some Random Landscapes</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/10/19/youre-speaking-my-landscape-baby/">You're Speaking My Landscape, Baby.</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/10/17/epic-googleyep-and-other-stories/">Epic Googleyep and Other Stories</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/10/16/language-post-mortem-and-some-other-notes/">Language Post Mortem and Some Other Notes</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/10/14/323/">There Can be Only... Several...</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/10/13/youre-speaking-my-language-baby-part-5-conclusion/">You're Speaking my Language, Baby. Part 5: Conclusion</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/">You're Speaking my Language, Baby. Part 4: Objective-C</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/10/11/youre-speaking-my-language-baby-part-3-c/">You're Speaking my Language, Baby. Part 3: C++</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("harveynick", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/harveynick" class="twitter-follow-button" data-show-count="false">Follow @harveynick</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/103951349449629293779?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Nick Johnson -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'harveynick-com';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

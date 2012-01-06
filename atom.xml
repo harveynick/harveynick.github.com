@@ -4,7 +4,7 @@
   <title><![CDATA[HarveyNick]]></title>
   <link href="http://www.harveynick.com/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-01-05T01:02:01+00:00</updated>
+  <updated>2012-01-06T00:02:05+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -12,6 +12,305 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fractal Errata]]></title>
+    <link href="http://www.harveynick.com/blog/2010/10/22/fractal-errata/"/>
+    <updated>2010-10-22T17:41:33+01:00</updated>
+    <id>http://www.harveynick.com/blog/2010/10/22/fractal-errata</id>
+    <content type="html"><![CDATA[<p>Some of the particularly sharp/anal ones amongst you might have noticed that while the technique for generating fractal lanscapes I <a href="http://harveynick.wordpress.com/2010/10/19/youre-speaking-my-landscape-baby/">previously described</a> works (and works well), it&#8217;s not 100% <em>correct</em>. Specifically, the fact that it uses the the same scaling factor for nodes created by the diamond and square steps isn&#8217;t quite right.</p>
+
+<!-- more -->
+
+
+<p>Why is this? Because they generate nodes which adhere to different levels of detail, that&#8217;s why. Lets go back to that last diagram for the post which described the algorithm:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/fractallandscape9.png"></p>
+
+<p>Now while you&#8217;ll note that both steps add nodes that can be addressed using fractions with two as their denominator, the distance of the nodes created by the diamond step to their parents is greater than those created by the square step.</p>
+
+<p>The nodes created by the square step are orthogonal to their parents, so the distance between them is proportional to a half, which as luck would have it has the same as the denominator as the fractions used to address the node. How convenient!</p>
+
+<p>The nodes created by the diagonal step, on the other hand, are diagonal to their parents. This means that the distance to their parents is the pythagorean root of this same distance, so in this specific case:</p>
+
+<blockquote><p>sqrt(½*½+½*½) = sqrt(¼+¼) = sqrt(½) = something</p></blockquote>
+
+<p>Once again, the key fraction used to work this out has the same denominator as those used to address the node in the landscape. Thus, if d is equal to the denominator we&#8217;re using to address a node, the basic scaling factor used to offset a new node from its parents would be the following:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">diamond</span> <span class="n">step</span><span class="p">)</span> <span class="nb">range</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">d</span> <span class="o">*</span> <span class="mi">1</span><span class="o">/</span><span class="n">d</span> <span class="o">*</span> <span class="mi">2</span><span class="p">),</span><span class="err"> </span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">d</span> <span class="o">*</span> <span class="mi">1</span><span class="o">/</span><span class="n">d</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)]</span>
+</span><span class='line'><span class="k">else</span> <span class="nb">range</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="n">d</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="n">d</span><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>As I said before, this won&#8217;t make a lot of difference, but it will be more correct and that&#8217;s important to some people. Myself included.</p>
+
+<p>For comparison purposes this is the effect this change has on the example landscape I&#8217;ve been using. The original landscape looks like this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/image8.png"></p>
+
+<p>The updated landscape looks like this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/image11.png"></p>
+
+<p>There&#8217;s some difference visible, but not a huge amount. Mostly, it&#8217;s just increased the range the data are occupying and expanded the bell curve accordingly. Hence, more high points and more low points, but the land is the same basic shape.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Now In Eye Popping 3D!]]></title>
+    <link href="http://www.harveynick.com/blog/2010/10/22/now-in-eye-popping-3d/"/>
+    <updated>2010-10-22T12:09:33+01:00</updated>
+    <id>http://www.harveynick.com/blog/2010/10/22/now-in-eye-popping-3d</id>
+    <content type="html"><![CDATA[<p>It took a little bit of fighting with bugs that weren&#8217;t showing up in the 2D view, and a bit of time to figure out what was going on with the lighting system in <a href="http://www.jmonkeyengine.org/">JME</a>, but I finally got the 3D display of the <a href="http://harveynick.wordpress.com/2010/10/20/some-random-landscapes/">fractal</a> working.</p>
+
+<p>The first stage was just displaying each node as a discrete point so I could see that each was in about the right place. It looks a little bit like this:</p>
+
+<!-- more -->
+
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot.png"></p>
+
+<p>I did this by simply piping the spatial coordinates and colour information of each node into a pair of standard Java <a href="http://download.oracle.com/javase/1.4.2/docs/api/java/nio/FloatBuffer.html">FloatBuffers</a>, passing these to a JME Point class (which should really be called PointSet, in my opinion) and attaching this to the root display node of my JME <a href="http://bitbucket.org/harveynick/clockworkaphidjava/src/tip/src/com/clockworkaphid/display/threedimensional/PointDisplay.java">application</a>. The colouring scheme is the same as the one used for the 2D display. Some things don&#8217;t look quite right, largely due to the fact that I&#8217;ve just drawn the &#8220;underwater&#8221; points as blue, rather than adding any actual &#8220;water.&#8221; Don&#8217;t fret, it&#8217;s on the todo list.</p>
+
+<p>That said, the landscape looks about right. All the points seem to be in their correct location. As a quick implementation note, I&#8217;m defining the <code>(x, y, z)</code> coordinates of the scene in the following way:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">x</span> <span class="o">=</span> <span class="n">east</span>
+</span><span class='line'><span class="n">y</span> <span class="o">=</span> <span class="n">altitude</span>
+</span><span class='line'><span class="n">z</span> <span class="o">=</span> <span class="o">-</span><span class="n">north</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>With some scaling factors used to map the values from the <code>[0,1]</code> range used to address them to slightly more real world like dimensions.</p>
+
+<p>The next stage was to display the landscape in wireframe to make sure the connections I&#8217;ll be using create a more solid looking polygon based display are all working correctly. Why not just go directly to polygons? You can see the the detail better in the wireframe display, making debugging much easier. I&#8217;ll definitely be using it again later.</p>
+
+<p>This time, instead of piping each and every node into the vertex array, only the nodes at the highest level of detail are used. These are the nodes generated during the final &#8220;square stage&#8221; of the fractal algorithm, for those of you playing at home. Each draws a triangle (consisting of three separate lines) into the vertex buffer for each pair of parents it has in the landscape. The result looks something like this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot2-e1287747142352.png"></p>
+
+<p>Everything seems to be in good order there, I think. One or two things don&#8217;t look quite right, particularly the beaches, but the tessellation and coverage of the polygons looks right. Here&#8217;s a closer in look at some of the polygons so you can see what the tessellation scheme actually produces:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot4.png"></p>
+
+<p>You can (hopefully) see that each of the &#8220;active&#8221; nodes sits at the centre of a diamond formed from the shape of its parents, so it&#8217;s the points with four lines branching from them (rather than eight) which are actually being used to draw the scene.</p>
+
+<p>Next: polygons. Again, only the nodes at the highest level of detail are used. This time, each inserts itself into the vertex buffer, then adds its parents if they&#8217;re not in there already. Each node remembers its postion in the vertex buffer, and these indices are then used to draw the actual polygons. These are declared by passing the indices in sets of three into a standard Java <a href="http://download.oracle.com/javase/1.4.2/docs/api/java/nio/IntBuffer.html">IntBuffer</a>. The buffers are then passed to one of JME TriMesh geometry classes and displayed, like this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot1.png"></p>
+
+<p>Again, the beaches don&#8217;t look quite right, but otherwise I&#8217;m reasonably pleased. I still need to add the actual water and improve the form of the landscape itself (and about a million other things), but in terms of display this is looking pretty good. Except for one thing: I&#8217;m using far more detail than I need to. Let me illustrate this with a slightly more extreme example. The pictures I&#8217;ve posed so far were generated using seven iterations of the diamond square algorithm. Here&#8217;s what happens when I use ten iterations (remember, the number of points increases exponentially):</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot5-e1287704750521.png"></p>
+
+<p>On the bright side the beaches look better, but that&#8217;s a lot of polygons. Far more then we actually need to display. 1579008 polygons, in fact. We need to reduce that somewhat, if we&#8217;re going to make things more complicated <em>and</em> maintain a reasonable frame rate (I&#8217;m getting about 60fps with this view at the moment). You can see the problem more clearly if I show you the same view using lines rather than polygons:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot6-e1287704836984.png"></p>
+
+<p>You can just about see the individual triangles up close, but further away the lines just mush together. I think we can afford to reduce the level of detail as we get further away, don&#8217;t you?</p>
+
+<p>Well, I&#8217;ll get right on that, then&#8230;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Some Random Landscapes]]></title>
+    <link href="http://www.harveynick.com/blog/2010/10/20/some-random-landscapes/"/>
+    <updated>2010-10-20T15:50:46+01:00</updated>
+    <id>http://www.harveynick.com/blog/2010/10/20/some-random-landscapes</id>
+    <content type="html"><![CDATA[<p>I don&#8217;t have any 3D views of the <a href="http://harveynick.com/blog/2010/10/19/youre-speaking-my-landscape-baby/">fractal landscapes I&#8217;ve been making</a> to show you yet, as I&#8217;m still working through the different implementation options. I did get a little distracted with the 2D views of the landscape this morning, though, and play with the colouring scheme.</p>
+
+<!-- more -->
+
+
+<p>First of all, let&#8217;s start again with the example landscape used in yesterday&#8217;s post, only with slightly more sober colours and a bar on the right showing how the height values map to actual colours:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/image5.png"></p>
+
+<p>Now that looks reasonably neat already, in a &#8220;my first atlas&#8221; kind of way, but clearly there&#8217;s a lot of information missing. We can see this if I plot the height values in monochrome, giving the landscape a more &#8220;plasma cloud&#8221; appearance:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/image6.png"></p>
+
+<p>Now we can see the extra information, but we&#8217;ve lost a lot of the sense that what we&#8217;re looking at is a landscape. It looks more like a cloud. We can get some of that back by combining the two approaches and using different shades of blue and green:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/image7.png"></p>
+
+<p>Now this looks a lot better. I think the water looks quite reasonable using this scheme, but the landscape is a bit&#8230; homogenous. Is every part of the land covered in grass? How boring!</p>
+
+<p>We can make things a bit more interesting by adding a thin band of &#8220;sand&#8221; around the coast, and some &#8220;mountainy&#8221; colours (and snow!) higher up, like so:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/image8.png"></p>
+
+<p>Now this looks better, the sand in particular. The mountains look okay, but not quite right. Something&#8217;s a little off. That&#8217;s not what mountains actually look like. We also don&#8217;t have any rivers or above sea level lakes. These are problems I&#8217;m going to look at later, after I get a reasonable 3D display system working. In the mean time, though, here are a couple more 2D landscapes for your viewing pleasure:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/image9.png"></p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/image10.png"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[You're Speaking My Landscape, Baby.]]></title>
+    <link href="http://www.harveynick.com/blog/2010/10/19/youre-speaking-my-landscape-baby/"/>
+    <updated>2010-10-19T16:55:39+01:00</updated>
+    <id>http://www.harveynick.com/blog/2010/10/19/youre-speaking-my-landscape-baby</id>
+    <content type="html"><![CDATA[<p>No, that isn&#8217;t a typo&#8230; but yes, it is a bad play on words. That&#8217;s the bad news. The good news: finally! A Clockwork Aphid implementation post!</p>
+
+<p>If you&#8217;re building something which relates in some way to virtual worlds, then the first thing you&#8217;re going to need <em>is</em> a virtual world. This gives you two options:</p>
+
+<ol>
+<li>Use a ready made one;</li>
+<li>Roll your own.</li>
+</ol>
+
+
+<!-- more -->
+
+
+<p>Option 1 is a possibility, and one that I&#8217;m going to come back to, but for now let&#8217;s think about option 2. So then, when building a virtual world the first thing you need is the lanscape. Once again you have two options, and let me just cut this short and say that I&#8217;m taking the second one. I did used to be a bit of a CAD ninja in a previous job, but I&#8217;m not a 3D modeller and I have no desire to build the landscape by hand.</p>
+
+<p>So I&#8217;m going to generate one procedurally. As to what that means exactly, if you don&#8217;t already know&#8230; well I&#8217;m hoping that will become obvious as I go along.</p>
+
+<h2>Traditional Fractal Landscape Generation</h2>
+
+<p>There are several ways of generating a landscape. A pretty good one (and one I&#8217;m quite familiar with, thanks to a certain first year computer science assignment) is the fractal method. It goes something like this:<br/>
+Start off with a square grid of floating point numbers, the length of whose sides are a power of two plus one. I&#8217;m going to use a 5*5 (2*2 + 1) grid for the purposes of this explanation.</p>
+
+<p>Set the four corners to have the value 0.5 (the centre point of the range I&#8217;ll be using), thus:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/fractallandscape1.png"></p>
+
+<p>Now, we&#8217;re going to generate the landscape by repeatedly subdividing this and introducing fractal randomness (random fractility?) using the <a href="http://en.wikipedia.org/wiki/Diamond-square_algorithm">diamond square algorithm</a>. First the diamond step, which in this iteration will the set the value of the central cell based on the value of the four corners:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/fractallandscape2.png"></p>
+
+<p>To do this we take the average of the four corners (which I calculate to be 0.5 in this case, because I did maths at school) and adding a small randomly generated offset, which has been scaled according to the size of the subdivision we&#8217;re making. How exactly you do this varies between implementations, but a good simple way of doing it is use a random number in the range [-0.25,0.25] at this stage and half this at each subsequent iteration. So, on this occasion let&#8217;s say I roll the dice and come up with 0.23. This now leaves us with:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/fractallandscape3.png"></p>
+
+<p>Next, we have the square step, will set the cells in the centre of each of the sides. Once again we take the averages of other cells as starting point, this time in the following pattern:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/fractallandscape4.png"></p>
+
+<p>Now we generate more random numbers in the same range and use them to offset the average values, giving us this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/fractallandscape5.png"></p>
+
+<p>That completes an iteration of the algorithm. Next we half the size of the range to [-0.125,0.125] and start again with the diamond step:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/fractallandscape6.png"></p>
+
+<p>&#8230;and so on until you&#8217;ve filled your grid. I think you get the general idea. I&#8217;ve left out one potentially important factor here and that&#8217;s &#8220;roughness,&#8221; which is an extra control you can use to adjust the appearance of the landscape. I&#8217;m going to come back to that in a later post, because (hopefully) I have a little more that I want to say about it. I need to play with it some more first, though.</p>
+
+<p>Once you&#8217;ve finished here you can do a couple of different things if you want to actually look at your creation. The simplest is to pick a threshold value and call this &#8220;sea level,&#8221; then draw the grid as an image with pixels set to blue below the threshold and green above it:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/image.png"></p>
+
+<p>This was obviously generated with a slightly larger grid (513*513), but as you can see it creates quite reasonable coastlines. You can do slightly fancier things with it, such as more in depth colouring schemes and 3D display. For 3D, the simplest method is to use each cell as a vertex in your 3D space and tessellate the grid into triangles like this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/fractallandscape7.png"></p>
+
+<p>You can then do a couple of fancy things to remove the triangles you don&#8217;t need, either based on the amount of detail they actually add or their distance from the user (level of detail).</p>
+
+<p>This system works quite well, but tends to produce quite regular landscapes, without of the variation we&#8217;re used to or the things generated by rivers, differing geology, coastal erosion, glaciation and other forces which affect the landscape of the real world. Additionally, because the data is stored in a height map, there are some things it&#8217;s just not capable of displaying, such as shear cliffs, overhangs, and cave systems. The grid structure is also very efficient, but quite inflexible.</p>
+
+<h2>How I&#8217;m Doing it</h2>
+
+<p>Needless to say that&#8217;s not exactly how <em>I&#8217;m</em> doing it. Of course there&#8217;s generally very little sense in reinventing the wheel, but sometimes it&#8217;s fun to try.</p>
+
+<p>I&#8217;m not doing too much differently with the actual algorithm, but I am using a slightly different data representation. Rather than a grid, I&#8217;m using discrete nodes. So you start off with something like this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/fractallandscape81.png"></p>
+
+<p>Which then is transformed like this to generate the actual landscape:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/fractallandscape9.png"></p>
+
+<p>What you you can&#8217;t see from the diagrams is that I&#8217;m using fractions to address the individual nodes. So, for instance, the node in the centre is (1/2,1/2) and the node on the centre right is (1/1, 1/2). This means I don&#8217;t need to worry about how many nodes I have in the landscape, and the adress of each never has to change. The next set of nodes will be addressed using fractions with 4 as the denominator, then 8, 16 and so on. Before looking up a node you first reduce its coordinates down to a lowest common denominator (which is a factor of 2) and then pull it out of the correct layer. I&#8217;m currently using maps as sparse arrays to store the data in a structure which looks like this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">Map</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">,</span> <span class="n">Map</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">,</span> <span class="n">Map</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">,</span> <span class="n">LandscapeNode</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you&#8217;re thinking that this isn&#8217;t possible in Java, you&#8217;re half right. I&#8217;m actually using one of <a href="http://trove4j.sourceforge.net/javadocs/gnu/trove/TIntObjectHashMap.html">these</a>. The first int addresses the denominator, then the east numerator, then the north numerator. I&#8217;ve looked at another couple of strategies for hashing the three ints together to locate a unique node but this one seems to work the best in terms of speed and memory usage. I might look at other options later, but nor yet.</p>
+
+<p>This is a much more flexible representation, which removes some of the limitations of the grid. I can keep adding more detail to my heart&#8217;s content (up to a point) and I don&#8217;t have do it in a regular fashion. i.e. the native level of detail doesn&#8217;t have to be the same across the entire map. More remote areas can have less detail, for instance. By the same token, I can keep the entire &#8220;landscape&#8221; in memory, but flexibly pull individual nodes in or out depending on where the user actually is in the world, saving memory. This also potentially gives me the following:</p>
+
+<ol>
+<li>The possibility to decouple the geometry of the landscape from the topography of the representation;</li>
+<li>A &#8220;native&#8221; way of implementing different levels of detail;</li>
+<li>A natural tessellation strategy based on connecting a node to its parents (maybe you spotted it);</li>
+<li>Enough data to allow the landscape to be modified to produce more dramatic features across different levels of detail;</li>
+<li>The processes for the above should be very parallelisable.</li>
+</ol>
+
+
+<p>There are still a couple of things I&#8217;m working on (3D display for a start), as I&#8217;ve been obsessing over how to organise the data structures I&#8217;m using. Hopefully I&#8217;ll be back tomorrow with some 3D views.</p>
+
+<p>If you&#8217;re interested in the code you can find it <a href="http://bitbucket.org/harveynick/clockworkaphidjava/overview">here</a>. If what you found at the end of that link didn&#8217;t make any sense to you, then you&#8217;re probably not a programmer (or you&#8217;re still learning). If you still want a look drop me a comment and I&#8217;ll see what I can do.</p>
+
+<p>Disclaimer: As far as I&#8217;m aware I didn&#8217;t steel this from anybody, but I don&#8217;t claim it&#8217;s completely original, either.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Epic Googleyep and Other Stories]]></title>
+    <link href="http://www.harveynick.com/blog/2010/10/17/epic-googleyep-and-other-stories/"/>
+    <updated>2010-10-17T14:52:53+01:00</updated>
+    <id>http://www.harveynick.com/blog/2010/10/17/epic-googleyep-and-other-stories</id>
+    <content type="html"><![CDATA[<p>I&#8217;m currently doing some tests on a couple of different data structure implementations for Clockwork Aphid, so while they&#8217;re running I thought I&#8217;d a bit of time to write a music related post, since I haven&#8217;t done one in a while. So, contained within are three music related mini posts for your viewing pleasure.</p>
+
+<!-- more -->
+
+
+<h2>Epic Googleyep</h2>
+
+<p>As you may or may not be aware, I spent a reasonable percentage of this year (about ten weeks) working in Australia. Some of that time was spent working offshore in <a href="http://maps.google.com.au/?ie=UTF8&amp;ll=-20.430874,116.702271&amp;spn=1.429723,1.814117&amp;z=10">this general area</a>. I spent the latter offshore time on a boat called the Unlimited (fun fact: the company which owns this boat has two others: The No Limits&#8230; and The Limitless), a 24m catamaran, whitch for much of my trip had its full crew complement of twelve. For those of you counting at home, that&#8217;s two metres each. It was&#8230; a little cramped. It did have a reasonable common area, however, with a great big flat screen TV. Outside the harbor, TV reception was less than good, and it was fairly common that the TV would be left on in an area of good reception, only to have us drift (or actively move) into a much crappier area.</p>
+
+<p>Such was it that I wondered into the mess when a certain music video was trying to come through from the other side. At least 50% of it was static, but what I did hear I quite liked. Much of what I actually saw consisted of a slightly emo looking guy walking through a forest towards the camera, backed by two strikingly attractive and very similar looking ladies (at the time I thought it might have been the same girl twice) in evening dresses, one black and one white. I wanted to know more, but the signal gave out completely before the song finished.</p>
+
+<p>I did not have a lot to go on, so the next time the internet was functional, I fired up Google and brazenly typed in &#8220;music video black dress white dress,&#8221; and&#8230; win! I love it when that happens. Here&#8217;s the video:</p>
+
+<iframe src="http://www.youtube.com/embed/OOfBwSYvIic" width="" height="" frameborder="0" allowfullscreen></iframe>
+
+
+<p><span class='pullquote-right' data-pullquote='Perhaps this is down to the alluring power of a well cut evening dress and a knowing smile, but&#8230; Damn'>
+It&#8217;s a little bit emo, but I like it. Good tune. Unless you&#8217;re reading this in Australia you&#8217;ve probably never heard of Micheal Paynter, but likely have heard of the The Veronicas, the two ladies singing in the background. Now&#8230; Perhaps this is down to the alluring power of a well cut evening dress and a knowing smile, but&#8230; Damn. I&#8217;ve generally thought of them as &#8220;pretty&#8221; (and sometimes &#8220;annoying,&#8221; musically) but they really are stunning in this video.
+</span></p>
+
+<h2>You Are Speaking My Language!</h2>
+
+<p>The title of my previous series of programming language related posts was, in case you hadn&#8217;t guessed, a reference to this:</p>
+
+<iframe src="http://www.youtube.com/embed/srIKcXWN6F0" width="" height="" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Now, I love Juliette &amp; The Licks, but this really isn&#8217;t their best song. In actual fact I find this entire album extremely disappointing (with the exception of &#8220;I never got to tell you what I wanted to&#8221;), where as the other two albums don&#8217;t really have a bad song on them. The song title fit the posts quite well, however, so I didn&#8217;t feel I could leave it out. I spent some time on YouTube trying to work out which other song of theirs I should post as well, and ended up coming to the conclusion that this was a safe bet:</p>
+
+<iframe src="http://www.youtube.com/embed/2WDcCT3YeM" width="" height="" frameborder="0" allowfullscreen></iframe>
+
+
+<p></p>
+
+<p>It&#8217;s a good song and I love the video. I&#8217;ve also seen plenty of girls walking through Edinburgh at 11am on a Saturday who looked like they might break into this at any moment.</p>
+
+<p>As an additional note here: Juliette Lewis herself confuses the hell out of me. I don&#8217;t find her attractive no matter how hard I try, but I do find her extremely sexy no matter how hard I try not to.</p>
+
+<h2>Gaga For Gaga</h2>
+
+<p>It&#8217;s another Lady Gaga cover and I love it!</p>
+
+<iframe src="http://www.youtube.com/embed/2ga_pr0vuHA" width="" height="" frameborder="0" allowfullscreen></iframe>
+
+
+<p>This is clearly still Lady Gaga&#8217;s &#8220;Bad Romance,&#8221; but with a rock opera feel on top, which I feel works very, very well. I can imagine this version of the song sounding amazing sung by Freddie Mercury, but then I suspect that might be the case for most Lady Gaga songs (not coincidentally).</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Language Post Mortem and Some Other Notes]]></title>
@@ -484,133 +783,6 @@ R.E.D. (<a href="http://trailers.apple.com/trailers/summit/red/">trailer</a>) - 
 <p>You&#8217;re probably not interested in this. I&#8217;m mostly just thinking out loud. But if you have any thoughts, I&#8217;d love to hear them.</p>
 
 <p>* Why do I have all three of these? I&#8217;m not entirely sure yet, other than because they&#8217;re there.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Trailer Trash]]></title>
-    <link href="http://www.harveynick.com/blog/2010/03/15/trailer-trash/"/>
-    <updated>2010-03-15T22:30:08+00:00</updated>
-    <id>http://www.harveynick.com/blog/2010/03/15/trailer-trash</id>
-    <content type="html"><![CDATA[<p>Every once in a while, a film trailer comes along that I can’t seem to stop myself watching repeatedly. I like trailers in general, which is definitely part of the problem, but some of them really grab hold of me. Two good examples of this are the final theatrical trailer for the recent <a href="http://trailers.apple.com/trailers/paramount/startrek/">Star Trek reboot</a>, and one of the trailers for <a href="http://www.youtube.com/watch?v=c9tnZRs4tNE">The Two Towers</a> (the one with the orchestral version of he awesome theme song from Requiem for a Dream, and words cannot express how disappointed I was when that music wasn’t in the actual film).</p>
-
-<!-- more -->
-
-
-<p>You might be noticing a dramatic music related theme here, but visuals and dialogue are important too. It all has to click together. You’ve heard it said, I’m sure, that part (or even half) of the the pleasure of a present is in the unwrapping. Same thing, right here. Which brings me back to the latest object of desire I’m metaphorically tugging at the ribbon of. It’s the shiny new trailer for <a href="http://trailers.apple.com/trailers/disney/tronlegacy/">Tron Legacy</a>, long awaited sequel to the 1982 cyber cult classic. I have something of a weakness for stories which which turn computer programmers* into heroes anyway (I’m sure you couldn’t possibly imagine why), but everything in this trailer works for me. There <em>was</em> an initial warning sign, to wit: one of the principle protagonists would appear to be the son of the original hero.</p>
-
-<p>Shit. Where have I seen that recently?</p>
-
-<p>But wait&#8230; Maybe he’s <em>not</em> a complete tool of a character, because I absolutely love the delivery of the one line line he really gets in the trailer. Bruce Boxleitner too, returning from the original, but then I already knew he could handle a bit of <a href="http://en.wikipedia.org/wiki/John_Sheridan_(Babylon_5)">gravitas</a>. After a bit of initial set up, the trailer is basically all about the visuals, and what visuals they are. For a start, one of them is a visual of the gorgeous <a href="http://en.wikipedia.org/wiki/Olivia_Wilde">Olivia Wilde</a> (13 from House). It all looks very cool and it all makes me very curious indeed. For some reason, I especially love the way the music distorts as the main title is revealed. In case you hadn’t guessed: I’m quiet excited about this one. Let me know what <em>you</em> think.</p>
-
-<p>* Apparently, “software engineer” is the more politically correct term, but screw you, I know what I am. :)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[...And Another Couple Of Things]]></title>
-    <link href="http://www.harveynick.com/blog/2010/02/07/and-another-couple-of-things/"/>
-    <updated>2010-02-07T22:16:05+00:00</updated>
-    <id>http://www.harveynick.com/blog/2010/02/07/and-another-couple-of-things</id>
-    <content type="html"><![CDATA[<p>Something I forgot to mention in my last post was my trying to look at the iPad from a developer&#8217;s perspective. I talked before about a programming side project that I&#8217;ve had bouncing around in my head for a while. Previously, I mentioned that I wasn&#8217;t sure if it was a website, an application, or some combination of the two. Then again I could see some use cases in which a laptop might be a bit cumbersome and a smart phone too small and underpowered. In which case neither the application of the website is entirely satisfactory. I&#8217;m actually now starting to think that the iPad could be the exact right platform for it. Perhaps I should actually start working my way through the Objective-C text book I&#8217;ve had sitting on my shelf for over a year now&#8230;</p>
-
-<!-- more -->
-
-
-<p>I have another couple of side projects, some programmery and some writery that have me giving the thing a more than slightly critical glance.</p>
-
-<p>That&#8217;s not the point of this post, though. The fact of the matter is that, although it might sometimes seem that way, Apple does not have a monopoly on multi touch user interfaces. If you want to see a particularly impressive example that neither you nor I (nor the governments of some small countries, I suspect) can afford, look no further than the <a href="http://www.perceptivepixel.com/index.html">Perceptive Pixel</a> website. Another cool example showing someone playing with a multi-touch implementation of the Warcraft 3 real time strategy game can be found below:</p>
-
-<iframe src="http://www.youtube.com/embed/KtKkOhMqVhY" width="" height="" frameborder="0" allowfullscreen></iframe>
-
-
-<p>That&#8217;s the sort of thing Apple <em>should</em> have shown at their event, in my opinion. There&#8217;s also another tablet doing the rounds called the &#8220;Joojoo,&#8221; which is apparently African for &#8220;magic.&#8221; You should be impressed already. I bet you didn&#8217;t think &#8220;African&#8221; was a language, did ya? That was news to me, too. This tablet looks one hell of a lot like the iPad, but is has a 12.1&#8221; multitouch screen and features a flash supporting web browser. It costs about the same as the starting price of the iPad, also. Sounds like a better deal, you say? Unfortunately I just listed its entire feature list. Web browsing is all it does and it doesn&#8217;t seem to have any capability for offline use. It also has a seriously dodgy past and it&#8217;s makers are being sued as a result. What? You want to see it? Oh. Here:</p>
-
-<p><img class="center" src="http://realvision.ae/blog/wp-content/uploads/2009/12/joojoo.jpg" title="&#34;The JooJoo&#34;" alt="&#34;The JooJoo&#34;"></p>
-
-<p>I think this device is kinda cool, but way too limited. Like the iPad, iPhone, and iPod Touch it features an onscreen soft keyboard&#8230; but now I very good one from what I&#8217;ve seen. There&#8217;s a <a href="http://www.engadget.com/2009/12/08/joojoo-tablet-hands-on-video/">video</a> of the company&#8217;s CEO demonstrating the device and having a bit of trouble working the keyboard. Not a good sign. The hardware looks pretty cool though, the sort of thing a person might be tempted to buy with the intention of hacking. Not me though. I don&#8217;t like having to act as my own tech support when it comes to the hardware and operating system.</p>
-
-<p>Perhaps I&#8217;m done talking about the iPad and it&#8217;s ilk, and I&#8217;ll soon find something else to prattle on about&#8230; or perhaps I&#8217;ll be back soon with a bunch of use cases the think will have to fulfil in order for me to consider buying one, perhaps in the context of these side project I seem to refuse to go into any detail about. Alright, here&#8217;s a clue which might have meaning to about one person reading this: Bad Penny.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[That iPad thing]]></title>
-    <link href="http://www.harveynick.com/blog/2010/02/03/that-ipad-thing/"/>
-    <updated>2010-02-03T23:24:46+00:00</updated>
-    <id>http://www.harveynick.com/blog/2010/02/03/that-ipad-thing</id>
-    <content type="html"><![CDATA[<p>Originally, right after I got around the watching the keynote presentation which launched the iPad, I was going to write a blog post about how disappointed I was. I thought they&#8217;d screwed the pooch and I, for one, was seriously underwhelmed.</p>
-
-<p>Needless to say, I didn&#8217;t quite get around to writing it. Since then I&#8217;ve read all the criticism by the naysayers and Apple haters, all the gushing praise from the fanatics and all the stuff in between from the more sensible people*. Now, after some reflection, I find myself somewhere in the middle. I flip back and forwards between thoughts of &#8220;that could be awesome,&#8221; and &#8220;that&#8217;s far too much of a compromise.&#8221;</p>
-
-<!-- more -->
-
-
-<p>Ironically, the thing that&#8217;s bringing me around to the idea is the very thing which people seem to be complaining about the most. Specifically: &#8220;It&#8217;s just an iPod Touch with a bigger screen,&#8221; which, in fairness, is exactly what I was thinking. It&#8217;s not a bad thing, though. The iPod Touch (and iPhone) have a <em>spectacular</em> interface. The touch controls work well enough and the device is responsive enough to make you feel is though you&#8217;re interacting with your music or the internet or your emails in a very direct manor. As a matter of fact, the main limitation of the interface is the small size of the screen. Ah hah&#8230;</p>
-
-<p>I think what actually happened is that Apple made a mess of the keynote. Yes, the first person shooter was very pretty, but not really ideal for the interface. A real time strategy game, something like command and conquer, could really sing on this thing. The iWork apps look pretty cool, but a multi-touch version of iMovie or GarageBand could have been seriously impressive. They really didn&#8217;t make me believe that I could comfortably read a book on this thing&#8230; but if they&#8217;d announced text books for the iBooks store and placed an iPad next to the pile of books you usually need each year&#8230; well, then we&#8217;d have been talking. If they&#8217;d have shown how you could search the contents of a text book, spot light style, I might have been sold. Instead they left me to have to think of these things by myself.</p>
-
-<p>I still not 100% certain I know what it&#8217;s for, though. Does it replace my laptop? Does it go alongside my laptop? Would I use on the sofa? Probably. On a short journey? Can&#8217;t see me getting it out on the bus. A long journey? Yes, I think so. Sitting in a coffee shop? Maybe. It would take up less room on the table. Sitting in the park? A tad more risky. But still, I don&#8217;t know. I&#8217;m disinclined to spend £500+ on something which is just a toy. I think I can live without multi-tasking, but there needs to be a better system to allows different apps to work together. What use are great OmniGraffle and Pages apps if I can&#8217;t insert a diagram from the former into the latter?</p>
-
-<p>Bottom line: I&#8217;ll go and have a play with one after they come out. Then we&#8217;ll see.</p>
-
-<p>PS For my parents, though, the damn thing is almost perfect.</p>
-
-<p>* Well&#8230; I say &#8220;all&#8221;&#8230; what I actually mean is &#8220;some.&#8221;</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Goldilocks Dilema]]></title>
-    <link href="http://www.harveynick.com/blog/2009/12/09/the-goldilocks-dilema/"/>
-    <updated>2009-12-09T11:43:05+00:00</updated>
-    <id>http://www.harveynick.com/blog/2009/12/09/the-goldilocks-dilema</id>
-    <content type="html"><![CDATA[<p>Daddy Bear&#8217;s porridge is too expensive.</p>
-
-<p>Baby Bear&#8217;s porridge is underpowered.</p>
-
-<p>Mummy Bear&#8217;s porridge is just right&#8230; but has a monitor in it.</p>
-
-<p>Hhhmmm&#8230; perhaps I should explain&#8230;</p>
-
-<p>It&#8217;s reached that time. My computer is starting to show it&#8217;s age. In small ways, mostly. It stalls occasionally, but with gradually increasing frequency. Every now and then it&#8217;s slow down noticeably, and the fans are spending more and more time going full blast. If it actually died on me that would a <em>disaster </em>right now, but I&#8217;m not too worried about that just yet. Even so, I think it&#8217;s time that it had a worthy heir.</p>
-
-<!-- more -->
-
-
-<p>At present I have a first generation black MacBook, but I think I&#8217;m going to go for a desktop for my next system. I like working at a desk, and with a desktop I&#8217;ll get more bang (and screen) for my buck. I&#8217;ll keeps the laptop around for taking to coffee shops and trips (and the times when I really feel I need to work on the sofa), and synchronise my data between machines using the <em>fantastic</em> <a href="https://www.dropbox.com/referrals/NTExMTkzNDQ5/">DropBox</a>. While I&#8217;m on the subject, I can&#8217;t recommend DropBox enough. It seamlessly synchronises your files to and from the web, and works on all operating systems. Even Windows. Also: it&#8217;s free for the first 2GB. If you&#8217;re interesting in DropBox, please go via the link I posted above, we&#8217;ll both get a bonus 250MB of space!</p>
-
-<p>When, or indeed if, my laptop dies, assuming I&#8217;ve had a pay rise and/or won the lottery, I might replace it with something a bit sleeker. By which I mean a MacBook Air. You might be saying: &#8220;Wait a minute, don&#8217;t you have one of the those funky and cheap little netbook things?&#8221; and the answer would be yes, but I don&#8217;t really use it. The simple fact is: you get what you pay for. It&#8217;s way underpowered and the keyboard is a serious pain to use. Don&#8217;t even get me started on the trackpad. I do have a use for it, though, and I might come back to that at a later date.</p>
-
-<p>But what desktop to get? Which brings us about back to where we came in. The question is: which desktop should I get. I&#8217;m getting a Mac, so my options are:</p>
-
-<p>Mac Pro. Ludicrously powerful, and very expensive. Almost certainly more than I need, and a bigger physical footprint than I&#8217;d prefer. Also uses a LOT of power.</p>
-
-<p>iMac. Gorgeous. Just about the exact specification I&#8217;m looking for. Not exactly cheap, but within the budget. Uses a reasonable amount of power. Is about as eco friendly as a machine with this sort of spec can be. Has an absolutely gorgeous built in 27&#8221; (or 21.5&#8221;, but I would probably go for the 27&#8221;) monitor. That last point is both a pro and a con, while it is spectacular monitor which would probably cost about the same amount as a stand alone unit as the iMac itself costs, I&#8217;d ideally like to be able to use the same monitor for my XBox 360. That&#8217;s how I&#8217;ll be playing games, you see. If I got the iMac I&#8217;d either have to put my old, smaller monitor next to it for the XBox, or move the XBox back into the lounge where I tended not to use it, as I felt like I was imposing and I like to sit quite close to the screen when playing.</p>
-
-<p>Mac Mini. Slightly underpowered. You can get decent processor in it, but the graphics card is quite low spec and I have plans to do some quite graphics-ey things. It is quite cheap, though, and I could buy an decent external monitor to go with it (XBox 360 ahoy!)  and still spend less than I would on an iMac. It&#8217;s also very low power. The most eco friendly desktop on the market, in fact. Going flat out it would still be using less power than the iMac would idle (even taking the monitor into account) and uses only 14 Watts when idle. 14!</p>
-
-<p>So those are my options. You might now be thinking &#8220;Fool! Those are not your options! Get a PC! Then you&#8217;ll have hundreds of options! PCs are better anyway! Macs are for idiots who don&#8217;t know how to use a real computer!&#8221; and you would be a little bit right. That would solve <em>this</em> problem. It would also create about a bazilion new problems, though. Like the distinct possibility that I might throw my computer out of the window.</p>
-
-<p>Maybe you use Windows. Maybe you think it&#8217;s just fine. Maybe you find those Mac adverts really annoying (so do I, most of the time) and you&#8217;re fed up of being told that you should &#8220;get a Mac&#8221; by slightly pompous and patronising people. I&#8217;m not going to do that. If Windows works great for you, keep using it. It <em>is</em> shit though. Maybe not on the surface, but as a piece of software engineering it&#8217;s a chrome plated turd, and Microsoft spends most of the their time doing extra chrome plating. That one of the many reasons that I&#8217;ll be sticking with the Macs until something changes drastically&#8230; and I do mean <em>drastically</em>.</p>
-
-<p>In lieu of a nearby Apple Store I think I might go to John Lewis at the weekend and stare at my options. Maybe push a couple of buttons and try and find a way to stress out the graphics chip on the mini. Anyone got any opinions?</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Just Can't Recommend Highly Enough]]></title>
-    <link href="http://www.harveynick.com/blog/2009/09/20/just-cant-recommend-highly-enough/"/>
-    <updated>2009-09-20T18:25:45+01:00</updated>
-    <id>http://www.harveynick.com/blog/2009/09/20/just-cant-recommend-highly-enough</id>
-    <content type="html"><![CDATA[<p>Today I finished &#8220;The Girl Who Played With Fire&#8221;, translated by Reg Keeland from the swedish book of the same name by Stieg Larsson. It&#8217;s the sequel to &#8216;The Girl With the Dragon Tattoo&#8221; (which is called &#8220;Men Who Hate Women&#8221; in the original swedish), and I really can&#8217;t recommend the pair of them highly enough (as you might have guessed from the title of this blog post).</p>
-
-<!-- more -->
-
-
-<p>I picked the first book up as the combination of the titular character being described as &#8220;an expert computer hacker&#8221; and the synopsis on the back cover put me in mind of Neil Stephenson&#8217;s &#8220;Cryptonomicon&#8221;, not only one of my favourite books but also an outright work of genius, in my opinion. I would describe &#8221;Cryptonomicon&#8221; as recommended reading if you&#8217;re the sort of person who breaths oxygen and walks upright, if you work with computers I&#8217;d say it verges on being <em>required</em> reading. Since Stephenson lost the plot more recently (in my opinion, that is; I didn&#8217;t make it more than half way through &#8220;Quicksilver&#8221; before giving up in pained frustration) there has been a rather large cyber-fiction based hole in my world. &#8220;&#8230;Dragon Tattoo&#8221; seems as though it might be poised to fill it.</p>
-
-<p>In fact it did not. It&#8217;s a different beast all together. A slow burning and wonderful one, written (and translated) with great skill and care. Both books are very powerful reads, laced with a hatred of misogyny and criticism of a system which doesn&#8217;t do nearly enough to prevent it. It&#8217;s also a ripping great yarn of a mystery, full of strong male <em>and</em> female characters. Nominally, the books are the first two parts of a trilogy. In fact Larsson planned ten books and left an unfinished fourth manuscript together with outlines for books five and six when he died. I&#8217;m waiting with bated breath for the release of the third book. I just hope it ties things up reasonably well and so won&#8217;t leave me too curious about the contents of book I&#8217;ll never be able to read.</p>
 ]]></content>
   </entry>
   
