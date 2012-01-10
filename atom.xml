@@ -4,7 +4,7 @@
   <title><![CDATA[HarveyNick]]></title>
   <link href="http://www.harveynick.com/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-01-06T00:02:05+00:00</updated>
+  <updated>2012-01-10T23:38:49+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -12,6 +12,274 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Day Job Part 2: Let's get SAUC-E!]]></title>
+    <link href="http://www.harveynick.com/blog/2011/01/22/the-day-job-part-2-lets-get-sauc-e/"/>
+    <updated>2011-01-22T17:08:34+00:00</updated>
+    <id>http://www.harveynick.com/blog/2011/01/22/the-day-job-part-2-lets-get-sauc-e</id>
+    <content type="html"><![CDATA[<p>If you know when I started my PhD you&#8217;ll be aware that it took quite some time for me to finish it. There are various reasons for this. One is that I spent quite a bit of time working and getting industrial experience during it. The other is that it took me something in the region of 18 months to figure out what it was I was actually going to do. This happens quite a bit at the Ocean Systems Laboratory, you don&#8217;t actually start working on a particular project or problem, you just sort of find something which seems to need doing. It also didn&#8217;t help that it talk me 9 months to get any feedback on the first draft of my thesis. One of the major things which took up my time, though, was the Student Autonomous Underwater Challenge - Europe, or SAUC-E for short.</p>
+
+<p>This post is going to focus on my own part in the proceedings, but you should assume that everyone else on the teams worked at least as hard as I did, and their contribution was at least as important as my own. This is <em>my</em> blog, though, so I&#8217;ll mainly be talking about me.</p>
+
+<!-- more -->
+
+
+<p>Basically, teams of students build an underwater robot which then has to complete an obstacle course. Let me stress: it is not in any way like Robot Wars, so you can abandon that notion right now. The crucial word here is autonomous, as in you have no contact with the vehicle after you push go; it all has to run on autopilot. The first competition was just ramping up when I joined the OSL and I offered to go along to the site and help out. The fact that it was held at Pinewood Studios (which is a movie studio, not a furniture store) was no small bonus (I&#8217;ve wandered about on the sets for Casino Royale and Stardust), but the competition itself was also very cool indeed. I leapt at the chance to be part of the team for the second year of the competition, and then stared in disbelief as a technical issue nuked our chances right before the final. Up until that point we&#8217;d been leading the field by quite a margin, so finishing second to last was no fun at all.</p>
+
+<p>The next year myself and one of my colleagues decided this wasn&#8217;t going to happen again, so we damn near killed ourselves working sixteen hour days for a couple of months, and then we took the robot to France for SAUC-E 2008. Each year there are a number of supplementary tasks which must be completed. One is to write a paper (or &#8220;report&#8221; if you&#8217;re not down with the academic lingo) about your entry, another is to produce a video diary. Our video diary for the 2008 competition does a pretty good job of showing our frustration at the previous year&#8217;s result and the amount of preparation we put into it this time round:</p>
+
+<iframe src="http://www.youtube.com/embed/Mkv2YXqYfhQ" width="" height="" frameborder="0" allowfullscreen></iframe>
+
+
+<p></p>
+
+<p>It was a hell of a lot of work, but we got there and we damn well kicked everyones&#8217; asses. In the final we cleared the entire course on our first try. Everyone else used their entire twenty minutes of time. We used about seven. It was a good feeling. This isn&#8217;t a hugely fascinating video to watch and, but here&#8217;s the official video of out final run:</p>
+
+<iframe src="http://www.youtube.com/embed/yDrofT4BVm8" width="" height="" frameborder="0" allowfullscreen></iframe>
+
+
+<p>What you don&#8217;t say in that video is me standing on a table with a microphone in my hand narrating what I think the robot is doing, then the entire team practically leaping into the air when it completed the course. Still, here&#8217;s a picture of us (minus one team member who had to leave a day early) from an article in an industry journal:</p>
+
+<p><a href="http://www.hydro-international.com/news/id2669-HeriotWatt_University_Triumph.html"><img class="center" src="http://www.hydro-international.com/wosimages/661_368.jpg"></a></p>
+
+<p>The next year we reworked a lot of the electronics and moved to a much more hydrodynamic external design. This was a good thing, because previously Nessie had been slow, and now the competition area was a lot bigger. The 2009 video diary sums it up:</p>
+
+<iframe src="http://www.youtube.com/embed/CqgOsPazxvU" width="" height="" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Most of the tasks were adaptations of those from previous years, but a fairly intense new one was also introduce: dock inside an elongated box placed on the floor of the pool. None of the other teams even attempted this last task, but I&#8217;d arrived a little late to the on site practice time thanks to other commitments. Everyone had their jobs and things were running pretty well. My responsibility was the mission controller (the captain, if you want to use a ship&#8217;s crew as a metaphor) and we weren&#8217;t quite ready to start doing any serious tests with this yet. So I started working on a strategy to do the docking. There was plenty of grunt work for me to help out with; I did some code review and put together some mission plans, but at this point I was essentially surplus to requirements. So I messed about with the docking thing.</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/01/img_0129.jpg"></p>
+
+<p>First of all, I built a detector which could find the box from above. I&#8217;m not really a computer vision guy, but after a lot of experimentation and playing I managed to put something quite stable together. There was no space in the practice pool to actually attempt the docking itself, though. I put a behaviour together which I was pretty sure would get the vehicle into the box, but I had no reliable way of testing it. I put it to one side and got on with the serious business of the competition itself. This was held at a different location, so needless to say every algorithm needed to be re-tuned to the new environment.</p>
+
+<p>One of the other teams did very well in the qualifying stages and went into the final in second place by a very narrow margin. We new what we could do, and we know what they could do. They had a much better sonar, but no cameras, so some tasks were just plain out of their reach. Even so, it was going to be close. The day of the final we got a bit of extra practice time in the morning. At this point the docking had received about ten minutes worth of practice time, and it&#8217;s performance had not been what you would call &#8220;successful,&#8221; exactly. I was fairly sure the last night&#8217;s late night coding session had found all the bugs, though. &#8220;Fine,&#8221; said the team. Give it a shot, but we don&#8217;t want to waste too much of the practice time on it.</p>
+
+<p>It worked first time.</p>
+
+<p>&#8220;Did anyone see that?&#8221; There was a judge at other side of the pool, but no one was looking at us. We wouldn&#8217;t get any points, but still, we wanted the judges to SEE it. Someone from one of the other teams saw some of it though, it seems, because they took this video:</p>
+
+<iframe src="http://www.youtube.com/embed/Gp0fXXHX-So" width="" height="" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Out supervisor came running over. &#8220;Was that autonomous?!&#8221; He demanded. Apparently one of the other judges was standing at the monitors and there was a camera inside the box. There was a little bit of a buzz.</p>
+
+<p>We tried it again. It worked again. This time someone had actually put a tape in the VCR, which is nice, but I don&#8217;t have that video.</p>
+
+<p>The organisers were smiling, but not in a 100% friendly way. No one was actually supposed to pull off the docking this time around. But we had. There was no time to add this behaviour into the plan for our main run in the final, but this year there was a new rule: you could demonstrate the tasks individually to pick up extra points. The final, as it turned out, was not quite as close as we were worried it might be, and Team Nessie picked up another first prize.</p>
+
+<p><a href="http://www.hydro-international.com/news/id3320-SAUCE_Victory_for_Nessie_IV.html"><img class="center" src="http://www.hydro-international.com/wosimages/1155_299.jpg"></a></p>
+
+<p>As well as the industry journal from which the above picture has been taken, the BBC paid some attention to the competition this time around, as well (which you can find <a href="http://news.bbc.co.uk/1/hi/sci/tech/8143541.stm">here</a>). Yep, that&#8217;s me at the end of the video. They interviewed me for the article they wrote on the competition and used a lot of my quotes. I learned an important lesson from this: assume anything you say to a journalist will be taken literally, and don&#8217;t assume that they&#8217;ll check their facts, even if you specifically tell them to because you&#8217;re not certain of your numbers. For example, the figure of £10,000 mentioned in the article is actually closer to £100,000.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Spins a Webb, any size...]]></title>
+    <link href="http://www.harveynick.com/blog/2011/01/21/spins-a-webb-any-size/"/>
+    <updated>2011-01-21T09:15:15+00:00</updated>
+    <id>http://www.harveynick.com/blog/2011/01/21/spins-a-webb-any-size</id>
+    <content type="html"><![CDATA[<p>Okay, so there has been a shameful lack of posts here in recent weeks, and for that I apologise. I&#8217;ve had some stuff going on in both my personal and professional lives, and so this blog has really been put on the back burner. I swear to you that there is more coming, though, and soon. I have a fairly large and media laden post which is mostly written, but not yet bloggified, for instance. In the mean time, how about a small diversion?</p>
+
+<p>Even if you know me in real life, you might not be aware of this small fact, for which I feel no shame whatsoever:</p>
+
+<blockquote><p>Spider-man is my favourite fictional character.</p></blockquote>
+
+<!-- more -->
+
+
+<p>There are various reasons for this. I love the iconography, I love the visuals, I love the character and the supporting characters. Most of all, though: I love the story, and if I have a couple of drinks in me I may wax lyrical about this at length (that&#8217;s starting to make sense now, isn&#8217;t it?). The previous set of films got some things right, but an awful lot wrong. Casting, for instance. I have hope for the currently in production reboot though, and just about everything I read about it or see raises this hope a little higher. Today, for instance, I saw this and it made me very happy indeed:</p>
+
+<p><img class="center" src="http://s3.amazonaws.com/coolproduction/ckeditor_assets/pictures/382/original/spideygarbright.jpg?1295445386"></p>
+
+<p>It&#8217;s been enhanced in software, which is why the background looks so weird (you can find the original <a href="http://www.aintitcool.com/node/48136">here</a>), but it just looks so <em>right</em>. That&#8217;s a picture of Peter Parker in the Spidey suit, likely having just had his ass handed to him. He&#8217;s not stupidly muscled, because Spider-Man is supposed to be wiry, and furthermore: he&#8217;s played by someone who acts well, looks the part and is actually capable of cracking a joke. What joy. Insert smiley face here.</p>
+
+<p>While we&#8217;re on the subject, the <a href="http://www.aintitcool.com/node/48139">recent casting</a> for the next Batman film makes me quite happy, as well.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Elephant in the Room]]></title>
+    <link href="http://www.harveynick.com/blog/2010/12/07/the-elephant-in-the-room/"/>
+    <updated>2010-12-07T11:00:33+00:00</updated>
+    <id>http://www.harveynick.com/blog/2010/12/07/the-elephant-in-the-room</id>
+    <content type="html"><![CDATA[<p>Since I haven&#8217;t been able to do any actual work on my Clockwork Aphid project as of late, I suppose I may as well talk about the background behind it a little more. Those who talk about it the most are the ones doing it the least, and all that. I&#8217;ve spoken a little about virtual worlds before and focussed <a href="http://harveynick.wordpress.com/2010/10/08/wow-oh-wow/">almost entirely</a> on World of Warcraft, because it&#8217;s a the big one. It&#8217;s not the only MMORPG, and it definitely wasn&#8217;t the first. It is the one that I have most experience with, and statistically the one most other people are likely to have experience with, as well.</p>
+
+<p>There are several other virtual worlds I really should talk about, but the elephant in the room is another extremely large, and very notable, virtual world. One which has double relevance, because I&#8217;ve made an oblique reference to it already in <a href="http://harveynick.wordpress.com/2010/10/19/youre-speaking-my-landscape-baby/">another post</a>.</p>
+
+<!-- more -->
+
+
+<p>This is a virtual world whose currency has an exchange rate with the real world, and sale of virtual goods within this world has turned people into real life millionaires. There exist architectural practices whose <a href="http://acs.anshechung.com/index.php?cmd=portfolios">entire portfolio</a> exists &#8220;in world.&#8221; Sweden, among several other countries, has an <a href="http://www.sweden.se/eng/Home/Lifestyle/Reading/Second-Life/">embassy</a> in this virtual world, and presumably pays staff to work there. Several musicians have given live concerts there (don&#8217;t ask me how that works). This virtual world is not itself a game (as you may have gathered), but it has the infrastructure which has allowed people to build games inside it. Despite all this, though, it has a reputation of, for want of a better word, lameness.</p>
+
+<p>This is, in and of itself, slightly frustrating, because I can&#8217;t help feeling that it could be awesome. It should be awesome. It bears more than a passing resemblance to the &#8220;Metaverse&#8221; from Neal Stephenson&#8217;s fantastic <a href="http://www.amazon.co.uk/Snow-Crash-Neal-Stephenson/dp/0140232923">Snow Crash</a>, you see. I presume you&#8217;ve read Snow Crash? No? Well go and read it. Now. It&#8217;s okay, I&#8217;ll wait until you&#8217;ve finished.</p>
+
+<p>Done? Okay, good. Those are some big ideas, right? Yes, I thought she was a little young, too. Anyway. In case you just went right ahead and skipped over my suggestion there, the metaverse can be summarised, thus:</p>
+
+<blockquote><p>The <b>Metaverse</b> is our collective online shared space, created by the convergence of virtually enhanced physical reality and physically persistent virtual space, including the sum of all virtual worlds, augmented reality, and the internet.</p><footer><strong>Wikipedia</strong> <cite><a href='http://en.wikipedia.org/wiki/Metaverse'>Metaverse</a></cite></footer></blockquote>
+
+
+<p>I&#8217;m talking, of course, about Second Life. If you&#8217;re not familiar with it, it looks a bit like this:</p>
+
+<p><img class="center" src="https://wiki-land.wikispaces.com/file/view/second_life_2.jpg/142027689/second_life_2.jpg"></p>
+
+<p>One thing you might notice right away is that the graphics have a bit of a low-fi look about them, and there&#8217;s a reasonably good reason for this*. In our old friend World of Warcraft, the graphics aren&#8217;t exactly stellar either, but they&#8217;re much sharper than this. In WoW, by and large, the landscape doesn&#8217;t really change, unless (topically) a large new expansion is being released with results in sweeping changes to the world. In WoW, when this does happen, the game forces you to download the changes before it lets you start playing. This might be a lot of data (in the order of gigabytes) but it doesn&#8217;t happen often. As previously noted, the World of Warcraft is essentially static. Not so Second Life, though, as its landscape is built by its users. Just because a location contained an island with the Empire State Building rising out of it yesterday doesn&#8217;t mean that you won&#8217;t find a scale replica of the star ship Enterprise there tomorrow. Thus, the content of the game is streamed to the user as they &#8220;play,&#8221; and thus the polygon counts need to be kept reasonably low so that this can happen in a timely fashion. Even so, you might teleport to a new location, only to find that the walls appear ten seconds after the floor, and then suddenly you&#8217;re standing in the middle of a sofa which wasn&#8217;t there a second ago.</p>
+
+<p>The issue with second life, for me at least, is that it&#8217;s not as immersive as I want it to be. I don&#8217;t feel as though I&#8217;m connected to it. I feel restricted by it. There&#8217;s something cold and dead about it, much like the eyes of the characters in the Polar Express. Something is missing, and I can&#8217;t quite put my finger on what it is. Also, sometimes the walls appear ten seconds after the floor. That said, it is a fully formed virtual world with a large population and a proven record for acting as a canvas for people&#8217;s ideas. Given that the point of Clockwork Aphid is to tell stories in a virtual world (I mentioned that, right?), why not tell those stories in Second Life?</p>
+
+<p>This is an idea I&#8217;m still exploring, and I keep going backwards and forwards about it, because I&#8217;m still not sure if the juice is worth the squeeze. I&#8217;d get an awful lot of ready built scope and a huge canvas to play with, but I&#8217;m note sure if it&#8217;s the right type of canvas. This is a canvas which comes with no small number of restrictions, and I would basically be attaching my wagon to a horse which was entirely outside of my control. Mixed metaphors could be the least of my worries. That said, did I mention that people have become millionaires trading inside Second Life? Then again, Second Life doesn&#8217;t exactly represent a living breathing virtual world, so much as the occasionally grotesque spawn of its users&#8217; collective unconsciouses. Sometimes it&#8217;s not pretty, other times quite impressive results emerge.</p>
+
+<p>Your thoughts are, as always, both welcome and encouraged, below.</p>
+
+<p>* To be fair, the graphics in Second Life are actually a lot better than they used to be.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Day Job: Autonomous Underwater Vehicles]]></title>
+    <link href="http://www.harveynick.com/blog/2010/11/19/the-day-job-autonomous-underwater-vehicles/"/>
+    <updated>2010-11-19T17:33:44+00:00</updated>
+    <id>http://www.harveynick.com/blog/2010/11/19/the-day-job-autonomous-underwater-vehicles</id>
+    <content type="html"><![CDATA[<p>If you&#8217;re reading this blog and don&#8217;t actually know me in the real world then you might be wondering &#8220;who actually is this guy?&#8221; and possibly even &#8220;what is it that he actually does, aside from starting to talk about procedural landscape generation, and then falling suddenly silent?&#8221; Well, clearly I&#8217;m a person who is currently coming to the end of a PhD, and I have a full time job. But doing what, exactly?</p>
+
+<p>If in fact you do know me in the real world, you still might be wondering about that.</p>
+
+<p>For the most part, what I do is work with Autonomous Underwater Vehicles (AUVs), either at the <a href="http://osl.eps.hw.ac.uk/">Ocean Systems Laboratory</a> or <a href="http://www.seebyte.com/">SeeByte Ltd</a>, depending on which hat I&#8217;m wearing. Let&#8217;s talk a little about that now, in general terms. Or rather, let&#8217;s watch an educational video about it.</p>
+
+<!-- more -->
+
+
+<p>First, a bit of preamble: this video was made around three and a half years ago (according to my reckoning) in order to present a potential example of the capabilities of AUVs and related technologies. At the time it was very much &#8220;looking forward,&#8221; rather than presenting results. In particular: most of what you&#8217;re seeing is &#8220;mocked up,&#8221; rather than part of a real operation, and features several technologies which hadn&#8217;t progressed beyond early prototypes at the time. It&#8217;s now quite out of date, but it still gets shown at conferences by some of my colleges, since it makes a fairly good introduction.</p>
+
+<p>The video was also aimed primarily at the defense industry, which is why the presented scenario has that sort of slant. Rest assured that not all uses of AUVs are militaristic in nature, but yes: they can be used to help save soldiers lives.</p>
+
+<p>Furthermore, I did all of the camera work and direction (except for in any stock footage), as well as the editing and titles. Writing was a joint effort between myself and several of my colleges. As such I consider the video itself to be part of my &#8220;portfolio of work.&#8221; That&#8217;s not my voice, though.</p>
+
+<p>So, here&#8217;s the video (you can click for a bigger version):</p>
+
+<iframe src="http://player.vimeo.com/video/16996183" width="" height="" frameborder="0" allowfullscreen></iframe>
+
+
+<p>If you know what you&#8217;re looking for, you can see a very early version of my PhD work in amongst all of that. Perhaps I&#8217;ll come back later and talk a little more about how what I do specifically fits into all this.</p>
+
+<p>Slight digression: I&#8217;m using Vimeo rather than YouTube because it seems like a better fit. Also the website appeals more to my aesthetic sensibilities.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Boardroom]]></title>
+    <link href="http://www.harveynick.com/blog/2010/11/10/the-boardroom/"/>
+    <updated>2010-11-10T12:30:38+00:00</updated>
+    <id>http://www.harveynick.com/blog/2010/11/10/the-boardroom</id>
+    <content type="html"><![CDATA[<p>That important thing I was talking about <a href="http://harveynick.wordpress.com/2010/11/03/a-short-note-regarding-the-deafening-silence/">before</a>? It was my PhD viva, and it happened last Friday. Remember, remember, the fifth of November, indeed. It&#8217;s possibile that given time I&#8217;ll look back upon it as a positive experience (as many others do), but right now I&#8217;m still reeling a little. The closest thing I can compare it to is a <em>really</em> intense job interview. A job interview which lasted four and a half hours. One which is comparable in intensity to&#8230; say&#8230; one of the boardroom sessions at the end of each episode of The Apprentice. Okay, it&#8217;s possible that I&#8217;m overstating things a little here, but you weren&#8217;t <em>there</em>, man!</p>
+
+<!-- more -->
+
+
+<p>Know this, though: It was very difficult and it lasted a long time&#8230; which felt a lot longer than it actually was. The viva is also sometimes referred to as &#8220;defending your thesis&#8221; and that is a very apt term, because that&#8217;s definitely what it felt like. It&#8217;s not just your thesis which is in the dock, though, you&#8217;re in there with it. Not only do you have to be able to defend any criticism which can be leveled at your work, you also have to be able to show that you understand it <em>completely</em>. When you get a PhD in particular subject, what this essentially means that you are (at that moment) the world&#8217;s expert in your particular specialisation. You should expect to have to prove that.</p>
+
+<p>So, if you&#8217;re reading this wondering &#8220;should I do a PhD?&#8221; you should know that it is not my intention to scare you. I only wish to prepare you. A PhD may or may not be the right thing for you. You might be better suited to any number of other things, but you have to figure that out for yourself. You do need to be able to devote yourself to a single, extremely narrow, subject for at least three years. You also need to be prepared to write a whopping great document at the end of it (mine is 338 pages) and then be ready for both it, and yourself, to be placed under the microscope. It can be extremely rewarding, but it can also be utterly soul destroying. Sometimes in the space of a single day.</p>
+
+<p>After all that, you might be wondering how I actually did. In short: frustratingly. First the good news: I successfully defended my thesis. I passed. This takes a large weight of my shoulders. The bad news, though, is that I have to do &#8220;significant corrections.&#8221; This puts another, albeit smaller, weight straight back on. Based on the final assessment, I&#8217;m given to understand that the majority of my thesis is very good. Heart warming adjectives such as &#8220;exciting,&#8221; &#8220;heroic in scope&#8221; and even &#8220;ingenious&#8221; were used. Unfortunately, it seems that I need to add a few clarifications and citations, and my results chapter doesn&#8217;t live up to the standard set by the rest of my thesis. This was a worry I had, and it is good to get some solid feedback on it, even if it does mean more work. As result, I need to rewrite some of it, add some statistic tests and do some further analysis of my data. I also have an embarrassing number of typographical errors to fix.</p>
+
+<p>In summary: It&#8217;s good to know that the light isn&#8217;t a train, even if I am still in the tunnel. I&#8217;m not calling myself &#8220;Dr. Nick&#8221; just yet. By God there&#8217;ll be a party when I do, though.</p>
+
+<p>So now you know. That&#8217;s what&#8217;s been taking up my time as of late. I&#8217;ll get back to Clockwork Aphid just as soon as I can.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Short Note Regarding the Deafening Silence]]></title>
+    <link href="http://www.harveynick.com/blog/2010/11/03/a-short-note-regarding-the-deafening-silence/"/>
+    <updated>2010-11-03T22:17:08+00:00</updated>
+    <id>http://www.harveynick.com/blog/2010/11/03/a-short-note-regarding-the-deafening-silence</id>
+    <content type="html"><![CDATA[<p>For a while there it really looked as though I was on top of this whole blogging lark, didn&#8217;t it?</p>
+
+<p>The problem is that writing this blog (and to an even greater extent, working on the Clockwork Aphid project) doesn&#8217;t feel like procrastinating. It feels like doing something. Not working exactly, but definitely making an active contribution.</p>
+
+<p>As a result, if there&#8217;s something else I&#8217;m supposed to be doing with my time, I have a really hard time working on either without the guilt setting in (it&#8217;s happening right now). This doesn&#8217;t stop me from dicking around on the web, complaining about the latest change to Facebook and working my way through my mountain of articles which get dumped into my RSS reader on a daily basis, of course. They do feel like procrastinating, you see, so I waste plenty of time doing those.</p>
+
+<!-- more -->
+
+
+<p>This is one of those times when there&#8217;s something more important I need to work on.</p>
+
+<p>Hopefully I&#8217;ll be able to talk more about it later. That doesn&#8217;t mean I&#8217;m not spending time thinking up new blog posts (I have at least three fairly big ones sitting in my head) or going over possible implementation strategies for Clockwork Aphid (I probably need to find a catchier name for that). At the moment I&#8217;m giving some thought to the management of the landscape data. As in:</p>
+
+<ul>
+<li>How much do I show to the user?</li>
+<li>How much do I keep in memory?</li>
+<li>How much do I keep on the disk?</li>
+<li>How much do I keep just on the server?</li>
+<li>Also: why don&#8217;t I use more bulleted lists?</li>
+</ul>
+
+
+<p>To help with this I&#8217;m doing a bit of research and reading a journal paper called &#8221;<em>Terrain Simplification Simplified: A General Framework for View-Dependent Out-of-Core Visualization</em>&#8221; by Peter Lindstrom and Valerio Pascucci. The previously mentioned Shamus Young used in one of his previous projects and talked about it <a href="http://www.shamusyoung.com/twentysidedtale/?p=142">here</a>. The links he gives are dead now, but if you&#8217;re interested you can find a copy of the paper by googling the title.</p>
+
+<p>As for Shamus&#8217; current <a href="http://www.shamusyoung.com/twentysidedtale/?p=9686">project</a>, he&#8217;s doing something with a landscape subdivided in hexagons. This makes me think it might be some sort of turned based game, as hexagons have the nice side benefit of being equidistant from their neighbors (measuring the distance from centre to centre). Interesting&#8230; This makes me wonder if there&#8217;s a good method of doing fractal subdivision using a hexagonal (rather than square) topography&#8230;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[What todo?]]></title>
+    <link href="http://www.harveynick.com/blog/2010/10/28/what-todo/"/>
+    <updated>2010-10-28T11:00:08+01:00</updated>
+    <id>http://www.harveynick.com/blog/2010/10/28/what-todo</id>
+    <content type="html"><![CDATA[<p>The return train ride after a visit to my parents&#8217; house is, if anything, more pleasant that the outward journey. This is not least, of course, because it ends in Edinburgh, rather than <em>Doncaster</em>*. Be that as it may, this is perhaps a good time to pick up the thought I left hanging at the end of my <a href="http://harveynick.wordpress.com/2010/10/26/the-journey-home/">last entry</a>, in which I talked a little about ways of keeping notes and writing down ideas. Having dealt with information, we now come to action. From stasis, to process. Less obliquely: what, exactly, are you going to do about those ideas?</p>
+
+<p>For the longest time I never kept todo lists. I tried to keep my goals and the individual steps required to reach them inside my head. Sometimes this worked quite well; thoughts are things which are simple to rearrange and update as requirements change, after all. Other times, not so much. In short: I forgot things.</p>
+
+<!-- more -->
+
+
+<p>My first attempt at organising these things was quite simple. I wrote a todo list down in my lab book. Paper is always I good place to start for a lot of things. Simple is generally a good place to start, also. I&#8217;d say this worked almost flawlessly on the occasions when I finished every item on the todo list I wrote on a particular morning by the end of that day. The problem appears on the days when this doesn&#8217;t happen. You don&#8217;t always carry out the tasks in the order you wrote them down, because that doesn&#8217;t always make sense, and there&#8217;s no way to rearrange the order of the items short of rewriting the list (yeah, right). As result, you end up with a partially completed list to be carried over to the next day. Worse still, often times a single item will subdivide into numerous smaller tasks when you come to take a closer look at it. So now you have two lists on different pages of your book, with some miscellaneous notes (and quickly jotted down take-away orders) separating them.</p>
+
+<p>Version 2 worked a lot better, and I still use it from time to time. Basically, you write each item down on a post-it note (the 2.5*7.5cm ones are ideal, though a little hard to find) and stick it on a flat surface close to where you work. You&#8217;re then free to re-arrange them to you hearts content and, best of all, when you finish an item you get to take it down, screw it up into a little ball, and throw it in the bin. Very satisfying. Take <em>that</em> todo list! Obviously this isn&#8217;t as mobile as version one, though you can pull the post-its down and stick them in a book to take with you. If you always work in the same place it&#8217;s pretty great though. It&#8217;s also fairly obvious, so apologies if I&#8217;m not telling you anything new here.</p>
+
+<p>What version 2 doesn&#8217;t do is allow you to easily add things wherever you are, share your todo lists, or integrate into your more everyday todo type scenarios. In particular, I do not recommend using this approach for shopping lists. That isn&#8217;t going to work. As a result, I started looking at more computer based approaches (surprise, surprise). I gave <a href="http://www.rememberthemilk.com/">Remember The Milk</a> a try for a while, but the browser based approach doesn&#8217;t work for me. I like applications to integrate with my desktop.</p>
+
+<p>This was around the time that the brilliant <a href="http://www.omnigroup.com/">OmniGroup</a> announced <a href="http://www.omnigroup.com/products/omnifocus/">OmniFocus</a>. I already use (and <em>love</em>) <a href="http://www.omnigroup.com/products/omnioutliner/">OmniOutliner</a> and <a href="http://www.omnigroup.com/products/omnigraffle/">OmniGraffle</a>, so this looked like a pretty good bet. Plus they later announced that an <a href="http://www.omnigroup.com/products/omnifocus_for_iphone/">iPhone version</a> was coming as well. Perfect, or so I thought. As it turned out, I much prefer Cultured Code&#8217;s <a href="http://culturedcode.com/things/">Things</a>, however. It is, quite frankly, the desktop todo manager of my dreams. It&#8217;s Mac only though, which doesn&#8217;t help me if I think of something at the office, or on the bus. Fortunately, there are also <a href="http://culturedcode.com/things/iphone/">iPhone</a> and <a href="http://culturedcode.com/things/ipad/">iPad</a> apps available, which are equally sweet. They like one crucial feature, though: web sync. Sure, I can sync them over wireless, but this is much less use to me. I have to actively do it, rather than just fire up the application and wait for the magic to happen. It&#8217;s on the <a href="http://culturedcode.com/status/">road map</a>, but I&#8217;m still waiting. Side note: OmniGraffle does have web sync, but I don&#8217;t like it as much, and it&#8217;s a lot more expensive. It might be perfect for your needs, however.</p>
+
+<p>Which brings me sort of full circle, to my shiny new Clockwork Aphid project. At this point I&#8217;ve mostly just been implementing things as the mood takes me, maybe planning a couple of steps ahead. I probably need a bit more structure than that. The post-it note and Things based approaches both have their benefits, but their are a couple other things to take into consideration. First of all, I&#8217;m using the fabulous <a href="http://bitbucket.org/">BitBucket.org</a> to host my source code, and that come with a handy <a href="http://bitbucket.org/harveynick/clockworkaphidjava/issues?status=new&amp;status=open">issue tracker</a>. Especially handy should anyone else join the project once it get a little bit more fleshed out. Another interesting possibility is the <a href="http://www.eclipse.org/mylyn/">Mylyn</a> plug-in for eclipse (my code editor of choice), which provides you with a &#8220;task based interface.&#8221; In other words, it hides the clutter and shows you only the parts of your project you need to care about for the particular task you&#8217;re working on. That&#8217;s quite interesting, but works best when you link it up to a central issue tracker. Frustratingly, it doesn&#8217;t work with the BitBucket issue tracker. It does work with <a href="http://www.atlassian.com/">Atlasian&#8217;s</a> Jira, however, and Atlasian <a href="http://blog.bitbucket.org/2010/09/29/bitbucket-joins-atlassian/">recently acquired</a> BitBucket, so hope is not lost.</p>
+
+<p>These approaches are clearly better tailored to what I&#8217;m actually doing, but neither is as user friendly as either the post-its or Things, especially when it comes to adding new tasks, and that&#8217;s the bit you need to do quickly, brain-dump style. The search continues&#8230;</p>
+
+<p>I, of course, welcome any alternative todo list solutions you&#8217;d like you leave in the comments. &lt;subliminal>Please comment on my blog.&lt;/subliminal></p>
+
+<ul>
+<li>Know this: no written text, regardless of italicisation, can accurately reproduce the tone of my voice when I say the word &#8220;Doncaster.&#8221;</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Journey Home]]></title>
+    <link href="http://www.harveynick.com/blog/2010/10/26/the-journey-home/"/>
+    <updated>2010-10-26T11:39:40+01:00</updated>
+    <id>http://www.harveynick.com/blog/2010/10/26/the-journey-home</id>
+    <content type="html"><![CDATA[<p><em>Authors note: This post was actually written on Sunday. As it turns out, writing it on the iPad was no problem at all, but actually posting it (with the picture and links) was a different matter entirely.</em></p>
+
+<p>You know, the train journey from Edinburgh to Doncaster is really quite beautiful, for the most part. A reasonable amount of it happens within sight of the sea and most of the rest passes through open country. The Yorkshire dales is a landscape I find quite pleasing to look out over, unless I&#8217;m driving through it, in which case I find to to mostly feel endless. Some of the towns you pass through have more charm than others, of course. Newcastle isn&#8217;t without its fans, and Berwick-Upon-Tweed is gorgeous, but I can&#8217;t see anyone wanting to put <em>Doncaster</em> on a postcard any time soon.</p>
+
+<!-- more -->
+
+
+<p>Why the sudden reflection? I&#8217;m on the way down to visit my parents for a couple of days and for the first time in years I&#8217;m not taking a &#8220;real&#8221; computer with me. The implication here, of course, is that I&#8217;m taking something which is not a real computer, or at least something which some don&#8217;t consider to be one. I picked up an iPad on my recent work trip down under (AU$ was doing quite well against USA$ at the time, which knocked a considerable amount of the price as far as I was concerned) and that&#8217;s a gadget I have with me. Yes, I&#8217;m typing this on an iPad. I actually typed the majority of <a href="http://harveynick.wordpress.com/2010/10/08/wow-oh-wow/">this post</a> on it as well, using the on-screen keyboard, and it wasn&#8217;t too bad at all. The biggest problem was that it reduced to effective screen area so much. Right now, though, I&#8217;m using a bluetooth keyboard for the typing. The iPad itself is resting on the crappy little shelf  attached to the seat in front (angled using one of <a href="http://www.macally.com/EN/Product/ArticleShow.asp?ArticleID=320">these</a> cases, which I highly recommend), while the keyboard is sitting on my knee, actually under the shelf. All in all, this setup is one hell of a lot more comfortable than a laptop would be in these circumstances. So that&#8217;s definitely a win.</p>
+
+<p>I didn&#8217;t buy this thing to replace a laptop exactly, though. That would be silly. Nor did I intend to replace a smart phone with it. That makes no sense. What, then, is it actually for? This seems to be the number two reaction to seeing the thing in my experience. Number one being &#8220;cool!&#8221; and &#8220;it looks just like a giant iPhone!&#8221; being quite high up the list, as well. No, what I intended to replace with this gizmo is one of these:</p>
+
+<p><a href="http://www.moleskine.com/"><img class="center" src="http://www.learnius.com/lcoblog/wp-content/uploads/2008/02/moleskine-pile.png"></a></p>
+
+<p>As a general rule, I need to write thinks down more. I should probably make more notes of ideas and such which occur to me when I&#8217;m not in a position to do anything about them, and I find that todo lists are basically a necessity when it comes to keeping myself organised. Paper is pretty good for this, as a general rule. I&#8217;m pretty fond of my squared paper moleskin journal and when it comes to just scribbling things down I&#8217;d say it&#8217;s pretty much unsurpassable. But, and there&#8217;s usually a but, carrying it around at all times isn&#8217;t exactly practical and it doesn&#8217;t have an erase (or move) function, which isn&#8217;t ideal when you suddenly realise that the diagram you&#8217;ve been working on for the last half an hour really needs to be about an inch to the left if you&#8217;re actually going to fit the whole thing on the page.</p>
+
+<p>If you&#8217;re using <a href="http://www.evernote.com/">Evernote</a> for your notes, though, then jotting things down with a phone (which I do carry at all times) becomes an option. Throw in a couple of other applications and scribbling, brainstorming and generally playing with ideas does become a legitimate possibility. A possibility contained in something no larger than a Moleskin, which does have an erase, and indeed a shift-a-bit-to-the-left, function. Todo lists are a different matter, though, and I&#8217;m going to come back to those later.</p>
+
+<p>As a final note here, it should probably be quite obvious that I&#8217;m not going to be doing any clockwork aphid related work in the next couple of days, as hacking is not currently a legitimate possibility on the iPad. Someone really needs to write an app which interfaces with Eclipse (or any other IDE) on your desktop and turns it into a context sensitive programmer&#8217;s assistant keyboard type thing, though. Expect good things to show up towards the end of the week, however.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Fractal Errata]]></title>
@@ -501,288 +769,6 @@ The measure of applicability to other parties is definitely a point in favour 
 
 
 <p>I considered three languages and I&#8217;ll tackle them one at a time in future posts.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[WoW oh WoW]]></title>
-    <link href="http://www.harveynick.com/blog/2010/10/08/wow-oh-wow/"/>
-    <updated>2010-10-08T12:40:51+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/10/08/wow-oh-wow</id>
-    <content type="html"><![CDATA[<p>Sooner or later, most people go looking for a bit of escapism every once in a while. There&#8217;s definitely a spectrum of how far people like to escape. Some can&#8217;t stand anything which steps outside the bounds of the possible, others practically require spaceships and dragons to co-exist with emotionally retarded vampires. Likewise, some people look to books for their diversions, some theatre, radio, television or cinema. Some people play computer games or one sort of another. No one is saying that everyone, or indeed anyone, has make a specific and binding choice, though. You can watch a movie about the emotional and theological struggle of gay monks one evening, read a couple of chapters of a book about an adolescent wizard immediately before bed, and take on the role of a greek god laying waste to&#8230; well&#8230; everything the next day.</p>
-
-<!-- more -->
-
-
-<p>The point of my new project (Clockwork Aphid), when you get right down to it, has to do with my own frustrations with a certain kind of computer game. Specifically: the ones I&#8217;m going to lump together under the moniker &#8220;virtual worlds&#8221;. There are a lot of them out there, and I can&#8217;t claim to have tried them all, but I have had a play with a couple of the major ones and that&#8217;s what I want to talk about today.</p>
-
-<p><span class='pullquote-right' data-pullquote='the sprawling 500 lb gorilla that actually accounts for almost 10% of the revenues of the US gaming industry'>
-Where to start, though? I&#8217;ve gone backwards and forwards about this quite a bit and come to the conclusion that I should probably start at the top. The top in this case being the brute, the sprawling 500 lb gorilla that actually accounts for almost 10% of the revenues of the US gaming industry: World of Warcraft, or WoW, to give it its not exactly modest acronym. What we&#8217;re talking about here is not just a virtual world, but a massively multi-player online role playing game, or MMORPG. Let&#8217;s examine the meaning of this working backwards through the words:<br/>
-</span></p>
-
-<ul>
-<li>Game - this is something you play, for fun.</li>
-<li>Role playing - it contains some component of playing a role different to that of your everyday life. All games do this to a greater or lesser extent, but the difference here is that your <em>character&#8217;s</em> own personality and skills have more relevance to the gameplay than your own.</li>
-<li>Online - the game is played over the Internet.</li>
-<li>Multi-player - the game is played simultaneously by multiple people.</li>
-<li>Massively - the &#8220;multiple people&#8221; playing the game can number in the thousands.</li>
-</ul>
-
-
-<p>WoW is set in an essentially Tolkenesque fantasy world populated by humans, dwarfs and elves, acting more or less as you&#8217;d expect them to had you read or seen the Lord of the Rings. There are other races: Orcs, trolls, undead, gnomes, undead, who are a little more stylised. There&#8217;s quite a bit of steam punk and tribal culture in places. That&#8217;s not the point though. The point, as in any game, is the question &#8220;what does the user do?&#8221; and the answer in this case is:</p>
-
-<p>The user takes on the role of one of a member of one of these races, with a particular profession and proceeds to battle their way through the world, fighting hostile elements and performing quests in order to gain &#8220;experience&#8221; and improve their character. They can also join forces with other players to take on quests; in fact this is practically required in some cases.</p>
-
-<p><span class='pullquote-right' data-pullquote='A lot of the time you just find yourself killing monster, after monster, after monster'>
-I&#8217;ve spent a bit of time playing WoW and frankly it can be a lot of fun. The world is HUGE and exploring it can be very enjoyable. There&#8217;s also a genuine sense of achievement to be gained from &#8220;levelling up&#8221; your character. Most of the time. Which brings me to the first frustration: the grind. A lot of the time you just find yourself killing monster, after monster, after monster. This is partly because a large number of the quests (which are handed out by non-player characters, or NPCs, with large yellow exclamation points above their heads) sound like this:<br/>
-</span></p>
-
-<blockquote><p>&#8220;Oh no! &lt;insert description of peril>! Please help us! Kill &lt;insert number> of &lt;insert name of monster responsible for this peril>&#8221;</p></blockquote>
-
-<p>Or even worse and with a more concrete example:</p>
-
-<blockquote><p>&#8220;Please bring me 10 giant spider legs.&#8221;</p></blockquote>
-
-<p>The problem here being that against all conventional logic, you might only get a giant spider leg for every third giant spider you kill. As you may have gathered, they don&#8217;t call it the grind because it&#8217;s fun.</p>
-
-<p><span class='pullquote-right' data-pullquote='You do the townsfolk a good turn by depleting the number of bandits besieging the town, but this changes nothing'>
-The next frustration is that you don&#8217;t actually affect the world. You do the townsfolk a good turn by depleting the number of bandits besieging the town, but this changes nothing. Other players come along and do the exact same quest time after time after, because the bandits simply reappear a couple of minutes after you take them down. So, when you do the quest to take out the leader of the bandits, you arrive to find that a queue has formed. The first person kills him, the others wait for him to reappear and do the same. It sort of breaks the illusion of the game. More annoying still: you&#8217;ve been waiting patiently for your turn, but some git comes running in and kills him first. Most annoyingly, to my mind is&#8230; Well&#8230; Let me give you an anecdotal example:<br/>
-</span></p>
-
-<p>I was playing as a rogue, which is a nice way of saying thief/assassin, and had been given a quest to recover a particular object from a beach. Needless to say, the beach turned out to be crawling with monsters. So I set about luring them away one by one, depleting their numbers so I could get my trophy without getting my ass handed to me (rogues can give it out, but they cannot take it). The problem being, that by the time I get the to point where I can start thinking about claiming the prize, the monsters I killed first have already started to resappear!</p>
-
-<p>Here&#8217;s the problem: this is not how the game wanted me to go about this task. It wanted me to find a group of other players and storm the beachhead, quickly despatching the monsters and grabbing the prize. I was playing as a damn rouge, though! That is not how an assassin does business! In the end I got lucky. A warrior stormed the beach as I was creeping up, and I snaffled the loot while the monsters were distracted. Amoral? I believe I did point out that I was playing as a rogue.</p>
-
-<p><span class='pullquote-right' data-pullquote='it can make you feel as though you and your actions don&#8217;t really matter'>
-In a regular, non MMO, RPG, everything you kill stays dead for the most part. In this case the world doesn&#8217;t have to be persistent (as in unchanging) because you&#8217;re the only one playing it and it doesn&#8217;t matter if no one else can do the quests. In an MMO, almost <em>everyone</em> needs to be able to do the quests, so the world generally performs a decent impression of Kirsten Dunst&#8217;s hair in Interview with a Vampire. It is a workable solution to the problem, but it can make you feel as though you and your actions don&#8217;t really matter, which isn&#8217;t ideal given that you&#8217;re supposed to be a hero.<br/>
-</span></p>
-
-<p>I&#8217;m not the first person to have these sort of complaints, or to contemplate solutions, but that&#8217;s a story for another day.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What in the Name of all that's Holy is a Clockwork Aphid?]]></title>
-    <link href="http://www.harveynick.com/blog/2010/10/07/what-in-the-name-of-all-thats-holy-is-a-clockwork-aphid/"/>
-    <updated>2010-10-07T16:24:15+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/10/07/what-in-the-name-of-all-thats-holy-is-a-clockwork-aphid</id>
-    <content type="html"><![CDATA[<p>Clockwork Aphid is the name I&#8217;m giving to a side project I&#8217;ve had sitting at the back of head for a little while. I&#8217;m actually going to try and build it now. What it actually is is quite big and hard to explain, so I&#8217;m going to do it gradually, over time. This way I also get to maintain a little bit of mystery. Here&#8217;s what I will say up front, though:</p>
-
-<!-- more -->
-
-
-<ul>
-<li>It&#8217;s a programming project;</li>
-<li>It&#8217;s connected to computer games;</li>
-<li>It&#8217;s also connected to&#8230; another form of digital entertainment which is (arguably) related to computer games;</li>
-<li>In the beginning at least, I&#8217;m going to make the code I write open source.</li>
-</ul>
-
-
-<p>The actual name &#8220;Clockwork Aphid&#8221; comes from the name of the group I helped field to the &#8220;Dare to be Digital&#8221; computer game creation competition several years ago. We didn&#8217;t get in, but we proposed a game called &#8220;Bad Penny&#8221; which I still think was a bloody good idea. Some of the elements of that project are contained in this one also, but the name Bad Penny was chosen for a good reason. It was very appropriate for the type of game we were proposing. This project is potentially bigger, though, and I don&#8217;t want to limit the scope.</p>
-
-<p>As for the Clockwork Aphid name itself? I just plain thought it sounded good then and I still think it sounds good now.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[It's Hestontastic!]]></title>
-    <link href="http://www.harveynick.com/blog/2010/08/24/its-hestontastic/"/>
-    <updated>2010-08-24T22:08:27+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/08/24/its-hestontastic</id>
-    <content type="html"><![CDATA[<p>Strangely, I don&#8217;t think my good lady actually thought I&#8217;d attempt to make any of the actual recipes when she bought me a copy of <a href="http://en.wikipedia.org/wiki/Heston_Blumenthal">Heston Blumenthal</a>&#8217;s &#8221;<a href="http://www.amazon.co.uk/Further-Adventures-Search-Perfection-Blumenthal/dp/0747594058/ref=pd_bxgy_b_img_b">Further Adventures in Search of Perfection</a>&#8221; for Christmas last year. Sometimes I worry about how little she appears to know me. A chili con carne recipe which takes three days to prepare is exactly the sort of challenge I&#8217;m practically incapable of resisting. A black forest gateau that requires the use of a hoover? I say &#8220;bring it on!&#8221;</p>
-
-<p>I do intend to have a crack at those ones, but I thought I&#8217;d ease my way in with the Bolognese recipe from &#8221;<a href="http://www.amazon.co.uk/Search-Perfection-Heston-Blumenthal/dp/0747584095">In Search of Perfection</a>,&#8221; which takes a mere ten hours to prepare and requires no special tools.</p>
-
-<!-- more -->
-
-
-<p>We invited round two friends whom we have cause to thank and don&#8217;t see nearly enough of, and I gave it my best shot. Here&#8217;s the maestro himself, explaining how it&#8217;s done:</p>
-
-<iframe src="http://www.youtube.com/embed/6pR5kVyemdY" width="" height="" frameborder="0" allowfullscreen></iframe>
-
-
-
-
-<iframe src="http://www.youtube.com/embed/Mj9K6iSmafc" width="" height="" frameborder="0" allowfullscreen></iframe>
-
-
-
-
-<iframe src="http://www.youtube.com/embed/UMx4HUKaA9k" width="" height="" frameborder="0" allowfullscreen></iframe>
-
-
-<p>In the interests of honesty, here are the things I did differently:</p>
-
-<ul>
-<li>My good lady is allergic to celery, so I took it out;</li>
-<li>Every butcher I tried practically laughed in my face when I asked for minced ox tail, so I used good steak mince;</li>
-<li>I don&#8217;t hold with serving a meat sauce with spaghetti, so I used pappardelle (thick ribbons);</li>
-<li>I also served it with some particularly good garlic bread of my own devising.</li>
-</ul>
-
-
-<p>I should also point that the video is missing a couple of minor steps. If you want to actually make it, I recommend buying the book. If you have no desire to make it whatsoever, I recommend buying the book. Both books. They are fascinating reads. If you can&#8217;t read, I recommend buying the book. It also has good pictures. I&#8217;m a little confused if that&#8217;s the case, though.</p>
-
-<p>At this point you&#8217;re probably wondering if the sauce is good enough to warrant the expenditure of an entire day to make it? In short: yes. Abso-fucking-lutely. It was amazing. Will I make it again? Probably, though certainly not often. I might make it sometime when my good lady isn&#8217;t in town and I can include the celery without the risk of her death (the sauce is not quite that good). Perhaps I&#8217;ll even try begging and pleading with one of the local butchers to get some minced ox tail or a better substitute.</p>
-
-<p>What I will definitely do is use some of the individual techniques. The tomato base may well become a sauce for meatballs, and the caramelized onions will almost certainly get used in a gravy or two.</p>
-
-<p>Across the entire of both books are sixteen recipes. One down.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Musical Arithmetic]]></title>
-    <link href="http://www.harveynick.com/blog/2010/08/15/musical-arithmetic/"/>
-    <updated>2010-08-15T12:40:46+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/08/15/musical-arithmetic</id>
-    <content type="html"><![CDATA[<p>Okay, so here&#8217;s the formula:</p>
-
-<pre><code>(A - B) + C = D
-</code></pre>
-
-<p>And here are the variables:</p>
-
-<!-- more -->
-
-
-<p>A = <iframe src="http://www.youtube.com/embed/UZjf9C6atT4" width="" height="" frameborder="0" allowfullscreen></iframe></p>
-
-<p>Evanescence. More specifically: the original line up (as far as most of the world is concerned). I like Evanescence quite a bit, but that&#8217;s about 74.2% Amy Lee&#8217;s voice. The girl has one hell of a pair of lungs on her. I picked this particular song from the first album for reason which may become obvious later. For what it&#8217;s worth, I think Everybody&#8217;s Fool and Imaginary are a much better songs.</p>
-
-<p>B = <iframe src="http://www.youtube.com/embed/bP5wmtOXCQ" width="" height="" frameborder="0" allowfullscreen></iframe></p>
-
-<p>Evanescence again? No. Well&#8230; yes, but the current line up. Specifically: Amy Lee herself. I picked this song from the second album (which is much better than the first) because it seems to have the most Amy Lee-ness in it. It doesn&#8217;t have an actual video, though, so alternatively:</p>
-
-<p>B = <iframe src="http://www.youtube.com/embed/Hqd2FJF8-h8" width="" height="" frameborder="0" allowfullscreen></iframe></p>
-
-<p>I figure having a deficit of Seether won&#8217;t affect the sum either way, so this works too.</p>
-
-<p>C = <iframe src="http://www.youtube.com/embed/dUyMvaJwACc" width="" height="" frameborder="0" allowfullscreen></iframe></p>
-
-<p>Former Irish American Idol contestant* Carly Smithson. Once again: A hell of a pair of lungs. Not an entirely dissimilar look, but quite a different vocal style, it would appear. Carly&#8217;s voice has a bit more blues in it, a bit more sultriness.</p>
-
-<p>D = <iframe src="http://www.youtube.com/embed/zzTZeeMCUBk" width="" height="" frameborder="0" allowfullscreen></iframe></p>
-
-<p><a href="http://www.wearethefallen.com/">We are the Fallen</a>, the new band from Ben Moody, two other former members of Evanescence and Carly Smithson. Can you seen why I picked that particular Evanescence song? That&#8217;s more than a passing resemblance, style wise. There is a second reason I picked it, <a href="http://www.youtube.com/watch?v=kdYa0oeMLfI&amp;feature=related">however</a>. Carly has a less operatic voice, though, and a bit more range in terms of singing style. I love me some female fronted metal, so I&#8217;ll be keeping an eye on this band.</p>
-
-<p>Okay, here&#8217;s another one which plays a bit better to her frankly spectacular voice:</p>
-
-<p>D = <iframe src="http://www.youtube.com/embed/u24NXTBHLYU" width="" height="" frameborder="0" allowfullscreen></iframe></p>
-
-<p>* That is: she&#8217;s Irish and was a contestant on &#8220;American Idol.&#8221; There is no such show as &#8220;Irish American Idol,&#8221; so far as I&#8217;m aware.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Location Location Location]]></title>
-    <link href="http://www.harveynick.com/blog/2010/08/05/location-location-location/"/>
-    <updated>2010-08-05T19:47:54+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/08/05/location-location-location</id>
-    <content type="html"><![CDATA[<p>One of the few things I&#8217;ve missed since abandoning the good ship Windows PC for the Mac&#8230; er&#8230; Zeppelin (why not?) is magazines. I used to really enjoy reading the PC gaming and hardware mags. Oftentimes they were pitched at about the right level for me. I felt neither patronised nor confused. I&#8217;m afraid to say that this is not the case with Mac magazines. For the most part they tend to aim a little low, tech wise (no kidding, right?). I did also try Linux magazines, but generally found them to be way too dry and not especially well written. Once again, quelle surprise. Quelle surprise beaucoup.</p>
-
-<!-- more -->
-
-
-<p>So I was, as I&#8217;m sure you can imagine, quite overjoyed to discover <a href="http://www.wired.co.uk/">Wired</a> magazine. A platform agnostic tech magazine pitched about the right level (ish) for me, tech wise, whilst also having some focus on the business side of technology? Win! If you&#8217;re not reading it already, I highly recommend it. So, when Wired decided to give the cover story to location based social networks, concentrating on <a href="http://foursquare.com/">Foursquare</a> and <a href="http://gowalla.com/">Gowalla</a>, I though &#8220;sure, what the hell?&#8221; and gave them both a go.</p>
-
-<p>That was a good couple of weeks ago now, and I can categorically say that I&#8217;m not sure if I like them or not. Nor am I sure which of the two I prefer. The idea, basically, is that you periodically tell them where you are.</p>
-
-<p>Where are you going? Wait, there&#8217;s more.</p>
-
-<p>It&#8217;s a game of sorts, you see. Foursquare awards you points for visiting places (more if they&#8217;re new places) while Gowalla gives you badges in your&#8221;passport.&#8221; Both of them also award you bonuses for various things, and Foursquare declares you the &#8220;Mayor&#8221; of locations if you visit them more than anybody else. There is a bit more to it than this, of course, there&#8217;s a social aspect, connected to both locating your friends and finding out where is currently &#8220;happening,&#8221; (this is the correct term, yes?) but I think I&#8217;ve given you the gist.</p>
-
-<p>On balance: foursquare seems to do more in terms of the whole &#8220;life as a game&#8221; idea, and makes it feel more worthwhile to visit places multiple times&#8230; but Gowalla has a MUCH better design, and the badges and pins (achievements) it gives you are much prettier, but lacks the competitiveness of Foursquare. I think, at this point, I would tentatively recommend both, but particularly Foursquare if you&#8217;re a competitive sort. Either way, feel free to friend me if you do give them a try (it&#8217;s free).</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[A couple more...]]></title>
-    <link href="http://www.harveynick.com/blog/2010/07/27/a-couple-more/"/>
-    <updated>2010-07-27T22:02:30+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/07/27/a-couple-more</id>
-    <content type="html"><![CDATA[<p>Further to my last post, here&#8217;s a couple more films which caught my eye, though one of them is a ways off yet.</p>
-
-<p>Faster (<a href="http://trailers.apple.com/trailers/independent/faster/">trailer</a>) - I will go and see Dwayne Johnson in any film which doesn&#8217;t involve him wearing a tutu or fairy wings. Perhaps even then, and you can quote me on that. The guy has more charisma and physical presence than just about everyone else out there, and is (as far as I&#8217;m concerned) always good value for money, regardless of the quality of the actual film. Frankly, the guy should be a much bigger start than he is. That he&#8217;s in an indie revenge flick makes me very happy indeed. Also: great trailer.</p>
-
-<!-- more -->
-
-
-<p></p>
-
-<p>Sucker Punch (<a href="http://trailers.apple.com/trailers/wb/suckerpunch/">trailer</a>) - Zack Snyder is another one of those directors who&#8217;s work I would go sight unseen. Though Watchmen wasn&#8217;t quite the film I wanted it to be, I still enjoyed the hell out of it and I loved his two previous films (300 and Dawn of the Dead). This is a director who makes <em>cinema</em> and every frame of it is absolutely, stunningly beautiful. Evidence so far suggests that he actually works pretty well with actors and knows how to handle a plot, also, which is nice (Micheal Bay, take note). This is his first time working with an original property, so I guess we&#8217;ll have to see how it goes. Oh yeah, it also seems to have nazis, dragons, sword wielding burlesque girls, Zeppelins, spaceships and mini gun toting giant samurai demons&#8230; and something tells me that&#8217;s not the half of it&#8230;</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Looking Forwards]]></title>
-    <link href="http://www.harveynick.com/blog/2010/07/18/looking-forwards/"/>
-    <updated>2010-07-18T17:02:30+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/07/18/looking-forwards</id>
-    <content type="html"><![CDATA[<p>The Cineworld unlimited card is a wonderful thing, especially given that I no longer have a student card (I am still a student, technically. Don&#8217;t ask). It encourages you to take a much more &#8220;what the hell,&#8221; type attitude to heading to the cinema, and I love me some cinema. That being the case, I thought I&#8217;d write a (probably) quick post covering the films coming out this year that I&#8217;m pretty certain I&#8217;ll be going to see.</p>
-
-<!-- more -->
-
-
-<p>So, in particular order (aside from the one in which they occurred to me):</p>
-
-<p>Inception (<a href="http://trailers.apple.com/trailers/wb/inception/">trailer</a>) - There are some director&#8217;s who pretty much guarente I&#8217;ll go see a film. Christopher Nolan is one of them. Likewise, there are some actor&#8217;s who pretty much guarente I&#8217;ll go and see a film. Ellen Page is one of them. Also: this film look awesome.</p>
-
-<p>The Social Network (<a href="http://movies.yahoo.com/premieres/20889647/standardformat">trailer</a>) - David Fincher is another one of the directors who almost guarantees I&#8217;ll go see a film. Aaron Sorkin is a writer who pretty much guarantees I&#8217;ll go see a film. I didn&#8217;t think I was interested in a film about Facebook, but it turns out that I really, really am. Watch the trailer.</p>
-
-<p>Machete (<a href="http://trailers.apple.com/trailers/fox/machete/">trailer</a>) - I didn&#8217;t think much of Death Proof, but I loved me some Planet Terror, and this looks like it&#8217;s coming from the same headspace.</p>
-
-<p>Tron Legacy (<a href="http://trailers.apple.com/trailers/disney/tronlegacy/">trailer</a>) - I think I might have already mentioned this one.</p>
-
-<p>The Town (<a href="http://trailers.apple.com/trailers/wb/thetown/">trailer</a>) - Ben Affleck might be a genius. Perhaps you didn&#8217;t know that. You might assume that it was Matt Daemon who did most of the heavy lifting when it came to writing Good Will Hunting. But did you go see Gone Baby Gone? Because he wrote (well, adapted) and directed that and it was <em>spectacular</em>. I&#8217;m hoping he&#8217;s done it again.</p>
-
-<p>The Expendables (<a href="http://trailers.apple.com/trailers/lions_gate/theexpendables/">trailer</a>) - A cast made up almost entirely of action legends? Written and directed by the man who brought us Rambo? I&#8217;m there. If you didn&#8217;t watch Rambo (the most recent one), perhaps you should. It is incredibly, unflinchingly violent. But it&#8217;s a film about violence and you might be surprised by how much it has to say.</p>
-
-<p>Scott Pilgrim vs. The World (<a href="http://trailers.apple.com/trailers/universal/scottpilgrimvstheworld/">trailer</a>) - I love it. I love the style. I love the sense of humour. I love the ideas. I&#8217;ll be very surprised I don&#8217;t giggle with glee all the way through this one.<br/>
-R.E.D. (<a href="http://trailers.apple.com/trailers/summit/red/">trailer</a>) - I&#8217;m not even going to try explaining this one. Just watch the trailer.</p>
-
-<p>Knight and Day (<a href="http://trailers.apple.com/trailers/fox/knightandday/">trailer</a>) - I don&#8217;t know about you, but I mostly go to the cinema to be entertained. This looks like it will be super entertaining. Side note: I might not like Tom Cruise on a person, but I don&#8217;t think I&#8217;ve ever disliked him in a film.</p>
-
-<p>The Green Hornet (<a href="http://trailers.apple.com/trailers/sony_pictures/thegreenhornet/">trailer</a>) - This looks all kinds of silly. These ingredients (superhero + martial arts + star of Knocked Up + director of Eternal Sunshine of the Spotless Mind) should not go together. But I bet the first person to eat a peanut butter and jam sandwich said the same thing.</p>
-
-<p>Harry Potter and the Deathly Hollows (<a href="http://trailers.apple.com/trailers/wb/harrypotterandthedeathlyhallows/">trailer</a>) - I expect to be disappointed by this one. I have been by every other one of these films. But that doesn&#8217;t mean I didn&#8217;t enjoy them (except the second one). I&#8217;m looking forward to the conclusion of the first set of adaptations of these books.</p>
-
-<p>There are more, but that&#8217;ll do for now. What do you guys think? Any of these look good? Any look great? Any look awful? Anything you&#8217;re particularly looking forward to?</p>
-
-<p>As a slight aside, I&#8217;m also HarveyNick on Tumblr and Twitter, and I&#8217;m thinking of moving the 15 words or less film review to Tumblr instead of here, as it seems to fit better. Can anyone think of a reason I shouldn&#8217;t (it&#8217;ll still get cross posted to Facebook).</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Identity]]></title>
-    <link href="http://www.harveynick.com/blog/2010/06/19/identity/"/>
-    <updated>2010-06-19T15:01:16+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/06/19/identity</id>
-    <content type="html"><![CDATA[<p>As you may or may not know, I&#8217;m currently in Australia. In fact, I&#8217;ve now been here for a little over a month. I&#8217;ll blog about it sooner or later, but not yet. This is largely because I don&#8217;t know what I&#8217;m going to say. This trip has been an alarming combination of coolness and frustration so far, and I don&#8217;t want to let too much of the later slip out. That would be highly unprofessional of me, and possibly not great either for my employer or my career.</p>
-
-<p>This post shall be about something else.</p>
-
-<!-- more -->
-
-
-<p>I have a side project that I&#8217;ve chomping at the bit to get started on, and while I&#8217;ve been here I&#8217;ve worked up a couple of fairly good ideas for it. I can&#8217;t start work on it, though, because I only have my work computer with me, and a studiously avoid doing any side projects or personal work on it, just to be on the safe side, intellectual property wise. Aside from reading up on things and doing some scribblings on paper, the other thing I can do is set up a bit of infrastructure.</p>
-
-<p>I&#8217;m going to make the project public, both in terms of open sourcing the code and blogging about the ideas behind it (at least to begin with). But where, though? Here&#8217;s my dilema: I&#8217;m HarveyNick on wordpress, Tumblr, Twitter* and now BitBucket (the place I&#8217;ll be hosting the code - side note: I&#8217;ll be going with Mercurial for revision control). Should I write the blog entries here (and have them trickle down to tumblr and twitter), and host the code directly under HarveyNick&#8217;s account on BitBucket? Let&#8217;s say I name the project after my old band, the repository would be</p>
-
-<pre><code>bitbucket.org/harveynick/hinge  
-</code></pre>
-
-<p>Which stamps my ownership on it quite heavily. Likewise, if I put blog entries here: same situation. In some senses that&#8217;s a good thing. Right now, it&#8217;s my project. I might not always want it to be that way, though. Getting other people involved might also be good. I tend to work better (a lot better) when I have someone to bounce ideas off. So let&#8217;s consider option 2; I put the project under another umbrella, and give myself (ie the harveynick identity) access to it. Let&#8217;s say I go with one of the names my old band was thinking of switching to after some assholes in Chicago threatened to sue us. That would put it here:</p>
-
-<pre><code>bitbucket.org/deadcitywalking/hinge  
-</code></pre>
-
-<p>I could then start a deadcitywalking.wordpress.com blog to talk about it, and perhaps link the entries here. Should other people start playing in this particular sandpit, then they could perhaps add their own entries to this blog.</p>
-
-<p>You&#8217;re probably not interested in this. I&#8217;m mostly just thinking out loud. But if you have any thoughts, I&#8217;d love to hear them.</p>
-
-<p>* Why do I have all three of these? I&#8217;m not entirely sure yet, other than because they&#8217;re there.</p>
 ]]></content>
   </entry>
   
