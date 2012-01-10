@@ -1,0 +1,41 @@
+---
+author: harveynick
+date: '2010-06-19 15:01:16'
+layout: post
+slug: identity
+status: publish
+title: Identity
+wordpress_id: '135'
+categories:
+- Geek
+tags:
+- Australia
+- blogging
+- computers
+- computing
+- mercurial
+- traveler
+---
+
+ 
+As you may or may not know, I'm currently in Australia. In fact, I've now been here for a little over a month. I'll blog about it sooner or later, but not yet. This is largely because I don't know what I'm going to say. This trip has been an alarming combination of coolness and frustration so far, and I don't want to let too much of the later slip out. That would be highly unprofessional of me, and possibly not great either for my employer or my career.  
+
+This post shall be about something else.  
+
+<!-- more -->
+
+I have a side project that I've chomping at the bit to get started on, and while I've been here I've worked up a couple of fairly good ideas for it. I can't start work on it, though, because I only have my work computer with me, and a studiously avoid doing any side projects or personal work on it, just to be on the safe side, intellectual property wise. Aside from reading up on things and doing some scribblings on paper, the other thing I can do is set up a bit of infrastructure. 
+
+I'm going to make the project public, both in terms of open sourcing the code and blogging about the ideas behind it (at least to begin with). But where, though? Here's my dilema: I'm HarveyNick on wordpress, Tumblr, Twitter* and now BitBucket (the place I'll be hosting the code - side note: I'll be going with Mercurial for revision control). Should I write the blog entries here (and have them trickle down to tumblr and twitter), and host the code directly under HarveyNick's account on BitBucket? Let's say I name the project after my old band, the repository would be  
+
+	bitbucket.org/harveynick/hinge  
+
+Which stamps my ownership on it quite heavily. Likewise, if I put blog entries here: same situation. In some senses that's a good thing. Right now, it's my project. I might not always want it to be that way, though. Getting other people involved might also be good. I tend to work better (a lot better) when I have someone to bounce ideas off. So let's consider option 2; I put the project under another umbrella, and give myself (ie the harveynick identity) access to it. Let's say I go with one of the names my old band was thinking of switching to after some assholes in Chicago threatened to sue us. That would put it here: 
+
+	bitbucket.org/deadcitywalking/hinge  
+
+I could then start a deadcitywalking.wordpress.com blog to talk about it, and perhaps link the entries here. Should other people start playing in this particular sandpit, then they could perhaps add their own entries to this blog.  
+
+You're probably not interested in this. I'm mostly just thinking out loud. But if you have any thoughts, I'd love to hear them.  
+
+\* Why do I have all three of these? I'm not entirely sure yet, other than because they're there.

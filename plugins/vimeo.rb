@@ -15,7 +15,7 @@
 
 module Jekyll
 
-  class YouTubeTag < Liquid::Tag
+  class VimeoTag < Liquid::Tag
     @source = nil
     @height = ''
     @width = ''
@@ -33,13 +33,13 @@ module Jekyll
     def render(context)
       output = super
       if @source
-        video = "<iframe src=\"http://www.youtube.com/embed/#{@source}\" width=\"#{@width}\" height=\"#{@height}\" frameborder=\"0\" allowfullscreen></iframe>"
+        video = "<iframe src=\"http://player.vimeo.com/video/#{@source}\" width=\"#{@width}\" height=\"#{@height}\" frameborder=\"0\" allowfullscreen></iframe>"
       else
-        "Error processing input, expected syntax: {% youtube video_id [width height] %}"
+        "Error processing input, expected syntax: {% vimeo video_id [width height] %}"
       end
     end
   end
 end
 
-Liquid::Template.register_tag('youtube', Jekyll::YouTubeTag)
+Liquid::Template.register_tag('vimeo', Jekyll::VimeoTag)
 
