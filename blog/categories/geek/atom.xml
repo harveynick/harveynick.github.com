@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Geek | HarveyNick]]></title>
   <link href="http://www.harveynick.com/blog/categories/geek/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-01-12T00:09:24+00:00</updated>
+  <updated>2012-01-14T13:39:27+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -60,38 +60,6 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Identity]]></title>
-    <link href="http://www.harveynick.com/blog/2010/06/19/identity/"/>
-    <updated>2010-06-19T15:01:16+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/06/19/identity</id>
-    <content type="html"><![CDATA[<p>As you may or may not know, I'm currently in Australia. In fact, I've now been here for a little over a month. I'll blog about it sooner or later, but not yet. This is largely because I don't know what I'm going to say. This trip has been an alarming combination of coolness and frustration so far, and I don't want to let too much of the later slip out. That would be highly unprofessional of me, and possibly not great either for my employer or my career.</p>
-
-<p>This post shall be about something else.</p>
-
-<!-- more -->
-
-
-<p>I have a side project that I've chomping at the bit to get started on, and while I've been here I've worked up a couple of fairly good ideas for it. I can't start work on it, though, because I only have my work computer with me, and a studiously avoid doing any side projects or personal work on it, just to be on the safe side, intellectual property wise. Aside from reading up on things and doing some scribblings on paper, the other thing I can do is set up a bit of infrastructure.</p>
-
-<p>I'm going to make the project public, both in terms of open sourcing the code and blogging about the ideas behind it (at least to begin with). But where, though? Here's my dilema: I'm HarveyNick on wordpress, Tumblr, Twitter* and now BitBucket (the place I'll be hosting the code - side note: I'll be going with Mercurial for revision control). Should I write the blog entries here (and have them trickle down to tumblr and twitter), and host the code directly under HarveyNick's account on BitBucket? Let's say I name the project after my old band, the repository would be</p>
-
-<pre><code>bitbucket.org/harveynick/hinge  
-</code></pre>
-
-<p>Which stamps my ownership on it quite heavily. Likewise, if I put blog entries here: same situation. In some senses that's a good thing. Right now, it's my project. I might not always want it to be that way, though. Getting other people involved might also be good. I tend to work better (a lot better) when I have someone to bounce ideas off. So let's consider option 2; I put the project under another umbrella, and give myself (ie the harveynick identity) access to it. Let's say I go with one of the names my old band was thinking of switching to after some assholes in Chicago threatened to sue us. That would put it here:</p>
-
-<pre><code>bitbucket.org/deadcitywalking/hinge  
-</code></pre>
-
-<p>I could then start a deadcitywalking.wordpress.com blog to talk about it, and perhaps link the entries here. Should other people start playing in this particular sandpit, then they could perhaps add their own entries to this blog.</p>
-
-<p>You're probably not interested in this. I'm mostly just thinking out loud. But if you have any thoughts, I'd love to hear them.</p>
-
-<p>* Why do I have all three of these? I'm not entirely sure yet, other than because they're there.</p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[...And Another Couple Of Things]]></title>
     <link href="http://www.harveynick.com/blog/2010/02/07/and-another-couple-of-things/"/>
     <updated>2010-02-07T22:16:05+00:00</updated>
@@ -140,6 +108,44 @@
 <p>PS For my parents, though, the damn thing is almost perfect.</p>
 
 <p>* Well... I say "all"... what I actually mean is "some."</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Goldilocks Dilema]]></title>
+    <link href="http://www.harveynick.com/blog/2009/12/09/the-goldilocks-dilema/"/>
+    <updated>2009-12-09T11:43:05+00:00</updated>
+    <id>http://www.harveynick.com/blog/2009/12/09/the-goldilocks-dilema</id>
+    <content type="html"><![CDATA[<p>Daddy Bear's porridge is too expensive.</p>
+
+<p>Baby Bear's porridge is underpowered.</p>
+
+<p>Mummy Bear's porridge is just right... but has a monitor in it.</p>
+
+<p>Hhhmmm... perhaps I should explain...</p>
+
+<p>It's reached that time. My computer is starting to show it's age. In small ways, mostly. It stalls occasionally, but with gradually increasing frequency. Every now and then it's slow down noticeably, and the fans are spending more and more time going full blast. If it actually died on me that would a <em>disaster </em>right now, but I'm not too worried about that just yet. Even so, I think it's time that it had a worthy heir.</p>
+
+<!-- more -->
+
+
+<p>At present I have a first generation black MacBook, but I think I'm going to go for a desktop for my next system. I like working at a desk, and with a desktop I'll get more bang (and screen) for my buck. I'll keeps the laptop around for taking to coffee shops and trips (and the times when I really feel I need to work on the sofa), and synchronise my data between machines using the <em>fantastic</em> <a href="https://www.dropbox.com/referrals/NTExMTkzNDQ5/">DropBox</a>. While I'm on the subject, I can't recommend DropBox enough. It seamlessly synchronises your files to and from the web, and works on all operating systems. Even Windows. Also: it's free for the first 2GB. If you're interesting in DropBox, please go via the link I posted above, we'll both get a bonus 250MB of space!</p>
+
+<p>When, or indeed if, my laptop dies, assuming I've had a pay rise and/or won the lottery, I might replace it with something a bit sleeker. By which I mean a MacBook Air. You might be saying: "Wait a minute, don't you have one of the those funky and cheap little netbook things?" and the answer would be yes, but I don't really use it. The simple fact is: you get what you pay for. It's way underpowered and the keyboard is a serious pain to use. Don't even get me started on the trackpad. I do have a use for it, though, and I might come back to that at a later date.</p>
+
+<p>But what desktop to get? Which brings us about back to where we came in. The question is: which desktop should I get. I'm getting a Mac, so my options are:</p>
+
+<p>Mac Pro. Ludicrously powerful, and very expensive. Almost certainly more than I need, and a bigger physical footprint than I'd prefer. Also uses a LOT of power.</p>
+
+<p>iMac. Gorgeous. Just about the exact specification I'm looking for. Not exactly cheap, but within the budget. Uses a reasonable amount of power. Is about as eco friendly as a machine with this sort of spec can be. Has an absolutely gorgeous built in 27" (or 21.5", but I would probably go for the 27") monitor. That last point is both a pro and a con, while it is spectacular monitor which would probably cost about the same amount as a stand alone unit as the iMac itself costs, I'd ideally like to be able to use the same monitor for my XBox 360. That's how I'll be playing games, you see. If I got the iMac I'd either have to put my old, smaller monitor next to it for the XBox, or move the XBox back into the lounge where I tended not to use it, as I felt like I was imposing and I like to sit quite close to the screen when playing.</p>
+
+<p>Mac Mini. Slightly underpowered. You can get decent processor in it, but the graphics card is quite low spec and I have plans to do some quite graphics-ey things. It is quite cheap, though, and I could buy an decent external monitor to go with it (XBox 360 ahoy!)  and still spend less than I would on an iMac. It's also very low power. The most eco friendly desktop on the market, in fact. Going flat out it would still be using less power than the iMac would idle (even taking the monitor into account) and uses only 14 Watts when idle. 14!</p>
+
+<p>So those are my options. You might now be thinking "Fool! Those are not your options! Get a PC! Then you'll have hundreds of options! PCs are better anyway! Macs are for idiots who don't know how to use a real computer!" and you would be a little bit right. That would solve <em>this</em> problem. It would also create about a bazilion new problems, though. Like the distinct possibility that I might throw my computer out of the window.</p>
+
+<p>Maybe you use Windows. Maybe you think it's just fine. Maybe you find those Mac adverts really annoying (so do I, most of the time) and you're fed up of being told that you should "get a Mac" by slightly pompous and patronising people. I'm not going to do that. If Windows works great for you, keep using it. It <em>is</em> shit though. Maybe not on the surface, but as a piece of software engineering it's a chrome plated turd, and Microsoft spends most of the their time doing extra chrome plating. That one of the many reasons that I'll be sticking with the Macs until something changes drastically... and I do mean <em>drastically</em>.</p>
+
+<p>In lieu of a nearby Apple Store I think I might go to John Lewis at the weekend and stare at my options. Maybe push a couple of buttons and try and find a way to stress out the graphics chip on the mini. Anyone got any opinions?</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hacker | HarveyNick]]></title>
   <link href="http://www.harveynick.com/blog/categories/hacker/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-01-12T00:09:24+00:00</updated>
+  <updated>2012-01-14T13:39:27+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -12,6 +12,94 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Simplifying the Landscape]]></title>
+    <link href="http://www.harveynick.com/blog/2011/12/01/simplifying-the-landscape/"/>
+    <updated>2011-12-01T09:28:05+00:00</updated>
+    <id>http://www.harveynick.com/blog/2011/12/01/simplifying-the-landscape</id>
+    <content type="html"><![CDATA[<p>At the end of the <a href="http://harveynick.com/blog/2010/10/22/now-in-eye-popping-3d/">last post</a> I wrote about the actual implementation of my Clockwork Aphid project, I said the next step was going to be display simplification. At that point I'd generated a few landscapes which were just starting barely starting to test the limits of my computer, though they were nothing like the size or complexity I had in mind. That said, it was looking at landscapes containing 1579008 polygons and it was obvious that not all of these needed to be put on screen. Moreover, because my landscapes are essentially made up of discrete samples (or nodes): I needed to reduce the number of samples which were displayed to the user, otherwise my performance was really going to tank as the landscapes increased in size.</p>
+
+<!-- more -->
+
+
+<p>Shamus Young talked about terrain simplification <a href="http://www.shamusyoung.com/twentysidedtale/?p=142">some time ago</a> during his original terrain project. This seemed as good a place as any to start, so I grabbed a copy of <a href="http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.14.4771">the paper</a> he used to build his algorithm. I didn't find it as complicated as it appears he did, but this is probably because I'm more used to reading papers like this (I must have read hundreds during my PhD, and even wrote a couple), so I'm reasonably fluent in academicese. It was, as I suspected, a good starting point, though I wouldn't be able to use the algorithm wholesale as it's not directly compatible with the representation I'm using. Happily, my representation does make it very simple to use the core idea, though.</p>
+
+<p>If you <a href="http://harveynick.com/blog/2010/10/19/youre-speaking-my-landscape-baby/">remember</a>, my representation stores the individual points in a sparse array, indexed using fractional coordinates. This makes it very flexible, and allows me to use an irregular level of detail (more on that later). Unlike the representation used in the paper, this means a can't make optimisations based on the assumption that my data is stored in a regular grid. Thankfully, the first stage of the simplification algorithm doesn't care about this and examines points individually. Also thankfully, the simplification algorithm uses the same parent/child based tessellation strategy that I do.</p>
+
+<p>The first step is decide which points are "active". This is essentially based on two variables:</p>
+
+<ul>
+<li>The amount of "object space error" a point has (i.e. how much it differs from its parents);</li>
+<li>The distance between the point and the "camera".</li>
+</ul>
+
+
+<p>A local constant is also present for each point:</p>
+
+<ul>
+<li>The point's bounding radius, or the distance to its furthest child (if it has children);</li>
+</ul>
+
+
+<p>I'm not sure if I actually need this last in my current implementation (my gut says no, I'll explain why later), but I'm leaving it in for the time being. Finally, two global constants are used for tuning, and we end up with this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/simplificationequation21.png"></p>
+
+<p>Where:</p>
+
+<ul>
+<li><em>i</em> = the point in question</li>
+<li><em>λ</em> = a constant</li>
+<li><em>ε<sub>i</sub></em> = the object space error of <em>i</em></li>
+<li><em>d<sub>i</sub></em> = the distance between <em>i</em> and the camera</li>
+<li><em>r<sub>i</sub></em> = the bounding radius of <em>i</em></li>
+<li><em>τ</em> = another constant</li>
+</ul>
+
+
+<p>This is not entirely optimal for processing, but a little bit of maths wizardry transforms this like so:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/simplificationequation31.png"></p>
+
+<p>This looks more complicated, and it's less intuitive to see what it actually does, but from the point of view of the computer it's a lot simpler, as it avoids the square root needed to calculate the distance between the point and the camera. Now we get to the fun part: diagrams! Consider the following small landscape, coloured as to the granularity of each of the points (aka the distance to the node's parents, see <a href="http://harveynick.com/blog/2010/10/22/fractal-errata/">this post</a>):</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/allpoints.jpg"></p>
+
+<p>Next, we'll pick some arbitrary values for the constants mentioned above (ones which work well for explanatory purposes), and place the viewpoint in the top left hand corner, and we end up with this the following active points (inactive points are hidden):</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/activepoints.jpg"></p>
+
+<p>Now, we take the active points with the smallest granularity, and we have them draw their polygons, <a href="http://harveynick.com/blog/2010/10/22/now-in-eye-popping-3d/">exactly as before</a>, which looks like this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/smallestpolygons.jpg"></p>
+
+<p>When we come to draw the polygons of the next highest granularity you'll see that we have a problem, though. The previous set of polygons have encroached on their territory. To avoid this, each node informs its parents that it is active and then the parent doesn't draw any polygons in the direction of its active children. If we add in the polygons drawn by the each of the other levels of granularity, we now end up with this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/filledpolygons.jpg"></p>
+
+<p>Oh no! There's a hole in my landscape! I was actually expecting that my simplistic approach would lead to more or less this result, but it was still a little annoying when it happened. If I was a proper analytical type I would next have sat down and worked over the geometry at play here, then attempted to find a formulation which would prevent this from happening. Instead, though, I stared at it for a good long while, displaying it in various different ways, and waited for something to jump out at me.</p>
+
+<p>Eventually it did, and thankfully it was a very simple rule. Each parent stores a list of the directions in which it has active children in order to prevent overdrawing (as mentioned above). The new rule is that a node is also considered active if this list is non-empty. With this addition, our tessellated landscape now look alike this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/backfilledpolygons.jpg"></p>
+
+<p>Presto! A nice simple rule which fills in all of the gaps in the landscape without any over or under simplification, or any overdrawing. I suspect this rule also negates the need for the bounding radius mentioned above, though I have not as yet tested that thought. To recap, we have three simple rules:</p>
+
+<ol>
+<li>A node is active if the object space error/distance equation says it is;</li>
+<li>A node is active if any of its children are active;</li>
+<li>Polygons are tessellated for each active point, but not in the direction of any active children.</li>
+</ol>
+
+
+<p>But what does this look like in actual eye poppingly 3D landscapes? Well, here's an example, using the height based colouring I've used before:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/simplifiedlandscape.jpg"></p>
+
+<p>I quite pleased with this, though what I'm doing here is still quite inefficient and in need of some serious tuning. There are a couple of further simplification tricks I can try (including the next step from the (paper) paper). More to come later. Honest.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Dogfood, Nom Nom Nom]]></title>
@@ -211,30 +299,6 @@ The museum has an entire section devoted to the evolution of storage, and it's q
 <p>Update: <a href="http://www.plan28.org/">Someone</a> is building an analytical engine!</p>
 
 <p>Another update: there is a follow up post <a href="http://harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder/">here</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[This Morning.]]></title>
-    <link href="http://www.harveynick.com/blog/2011/06/02/this-morning/"/>
-    <updated>2011-06-02T05:14:19+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/06/02/this-morning</id>
-    <content type="html"><![CDATA[<p>You're going to have to wait a little while longer for the Computer History Museum, Silicon Valley Wandering and San Francisco based updates I had in mind, since I still haven't found a good way of adding the images I wanted to. In the meantime, I thought I'd tell you about my morning, in a similar (if significantly smaller in scope) fashion to <a href="http://www.tbray.org/ongoing/When/201x/2010/04/12/Google-Vignettes">Tim Bray's semi-famous post</a>.</p>
-
-<p>Now, Google is very transparent internally, but also has fairly strict rules about what you can and can't talk to people about, regardless of whether you're talking to your friends, your family, random people on the street, or potentially random people on the information super highway (that's you). I haven't entirely gotten my head around them yet, so I'm limiting myself to things you could find out by yourself, either via the internet, by wandering around in the general vicinity of a Google office, or being invited in as a lunch guest. This latter option is not too uncommon; it's actually something we're encouraged to do (up to a point).</p>
-
-<!-- more -->
-
-
-<p>Be that as it may, this morning I drove in to the campus, and parked in a nice easy space a reasonable distance from the building. I'm not entirely used to driving on the <del>right</del> wrong side of the road and I'm not going to take any chances, so I was looking for a space with no other cars around. Someone had left one of the Google bikes next to where I parked, so I jumped on, rode straight past the the building my class was due to be in (I'm here for training) and headed over to one I knew had a cafe which served a decent breakfast.</p>
-
-<p>Side note: the Google bikes are distinctive in many fashions, one of which is that they lack brakes. This is good knowledge to have, and personally I would have liked to have found out when I was a little further away from the speed bump. Now you know. You're welcome.</p>
-
-<p>I stood the bike up near the door, next to a pack of its siblings, and badged my way into the building. The breakfast did not dispoint, and I actually broke down and grabbed a smallish portion of the french toast /crispy bacon / maple syrup combo which always tests my willpower (but thankfully doesn't seem to be an option at the London office). It was, on the whole, a very good breakfast. It does, however, leave me with a bit of a dilema: do I return to this cafe tomorrow, or try a different one?</p>
-
-<p>As I was leaving, a girl walked her bike into the cafe and propped it up while she filled a takeaway container with yummy, yummy breakfast food. Then, as I was gabbing a coffee before my class, a guy wandered past with his St. Bernard. Google is a very different kind of a workplace, that's for sure. Did I mention the building my classes were in yesterday has a four lane bowling allay and a dance studio?</p>
-
-<p>After that, I...  <strong>REDACTED</strong>  ...all of which was very interesting. In all seriousness, though: I'm getting a lot out of this trip.</p>
 ]]></content>
   </entry>
   
