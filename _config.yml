@@ -7,7 +7,7 @@ title: HarveyNick
 subtitle: My voice is my passport. Verify me. 
 author: Nick Johnson
 simple_search: http://google.com/search
-description: A blog about hacking, food, movies, books, music, and whatevery else happens to pop into my head.
+description: A blog about hacking, food, movies, books, music, and whatever else happens to pop into my head.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -39,7 +39,7 @@ pygments: false # default python pygments have been replaced by pygments.rb
 paginate: 5          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 10       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_link: "Read more &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
 titlecase: true       # Converts page and post titles to tilecase
 
