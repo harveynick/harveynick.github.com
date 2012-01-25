@@ -4,7 +4,7 @@
   <title><![CDATA[HarveyNick]]></title>
   <link href="http://www.harveynick.com/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-01-23T22:20:23+00:00</updated>
+  <updated>2012-01-25T20:33:58+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -18,14 +18,14 @@
     <link href="http://www.harveynick.com/blog/2011/12/01/simplifying-the-landscape/"/>
     <updated>2011-12-01T09:28:05+00:00</updated>
     <id>http://www.harveynick.com/blog/2011/12/01/simplifying-the-landscape</id>
-    <content type="html"><![CDATA[<p>At the end of the <a href="http://harveynick.com/blog/2010/10/22/now-in-eye-popping-3d/">last post</a> I wrote about the actual implementation of my Clockwork Aphid project, I said the next step was going to be display simplification. At that point I&#8217;d generated a few landscapes which were just starting barely starting to test the limits of my computer, though they were nothing like the size or complexity I had in mind. That said, it was looking at landscapes containing 1579008 polygons and it was obvious that not all of these needed to be put on screen. Moreover, because my landscapes are essentially made up of discrete samples (or nodes): I needed to reduce the number of samples which were displayed to the user, otherwise my performance was really going to tank as the landscapes increased in size.</p>
+    <content type="html"><![CDATA[<p>At the end of the <a href="http://www.harveynick.com/blog/2010/10/22/now-in-eye-popping-3d/">last post</a> I wrote about the actual implementation of my Clockwork Aphid project, I said the next step was going to be display simplification. At that point I&#8217;d generated a few landscapes which were just starting barely starting to test the limits of my computer, though they were nothing like the size or complexity I had in mind. That said, it was looking at landscapes containing 1579008 polygons and it was obvious that not all of these needed to be put on screen. Moreover, because my landscapes are essentially made up of discrete samples (or nodes): I needed to reduce the number of samples which were displayed to the user, otherwise my performance was really going to tank as the landscapes increased in size.</p>
 
 <!-- more -->
 
 
 <p>Shamus Young talked about terrain simplification <a href="http://www.shamusyoung.com/twentysidedtale/?p=142">some time ago</a> during his original terrain project. This seemed as good a place as any to start, so I grabbed a copy of <a href="http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.14.4771">the paper</a> he used to build his algorithm. I didn&#8217;t find it as complicated as it appears he did, but this is probably because I&#8217;m more used to reading papers like this (I must have read hundreds during my PhD, and even wrote a couple), so I&#8217;m reasonably fluent in academicese. It was, as I suspected, a good starting point, though I wouldn&#8217;t be able to use the algorithm wholesale as it&#8217;s not directly compatible with the representation I&#8217;m using. Happily, my representation does make it very simple to use the core idea, though.</p>
 
-<p>If you <a href="http://harveynick.com/blog/2010/10/19/youre-speaking-my-landscape-baby/">remember</a>, my representation stores the individual points in a sparse array, indexed using fractional coordinates. This makes it very flexible, and allows me to use an irregular level of detail (more on that later). Unlike the representation used in the paper, this means a can&#8217;t make optimisations based on the assumption that my data is stored in a regular grid. Thankfully, the first stage of the simplification algorithm doesn&#8217;t care about this and examines points individually. Also thankfully, the simplification algorithm uses the same parent/child based tessellation strategy that I do.</p>
+<p>If you <a href="http://www.harveynick.com/blog/2010/10/19/youre-speaking-my-landscape-baby/">remember</a>, my representation stores the individual points in a sparse array, indexed using fractional coordinates. This makes it very flexible, and allows me to use an irregular level of detail (more on that later). Unlike the representation used in the paper, this means a can&#8217;t make optimisations based on the assumption that my data is stored in a regular grid. Thankfully, the first stage of the simplification algorithm doesn&#8217;t care about this and examines points individually. Also thankfully, the simplification algorithm uses the same parent/child based tessellation strategy that I do.</p>
 
 <p>The first step is decide which points are &#8220;active&#8221;. This is essentially based on two variables:</p>
 
@@ -62,7 +62,7 @@
 
 <p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/simplificationequation31.png"></p>
 
-<p>This looks more complicated, and it&#8217;s less intuitive to see what it actually does, but from the point of view of the computer it&#8217;s a lot simpler, as it avoids the square root needed to calculate the distance between the point and the camera. Now we get to the fun part: diagrams! Consider the following small landscape, coloured as to the granularity of each of the points (aka the distance to the node&#8217;s parents, see <a href="http://harveynick.com/blog/2010/10/22/fractal-errata/">this post</a>):</p>
+<p>This looks more complicated, and it&#8217;s less intuitive to see what it actually does, but from the point of view of the computer it&#8217;s a lot simpler, as it avoids the square root needed to calculate the distance between the point and the camera. Now we get to the fun part: diagrams! Consider the following small landscape, coloured as to the granularity of each of the points (aka the distance to the node&#8217;s parents, see <a href="http://www.harveynick.com/blog/2010/10/22/fractal-errata/">this post</a>):</p>
 
 <p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/allpoints.jpg"></p>
 
@@ -70,7 +70,7 @@
 
 <p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/activepoints.jpg"></p>
 
-<p>Now, we take the active points with the smallest granularity, and we have them draw their polygons, <a href="http://harveynick.com/blog/2010/10/22/now-in-eye-popping-3d/">exactly as before</a>, which looks like this:</p>
+<p>Now, we take the active points with the smallest granularity, and we have them draw their polygons, <a href="http://www.harveynick.com/blog/2010/10/22/now-in-eye-popping-3d/">exactly as before</a>, which looks like this:</p>
 
 <p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/smallestpolygons.jpg"></p>
 
@@ -118,7 +118,7 @@
 
 <p><em>If you have to start somewhere, you might as well start here. File under: moments which made history.</em></p>
 
-<p>As I was walking to the cinema yesterday to see <a href="http://ohsohumbleopinion.tumblr.com/post/10360864080/tinker-tailor-soldier-spy">Tinker Tailer Soldier Spy</a>, I found myself thinking back to the Queen videos, but also to the <a href="http://harveynick.com/blog/2011/08/07/film-related-blog-post/">post</a> I previously wrote about how much I hated the last two Transformers films, and how much I adored Fast 5. I started wondering if a person&#8217;s taste in music might be reflected in their taste in film. I have fairly eclectic fast in music. I like a bit of <em>Dido</em>, a bit of <em>Bjork</em>. I love me some <em>Avenged Sevenfold</em> and some <em>In Flames</em>. I&#8217;m as likely to throw on a bit of <em>Massive Attack</em> as I am a bit of <em>Linkin Park</em>. Today I might be listening to <em>At The Drive-In</em>, where as on my walk yesterday my choice of backdrop was <em>Spiritual Beggars</em>. Like my mother before me, I&#8217;m also a bit of a Queen fan.</p>
+<p>As I was walking to the cinema yesterday to see <a href="http://ohsohumbleopinion.tumblr.com/post/10360864080/tinker-tailor-soldier-spy">Tinker Tailer Soldier Spy</a>, I found myself thinking back to the Queen videos, but also to the <a href="http://www.harveynick.com/blog/2011/08/07/film-related-blog-post/">post</a> I previously wrote about how much I hated the last two Transformers films, and how much I adored Fast 5. I started wondering if a person&#8217;s taste in music might be reflected in their taste in film. I have fairly eclectic fast in music. I like a bit of <em>Dido</em>, a bit of <em>Bjork</em>. I love me some <em>Avenged Sevenfold</em> and some <em>In Flames</em>. I&#8217;m as likely to throw on a bit of <em>Massive Attack</em> as I am a bit of <em>Linkin Park</em>. Today I might be listening to <em>At The Drive-In</em>, where as on my walk yesterday my choice of backdrop was <em>Spiritual Beggars</em>. Like my mother before me, I&#8217;m also a bit of a Queen fan.</p>
 
 <iframe src="http://www.youtube.com/embed/oozJH6jSr2U" width="" height="" frameborder="0" allowfullscreen></iframe>
 
@@ -172,9 +172,9 @@
     <link href="http://www.harveynick.com/blog/2011/09/14/revisiting-the-language-issue/"/>
     <updated>2011-09-14T10:00:14+01:00</updated>
     <id>http://www.harveynick.com/blog/2011/09/14/revisiting-the-language-issue</id>
-    <content type="html"><![CDATA[<p>Some time ago, I wrote a <a href="http://harveynick.com/blog/2010/10/10/youre-speaking-my-language-baby-part-2-java/">series</a> <a href="http://harveynick.com/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/">posts</a> <a href="http://harveynick.com/blog/2010/10/13/youre-speaking-my-language-baby-part-5-conclusion/">language</a> choice for my Clockwork Aphid project. In the end I decided to start the project in Java, this being the language I&#8217;m most comfortable with. Once the project reaches a stable state, with some minimum amount of functionality, the plan is to port it to C++ for comparison purposes, this being the language which is likely to provide the best performance.</p>
+    <content type="html"><![CDATA[<p>Some time ago, I wrote a <a href="http://www.harveynick.com/blog/2010/10/10/youre-speaking-my-language-baby-part-2-java/">series</a> <a href="http://www.harveynick.com/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/">posts</a> <a href="http://www.harveynick.com/blog/2010/10/13/youre-speaking-my-language-baby-part-5-conclusion/">language</a> choice for my Clockwork Aphid project. In the end I decided to start the project in Java, this being the language I&#8217;m most comfortable with. Once the project reaches a stable state, with some minimum amount of functionality, the plan is to port it to C++ for comparison purposes, this being the language which is likely to provide the best performance.</p>
 
-<p>I still plan on doing this, but I&#8217;ve also decided to add a couple of extra candidate languages to the melting pot and get an even broader comparison. The first of these languages is Go, a relatively new language developed at Google. This is not coincidence. I&#8217;ve been doing some reading about it lately and finding a lot of things I really like. It has the potential to provide the benefits of both Java <em>and</em> C++, whilst avoiding many of the pitfalls. This is definitely a good thing. It will also give me chance to dogfood (there&#8217;s <a href="http://harveynick.com/blog/2011/08/26/dogfood-nom-nom-nom/">that word</a> again!) some more Google technology.</p>
+<p>I still plan on doing this, but I&#8217;ve also decided to add a couple of extra candidate languages to the melting pot and get an even broader comparison. The first of these languages is Go, a relatively new language developed at Google. This is not coincidence. I&#8217;ve been doing some reading about it lately and finding a lot of things I really like. It has the potential to provide the benefits of both Java <em>and</em> C++, whilst avoiding many of the pitfalls. This is definitely a good thing. It will also give me chance to dogfood (there&#8217;s <a href="http://www.harveynick.com/blog/2011/08/26/dogfood-nom-nom-nom/">that word</a> again!) some more Google technology.</p>
 
 <!-- more -->
 
@@ -581,7 +581,7 @@ The fun thing, though, is that I found the second two books on the suggestions l
     <link href="http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder/"/>
     <updated>2011-06-06T02:36:54+01:00</updated>
     <id>http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder</id>
-    <content type="html"><![CDATA[<p>It seems that people really enjoyed my post about the <a href="http://harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2/">computer history museum</a>. At the time I wrote it, I was worried that it might constitute just a little bit too much nerd, so I held back on my initial impulse to put in more pictures and gush enthusiastically about how awesome it all was.</p>
+    <content type="html"><![CDATA[<p>It seems that people really enjoyed my post about the <a href="http://www.harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2/">computer history museum</a>. At the time I wrote it, I was worried that it might constitute just a little bit too much nerd, so I held back on my initial impulse to put in more pictures and gush enthusiastically about how awesome it all was.</p>
 
 <p>With hindsight, perhaps I can afford to ignore that particular mental stopcock, at least for a little while. I do not, I regret to tell you, have anymore pictures of <em>the</em> teapot. I do intend to buy myself a Melitta teapot at some point quite soon, however, so that it may sit in my flat and act as a most nerdy in-joke.</p>
 
@@ -775,7 +775,7 @@ The museum has an entire section devoted to the evolution of storage, and it&#82
 
 <p>Update: <a href="http://www.plan28.org/">Someone</a> is building an analytical engine!</p>
 
-<p>Another update: there is a follow up post <a href="http://harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder/">here</a>.</p>
+<p>Another update: there is a follow up post <a href="http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder/">here</a>.</p>
 ]]></content>
   </entry>
   

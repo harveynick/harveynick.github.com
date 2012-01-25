@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hacker | HarveyNick]]></title>
   <link href="http://www.harveynick.com/blog/categories/hacker/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-01-23T22:20:23+00:00</updated>
+  <updated>2012-01-25T20:33:58+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -18,14 +18,14 @@
     <link href="http://www.harveynick.com/blog/2011/12/01/simplifying-the-landscape/"/>
     <updated>2011-12-01T09:28:05+00:00</updated>
     <id>http://www.harveynick.com/blog/2011/12/01/simplifying-the-landscape</id>
-    <content type="html"><![CDATA[<p>At the end of the <a href="http://harveynick.com/blog/2010/10/22/now-in-eye-popping-3d/">last post</a> I wrote about the actual implementation of my Clockwork Aphid project, I said the next step was going to be display simplification. At that point I'd generated a few landscapes which were just starting barely starting to test the limits of my computer, though they were nothing like the size or complexity I had in mind. That said, it was looking at landscapes containing 1579008 polygons and it was obvious that not all of these needed to be put on screen. Moreover, because my landscapes are essentially made up of discrete samples (or nodes): I needed to reduce the number of samples which were displayed to the user, otherwise my performance was really going to tank as the landscapes increased in size.</p>
+    <content type="html"><![CDATA[<p>At the end of the <a href="/blog/2010/10/22/now-in-eye-popping-3d/">last post</a> I wrote about the actual implementation of my Clockwork Aphid project, I said the next step was going to be display simplification. At that point I'd generated a few landscapes which were just starting barely starting to test the limits of my computer, though they were nothing like the size or complexity I had in mind. That said, it was looking at landscapes containing 1579008 polygons and it was obvious that not all of these needed to be put on screen. Moreover, because my landscapes are essentially made up of discrete samples (or nodes): I needed to reduce the number of samples which were displayed to the user, otherwise my performance was really going to tank as the landscapes increased in size.</p>
 
 <!-- more -->
 
 
 <p>Shamus Young talked about terrain simplification <a href="http://www.shamusyoung.com/twentysidedtale/?p=142">some time ago</a> during his original terrain project. This seemed as good a place as any to start, so I grabbed a copy of <a href="http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.14.4771">the paper</a> he used to build his algorithm. I didn't find it as complicated as it appears he did, but this is probably because I'm more used to reading papers like this (I must have read hundreds during my PhD, and even wrote a couple), so I'm reasonably fluent in academicese. It was, as I suspected, a good starting point, though I wouldn't be able to use the algorithm wholesale as it's not directly compatible with the representation I'm using. Happily, my representation does make it very simple to use the core idea, though.</p>
 
-<p>If you <a href="http://harveynick.com/blog/2010/10/19/youre-speaking-my-landscape-baby/">remember</a>, my representation stores the individual points in a sparse array, indexed using fractional coordinates. This makes it very flexible, and allows me to use an irregular level of detail (more on that later). Unlike the representation used in the paper, this means a can't make optimisations based on the assumption that my data is stored in a regular grid. Thankfully, the first stage of the simplification algorithm doesn't care about this and examines points individually. Also thankfully, the simplification algorithm uses the same parent/child based tessellation strategy that I do.</p>
+<p>If you <a href="/blog/2010/10/19/youre-speaking-my-landscape-baby/">remember</a>, my representation stores the individual points in a sparse array, indexed using fractional coordinates. This makes it very flexible, and allows me to use an irregular level of detail (more on that later). Unlike the representation used in the paper, this means a can't make optimisations based on the assumption that my data is stored in a regular grid. Thankfully, the first stage of the simplification algorithm doesn't care about this and examines points individually. Also thankfully, the simplification algorithm uses the same parent/child based tessellation strategy that I do.</p>
 
 <p>The first step is decide which points are "active". This is essentially based on two variables:</p>
 
@@ -62,7 +62,7 @@
 
 <p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/simplificationequation31.png"></p>
 
-<p>This looks more complicated, and it's less intuitive to see what it actually does, but from the point of view of the computer it's a lot simpler, as it avoids the square root needed to calculate the distance between the point and the camera. Now we get to the fun part: diagrams! Consider the following small landscape, coloured as to the granularity of each of the points (aka the distance to the node's parents, see <a href="http://harveynick.com/blog/2010/10/22/fractal-errata/">this post</a>):</p>
+<p>This looks more complicated, and it's less intuitive to see what it actually does, but from the point of view of the computer it's a lot simpler, as it avoids the square root needed to calculate the distance between the point and the camera. Now we get to the fun part: diagrams! Consider the following small landscape, coloured as to the granularity of each of the points (aka the distance to the node's parents, see <a href="/blog/2010/10/22/fractal-errata/">this post</a>):</p>
 
 <p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/allpoints.jpg"></p>
 
@@ -70,7 +70,7 @@
 
 <p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/activepoints.jpg"></p>
 
-<p>Now, we take the active points with the smallest granularity, and we have them draw their polygons, <a href="http://harveynick.com/blog/2010/10/22/now-in-eye-popping-3d/">exactly as before</a>, which looks like this:</p>
+<p>Now, we take the active points with the smallest granularity, and we have them draw their polygons, <a href="/blog/2010/10/22/now-in-eye-popping-3d/">exactly as before</a>, which looks like this:</p>
 
 <p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/smallestpolygons.jpg"></p>
 
@@ -140,7 +140,7 @@
     <link href="http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder/"/>
     <updated>2011-06-06T02:36:54+01:00</updated>
     <id>http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder</id>
-    <content type="html"><![CDATA[<p>It seems that people really enjoyed my post about the <a href="http://harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2/">computer history museum</a>. At the time I wrote it, I was worried that it might constitute just a little bit too much nerd, so I held back on my initial impulse to put in more pictures and gush enthusiastically about how awesome it all was.</p>
+    <content type="html"><![CDATA[<p>It seems that people really enjoyed my post about the <a href="/blog/2011/06/03/in-which-i-go-full-nerd-2/">computer history museum</a>. At the time I wrote it, I was worried that it might constitute just a little bit too much nerd, so I held back on my initial impulse to put in more pictures and gush enthusiastically about how awesome it all was.</p>
 
 <p>With hindsight, perhaps I can afford to ignore that particular mental stopcock, at least for a little while. I do not, I regret to tell you, have anymore pictures of <em>the</em> teapot. I do intend to buy myself a Melitta teapot at some point quite soon, however, so that it may sit in my flat and act as a most nerdy in-joke.</p>
 
@@ -298,7 +298,7 @@ The museum has an entire section devoted to the evolution of storage, and it's q
 
 <p>Update: <a href="http://www.plan28.org/">Someone</a> is building an analytical engine!</p>
 
-<p>Another update: there is a follow up post <a href="http://harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder/">here</a>.</p>
+<p>Another update: there is a follow up post <a href="/blog/2011/06/06/full-nerd-ii-nerd-harder/">here</a>.</p>
 ]]></content>
   </entry>
   

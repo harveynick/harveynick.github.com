@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Implementation | HarveyNick]]></title>
   <link href="http://www.harveynick.com/blog/categories/implementation/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-01-23T22:20:23+00:00</updated>
+  <updated>2012-01-25T20:33:58+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -18,9 +18,9 @@
     <link href="http://www.harveynick.com/blog/2011/09/14/revisiting-the-language-issue/"/>
     <updated>2011-09-14T10:00:14+01:00</updated>
     <id>http://www.harveynick.com/blog/2011/09/14/revisiting-the-language-issue</id>
-    <content type="html"><![CDATA[<p>Some time ago, I wrote a <a href="http://harveynick.com/blog/2010/10/10/youre-speaking-my-language-baby-part-2-java/">series</a> <a href="http://harveynick.com/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/">posts</a> <a href="http://harveynick.com/blog/2010/10/13/youre-speaking-my-language-baby-part-5-conclusion/">language</a> choice for my Clockwork Aphid project. In the end I decided to start the project in Java, this being the language I'm most comfortable with. Once the project reaches a stable state, with some minimum amount of functionality, the plan is to port it to C++ for comparison purposes, this being the language which is likely to provide the best performance.</p>
+    <content type="html"><![CDATA[<p>Some time ago, I wrote a <a href="/blog/2010/10/10/youre-speaking-my-language-baby-part-2-java/">series</a> <a href="/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/">posts</a> <a href="/blog/2010/10/13/youre-speaking-my-language-baby-part-5-conclusion/">language</a> choice for my Clockwork Aphid project. In the end I decided to start the project in Java, this being the language I'm most comfortable with. Once the project reaches a stable state, with some minimum amount of functionality, the plan is to port it to C++ for comparison purposes, this being the language which is likely to provide the best performance.</p>
 
-<p>I still plan on doing this, but I've also decided to add a couple of extra candidate languages to the melting pot and get an even broader comparison. The first of these languages is Go, a relatively new language developed at Google. This is not coincidence. I've been doing some reading about it lately and finding a lot of things I really like. It has the potential to provide the benefits of both Java <em>and</em> C++, whilst avoiding many of the pitfalls. This is definitely a good thing. It will also give me chance to dogfood (there's <a href="http://harveynick.com/blog/2011/08/26/dogfood-nom-nom-nom/">that word</a> again!) some more Google technology.</p>
+<p>I still plan on doing this, but I've also decided to add a couple of extra candidate languages to the melting pot and get an even broader comparison. The first of these languages is Go, a relatively new language developed at Google. This is not coincidence. I've been doing some reading about it lately and finding a lot of things I really like. It has the potential to provide the benefits of both Java <em>and</em> C++, whilst avoiding many of the pitfalls. This is definitely a good thing. It will also give me chance to dogfood (there's <a href="/blog/2011/08/26/dogfood-nom-nom-nom/">that word</a> again!) some more Google technology.</p>
 
 <!-- more -->
 
@@ -177,7 +177,7 @@
     <link href="http://www.harveynick.com/blog/2010/10/20/some-random-landscapes/"/>
     <updated>2010-10-20T15:50:46+01:00</updated>
     <id>http://www.harveynick.com/blog/2010/10/20/some-random-landscapes</id>
-    <content type="html"><![CDATA[<p>I don't have any 3D views of the <a href="http://harveynick.com/blog/2010/10/19/youre-speaking-my-landscape-baby/">fractal landscapes I've been making</a> to show you yet, as I'm still working through the different implementation options. I did get a little distracted with the 2D views of the landscape this morning, though, and play with the colouring scheme.</p>
+    <content type="html"><![CDATA[<p>I don't have any 3D views of the <a href="/blog/2010/10/19/youre-speaking-my-landscape-baby/">fractal landscapes I've been making</a> to show you yet, as I'm still working through the different implementation options. I did get a little distracted with the 2D views of the landscape this morning, though, and play with the colouring scheme.</p>
 
 <!-- more -->
 

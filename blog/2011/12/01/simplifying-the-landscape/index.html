@@ -104,14 +104,14 @@
   </header>
 
 
-<div class="entry-content"><p>At the end of the <a href="http://harveynick.com/blog/2010/10/22/now-in-eye-popping-3d/">last post</a> I wrote about the actual implementation of my Clockwork Aphid project, I said the next step was going to be display simplification. At that point I&#8217;d generated a few landscapes which were just starting barely starting to test the limits of my computer, though they were nothing like the size or complexity I had in mind. That said, it was looking at landscapes containing 1579008 polygons and it was obvious that not all of these needed to be put on screen. Moreover, because my landscapes are essentially made up of discrete samples (or nodes): I needed to reduce the number of samples which were displayed to the user, otherwise my performance was really going to tank as the landscapes increased in size.</p>
+<div class="entry-content"><p>At the end of the <a href="/blog/2010/10/22/now-in-eye-popping-3d/">last post</a> I wrote about the actual implementation of my Clockwork Aphid project, I said the next step was going to be display simplification. At that point I&#8217;d generated a few landscapes which were just starting barely starting to test the limits of my computer, though they were nothing like the size or complexity I had in mind. That said, it was looking at landscapes containing 1579008 polygons and it was obvious that not all of these needed to be put on screen. Moreover, because my landscapes are essentially made up of discrete samples (or nodes): I needed to reduce the number of samples which were displayed to the user, otherwise my performance was really going to tank as the landscapes increased in size.</p>
 
 <!-- more -->
 
 
 <p>Shamus Young talked about terrain simplification <a href="http://www.shamusyoung.com/twentysidedtale/?p=142">some time ago</a> during his original terrain project. This seemed as good a place as any to start, so I grabbed a copy of <a href="http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.14.4771">the paper</a> he used to build his algorithm. I didn&#8217;t find it as complicated as it appears he did, but this is probably because I&#8217;m more used to reading papers like this (I must have read hundreds during my PhD, and even wrote a couple), so I&#8217;m reasonably fluent in academicese. It was, as I suspected, a good starting point, though I wouldn&#8217;t be able to use the algorithm wholesale as it&#8217;s not directly compatible with the representation I&#8217;m using. Happily, my representation does make it very simple to use the core idea, though.</p>
 
-<p>If you <a href="http://harveynick.com/blog/2010/10/19/youre-speaking-my-landscape-baby/">remember</a>, my representation stores the individual points in a sparse array, indexed using fractional coordinates. This makes it very flexible, and allows me to use an irregular level of detail (more on that later). Unlike the representation used in the paper, this means a can&#8217;t make optimisations based on the assumption that my data is stored in a regular grid. Thankfully, the first stage of the simplification algorithm doesn&#8217;t care about this and examines points individually. Also thankfully, the simplification algorithm uses the same parent/child based tessellation strategy that I do.</p>
+<p>If you <a href="/blog/2010/10/19/youre-speaking-my-landscape-baby/">remember</a>, my representation stores the individual points in a sparse array, indexed using fractional coordinates. This makes it very flexible, and allows me to use an irregular level of detail (more on that later). Unlike the representation used in the paper, this means a can&#8217;t make optimisations based on the assumption that my data is stored in a regular grid. Thankfully, the first stage of the simplification algorithm doesn&#8217;t care about this and examines points individually. Also thankfully, the simplification algorithm uses the same parent/child based tessellation strategy that I do.</p>
 
 <p>The first step is decide which points are &#8220;active&#8221;. This is essentially based on two variables:</p>
 
@@ -148,7 +148,7 @@
 
 <p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/simplificationequation31.png"></p>
 
-<p>This looks more complicated, and it&#8217;s less intuitive to see what it actually does, but from the point of view of the computer it&#8217;s a lot simpler, as it avoids the square root needed to calculate the distance between the point and the camera. Now we get to the fun part: diagrams! Consider the following small landscape, coloured as to the granularity of each of the points (aka the distance to the node&#8217;s parents, see <a href="http://harveynick.com/blog/2010/10/22/fractal-errata/">this post</a>):</p>
+<p>This looks more complicated, and it&#8217;s less intuitive to see what it actually does, but from the point of view of the computer it&#8217;s a lot simpler, as it avoids the square root needed to calculate the distance between the point and the camera. Now we get to the fun part: diagrams! Consider the following small landscape, coloured as to the granularity of each of the points (aka the distance to the node&#8217;s parents, see <a href="/blog/2010/10/22/fractal-errata/">this post</a>):</p>
 
 <p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/allpoints.jpg"></p>
 
@@ -156,7 +156,7 @@
 
 <p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/activepoints.jpg"></p>
 
-<p>Now, we take the active points with the smallest granularity, and we have them draw their polygons, <a href="http://harveynick.com/blog/2010/10/22/now-in-eye-popping-3d/">exactly as before</a>, which looks like this:</p>
+<p>Now, we take the active points with the smallest granularity, and we have them draw their polygons, <a href="/blog/2010/10/22/now-in-eye-popping-3d/">exactly as before</a>, which looks like this:</p>
 
 <p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/smallestpolygons.jpg"></p>
 
