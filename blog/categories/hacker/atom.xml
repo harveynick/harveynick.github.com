@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hacker | HarveyNick]]></title>
   <link href="http://www.harveynick.com/blog/categories/hacker/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-01-25T20:33:58+00:00</updated>
+  <updated>2012-02-02T00:39:30+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -98,6 +98,165 @@
 <p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/simplifiedlandscape.jpg"></p>
 
 <p>I quite pleased with this, though what I'm doing here is still quite inefficient and in need of some serious tuning. There are a couple of further simplification tricks I can try (including the next step from the (paper) paper). More to come later. Honest.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Revisiting the Language Issue]]></title>
+    <link href="http://www.harveynick.com/blog/2011/09/14/revisiting-the-language-issue/"/>
+    <updated>2011-09-14T10:00:14+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/09/14/revisiting-the-language-issue</id>
+    <content type="html"><![CDATA[<p>Some time ago, I wrote a <a href="/blog/2010/10/09/youre-speaking-my-language-baby-part-1-introduction/">series</a> <a href="/blog/2010/10/10/youre-speaking-my-language-baby-part-2-java/">of</a> <a href="/blog/2010/10/11/youre-speaking-my-language-baby-part-3-c/">posts</a> <a href="/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/">about</a> <a href="/blog/2010/10/13/youre-speaking-my-language-baby-part-5-conclusion/">language</a> choice for my Clockwork Aphid project. In the end I decided to start the project in Java, this being the language I'm most comfortable with. Once the project reaches a stable state, with some minimum amount of functionality, the plan is to port it to C++ for comparison purposes, this being the language which is likely to provide the best performance.</p>
+
+<p>I still plan on doing this, but I've also decided to add a couple of extra candidate languages to the melting pot and get an even broader comparison. The first of these languages is Go, a relatively new language developed at Google. This is not coincidence. I've been doing some reading about it lately and finding a lot of things I really like. It has the potential to provide the benefits of both Java <em>and</em> C++, whilst avoiding many of the pitfalls. This is definitely a good thing. It will also give me chance to dogfood (there's <a href="/blog/2011/08/26/dogfood-nom-nom-nom/">that word</a> again!) some more Google technology.</p>
+
+<!-- more -->
+
+
+<p>One of Go's features which I really like is implicit interfaces. Allow me to explain. In most regular statically typed object orientated languages, such as Java (which I'll use for this example), you can abstract functionality using something like an interface. For example, let's say I have a class which looks like this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">Counter</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">value</span><span class="o">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="nf">get</span><span class="o">()</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">return</span> <span class="n">value</span><span class="o">;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Here we have defined an class which declares a single method which returns an integer value. I might then make use of this an instance of this class elsewhere:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">Printer</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="n">Counter</span> <span class="n">counter</span><span class="o">)</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">counter</span><span class="o">.</span><span class="na">get</span><span class="o">());</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>All is good with the world, unless I decide I want to change the behaviour of the code. Perhaps I want the value to increment after each call, for example. I could extend the Counter class and change its behaviour that way:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">IncrementingCounter</span> <span class="kd">extends</span> <span class="n">Counter</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="nf">get</span><span class="o">()</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">return</span> <span class="n">value</span><span class="o">++;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>I can now pass an instance of this new class into the update method of the Handler. Done. Right? Well... no. This is a bit of a clumsy way to go about this. It doesn't scale and it's not always possible. A better way to handle this is to use an interface:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">interface</span> <span class="nc">CounterInterface</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="nf">get</span><span class="o">();</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>This specifies the interface of the methods, but not their implementation. We can then change the Printer class to use this interface, rather than the concrete class:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">Printer</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="n">CounterInterface</span> <span class="n">counter</span><span class="o">)</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">counter</span><span class="o">.</span><span class="na">get</span><span class="o">());</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Now any class which implements this interface can be passed to the Printer. So, going to back to our original example:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">Counter</span> <span class="kd">implements</span> <span class="n">CounterInterface</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">value</span><span class="o">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="nf">get</span><span class="o">()</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">return</span> <span class="n">value</span><span class="o">;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>We can now make any number of alternative implementations (incrementing, decrementing, random, fibronatchi…) and as long as they implement the interface they can be passed to the printer. This is fine if you're in control of the implementation, and even more fine if you're in control of the interface as well. There are times, however, when you're in change of neither. Things can get a little messy and you may have to find a way of pushing a round peg through a square hole.</p>
+
+<p>In dynamically typed languages, such as Python and Ruby, things work a little differently. These languages are often referred to as being "duck" typed, as they make the assumption that if something "looks like a duck and quacks like a duck, treat it as though it's a duck." In this case we wouldn't bother with any of the interfaces and our Printer class would look more like this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">class</span> <span class="nc">Printer</span><span class="p">:</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">counter</span><span class="p">):</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">print</span> <span class="n">counter</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>So long as the counter object has a method called get() we don't have a problem. Everything will be fine. This is much simpler, and is one of the things which makes Python very quick to program in, but it does have problems. The main problem (for me, at least) is specification. Without examining the source code, I can't see what sort of object I have to pass into the update method. If the method has been manually commented then there's no problem, but this is an incredible tedious thing to have to do. In the Java code I can see the type right there in the auto-generated documentation, and even if the writer has written no comments at all (what a bastard!) I can still get a good idea of what I need to pass into the method.</p>
+
+<p>Go takes a different approach. It's statically typed, and it has interfaces, but a class doesn't need to state that it implements an interface. This is implicit and automatic. If a class has the methods defined in an interface, then it is automatically considered to implement it. You get the flexibility of Python with the specification and predicability of Java. This is just one of the things in Go which I think is a really good idea.</p>
+
+<p>On the other hand, I think functional programming is a really stupid idea. I find the languages to be completely horrendous. I feel they must be created by the sort of people who think Linux is user friendly. I consider them curiosities whose only merit is academic. It appears to me that their major use case is to make programming appear more obscure than it actually is and to abstract way the programmer's knowledge of what the computer is actually doing.</p>
+
+<p>You may be surprised to learn, then, that the third language I'm going to be trying to port Clockwork Aphid into is Scala, a functional programming language. The reason for this is simple: while I personally believe that functional programming (FP) is rubbish, many people disagree. Not a majority, but certainly a very vocal minority. Within Google this minority is very vocal in indeed. The word "fundamentalists" might be appropriate to describe them. When someone believes something that hard it makes me very curious. This is turn tends to lead me towards testing my own beliefs. Sometimes I discover something new and exciting which I was missing out on previously*, and sometimes my initial suspicions are confirmed**. We'll see which way it goes with Scala.</p>
+
+<p>* Such as the Harry Potter books, which I had stubbornly refused to read until just before the first film was released.<br/>
+** Such as when I noticed that the Twilight books had taken up the first four places on the Waterstone's chart and decided I aught to find out what all the fuss was about.</p>
 ]]></content>
   </entry>
   
@@ -245,60 +404,6 @@ The museum has an entire section devoted to the evolution of storage, and it's q
 <p><img class="center" src="http://farm4.static.flickr.com/3543/5799108082_ceb1e2603d.jpg"></p>
 
 <p>That is all.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[...In Which I Go Full Nerd]]></title>
-    <link href="http://www.harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2/"/>
-    <updated>2011-06-03T01:43:18+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2</id>
-    <content type="html"><![CDATA[<p>Jet lag is a funny thing. Right now it actually seems to be working in my favour; it's managed to knock a couple of bad habits out of me. Specifically, these happen to be the not entirely unrelated habits of going to bed too late (then making it later by reading for a good long while) and getting up too late. Right now I seem to be fighting to keep my eyes open by around nine, and then being wide awake by seven. Which is more or less the position I found myself in on Sunday. Since day one at Google camp was a couple of days away I thought I'd check out my immediate surroundings.</p>
-
-<p>This may come as a bit of a surprise to you, but there isn't actually a lot to do in Mountain View. One of the things there is to do, however, is the computer history museum, which I'd been told is exactly as awesome as it sounds. In case my meaning isn't clear: really awesome. There is no sarcasm here. Look at my face. Awesome. This is not my sarcastic face. Awesome. Face. Awesome.</p>
-
-<!-- more -->
-
-
-<p>I have a rental car, but the brakes scare the shit out of me, and the place didn't look too far away, so I decided to walk. Now, I'd been warned that no one walks in America, but I wasn't quite prepared for it to be true. I must have walked 5 miles on Sunday and saw a grand total of perhaps 3 other pedestrians, and found that drivers looked at me as though I was a crazy person. I think perhaps one reason for this might be that the pavements (or sidewalks, if you like) are... well... shit. Anytime you have a height difference of more than an inch between two slabs... that's bad.</p>
-
-<p>Slightly thankful that there were no other pedestrians to see me trip, I arrived at the building in question. Externally, it's kind of neat. You might mistake it for the headquarters of some hip new tech startup. If it wasn't for the big sign saying "Computer history Museum" outside, obviously. Inside, though, it reminded me quite of bit of the Science Museum ("which science museum?" "The Science Museum"). It's nowhere near as grandiose, and has a much narrower focus, but the comparison feels apt.</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/e01ff01b-d1b9-454d-afd7-cbc96bdfc9ed6.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/e01ff01b-d1b9-454d-afd7-cbc96bdfc9ed6.jpg"></a></p>
-
-<p>The scope of the exhibits is quite impressive, starting with slide rules and abaci, moving though Babbage (oh, I'll come back to Babbage), on to Turing and right up to the present day. Here are a couple of examples of things which made me smile:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/ab03b781-9c94-46de-851f-711679d9a0e90.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/ab03b781-9c94-46de-851f-711679d9a0e90.jpg"></a></p>
-
-<p>The Altair 8800, quite an important machine in the history of Microsoft, of which the fictionalised version of Steve Jobs in Pirates of Silicon Valley says "I never had any problem with the Altair... until I tried to use it."</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/b17fcbeb-6b46-46e5-93f7-91c5995b999d1.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/b17fcbeb-6b46-46e5-93f7-91c5995b999d1.jpg"></a></p>
-
-<p>You know what's better than that, though? A computer made out of wood. If you bought an <em>Apple I</em> you received a box of parts and some schematics. You hade to supply the case yourself. You know what else is awesome? UNIX is awesome:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/11d69f5d-3b06-4df6-bc7a-0b85aaf6ca362.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/11d69f5d-3b06-4df6-bc7a-0b85aaf6ca362.jpg"></a></p>
-
-<p>You see? There's a badge and everything. What says awesome more than a badge? Oh wait, I know:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/7a115add-1257-44eb-9fa7-6dc114378d8f3.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/7a115add-1257-44eb-9fa7-6dc114378d8f3.jpg"></a></p>
-
-<p>Oh yeah. That's right. I bet you wish you were cool enough to have that licence plate. As a side note: I wonder if anyone does have that licence plate, since I assume this one isn't real. Furthermore: what kind of car would you put that on? This is fodder for <em>Pimp My Ride</em> right here. They should get on that ("Yo, we heard you like UNIX...").</p>
-
-<p>There was a lot more at the museum. Too much, in fact. I arrived about an hour after it opened and literally left as they locked the door behind me. I probably skipped about half of the section on the internet, and only had time for a brief look at the exhibit on the history of computer chess. Did I mention that they have half of Deep Blue? They also have something else very, very cool, and that's one of the two Babbage <a href="http://en.wikipedia.org/wiki/Difference_engine">Difference Engines</a> which we only very recently developed the capability to actually build:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/a677c6d3-c432-4285-9d81-1085791eeed14.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/a677c6d3-c432-4285-9d81-1085791eeed14.jpg"></a></p>
-
-<p>You really can't do justice to this thing in a photograph. It's beautiful. A marvel of engineering, it actually works exactly as Babbage said it would, and he built it entirely on paper. In 1849. Somebody should build an <a href="http://en.wikipedia.org/wiki/Analytical_engine">Analytical Engine</a>. That, my friends, would truly be something.</p>
-
-<p>One last thing:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/c4843570-b8d8-4251-bf11-2e49bc097e955.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/c4843570-b8d8-4251-bf11-2e49bc097e955.jpg"></a></p>
-
-<p>I think this might be THE teapot.</p>
-
-<p>Update: <a href="http://www.plan28.org/">Someone</a> is building an analytical engine!</p>
-
-<p>Another update: there is a follow up post <a href="/blog/2011/06/06/full-nerd-ii-nerd-harder/">here</a>.</p>
 ]]></content>
   </entry>
   
