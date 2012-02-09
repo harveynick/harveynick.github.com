@@ -1,6 +1,7 @@
 require "rubygems"
 require "bundler/setup"
 require "stringex"
+require "net/http"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
@@ -25,6 +26,7 @@ themes_dir      = ".themes"   # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
 server_port     = "4000"      # port for preview server eg. localhost:4000
+gravitar_hash   = "1eb55935486442c1e2b2455f85b9a771"
 
 
 desc "Initial setup for Octopress: copies the default theme into the path of Jekyll's generator. Rake install defaults to rake install[classic] to install a different theme run rake install[some_theme_name]"
@@ -257,6 +259,17 @@ multitask :push do
     system "git push origin #{deploy_branch} --force"
     puts "\n## Github Pages deploy complete"
   end
+end
+
+task :favicon do
+  Net::HTTP.start("www.gravatar.com") { |http|
+    resp = http.get("/avatar/#{gravitar_hash}?s=16")
+    open("#{source_dir}/favicon.jpg", "wb") { |file|
+      file.write(resp.body)
+    }
+  }
+  system "convert #{source_dir}/favicon.jpg #{source_dir}/favicon.png"
+  system "rm #{source_dir}/favicon.jpg"
 end
 
 desc "Update configurations to support publishing to root or sub directory"

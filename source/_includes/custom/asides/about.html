@@ -1,4 +1,16 @@
 <section>
-  <h1>About Me</h1>
-  <p>A little something about me.</p>
+  <h1>A Little Bit About Me</h1>
+  <p>This is the personal site of <a href="about">Nick Johnson</a>, presently a software engineer working for Google.</p>
+  <p><center><img src="http://www.gravatar.com/avatar/{{ site.gravatar_hash }}?s={{site.gravatar_size}}" width="{{site.gravatar_size}}" height="{{site.gravatar_size}}" /></center></p>
+  <p>I am, among other things: 
+  {% for category in site.categories %}
+    {% capture category_name %}{{ category[0] | downcase }}{% endcapture %}
+    {% capture category_link %}{{category_name | get_indefinate_article}} <a href="blog/categories/{{category_name | urlify}}">{{category_name}}</a>{% endcapture %}
+    {% if forloop.last %}
+      and {{ category_link }}.
+    {% else %}
+  	  {{ category_link }},
+    {% endif %}
+  {% endfor %}
+  I write about all of that here.</p>
 </section>
