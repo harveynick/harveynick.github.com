@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: Java | HarveyNick.com]]></title>
+  <link href="http://www.harveynick.com/blog/tags/java/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2012-03-01T00:51:34+00:00</updated>
+  <id>http://www.harveynick.com/</id>
+  <author>
+    <name><![CDATA[Nick Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Revisiting the Language Issue]]></title>
+    <link href="http://www.harveynick.com/blog/2011/09/14/revisiting-the-language-issue/"/>
+    <updated>2011-09-14T10:00:14+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/09/14/revisiting-the-language-issue</id>
+    <content type="html"><![CDATA[<p>Some time ago, I wrote a <a href="/blog/2010/10/09/youre-speaking-my-language-baby-part-1-introduction/">series</a> <a href="/blog/2010/10/10/youre-speaking-my-language-baby-part-2-java/">of</a> <a href="/blog/2010/10/11/youre-speaking-my-language-baby-part-3-c/">posts</a> <a href="/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/">about</a> <a href="/blog/2010/10/13/youre-speaking-my-language-baby-part-5-conclusion/">language</a> choice for my Clockwork Aphid project. In the end I decided to start the project in Java, this being the language I'm most comfortable with. Once the project reaches a stable state, with some minimum amount of functionality, the plan is to port it to C++ for comparison purposes, this being the language which is likely to provide the best performance.</p>
+
+<p>I still plan on doing this, but I've also decided to add a couple of extra candidate languages to the melting pot and get an even broader comparison. The first of these languages is Go, a relatively new language developed at Google. This is not coincidence. I've been doing some reading about it lately and finding a lot of things I really like. It has the potential to provide the benefits of both Java <em>and</em> C++, whilst avoiding many of the pitfalls. This is definitely a good thing. It will also give me chance to dogfood (there's <a href="/blog/2011/08/26/dogfood-nom-nom-nom/">that word</a> again!) some more Google technology.</p>
+
+<!-- more -->
+
+
+<p>One of Go's features which I really like is implicit interfaces. Allow me to explain. In most regular statically typed object orientated languages, such as Java (which I'll use for this example), you can abstract functionality using something like an interface. For example, let's say I have a class which looks like this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">Counter</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">value</span><span class="o">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="nf">get</span><span class="o">()</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">return</span> <span class="n">value</span><span class="o">;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Here we have defined an class which declares a single method which returns an integer value. I might then make use of this an instance of this class elsewhere:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">Printer</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="n">Counter</span> <span class="n">counter</span><span class="o">)</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">counter</span><span class="o">.</span><span class="na">get</span><span class="o">());</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>All is good with the world, unless I decide I want to change the behaviour of the code. Perhaps I want the value to increment after each call, for example. I could extend the Counter class and change its behaviour that way:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">IncrementingCounter</span> <span class="kd">extends</span> <span class="n">Counter</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="nf">get</span><span class="o">()</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">return</span> <span class="n">value</span><span class="o">++;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>I can now pass an instance of this new class into the update method of the Handler. Done. Right? Well... no. This is a bit of a clumsy way to go about this. It doesn't scale and it's not always possible. A better way to handle this is to use an interface:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">interface</span> <span class="nc">CounterInterface</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="nf">get</span><span class="o">();</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>This specifies the interface of the methods, but not their implementation. We can then change the Printer class to use this interface, rather than the concrete class:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">Printer</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="n">CounterInterface</span> <span class="n">counter</span><span class="o">)</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">counter</span><span class="o">.</span><span class="na">get</span><span class="o">());</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Now any class which implements this interface can be passed to the Printer. So, going to back to our original example:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">Counter</span> <span class="kd">implements</span> <span class="n">CounterInterface</span> <span class="o">{</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="n">value</span><span class="o">;</span>
+</span><span class='line'>  <span class="kt">int</span> <span class="nf">get</span><span class="o">()</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">return</span> <span class="n">value</span><span class="o">;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>We can now make any number of alternative implementations (incrementing, decrementing, random, fibronatchi…) and as long as they implement the interface they can be passed to the printer. This is fine if you're in control of the implementation, and even more fine if you're in control of the interface as well. There are times, however, when you're in change of neither. Things can get a little messy and you may have to find a way of pushing a round peg through a square hole.</p>
+
+<p>In dynamically typed languages, such as Python and Ruby, things work a little differently. These languages are often referred to as being "duck" typed, as they make the assumption that if something "looks like a duck and quacks like a duck, treat it as though it's a duck." In this case we wouldn't bother with any of the interfaces and our Printer class would look more like this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">class</span> <span class="nc">Printer</span><span class="p">:</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">counter</span><span class="p">):</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">print</span> <span class="n">counter</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>So long as the counter object has a method called get() we don't have a problem. Everything will be fine. This is much simpler, and is one of the things which makes Python very quick to program in, but it does have problems. The main problem (for me, at least) is specification. Without examining the source code, I can't see what sort of object I have to pass into the update method. If the method has been manually commented then there's no problem, but this is an incredible tedious thing to have to do. In the Java code I can see the type right there in the auto-generated documentation, and even if the writer has written no comments at all (what a bastard!) I can still get a good idea of what I need to pass into the method.</p>
+
+<p>Go takes a different approach. It's statically typed, and it has interfaces, but a class doesn't need to state that it implements an interface. This is implicit and automatic. If a class has the methods defined in an interface, then it is automatically considered to implement it. You get the flexibility of Python with the specification and predicability of Java. This is just one of the things in Go which I think is a really good idea.</p>
+
+<p>On the other hand, I think functional programming is a really stupid idea. I find the languages to be completely horrendous. I feel they must be created by the sort of people who think Linux is user friendly. I consider them curiosities whose only merit is academic. It appears to me that their major use case is to make programming appear more obscure than it actually is and to abstract way the programmer's knowledge of what the computer is actually doing.</p>
+
+<p>You may be surprised to learn, then, that the third language I'm going to be trying to port Clockwork Aphid into is Scala, a functional programming language. The reason for this is simple: while I personally believe that functional programming (FP) is rubbish, many people disagree. Not a majority, but certainly a very vocal minority. Within Google this minority is very vocal in indeed. The word "fundamentalists" might be appropriate to describe them. When someone believes something that hard it makes me very curious. This is turn tends to lead me towards testing my own beliefs. Sometimes I discover something new and exciting which I was missing out on previously*, and sometimes my initial suspicions are confirmed**. We'll see which way it goes with Scala.</p>
+
+<p>* Such as the Harry Potter books, which I had stubbornly refused to read until just before the first film was released.<br/>
+** Such as when I noticed that the Twilight books had taken up the first four places on the Waterstone's chart and decided I aught to find out what all the fuss was about.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[You're Speaking my Language, Baby. Part 2: Java]]></title>
+    <link href="http://www.harveynick.com/blog/2010/10/10/youre-speaking-my-language-baby-part-2-java/"/>
+    <updated>2010-10-10T12:00:26+01:00</updated>
+    <id>http://www.harveynick.com/blog/2010/10/10/youre-speaking-my-language-baby-part-2-java</id>
+    <content type="html"><![CDATA[<p>The first language I'm considering is <strong>Java</strong>. This is by far the language I'm most comfortable and proficient with. It was used for about 90% of my Bachelors degree, I wrote the entire codebase of my PhD using it, and it gets used here and there in my day job. I'm comfortable with Java, and find it to be quite a pleasant language to program in. Big tick on the question regarding my ability to use it, then. Java has some modest dynamic capabilities built in, but it also has a lot of small options for using higher level languages for the scripting, the cleanest of which is possibly Groovy.</p>
+
+<!-- more -->
+
+
+<p>Java has a bad reputation performance wise, but this largely isn't true any more. It does run using a virtual machine, but is compiled to native code at run time. It's a lot easier to write good code using Java than the other languages I'm considering, and that can help with performance a lot, but in general Java has the potential to be the slowest of the three, all things being equal.</p>
+
+<p>Tools are actually not a problem. There are a lot of high quality graphics engines available for Java, with the <a href="http://www.jmonkeyengine.com/">Java Monkey Engine</a> (JME) being my favourite. A physics add-on is available in the form of <a href="http://code.google.com/p/jmephysics/">JMEPhysics</a>, with the next version slated to have a physics engine baked in. Raw OpenGL is also an option with <a href="http://lwjgl.org/">LWJGL</a>, should I want it. Likewise, I suspect that the <a href="http://www.reddwarfserver.org/">Red Dwarf Server</a> is likely meet my communication needs.</p>
+
+<p>The applicability of Java to other interested parties is an interesting question. A lot of software gets written in Java. A LOT. But the vast majority of it is not games. Largely, I think this is because it's perceived to be lacking in the performance department. It's also a little harder to protect you code when you're writing in Java, too. The previously mentioned JME has the support of a commercial games company, though, so clearly there is interest. Computers are getting faster at quite a rate, so performance has the potential to be less of a concern, especially if the project you're working on has the whiff of a server side application about it. When it comes to server side code, I think Java is definitely winning the race. Frankly, I have a bit of trouble calling this one either way.</p>
+
+<p>One language down, two to go. Look for the next post tomorrow, should you be interested in such things.</p>
+]]></content>
+  </entry>
+  
+</feed>

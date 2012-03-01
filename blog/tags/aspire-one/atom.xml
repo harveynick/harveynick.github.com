@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: aspire one | HarveyNick.com]]></title>
+  <link href="http://www.harveynick.com/blog/tags/aspire-one/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2012-03-01T00:51:34+00:00</updated>
+  <id>http://www.harveynick.com/</id>
+  <author>
+    <name><![CDATA[Nick Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Celtx on the Acer Aspire One]]></title>
+    <link href="http://www.harveynick.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one/"/>
+    <updated>2008-08-24T21:23:58+01:00</updated>
+    <id>http://www.harveynick.com/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one</id>
+    <content type="html"><![CDATA[<p>So I managed to get the Celtx screenwriting (and general preproduction) software up and running on my shiny new AA1, and in the interests of sharing the knowledge I thought I'd post how I did it. Please note, this should also work as general recipe for installing any software not available under the package manager in Linpus Light Linux (provided there are no additional dependencies).</p>
+
+<p>First of all you need to download the software from the downloads page of the Celtx website, <a href="http://www.celtx.com/download.html">here</a>. I'd recomend getting the straight up Linux version in your choice of language (frustratingly there is no option for British English, though). There is an Asus eee specific version, but that just clears up some dependencies and doesn't really provide you with anything extra.</p>
+
+<!-- more -->
+
+
+<p>First of all you'll need a terminal, so hit Alt+F2, type "terminal" (without the quotes) and hit enter. A terminal should have popped up. If you're a Linux novice, don't worry, you should just be able to copy and paste everything from this page.<br/>
+Now you need to unpackage the software. I put it in /opt, because it generally seems to be a dumping ground for user installed applications (as far as I can tell). Type these in the terminal one at a time:</p>
+
+<pre><code>cd /opt
+sudo tar -xf /home/user/Downloads/Celtx.tar.gz
+</code></pre>
+
+<p>Now, if you type "ls" you should see a directory named celtx. So far so good. Next you need to add a link so Celtx can be run from the command line, like this:</p>
+
+<pre><code>sudo ln -s /opt/celtx/celtx /usr/bin/celtx
+</code></pre>
+
+<p>In theory that's all you need to do. Now if you type "celtx" on the command line (or after hitting Alt+F2) the program will run. We can make it a lot easier than that, though. Next we need an icon to represent it on the desktop. There are two options here. First of all you could use an existing one. Type this:</p>
+
+<pre><code>sudo thunar /usr/share/pixmaps
+</code></pre>
+
+<p>A file manager window should pop up and if you scroll down you'll find all the system icons. If you find one you want to use for Celtx: cool, if you don't then you're other option is to make one. I'm not going to get into that, but if you want to do it please bare in mind that is has to be a png, it has to be 90px x 90px in size and it has to be placed in that directory. I found one on the web and resized it myself. Assuming you have the icon you want in the downloads directory and it's called "celtx.png", you would type this to get it in the right place:</p>
+
+<pre><code>sudo mv /home/user/Downloads/celtx.png /usr/share/pixmaps/celtx.png
+</code></pre>
+
+<p>That done we need to create a desktop entry for it. You need to use a text editor for this. I used "vim", so that's what the directions here will say. "vim" can be pretty hard to use at first, though, so if you're not linux minded you might want to find a tutorial on the web, or replace the "vim" command with something else (mousepad is one option that might be easier to use and more familiar). We start by (basically) creating the file:</p>
+
+<pre><code>sudo vim /usr/share/applications/Celtx.desktop
+</code></pre>
+
+<p>If you're using vim, hit "i" (the word "insert" should appear at the bottom) and then paste the following into the file:</p>
+
+<pre><code>[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Celtx
+Name[zh_TW]=Celtx
+Name[zh_TW]=Celtx
+Name[zh_CN]=Celtx
+Name[de]=Celtx
+Name[it]=Celtx
+Name[fr]=Celtx
+Name[es]=Celtx
+Name[pt]=Celtx
+Name[nl]=Celtx
+Name[ja]=Celtx
+Name[ru]=Celtx
+GenericName=Celtx
+GenericName[zh_TW]=Celtx
+GenericName[zh_CN]=Celtx
+GenericName[de]=Celtx
+GenericName[it]=Celtx
+GenericName[fr]=Celtx
+GenericName[es]=Celtx
+GenericName[pt]=Celtx
+GenericName[nl]=Celtx
+GenericName[ja]=Celtx
+GenericName[ru]=Celtx
+Comment=Write and edit media scripts
+Exec=celtx
+Icon=Celtx.png
+Terminal=false
+Type=Application
+StartupWMClass=celtx-bin
+MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;application/x-shockwave-flash;
+X-Desktop-File-Install-Version=0.10
+Categories=Work;
+StartupNotify=true
+</code></pre>
+
+<p>Be sure to replace "Celtx.png" with whatever the icon you want to use is called. Also, all those language options are possibly not strictly necessary, but I copied most of this from another file and left them in to be on the safe side. Likewise, I could probably have done something a bit more clever with the "MimeType" bit, but decided not to bother. Next, save and exit the file. In "vim", you hit escape, then type:</p>
+
+<pre><code>:wq
+</code></pre>
+
+<p>and hit enter. Lastly, we just need to tell Linpus to display Celtx on the desktop:</p>
+
+<pre><code>vim /home/user/.config/xfce4/desktop/group-app.xml
+</code></pre>
+
+<p>You should now be looking at an XML file. You need to find this:</p>
+
+<pre><code>&lt;id&gt;6&lt;/id&gt;
+</code></pre>
+
+<p>And insert this underneath it:</p>
+
+<pre><code>&lt;app sequence="2"&gt;/usr/share/applications/Celtx.desktop&lt;/app&gt;
+</code></pre>
+
+<p>Be sure to increase the "sequence" numbers on the other "&lt;app>" entries as well, to make sure there are no duplicates.</p>
+
+<p>That's about all there is to it. If you reboot the machine you should now find that you have an icon for Celtx on the desktop. After you put some .celtx files on the machine, you might want to right click on one and select "properties", then tell Limpus to open the file type with Celtx (otherwise it'll just treat it like a zip file).</p>
+
+<p>This is quite a long post and I have work to do, but I might return in the next couple of days with some things to say about Celtx itself. Happy hunting!</p>
+
+<p>PS Thanks to the users of the forums on aspireoneuser.com for the knowledge which was needed to work this out.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[I'll see your eee and raise you One]]></title>
+    <link href="http://www.harveynick.com/blog/2008/08/18/my-digital-life-ill-see-your-eee-and-raise-you-one/"/>
+    <updated>2008-08-18T22:53:47+01:00</updated>
+    <id>http://www.harveynick.com/blog/2008/08/18/my-digital-life-ill-see-your-eee-and-raise-you-one</id>
+    <content type="html"><![CDATA[<p>My good friend Dougal got himself an Asus eee pc (relatively) recently. He likes it a lot. I like the idea of it, but not so much the implementation. On his version at least, the screen is too small for me, and the later versions are a bit too pricey. I love the idea of a small, light and eminently carriable laptop though. It's the premise I originally bought my MacBook under, but I found even that machine to be too bulky and heavy to carry around constantly. The MacBook Air might work, but it's very expensive (from the direction I'm looking at it from, anyway) and not really something I'd be prepared to pull out of my bag and start working on while sitting on the Meadows.</p>
+
+<!-- more -->
+
+
+<p>So I bought myself an Acer Aspire One. I like it quite a bit. I was worried about the size of the keyboard, but it's fine; I'm typing this on it right now. The fact that I don't (deliberately) touch type is probably an advantage in this case. I comes with 8 GB of SSD (hard drive, basically) which doesn't sound like a lot these days, but I've already bought an extension to this (just waiting for it to arrive). The RAM is also a little low, so I'm thinking of upgrading that. It's not expensive at all, but it is very fiddly, so I guess we'll see. I don't like laptop touchpads in general, and the one on the one is particularly lame, so I have a two part plan to help with this. The first part is software based and I'll come to that later. The second though is yet another fiddly hardware upgrade (how exciting!), namely the installation of a touchscreen. Battery life isn't great, so I might get a spare, or an external backup.</p>
+
+<p>The next concern is software. This machine is basically intended to be a glorified word processor, so most of what I want it to run is writing software. Writing in this case means:</p>
+
+<ul>
+<li>Blogging (like this)</li>
+<li>Work (Thesis, papers etc)</li>
+<li>Screen Writing (be nice to get back into this)</li>
+<li>General Purpose Writing (of course)</li>
+</ul>
+
+
+<p>and also:</p>
+
+<ul>
+<li>Keyboard Control</li>
+<li>Synchronisation with my real computer</li>
+</ul>
+
+
+<p>The first obstacle here is the operating system. It currently runs Limpus Light Linux, which I recently heard referred to as “Linux for Pussies”. Unfortunate turn of phrase aside, this description isn't too far off the mark. It's very simple, very easy too use and boots in about ten seconds. But it's also not as easy to customise. It seems that it is possible to install OSX on the One (always my first choice of operating system these days), but due to the lack of Apple hardware it would be crippled to some extent. Even so, it would make finding the other software I need a lot easier, because Open Source and Graphical User Interfaces DO NOT MIX. It's one of those instances where to get what you pay for. Open source command line applications are almost uniformly fantastic, but anything with a GUI will probably look like the developer just shat on the floor when asked and then got his dog to do it while he cleaned up the mess. The two serious open source advocates I know both confess to a dislike of doing anything graphical, so maybe it's symptomatic. I dunno.</p>
+
+<p>There are exceptions, of course. Eclipse is one, to a lesser extent so is Firefox. Also an exception is the currently gestating Netbook Remix of Ubuntu Linux, which might just be exactly what the doctor ordered, operating system wise. As far as I can tell it's not quite ready for public consumption yet, though. As soon as it is I'll probably switch, but for the time being I'll hack away at the Limpus until I get something workable.<br/>
+I'll probably use Open Office (with actually runs quite quickly on this machine) for most of the writing, with Celtx (surprisingly good and free) for the screen writing and maybe Kyle for Latex formatting.</p>
+
+<p>Gnome Do should take care of the keyboard control. It's a clone of Quicksilver on OSX which works pretty well. It'll never work <em>as</em> well, since the architecture of OSX supports this sort of thing better, but it comes close enough. For the synchronisation I'll try and set up a custom rsync script to move things back and forward between this machine and my Mac, and then I'll do most of the heavy formatting and posting and such from there when possible.<br/>
+Speaking of which...</p>
+]]></content>
+  </entry>
+  
+</feed>

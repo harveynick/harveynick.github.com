@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: Google | HarveyNick.com]]></title>
+  <link href="http://www.harveynick.com/blog/tags/google/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2012-03-01T00:51:34+00:00</updated>
+  <id>http://www.harveynick.com/</id>
+  <author>
+    <name><![CDATA[Nick Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Dogfood, Nom Nom Nom]]></title>
+    <link href="http://www.harveynick.com/blog/2011/08/26/dogfood-nom-nom-nom/"/>
+    <updated>2011-08-26T09:00:04+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/08/26/dogfood-nom-nom-nom</id>
+    <content type="html"><![CDATA[<p>Dog food, the common noun, is reasonably self explanatory (pro tip: it's food for dogs). Dogfood the verb or dogfooding the verbal noun, though, might require a little bit of explanation.</p>
+
+<p>At the root of it is this: if you make dog food, you should feed it to your own dogs. There are essentially two reasons for this:</p>
+
+<ol>
+<li>If you don't personally test it, how will know if it's any good?</li>
+<li>If your dogs don't eat it, why the hell should anyone else's?</li>
+</ol>
+
+
+<p>The same principle applies to software.</p>
+
+<!-- more -->
+
+
+<p>Even more so in fact, as it's something you're more able to test directly. As a simple example: in Google, we use Google docs for most documentation purposes (design docs, presentations, etc.). I'm willing to bet that folks at Apple use iWork for much the same purpose. I'm absolutely certain that Microsoft employes use Office, excepting those times when it's necessary to write a document in the blood of a green eyed virgin upon the pressed skin of an albino goat.</p>
+
+<p>This process is called dogfooding. You use the software internally before it's released to users, ensuring that it gets a lot more test usage. As an added bonus, developers who actually use the software they create are more likely to create software that's actually worth using. That's not always the case, of course, since most developers don't really fall into the "average users" category. Case in point: upgrading my computer to Lion broke my installation of Steam. I fixed it with a quick command line incantation, then performed a couple more in order to make <a href="http://www.moddb.com/mods/the-stanley-parable">The Stanley Parable</a> functional under OSX. Most computer users would not be comfortable doing something like this, nor should they have to.</p>
+
+<p>As well as using your company's products at work, it's generally a good idea to use them at home. It's always good to have a feel for what your company actually does and get more experience with it. I've used Google search more or less exclusively for at least ten years. That's not really a hard choice. It gives the best results. Likewise, I started using Google Chrome is my main web browser pretty much as soon as it was available for the platforms I used (in my last job that was actually Windows, OSX and Linux). I use iPhone in preference to Android, however, though I do have an upgrade due me towards the end of the year and it's not completely inconceivable that I might switch. For the time being at least, I'm definitely sticking with Wordpress, so I won't get to play with Blogger, Google Analytics or AdSense, either.</p>
+
+<p>As well as dogfooding Google products at work, we also dogfood technologies and platforms. This sounds fairly obvious, but it's not always the case with companies who create platform technology. Microsoft, for instance, used to be famous for not using the technologies they provided to developers internally, though they are getting better now. Some of Google's technologies are open source, and thus available for everyone to use. <a href="http://code.google.com/p/google-guice/">Guice</a> and <a href="http://code.google.com/p/protobuf/">Protocol Buffers</a> are pretty good examples of this. Guice is amazing, by the way. This being the case, there's nothing to stop me using them on personal projects, should that be appropriate. Personal projects such as Clockwork Aphid, for example.</p>
+
+<p>I'll talk about which particular Google technologies I think might be useful in later blog posts, but since I brought it up, I suppose I should probably say something about Clockwork Aphid. I've blown the dust off the code, tweaked a couple of things and got a feature I'd left half finished back on track. I tried switching my current implementation from jMonkeyEngine version 2 to version 3, only to find that while it does appear a lot faster and improved in several other ways, the documentation is pretty crappy, and it's less… functional.</p>
+
+<p>I'll talk about that more later, but for now just know that things are once again happening.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Full Nerd II: Nerd Harder]]></title>
+    <link href="http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder/"/>
+    <updated>2011-06-06T02:36:54+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder</id>
+    <content type="html"><![CDATA[<p>It seems that people really enjoyed my post about the <a href="/blog/2011/06/03/in-which-i-go-full-nerd-2/">computer history museum</a>. At the time I wrote it, I was worried that it might constitute just a little bit too much nerd, so I held back on my initial impulse to put in more pictures and gush enthusiastically about how awesome it all was.</p>
+
+<p>With hindsight, perhaps I can afford to ignore that particular mental stopcock, at least for a little while. I do not, I regret to tell you, have anymore pictures of <em>the</em> teapot. I do intend to buy myself a Melitta teapot at some point quite soon, however, so that it may sit in my flat and act as a most nerdy in-joke.</p>
+
+<!-- more -->
+
+
+<p><blockquote><p>"Tea, anyone?"<br/><br/>"Yes, please."<br/><br/>Pause.<br/><br/>"Why are you grinning like that?"</p></blockquote></p>
+
+<p>I do, however, have pictures of many other fun things. Let's start with a reference to my current employer:</p>
+
+<p><img class="center" src="http://farm3.static.flickr.com/2561/5798552483_0c9a55f471.jpg"></p>
+
+<p>This is one of the original Google server racks. At one point, if you typed a query into the Google homepage, this is where the magic happened. If you have any familiarity at all with how servers usually look, you might be scratching your heading and thinking that this one does not look entirely right. Let me help you with that:</p>
+
+<p><img class="center" src="http://farm4.static.flickr.com/3596/5799103540_e8c797886d.jpg"></p>
+
+<p>Yes, you can see all of the components. No, that is not normal. Yes, each individual server would normally have its own case. No, under normal circumstances sheets of cardboard would not be used as the insulation between motherboard and shelf. Yes, that is an awful lot of servers to fit into a single rack. Yes again, that would require very good air circulation, but you'll have a bloody difficult time finding a case that gives better circulation than no case at all. No, you would not expect a server to bow in the middle like that...</p>
+
+<p>Two things the early Google was known for: providing the best search results; and being very, very frugal when it came to equipment purchasing.</p>
+
+<p>Let's talk about something a bit more fundamental, though. Hard disks, for example. The one in the computer I'm writing this on has a capacity of around 120 GB (depending on how you measure a giga byte, but that's a different story). Wikipedia tells me that is measures around 69.85 mm × 15 mm × 100 mm, so quite small. This is also a hard drive:</p>
+
+<p><img class="center" src="http://farm3.static.flickr.com/2432/5798550925_2b0852594f.jpg"></p>
+
+<p>Assuming I haven't gotten mixed up here somewhere, this is the worlds first hard disk, and is made up of 50 24" disks, holding a grand total of 5 million characters. Now, if  each of those characters is a one byte ASCII character (or similar) that's approximately 5 MB, or 0.005 GB. Quite the difference in storage density, no?</p>
+
+<p>Here's a (slightly) more recent example of a hard disk, one which I'm told is actually still in use to some extent:</p>
+
+<p><img class="center" src="http://farm3.static.flickr.com/2057/5798550747_4ba81989e3.jpg"></p>
+
+<p>Now, if my understanding is correct, this next piece looks like a hard drive, but is much closer in function to RAM:</p>
+
+<p><img class="center" src="http://farm3.static.flickr.com/2197/5798550973_6d011d98a4.jpg"></p>
+
+<p>What's particularly neat is that it's based on an original design by the regrettably late, extremely great, and utterly brilliant Alan Turing.<br/>
+The museum has an entire section devoted to the evolution of storage, and it's quite fascinating. Another of the forebears of modern RAM is magnetic core memory, which looks like this:</p>
+
+<p><img class="center" src="http://farm6.static.flickr.com/5023/5798550969_307c5c0b9b.jpg"></p>
+
+<p>Now that's quite cool, but I'd say that it's also quite pleasing to the eye. I think I'd happily frame that, mount it, and have it hanging from the wall in my flat (somewhere close to the teapot). People walk through castles and talk in hushed tones of all the many things "these stones" have seen. All of the stories they might tell, if they could only speak. But this... unlike your average rock, this is unquestionably <em>memory</em>, and memory which lived through very exciting times in the development of our society. Here's something I look at and wonder what stories it might be able to tell, and what stories it has been forced to forget.</p>
+
+<p>There are many things at the Computer History Museum which are very cool and certainly raise a smile (as well as an appreciative thought as to how far things have come). There are also things which just plain stop you in your tracks; the Difference Engine, for example. Well, at the risk of repeating myself, I'm going to post another picture of it, this time from the other side, so you can see a little bit more of the mechanism:</p>
+
+<p><img class="center" src="http://farm6.static.flickr.com/5154/5799104044_672ed38476.jpg"></p>
+
+<p>Now there's a thing I would really and truly <em>love</em> to have in my flat. Ideally in a more coffee table friendly size, of course.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Different Kind of Tourism]]></title>
+    <link href="http://www.harveynick.com/blog/2011/06/05/a-different-kind-of-tourism/"/>
+    <updated>2011-06-05T07:04:39+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/06/05/a-different-kind-of-tourism</id>
+    <content type="html"><![CDATA[<p>If a person were to walk from downtown Mountain View (in so far as Mountain View has a town to be down of) to the Computer History Museum, and then kept going, they might find themselves wandering into Shoreline Business Park. This is where you would find the silicon in this part of the valley.</p>
+
+<p>Of course, there isn't actually a lot of touristing to do in your average industrial park. We're in Silicon Valley here, though, surely there must be something to see? Well... there are signs for reasonably exciting tech companies, with logos and everything... for example:</p>
+
+<p><img class="center" src="http://farm4.static.flickr.com/3005/5799103956_bc27e02f68.jpg"></p>
+
+<!-- more -->
+
+
+<p>Here's a fun one. 23 and Me is either a very cool company, or an utterly terrifying one, depending on your point of view. The basic idea is that you send them some of your spit (and some money). They use this to do some basic DNA profiling and tell you about your genetic predisposition towards certain diseases, your genetic predisposition to certain drugs, and a limited amount regarding your actual genetic ancestry. This all comes wrapped up in a neat web interface which updates as new discoveries are made. I'm generally of the the view that this is pretty cool.</p>
+
+<p>Further in we find even more companies, at least one of which you might have even heard of:</p>
+
+<p><img class="center" src="http://farm4.static.flickr.com/3123/5799103942_418f7a2a37.jpg"></p>
+
+<p>LinkedIn is basically a professional version Facebook. Sort of a fancy online business card holder, networking centre, recruitment system and industry conference all rolled into one. As such, it allows you to show your respectable side to your business contacts, whilst still being able to display that photo set proving that you <em>can</em> get your entire fist in your mouth to your friends. It can be quite useful, but more on that in a moment. I had no idea who the other companies on the sign are, and have not, as yet, felt too much of a need to enlighten myself.</p>
+
+<p>There is, of course, another tech company with a fairly large presence in this business park, but I can't for the life of me remember their name. Oh, wait, yes. I remember:</p>
+
+<p><img class="center" src="http://farm3.static.flickr.com/2536/5799103924_e8db3349eb.jpg"></p>
+
+<p>When in doubt, follow the street signs. While I'm sure it is helpful to have signs pointing to <em>stuff</em> (other examples in this estate include "movies" and "amphitheatre") hanging above the road, making them indistinguishable from street signs is bloody confusing, in my opinion.</p>
+
+<p>Google is, of course, the whole reason I'm in this town, and in fact in this country for these two weeks. For the record, I was recruited via LinkedIn, so it definitely does have it's uses. One of the reasons for this wander was to get a general idea of the lay of the land surrounding the Googleplex. My overall opinion: it's big. Luckily, the Google bikes were very much in evidence:</p>
+
+<p><img class="center" src="http://farm6.static.flickr.com/5302/5798555777_9a73976a1c.jpg"></p>
+
+<p>Often being found looking slightly forlorn in the strangest places. I'm fairly sure the local teens play a bit of cat and mouse with security guards and joyride around the park on them at weekends. This one was close to one of the volleyball courts:</p>
+
+<p><img class="center" src="http://farm6.static.flickr.com/5276/5799104166_5e5af56a28.jpg"></p>
+
+<p>There actually is a reasonable amount to see, wandering around the campus. Google really does live up to a lot of its hype. One of the more famous landmarks of the campus was actually bloody difficult to find, though. It took a serious amount of detective work, comparing photos from the web to views from Google Maps, but I finally tracked down the "Android Lawn":</p>
+
+<p><img class="center" src="http://farm3.static.flickr.com/2158/5798559713_a16b044a86.jpg"></p>
+
+<p><img class="center" src="http://farm4.static.flickr.com/3533/5798559919_da0f44242b.jpg"></p>
+
+<p><img class="center" src="http://farm3.static.flickr.com/2757/5798560063_64d6567a61.jpg"></p>
+
+<p><img class="center" src="http://farm3.static.flickr.com/2016/5798560409_d1608f766e.jpg"></p>
+
+<p>As it turned out, if I'd just stood up and looked over my right shoulder from the place I was performing all of this furious Googling, I probably would have just spotted the damn thing. Such is life. Strangely enough, I was feeling a little hungry at this point, so I headed home.</p>
+
+<p>Finally, it is important to note that while all of this touristing around is fun, and Google is a fuzzy and well meaning company, you should never forget that these are serious guys, doing a serious job. One most always strive to live up to the standard set by those who come before you, and always act in a professional and responsible manner when surrounded by such a high caliber of people.</p>
+
+<p>Seriousness. Responsibility. Decorum.</p>
+
+<p><img class="center" src="http://farm4.static.flickr.com/3543/5799108082_ceb1e2603d.jpg"></p>
+
+<p>That is all.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[This Morning.]]></title>
+    <link href="http://www.harveynick.com/blog/2011/06/02/this-morning/"/>
+    <updated>2011-06-02T05:14:19+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/06/02/this-morning</id>
+    <content type="html"><![CDATA[<p>You're going to have to wait a little while longer for the Computer History Museum, Silicon Valley Wandering and San Francisco based updates I had in mind, since I still haven't found a good way of adding the images I wanted to. In the meantime, I thought I'd tell you about my morning, in a similar (if significantly smaller in scope) fashion to <a href="http://www.tbray.org/ongoing/When/201x/2010/04/12/Google-Vignettes">Tim Bray's semi-famous post</a>.</p>
+
+<p>Now, Google is very transparent internally, but also has fairly strict rules about what you can and can't talk to people about, regardless of whether you're talking to your friends, your family, random people on the street, or potentially random people on the information super highway (that's you). I haven't entirely gotten my head around them yet, so I'm limiting myself to things you could find out by yourself, either via the internet, by wandering around in the general vicinity of a Google office, or being invited in as a lunch guest. This latter option is not too uncommon; it's actually something we're encouraged to do (up to a point).</p>
+
+<!-- more -->
+
+
+<p>Be that as it may, this morning I drove in to the campus, and parked in a nice easy space a reasonable distance from the building. I'm not entirely used to driving on the <del>right</del> wrong side of the road and I'm not going to take any chances, so I was looking for a space with no other cars around. Someone had left one of the Google bikes next to where I parked, so I jumped on, rode straight past the the building my class was due to be in (I'm here for training) and headed over to one I knew had a cafe which served a decent breakfast.</p>
+
+<p>Side note: the Google bikes are distinctive in many fashions, one of which is that they lack brakes. This is good knowledge to have, and personally I would have liked to have found out when I was a little further away from the speed bump. Now you know. You're welcome.</p>
+
+<p>I stood the bike up near the door, next to a pack of its siblings, and badged my way into the building. The breakfast did not dispoint, and I actually broke down and grabbed a smallish portion of the french toast /crispy bacon / maple syrup combo which always tests my willpower (but thankfully doesn't seem to be an option at the London office). It was, on the whole, a very good breakfast. It does, however, leave me with a bit of a dilema: do I return to this cafe tomorrow, or try a different one?</p>
+
+<p>As I was leaving, a girl walked her bike into the cafe and propped it up while she filled a takeaway container with yummy, yummy breakfast food. Then, as I was gabbing a coffee before my class, a guy wandered past with his St. Bernard. Google is a very different kind of a workplace, that's for sure. Did I mention the building my classes were in yesterday has a four lane bowling allay and a dance studio?</p>
+
+<p>After that, I...  <strong>REDACTED</strong>  ...all of which was very interesting. In all seriousness, though: I'm getting a lot out of this trip.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A brief update]]></title>
+    <link href="http://www.harveynick.com/blog/2011/05/31/a-brief-update/"/>
+    <updated>2011-05-31T05:57:45+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/05/31/a-brief-update</id>
+    <content type="html"><![CDATA[<p>Most people can definitively trace at least one or two traits directly back to one of their parents. In my case I can definitely lay the blame for two at the feet of my father:</p>
+
+<ol>
+<li>I know the rules of cricket inside out;</li>
+<li>Walking right across town doesn't faze me in the slightest.</li>
+</ol>
+
+
+<p>The first isn't really important right now (unless you need to know the specifics of the leg before wicket rule STAT), while the second is the result of a father who likes to walk. A lot. In fact many of my childhood holidays consisted of a series of walks across various British cities, often culled from the pages of an impressively large (and impressively modular) Reader's Digest walkers guide... to British cities.</p>
+
+<!-- more -->
+
+
+<p>Thus, for the past two days I eschewed the use of my rental car and went wandering. Yesterday (that's Sunday) I wandered around Mountain View itself and today I took a train to San Francisco and did the same thing there. I want to tell you about it. I plan to tell you about it. SOme of it is actually worth telling you about. But I want to throw some of the pictures I took into the mix, and right now I don't have a good way of doing that. The Google provided free WiFi which covers the entire of Mountain View is very useful indeed, but it's not super fast and thus not ideal for uploading a bunch of pictures.</p>
+
+<p>Tomorrow I'm heading into the office for day one of my Google training (I'm told there's some awesome Kool-Aid, so I'm looking forward to trying that) and I think I may have access to a slightly better connection there (just a hunch), so I'll see what I can do.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: Computer History Museum | HarveyNick.com]]></title>
+  <link href="http://www.harveynick.com/blog/tags/computer-history-museum/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2012-03-01T00:51:34+00:00</updated>
+  <id>http://www.harveynick.com/</id>
+  <author>
+    <name><![CDATA[Nick Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Full Nerd II: Nerd Harder]]></title>
+    <link href="http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder/"/>
+    <updated>2011-06-06T02:36:54+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder</id>
+    <content type="html"><![CDATA[<p>It seems that people really enjoyed my post about the <a href="/blog/2011/06/03/in-which-i-go-full-nerd-2/">computer history museum</a>. At the time I wrote it, I was worried that it might constitute just a little bit too much nerd, so I held back on my initial impulse to put in more pictures and gush enthusiastically about how awesome it all was.</p>
+
+<p>With hindsight, perhaps I can afford to ignore that particular mental stopcock, at least for a little while. I do not, I regret to tell you, have anymore pictures of <em>the</em> teapot. I do intend to buy myself a Melitta teapot at some point quite soon, however, so that it may sit in my flat and act as a most nerdy in-joke.</p>
+
+<!-- more -->
+
+
+<p><blockquote><p>"Tea, anyone?"<br/><br/>"Yes, please."<br/><br/>Pause.<br/><br/>"Why are you grinning like that?"</p></blockquote></p>
+
+<p>I do, however, have pictures of many other fun things. Let's start with a reference to my current employer:</p>
+
+<p><img class="center" src="http://farm3.static.flickr.com/2561/5798552483_0c9a55f471.jpg"></p>
+
+<p>This is one of the original Google server racks. At one point, if you typed a query into the Google homepage, this is where the magic happened. If you have any familiarity at all with how servers usually look, you might be scratching your heading and thinking that this one does not look entirely right. Let me help you with that:</p>
+
+<p><img class="center" src="http://farm4.static.flickr.com/3596/5799103540_e8c797886d.jpg"></p>
+
+<p>Yes, you can see all of the components. No, that is not normal. Yes, each individual server would normally have its own case. No, under normal circumstances sheets of cardboard would not be used as the insulation between motherboard and shelf. Yes, that is an awful lot of servers to fit into a single rack. Yes again, that would require very good air circulation, but you'll have a bloody difficult time finding a case that gives better circulation than no case at all. No, you would not expect a server to bow in the middle like that...</p>
+
+<p>Two things the early Google was known for: providing the best search results; and being very, very frugal when it came to equipment purchasing.</p>
+
+<p>Let's talk about something a bit more fundamental, though. Hard disks, for example. The one in the computer I'm writing this on has a capacity of around 120 GB (depending on how you measure a giga byte, but that's a different story). Wikipedia tells me that is measures around 69.85 mm × 15 mm × 100 mm, so quite small. This is also a hard drive:</p>
+
+<p><img class="center" src="http://farm3.static.flickr.com/2432/5798550925_2b0852594f.jpg"></p>
+
+<p>Assuming I haven't gotten mixed up here somewhere, this is the worlds first hard disk, and is made up of 50 24" disks, holding a grand total of 5 million characters. Now, if  each of those characters is a one byte ASCII character (or similar) that's approximately 5 MB, or 0.005 GB. Quite the difference in storage density, no?</p>
+
+<p>Here's a (slightly) more recent example of a hard disk, one which I'm told is actually still in use to some extent:</p>
+
+<p><img class="center" src="http://farm3.static.flickr.com/2057/5798550747_4ba81989e3.jpg"></p>
+
+<p>Now, if my understanding is correct, this next piece looks like a hard drive, but is much closer in function to RAM:</p>
+
+<p><img class="center" src="http://farm3.static.flickr.com/2197/5798550973_6d011d98a4.jpg"></p>
+
+<p>What's particularly neat is that it's based on an original design by the regrettably late, extremely great, and utterly brilliant Alan Turing.<br/>
+The museum has an entire section devoted to the evolution of storage, and it's quite fascinating. Another of the forebears of modern RAM is magnetic core memory, which looks like this:</p>
+
+<p><img class="center" src="http://farm6.static.flickr.com/5023/5798550969_307c5c0b9b.jpg"></p>
+
+<p>Now that's quite cool, but I'd say that it's also quite pleasing to the eye. I think I'd happily frame that, mount it, and have it hanging from the wall in my flat (somewhere close to the teapot). People walk through castles and talk in hushed tones of all the many things "these stones" have seen. All of the stories they might tell, if they could only speak. But this... unlike your average rock, this is unquestionably <em>memory</em>, and memory which lived through very exciting times in the development of our society. Here's something I look at and wonder what stories it might be able to tell, and what stories it has been forced to forget.</p>
+
+<p>There are many things at the Computer History Museum which are very cool and certainly raise a smile (as well as an appreciative thought as to how far things have come). There are also things which just plain stop you in your tracks; the Difference Engine, for example. Well, at the risk of repeating myself, I'm going to post another picture of it, this time from the other side, so you can see a little bit more of the mechanism:</p>
+
+<p><img class="center" src="http://farm6.static.flickr.com/5154/5799104044_672ed38476.jpg"></p>
+
+<p>Now there's a thing I would really and truly <em>love</em> to have in my flat. Ideally in a more coffee table friendly size, of course.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[...In Which I Go Full Nerd]]></title>
+    <link href="http://www.harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2/"/>
+    <updated>2011-06-03T01:43:18+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2</id>
+    <content type="html"><![CDATA[<p>Jet lag is a funny thing. Right now it actually seems to be working in my favour; it's managed to knock a couple of bad habits out of me. Specifically, these happen to be the not entirely unrelated habits of going to bed too late (then making it later by reading for a good long while) and getting up too late. Right now I seem to be fighting to keep my eyes open by around nine, and then being wide awake by seven. Which is more or less the position I found myself in on Sunday. Since day one at Google camp was a couple of days away I thought I'd check out my immediate surroundings.</p>
+
+<p>This may come as a bit of a surprise to you, but there isn't actually a lot to do in Mountain View. One of the things there is to do, however, is the computer history museum, which I'd been told is exactly as awesome as it sounds. In case my meaning isn't clear: really awesome. There is no sarcasm here. Look at my face. Awesome. This is not my sarcastic face. Awesome. Face. Awesome.</p>
+
+<!-- more -->
+
+
+<p>I have a rental car, but the brakes scare the shit out of me, and the place didn't look too far away, so I decided to walk. Now, I'd been warned that no one walks in America, but I wasn't quite prepared for it to be true. I must have walked 5 miles on Sunday and saw a grand total of perhaps 3 other pedestrians, and found that drivers looked at me as though I was a crazy person. I think perhaps one reason for this might be that the pavements (or sidewalks, if you like) are... well... shit. Anytime you have a height difference of more than an inch between two slabs... that's bad.</p>
+
+<p>Slightly thankful that there were no other pedestrians to see me trip, I arrived at the building in question. Externally, it's kind of neat. You might mistake it for the headquarters of some hip new tech startup. If it wasn't for the big sign saying "Computer history Museum" outside, obviously. Inside, though, it reminded me quite of bit of the Science Museum ("which science museum?" "The Science Museum"). It's nowhere near as grandiose, and has a much narrower focus, but the comparison feels apt.</p>
+
+<p><a href="http://harveynick.files.wordpress.com/2011/06/e01ff01b-d1b9-454d-afd7-cbc96bdfc9ed6.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/e01ff01b-d1b9-454d-afd7-cbc96bdfc9ed6.jpg"></a></p>
+
+<p>The scope of the exhibits is quite impressive, starting with slide rules and abaci, moving though Babbage (oh, I'll come back to Babbage), on to Turing and right up to the present day. Here are a couple of examples of things which made me smile:</p>
+
+<p><a href="http://harveynick.files.wordpress.com/2011/06/ab03b781-9c94-46de-851f-711679d9a0e90.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/ab03b781-9c94-46de-851f-711679d9a0e90.jpg"></a></p>
+
+<p>The Altair 8800, quite an important machine in the history of Microsoft, of which the fictionalised version of Steve Jobs in Pirates of Silicon Valley says "I never had any problem with the Altair... until I tried to use it."</p>
+
+<p><a href="http://harveynick.files.wordpress.com/2011/06/b17fcbeb-6b46-46e5-93f7-91c5995b999d1.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/b17fcbeb-6b46-46e5-93f7-91c5995b999d1.jpg"></a></p>
+
+<p>You know what's better than that, though? A computer made out of wood. If you bought an <em>Apple I</em> you received a box of parts and some schematics. You hade to supply the case yourself. You know what else is awesome? UNIX is awesome:</p>
+
+<p><a href="http://harveynick.files.wordpress.com/2011/06/11d69f5d-3b06-4df6-bc7a-0b85aaf6ca362.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/11d69f5d-3b06-4df6-bc7a-0b85aaf6ca362.jpg"></a></p>
+
+<p>You see? There's a badge and everything. What says awesome more than a badge? Oh wait, I know:</p>
+
+<p><a href="http://harveynick.files.wordpress.com/2011/06/7a115add-1257-44eb-9fa7-6dc114378d8f3.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/7a115add-1257-44eb-9fa7-6dc114378d8f3.jpg"></a></p>
+
+<p>Oh yeah. That's right. I bet you wish you were cool enough to have that licence plate. As a side note: I wonder if anyone does have that licence plate, since I assume this one isn't real. Furthermore: what kind of car would you put that on? This is fodder for <em>Pimp My Ride</em> right here. They should get on that ("Yo, we heard you like UNIX...").</p>
+
+<p>There was a lot more at the museum. Too much, in fact. I arrived about an hour after it opened and literally left as they locked the door behind me. I probably skipped about half of the section on the internet, and only had time for a brief look at the exhibit on the history of computer chess. Did I mention that they have half of Deep Blue? They also have something else very, very cool, and that's one of the two Babbage <a href="http://en.wikipedia.org/wiki/Difference_engine">Difference Engines</a> which we only very recently developed the capability to actually build:</p>
+
+<p><a href="http://harveynick.files.wordpress.com/2011/06/a677c6d3-c432-4285-9d81-1085791eeed14.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/a677c6d3-c432-4285-9d81-1085791eeed14.jpg"></a></p>
+
+<p>You really can't do justice to this thing in a photograph. It's beautiful. A marvel of engineering, it actually works exactly as Babbage said it would, and he built it entirely on paper. In 1849. Somebody should build an <a href="http://en.wikipedia.org/wiki/Analytical_engine">Analytical Engine</a>. That, my friends, would truly be something.</p>
+
+<p>One last thing:</p>
+
+<p><a href="http://harveynick.files.wordpress.com/2011/06/c4843570-b8d8-4251-bf11-2e49bc097e955.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/c4843570-b8d8-4251-bf11-2e49bc097e955.jpg"></a></p>
+
+<p>I think this might be THE teapot.</p>
+
+<p>Update: <a href="http://www.plan28.org/">Someone</a> is building an analytical engine!</p>
+
+<p>Another update: there is a follow up post <a href="/blog/2011/06/06/full-nerd-ii-nerd-harder/">here</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
