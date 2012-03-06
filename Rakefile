@@ -261,6 +261,11 @@ multitask :push do
   end
 end
 
+task :store do
+  system "git commit -a"
+  system "git push store source"
+end
+
 task :favicon do
   Net::HTTP.start("www.gravatar.com") { |http|
     resp = http.get("/avatar/#{gravitar_hash}?s=16")
