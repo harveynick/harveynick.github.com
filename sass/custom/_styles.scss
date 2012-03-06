@@ -1,2 +1,131 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+article {
+  header {
+    div {
+      &.rdbWrapper {
+        @extend .sans;
+        text-transform: uppercase;
+        position: relative; 
+        top: 10px; 
+        right: 0;
+        height: 20px;
+        margin-bottom: 0px;
+        display: none;
+        @media only screen and (max-width: 768px) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+section {
+  div {
+    &.rdbWrapper {
+      @extend .sans;
+      margin-bottom: 0px;
+      text-transform: uppercase;
+      position: relative; 
+      top: 0px; 
+      left: 0px;
+      height: 15px;
+      margin-bottom: 0px;
+      line-height: 0px;
+    }
+  }
+}
+
+section {
+  p {
+    &.close {
+      @extend .sans;
+      margin-bottom: 2px;
+    }
+  }
+}
+
+body > header {
+  padding-top: 1em;
+  h1 {
+    font-size: 2.8em;
+    a, a:visited, a:hover {
+      -webkit-text-stroke: 1px $title-outline-color;
+    }
+  }
+}
+
+/*body > header h2 {
+  text-shadow: 0px 0px 10px #000000;
+}*/
+
+body > header {
+  position: fixed;
+  z-index: -1;
+}
+
+body > div {
+  &.headerscaffold {
+    height: 9.2em;
+    position: relative;
+    background: transparent;
+    border-bottom: none;
+    z-index: -100;
+  }
+}
+
+html {
+  background: image-url('linen.png') top left fixed;
+}
+
+body > nav {
+  @include border-top-radius(.4em);
+  position: relative;
+  z-index: 10;
+//  -moz-box-shadow: 0px 0px 20px 0px #000000;
+//  -webkit-box-shadow: 0px 0px 20px 0px #000000;
+//  box-shadow: 0px 0px 20px 0px #000000;
+//  z-index: -100;
+}
+
+#main {
+  z-index: 10;
+//  position: relative;
+//  clip: rect(0px 2000px auto -20px);
+//  -moz-box-shadow: 0px 0px 20px 0px #000000;
+//  -webkit-box-shadow: 0px 0px 20px 0px #000000;
+//  box-shadow: 0px 0px 20px 0px #000000;
+}
+
+body > footer {
+  z-index: 10;
+//  position: relative;
+//  clip: rect(0px 2000px auto -20px);
+//  -moz-box-shadow: 0px 0px 20px 0px #000000;
+//  -webkit-box-shadow: 0px 0px 20px 0px #000000;
+//  box-shadow: 0px 0px 20px 0px #000000;
+}
+
+#shadow {
+  position: absolute;
+  @include border-top-radius(.4em);
+  @include border-bottom-radius(.4em);
+  -moz-box-shadow: 0px 0px 20px 5px #000000;
+  -webkit-box-shadow: 0px 0px 20px 5px #000000;
+  box-shadow: 0px 0px 20px 5px #000000;
+  top: 9.2em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  border-bottom: none;
+}
+
+aside.sidebar {
+  section {
+    h1 {
+      font-family: $sidebar-heading-font-family;
+    }
+  }
+}
