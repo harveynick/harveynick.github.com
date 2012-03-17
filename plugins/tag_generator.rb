@@ -135,13 +135,13 @@ module Jekyll
     # Outputs a list of tags as comma-separated <a> links. This is used
     # to output the tag list for each post on a tag page.
     #
-    #  +tag+ is the list of tags to format.
+    #  +tags+ is the list of tags to format.
     #
     # Returns string
     #
     def tag_links(tags)
       dir = @context.registers[:site].config['tag_dir']
-      tag = tag.sort!.map do |item|
+      tags = tags.sort!.map do |item|
         "<a class='tag' href='/#{dir}/#{item.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase}/'>#{item}</a>"
       end
 
