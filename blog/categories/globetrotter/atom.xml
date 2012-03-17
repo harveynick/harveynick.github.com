@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Globetrotter | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/categories/globetrotter/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-03-13T00:30:10+00:00</updated>
+  <updated>2012-03-17T11:46:19+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[New (ish) Year, New (ish) Blog]]></title>
+    <link href="http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog/"/>
+    <updated>2012-03-17T11:22:00+00:00</updated>
+    <id>http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog</id>
+    <content type="html"><![CDATA[<p>2011 was an interesting year for me. A lot changed. I turned 30. After 10 years of residency I moved away from Edinburgh, a city I love dearly, and took a job in London. With <a href="/blog/tags/google">Google</a>. As a result, I no longer work with <a href="/blog/tags/autonomous-underwater-vehicles">Autonomous Underwater Vehicles</a> for a living. Instead I build web services. Quite the change, I'm sure you'll agree. In the early months of the year I finally completed the corrections to my <a href="/blog/tags/phd">PhD</a>, and then in the summer: I graduated. It took 6 years (all together) but I am now Dr. Nick Johnson. I also <a href="/blog/2011/07/18/the-sound-of-one-hand-clapping/">lost my grandmother</a>, a fact which still brings me to tears on occasion.</p>
+
+<p>In this light, the fact that I decided, towards the end of the year, to shift my blog away from <a href="http://wordpress.org">Wordpress</a> and over to its own domain barely even casts a shadow. I did, though, and as a result you're now reading these words on a site built using <a href="http://octopress.org">Octopress</a>, which is hosted at harveynick.com. As you may have noticed, all of the old posts from my <a href="http://harveynick.wordpress.com">wordpress site</a> have been ported over, minus the short film reviews, which you'll find <a href="http://ohsohumbleopinion.tumblr.com">here</a>. I'm not going to go into how I accomplished this, except to say: I did it the same way <a href="http://mattgemmell.com/2011/09/12/blogging-with-octopress/">Matt Gemmel did</a>.</p>
+
+<!-- more -->
+
+
+<p>For the most part, this site is stock Octopress. I've played with the fonts, made the heading and background static and added a little more infrastructure (index pages for tags, embed scripts for YouTube and Vimeo videos and a couple of other bits). It's not finished, but it will serve well enough for me to try and start producing actual content again. I do want to make it a bit more visual, particularly the front page, and somehow integrate other content I produce into it. I also want to make it work a little better on mobile browsers and, lastly, make it a little bit more my own. The colours will change, and I'll try to find a background which doesn't require such a large file and isn't so closely associated with Apple.</p>
+
+<p>What will I be writing about though? Well:</p>
+
+<p>I plan to have <a href="/blog/tags/clockwork-aphid">Clockwork Aphid</a> actually doing something of use this year. I'm going to enhance the current Java version up to a point where it can generate interesting landscapes efficiently and in a parallel fashion. I'm then going to then have a crack at porting it to <a href="http://golang.org">Go</a>, which I think may turn out to be an excellent language for writing computer games.</p>
+
+<p>I like films. Perchance you may have noticed. I may chat a bit more in depth about a couple of this year's releases. Just to pick three with a common theme off the top of my head:</p>
+
+<ul>
+<li><strong>The Amazing Spider-Man</strong>. I went to a preview event for this in Leicester Square a month or two ago and was very impressed with what I saw. I'm hopeful they made a Spider-Man movie in the same way that Christopher Nolan makes Batman movies. Really really.</li>
+<li><strong>The Dark Knight Rises</strong>. Speaking of which. This <em>is</em> exciting. It's the last of the trilogy. It's got a lot to live up to, especially since the last film Nolan made was <em>Inception</em>. I wouldn't bet against it, though.</li>
+<li><strong>The Avengers</strong>. Now here's a film with some scope. All these characters in one film? With this cast? Written and directed by <a href="http://en.wikipedia.org/wiki/Joss_Whedon">Joss Mother Fucking* Whedon</a>? Please, please let this film live up to the frankly stupid amount of potential it has.</li>
+</ul>
+
+
+<p>Quite recently, at the aforementioned age of 30, I started playing Dungeons and Dragons with a selection of my colleagues. Well, we're actually playing <a href="http://en.wikipedia.org/wiki/Pathfinder_Roleplaying_Game">Pathfinder</a>, but let us not quibble about semantics. I'm having a really great time on several different levels. It's an interesting experience for someone who has played computer games for most of their life, but never dabbled in table top RPGs.</p>
+
+<p>I mentioned before that I now have a shiny new PhD, with the letters before and after my name to prove it. I'm of the opinion that the work which led to this is quite interesting (but then I would be). It's also not completely divorced from my Clockwork Aphid project. I'm of a mind to try talking about this some, also.</p>
+
+<p>See you when we get there.</p>
+
+<p>* I think these are his actual middle names.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Ol' Homestead]]></title>
@@ -187,60 +224,6 @@ The museum has an entire section devoted to the evolution of storage, and it's q
 <p>Ideally, I need to find a decent workflow, which doesn't break down when I'm away from home and likely to actually have semi interesting things to blog about, but doesn't restrict me when I am at home. Ideally, it should allow me to jump between different machines with a minimum of effort, and not require me  to always add the final touches from the same machine. The workflow should also not break down when no internet connection is available. Text is fairly easy. Images make things more difficult, especially if the images were recorded using my own camera.</p>
 
 <p>Lastly, I'm giving some consideration to porting this blog over to Blogger (only if I can transfer all of my posts and comments, however). It's not a coincidence that I now work for the company responsible for Blogger's infrastructure. Becoming more familiar with that platform can only really be a good thing for me here. Blogger also gives me a couple of options which WordPress doesn't, though. Thoughts?</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[...In Which I Go Full Nerd]]></title>
-    <link href="http://www.harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2/"/>
-    <updated>2011-06-03T01:43:18+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2</id>
-    <content type="html"><![CDATA[<p>Jet lag is a funny thing. Right now it actually seems to be working in my favour; it's managed to knock a couple of bad habits out of me. Specifically, these happen to be the not entirely unrelated habits of going to bed too late (then making it later by reading for a good long while) and getting up too late. Right now I seem to be fighting to keep my eyes open by around nine, and then being wide awake by seven. Which is more or less the position I found myself in on Sunday. Since day one at Google camp was a couple of days away I thought I'd check out my immediate surroundings.</p>
-
-<p>This may come as a bit of a surprise to you, but there isn't actually a lot to do in Mountain View. One of the things there is to do, however, is the computer history museum, which I'd been told is exactly as awesome as it sounds. In case my meaning isn't clear: really awesome. There is no sarcasm here. Look at my face. Awesome. This is not my sarcastic face. Awesome. Face. Awesome.</p>
-
-<!-- more -->
-
-
-<p>I have a rental car, but the brakes scare the shit out of me, and the place didn't look too far away, so I decided to walk. Now, I'd been warned that no one walks in America, but I wasn't quite prepared for it to be true. I must have walked 5 miles on Sunday and saw a grand total of perhaps 3 other pedestrians, and found that drivers looked at me as though I was a crazy person. I think perhaps one reason for this might be that the pavements (or sidewalks, if you like) are... well... shit. Anytime you have a height difference of more than an inch between two slabs... that's bad.</p>
-
-<p>Slightly thankful that there were no other pedestrians to see me trip, I arrived at the building in question. Externally, it's kind of neat. You might mistake it for the headquarters of some hip new tech startup. If it wasn't for the big sign saying "Computer history Museum" outside, obviously. Inside, though, it reminded me quite of bit of the Science Museum ("which science museum?" "The Science Museum"). It's nowhere near as grandiose, and has a much narrower focus, but the comparison feels apt.</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/e01ff01b-d1b9-454d-afd7-cbc96bdfc9ed6.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/e01ff01b-d1b9-454d-afd7-cbc96bdfc9ed6.jpg"></a></p>
-
-<p>The scope of the exhibits is quite impressive, starting with slide rules and abaci, moving though Babbage (oh, I'll come back to Babbage), on to Turing and right up to the present day. Here are a couple of examples of things which made me smile:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/ab03b781-9c94-46de-851f-711679d9a0e90.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/ab03b781-9c94-46de-851f-711679d9a0e90.jpg"></a></p>
-
-<p>The Altair 8800, quite an important machine in the history of Microsoft, of which the fictionalised version of Steve Jobs in Pirates of Silicon Valley says "I never had any problem with the Altair... until I tried to use it."</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/b17fcbeb-6b46-46e5-93f7-91c5995b999d1.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/b17fcbeb-6b46-46e5-93f7-91c5995b999d1.jpg"></a></p>
-
-<p>You know what's better than that, though? A computer made out of wood. If you bought an <em>Apple I</em> you received a box of parts and some schematics. You hade to supply the case yourself. You know what else is awesome? UNIX is awesome:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/11d69f5d-3b06-4df6-bc7a-0b85aaf6ca362.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/11d69f5d-3b06-4df6-bc7a-0b85aaf6ca362.jpg"></a></p>
-
-<p>You see? There's a badge and everything. What says awesome more than a badge? Oh wait, I know:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/7a115add-1257-44eb-9fa7-6dc114378d8f3.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/7a115add-1257-44eb-9fa7-6dc114378d8f3.jpg"></a></p>
-
-<p>Oh yeah. That's right. I bet you wish you were cool enough to have that licence plate. As a side note: I wonder if anyone does have that licence plate, since I assume this one isn't real. Furthermore: what kind of car would you put that on? This is fodder for <em>Pimp My Ride</em> right here. They should get on that ("Yo, we heard you like UNIX...").</p>
-
-<p>There was a lot more at the museum. Too much, in fact. I arrived about an hour after it opened and literally left as they locked the door behind me. I probably skipped about half of the section on the internet, and only had time for a brief look at the exhibit on the history of computer chess. Did I mention that they have half of Deep Blue? They also have something else very, very cool, and that's one of the two Babbage <a href="http://en.wikipedia.org/wiki/Difference_engine">Difference Engines</a> which we only very recently developed the capability to actually build:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/a677c6d3-c432-4285-9d81-1085791eeed14.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/a677c6d3-c432-4285-9d81-1085791eeed14.jpg"></a></p>
-
-<p>You really can't do justice to this thing in a photograph. It's beautiful. A marvel of engineering, it actually works exactly as Babbage said it would, and he built it entirely on paper. In 1849. Somebody should build an <a href="http://en.wikipedia.org/wiki/Analytical_engine">Analytical Engine</a>. That, my friends, would truly be something.</p>
-
-<p>One last thing:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/c4843570-b8d8-4251-bf11-2e49bc097e955.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/c4843570-b8d8-4251-bf11-2e49bc097e955.jpg"></a></p>
-
-<p>I think this might be THE teapot.</p>
-
-<p>Update: <a href="http://www.plan28.org/">Someone</a> is building an analytical engine!</p>
-
-<p>Another update: there is a follow up post <a href="/blog/2011/06/06/full-nerd-ii-nerd-harder/">here</a>.</p>
 ]]></content>
   </entry>
   

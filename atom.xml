@@ -4,7 +4,7 @@
   <title><![CDATA[HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-03-13T00:30:10+00:00</updated>
+  <updated>2012-03-17T11:46:19+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[New (ish) Year, New (ish) Blog]]></title>
+    <link href="http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog/"/>
+    <updated>2012-03-17T11:22:00+00:00</updated>
+    <id>http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog</id>
+    <content type="html"><![CDATA[<p>2011 was an interesting year for me. A lot changed. I turned 30. After 10 years of residency I moved away from Edinburgh, a city I love dearly, and took a job in London. With <a href="http://www.harveynick.com/blog/tags/google">Google</a>. As a result, I no longer work with <a href="http://www.harveynick.com/blog/tags/autonomous-underwater-vehicles">Autonomous Underwater Vehicles</a> for a living. Instead I build web services. Quite the change, I&#8217;m sure you&#8217;ll agree. In the early months of the year I finally completed the corrections to my <a href="http://www.harveynick.com/blog/tags/phd">PhD</a>, and then in the summer: I graduated. It took 6 years (all together) but I am now Dr. Nick Johnson. I also <a href="http://www.harveynick.com/blog/2011/07/18/the-sound-of-one-hand-clapping/">lost my grandmother</a>, a fact which still brings me to tears on occasion.</p>
+
+<p>In this light, the fact that I decided, towards the end of the year, to shift my blog away from <a href="http://wordpress.org">Wordpress</a> and over to its own domain barely even casts a shadow. I did, though, and as a result you&#8217;re now reading these words on a site built using <a href="http://octopress.org">Octopress</a>, which is hosted at harveynick.com. As you may have noticed, all of the old posts from my <a href="http://harveynick.wordpress.com">wordpress site</a> have been ported over, minus the short film reviews, which you&#8217;ll find <a href="http://ohsohumbleopinion.tumblr.com">here</a>. I&#8217;m not going to go into how I accomplished this, except to say: I did it the same way <a href="http://mattgemmell.com/2011/09/12/blogging-with-octopress/">Matt Gemmel did</a>.</p>
+
+<!-- more -->
+
+
+<p>For the most part, this site is stock Octopress. I&#8217;ve played with the fonts, made the heading and background static and added a little more infrastructure (index pages for tags, embed scripts for YouTube and Vimeo videos and a couple of other bits). It&#8217;s not finished, but it will serve well enough for me to try and start producing actual content again. I do want to make it a bit more visual, particularly the front page, and somehow integrate other content I produce into it. I also want to make it work a little better on mobile browsers and, lastly, make it a little bit more my own. The colours will change, and I&#8217;ll try to find a background which doesn&#8217;t require such a large file and isn&#8217;t so closely associated with Apple.</p>
+
+<p>What will I be writing about though? Well:</p>
+
+<p>I plan to have <a href="http://www.harveynick.com/blog/tags/clockwork-aphid">Clockwork Aphid</a> actually doing something of use this year. I&#8217;m going to enhance the current Java version up to a point where it can generate interesting landscapes efficiently and in a parallel fashion. I&#8217;m then going to then have a crack at porting it to <a href="http://golang.org">Go</a>, which I think may turn out to be an excellent language for writing computer games.</p>
+
+<p>I like films. Perchance you may have noticed. I may chat a bit more in depth about a couple of this year&#8217;s releases. Just to pick three with a common theme off the top of my head:</p>
+
+<ul>
+<li><strong>The Amazing Spider-Man</strong>. I went to a preview event for this in Leicester Square a month or two ago and was very impressed with what I saw. I&#8217;m hopeful they made a Spider-Man movie in the same way that Christopher Nolan makes Batman movies. Really really.</li>
+<li><strong>The Dark Knight Rises</strong>. Speaking of which. This <em>is</em> exciting. It&#8217;s the last of the trilogy. It&#8217;s got a lot to live up to, especially since the last film Nolan made was <em>Inception</em>. I wouldn&#8217;t bet against it, though.</li>
+<li><strong>The Avengers</strong>. Now here&#8217;s a film with some scope. All these characters in one film? With this cast? Written and directed by <a href="http://en.wikipedia.org/wiki/Joss_Whedon">Joss Mother Fucking* Whedon</a>? Please, please let this film live up to the frankly stupid amount of potential it has.</li>
+</ul>
+
+
+<p>Quite recently, at the aforementioned age of 30, I started playing Dungeons and Dragons with a selection of my colleagues. Well, we&#8217;re actually playing <a href="http://en.wikipedia.org/wiki/Pathfinder_Roleplaying_Game">Pathfinder</a>, but let us not quibble about semantics. I&#8217;m having a really great time on several different levels. It&#8217;s an interesting experience for someone who has played computer games for most of their life, but never dabbled in table top RPGs.</p>
+
+<p>I mentioned before that I now have a shiny new PhD, with the letters before and after my name to prove it. I&#8217;m of the opinion that the work which led to this is quite interesting (but then I would be). It&#8217;s also not completely divorced from my Clockwork Aphid project. I&#8217;m of a mind to try talking about this some, also.</p>
+
+<p>See you when we get there.</p>
+
+<p>* I think these are his actual middle names.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Simplifying the Landscape]]></title>
@@ -871,19 +908,6 @@ So, here&#8217;s what I propose: you take your book to a shop and pay them a nom
 <p>* Well, he  does now, anyway. Much as I loved the Night&#8217;s Dawn trilogy, Joshua was <em>way</em> more interesting than either the sum or the product of the rest of the characters.<br/>
 ** Which is in Clapham, for those of you who are playing at home. The Richmond flat was gorgeous, but size / price ratio was just too small.<br/>
 *** I see no reason not to use that as a verb.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Day One]]></title>
-    <link href="http://www.harveynick.com/blog/2011/05/23/day-one/"/>
-    <updated>2011-05-23T22:29:36+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/05/23/day-one</id>
-    <content type="html"><![CDATA[<p>This is going to be short. Suffice to say: almost everything you&#8217;ve heard about working for Google is true. That being the case, there is no slide in my office. I&#8217;m told they have them in Mountain View and Zurich, however, and I&#8217;ll apparently be visiting both this year (Mountain View next week!).</p>
-
-<p>The food / restaurants / kitchens are awesome in a &#8220;we&#8217;ve thought of everything you need&#8221; kind of way. The people are really nice, but also intimidatingly smart. For a tech firm, a lot of them are girls as well, which makes for a more balanced working environment.</p>
-
-<p>On the whole it was a good first day, though mostly consisting of administration. I&#8217;m itching to get into the code!</p>
 ]]></content>
   </entry>
   
