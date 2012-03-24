@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Blogger | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/categories/blogger/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-03-24T22:16:39+00:00</updated>
+  <updated>2012-03-24T23:31:09+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -25,7 +25,9 @@
 <!-- more -->
 
 
-<p>For the most part, this site is stock Octopress. I've played with the fonts, made the heading and background static and added a little more infrastructure (index pages for tags, embed scripts for YouTube and Vimeo videos and a couple of other bits). It's not finished, but it will serve well enough for me to try and start producing actual content again. I do want to make it a bit more visual, particularly the front page, and somehow integrate other content I produce into it. I also want to make it work a little better on mobile browsers and, lastly, make it a little bit more my own. The colours will change, and I'll try to find a background which doesn't require such a large file and isn't so closely associated with Apple.</p>
+<p><span class='pullquote-right' data-pullquote='It&#8217;s not finished, but it will serve well enough for me to try and start producing actual content again'>
+For the most part, this site is stock Octopress. I've played with the fonts, made the heading and background static and added a little more infrastructure (index pages for tags, embed scripts for YouTube and Vimeo videos and a couple of other bits). It's not finished, but it will serve well enough for me to try and start producing actual content again. I do want to make it a bit more visual, particularly the front page, and somehow integrate other content I produce into it. I also want to make it work a little better on mobile browsers and, lastly, make it a little bit more my own. The colours will change, and I'll try to find a background which doesn't require such a large file and isn't so closely associated with Apple.
+</span></p>
 
 <p>What will I be writing about though? Well:</p>
 

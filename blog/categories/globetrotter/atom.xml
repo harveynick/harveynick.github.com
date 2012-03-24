@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Globetrotter | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/categories/globetrotter/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-03-24T22:16:39+00:00</updated>
+  <updated>2012-03-24T23:31:09+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -25,7 +25,9 @@
 <!-- more -->
 
 
-<p>For the most part, this site is stock Octopress. I've played with the fonts, made the heading and background static and added a little more infrastructure (index pages for tags, embed scripts for YouTube and Vimeo videos and a couple of other bits). It's not finished, but it will serve well enough for me to try and start producing actual content again. I do want to make it a bit more visual, particularly the front page, and somehow integrate other content I produce into it. I also want to make it work a little better on mobile browsers and, lastly, make it a little bit more my own. The colours will change, and I'll try to find a background which doesn't require such a large file and isn't so closely associated with Apple.</p>
+<p><span class='pullquote-right' data-pullquote='It&#8217;s not finished, but it will serve well enough for me to try and start producing actual content again'>
+For the most part, this site is stock Octopress. I've played with the fonts, made the heading and background static and added a little more infrastructure (index pages for tags, embed scripts for YouTube and Vimeo videos and a couple of other bits). It's not finished, but it will serve well enough for me to try and start producing actual content again. I do want to make it a bit more visual, particularly the front page, and somehow integrate other content I produce into it. I also want to make it work a little better on mobile browsers and, lastly, make it a little bit more my own. The colours will change, and I'll try to find a background which doesn't require such a large file and isn't so closely associated with Apple.
+</span></p>
 
 <p>What will I be writing about though? Well:</p>
 
@@ -119,7 +121,7 @@
 
 <p>Now, if my understanding is correct, this next piece looks like a hard drive, but is much closer in function to RAM:</p>
 
-<p><img class="center" src="http://farm3.static.flickr.com/2197/5798550973_6d011d98a4.jpg"></p>
+<p><img class="center" src="http://farm3.static.flickr.com/2197/5798550973_6d011d98a4.jpg"><!-- header_img http://farm3.static.flickr.com/2197/5798550973_6d011d98a4.jpg --></p>
 
 <p>What's particularly neat is that it's based on an original design by the regrettably late, extremely great, and utterly brilliant Alan Turing.<br/>
 The museum has an entire section devoted to the evolution of storage, and it's quite fascinating. Another of the forebears of modern RAM is magnetic core memory, which looks like this:</p>
@@ -145,10 +147,10 @@ The museum has an entire section devoted to the evolution of storage, and it's q
 
 <p>Of course, there isn't actually a lot of touristing to do in your average industrial park. We're in Silicon Valley here, though, surely there must be something to see? Well... there are signs for reasonably exciting tech companies, with logos and everything... for example:</p>
 
-<p><img class="center" src="http://farm4.static.flickr.com/3005/5799103956_bc27e02f68.jpg"></p>
-
 <!-- more -->
 
+
+<p><img class="center" src="http://farm4.static.flickr.com/3005/5799103956_bc27e02f68.jpg"><!-- header_img http://farm4.static.flickr.com/3005/5799103956_bc27e02f68.jpg --></p>
 
 <p>Here's a fun one. 23 and Me is either a very cool company, or an utterly terrifying one, depending on your point of view. The basic idea is that you send them some of your spit (and some money). They use this to do some basic DNA profiling and tell you about your genetic predisposition towards certain diseases, your genetic predisposition to certain drugs, and a limited amount regarding your actual genetic ancestry. This all comes wrapped up in a neat web interface which updates as new discoveries are made. I'm generally of the the view that this is pretty cool.</p>
 

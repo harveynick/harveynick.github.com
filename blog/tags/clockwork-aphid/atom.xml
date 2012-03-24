@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Clockwork Aphid | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/tags/clockwork-aphid/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-03-24T22:16:39+00:00</updated>
+  <updated>2012-03-24T23:31:09+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -140,12 +140,12 @@
     <link href="http://www.harveynick.com/blog/2011/03/24/features/"/>
     <updated>2011-03-24T10:00:09+00:00</updated>
     <id>http://www.harveynick.com/blog/2011/03/24/features</id>
-    <content type="html"><![CDATA[<p>So, in my <a href="http://harveynick.wordpress.com/2011/03/14/brave-new-worlds/">last post</a> I remarked that for procedurally generated landscapes to be interesting, they would need features. But what sort of features was I talking about? Population centres, in particular, tend to to be found close to certain kinds of... things. The first of these which always comes to my mind is the "defensible position." Something like, say, this:</p>
-
-<p><a href="http://en.wikipedia.org/wiki/Edinburgh_Castle"><img class="center" src="http://upload.wikimedia.org/wikipedia/en/8/88/Holiday043.jpg"></a></p>
+    <content type="html"><![CDATA[<p>So, in my <a href="http://harveynick.wordpress.com/2011/03/14/brave-new-worlds/">last post</a> I remarked that for procedurally generated landscapes to be interesting, they would need features. But what sort of features was I talking about? Population centres, in particular, tend to to be found close to certain kinds of... things. The first of these which always comes to my mind is the "defensible position." Something like, say, Edinburgh Castle.</p>
 
 <!-- more -->
 
+
+<p><a href="http://en.wikipedia.org/wiki/Edinburgh_Castle"><img class="center" src="http://upload.wikimedia.org/wikipedia/en/8/88/Holiday043.jpg"><!-- header_img http://upload.wikimedia.org/wikipedia/en/8/88/Holiday043.jpg --></a></p>
 
 <p>A lot of the truly great cities in Europe tend to centre around castles, but you don't tend to find castles just plonked anywhere on the landscape. Edinburgh Castle is a good example because:</p>
 
@@ -199,7 +199,7 @@
 </ol>
 
 
-<p>Simple. Harry Potter, for instance is set in our world. That's a big part of the appeal. Likewise so are <a href="http://www.amazon.co.uk/Neverwhere-Authors-Preferred-Neil-Gaiman/dp/0755322800/ref=sr_1_1?ie=UTF8&amp;qid=1300142138&amp;sr=8-1">Neverwhere</a>, <a href="http://www.amazon.co.uk/Kraken-China-Mieville/dp/0330492322/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1300142157&amp;sr=1-1">Kracken</a> (if you like'd Neverwhere, you'll want to read this), and most of Stephen King's work. Lord of the Rings is not set in our world. Simple. There are other options, of course. What about the  Chronicles of Narnia, for example (which is set in a world beyond our own)? Or Magic Bites* (which is set in an alternate version of our world)? Clearly we're looking at some shades of grey here as well, but I'm sticking the with the original idea while it still serves my purpose.</p>
+<p>Simple. Harry Potter, for instance, is set in our world. That's a big part of the appeal. Likewise so are <a href="http://www.amazon.co.uk/Neverwhere-Authors-Preferred-Neil-Gaiman/dp/0755322800/ref=sr_1_1?ie=UTF8&amp;qid=1300142138&amp;sr=8-1">Neverwhere</a>, <a href="http://www.amazon.co.uk/Kraken-China-Mieville/dp/0330492322/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1300142157&amp;sr=1-1">Kracken</a> (if you like'd Neverwhere, you'll want to read this), and most of Stephen King's work. Lord of the Rings is not set in our world. Simple. There are other options, of course. What about the  Chronicles of Narnia, for example (which is set in a world beyond our own)? Or Magic Bites* (which is set in an alternate version of our world)? Clearly we're looking at some shades of grey here as well, but I'm sticking the with the original idea while it still serves my purpose.</p>
 
 <!-- more -->
 
@@ -208,7 +208,7 @@
 
 <p>The quintessential fantasy landscape is, of course, Tolkien's Middle Earth, which looks a lot like this:</p>
 
-<p><a href="http://en.wikipedia.org/wiki/Middle-earth"><img class="center" src="http://www.alligatorstorage.co.uk/resources/Image_2<em>-</em>Map_of_Middle_Earth.jpg"></a></p>
+<p><a href="http://en.wikipedia.org/wiki/Middle-earth"><img class="center" src="http://war3.incgamers.com/uploads/MiddleEarthRisk792Kofficial1291674287.w3x-1.jpg"><!-- header_img http://war3.incgamers.com/uploads/MiddleEarthRisk792Kofficial1291674287.w3x-1.jpg --></a></p>
 
 <p>That should look vaguely familiar to anyone who's read the films or seen the books (or words to that effect). There's a definite feeling of size there. Clearly we're looking at a chunk of a continent, split into something not unlike countries. It always bothers me on maps like this, though: what about the rest of it?<br/>
 There are a couple of well known knock offs of Tolkien's work out there, so why don't we consider a few of those as well? One which used to be close to my heart in my adolescent years is Games Workshop's Warhammer:</p>
@@ -262,7 +262,7 @@ First, though, I need some terrain simplification and some unit tests. The unit 
 
 <p>I'm talking, of course, about Second Life. If you're not familiar with it, it looks a bit like this:</p>
 
-<p><img class="center" src="https://wiki-land.wikispaces.com/file/view/second_life_2.jpg/142027689/second_life_2.jpg"></p>
+<p><img class="center" src="https://wiki-land.wikispaces.com/file/view/second_life_2.jpg/142027689/second_life_2.jpg"><!-- header_img https://wiki-land.wikispaces.com/file/view/second_life_2.jpg/142027689/second_life_2.jpg --></p>
 
 <p>One thing you might notice right away is that the graphics have a bit of a low-fi look about them, and there's a reasonably good reason for this*. In our old friend World of Warcraft, the graphics aren't exactly stellar either, but they're much sharper than this. In WoW, by and large, the landscape doesn't really change, unless (topically) a large new expansion is being released with results in sweeping changes to the world. In WoW, when this does happen, the game forces you to download the changes before it lets you start playing. This might be a lot of data (in the order of gigabytes) but it doesn't happen often. As previously noted, the World of Warcraft is essentially static. Not so Second Life, though, as its landscape is built by its users. Just because a location contained an island with the Empire State Building rising out of it yesterday doesn't mean that you won't find a scale replica of the star ship Enterprise there tomorrow. Thus, the content of the game is streamed to the user as they "play," and thus the polygon counts need to be kept reasonably low so that this can happen in a timely fashion. Even so, you might teleport to a new location, only to find that the walls appear ten seconds after the floor, and then suddenly you're standing in the middle of a sofa which wasn't there a second ago.</p>
 

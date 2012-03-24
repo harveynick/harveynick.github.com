@@ -160,7 +160,7 @@
 
 <p>Next: polygons. Again, only the nodes at the highest level of detail are used. This time, each inserts itself into the vertex buffer, then adds its parents if they&#8217;re not in there already. Each node remembers its postion in the vertex buffer, and these indices are then used to draw the actual polygons. These are declared by passing the indices in sets of three into a standard Java <a href="http://download.oracle.com/javase/1.4.2/docs/api/java/nio/IntBuffer.html">IntBuffer</a>. The buffers are then passed to one of JME TriMesh geometry classes and displayed, like this:</p>
 
-<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot1.png"></p>
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot1.png"><!-- header_img http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot1.png --></p>
 
 <p>Again, the beaches don&#8217;t look quite right, but otherwise I&#8217;m reasonably pleased. I still need to add the actual water and improve the form of the landscape itself (and about a million other things), but in terms of display this is looking pretty good. Except for one thing: I&#8217;m using far more detail than I need to. Let me illustrate this with a slightly more extreme example. The pictures I&#8217;ve posed so far were generated using seven iterations of the diamond square algorithm. Here&#8217;s what happens when I use ten iterations (remember, the number of points increases exponentially):</p>
 
