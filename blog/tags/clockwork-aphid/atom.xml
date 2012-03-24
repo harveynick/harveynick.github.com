@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Clockwork Aphid | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/tags/clockwork-aphid/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-03-17T11:46:19+00:00</updated>
+  <updated>2012-03-24T22:16:39+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -95,7 +95,7 @@
 
 <p>But what does this look like in actual eye poppingly 3D landscapes? Well, here's an example, using the height based colouring I've used before:</p>
 
-<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/simplifiedlandscape.jpg"></p>
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/simplifiedlandscape.jpg"><!-- header_img http://harveynick.files.wordpress.com/2011/12/simplifiedlandscape.jpg --></p>
 
 <p>I'm quite pleased with this, though what I'm doing here is still quite inefficient and in need of some serious tuning. There are a couple of further simplification tricks I can try (including the next step from the (paper) paper). More to come later. Honest.</p>
 ]]></content>
