@@ -14,6 +14,15 @@ module HarveyNickFilters
   def urlify(input)
     input.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase
   end
+
+  # Used on the blog index to split posts on the <!--more--> marker
+  def header_image(input)
+    if input =~ /<!-- header_img (?<src>(?:https?:\/\/|\/|\S+\/)\S+) -->/
+      "<img class=\"header\" src=\"#{$~['src']}\"/>"
+    else
+      ""
+    end
+  end
 end
 
 Liquid::Template.register_filter(HarveyNickFilters)

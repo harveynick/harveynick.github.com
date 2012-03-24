@@ -20,6 +20,7 @@ module Jekyll
 
   class ImageTag < Liquid::Tag
     @img = nil
+    @header = "" 
 
     def initialize(tag_name, markup, tokens)
       attributes = ['class', 'src', 'width', 'height', 'title']
@@ -33,13 +34,16 @@ module Jekyll
           @img['alt']    = @img['title'].gsub!(/"/, '&#34;') if @img['title']
         end
         @img['class'].gsub!(/"/, '') if @img['class']
+        if tag_name == "header_img"
+          @header = "<!-- header_img #{@img['src']} -->"
+        end
       end
       super
     end
 
     def render(context)
       if @img
-        "<img #{@img.collect {|k,v| "#{k}=\"#{v}\"" if v}.join(" ")}>"
+        "<img #{@img.collect {|k,v| "#{k}=\"#{v}\"" if v}.join(" ")}>#{@header}"
       else
         "Error processing input, expected syntax: {% img [class name(s)] [http[s]:/]/path/to/image [width [height]] [title text | \"title text\" [\"alt text\"]] %}"
       end
@@ -48,3 +52,4 @@ module Jekyll
 end
 
 Liquid::Template.register_tag('img', Jekyll::ImageTag)
+Liquid::Template.register_tag('header_img', Jekyll::ImageTag)
