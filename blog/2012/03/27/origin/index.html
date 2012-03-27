@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Origin Story, Raspberry Pi, and the ZX Spectrum - HarveyNick.com</title>
+  <meta name="author" content="Nick Johnson">
+
+  
+  <meta name="description" content="One of the fun things about working for Google is that from time to time interesting people come into the office to give talks. We had Richard &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.harveynick.com/blog/2012/03/27/origin">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/Harveynick" rel="alternate" title="HarveyNick.com" type="application/atom+xml">
+    <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+  <!--link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css"-->
+  <!--link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css"-->
+
+  <!--link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <!--link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'-->
+  <!--link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'-->
+  <!--link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic' rel='stylesheet' type='text/css'-->
+  <!--link href='http://fonts.googleapis.com/css?family=Lobster+Two:700italic' rel='stylesheet' type='text/css'-->
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Ubuntu+Condensed|Gentium+Book+Basic' rel='stylesheet' type='text/css'>
+
+
+  <meta name="readability-verification" content="QUKCyxBsSkBLBb9EV6af7hEy2dheS7xF48kQqvNr"/>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28082281-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">HarveyNick.com</a></h1>
+  
+    <h2>Something nerdy this way comes.</h2>
+  
+</hgroup>
+
+</header>
+  <div class="headerscaffold"></div>
+  <div id="shadow"></div>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/Harveynick" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.harveynick.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Origin Story, Raspberry Pi, and the ZX Spectrum</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-27T23:41:00+01:00" pubdate data-updated="true">Mar 27<span>th</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+        
+          
+<div class="rdbWrapper" data-show-read="1" data-show-send-to-kindle="0" data-show-print="0" data-show-email="0" data-orientation="0" data-version="1" data-bg-color="transparent"></div><script type="text/javascript">(function() {var s = document.getElementsByTagName("script")[0],rdb = document.createElement("script"); rdb.type = "text/javascript"; rdb.async = true; rdb.src = document.location.protocol + "//www.readability.com/embed.js"; s.parentNode.insertBefore(rdb, s); })();</script>
+
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>One of the fun things about working for Google is that from time to time interesting people come into the office to give talks. We had Richard Dawkins a few weeks ago, who gave an interesting if… uncompromising talk. Yesterday we had one of the founders of the <a href="http://www.raspberrypi.org/">Raspberry Pi</a> foundation. For those or you who aren&#8217;t aware, the Raspberry Pi is an extremely small (exactly credit card sized) and cheap ($25), yet very capable computing platform. The foundation is the charity formed to produce this hardware.</p>
+
+<p>Why is a charity building computer hardware? Because there is a need for it, caused by a problem you&#8217;re possibly not even aware of. Let me explain; for I am part of the problem. These days when I play computer games it&#8217;s usually on my X-Box or iPhone. They make my life very easy in this regard, since I never have to worry about whether a game will actually run or not. It just works. They are essentially closed systems, though. There is a reasonably high barrier to entry if I actually want to start playing with them as a developer. Specifically: I can&#8217;t do it on the device itself. Furthermore, the very simplicity of the device works against me in this regard, because very little action on my part is required to make it work.</p>
+
+<p>It was not always this way. Let me tell you a story.</p>
+
+<!-- more -->
+
+
+<p>When I was 9 years old (I think), my parents bought me a <em>Sinclair ZX Spectrum +2A</em> computer. It&#8217;s highly likely those words mean nothing to you. It looked like this:</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Spectrum_128-2.png/800px-Spectrum_128-2.png"><!-- header_img http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Spectrum_128-2.png/800px-Spectrum_128-2.png --></p>
+
+<p>Truly, it was a wondrous machine, with its 128kB of memory and complete lack of long term storage, and I was utterly thrilled with it. I&#8217;m a nerd. Of course I was. They also bought me a joystick, and a copy of <em>Teenage Mutant Ninja Turtles</em>. To load this game, you placed the tape (yes, as in audio cassette) into the drive and hit play, having selected the right option from the machine&#8217;s opening menu. You then wandered off for a while to let the machine screech and whine away to itself while it loaded the game. Partly for this reason I quickly tired of the game. I got others eventually, but I was a curious and easily bored child, so I started to read the manual which came with the system.</p>
+
+<p>The vast majority of this was actually a guide to programming in the version of the <a href="http://en.wikipedia.org/wiki/BASIC">BASIC</a> (Beginners&#8217; All Purpose Symbolic Instruction Code) supported by the <em>+2A</em>. I read it, and I started to tinker. The <em>Sinclair</em> gave you essentially three options after booting:</p>
+
+<ol>
+<li>Loading a program from tape;</li>
+<li>Program in +2A mode;</li>
+<li>Program in 48k mode.</li>
+</ol>
+
+
+<p>The first two are fairly straight forward, but the third was a bit of an odd beast. It emulated the older <em>ZX Spectrum 48k</em>, which looked like this:</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ZXSpectrum48k.jpg/800px-ZXSpectrum48k.jpg"></p>
+
+<p>You might notice that there seems to be an awful lot of extra writing on those keys. This is because each key had one or more BASIC keywords bound to it. In 48k mode you couldn&#8217;t just type your program, you have to press the right key for the keyword you were looking for. This could be fast, or it could be <em>slow</em>. Especially if your keyboard lacked this extra data.</p>
+
+<p>The <em>Spectrum</em> also had one or two other interesting quirks. For example, take a look at this screen shot from the classic <em>Treasure Island Dizzy</em>:</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/en/4/44/Treasure_Island_Dizzy.png"></p>
+
+<p>For a start, this screen shot is showing fully more than half of the colours the <em>Sinclair</em> was capable of producing. Secondly, you might notice that there&#8217;s something slightly odd about the distribution of these colours. Specifically: each block of 8x8 pixels contains at most two, because this was the maximum allowed. Given the limitations of the system, you had to be quite creative if you wanted to produce something worthwhile. Nevertheless, it happened. Not not me, though, because I did very little more than tinker with it.</p>
+
+<p>It did give me a feel for programming, such that I knew more or less what was expected of me when I arrived at Edinburgh University to study Computer Science, though. A course which did it&#8217;s level best to beat every last scrap BASIC out of me, because BASIC, quite frankly, is a horrible language. It was a reasonable place to start, though, and it was how I started out, so I guess it wasn&#8217;t all bad.</p>
+
+<p>Today&#8217;s computers are clearly a lot easier to use than the <em>Spectrum</em> ever was. For the general consumer, this is a very good thing (in my opinion), because you should not need to be a software engineer to operate one any more than you should need to be a mechanic to operate a car. I don&#8217;t own any general purpose computers which aren&#8217;t made by Apple. As a result (I would say), operating my computer requires an extremely low amount of hassle. I don&#8217;t need to know how it works. If I did want to do some programming, in the simplest possible case, I could follow these steps:</p>
+
+<ol>
+<li>Push &lt;CMD> + &lt;Space></li>
+<li>Type &#8220;Terminal&lt;Enter>&#8221;</li>
+<li>Wait a moment for the terminal to load</li>
+<li>Type &#8220;python&lt;Enter>&#8221;</li>
+</ol>
+
+
+<p>I can now start fiddling with the <a href="http://python.org">Python</a> programming language, which is a much better place to start than BASIC every was. A more likely scenario is that I might have to load a couple of other programs to help me, such as a good programmer&#8217;s text editor. The point here is that I would have to know how to get my computer in this state in the first place, though. It&#8217;s not front and centre as soon as I turn it on. The <em>Spectrum</em> <a href="http://en.wikipedia.org/wiki/Affordance">afforded</a> programming in ways that modern computers don&#8217;t. As a result, a curious youngster is much less likely to start tinkering with their computer than they might have been *cough* 21 years ago *cough*.</p>
+
+<p>Modern computers are very much not toys, at least not in the way a bucket of Lego bricks is. They are expensive pieces of equipment. You don&#8217;t don&#8217;t want kids carrying them backwards and forwards from school. Which is where the Raspberry Pi comes in. It is designed to be played with, and cheap enough that if play gets rough and the system breaks it&#8217;s not actually that much of a big deal. It might be quite important for the economy of the UK (and perhaps your country too) that children start playing with computers again. Playing the way you can play with Lego, not the way you play with Action Man. Building things; breaking them; building them again: better.</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Raspberry_Pi_Beta_Board.jpg/800px-Raspberry_Pi_Beta_Board.jpg"></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Nick Johnson</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-27T23:41:00+01:00" pubdate data-updated="true">Mar 27<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/hacker/'>Hacker</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.harveynick.com/blog/2012/03/27/origin/" data-via="harveynick" data-counturl="http://www.harveynick.com/blog/2012/03/27/origin/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/03/17/new-ish-year-new-ish-blog/" title="Previous Post: New (ish) Year, New (ish) Blog">&laquo; New (ish) Year, New (ish) Blog</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <!-- h1>A Little Bit About Me</h1-->
+  <br/>
+  <p>This is the personal site of <a href="/about">Nick Johnson</a>, who is, among other things: 
+  
+    
+    
+    
+  	  a <a href="/blog/categories/blogger">blogger</a>,
+    
+  
+    
+    
+    
+  	  an <a href="/blog/categories/audiophile">audiophile</a>,
+    
+  
+    
+    
+    
+  	  a <a href="/blog/categories/geek">geek</a>,
+    
+  
+    
+    
+    
+  	  a <a href="/blog/categories/hacker">hacker</a>,
+    
+  
+    
+    
+    
+  	  a <a href="/blog/categories/globetrotter">globetrotter</a>,
+    
+  
+    
+    
+    
+  	  a <a href="/blog/categories/foodie">foodie</a>,
+    
+  
+    
+    
+    
+  	  a <a href="/blog/categories/bibliophile">bibliophile</a>,
+    
+  
+    
+    
+    
+      and a <a href="/blog/categories/cinephile">cinephile</a>.
+    
+  
+  <p><center><img src="http://www.gravatar.com/avatar/1eb55935486442c1e2b2455f85b9a771?s=140" width="140" height="140" /></center></p>
+  </p>
+</section>
+<section>
+  <h1>Reading Options</h1>
+  
+  <p class="close">Readability:
+  <div class="rdbWrapper" data-show-read="1" data-show-send-to-kindle="0" data-show-print="0" data-show-email="0" data-orientation="0" data-version="1" data-bg-color="transparent"></div><script type="text/javascript">(function() {var s = document.getElementsByTagName("script")[0],rdb = document.createElement("script"); rdb.type = "text/javascript"; rdb.async = true; rdb.src = document.location.protocol + "//www.readability.com/embed.js"; s.parentNode.insertBefore(rdb, s); })();</script>
+  </p>
+  
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/03/27/origin/">Origin Story, Raspberry Pi, and the ZX Spectrum</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/17/new-ish-year-new-ish-blog/">New (ish) Year, New (ish) Blog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/01/simplifying-the-landscape/">Simplifying the Landscape</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/09/20/mercury-rising/">Mercury Rising</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/09/14/revisiting-the-language-issue/">Revisiting the Language Issue</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/09/11/the-ol-homestead/">The Ol' Homestead</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/26/dogfood-nom-nom-nom/">Dogfood, Nom Nom Nom</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/24/who-likes-short-shorts/">Who Likes Short Shorts?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/23/book-related-blog-post/">Book Related Blog Post</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/14/the-kaiser-chiefs-do-not-get-to-say-they-called-this/">The Kaiser Chiefs Do NOT Get to Say They Called This...</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("harveynick", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/harveynick" class="twitter-follow-button" data-show-count="false">Follow @harveynick</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/103951349449629293779?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Nick Johnson -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'harveynick-com';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.harveynick.com/blog/2012/03/27/origin/';
+        var disqus_url = 'http://www.harveynick.com/blog/2012/03/27/origin/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

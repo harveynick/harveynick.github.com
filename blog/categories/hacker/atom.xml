@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hacker | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/categories/hacker/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-03-24T23:31:09+00:00</updated>
+  <updated>2012-03-28T00:00:01+01:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -12,6 +12,67 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Origin Story, Raspberry Pi, and the ZX Spectrum]]></title>
+    <link href="http://www.harveynick.com/blog/2012/03/27/origin/"/>
+    <updated>2012-03-27T23:41:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2012/03/27/origin</id>
+    <content type="html"><![CDATA[<p>One of the fun things about working for Google is that from time to time interesting people come into the office to give talks. We had Richard Dawkins a few weeks ago, who gave an interesting if… uncompromising talk. Yesterday we had one of the founders of the <a href="http://www.raspberrypi.org/">Raspberry Pi</a> foundation. For those or you who aren't aware, the Raspberry Pi is an extremely small (exactly credit card sized) and cheap ($25), yet very capable computing platform. The foundation is the charity formed to produce this hardware.</p>
+
+<p>Why is a charity building computer hardware? Because there is a need for it, caused by a problem you're possibly not even aware of. Let me explain; for I am part of the problem. These days when I play computer games it's usually on my X-Box or iPhone. They make my life very easy in this regard, since I never have to worry about whether a game will actually run or not. It just works. They are essentially closed systems, though. There is a reasonably high barrier to entry if I actually want to start playing with them as a developer. Specifically: I can't do it on the device itself. Furthermore, the very simplicity of the device works against me in this regard, because very little action on my part is required to make it work.</p>
+
+<p>It was not always this way. Let me tell you a story.</p>
+
+<!-- more -->
+
+
+<p>When I was 9 years old (I think), my parents bought me a <em>Sinclair ZX Spectrum +2A</em> computer. It's highly likely those words mean nothing to you. It looked like this:</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Spectrum_128-2.png/800px-Spectrum_128-2.png"><!-- header_img http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Spectrum_128-2.png/800px-Spectrum_128-2.png --></p>
+
+<p>Truly, it was a wondrous machine, with its 128kB of memory and complete lack of long term storage, and I was utterly thrilled with it. I'm a nerd. Of course I was. They also bought me a joystick, and a copy of <em>Teenage Mutant Ninja Turtles</em>. To load this game, you placed the tape (yes, as in audio cassette) into the drive and hit play, having selected the right option from the machine's opening menu. You then wandered off for a while to let the machine screech and whine away to itself while it loaded the game. Partly for this reason I quickly tired of the game. I got others eventually, but I was a curious and easily bored child, so I started to read the manual which came with the system.</p>
+
+<p>The vast majority of this was actually a guide to programming in the version of the <a href="http://en.wikipedia.org/wiki/BASIC">BASIC</a> (Beginners' All Purpose Symbolic Instruction Code) supported by the <em>+2A</em>. I read it, and I started to tinker. The <em>Sinclair</em> gave you essentially three options after booting:</p>
+
+<ol>
+<li>Loading a program from tape;</li>
+<li>Program in +2A mode;</li>
+<li>Program in 48k mode.</li>
+</ol>
+
+
+<p>The first two are fairly straight forward, but the third was a bit of an odd beast. It emulated the older <em>ZX Spectrum 48k</em>, which looked like this:</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ZXSpectrum48k.jpg/800px-ZXSpectrum48k.jpg"></p>
+
+<p>You might notice that there seems to be an awful lot of extra writing on those keys. This is because each key had one or more BASIC keywords bound to it. In 48k mode you couldn't just type your program, you have to press the right key for the keyword you were looking for. This could be fast, or it could be <em>slow</em>. Especially if your keyboard lacked this extra data.</p>
+
+<p>The <em>Spectrum</em> also had one or two other interesting quirks. For example, take a look at this screen shot from the classic <em>Treasure Island Dizzy</em>:</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/en/4/44/Treasure_Island_Dizzy.png"></p>
+
+<p>For a start, this screen shot is showing fully more than half of the colours the <em>Sinclair</em> was capable of producing. Secondly, you might notice that there's something slightly odd about the distribution of these colours. Specifically: each block of 8x8 pixels contains at most two, because this was the maximum allowed. Given the limitations of the system, you had to be quite creative if you wanted to produce something worthwhile. Nevertheless, it happened. Not not me, though, because I did very little more than tinker with it.</p>
+
+<p>It did give me a feel for programming, such that I knew more or less what was expected of me when I arrived at Edinburgh University to study Computer Science, though. A course which did it's level best to beat every last scrap BASIC out of me, because BASIC, quite frankly, is a horrible language. It was a reasonable place to start, though, and it was how I started out, so I guess it wasn't all bad.</p>
+
+<p>Today's computers are clearly a lot easier to use than the <em>Spectrum</em> ever was. For the general consumer, this is a very good thing (in my opinion), because you should not need to be a software engineer to operate one any more than you should need to be a mechanic to operate a car. I don't own any general purpose computers which aren't made by Apple. As a result (I would say), operating my computer requires an extremely low amount of hassle. I don't need to know how it works. If I did want to do some programming, in the simplest possible case, I could follow these steps:</p>
+
+<ol>
+<li>Push &lt;CMD> + &lt;Space></li>
+<li>Type "Terminal&lt;Enter>"</li>
+<li>Wait a moment for the terminal to load</li>
+<li>Type "python&lt;Enter>"</li>
+</ol>
+
+
+<p>I can now start fiddling with the <a href="http://python.org">Python</a> programming language, which is a much better place to start than BASIC every was. A more likely scenario is that I might have to load a couple of other programs to help me, such as a good programmer's text editor. The point here is that I would have to know how to get my computer in this state in the first place, though. It's not front and centre as soon as I turn it on. The <em>Spectrum</em> <a href="http://en.wikipedia.org/wiki/Affordance">afforded</a> programming in ways that modern computers don't. As a result, a curious youngster is much less likely to start tinkering with their computer than they might have been *cough* 21 years ago *cough*.</p>
+
+<p>Modern computers are very much not toys, at least not in the way a bucket of Lego bricks is. They are expensive pieces of equipment. You don't don't want kids carrying them backwards and forwards from school. Which is where the Raspberry Pi comes in. It is designed to be played with, and cheap enough that if play gets rough and the system breaks it's not actually that much of a big deal. It might be quite important for the economy of the UK (and perhaps your country too) that children start playing with computers again. Playing the way you can play with Lego, not the way you play with Action Man. Building things; breaking them; building them again: better.</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Raspberry_Pi_Beta_Board.jpg/800px-Raspberry_Pi_Beta_Board.jpg"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[New (ish) Year, New (ish) Blog]]></title>
@@ -330,61 +391,6 @@ For the most part, this site is stock Octopress. I've played with the fonts, mad
 <p>I'll talk about which particular Google technologies I think might be useful in later blog posts, but since I brought it up, I suppose I should probably say something about Clockwork Aphid. I've blown the dust off the code, tweaked a couple of things and got a feature I'd left half finished back on track. I tried switching my current implementation from jMonkeyEngine version 2 to version 3, only to find that while it does appear a lot faster and improved in several other ways, the documentation is pretty crappy, and it's less… functional.</p>
 
 <p>I'll talk about that more later, but for now just know that things are once again happening.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Full Nerd II: Nerd Harder]]></title>
-    <link href="http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder/"/>
-    <updated>2011-06-06T02:36:54+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder</id>
-    <content type="html"><![CDATA[<p>It seems that people really enjoyed my post about the <a href="/blog/2011/06/03/in-which-i-go-full-nerd-2/">computer history museum</a>. At the time I wrote it, I was worried that it might constitute just a little bit too much nerd, so I held back on my initial impulse to put in more pictures and gush enthusiastically about how awesome it all was.</p>
-
-<p>With hindsight, perhaps I can afford to ignore that particular mental stopcock, at least for a little while. I do not, I regret to tell you, have anymore pictures of <em>the</em> teapot. I do intend to buy myself a Melitta teapot at some point quite soon, however, so that it may sit in my flat and act as a most nerdy in-joke.</p>
-
-<!-- more -->
-
-
-<p><blockquote><p>"Tea, anyone?"<br/><br/>"Yes, please."<br/><br/>Pause.<br/><br/>"Why are you grinning like that?"</p></blockquote></p>
-
-<p>I do, however, have pictures of many other fun things. Let's start with a reference to my current employer:</p>
-
-<p><img class="center" src="http://farm3.static.flickr.com/2561/5798552483_0c9a55f471.jpg"></p>
-
-<p>This is one of the original Google server racks. At one point, if you typed a query into the Google homepage, this is where the magic happened. If you have any familiarity at all with how servers usually look, you might be scratching your heading and thinking that this one does not look entirely right. Let me help you with that:</p>
-
-<p><img class="center" src="http://farm4.static.flickr.com/3596/5799103540_e8c797886d.jpg"></p>
-
-<p>Yes, you can see all of the components. No, that is not normal. Yes, each individual server would normally have its own case. No, under normal circumstances sheets of cardboard would not be used as the insulation between motherboard and shelf. Yes, that is an awful lot of servers to fit into a single rack. Yes again, that would require very good air circulation, but you'll have a bloody difficult time finding a case that gives better circulation than no case at all. No, you would not expect a server to bow in the middle like that...</p>
-
-<p>Two things the early Google was known for: providing the best search results; and being very, very frugal when it came to equipment purchasing.</p>
-
-<p>Let's talk about something a bit more fundamental, though. Hard disks, for example. The one in the computer I'm writing this on has a capacity of around 120 GB (depending on how you measure a giga byte, but that's a different story). Wikipedia tells me that is measures around 69.85 mm × 15 mm × 100 mm, so quite small. This is also a hard drive:</p>
-
-<p><img class="center" src="http://farm3.static.flickr.com/2432/5798550925_2b0852594f.jpg"></p>
-
-<p>Assuming I haven't gotten mixed up here somewhere, this is the worlds first hard disk, and is made up of 50 24" disks, holding a grand total of 5 million characters. Now, if  each of those characters is a one byte ASCII character (or similar) that's approximately 5 MB, or 0.005 GB. Quite the difference in storage density, no?</p>
-
-<p>Here's a (slightly) more recent example of a hard disk, one which I'm told is actually still in use to some extent:</p>
-
-<p><img class="center" src="http://farm3.static.flickr.com/2057/5798550747_4ba81989e3.jpg"></p>
-
-<p>Now, if my understanding is correct, this next piece looks like a hard drive, but is much closer in function to RAM:</p>
-
-<p><img class="center" src="http://farm3.static.flickr.com/2197/5798550973_6d011d98a4.jpg"><!-- header_img http://farm3.static.flickr.com/2197/5798550973_6d011d98a4.jpg --></p>
-
-<p>What's particularly neat is that it's based on an original design by the regrettably late, extremely great, and utterly brilliant Alan Turing.<br/>
-The museum has an entire section devoted to the evolution of storage, and it's quite fascinating. Another of the forebears of modern RAM is magnetic core memory, which looks like this:</p>
-
-<p><img class="center" src="http://farm6.static.flickr.com/5023/5798550969_307c5c0b9b.jpg"></p>
-
-<p>Now that's quite cool, but I'd say that it's also quite pleasing to the eye. I think I'd happily frame that, mount it, and have it hanging from the wall in my flat (somewhere close to the teapot). People walk through castles and talk in hushed tones of all the many things "these stones" have seen. All of the stories they might tell, if they could only speak. But this... unlike your average rock, this is unquestionably <em>memory</em>, and memory which lived through very exciting times in the development of our society. Here's something I look at and wonder what stories it might be able to tell, and what stories it has been forced to forget.</p>
-
-<p>There are many things at the Computer History Museum which are very cool and certainly raise a smile (as well as an appreciative thought as to how far things have come). There are also things which just plain stop you in your tracks; the Difference Engine, for example. Well, at the risk of repeating myself, I'm going to post another picture of it, this time from the other side, so you can see a little bit more of the mechanism:</p>
-
-<p><img class="center" src="http://farm6.static.flickr.com/5154/5799104044_672ed38476.jpg"></p>
-
-<p>Now there's a thing I would really and truly <em>love</em> to have in my flat. Ideally in a more coffee table friendly size, of course.</p>
 ]]></content>
   </entry>
   
