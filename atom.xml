@@ -4,7 +4,7 @@
   <title><![CDATA[HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2012-04-07T12:05:14+01:00</updated>
+  <updated>2012-04-14T11:58:05+01:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -12,6 +12,322 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Now We're Blogging with Photos!]]></title>
+    <link href="http://www.harveynick.com/blog/2012/04/14/now-were-blogging-with-photos/"/>
+    <updated>2012-04-14T10:42:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2012/04/14/now-were-blogging-with-photos</id>
+    <content type="html"><![CDATA[<p><em>Fair warning: this is going to be a bit of a programming heavy blog post. It&#8217;s also going to be quite Mac specific.</em></p>
+
+<p>One of the things I wanted to change about the format of this blog was to make it more visual, specifically with pictures. This first part of this was to add pictures to the front page. There were a couple of options for doing so. I could just scan through an article, look for the first image tag and use this. Alternatively I could add a mechanism which allowed me to choose the image, in a similar manner to the way <a href="http://octopress.org/">Octopress</a> allows me to choose the except which appears on the front page. I decided to go with option two.</p>
+
+<!-- more -->
+
+
+<p>The first part of this was to modify the image tag plug-in like so:</p>
+
+<figure class='code'><figcaption><span>image_tag.rb  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">module</span> <span class="nn">Jekyll</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">class</span> <span class="nc">ImageTag</span> <span class="o">&lt;</span> <span class="no">Liquid</span><span class="o">::</span><span class="no">Tag</span>
+</span><span class='line'>    <span class="vi">@img</span> <span class="o">=</span> <span class="kp">nil</span>
+</span><span class='line'>    <span class="vi">@header</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">tag_name</span><span class="p">,</span> <span class="n">markup</span><span class="p">,</span> <span class="n">tokens</span><span class="p">)</span>
+</span><span class='line'>      <span class="n">attributes</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;src&#39;</span><span class="p">,</span> <span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="s1">&#39;height&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="k">if</span> <span class="n">markup</span> <span class="o">=~</span> <span class="sr">/(?&lt;class&gt;\S.*\s+)?(?&lt;src&gt;(?:https?:\/\/|\/|\S+\/)\S+)(?:\s+(?&lt;width&gt;\d+))?(?:\s+(?&lt;height&gt;\d+))?(?&lt;title&gt;\s+.+)?/i</span>
+</span><span class='line'>        <span class="vi">@img</span> <span class="o">=</span> <span class="n">attributes</span><span class="o">.</span><span class="n">reduce</span><span class="p">({})</span> <span class="p">{</span> <span class="o">|</span><span class="n">img</span><span class="p">,</span> <span class="kp">attr</span><span class="o">|</span> <span class="n">img</span><span class="o">[</span><span class="kp">attr</span><span class="o">]</span> <span class="o">=</span> <span class="vg">$~</span><span class="o">[</span><span class="kp">attr</span><span class="o">].</span><span class="n">strip</span> <span class="k">if</span> <span class="vg">$~</span><span class="o">[</span><span class="kp">attr</span><span class="o">]</span><span class="p">;</span> <span class="n">img</span> <span class="p">}</span>
+</span><span class='line'>        <span class="k">if</span><span class="sr"> /(?:&quot;|&#39;)(?&lt;title&gt;[^&quot;&#39;]+)?(?:&quot;|&#39;)\s+(?:&quot;|&#39;)(?&lt;alt&gt;[^&quot;&#39;]+)?(?:&quot;|&#39;)/</span> <span class="o">=~</span> <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;title&#39;</span><span class="o">]</span>
+</span><span class='line'>          <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;title&#39;</span><span class="o">]</span>  <span class="o">=</span> <span class="n">title</span>
+</span><span class='line'>          <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;alt&#39;</span><span class="o">]</span>    <span class="o">=</span> <span class="n">alt</span>
+</span><span class='line'>        <span class="k">else</span>
+</span><span class='line'>          <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;alt&#39;</span><span class="o">]</span>    <span class="o">=</span> <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;title&#39;</span><span class="o">].</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">/&quot;/</span><span class="p">,</span> <span class="s1">&#39;&amp;#34;&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;title&#39;</span><span class="o">]</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>        <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;class&#39;</span><span class="o">].</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">/&quot;/</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;class&#39;</span><span class="o">]</span>
+</span><span class='line'>        <span class="k">if</span> <span class="n">tag_name</span> <span class="o">==</span> <span class="s2">&quot;header_img&quot;</span>
+</span><span class='line'>          <span class="vi">@header</span> <span class="o">=</span> <span class="s2">&quot;&lt;!-- header_img </span><span class="si">#{</span><span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;src&#39;</span><span class="o">]</span><span class="si">}</span><span class="s2"> --&gt;&quot;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>      <span class="k">super</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+</span><span class='line'>      <span class="k">if</span> <span class="vi">@img</span>
+</span><span class='line'>        <span class="s2">&quot;&lt;img </span><span class="si">#{</span><span class="vi">@img</span><span class="o">.</span><span class="n">collect</span> <span class="p">{</span><span class="o">|</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="o">|</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">k</span><span class="si">}</span><span class="s2">=</span><span class="se">\&quot;</span><span class="si">#{</span><span class="n">v</span><span class="si">}</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="k">if</span> <span class="n">v</span><span class="si">}</span><span class="s2">.join(&quot;</span> <span class="s2">&quot;)}&gt;</span><span class="si">#{</span><span class="vi">@header</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>      <span class="k">else</span>
+</span><span class='line'>        <span class="s2">&quot;Error processing input, expected syntax: &lt;img class=&quot;</span><span class="o">[</span><span class="k">class</span> <span class="nb">name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">]</span><span class="s2">&quot; src=&quot;</span><span class="o">[</span><span class="n">http</span><span class="o">[</span><span class="n">s</span><span class="o">]</span><span class="ss">:/</span><span class="o">]/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">image</span><span class="s2">&quot; title=&quot;</span><span class="o">[</span><span class="n">width</span> <span class="o">[</span><span class="n">height</span><span class="o">]]</span> <span class="o">[</span><span class="n">title</span> <span class="n">text</span> <span class="o">|</span> <span class="p">\</span><span class="o">&amp;</span><span class="c1">#34;title text\&amp;#34; [\&amp;#34;alt text\&amp;#34;]]&quot; alt=&quot;[width [height]] [title text | \&amp;#34;title text\&amp;#34; [\&amp;#34;alt text\&amp;#34;]]&quot;&gt;&quot;</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="no">Liquid</span><span class="o">::</span><span class="no">Template</span><span class="o">.</span><span class="n">register_tag</span><span class="p">(</span><span class="s1">&#39;img&#39;</span><span class="p">,</span> <span class="no">Jekyll</span><span class="o">::</span><span class="no">ImageTag</span><span class="p">)</span>
+</span><span class='line'><span class="no">Liquid</span><span class="o">::</span><span class="no">Template</span><span class="o">.</span><span class="n">register_tag</span><span class="p">(</span><span class="s1">&#39;header_img&#39;</span><span class="p">,</span> <span class="no">Jekyll</span><span class="o">::</span><span class="no">ImageTag</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This adds an <code>html</code> comment containing the image path to the page when I use <code>header_img</code> as a <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> tag name rather than the original <code>img</code>. Next I need to do something with this comment. I created an additional Liquid filter which pulls the path out and replaces it with an actual image embed:</p>
+
+<figure class='code'><figcaption><span>harveynick_filters.rb  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">module</span> <span class="nn">HarveyNickFilters</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1"># Used on the blog index to split posts on the &lt;!--more--&gt; marker</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">header_image</span><span class="p">(</span><span class="n">input</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">input</span> <span class="o">=~</span> <span class="sr">/&lt;!-- header_img (?&lt;src&gt;(?:https?:\/\/|\/|\S+\/)\S+) --&gt;/</span>
+</span><span class='line'>      <span class="s2">&quot;&lt;img class=</span><span class="se">\&quot;</span><span class="s2">header</span><span class="se">\&quot;</span><span class="s2"> src=</span><span class="se">\&quot;</span><span class="si">#{</span><span class="vg">$~</span><span class="o">[</span><span class="s1">&#39;src&#39;</span><span class="o">]</span><span class="si">}</span><span class="se">\&quot;</span><span class="s2">/&gt;&quot;</span>
+</span><span class='line'>    <span class="k">else</span>
+</span><span class='line'>      <span class="s2">&quot;&quot;</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="no">Liquid</span><span class="o">::</span><span class="no">Template</span><span class="o">.</span><span class="n">register_filter</span><span class="p">(</span><span class="no">HarveyNickFilters</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Next I modified my theme to run this filter over the page contents just before the one which creates the except on the front page. I&#8217;ll leave this as an exercise for the reader. Lastly, I needed to account for the fact that the created image could be just about any size, while I want some uniformity on the front page. Those of you playing at home will have noticed I assigned <code>header</code> as the class of the image. This allows me to control the appearance of the front page images by adding the following to the <code>sass</code> files in my theme (which are used to generate the <code>css</code>):</p>
+
+<figure class='code'><figcaption><span>_styles.scss  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="nt">img</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">&amp;</span><span class="nc">.header</span><span class="p">{</span>
+</span><span class='line'>    <span class="na">float</span><span class="o">:</span> <span class="no">left</span><span class="p">;</span>
+</span><span class='line'>    <span class="na">width</span><span class="o">:</span> <span class="mi">250</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="na">max-width</span><span class="o">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+</span><span class='line'>    <span class="na">margin-right</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="na">margin-bottom</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="na">width</span><span class="o">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+</span><span class='line'>      <span class="na">max-width</span><span class="o">:</span> <span class="mi">250</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span> <span class="nt">400px</span><span class="o">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="na">width</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span><span class='line'>      <span class="na">max-width</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span><span class='line'>      <span class="na">margin-right</span><span class="o">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Presto. Front page images.</p>
+
+<p>Next, I wanted to try and make it easier to include pictures which I myself have taken with an actual camera (or, more likely, my phone). There really isn&#8217;t any problem when you&#8217;re linking to images elsewhere on the internet, but things can get a bit stickier when you want to include your own images on an Octopress blog. One option is to use a hosted service, like Flickr or PhotoBucket, but this only works when you have an internet connection. I really love that Octopress allows me to work on my site while offline, and I didn&#8217;t want to lose this advantage when I&#8217;m posting pictures. Thus, I decided to just stick the images in my blog&#8217;s images folder.</p>
+
+<p>iPhoto is pretty great for organising and sharing photos (with supported services), but definitely doesn&#8217;t make your life easy if you want to actually get at the image files themselves. That&#8217;s the first problem. The second is that I also want to resize them to something reasonable for my blog. Lastly I want this to be low hassle. I came to the conclusion that an <a href="http://en.wikipedia.org/wiki/AppleScript">Applescript</a> is what was required, and this is what I came up with:</p>
+
+<figure class='code'><figcaption><span>bloggify.script  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='applescript'><span class='line'><span class="k">set</span> <span class="nv">blog_path</span> <span class="k">to</span> <span class="s2">&quot;~/GitHub/octopress/source&quot;</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">images_path</span> <span class="k">to</span> <span class="s2">&quot;/images/blog/&quot;</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">blog_image_path</span> <span class="k">to</span> <span class="nv">blog_path</span> <span class="o">&amp;</span> <span class="nv">images_path</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">max_width</span> <span class="k">to</span> <span class="mi">992</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">set</span> <span class="p">{</span><span class="nb">year</span><span class="p">:</span><span class="nv">y</span><span class="p">,</span> <span class="nb">month</span><span class="p">:</span><span class="nv">m</span><span class="p">,</span> <span class="nb">day</span><span class="p">:</span><span class="nv">d</span><span class="p">}</span> <span class="k">to</span> <span class="p">(</span><span class="nb">current date</span><span class="p">)</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">date_string</span> <span class="k">to</span> <span class="s2">&quot;&quot;</span> <span class="o">&amp;</span> <span class="nv">y</span> <span class="o">&amp;</span> <span class="s2">&quot;/&quot;</span> <span class="o">&amp;</span> <span class="nv">two_digits</span><span class="p">(</span><span class="nv">m</span> <span class="o">*</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="s2">&quot;/&quot;</span> <span class="o">&amp;</span> <span class="nv">two_digits</span><span class="p">(</span><span class="nv">d</span><span class="p">)</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">folder_path</span> <span class="k">to</span> <span class="nv">blog_image_path</span> <span class="o">&amp;</span> <span class="nv">date_string</span> <span class="o">&amp;</span> <span class="s2">&quot;/&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">do shell script</span> <span class="s2">&quot;mkdir -p &quot;</span> <span class="o">&amp;</span> <span class="nv">folder_path</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;iPhoto&quot;</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">the_photos</span> <span class="k">to</span> <span class="nv">selection</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">the_photo</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">1</span> <span class="k">of</span> <span class="nv">the_photos</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">image_path</span> <span class="k">to</span> <span class="na">image</span> <span class="na">path</span> <span class="k">of</span> <span class="nv">the_photo</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">image_name</span> <span class="k">to</span> <span class="na">name</span> <span class="k">of</span> <span class="nv">the_photo</span>
+</span><span class='line'><span class="k">end</span> <span class="k">tell</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;Image Events&quot;</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">current_image</span> <span class="k">to</span> <span class="nb">open</span> <span class="nv">image_path</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">image_type</span> <span class="k">to</span> <span class="nv">current_image</span>&#39;s <span class="na">file type</span>
+</span><span class='line'>  <span class="k">set</span> <span class="no">AppleScript</span>&#39;s <span class="no">text item delimiters</span> <span class="k">to</span> <span class="s2">&quot;/&quot;</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">image_path</span> <span class="k">to</span> <span class="nb">last</span> <span class="nb">item</span> <span class="k">of</span> <span class="nb">text</span> <span class="nb">items</span> <span class="k">of</span> <span class="nv">image_path</span>
+</span><span class='line'>  <span class="k">set</span> <span class="no">AppleScript</span>&#39;s <span class="no">text item delimiters</span> <span class="k">to</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>  <span class="nv">scale</span> <span class="nv">current_image</span> <span class="k">to</span> <span class="na">size</span> <span class="nv">max_width</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">new_image</span> <span class="k">to</span> <span class="nv">folder_path</span> <span class="o">&amp;</span> <span class="nv">image_path</span>
+</span><span class='line'>  <span class="nv">save</span> <span class="nv">current_image</span> <span class="k">in</span> <span class="nv">new_image</span> <span class="k">as</span> <span class="nv">image_type</span>
+</span><span class='line'><span class="k">end</span> <span class="k">tell</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">set the clipboard to</span> <span class="nv">images_path</span> <span class="o">&amp;</span> <span class="nv">date_string</span> <span class="o">&amp;</span> <span class="s2">&quot;/&quot;</span> <span class="o">&amp;</span> <span class="nv">image_path</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">on</span> <span class="nv">two_digits</span><span class="p">(</span><span class="nv">the_number</span><span class="p">)</span>
+</span><span class='line'>  <span class="no">return</span> <span class="p">(</span><span class="nb">text</span> <span class="o">-</span><span class="mi">2</span> <span class="nb">thru</span> <span class="o">-</span><span class="mi">1</span> <span class="k">of</span> <span class="p">((</span><span class="nv">the_number</span> <span class="o">+</span> <span class="mi">100</span><span class="p">)</span> <span class="k">as </span><span class="nc">string</span><span class="p">))</span>
+</span><span class='line'><span class="k">end</span> <span class="nv">two_digits</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, Applescript the programming language is completely mental and can be a complete pain in the arse to get right, but Applescript the mechanism is spectacularly powerful. You can do some serious automation with it. This script grabs the path to the currently selected photograph in iPhoto, resizes it and copies it to a folder inside my blog, generated using today&#8217;s date to avoid duplication. Lastly, it places the location of the image on the clipboard, in the form it&#8217;s needed.</p>
+
+<p>To use it, I enabled the scripts menu (it&#8217;s an option in the Applescript editor) and copied the script to the iPhoto scripts folder, which will be something like <code>/Users/&lt;user&gt;/Library/Scripts/Applications/iPhoto</code>. This might be hidden by default, but you can find it via the scripts menu while in iPhoto.</p>
+
+<p>Then, all that is required is to select a photo, trigger the script, and then hit cmd-c in the post I&#8217;m writing. Bingo!</p>
+
+<p>After getting this working, I remembered an <a href="http://arstechnica.com/apple/guides/2011/09/tutorial-os-x-automation-with-macruby-and-the-scripting-bridge.ars/2">ArsTecnica article</a> about using <a href="http://www.ruby-lang.org/en/">Ruby</a> in place of Applescript for this purpose, so I converted the script to Ruby as an exercise. This is what I came up with:</p>
+
+<figure class='code'><figcaption><span>blogify.rb  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">#!/usr/local/bin/macruby  </span>
+</span><span class='line'>
+</span><span class='line'><span class="n">framework</span> <span class="s2">&quot;ScriptingBridge&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">blog_path</span> <span class="o">=</span> <span class="s2">&quot;~/GitHub/octopress/source&quot;</span>
+</span><span class='line'><span class="n">images_path</span> <span class="o">=</span> <span class="s2">&quot;/images/blog/&quot;</span>
+</span><span class='line'><span class="n">max_width</span> <span class="o">=</span> <span class="mi">992</span>
+</span><span class='line'><span class="n">convert</span> <span class="o">=</span> <span class="s2">&quot;/opt/local/bin/convert&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">date_string</span> <span class="o">=</span> <span class="no">Time</span><span class="o">.</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y/%m/%d&quot;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">source_path</span> <span class="o">=</span> <span class="no">SBApplication</span><span class="o">.</span><span class="n">applicationWithBundleIdentifier</span><span class="p">(</span><span class="s2">&quot;com.apple.iPhoto&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">selection</span><span class="o">[</span><span class="mi">0</span><span class="o">].</span><span class="n">imagePath</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2"> &quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">image_name</span> <span class="o">=</span> <span class="n">source_path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span><span class="o">[-</span><span class="mi">1</span><span class="o">]</span>
+</span><span class='line'><span class="n">destination_folder</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">blog_path</span><span class="si">}#{</span><span class="n">images_path</span><span class="si">}#{</span><span class="n">date_string</span><span class="si">}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2"> &quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">destination_path</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">destination_folder</span><span class="si">}</span><span class="s2">/</span><span class="si">#{</span><span class="n">image_name</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">ensure_dir_cmd</span> <span class="o">=</span> <span class="s2">&quot;mkdir -p </span><span class="si">#{</span><span class="n">destination_folder</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="nb">puts</span> <span class="n">ensure_dir_cmd</span>
+</span><span class='line'><span class="nb">system</span> <span class="n">ensure_dir_cmd</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="n">convert_cmd</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">convert</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">source_path</span><span class="si">}</span><span class="s2"> -resize </span><span class="si">#{</span><span class="n">max_width</span><span class="si">}</span><span class="s2">x2000 </span><span class="si">#{</span><span class="n">destination_path</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="nb">puts</span> <span class="n">convert_cmd</span>
+</span><span class='line'><span class="nb">system</span> <span class="n">convert_cmd</span>
+</span><span class='line'>
+</span><span class='line'><span class="no">IO</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s1">&#39;pbcopy&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">print</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">images_path</span><span class="si">}#{</span><span class="n">date_string</span><span class="si">}</span><span class="s2">/</span><span class="si">#{</span><span class="n">image_name</span><span class="si">}</span><span class="s2">&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ruby is a much more sensible language, and this, to me, is a lot easier to follow. I&#8217;m fairly new to Ruby, so this might not actually be the most Ruby-ish way of doing it, mind. It should be noted that it will only work with <a href="http://www.macruby.org/">MacRuby</a>, though. You will also need <a href="http://www.imagemagick.org/script/index.php">ImageMagick</a> installed. I made this executable with a quick <code>chmod +x</code> and moved it to the iPhoto scripts folder as well, where it seems to work just fine. So now I have two options. Hopefully, someone out there finds this useful.</p>
+
+<p>Finally, to prove it works, and because it feels a little strange to not actually have any pictures in this entry: here&#8217;s a nice shot taken at Kew Gardens (which hopefully I&#8217;ll talk about more later):</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2012/04/14/IMG_0442.JPG"><!-- header_img /images/blog/2012/04/14/IMG_0442.JPG --></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Origin Story, Raspberry Pi, and the ZX Spectrum]]></title>
@@ -924,28 +1240,6 @@ The museum has an entire section devoted to the evolution of storage, and it&#82
 <p>Thus, for the past two days I eschewed the use of my rental car and went wandering. Yesterday (that&#8217;s Sunday) I wandered around Mountain View itself and today I took a train to San Francisco and did the same thing there. I want to tell you about it. I plan to tell you about it. SOme of it is actually worth telling you about. But I want to throw some of the pictures I took into the mix, and right now I don&#8217;t have a good way of doing that. The Google provided free WiFi which covers the entire of Mountain View is very useful indeed, but it&#8217;s not super fast and thus not ideal for uploading a bunch of pictures.</p>
 
 <p>Tomorrow I&#8217;m heading into the office for day one of my Google training (I&#8217;m told there&#8217;s some awesome Kool-Aid, so I&#8217;m looking forward to trying that) and I think I may have access to a slightly better connection there (just a hunch), so I&#8217;ll see what I can do.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Fourteen Days in the Valley]]></title>
-    <link href="http://www.harveynick.com/blog/2011/05/29/fourteen-days-in-the-valley/"/>
-    <updated>2011-05-29T00:52:36+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/05/29/fourteen-days-in-the-valley</id>
-    <content type="html"><![CDATA[<p>I can see the mountains, but I suppose that&#8217;s only to be expected. I am in Mountain View, after all.</p>
-
-<p>As of today, I&#8217;m in Silicon Valley for my &#8220;noogler training,&#8221; something which most companies would just refer to as an induction. At Google, though, there&#8217;s a bit more to it than that. There are a lot of tools and technologies to learn, because so much of what we use is built in house, and there is a lot of culture to adapt to, because most companies don&#8217;t function the way Google functions. Hence, all new hires get shipped over to the mothership, partly to centralise all of this learning, and partly (I suspect) because the Googleplex is really, really cool. I&#8217;ve been told I must try all of the cafes and slides.</p>
-
-<!-- more -->
-
-
-<p>The flight over was truly awful. It felt like crossing the Atlantic in the jet plane equivalent of a council tower block. My entertainment system was broken, so I had to relay on what I had with me. Fortunately, I had prepared for this eventuality and loaded my iPad up with some films and TV shows, and the iPad has a much nicer screen, anyway. What I wasn&#8217;t prepared for, though, was how shit the cabin crew were going to be. I must have pushed the call button thirty times during the flight and they did not respond once. I always had to flag someone down or walk to the galley. Before you ask: it did occur to me that maybe my call button was malfunctioning, but no: the crew confirmed that it was working. Perhaps, then, they were busy? Some of the time yes, I&#8217;m sure, but I also watched them standing around chatting as I pushed the button. Not cool, British Airways, not cool.</p>
-
-<p>Speaking of happier things, I arrived in San Francisco and proceeded to the hire car stand to be greeted with a huge queue. I don&#8217;t want to oversell how long the queue was, but some of these people had tents. After moment realisation dawned, though: since I work for Google I automatically have Hertz #1 Gold status, so I walked straight past that queue to the garage&#8230; and proceeded to wait in a shorter queue. Still, I call that a win.</p>
-
-<p>As of right now I&#8217;m sitting in my very pleasant hotel room trying to decide what to do for a couple of hours before I can legitimately go to sleep. Aside from getting dinner, of course. That&#8217;s the next problem. I&#8217;m probably a little strung out right now, so if this post reads a little incoherent, let&#8217;s just go ahead and assume that&#8217;s the reason why, m&#8217;kay?</p>
-
-<p>Tomorrow I&#8217;m going to go for a bit of an explore. I&#8217;ll let you know if I find anything exciting. Stay classy.</p>
 ]]></content>
   </entry>
   
