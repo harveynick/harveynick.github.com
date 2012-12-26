@@ -73,7 +73,7 @@ body > div {
 }
 
 html {
-  background: image-url('linen.png') top left fixed;
+  background: image-url('wild_oliva.png') top left fixed;
 }
 
 body > nav {
@@ -96,9 +96,9 @@ body > footer {
   position: absolute;
   @include border-top-radius(.4em);
   @include border-bottom-radius(.4em);
-  -moz-box-shadow: 0px 0px 20px 5px #000000;
-  -webkit-box-shadow: 0px 0px 20px 5px #000000;
-  box-shadow: 0px 0px 20px 5px #000000;
+  -moz-box-shadow: 0px 0px 20px 5px #000;
+  -webkit-box-shadow: 0px 0px 20px 5px #000;
+  box-shadow: 0px 0px 20px 5px #000;
   top: 9em;
   left: 0;
   right: 0;

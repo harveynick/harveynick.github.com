@@ -105,7 +105,7 @@ gravatar_size: 140
 
 # Readability
 readability_pub_id: QUKCyxBsSkBLBb9EV6af7hEy2dheS7xF48kQqvNr
-readability_sharing: true
+readability_sharing: false
 readability_email: 0
 readability_print: 0
 readability_kindle: 0
