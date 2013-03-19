@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Lady Gagga | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/tags/lady-gagga/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-19T22:49:52+00:00</updated>
+  <updated>2013-03-19T22:58:36+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -31,21 +31,21 @@
 
 <p>I did not have a lot to go on, so the next time the internet was functional, I fired up Google and brazenly typed in "music video black dress white dress," and... win! I love it when that happens. Here's the video:</p>
 
-<p>{% youtube OOfBwSYvIic %}</p>
+<p><iframe src="http://www.youtube.com/embed/OOfBwSYvIic" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
-<p>{% pullquote %}
-It's a little bit emo, but I like it. Good tune. Unless you're reading this in Australia you've probably never heard of Micheal Paynter, but likely have heard of the The Veronicas, the two ladies singing in the background. Now... {"Perhaps this is down to the alluring power of a well cut evening dress and a knowing smile, but... Damn"}. I've generally thought of them as "pretty" (and sometimes "annoying," musically) but they really are stunning in this video.
-{% endpullquote %}</p>
+<p><span class='pullquote-right' data-pullquote='Perhaps this is down to the alluring power of a well cut evening dress and a knowing smile, but&#8230; Damn'>
+It's a little bit emo, but I like it. Good tune. Unless you're reading this in Australia you've probably never heard of Micheal Paynter, but likely have heard of the The Veronicas, the two ladies singing in the background. Now... Perhaps this is down to the alluring power of a well cut evening dress and a knowing smile, but... Damn. I've generally thought of them as "pretty" (and sometimes "annoying," musically) but they really are stunning in this video.
+</span></p>
 
 <h2>You Are Speaking My Language!</h2>
 
 <p>The title of my previous series of programming language related posts was, in case you hadn't guessed, a reference to this:</p>
 
-<p>{% youtube srIKcXWN6F0 %}</p>
+<p><iframe src="http://www.youtube.com/embed/srIKcXWN6F0" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p>Now, I love Juliette &amp; The Licks, but this really isn't their best song. In actual fact I find this entire album extremely disappointing (with the exception of "I never got to tell you what I wanted to"), where as the other two albums don't really have a bad song on them. The song title fit the posts quite well, however, so I didn't feel I could leave it out. I spent some time on YouTube trying to work out which other song of theirs I should post as well, and ended up coming to the conclusion that this was a safe bet:</p>
 
-<p>{% youtube -2WDcCT3YeM %}</p>
+<p><iframe src="http://www.youtube.com/embed/2WDcCT3YeM" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p>It's a good song and I love the video. I've also seen plenty of girls walking through Edinburgh at 11am on a Saturday who looked like they might break into this at any moment.</p>
 
@@ -55,7 +55,7 @@ It's a little bit emo, but I like it. Good tune. Unless you're reading this in A
 
 <p>It's another Lady Gaga cover and I love it!</p>
 
-<p>{% youtube 2ga_pr0vuHA %}</p>
+<p><iframe src="http://www.youtube.com/embed/2ga_pr0vuHA" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p>This is clearly still Lady Gaga's "Bad Romance," but with a rock opera feel on top, which I feel works very, very well. I can imagine this version of the song sounding amazing sung by Freddie Mercury, but then I suspect that might be the case for most Lady Gaga songs (not coincidentally).</p>
 ]]></content>

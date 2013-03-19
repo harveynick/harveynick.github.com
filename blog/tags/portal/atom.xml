@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Portal | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/tags/portal/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-19T22:49:52+00:00</updated>
+  <updated>2013-03-19T22:58:36+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -20,7 +20,7 @@
     <id>http://www.harveynick.com/blog/2011/08/24/who-likes-short-shorts</id>
     <content type="html"><![CDATA[<p>I think I love almost everything about this short film. That being the case, I'll quit my chin wagging and just get on with showing it:</p>
 
-<p>{% youtube 4drucg1A6Xk %}</p>
+<p><iframe src="http://www.youtube.com/embed/4drucg1A6Xk" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p>Mucho kudos to Dan Trachtenburg, Danielle Rayne, and everyone else envolved. No get back to it. I want more!</p>
 ]]></content>
@@ -38,7 +38,7 @@
 <!-- more -->
 
 
-<p>{% youtube http://www.youtube.com/watch?v=sxNmeMklFk8 %}</p>
+<p><iframe src="http://www.youtube.com/embed/http://www.youtube.com/watch?v=sxNmeMklFk8" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p>Perhaps you're thinking "Huh? Who's this guy?" or "What's with the cake?". You've been missing out if that's the case. Jonathan Coulton (for that is the man's name) is a computer programmer turned unlikely rock star (You scoff? He has a song in Rock Band. I'm having trouble thinking of a better benchmark), who's become something of a geek standard thanks to the somewhat unlikely nature of his subject matter (one song has Pluto's moon singing its condolences regarding its loss of planet status).</p>
 

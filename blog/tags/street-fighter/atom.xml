@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Street Fighter | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/tags/street-fighter/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-19T22:49:52+00:00</updated>
+  <updated>2013-03-19T22:58:36+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -25,21 +25,21 @@
 
 <p>Coming out a couple of months is Street Fighter 4, a sequel to Street Fighter 2, but a prequel to Street Fighter 3. More about that later, but to complicate things further, there's also a new version of Street Fighter 2, Super Street Fighter 2 Turbo HD Remix, or as I'd like to call it: "Street Fighter 2: Really Fricking Pretty Edition". What it is is a revamped edition of the "original" Super Street Fighter 2 Turbo with redrawn graphics, new music and rebalanced game-play (all the characters are about equal now). So now (referring to the images below), instead of looking like the image on the left, the character Ken now looks like the image on the right.</p>
 
-<p><a href="http://en.wikipedia.org/wiki/Super_Street_Fighter_II_Turbo_HD_Remix">{% img center http://upload.wikimedia.org/wikipedia/en/1/19/Hdstreetfighter.jpg %}</a></p>
+<p><a href="http://en.wikipedia.org/wiki/Super_Street_Fighter_II_Turbo_HD_Remix"><img class="center" src="http://upload.wikimedia.org/wikipedia/en/1/19/Hdstreetfighter.jpg"></a></p>
 
 <p>Pretty cool, huh? What's really weird, though, is that they didn't change any of the game mechanics, so it still plays like it always did, thus:</p>
 
-<p>{% youtube WbYrxVDPBbM %}</p>
+<p><iframe src="http://www.youtube.com/embed/WbYrxVDPBbM" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p>Which is a little jarring, but apparently necessary. Why? Because there are still large touraments with this game and some people actually count the frames in order to get their combos right. Weird.</p>
 
 <p>But what of Street Fighter 4? Well it's still the same style of 2D fighting game, but it uses what I think is the most beautiful graphics engine I've ever seen:</p>
 
-<p><a href="http://www.zath.co.uk/street-fighter-4-review-ps3/">{% img center http://cdn.zath.co.uk/wp-content/uploads/2009/04/street-fighter-4-screenshot-1.jpg %}</a></p>
+<p><a href="http://www.zath.co.uk/street-fighter-4-review-ps3/"><img class="center" src="http://cdn.zath.co.uk/wp-content/uploads/2009/04/street-fighter-4-screenshot-1.jpg"></a></p>
 
 <p>This gives it a gorgeous cell shaded / traditional Japanese art type look which I really like. Also, even though the game-play is 2D, the engine is 3D; meaning it's not limited to pre-programmed graphics, and so Ryu can actually react to the fact that he's probably about to get dropped on his head, in real time. What's more, when you pull off a more spectacular move, the game can get a bit more cinematic on your ass:</p>
 
-<p><a href="http://www.zath.co.uk/street-fighter-4-review-ps3/">{% img center http://cdn.zath.co.uk/wp-content/uploads/2009/04/street-fighter-4-screenshot-2.jpg %}</a></p>
+<p><a href="http://www.zath.co.uk/street-fighter-4-review-ps3/"><img class="center" src="http://cdn.zath.co.uk/wp-content/uploads/2009/04/street-fighter-4-screenshot-2.jpg"></a></p>
 
 <p>Credit where credit's due: I stole all the images from <a href="http://www.wikipedia.org/">wikipedia</a> and <a href="http://www.zath.co.uk">Zath</a>. Click any of them to jump to the relevant article.</p>
 ]]></content>

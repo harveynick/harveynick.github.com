@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Clockwork Aphid | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/tags/clockwork-aphid/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-19T22:49:52+00:00</updated>
+  <updated>2013-03-19T22:58:36+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -44,7 +44,7 @@
 
 <p>I'm not sure if I actually need this last in my current implementation (my gut says no, I'll explain why later), but I'm leaving it in for the time being. Finally, two global constants are used for tuning, and we end up with this:</p>
 
-<p>{% img center http://harveynick.files.wordpress.com/2011/12/simplificationequation21.png %}</p>
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/simplificationequation21.png"></p>
 
 <p>Where:</p>
 
@@ -60,29 +60,29 @@
 
 <p>This is not entirely optimal for processing, but a little bit of maths wizardry transforms this like so:</p>
 
-<p>{% img center http://harveynick.files.wordpress.com/2011/12/simplificationequation31.png %}</p>
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/simplificationequation31.png"></p>
 
 <p>This looks more complicated, and it's less intuitive to see what it actually does, but from the point of view of the computer it's a lot simpler, as it avoids the square root needed to calculate the distance between the point and the camera. Now we get to the fun part: diagrams! Consider the following small landscape, coloured as to the granularity of each of the points (aka the distance to the node's parents, see <a href="/blog/2010/10/22/fractal-errata/">this post</a>):</p>
 
-<p>{% img center http://harveynick.files.wordpress.com/2011/12/allpoints.jpg %}</p>
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/allpoints.jpg"></p>
 
 <p>Next, we'll pick some arbitrary values for the constants mentioned above (ones which work well for explanatory purposes), and place the viewpoint in the top left hand corner, and we end up with this the following active points (inactive points are hidden):</p>
 
-<p>{% img center http://harveynick.files.wordpress.com/2011/12/activepoints.jpg %}</p>
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/activepoints.jpg"></p>
 
 <p>Now, we take the active points with the smallest granularity, and we have them draw their polygons, <a href="/blog/2010/10/22/now-in-eye-popping-3d/">exactly as before</a>, which looks like this:</p>
 
-<p>{% img center http://harveynick.files.wordpress.com/2011/12/smallestpolygons.jpg %}</p>
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/smallestpolygons.jpg"></p>
 
 <p>When we come to draw the polygons of the next highest granularity you'll see that we have a problem, though. The previous set of polygons have encroached on their territory. To avoid this, each node informs its parents that it is active and then the parent doesn't draw any polygons in the direction of its active children. If we add in the polygons drawn by the each of the other levels of granularity, we now end up with this:</p>
 
-<p>{% img center http://harveynick.files.wordpress.com/2011/12/filledpolygons.jpg %}</p>
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/filledpolygons.jpg"></p>
 
 <p>Oh no! There's a hole in my landscape! I was actually expecting that my simplistic approach would lead to more or less this result, but it was still a little annoying when it happened. If I was a proper analytical type I would next have sat down and worked over the geometry at play here, then attempted to find a formulation which would prevent this from happening. Instead, though, I stared at it for a good long while, displaying it in various different ways, and waited for something to jump out at me.</p>
 
 <p>Eventually it did, and thankfully it was a very simple rule. Each parent stores a list of the directions in which it has active children in order to prevent overdrawing (as mentioned above). The new rule is that a node is also considered active if this list is non-empty. With this addition, our tessellated landscape now look alike this:</p>
 
-<p>{% img center http://harveynick.files.wordpress.com/2011/12/backfilledpolygons.jpg %}</p>
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/backfilledpolygons.jpg"></p>
 
 <p>Presto! A nice simple rule which fills in all of the gaps in the landscape without any over or under simplification, or any overdrawing. I suspect this rule also negates the need for the bounding radius mentioned above, though I have not as yet tested that thought. To recap, we have three simple rules:</p>
 
@@ -95,7 +95,7 @@
 
 <p>But what does this look like in actual eye poppingly 3D landscapes? Well, here's an example, using the height based colouring I've used before:</p>
 
-<p>{% header_img center http://harveynick.files.wordpress.com/2011/12/simplifiedlandscape.jpg %}</p>
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/12/simplifiedlandscape.jpg"><!-- header_img http://harveynick.files.wordpress.com/2011/12/simplifiedlandscape.jpg --></p>
 
 <p>I'm quite pleased with this, though what I'm doing here is still quite inefficient and in need of some serious tuning. There are a couple of further simplification tricks I can try (including the next step from the (paper) paper). More to come later. Honest.</p>
 ]]></content>
@@ -145,7 +145,7 @@
 <!-- more -->
 
 
-<p><a href="http://en.wikipedia.org/wiki/Edinburgh_Castle">{% header_img center http://upload.wikimedia.org/wikipedia/en/8/88/Holiday043.jpg %}</a></p>
+<p><a href="http://en.wikipedia.org/wiki/Edinburgh_Castle"><img class="center" src="http://upload.wikimedia.org/wikipedia/en/8/88/Holiday043.jpg"><!-- header_img http://upload.wikimedia.org/wikipedia/en/8/88/Holiday043.jpg --></a></p>
 
 <p>A lot of the truly great cities in Europe tend to centre around castles, but you don't tend to find castles just plonked anywhere on the landscape. Edinburgh Castle is a good example because:</p>
 
@@ -168,19 +168,19 @@
 
 <p>Another feature which population centres tend to spring up around are harbors. They're very important for trade, thus they attract people. Wikipedia served up a reasonable example:</p>
 
-<p><a href="http://en.wikipedia.org/wiki/Harbor">{% img center http://upload.wikimedia.org/wikipedia/commons/d/dc/Capri.harbour.from.above.arp.jpg %}</a></p>
+<p><a href="http://en.wikipedia.org/wiki/Harbor"><img class="center" src="http://upload.wikimedia.org/wikipedia/commons/d/dc/Capri.harbour.from.above.arp.jpg"></a></p>
 
 <p>Rule of thumb number one for a harbor: it should be at the intersection of the land and the sea, ideally. If we're playing in a fantasy sand pit this isn't actually the only option, but that's a story for another day. The nature of the coast is important as well, though. You need reasonably deep water right next to the land, but not too deep. Lastly, and just as importantly: it should provide shelter. The boats in the harbor need to be able to survive the harsh weather the sea sometimes serves up. A sheltered cove with high cliffs to each side sounds about right, no?</p>
 
 <p>The last kind of feature I'm thinking of here is again something quite important to trade: the bridging point. You need to get your trade caravan across the river (or gorge) which separates the harbor and the castle (for example), thus you need to cross the bridge. The bride spans the river at a conveniently narrow point and it's the only one for miles. Thus, the bridge becomes a nexus of activity and a town springs up there. Over time the town increases in size and more bridges get built. Before you know it... BOOM, Florence!</p>
 
-<p><a href="http://en.wikipedia.org/wiki/Ponte_Vecchio">{% img center http://upload.wikimedia.org/wikipedia/commons/f/f5/Ponte_Vecchio_Vasari.jpg %}</a></p>
+<p><a href="http://en.wikipedia.org/wiki/Ponte_Vecchio"><img class="center" src="http://upload.wikimedia.org/wikipedia/commons/f/f5/Ponte_Vecchio_Vasari.jpg"></a></p>
 
 <p>This is, of course, just the tip of the ice berg. We've not even talked about churches, cathedrals, monasteries, oases, and any number of geological features.</p>
 
 <p>Another question, of course is how to go about actual generating the population centres themselves. Well, I'm going to talk more about this later, when I actually get around to talking some other people doing some procedural content related stuff, but here's a little something to wet your appetite:</p>
 
-<p>{% youtube MG41yYBD-rE %}</p>
+<p><iframe src="http://www.youtube.com/embed/MG41yYBD-rE" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p>Cool, no? More about procedural city generation from me later (I don't want to get too far ahead of myself), but you can read more about this project at this excellent series of <a href="http://www.introversion.co.uk/subversion/">blogs</a>. Start at the beginning, and be ready to loose a good hour of your time.</p>
 ]]></content>
@@ -208,24 +208,24 @@
 
 <p>The quintessential fantasy landscape is, of course, Tolkien's Middle Earth, which looks a lot like this:</p>
 
-<p><a href="http://en.wikipedia.org/wiki/Middle-earth">{% header_img center http://war3.incgamers.com/uploads/MiddleEarthRisk792Kofficial1291674287.w3x-1.jpg %}</a></p>
+<p><a href="http://en.wikipedia.org/wiki/Middle-earth"><img class="center" src="http://war3.incgamers.com/uploads/MiddleEarthRisk792Kofficial1291674287.w3x-1.jpg"><!-- header_img http://war3.incgamers.com/uploads/MiddleEarthRisk792Kofficial1291674287.w3x-1.jpg --></a></p>
 
 <p>That should look vaguely familiar to anyone who's read the films or seen the books (or words to that effect). There's a definite feeling of size there. Clearly we're looking at a chunk of a continent, split into something not unlike countries. It always bothers me on maps like this, though: what about the rest of it?<br/>
 There are a couple of well known knock offs of Tolkien's work out there, so why don't we consider a few of those as well? One which used to be close to my heart in my adolescent years is Games Workshop's Warhammer:</p>
 
-<p><a href="http://en.wikipedia.org/wiki/Warhammer_Fantasy_(setting">{% img center http://www.scenicreflections.com/files/Warhammer_Map_of_the_World_Wallpaper_0495o.jpg %}</a>)</p>
+<p><a href="http://en.wikipedia.org/wiki/Warhammer_Fantasy_(setting"><img class="center" src="http://www.scenicreflections.com/files/Warhammer_Map_of_the_World_Wallpaper_0495o.jpg"></a>)</p>
 
 <p>Now, it should be quite obvious that the good chaps at GW are knocking off more than just Tolkien here. The Big G / the anthropic principle (depending on your world view) could probably claim some royalties here, because the shape of some of those continents looks very familiar. Grand Cathay, indeed. Now we appear to be looking at close to an entire planet, though, unwrapped using something not unlike the good old Mercator projection (or possibly something more politically correct). I assume so, anyway. It's entirely possible that the Warhammer world is flat.</p>
 
 <p>Another world with more than a bit of Tolkien about it it the World of Warcraft:</p>
 
-<p><a href="http://en.wikipedia.org/wiki/World_of_Warcraft">{% img center http://world-of-warcraft-gold.com/images/worldofwarcraftmap.jpg %}</a></p>
+<p><a href="http://en.wikipedia.org/wiki/World_of_Warcraft"><img class="center" src="http://world-of-warcraft-gold.com/images/worldofwarcraftmap.jpg"></a></p>
 
 <p>Blizzard have taken no chances, though. This is a world you can actually go wandering about on, virtually speaking. They've made sure there aren't any inviting edges for you to go wandering off. If this isn't the entire of the world, it is at least self contained. That doesn't stop Blizzard causing new continents to pop to surface whenever they need to make new content, of course.</p>
 
 <p>Okay, I'm only going to show one more, then I'll get to the actual point. This is a big one, though, so take a deep breath:</p>
 
-<p><a href="http://shaghaghi.net/wp-content/uploads/2010/11/WesterosMap1.jpg">{% img center http://shaghaghi.net/wp-content/uploads/2010/11/WesterosMap1.jpg %}</a></p>
+<p><a href="http://shaghaghi.net/wp-content/uploads/2010/11/WesterosMap1.jpg"><img class="center" src="http://shaghaghi.net/wp-content/uploads/2010/11/WesterosMap1.jpg"></a></p>
 
 <p>This is also one you might be less familiar with. If you haven't already, I heartily suggest you take a look at George R R Martin's "A Song of Fire and Ice" series, which starts with "<a href="http://www.amazon.co.uk/Game-Thrones-Song-Fire-Book/dp/000647988X/ref=sr_1_1?ie=UTF8&amp;qid=1300142459&amp;sr=8-1">A Game of Thrones</a>," which is not coincidentally the name of the TV adaption of the books which starts on HBO quite soon. This is probably the best of the four maps I've posted here, thanks to a fairly stupid amount of detail (click on it, I dare you). This detail is evident in the books themselves (which I have to confess are not for the faint of heart) as well. This giant map actually represents only a smallish portion of the world these books are set in. It makes a good illustration though. We have mountain ranges, plains, rivers, cities, castles and so on.</p>
 
@@ -258,13 +258,11 @@ First, though, I need some terrain simplification and some unit tests. The unit 
 
 <p>Done? Okay, good. Those are some big ideas, right? Yes, I thought she was a little young, too. Anyway. In case you just went right ahead and skipped over my suggestion there, the metaverse can be summarised, thus:</p>
 
-<p>{% blockquote Wikipedia http://en.wikipedia.org/wiki/Metaverse Metaverse %}
-The <b>Metaverse</b> is our collective online shared space, created by the convergence of virtually enhanced physical reality and physically persistent virtual space, including the sum of all virtual worlds, augmented reality, and the internet.
-{% endblockquote %}</p>
+<p><blockquote><p>The <b>Metaverse</b> is our collective online shared space, created by the convergence of virtually enhanced physical reality and physically persistent virtual space, including the sum of all virtual worlds, augmented reality, and the internet.</p><footer><strong>Wikipedia</strong> <cite><a href='http://en.wikipedia.org/wiki/Metaverse'>Metaverse</a></cite></footer></blockquote></p>
 
 <p>I'm talking, of course, about Second Life. If you're not familiar with it, it looks a bit like this:</p>
 
-<p>{% header_img center https://wiki-land.wikispaces.com/file/view/second_life_2.jpg/142027689/second_life_2.jpg %}</p>
+<p><img class="center" src="https://wiki-land.wikispaces.com/file/view/second_life_2.jpg/142027689/second_life_2.jpg"><!-- header_img https://wiki-land.wikispaces.com/file/view/second_life_2.jpg/142027689/second_life_2.jpg --></p>
 
 <p>One thing you might notice right away is that the graphics have a bit of a low-fi look about them, and there's a reasonably good reason for this*. In our old friend World of Warcraft, the graphics aren't exactly stellar either, but they're much sharper than this. In WoW, by and large, the landscape doesn't really change, unless (topically) a large new expansion is being released with results in sweeping changes to the world. In WoW, when this does happen, the game forces you to download the changes before it lets you start playing. This might be a lot of data (in the order of gigabytes) but it doesn't happen often. As previously noted, the World of Warcraft is essentially static. Not so Second Life, though, as its landscape is built by its users. Just because a location contained an island with the Empire State Building rising out of it yesterday doesn't mean that you won't find a scale replica of the star ship Enterprise there tomorrow. Thus, the content of the game is streamed to the user as they "play," and thus the polygon counts need to be kept reasonably low so that this can happen in a timely fashion. Even so, you might teleport to a new location, only to find that the walls appear ten seconds after the floor, and then suddenly you're standing in the middle of a sofa which wasn't there a second ago.</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Autonomous Underwater Vehicles | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/tags/autonomous-underwater-vehicles/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-19T22:49:52+00:00</updated>
+  <updated>2013-03-19T22:58:36+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -29,23 +29,23 @@
 
 <p>The next year myself and one of my colleagues decided this wasn't going to happen again, so we damn near killed ourselves working sixteen hour days for a couple of months, and then we took the robot to France for SAUC-E 2008. Each year there are a number of supplementary tasks which must be completed. One is to write a paper (or "report" if you're not down with the academic lingo) about your entry, another is to produce a video diary. Our video diary for the 2008 competition does a pretty good job of showing our frustration at the previous year's result and the amount of preparation we put into it this time round:</p>
 
-<p>{% youtube Mkv2YXqYfhQ %}</p>
+<p><iframe src="http://www.youtube.com/embed/Mkv2YXqYfhQ" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p>It was a hell of a lot of work, but we got there and we damn well kicked everyones' asses. In the final we cleared the entire course on our first try. Everyone else used their entire twenty minutes of time. We used about seven. It was a good feeling. This isn't a hugely fascinating video to watch and, but here's the official video of out final run:</p>
 
-<p>{% youtube yDrofT4BVm8 %}</p>
+<p><iframe src="http://www.youtube.com/embed/yDrofT4BVm8" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p>What you don't say in that video is me standing on a table with a microphone in my hand narrating what I think the robot is doing, then the entire team practically leaping into the air when it completed the course. Still, here's a picture of us (minus one team member who had to leave a day early) from an article in an industry journal:</p>
 
-<p><a href="http://www.hydro-international.com/news/id2669-HeriotWatt_University_Triumph.html">{% header_img center http://www.hydro-international.com/wosimages/661_368.jpg %}</a></p>
+<p><a href="http://www.hydro-international.com/news/id2669-HeriotWatt_University_Triumph.html"><img class="center" src="http://www.hydro-international.com/wosimages/661_368.jpg"><!-- header_img http://www.hydro-international.com/wosimages/661_368.jpg --></a></p>
 
 <p>The next year we reworked a lot of the electronics and moved to a much more hydrodynamic external design. This was a good thing, because previously Nessie had been slow, and now the competition area was a lot bigger. The 2009 video diary sums it up:</p>
 
-<p>{% youtube CqgOsPazxvU %}</p>
+<p><iframe src="http://www.youtube.com/embed/CqgOsPazxvU" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p>Most of the tasks were adaptations of those from previous years, but a fairly intense new one was also introduce: dock inside an elongated box placed on the floor of the pool. None of the other teams even attempted this last task, but I'd arrived a little late to the on site practice time thanks to other commitments. Everyone had their jobs and things were running pretty well. My responsibility was the mission controller (the captain, if you want to use a ship's crew as a metaphor) and we weren't quite ready to start doing any serious tests with this yet. So I started working on a strategy to do the docking. There was plenty of grunt work for me to help out with; I did some code review and put together some mission plans, but at this point I was essentially surplus to requirements. So I messed about with the docking thing.</p>
 
-<p>{% img center http://harveynick.files.wordpress.com/2011/01/img_0129.jpg %}</p>
+<p><img class="center" src="http://harveynick.files.wordpress.com/2011/01/img_0129.jpg"></p>
 
 <p>First of all, I built a detector which could find the box from above. I'm not really a computer vision guy, but after a lot of experimentation and playing I managed to put something quite stable together. There was no space in the practice pool to actually attempt the docking itself, though. I put a behaviour together which I was pretty sure would get the vehicle into the box, but I had no reliable way of testing it. I put it to one side and got on with the serious business of the competition itself. This was held at a different location, so needless to say every algorithm needed to be re-tuned to the new environment.</p>
 
@@ -55,7 +55,7 @@
 
 <p>"Did anyone see that?" There was a judge at other side of the pool, but no one was looking at us. We wouldn't get any points, but still, we wanted the judges to SEE it. Someone from one of the other teams saw some of it though, it seems, because they took this video:</p>
 
-<p>{% youtube Gp0fXXHX-So %}</p>
+<p><iframe src="http://www.youtube.com/embed/Gp0fXXHX-So" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p>Out supervisor came running over. "Was that autonomous?!" He demanded. Apparently one of the other judges was standing at the monitors and there was a camera inside the box. There was a little bit of a buzz.</p>
 
@@ -63,7 +63,7 @@
 
 <p>The organisers were smiling, but not in a 100% friendly way. No one was actually supposed to pull off the docking this time around. But we had. There was no time to add this behaviour into the plan for our main run in the final, but this year there was a new rule: you could demonstrate the tasks individually to pick up extra points. The final, as it turned out, was not quite as close as we were worried it might be, and Team Nessie picked up another first prize.</p>
 
-<p><a href="http://www.hydro-international.com/news/id3320-SAUCE_Victory_for_Nessie_IV.html">{% img center http://www.hydro-international.com/wosimages/1155_299.jpg %}</a></p>
+<p><a href="http://www.hydro-international.com/news/id3320-SAUCE_Victory_for_Nessie_IV.html"><img class="center" src="http://www.hydro-international.com/wosimages/1155_299.jpg"></a></p>
 
 <p>As well as the industry journal from which the above picture has been taken, the BBC paid some attention to the competition this time around, as well (which you can find <a href="http://news.bbc.co.uk/1/hi/sci/tech/8143541.stm">here</a>). Yep, that's me at the end of the video. They interviewed me for the article they wrote on the competition and used a lot of my quotes. I learned an important lesson from this: assume anything you say to a journalist will be taken literally, and don't assume that they'll check their facts, even if you specifically tell them to because you're not certain of your numbers. For example, the figure of £10,000 mentioned in the article is actually closer to £100,000.</p>
 ]]></content>
@@ -91,7 +91,7 @@
 
 <p>So, here's the video (you can click for a bigger version):</p>
 
-<p>{% vimeo 16996183 %}</p>
+<p><iframe src="http://player.vimeo.com/video/16996183" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p>If you know what you're looking for, you can see a very early version of my PhD work in amongst all of that. Perhaps I'll come back later and talk a little more about how what I do specifically fits into all this.</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cinephile | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/categories/cinephile/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-19T22:49:52+00:00</updated>
+  <updated>2013-03-19T22:58:36+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -25,9 +25,9 @@
 <!-- more -->
 
 
-<p>{% pullquote %}
-For the most part, this site is stock Octopress. I've played with the fonts, made the heading and background static and added a little more infrastructure (index pages for tags, embed scripts for YouTube and Vimeo videos and a couple of other bits). {"It's not finished, but it will serve well enough for me to try and start producing actual content again"}. I do want to make it a bit more visual, particularly the front page, and somehow integrate other content I produce into it. I also want to make it work a little better on mobile browsers and, lastly, make it a little bit more my own. The colours will change, and I'll try to find a background which doesn't require such a large file and isn't so closely associated with Apple.
-{% endpullquote %}</p>
+<p><span class='pullquote-right' data-pullquote='It&#8217;s not finished, but it will serve well enough for me to try and start producing actual content again'>
+For the most part, this site is stock Octopress. I've played with the fonts, made the heading and background static and added a little more infrastructure (index pages for tags, embed scripts for YouTube and Vimeo videos and a couple of other bits). It's not finished, but it will serve well enough for me to try and start producing actual content again. I do want to make it a bit more visual, particularly the front page, and somehow integrate other content I produce into it. I also want to make it work a little better on mobile browsers and, lastly, make it a little bit more my own. The colours will change, and I'll try to find a background which doesn't require such a large file and isn't so closely associated with Apple.
+</span></p>
 
 <p>What will I be writing about though? Well:</p>
 
@@ -62,13 +62,13 @@ For the most part, this site is stock Octopress. I've played with the fonts, mad
 <!-- more -->
 
 
-<p>{% youtube LncAQR47eZo %}</p>
+<p><iframe src="http://www.youtube.com/embed/LncAQR47eZo" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p><em>If you have to start somewhere, you might as well start here. File under: moments which made history.</em></p>
 
 <p>As I was walking to the cinema yesterday to see <a href="http://ohsohumbleopinion.tumblr.com/post/10360864080/tinker-tailor-soldier-spy">Tinker Tailer Soldier Spy</a>, I found myself thinking back to the Queen videos, but also to the <a href="/blog/2011/08/07/film-related-blog-post/">post</a> I previously wrote about how much I hated the last two Transformers films, and how much I adored Fast 5. I started wondering if a person's taste in music might be reflected in their taste in film. I have fairly eclectic fast in music. I like a bit of <em>Dido</em>, a bit of <em>Bjork</em>. I love me some <em>Avenged Sevenfold</em> and some <em>In Flames</em>. I'm as likely to throw on a bit of <em>Massive Attack</em> as I am a bit of <em>Linkin Park</em>. Today I might be listening to <em>At The Drive-In</em>, where as on my walk yesterday my choice of backdrop was <em>Spiritual Beggars</em>. Like my mother before me, I'm also a bit of a Queen fan.</p>
 
-<p>{% youtube oozJH6jSr2U %}</p>
+<p><iframe src="http://www.youtube.com/embed/oozJH6jSr2U" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p><em>Obviously I have to include this one. Queen at their operatic best.</em></p>
 
@@ -94,7 +94,7 @@ For the most part, this site is stock Octopress. I've played with the fonts, mad
 
 <p>Perhaps I might also add the first <em>Pirates of the Caribbean</em> film (or maybe <em>Zoolander</em>) to that list. Be that as it may, I'd say the list is reasonably eclectic. Not entirely evident in this list is my love of a really good action movie. <em>Bad Boys</em>. <em>The Transporter. Rambo (2008). Fast 5. Demolition Man. Army of Darkness. Welcome to the Jungle. The Long Kiss Goodnight. Die Hard.</em> I'm not going to try and match items from my musical taste to each of the films I've named here, because I don't think the analogy is that exact, but I think Queen serves as an excellent peer to these action films.</p>
 
-<p>{% youtube kXOOwNS2qk0 %}</p>
+<p><iframe src="http://www.youtube.com/embed/kXOOwNS2qk0" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p><em>I love this intro. That is how you work a crowd.</em></p>
 
@@ -102,7 +102,7 @@ For the most part, this site is stock Octopress. I've played with the fonts, mad
 
 <p>This is how a good action film should be. I want the characters to chew the scenery and have it feel right. I want the characters to be fleshed out enough to feel worthwhile. They don't have to be Lester Burnham or Jack Foley, but I do need to give a shit about what happens to them. The plot should feel, if not possible, then plausible. If something doesn't quite make sense then it should be okay because I'm having too much fun to care. I want to laugh joyously at the outrageousness of it. I want to feel like pumping my fist along with the protagonists' success and then leave the cinema with a huge smile on my face. I'll listen to some Emilíana Torrini soon, there'll be time enough for that later. Right now, <em>we are the champions</em>, baby!</p>
 
-<p>{% youtube pCA6b36pCro %}</p>
+<p><iframe src="http://www.youtube.com/embed/pCA6b36pCro" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p><em>A beautiful, melancholic and very appropriate song. Seems like a good place to stop.</em></p>
 
@@ -119,7 +119,7 @@ For the most part, this site is stock Octopress. I've played with the fonts, mad
     <id>http://www.harveynick.com/blog/2011/08/24/who-likes-short-shorts</id>
     <content type="html"><![CDATA[<p>I think I love almost everything about this short film. That being the case, I'll quit my chin wagging and just get on with showing it:</p>
 
-<p>{% youtube 4drucg1A6Xk %}</p>
+<p><iframe src="http://www.youtube.com/embed/4drucg1A6Xk" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p>Mucho kudos to Dan Trachtenburg, Danielle Rayne, and everyone else envolved. No get back to it. I want more!</p>
 ]]></content>
@@ -184,7 +184,7 @@ For the most part, this site is stock Octopress. I've played with the fonts, mad
 
 <p>It's the new teaser poster for David Fincher's adaptation of Stieg Larsson's fantastic <em>The Girl with the Dragon Tattoo</em>:</p>
 
-<p><a href="http://dragontattoo.com/">{% img center http://geektyrant.com/storage/post-images-2011/girlwithadragonTatnsfw.jpeg %}</a></p>
+<p><a href="http://dragontattoo.com/"><img class="center" src="http://geektyrant.com/storage/post-images-2011/girlwithadragonTatnsfw.jpeg"></a></p>
 
 <p>Note: I've nabbed this picture from WikiPedia. It's small so that it counts as fair use (apparently). If you click it, you'll be taken to the films official website, where you can see a bigger version, though you might have to pinky swear that you're old enough to see it. The site also has the teaser trailer, but I'll get to that.</p>
 
@@ -208,7 +208,7 @@ For the most part, this site is stock Octopress. I've played with the fonts, mad
 
 <p>What was also released recently was the teaser trailer, which looks a little bit like this:</p>
 
-<p>{% youtube QrQ433ChAQM %}</p>
+<p><iframe src="http://www.youtube.com/embed/QrQ433ChAQM" width="" height="" frameborder="0" allowfullscreen></iframe></p>
 
 <p>This is definitely a trailer for people who've read the book, I think. I saw it in the cinema with <a href="http://ohsohumbleopinion.tumblr.com/post/9851924500/x-men-first-class">X-Men First Class</a>, and the guy sat next to me had a fairly strong negative reaction of the "what the hell was that?" variety. To me, though, it looks great. Fincher's artistry is legendary and I think this film is going to have a lot of impact. It's going to be dark, and <em>very</em> difficult to watch in places. This is a story about incredibly complex and compelling characters. This does not mean that they are nice people, and their story is a difficult one. If I had to pick a word to describe what I think this film will be like, it would be: <em>uncompromising</em>.</p>
 
