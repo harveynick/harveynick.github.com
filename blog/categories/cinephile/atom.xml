@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Cinephile | HarveyNick.com]]></title>
+  <title><![CDATA[Category: cinephile | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/categories/cinephile/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-19T22:58:36+00:00</updated>
+  <updated>2013-03-19T23:08:56+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -14,205 +14,20 @@
 
   
   <entry>
-    <title type="html"><![CDATA[New (ish) Year, New (ish) Blog]]></title>
-    <link href="http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog/"/>
-    <updated>2012-03-17T11:22:00+00:00</updated>
-    <id>http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog</id>
-    <content type="html"><![CDATA[<p>2011 was an interesting year for me. A lot changed. I turned 30. After 10 years of residency I moved away from Edinburgh, a city I love dearly, and took a job in London. With <a href="/blog/tags/google">Google</a>. As a result, I no longer work with <a href="/blog/tags/autonomous-underwater-vehicles">Autonomous Underwater Vehicles</a> for a living. Instead I build web services. Quite the change, I'm sure you'll agree. In the early months of the year I finally completed the corrections to my <a href="/blog/tags/phd">PhD</a>, and then in the summer: I graduated. It took 6 years (all together) but I am now Dr. Nick Johnson. I also <a href="/blog/2011/07/18/the-sound-of-one-hand-clapping/">lost my grandmother</a>, a fact which still brings me to tears on occasion.</p>
-
-<p>In this light, the fact that I decided, towards the end of the year, to shift my blog away from <a href="http://wordpress.org">Wordpress</a> and over to its own domain barely even casts a shadow. I did, though, and as a result you're now reading these words on a site built using <a href="http://octopress.org">Octopress</a>, which is hosted at harveynick.com. As you may have noticed, all of the old posts from my <a href="http://harveynick.wordpress.com">wordpress site</a> have been ported over, minus the short film reviews, which you'll find <a href="http://ohsohumbleopinion.tumblr.com">here</a>. I'm not going to go into how I accomplished this, except to say: I did it the same way <a href="http://mattgemmell.com/2011/09/12/blogging-with-octopress/">Matt Gemmel did</a>.</p>
+    <title type="html"><![CDATA[I Disagree with Film Critic Hulk]]></title>
+    <link href="http://www.harveynick.com/blog/2013/03/17/i-disagree-with-film-critic-hulk/"/>
+    <updated>2013-03-17T17:52:00+00:00</updated>
+    <id>http://www.harveynick.com/blog/2013/03/17/i-disagree-with-film-critic-hulk</id>
+    <content type="html"><![CDATA[<p>While <a href="http://badassdigest.com/2013/01/09/film-crit-hulk-smash-hulk-vs.-tom-hooper-and-art-of-cinematic-affectation/">Film Critic Hulk's argument</a> generally seems quite well reasoned, I find it a little difficult to stomach someone attempting to lecture me on the theory behind the form of anything in ALL CAPS, and at such length. Also, he makes the unforgivable (in my opinion) mistake of representing his opinion as fact. He states the film falls flat, not that he <strong>believes</strong> it falls flat. No one, apparently, thought to mention this to the legions of people who rated Les Mis so highly on IMDB and Rotten Tomatoes.</p>
 
 <!-- more -->
 
 
-<p><span class='pullquote-right' data-pullquote='It&#8217;s not finished, but it will serve well enough for me to try and start producing actual content again'>
-For the most part, this site is stock Octopress. I've played with the fonts, made the heading and background static and added a little more infrastructure (index pages for tags, embed scripts for YouTube and Vimeo videos and a couple of other bits). It's not finished, but it will serve well enough for me to try and start producing actual content again. I do want to make it a bit more visual, particularly the front page, and somehow integrate other content I produce into it. I also want to make it work a little better on mobile browsers and, lastly, make it a little bit more my own. The colours will change, and I'll try to find a background which doesn't require such a large file and isn't so closely associated with Apple.
-</span></p>
+<p>At the end of the day in film, just like any other art form, theory is merely a tool. It doesn't really matter. Emotional response is what actually matters. Banging on about theory in situations like this just makes you look like someone standing on the deck of the Titanic, harping on to anyone who'll listen about how the ship is unsinkable.</p>
 
-<p>What will I be writing about though? Well:</p>
+<p>I quite like the visual presentation of the film, as did almost everyone else I spoke to about it. When I brought the matter of how it was shot, and how this flies in the face of film theory, they usually laughed and replied: "So?"</p>
 
-<p>I plan to have <a href="/blog/tags/clockwork-aphid">Clockwork Aphid</a> actually doing something of use this year. I'm going to enhance the current Java version up to a point where it can generate interesting landscapes efficiently and in a parallel fashion. I'm then going to then have a crack at porting it to <a href="http://golang.org">Go</a>, which I think may turn out to be an excellent language for writing computer games.</p>
-
-<p>I like films. Perchance you may have noticed. I may chat a bit more in depth about a couple of this year's releases. Just to pick three with a common theme off the top of my head:</p>
-
-<ul>
-<li><strong>The Amazing Spider-Man</strong>. I went to a preview event for this in Leicester Square a month or two ago and was very impressed with what I saw. I'm hopeful they made a Spider-Man movie in the same way that Christopher Nolan makes Batman movies. Really really.</li>
-<li><strong>The Dark Knight Rises</strong>. Speaking of which. This <em>is</em> exciting. It's the last of the trilogy. It's got a lot to live up to, especially since the last film Nolan made was <em>Inception</em>. I wouldn't bet against it, though.</li>
-<li><strong>The Avengers</strong>. Now here's a film with some scope. All these characters in one film? With this cast? Written and directed by <a href="http://en.wikipedia.org/wiki/Joss_Whedon">Joss Mother Fucking* Whedon</a>? Please, please let this film live up to the frankly stupid amount of potential it has.</li>
-</ul>
-
-
-<p>Quite recently, at the aforementioned age of 30, I started playing Dungeons and Dragons with a selection of my colleagues. Well, we're actually playing <a href="http://en.wikipedia.org/wiki/Pathfinder_Roleplaying_Game">Pathfinder</a>, but let us not quibble about semantics. I'm having a really great time on several different levels. It's an interesting experience for someone who has played computer games for most of their life, but never dabbled in table top RPGs.</p>
-
-<p>I mentioned before that I now have a shiny new PhD, with the letters before and after my name to prove it. I'm of the opinion that the work which led to this is quite interesting (but then I would be). It's also not completely divorced from my Clockwork Aphid project. I'm of a mind to try talking about this some, also.</p>
-
-<p>See you when we get there.</p>
-
-<p>* I think these are his actual middle names.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Mercury Rising]]></title>
-    <link href="http://www.harveynick.com/blog/2011/09/20/mercury-rising/"/>
-    <updated>2011-09-20T10:00:44+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/09/20/mercury-rising</id>
-    <content type="html"><![CDATA[<p>Monday the 5th of September was Freddie Mercury day. The day he would have turned 65, had he lived. This makes me feel a little old, but that's not the point. The day's <a href="http://www.youtube.com/watch?v=KX2BQM0D01M">Google doodle</a> (pointed out to me with furious glee by one of my coworkers) led me to YouTube and numerous videos of Queen performing live. As I often do, I'd forgotten just how good they were. I spent much of the day fighting the urge to pump my fist and throw shapes at my desk*. Since I had so much fun with this, I'm going to pepper this post with some of the videos I found the most fun. Anything under the videos and written in italics is a comment on the video itself, and not strictly related to the rest of this post.</p>
-
-<!-- more -->
-
-
-<p><iframe src="http://www.youtube.com/embed/LncAQR47eZo" width="" height="" frameborder="0" allowfullscreen></iframe></p>
-
-<p><em>If you have to start somewhere, you might as well start here. File under: moments which made history.</em></p>
-
-<p>As I was walking to the cinema yesterday to see <a href="http://ohsohumbleopinion.tumblr.com/post/10360864080/tinker-tailor-soldier-spy">Tinker Tailer Soldier Spy</a>, I found myself thinking back to the Queen videos, but also to the <a href="/blog/2011/08/07/film-related-blog-post/">post</a> I previously wrote about how much I hated the last two Transformers films, and how much I adored Fast 5. I started wondering if a person's taste in music might be reflected in their taste in film. I have fairly eclectic fast in music. I like a bit of <em>Dido</em>, a bit of <em>Bjork</em>. I love me some <em>Avenged Sevenfold</em> and some <em>In Flames</em>. I'm as likely to throw on a bit of <em>Massive Attack</em> as I am a bit of <em>Linkin Park</em>. Today I might be listening to <em>At The Drive-In</em>, where as on my walk yesterday my choice of backdrop was <em>Spiritual Beggars</em>. Like my mother before me, I'm also a bit of a Queen fan.</p>
-
-<p><iframe src="http://www.youtube.com/embed/oozJH6jSr2U" width="" height="" frameborder="0" allowfullscreen></iframe></p>
-
-<p><em>Obviously I have to include this one. Queen at their operatic best.</em></p>
-
-<p>When challenged to name my favourite films, I've been picking the same five for quite some time (in no particular order):</p>
-
-<ul>
-<li>Fight Club;</li>
-<li>American Beauty;</li>
-<li>Donnie Darko;</li>
-<li>Amelie;</li>
-<li>The Matrix.</li>
-</ul>
-
-
-<p>I might also offer up three others I really love:</p>
-
-<ul>
-<li>Out of Sight;</li>
-<li>Pitch Black;</li>
-<li>X-Men**.</li>
-</ul>
-
-
-<p>Perhaps I might also add the first <em>Pirates of the Caribbean</em> film (or maybe <em>Zoolander</em>) to that list. Be that as it may, I'd say the list is reasonably eclectic. Not entirely evident in this list is my love of a really good action movie. <em>Bad Boys</em>. <em>The Transporter. Rambo (2008). Fast 5. Demolition Man. Army of Darkness. Welcome to the Jungle. The Long Kiss Goodnight. Die Hard.</em> I'm not going to try and match items from my musical taste to each of the films I've named here, because I don't think the analogy is that exact, but I think Queen serves as an excellent peer to these action films.</p>
-
-<p><iframe src="http://www.youtube.com/embed/kXOOwNS2qk0" width="" height="" frameborder="0" allowfullscreen></iframe></p>
-
-<p><em>I love this intro. That is how you work a crowd.</em></p>
-
-<p>Freddie Mercury did not so much walk around the stage as stay perfectly still at the centre of everyone's vision while the stage moved around him. He worked the crowd like a master while knocking every single note right out of the stadium. It wasn't just about him, though. The band behind him was as tight as a gnat's arse. Everything clicked together like the internals of a cuckoo clock. Queen songs were not generally high art, but they flowed brilliantly and they just <em>took hold</em> of you.</p>
-
-<p>This is how a good action film should be. I want the characters to chew the scenery and have it feel right. I want the characters to be fleshed out enough to feel worthwhile. They don't have to be Lester Burnham or Jack Foley, but I do need to give a shit about what happens to them. The plot should feel, if not possible, then plausible. If something doesn't quite make sense then it should be okay because I'm having too much fun to care. I want to laugh joyously at the outrageousness of it. I want to feel like pumping my fist along with the protagonists' success and then leave the cinema with a huge smile on my face. I'll listen to some Emilíana Torrini soon, there'll be time enough for that later. Right now, <em>we are the champions</em>, baby!</p>
-
-<p><iframe src="http://www.youtube.com/embed/pCA6b36pCro" width="" height="" frameborder="0" allowfullscreen></iframe></p>
-
-<p><em>A beautiful, melancholic and very appropriate song. Seems like a good place to stop.</em></p>
-
-<p>* For the record: conversation with my coworkers has revealed to me that had I done so, I could simply have told them I was listening to a bit of Queen and this otherwise odd behaviour would have become at least marginally understandable.</p>
-
-<p>** Yes, the first one. It has a wonderful lightness of touch and flow, which, though it doesn't excuse the film's complete lack of a third act, does make it very dear to me.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Who Likes Short Shorts?]]></title>
-    <link href="http://www.harveynick.com/blog/2011/08/24/who-likes-short-shorts/"/>
-    <updated>2011-08-24T11:38:07+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/08/24/who-likes-short-shorts</id>
-    <content type="html"><![CDATA[<p>I think I love almost everything about this short film. That being the case, I'll quit my chin wagging and just get on with showing it:</p>
-
-<p><iframe src="http://www.youtube.com/embed/4drucg1A6Xk" width="" height="" frameborder="0" allowfullscreen></iframe></p>
-
-<p>Mucho kudos to Dan Trachtenburg, Danielle Rayne, and everyone else envolved. No get back to it. I want more!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Film Related Blog Post]]></title>
-    <link href="http://www.harveynick.com/blog/2011/08/07/film-related-blog-post/"/>
-    <updated>2011-08-07T11:27:03+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/08/07/film-related-blog-post</id>
-    <content type="html"><![CDATA[<p>“Given that you’ve just told us that the second one is one of the worst films you’ve ever seen,” asked Pete, “why on earth did you feel the need to go and see the third one?”</p>
-
-<p>It was a good question. In all fairness I do not have good explanation as to why I paid actual money to see <em>Transformers: Dark of the Moon</em> in the cinema. I suppose I was relying mostly on hope. I mean, we’re talking about a film which is, at its core, about giant robots fighting. It really should be quite hard to get that wrong. The plot doesn’t need to be much, it just has to work. The first Transformers film just about held together, and I had a reasonable amount of fun with it. There was something extremely soulless about it, though. Something clearly went wrong somewhere, but I thought there was potential.</p>
-
-<p>So I went to see the second film. I thought perhaps it would be better. Maybe it would hold on to the good bits of the first film and shore up everything else. It had Tony Todd as the villain, after all. Surely that meant nothing could go wrong?</p>
-
-<!-- more -->
-
-
-<p>It was basically gibberish. Not just gibberish, though: offensive gibberish. I felt as though the film assumed I was an idiot. Some blindingly obvious details were explained in ridiculous detail, whilst the plot had more holes than… well… plot. Half the movie just plain didn’t make any sense. On the one hand it seems to think you’re so stupid you need things explaining to you, on the other it thinks you’re so oblivious that that you’ll ignore massive inconsistencies and holes in the plot. Half the film just felt like dead space. If I go to see a film called “Transformers” that’s what I expect to to see. Giant robots which turn into cars and such. I don’t want five minutes of a pointless character’s even more pointless mother accidentally getting high on hash brownies and the ensuing “hilarity”.</p>
-
-<p>Was there action in the film? Yes. Was it good? Some of it. Did it make up for the rest of the film’s shortcomings? Hell no. To some extent, that’s not even the worse part, though. The worse part is that the actual Transformers aren’t even really in the film that much. The film mostly follows Shia’s character and… two other robots. Skidz and Mudflap are “comic relief”, sort of like how Jar Jar was “comic relief” in <em>The Phantom Menace</em>. They are… stupid, ignorant, illiterate and really, really annoying. That might be tolerable if they at least did something moderately cool. If, out of nowhere, they turned out to be quite bad ass. They don’t. The kindest word I can really use to describe them is “bumbling”. Are they racist? I’m not going to get into that. I felt like I was watching cringeworthy stereotypes closely resembling the scene in Bad Boys II when Will Smith and Martin Lawrence go a bit “ghetto”. Others would say that makes <em>me</em> the racist. I don’t know. I’ll let you make your own <a href="http://www.youtube.com/watch?v=91tLruQjd2s">mind up</a>.</p>
-
-<p>So why in the name of all that is good and pure did I go and see the third film? The trailer looked quite good. It also looked as though the Transformers were actually in it. Perhaps there would be some really good action, and perhaps this time around it might also have a script.</p>
-
-<p><em>sigh</em></p>
-
-<p>Not as such. There <em>is</em> some really great action in the film. Spectacular, even. There’s a car chase mid way through which is stunning. Balletic, even. The level of artistry which has gone into its creation is really quite staggering. The rest of the film, though? Gibberish. Again. Half of it literally makes no sense. The plot manages to be both paper thin and self contradictory. It’s also weird. Things I didn’t need to see:</p>
-
-<ul>
-<li>Dr. Ken straddling Shia and declaring himself “deep wang”;</li>
-<li>Bumble Bee pushing over and ticking an orange John Malkovich;</li>
-<li>Shia’s parents. Again. This time his Mum wants to give him a sex manual.</li>
-</ul>
-
-
-<p>“It’s an action film, though!” you might declare.</p>
-
-<p>To which I reply: “So?”</p>
-
-<p>There is no rule which says an action film can’t have a good plot and compelling characters. I love a good action film. I put it to you that Fast 5 was such a film. It was, in my opinion, a near perfect film. Note my use of the indefinite article there, because that’s important. No film is perfect, and there is no one perfect film, even when we’re talking about ideals. But Fast 5 had a plot which fit together quite well, in my opinion. It had actual characters. Broadly drawn character for the most part, to be sure, but with enough nuance to make them work. It was so much fun that when the characters stopped for an inappropriate street race or spent much of the third act flagrantly ignoring the laws of physics, I just plain didn’t care. I was having too much fun. On more than one occasion it confounded my expectations. <del>The Rock</del> Dwayne Johnson pretty much <em>eats</em> every single scene he’s in. I spent most of the film with a huge grin on my face. When I didn’t have have the grin it was usually because I was laughing. There were a couple of places where I had to stop myself from clapping.</p>
-
-<p><em>That</em> is what I’m looking for in an action film, and don’t think that is in any way an unreasonable expectation.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[For Boobs, Mikael?]]></title>
-    <link href="http://www.harveynick.com/blog/2011/06/09/for-boobs-mikael/"/>
-    <updated>2011-06-09T02:22:45+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/06/09/for-boobs-mikael</id>
-    <content type="html"><![CDATA[<p>Warning: this post contains a picture which includes boobs. Be prepared for that. If your manager is looking over your shoulder, don't click; or at least have an excuse ready. If you're offended by the sight of boobs... well... I'm sorry. But I probably don't know how to talk to you in that case, anyway. Lastly: if you're American, you're not supposed to see this, <a href="http://www.aintitcool.com/node/49952">for some reason</a>.</p>
-
-<p>Please, use your desecration. Oh yes, and think of the children. But not while looking at the boobs. That would be strange.</p>
-
-<p>Anyway.</p>
-
-<p>Ready?</p>
-
-<!-- more -->
-
-
-<p>It's the new teaser poster for David Fincher's adaptation of Stieg Larsson's fantastic <em>The Girl with the Dragon Tattoo</em>:</p>
-
-<p><a href="http://dragontattoo.com/"><img class="center" src="http://geektyrant.com/storage/post-images-2011/girlwithadragonTatnsfw.jpeg"></a></p>
-
-<p>Note: I've nabbed this picture from WikiPedia. It's small so that it counts as fair use (apparently). If you click it, you'll be taken to the films official website, where you can see a bigger version, though you might have to pinky swear that you're old enough to see it. The site also has the teaser trailer, but I'll get to that.</p>
-
-<p>Update: It seems they've taken it off the official site. You can find it at the Total Film website <a href="http://www.totalfilm.com/news/rooney-mara-goes-topless-in-girl-with-a-dragon-tattoo-poster">here</a>.</p>
-
-<p>I like this poster quite a bit, though I am slightly confused as to whether the tag line is supposed to be:</p>
-
-<blockquote><p>Evil shall with evil be expelled.</p></blockquote>
-
-<p>Which kind of feels as though it needs a comma to me (though I'm not 100% certain where), or:</p>
-
-<blockquote><p>Evil shall be expelled with evil.</p></blockquote>
-
-<p>Which perhaps scans slightly better, but is definitely not how you would normally reads words written in that arrangement. In some ways I think I prefer the slightly more archaic feel of the first one.</p>
-
-<p>Update 2: The version of the trailer on the official site has been updated. It's definitely the first one.</p>
-
-<p>I <a href="http://harveynick.wordpress.com/2009/09/20/just-cant-recommend-highly-enough/">outright love</a> the book this is based on (and was confused as all hell when <a href="http://www.dougalstanton.net/blog/index.php/2010/09/02/three-books-swedish-crime-allegorical-tales-and-first-person-shooters/">Dougal didn't</a>). I did really enjoyed the original Swedish adaptation, but I have high hopes for any David Fincher film and this is no exception. I'm not thinking of it as a remake, more a reinterpretation.</p>
-
-<p>I think Daniel Craig is really good casting for Mikael Blomkvist, and I'm pretty impressed with the way Rooney Mara is looking as Lisbeth Salander. In the books, at least, the point is made that Lisbeth would be incredibly attractive if she wasn't far, far too thin. Mission accomplished. I can't wait to hear them speaking, though it is going to be strange without the Swedish accent. Craig is uniformly fantastic, and Mara definitely held her own, and even stood out, in <a href="http://ohsohumbleopinion.tumblr.com/post/9851518911/the-social-network">The Social Network</a>.</p>
-
-<p>What was also released recently was the teaser trailer, which looks a little bit like this:</p>
-
-<p><iframe src="http://www.youtube.com/embed/QrQ433ChAQM" width="" height="" frameborder="0" allowfullscreen></iframe></p>
-
-<p>This is definitely a trailer for people who've read the book, I think. I saw it in the cinema with <a href="http://ohsohumbleopinion.tumblr.com/post/9851924500/x-men-first-class">X-Men First Class</a>, and the guy sat next to me had a fairly strong negative reaction of the "what the hell was that?" variety. To me, though, it looks great. Fincher's artistry is legendary and I think this film is going to have a lot of impact. It's going to be dark, and <em>very</em> difficult to watch in places. This is a story about incredibly complex and compelling characters. This does not mean that they are nice people, and their story is a difficult one. If I had to pick a word to describe what I think this film will be like, it would be: <em>uncompromising</em>.</p>
-
-<p>I look forward to taking my double espresso with a teaspoon of milk this Christmas, even if I do feel as though I need to take a bath afterwards.</p>
+<p>Also: yes. I'm back. I hope.</p>
 ]]></content>
   </entry>
   
