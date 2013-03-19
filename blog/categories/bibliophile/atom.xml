@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Bibliophile | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/categories/bibliophile/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-17T22:47:02+00:00</updated>
+  <updated>2013-03-19T22:49:52+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -43,11 +43,23 @@
 
 <p>The first is "<a href="http://www.amazon.co.uk/Reamde-Neal-Stephenson/dp/1848874480/ref=sr_1_1?ie=UTF8&amp;qid=1314052707&amp;sr=8-1">Reamde</a>" by Neal Stephenson. I usually love Stephenson, and the synopsis really makes it sound as though he might be firing on all cylinders:</p>
 
-<p><blockquote><p>Across the globe, millions of computer screens flicker with the artfully coded world of T'Rain - an addictive internet role-playing game of fantasy and adventure. But backstreet hackers in China have just unleashed a contagious virus called Reamde, and as it rampages through the gaming world spreading from player to player - holding hard drives hostage in the process - the computer of one powerful and dangerous man is infected, causing the carefully mediated violence of the on-line world to spill over into reality. A fast-talking, internet-addicted mafia accountant is brutally silenced by his Russian employers, and Zula - a talented young T'Rain computer programmer - is abducted and bundled on to a private jet. As she is flown across the skies in the company of the terrified boyfriend she broke up with hours before, and a brilliant Hungarian hacker who may be her only hope, she finds herself sucked into a whirl of Chinese Secret Service agents and gun-toting American Survivalists; the Russian criminal underground and an al-Qaeda cell led by a charismatic Welshman; each a strand of a connected world that devastatingly converges in T'Rain.</p></blockquote></p>
+<p>{% blockquote %}
+Across the globe, millions of computer screens flicker with the artfully coded world of T'Rain - an addictive internet role-playing game of fantasy and adventure. But backstreet hackers in China have just unleashed a contagious virus called Reamde, and as it rampages through the gaming world spreading from player to player - holding hard drives hostage in the process - the computer of one powerful and dangerous man is infected, causing the carefully mediated violence of the on-line world to spill over into reality. A fast-talking, internet-addicted mafia accountant is brutally silenced by his Russian employers, and Zula - a talented young T'Rain computer programmer - is abducted and bundled on to a private jet. As she is flown across the skies in the company of the terrified boyfriend she broke up with hours before, and a brilliant Hungarian hacker who may be her only hope, she finds herself sucked into a whirl of Chinese Secret Service agents and gun-toting American Survivalists; the Russian criminal underground and an al-Qaeda cell led by a charismatic Welshman; each a strand of a connected world that devastatingly converges in T'Rain.
+{% endblockquote %}</p>
 
 <p>Sounds insane, right? This is another monster of a book, but right now there is no Kindle edition listed, disappointingly. Still, I have my fingers crossed. The next is Terry Pratchett's latest. I hate to say it, but Pratchett's last couple of books haven't really been up to his usual standard, in my opinion. "<a href="http://www.amazon.co.uk/Snuff-Discworld-Sir-Terry-Pratchett/dp/038561926X/ref=pd_sim_b_6">Snuff</a>" is a Vimes book, though, so I have high hopes:</p>
 
-<p><blockquote><p>It is a truth universally acknowledged that a policeman taking a holiday would barely have had time to open his suitcase before he finds his first corpse.</p></p><p><p>And Commander Sam Vimes of the Ankh-Morpork City Watch is on holiday in the pleasant and innocent countryside, but not for him a mere body in the wardrobe. There are many, many bodies and an ancient crime more terrible than murder.</p></p><p><p>He is out of his jurisdiction, out of his depth, out of bacon sandwiches, and occasionally snookered and out of his mind, but never out of guile. Where there is a crime there must be a finding, there must be a chase and there must be a punishment.</p></p><p><p>They say that in the end all sins are forgiven.</p></p><p><p>But not quite all...</p></blockquote></p>
+<p>{% blockquote %}
+It is a truth universally acknowledged that a policeman taking a holiday would barely have had time to open his suitcase before he finds his first corpse.</p>
+
+<p>And Commander Sam Vimes of the Ankh-Morpork City Watch is on holiday in the pleasant and innocent countryside, but not for him a mere body in the wardrobe. There are many, many bodies and an ancient crime more terrible than murder.</p>
+
+<p>He is out of his jurisdiction, out of his depth, out of bacon sandwiches, and occasionally snookered and out of his mind, but never out of guile. Where there is a crime there must be a finding, there must be a chase and there must be a punishment.</p>
+
+<p>They say that in the end all sins are forgiven.</p>
+
+<p>But not quite all...
+{% endblockquote %}</p>
 
 <p>Finally, we have "<a href="http://www.amazon.co.uk/Manhattan-Reverse-Peter-F-Hamilton/dp/0230750303/ref=pd_sim_b_1">Manhattan in Reverse</a>", a book of short stories by Peter F. Hamilton. No one does overblown space opera quite so well as Hamilton, in my opinion, but his short stories can be a little spotty. I have no complaints about getting a bit more Paula Mayo, though, so count me in.<br/>
 The fun thing, though, is that I found the second two books on the suggestions list for the first. Amazon, methinks you have a little too much the measure of me.</p>
@@ -72,7 +84,7 @@ The fun thing, though, is that I found the second two books on the suggestions l
 
 <p>It's the new teaser poster for David Fincher's adaptation of Stieg Larsson's fantastic <em>The Girl with the Dragon Tattoo</em>:</p>
 
-<p><a href="http://dragontattoo.com/"><img class="center" src="http://geektyrant.com/storage/post-images-2011/girlwithadragonTatnsfw.jpeg"></a></p>
+<p><a href="http://dragontattoo.com/">{% img center http://geektyrant.com/storage/post-images-2011/girlwithadragonTatnsfw.jpeg %}</a></p>
 
 <p>Note: I've nabbed this picture from WikiPedia. It's small so that it counts as fair use (apparently). If you click it, you'll be taken to the films official website, where you can see a bigger version, though you might have to pinky swear that you're old enough to see it. The site also has the teaser trailer, but I'll get to that.</p>
 
@@ -96,7 +108,7 @@ The fun thing, though, is that I found the second two books on the suggestions l
 
 <p>What was also released recently was the teaser trailer, which looks a little bit like this:</p>
 
-<p><iframe src="http://www.youtube.com/embed/QrQ433ChAQM" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube QrQ433ChAQM %}</p>
 
 <p>This is definitely a trailer for people who've read the book, I think. I saw it in the cinema with <a href="http://ohsohumbleopinion.tumblr.com/post/9851924500/x-men-first-class">X-Men First Class</a>, and the guy sat next to me had a fairly strong negative reaction of the "what the hell was that?" variety. To me, though, it looks great. Fincher's artistry is legendary and I think this film is going to have a lot of impact. It's going to be dark, and <em>very</em> difficult to watch in places. This is a story about incredibly complex and compelling characters. This does not mean that they are nice people, and their story is a difficult one. If I had to pick a word to describe what I think this film will be like, it would be: <em>uncompromising</em>.</p>
 
@@ -151,24 +163,24 @@ So, here's what I propose: you take your book to a shop and pay them a nominal f
 
 <p>The quintessential fantasy landscape is, of course, Tolkien's Middle Earth, which looks a lot like this:</p>
 
-<p><a href="http://en.wikipedia.org/wiki/Middle-earth"><img class="center" src="http://war3.incgamers.com/uploads/MiddleEarthRisk792Kofficial1291674287.w3x-1.jpg"><!-- header_img http://war3.incgamers.com/uploads/MiddleEarthRisk792Kofficial1291674287.w3x-1.jpg --></a></p>
+<p><a href="http://en.wikipedia.org/wiki/Middle-earth">{% header_img center http://war3.incgamers.com/uploads/MiddleEarthRisk792Kofficial1291674287.w3x-1.jpg %}</a></p>
 
 <p>That should look vaguely familiar to anyone who's read the films or seen the books (or words to that effect). There's a definite feeling of size there. Clearly we're looking at a chunk of a continent, split into something not unlike countries. It always bothers me on maps like this, though: what about the rest of it?<br/>
 There are a couple of well known knock offs of Tolkien's work out there, so why don't we consider a few of those as well? One which used to be close to my heart in my adolescent years is Games Workshop's Warhammer:</p>
 
-<p><a href="http://en.wikipedia.org/wiki/Warhammer_Fantasy_(setting"><img class="center" src="http://www.scenicreflections.com/files/Warhammer_Map_of_the_World_Wallpaper_0495o.jpg"></a>)</p>
+<p><a href="http://en.wikipedia.org/wiki/Warhammer_Fantasy_(setting">{% img center http://www.scenicreflections.com/files/Warhammer_Map_of_the_World_Wallpaper_0495o.jpg %}</a>)</p>
 
 <p>Now, it should be quite obvious that the good chaps at GW are knocking off more than just Tolkien here. The Big G / the anthropic principle (depending on your world view) could probably claim some royalties here, because the shape of some of those continents looks very familiar. Grand Cathay, indeed. Now we appear to be looking at close to an entire planet, though, unwrapped using something not unlike the good old Mercator projection (or possibly something more politically correct). I assume so, anyway. It's entirely possible that the Warhammer world is flat.</p>
 
 <p>Another world with more than a bit of Tolkien about it it the World of Warcraft:</p>
 
-<p><a href="http://en.wikipedia.org/wiki/World_of_Warcraft"><img class="center" src="http://world-of-warcraft-gold.com/images/worldofwarcraftmap.jpg"></a></p>
+<p><a href="http://en.wikipedia.org/wiki/World_of_Warcraft">{% img center http://world-of-warcraft-gold.com/images/worldofwarcraftmap.jpg %}</a></p>
 
 <p>Blizzard have taken no chances, though. This is a world you can actually go wandering about on, virtually speaking. They've made sure there aren't any inviting edges for you to go wandering off. If this isn't the entire of the world, it is at least self contained. That doesn't stop Blizzard causing new continents to pop to surface whenever they need to make new content, of course.</p>
 
 <p>Okay, I'm only going to show one more, then I'll get to the actual point. This is a big one, though, so take a deep breath:</p>
 
-<p><a href="http://shaghaghi.net/wp-content/uploads/2010/11/WesterosMap1.jpg"><img class="center" src="http://shaghaghi.net/wp-content/uploads/2010/11/WesterosMap1.jpg"></a></p>
+<p><a href="http://shaghaghi.net/wp-content/uploads/2010/11/WesterosMap1.jpg">{% img center http://shaghaghi.net/wp-content/uploads/2010/11/WesterosMap1.jpg %}</a></p>
 
 <p>This is also one you might be less familiar with. If you haven't already, I heartily suggest you take a look at George R R Martin's "A Song of Fire and Ice" series, which starts with "<a href="http://www.amazon.co.uk/Game-Thrones-Song-Fire-Book/dp/000647988X/ref=sr_1_1?ie=UTF8&amp;qid=1300142459&amp;sr=8-1">A Game of Thrones</a>," which is not coincidentally the name of the TV adaption of the books which starts on HBO quite soon. This is probably the best of the four maps I've posted here, thanks to a fairly stupid amount of detail (click on it, I dare you). This detail is evident in the books themselves (which I have to confess are not for the faint of heart) as well. This giant map actually represents only a smallish portion of the world these books are set in. It makes a good illustration though. We have mountain ranges, plains, rivers, cities, castles and so on.</p>
 

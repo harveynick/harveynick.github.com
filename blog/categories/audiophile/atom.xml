@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Audiophile | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/categories/audiophile/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-17T22:47:02+00:00</updated>
+  <updated>2013-03-19T22:49:52+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -23,13 +23,13 @@
 <!-- more -->
 
 
-<p><iframe src="http://www.youtube.com/embed/LncAQR47eZo" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube LncAQR47eZo %}</p>
 
 <p><em>If you have to start somewhere, you might as well start here. File under: moments which made history.</em></p>
 
 <p>As I was walking to the cinema yesterday to see <a href="http://ohsohumbleopinion.tumblr.com/post/10360864080/tinker-tailor-soldier-spy">Tinker Tailer Soldier Spy</a>, I found myself thinking back to the Queen videos, but also to the <a href="/blog/2011/08/07/film-related-blog-post/">post</a> I previously wrote about how much I hated the last two Transformers films, and how much I adored Fast 5. I started wondering if a person's taste in music might be reflected in their taste in film. I have fairly eclectic fast in music. I like a bit of <em>Dido</em>, a bit of <em>Bjork</em>. I love me some <em>Avenged Sevenfold</em> and some <em>In Flames</em>. I'm as likely to throw on a bit of <em>Massive Attack</em> as I am a bit of <em>Linkin Park</em>. Today I might be listening to <em>At The Drive-In</em>, where as on my walk yesterday my choice of backdrop was <em>Spiritual Beggars</em>. Like my mother before me, I'm also a bit of a Queen fan.</p>
 
-<p><iframe src="http://www.youtube.com/embed/oozJH6jSr2U" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube oozJH6jSr2U %}</p>
 
 <p><em>Obviously I have to include this one. Queen at their operatic best.</em></p>
 
@@ -55,7 +55,7 @@
 
 <p>Perhaps I might also add the first <em>Pirates of the Caribbean</em> film (or maybe <em>Zoolander</em>) to that list. Be that as it may, I'd say the list is reasonably eclectic. Not entirely evident in this list is my love of a really good action movie. <em>Bad Boys</em>. <em>The Transporter. Rambo (2008). Fast 5. Demolition Man. Army of Darkness. Welcome to the Jungle. The Long Kiss Goodnight. Die Hard.</em> I'm not going to try and match items from my musical taste to each of the films I've named here, because I don't think the analogy is that exact, but I think Queen serves as an excellent peer to these action films.</p>
 
-<p><iframe src="http://www.youtube.com/embed/kXOOwNS2qk0" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube kXOOwNS2qk0 %}</p>
 
 <p><em>I love this intro. That is how you work a crowd.</em></p>
 
@@ -63,7 +63,7 @@
 
 <p>This is how a good action film should be. I want the characters to chew the scenery and have it feel right. I want the characters to be fleshed out enough to feel worthwhile. They don't have to be Lester Burnham or Jack Foley, but I do need to give a shit about what happens to them. The plot should feel, if not possible, then plausible. If something doesn't quite make sense then it should be okay because I'm having too much fun to care. I want to laugh joyously at the outrageousness of it. I want to feel like pumping my fist along with the protagonists' success and then leave the cinema with a huge smile on my face. I'll listen to some Emilíana Torrini soon, there'll be time enough for that later. Right now, <em>we are the champions</em>, baby!</p>
 
-<p><iframe src="http://www.youtube.com/embed/pCA6b36pCro" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube pCA6b36pCro %}</p>
 
 <p><em>A beautiful, melancholic and very appropriate song. Seems like a good place to stop.</em></p>
 
@@ -91,21 +91,21 @@
 
 <p>I did not have a lot to go on, so the next time the internet was functional, I fired up Google and brazenly typed in "music video black dress white dress," and... win! I love it when that happens. Here's the video:</p>
 
-<p><iframe src="http://www.youtube.com/embed/OOfBwSYvIic" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube OOfBwSYvIic %}</p>
 
-<p><span class='pullquote-right' data-pullquote='Perhaps this is down to the alluring power of a well cut evening dress and a knowing smile, but&#8230; Damn'>
-It's a little bit emo, but I like it. Good tune. Unless you're reading this in Australia you've probably never heard of Micheal Paynter, but likely have heard of the The Veronicas, the two ladies singing in the background. Now... Perhaps this is down to the alluring power of a well cut evening dress and a knowing smile, but... Damn. I've generally thought of them as "pretty" (and sometimes "annoying," musically) but they really are stunning in this video.
-</span></p>
+<p>{% pullquote %}
+It's a little bit emo, but I like it. Good tune. Unless you're reading this in Australia you've probably never heard of Micheal Paynter, but likely have heard of the The Veronicas, the two ladies singing in the background. Now... {"Perhaps this is down to the alluring power of a well cut evening dress and a knowing smile, but... Damn"}. I've generally thought of them as "pretty" (and sometimes "annoying," musically) but they really are stunning in this video.
+{% endpullquote %}</p>
 
 <h2>You Are Speaking My Language!</h2>
 
 <p>The title of my previous series of programming language related posts was, in case you hadn't guessed, a reference to this:</p>
 
-<p><iframe src="http://www.youtube.com/embed/srIKcXWN6F0" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube srIKcXWN6F0 %}</p>
 
 <p>Now, I love Juliette &amp; The Licks, but this really isn't their best song. In actual fact I find this entire album extremely disappointing (with the exception of "I never got to tell you what I wanted to"), where as the other two albums don't really have a bad song on them. The song title fit the posts quite well, however, so I didn't feel I could leave it out. I spent some time on YouTube trying to work out which other song of theirs I should post as well, and ended up coming to the conclusion that this was a safe bet:</p>
 
-<p><iframe src="http://www.youtube.com/embed/2WDcCT3YeM" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube -2WDcCT3YeM %}</p>
 
 <p>It's a good song and I love the video. I've also seen plenty of girls walking through Edinburgh at 11am on a Saturday who looked like they might break into this at any moment.</p>
 
@@ -115,7 +115,7 @@ It's a little bit emo, but I like it. Good tune. Unless you're reading this in A
 
 <p>It's another Lady Gaga cover and I love it!</p>
 
-<p><iframe src="http://www.youtube.com/embed/2ga_pr0vuHA" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube 2ga_pr0vuHA %}</p>
 
 <p>This is clearly still Lady Gaga's "Bad Romance," but with a rock opera feel on top, which I feel works very, very well. I can imagine this version of the song sounding amazing sung by Freddie Mercury, but then I suspect that might be the case for most Lady Gaga songs (not coincidentally).</p>
 ]]></content>
@@ -136,29 +136,29 @@ It's a little bit emo, but I like it. Good tune. Unless you're reading this in A
 <!-- more -->
 
 
-<p>A = <iframe src="http://www.youtube.com/embed/UZjf9C6atT4" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>A = {% youtube UZjf9C6atT4 %}</p>
 
 <p>Evanescence. More specifically: the original line up (as far as most of the world is concerned). I like Evanescence quite a bit, but that's about 74.2% Amy Lee's voice. The girl has one hell of a pair of lungs on her. I picked this particular song from the first album for reason which may become obvious later. For what it's worth, I think Everybody's Fool and Imaginary are a much better songs.</p>
 
-<p>B = <iframe src="http://www.youtube.com/embed/bP5wmtOXCQ" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>B = {% youtube -bP5wmtOXCQ %}</p>
 
 <p>Evanescence again? No. Well... yes, but the current line up. Specifically: Amy Lee herself. I picked this song from the second album (which is much better than the first) because it seems to have the most Amy Lee-ness in it. It doesn't have an actual video, though, so alternatively:</p>
 
-<p>B = <iframe src="http://www.youtube.com/embed/Hqd2FJF8-h8" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>B = {% youtube Hqd2FJF8-h8 %}</p>
 
 <p>I figure having a deficit of Seether won't affect the sum either way, so this works too.</p>
 
-<p>C = <iframe src="http://www.youtube.com/embed/dUyMvaJwACc" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>C = {% youtube dUyMvaJwACc %}</p>
 
 <p>Former Irish American Idol contestant* Carly Smithson. Once again: A hell of a pair of lungs. Not an entirely dissimilar look, but quite a different vocal style, it would appear. Carly's voice has a bit more blues in it, a bit more sultriness.</p>
 
-<p>D = <iframe src="http://www.youtube.com/embed/zzTZeeMCUBk" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>D = {% youtube zzTZeeMCUBk %}</p>
 
 <p><a href="http://www.wearethefallen.com/">We are the Fallen</a>, the new band from Ben Moody, two other former members of Evanescence and Carly Smithson. Can you seen why I picked that particular Evanescence song? That's more than a passing resemblance, style wise. There is a second reason I picked it, <a href="http://www.youtube.com/watch?v=kdYa0oeMLfI&amp;feature=related">however</a>. Carly has a less operatic voice, though, and a bit more range in terms of singing style. I love me some female fronted metal, so I'll be keeping an eye on this band.</p>
 
 <p>Okay, here's another one which plays a bit better to her frankly spectacular voice:</p>
 
-<p>D = <iframe src="http://www.youtube.com/embed/u24NXTBHLYU" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>D = {% youtube u24NXTBHLYU %}</p>
 
 <p>* That is: she's Irish and was a contestant on "American Idol." There is no such show as "Irish American Idol," so far as I'm aware.</p>
 ]]></content>
@@ -178,11 +178,11 @@ It's a little bit emo, but I like it. Good tune. Unless you're reading this in A
 
 <p>As it turned out, that was to be their second to last show. Aimee Echo left the band, who sounded like this:</p>
 
-<p><iframe src="http://www.youtube.com/embed/xGLglF2MuEo" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube xGLglF2MuEo %}</p>
 
 <p>and formed a new one, called at first Hero and then theSTART, who sounded more like this:</p>
 
-<p><iframe src="http://www.youtube.com/embed/J-K64wVAn5U" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube J-K64wVAn5U %}</p>
 
 <p>Though I like this second song, I find that the raw edge is missing from her voice. This is probably due to the more electronic sound of the new band and thus the requisite multi-tracking of a voice I don't feel requires it. The point is I don't like the second band as much, not least because this is the only song of there's I found which has much of a chorus.</p>
 
@@ -192,7 +192,7 @@ It's a little bit emo, but I like it. Good tune. Unless you're reading this in A
 
 <p>I'm aware the sound quality is <em>awful</em> on the video, but here it is:</p>
 
-<p><iframe src="http://www.youtube.com/embed/V-fFg3b76j0" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube V-fFg3b76j0 %}</p>
 
 <p>A bit of frantic web searching promptly revealed that yes, gloriously, the band were back to together. At least to some extent. They'd played two shows in 2008 (well... more like one and a half, since the first one was actually the encore from a theSTART show) and were rehearsing for a reunion tour.</p>
 
@@ -200,15 +200,15 @@ It's a little bit emo, but I like it. Good tune. Unless you're reading this in A
 
 <p>For what it's worth, another lady who had an (arguably stronger) effect on my musical taste is Sandra Nasic. So, for the sake of completeness, here's a couple of videos of her singing with her (now defunct) band, "Guano Apes", and another of her providing guest vocals on an Apocalyptica song.</p>
 
-<p><iframe src="http://www.youtube.com/embed/ifASH53DNXQ" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube ifASH53DNXQ %}</p>
 
-<p><iframe src="http://www.youtube.com/embed/XvfYrKo1KGs" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube XvfYrKo1KGs html5 %}</p>
 
-<p><iframe src="http://www.youtube.com/embed/wCeMJR33fkg" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube wCeMJR33fkg %}</p>
 
 <p>Apocalyptica, in case you were wondering, are a group of Finnish 'cello players, who once exclusively played Metalica covers, but now play original material. Here's another one, this time with Corey Taylor:</p>
 
-<p><iframe src="http://www.youtube.com/embed/OCqUR_iActA" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube OCqUR_iActA %}</p>
 
 <p>I think that's enough music for now. Tootles.</p>
 ]]></content>
@@ -226,7 +226,7 @@ It's a little bit emo, but I like it. Good tune. Unless you're reading this in A
 <!-- more -->
 
 
-<p><iframe src="http://www.youtube.com/embed/http://www.youtube.com/watch?v=sxNmeMklFk8" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube http://www.youtube.com/watch?v=sxNmeMklFk8 %}</p>
 
 <p>Perhaps you're thinking "Huh? Who's this guy?" or "What's with the cake?". You've been missing out if that's the case. Jonathan Coulton (for that is the man's name) is a computer programmer turned unlikely rock star (You scoff? He has a song in Rock Band. I'm having trouble thinking of a better benchmark), who's become something of a geek standard thanks to the somewhat unlikely nature of his subject matter (one song has Pluto's moon singing its condolences regarding its loss of planet status).</p>
 

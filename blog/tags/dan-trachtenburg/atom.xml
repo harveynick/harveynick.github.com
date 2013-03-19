@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Dan Trachtenburg | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/tags/dan-trachtenburg/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-17T22:47:02+00:00</updated>
+  <updated>2013-03-19T22:49:52+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -20,7 +20,7 @@
     <id>http://www.harveynick.com/blog/2011/08/24/who-likes-short-shorts</id>
     <content type="html"><![CDATA[<p>I think I love almost everything about this short film. That being the case, I'll quit my chin wagging and just get on with showing it:</p>
 
-<p><iframe src="http://www.youtube.com/embed/4drucg1A6Xk" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube 4drucg1A6Xk %}</p>
 
 <p>Mucho kudos to Dan Trachtenburg, Danielle Rayne, and everyone else envolved. No get back to it. I want more!</p>
 ]]></content>

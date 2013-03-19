@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: c++ | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/tags/c-/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-17T22:47:02+00:00</updated>
+  <updated>2013-03-19T22:49:52+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -36,9 +36,9 @@
 </ol>
 
 
-<p><span class='pullquote-right' data-pullquote='when it comes to specifics, C++ gets the most interest'>
-Now, my number of hits still isn't exactly stellar, so this is a fairly small sample size, but it's still quite interesting. People seem to be far more interested in reading about C++ than any of the other languages. In general, readers tend to want to know what it is I'm actually talking about, and what conclusion I come to, but when it comes to specifics, C++ gets the most interest. Is this a recommendation of the language, or the oposite, though? People could be reading what I say about it because they think it's the sensible option... or because the folly of the language makes them seethe with rage. Hard to say. Perhaps I'll look for some metrics of programming language popularity online.<br/>
-</span></p>
+<p>{% pullquote %}
+Now, my number of hits still isn't exactly stellar, so this is a fairly small sample size, but it's still quite interesting. People seem to be far more interested in reading about C++ than any of the other languages. In general, readers tend to want to know what it is I'm actually talking about, and what conclusion I come to, but {"when it comes to specifics, C++ gets the most interest"}. Is this a recommendation of the language, or the oposite, though? People could be reading what I say about it because they think it's the sensible option... or because the folly of the language makes them seethe with rage. Hard to say. Perhaps I'll look for some metrics of programming language popularity online.<br/>
+{% endpullquote %}</p>
 
 <p>In one of those curious events the internet throws up, the writer of a blog I read on a regular basis also just started to work on a project of a potentially similar nature, and started off with some musings on which programming language to use. I'm talking about Shamus Young in his <a href="http://www.shamusyoung.com/twentysidedtale/?p=9644">Twenty Sided</a> blog (I should really add it to my blog roll). Interestingly, and slightly comically, he came came to an equal and oposite conclusion to my own. He didn't consider Objective-C (not out loud, anyway), but decided that Java was the language to use if he wanted to produce something with commercial viability, but C++ was the language to use if he wanted to do some prototyping.</p>
 

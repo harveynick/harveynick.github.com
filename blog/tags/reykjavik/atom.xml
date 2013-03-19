@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Reykjavik | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/tags/reykjavik/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-17T22:47:02+00:00</updated>
+  <updated>2013-03-19T22:49:52+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -35,7 +35,7 @@
 
 <p>Enough of this talk, though! Here's some more Jonathon Coulton for you:</p>
 
-<p><iframe src="http://www.youtube.com/embed/http://www.youtube.com/watch?v=j4TnhemCEmc" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube http://www.youtube.com/watch?v=j4TnhemCEmc %}</p>
 
 <p>I really wish I had a girlfriend right now, ideally one who was also a programmer, so I could giver her <a href="http://www.cafepress.com/jonathancoulton.58539188">these</a>. I'd probably get my arse <em>kicked</em> for it, but damn it would make me laugh...</p>
 ]]></content>

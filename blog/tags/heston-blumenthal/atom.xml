@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Heston Blumenthal | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/tags/heston-blumenthal/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-17T22:47:02+00:00</updated>
+  <updated>2013-03-19T22:49:52+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -27,11 +27,11 @@
 
 <p>We invited round two friends whom we have cause to thank and don't see nearly enough of, and I gave it my best shot. Here's the maestro himself, explaining how it's done:</p>
 
-<p><iframe src="http://www.youtube.com/embed/6pR5kVyemdY" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube 6pR5kVyemdY %}</p>
 
-<p><iframe src="http://www.youtube.com/embed/Mj9K6iSmafc" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube Mj9K6iSmafc %}</p>
 
-<p><iframe src="http://www.youtube.com/embed/UMx4HUKaA9k" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube UMx4HUKaA9k %}</p>
 
 <p>In the interests of honesty, here are the things I did differently:</p>
 

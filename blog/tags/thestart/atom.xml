@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: theSTART | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/tags/thestart/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-17T22:47:02+00:00</updated>
+  <updated>2013-03-19T22:49:52+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -27,11 +27,11 @@
 
 <p>As it turned out, that was to be their second to last show. Aimee Echo left the band, who sounded like this:</p>
 
-<p><iframe src="http://www.youtube.com/embed/xGLglF2MuEo" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube xGLglF2MuEo %}</p>
 
 <p>and formed a new one, called at first Hero and then theSTART, who sounded more like this:</p>
 
-<p><iframe src="http://www.youtube.com/embed/J-K64wVAn5U" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube J-K64wVAn5U %}</p>
 
 <p>Though I like this second song, I find that the raw edge is missing from her voice. This is probably due to the more electronic sound of the new band and thus the requisite multi-tracking of a voice I don't feel requires it. The point is I don't like the second band as much, not least because this is the only song of there's I found which has much of a chorus.</p>
 
@@ -41,7 +41,7 @@
 
 <p>I'm aware the sound quality is <em>awful</em> on the video, but here it is:</p>
 
-<p><iframe src="http://www.youtube.com/embed/V-fFg3b76j0" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube V-fFg3b76j0 %}</p>
 
 <p>A bit of frantic web searching promptly revealed that yes, gloriously, the band were back to together. At least to some extent. They'd played two shows in 2008 (well... more like one and a half, since the first one was actually the encore from a theSTART show) and were rehearsing for a reunion tour.</p>
 
@@ -49,15 +49,15 @@
 
 <p>For what it's worth, another lady who had an (arguably stronger) effect on my musical taste is Sandra Nasic. So, for the sake of completeness, here's a couple of videos of her singing with her (now defunct) band, "Guano Apes", and another of her providing guest vocals on an Apocalyptica song.</p>
 
-<p><iframe src="http://www.youtube.com/embed/ifASH53DNXQ" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube ifASH53DNXQ %}</p>
 
-<p><iframe src="http://www.youtube.com/embed/XvfYrKo1KGs" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube XvfYrKo1KGs html5 %}</p>
 
-<p><iframe src="http://www.youtube.com/embed/wCeMJR33fkg" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube wCeMJR33fkg %}</p>
 
 <p>Apocalyptica, in case you were wondering, are a group of Finnish 'cello players, who once exclusively played Metalica covers, but now play original material. Here's another one, this time with Corey Taylor:</p>
 
-<p><iframe src="http://www.youtube.com/embed/OCqUR_iActA" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube OCqUR_iActA %}</p>
 
 <p>I think that's enough music for now. Tootles.</p>
 ]]></content>

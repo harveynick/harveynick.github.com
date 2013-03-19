@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: Scala | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/tags/scala/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-17T22:47:02+00:00</updated>
+  <updated>2013-03-19T22:49:52+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -27,137 +27,91 @@
 
 <p>One of Go's features which I really like is implicit interfaces. Allow me to explain. In most regular statically typed object orientated languages, such as Java (which I'll use for this example), you can abstract functionality using something like an interface. For example, let's say I have a class which looks like this:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">Counter</span> <span class="o">{</span>
-</span><span class='line'>  <span class="kt">int</span> <span class="n">value</span><span class="o">;</span>
-</span><span class='line'>  <span class="kt">int</span> <span class="nf">get</span><span class="o">()</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">return</span> <span class="n">value</span><span class="o">;</span>
-</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
-</span><span class='line'><span class="o">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock lang:java %}
+class Counter {
+  int value;
+  int get() {</p>
+
+<pre><code>return value;
+</code></pre>
+
+<p>  }
+}
+{% endcodeblock %}</p>
 
 <p>Here we have defined an class which declares a single method which returns an integer value. I might then make use of this an instance of this class elsewhere:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">Printer</span> <span class="o">{</span>
-</span><span class='line'>  <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="n">Counter</span> <span class="n">counter</span><span class="o">)</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">counter</span><span class="o">.</span><span class="na">get</span><span class="o">());</span>
-</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
-</span><span class='line'><span class="o">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock lang:java %}
+class Printer {
+  void update(Counter counter) {</p>
+
+<pre><code>System.out.println(counter.get());
+</code></pre>
+
+<p>  }
+}
+{% endcodeblock %}</p>
 
 <p>All is good with the world, unless I decide I want to change the behaviour of the code. Perhaps I want the value to increment after each call, for example. I could extend the Counter class and change its behaviour that way:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">IncrementingCounter</span> <span class="kd">extends</span> <span class="n">Counter</span> <span class="o">{</span>
-</span><span class='line'>  <span class="kt">int</span> <span class="nf">get</span><span class="o">()</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">return</span> <span class="n">value</span><span class="o">++;</span>
-</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
-</span><span class='line'><span class="o">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock lang:java %}
+class IncrementingCounter extends Counter {
+  int get() {</p>
+
+<pre><code>return value++;
+</code></pre>
+
+<p>  }
+}
+{% endcodeblock %}</p>
 
 <p>I can now pass an instance of this new class into the update method of the Handler. Done. Right? Well... no. This is a bit of a clumsy way to go about this. It doesn't scale and it's not always possible. A better way to handle this is to use an interface:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">interface</span> <span class="nc">CounterInterface</span> <span class="o">{</span>
-</span><span class='line'>  <span class="kt">int</span> <span class="nf">get</span><span class="o">();</span>
-</span><span class='line'><span class="o">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock lang:java %}
+interface CounterInterface {
+  int get();
+}
+{% endcodeblock %}</p>
 
 <p>This specifies the interface of the methods, but not their implementation. We can then change the Printer class to use this interface, rather than the concrete class:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">Printer</span> <span class="o">{</span>
-</span><span class='line'>  <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="n">CounterInterface</span> <span class="n">counter</span><span class="o">)</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">counter</span><span class="o">.</span><span class="na">get</span><span class="o">());</span>
-</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
-</span><span class='line'><span class="o">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock lang:java %}
+class Printer {
+  void update(CounterInterface counter) {</p>
+
+<pre><code>System.out.println(counter.get());
+</code></pre>
+
+<p>  }
+}
+{% endcodeblock %}</p>
 
 <p>Now any class which implements this interface can be passed to the Printer. So, going to back to our original example:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">class</span> <span class="nc">Counter</span> <span class="kd">implements</span> <span class="n">CounterInterface</span> <span class="o">{</span>
-</span><span class='line'>  <span class="kt">int</span> <span class="n">value</span><span class="o">;</span>
-</span><span class='line'>  <span class="kt">int</span> <span class="nf">get</span><span class="o">()</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">return</span> <span class="n">value</span><span class="o">;</span>
-</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="o">}</span>
-</span><span class='line'><span class="o">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock lang:java %}
+class Counter implements CounterInterface {
+  int value;
+  int get() {</p>
+
+<pre><code>return value;
+</code></pre>
+
+<p>  }
+}
+{% endcodeblock %}</p>
 
 <p>We can now make any number of alternative implementations (incrementing, decrementing, random, fibronatchi…) and as long as they implement the interface they can be passed to the printer. This is fine if you're in control of the implementation, and even more fine if you're in control of the interface as well. There are times, however, when you're in change of neither. Things can get a little messy and you may have to find a way of pushing a round peg through a square hole.</p>
 
 <p>In dynamically typed languages, such as Python and Ruby, things work a little differently. These languages are often referred to as being "duck" typed, as they make the assumption that if something "looks like a duck and quacks like a duck, treat it as though it's a duck." In this case we wouldn't bother with any of the interfaces and our Printer class would look more like this:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">class</span> <span class="nc">Printer</span><span class="p">:</span>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">counter</span><span class="p">):</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="k">print</span> <span class="n">counter</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock lang:python %}
+class Printer:
+  def update(counter):</p>
+
+<pre><code>print counter.get()
+</code></pre>
+
+<p>{% endcodeblock %}</p>
 
 <p>So long as the counter object has a method called get() we don't have a problem. Everything will be fine. This is much simpler, and is one of the things which makes Python very quick to program in, but it does have problems. The main problem (for me, at least) is specification. Without examining the source code, I can't see what sort of object I have to pass into the update method. If the method has been manually commented then there's no problem, but this is an incredible tedious thing to have to do. In the Java code I can see the type right there in the auto-generated documentation, and even if the writer has written no comments at all (what a bastard!) I can still get a good idea of what I need to pass into the method.</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Tag: The Girl With the Dragon Tattoo | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/tags/the-girl-with-the-dragon-tattoo/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-17T22:47:02+00:00</updated>
+  <updated>2013-03-19T22:49:52+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -31,7 +31,7 @@
 
 <p>It's the new teaser poster for David Fincher's adaptation of Stieg Larsson's fantastic <em>The Girl with the Dragon Tattoo</em>:</p>
 
-<p><a href="http://dragontattoo.com/"><img class="center" src="http://geektyrant.com/storage/post-images-2011/girlwithadragonTatnsfw.jpeg"></a></p>
+<p><a href="http://dragontattoo.com/">{% img center http://geektyrant.com/storage/post-images-2011/girlwithadragonTatnsfw.jpeg %}</a></p>
 
 <p>Note: I've nabbed this picture from WikiPedia. It's small so that it counts as fair use (apparently). If you click it, you'll be taken to the films official website, where you can see a bigger version, though you might have to pinky swear that you're old enough to see it. The site also has the teaser trailer, but I'll get to that.</p>
 
@@ -55,7 +55,7 @@
 
 <p>What was also released recently was the teaser trailer, which looks a little bit like this:</p>
 
-<p><iframe src="http://www.youtube.com/embed/QrQ433ChAQM" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+<p>{% youtube QrQ433ChAQM %}</p>
 
 <p>This is definitely a trailer for people who've read the book, I think. I saw it in the cinema with <a href="http://ohsohumbleopinion.tumblr.com/post/9851924500/x-men-first-class">X-Men First Class</a>, and the guy sat next to me had a fairly strong negative reaction of the "what the hell was that?" variety. To me, though, it looks great. Fincher's artistry is legendary and I think this film is going to have a lot of impact. It's going to be dark, and <em>very</em> difficult to watch in places. This is a story about incredibly complex and compelling characters. This does not mean that they are nice people, and their story is a difficult one. If I had to pick a word to describe what I think this film will be like, it would be: <em>uncompromising</em>.</p>
 
