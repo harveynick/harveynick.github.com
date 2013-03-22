@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Blogger | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/categories/blogger/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-21T00:13:20+00:00</updated>
+  <updated>2013-03-22T00:49:49+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -12,6 +12,36 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ch-Ch-Ch-Changes]]></title>
+    <link href="http://www.harveynick.com/blog/2013/03/22/ch-ch-ch-changes/"/>
+    <updated>2013-03-22T00:30:00+00:00</updated>
+    <id>http://www.harveynick.com/blog/2013/03/22/ch-ch-ch-changes</id>
+    <content type="html"><![CDATA[<p>So a couple of things about this website have changed. Perhaps you've noticed.</p>
+
+<p>Firstly, I changed the background. Much as I love that dark linen image I was using, it's really obviously "the apple background", which carries connotations I didn't really want to project. The first place I saw it was on an apple device, granted, but I wasn't using it <em>because</em> it's the apple background. The new one is similar aesthetically, yet distinct enough that I don't think it screams "fanboi". It'll do for now. More on that later.</p>
+
+<p>I've also removed that cool effect where the background and title remained static, and the actual content appear to slide up an over them. Again, I loved it, but it made the scrolling really janky on a lot of devices. I'm choosing to assume it was the combination of the drop shadow and static background which was causing this... and since the slide effect doesn't work anywhere near as well without the drop shadow, but the drop shadow seems just fine without the slide I've decided to move over to plain old normal scrolling. Unless you're on a really small screen, in which case the drop shadow should disappear as well (try resizing your browser window, you'll see what I mean).</p>
+
+<!-- More -->
+
+
+<p>Lastly, there's a small ad at the bottom of the sidebar.</p>
+
+<p><blockquote><p>Say what? Oh no your didn't! Why? WHY!?</p></blockquote></p>
+
+<p>As you may or may not be aware, I work on the <a href="http://www.google.com/adsense">AdSense</a> team at Google, and our management has encouraged us you actually because AdSense publishers. I've been resisting this change for quite some time, but decided it was probably time to bite the bullet and start eating my team's dog food. It bothers me a bit, I have to admit. I'm going to play with moving it around and changing the settings on the AdSense Front End and see if I can achieve a situation where:</p>
+
+<ul>
+<li>It doesn't bother me so much;</li>
+<li>It's actually effective.</li>
+</ul>
+
+
+<p>I hope it doesn't bother you too much. Don't worry, this isn't me trying to monetize you. There will probably more some more changes coming, but let's not get ahead of ourselves.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Wandering Around London]]></title>
@@ -532,38 +562,6 @@ For the most part, this site is stock Octopress. I've played with the fonts, mad
 <p>"Top", though, is just plain the wrong word. Britain is, on paper, a monarchy. Functionally, though, we're a parliamentary democracy. This means that our politicians are <em>not</em> above us. They are not a ruling aristocracy, regardless of what the Tories would prefer. They work for us. They are, at most, our equals.</p>
 
 <p>If you have a comment to make, regardless of whether you agree of disagree, I encourage you to leave it below. If it's uncivil I am going to either delete it or make fun of you, though.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Sound of One Hand Clapping...]]></title>
-    <link href="http://www.harveynick.com/blog/2011/07/18/the-sound-of-one-hand-clapping/"/>
-    <updated>2011-07-18T20:29:21+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/07/18/the-sound-of-one-hand-clapping</id>
-    <content type="html"><![CDATA[<p>...would make significantly more noise than I have on this blog, as of late.</p>
-
-<p>There are a couple of reasons for this. The main one is that I don't actually have the internet in my new flat yet, and won't for another 9 days. Bloody Virgin Media. Serves me right for not going with media which has a bit more experience, I suppose. I'm writing this at work, which is something I really don't like to do, but it's very much the end of the day and I'm in late because I started late. I figure: a quick post can't hurt.</p>
-
-<p>Another reason is that my life has been incredibly complicated for the last couple of weeks. I have been bounced around all over the place. I also missed a flight, an expensive mistake I may devote a blog entry to at some point, now that my (partially self directed) rage has subsided, since it has some comedy value.</p>
-
-<!-- more -->
-
-
-<p>More importantly: my paternal grandmother died. There's really no way to sugar coat that fact. To head off inevitable questions:</p>
-
-<p>Yes, we were close. In point of fact she basically raised me. I probably loved her more than anyone else in the entire world. I was also her only grandchild.</p>
-
-<p>Yes, I am okay. I will be okay. I knew that day was coming. She had been ill in one form or another for basically my entire life and the years were being increasingly unkind.</p>
-
-<p>No, that did not make it any easier. I cried for more or less the entire funeral, and I have no qualms (zero!) about broadcasting that fact over the internet. I was very glad to have my family and some close friends who knew my Nan there with me.</p>
-
-<p>It is not my intention for this post to be macabre, though. For one thing my grandmother would not have wanted that. I mainly wanted to just check-in and indicate that this blog is still around, and more posts will be forthcoming. Especially now that: a) I have my computer back, and b) <a href="http://www.shamusyoung.com/twentysidedtale/?p=11874">Shamus Young</a> and <a href="http://www.sea-of-memes.com/">Michael Goodfellow</a> are making significantly more progress than I on their procedural generation projects. I am jealous of this.</p>
-
-<p>I'll be back with more to say soon. Future topics of conversation will include: why I hate RyanAir, donuts, and dog food. Yes, dog food.</p>
-
-<p>RIP Cath / Kath Johnson*</p>
-
-<p>* Funny story about my Nan: no one is 100% sure of what her first name actually was.</p>
 ]]></content>
   </entry>
   

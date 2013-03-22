@@ -4,7 +4,7 @@
   <title><![CDATA[HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-21T00:13:20+00:00</updated>
+  <updated>2013-03-22T00:49:49+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ch-Ch-Ch-Changes]]></title>
+    <link href="http://www.harveynick.com/blog/2013/03/22/ch-ch-ch-changes/"/>
+    <updated>2013-03-22T00:30:00+00:00</updated>
+    <id>http://www.harveynick.com/blog/2013/03/22/ch-ch-ch-changes</id>
+    <content type="html"><![CDATA[<p>So a couple of things about this website have changed. Perhaps you&#8217;ve noticed.</p>
+
+<p>Firstly, I changed the background. Much as I love that dark linen image I was using, it&#8217;s really obviously &#8220;the apple background&#8221;, which carries connotations I didn&#8217;t really want to project. The first place I saw it was on an apple device, granted, but I wasn&#8217;t using it <em>because</em> it&#8217;s the apple background. The new one is similar aesthetically, yet distinct enough that I don&#8217;t think it screams &#8220;fanboi&#8221;. It&#8217;ll do for now. More on that later.</p>
+
+<p>I&#8217;ve also removed that cool effect where the background and title remained static, and the actual content appear to slide up an over them. Again, I loved it, but it made the scrolling really janky on a lot of devices. I&#8217;m choosing to assume it was the combination of the drop shadow and static background which was causing this&#8230; and since the slide effect doesn&#8217;t work anywhere near as well without the drop shadow, but the drop shadow seems just fine without the slide I&#8217;ve decided to move over to plain old normal scrolling. Unless you&#8217;re on a really small screen, in which case the drop shadow should disappear as well (try resizing your browser window, you&#8217;ll see what I mean).</p>
+
+<!-- More -->
+
+
+<p>Lastly, there&#8217;s a small ad at the bottom of the sidebar.</p>
+
+<blockquote><p>Say what? Oh no your didn&#8217;t! Why? WHY!?</p></blockquote>
+
+
+<p>As you may or may not be aware, I work on the <a href="http://www.google.com/adsense">AdSense</a> team at Google, and our management has encouraged us you actually because AdSense publishers. I&#8217;ve been resisting this change for quite some time, but decided it was probably time to bite the bullet and start eating my team&#8217;s dog food. It bothers me a bit, I have to admit. I&#8217;m going to play with moving it around and changing the settings on the AdSense Front End and see if I can achieve a situation where:</p>
+
+<ul>
+<li>It doesn&#8217;t bother me so much;</li>
+<li>It&#8217;s actually effective.</li>
+</ul>
+
+
+<p>I hope it doesn&#8217;t bother you too much. Don&#8217;t worry, this isn&#8217;t me trying to monetize you. There will probably more some more changes coming, but let&#8217;s not get ahead of ourselves.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[I Disagree with Film Critic Hulk]]></title>
@@ -1220,60 +1251,6 @@ The museum has an entire section devoted to the evolution of storage, and it&#82
 <p>Ideally, I need to find a decent workflow, which doesn&#8217;t break down when I&#8217;m away from home and likely to actually have semi interesting things to blog about, but doesn&#8217;t restrict me when I am at home. Ideally, it should allow me to jump between different machines with a minimum of effort, and not require me  to always add the final touches from the same machine. The workflow should also not break down when no internet connection is available. Text is fairly easy. Images make things more difficult, especially if the images were recorded using my own camera.</p>
 
 <p>Lastly, I&#8217;m giving some consideration to porting this blog over to Blogger (only if I can transfer all of my posts and comments, however). It&#8217;s not a coincidence that I now work for the company responsible for Blogger&#8217;s infrastructure. Becoming more familiar with that platform can only really be a good thing for me here. Blogger also gives me a couple of options which WordPress doesn&#8217;t, though. Thoughts?</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[...In Which I Go Full Nerd]]></title>
-    <link href="http://www.harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2/"/>
-    <updated>2011-06-03T01:43:18+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2</id>
-    <content type="html"><![CDATA[<p>Jet lag is a funny thing. Right now it actually seems to be working in my favour; it&#8217;s managed to knock a couple of bad habits out of me. Specifically, these happen to be the not entirely unrelated habits of going to bed too late (then making it later by reading for a good long while) and getting up too late. Right now I seem to be fighting to keep my eyes open by around nine, and then being wide awake by seven. Which is more or less the position I found myself in on Sunday. Since day one at Google camp was a couple of days away I thought I&#8217;d check out my immediate surroundings.</p>
-
-<p>This may come as a bit of a surprise to you, but there isn&#8217;t actually a lot to do in Mountain View. One of the things there is to do, however, is the computer history museum, which I&#8217;d been told is exactly as awesome as it sounds. In case my meaning isn&#8217;t clear: really awesome. There is no sarcasm here. Look at my face. Awesome. This is not my sarcastic face. Awesome. Face. Awesome.</p>
-
-<!-- more -->
-
-
-<p>I have a rental car, but the brakes scare the shit out of me, and the place didn&#8217;t look too far away, so I decided to walk. Now, I&#8217;d been warned that no one walks in America, but I wasn&#8217;t quite prepared for it to be true. I must have walked 5 miles on Sunday and saw a grand total of perhaps 3 other pedestrians, and found that drivers looked at me as though I was a crazy person. I think perhaps one reason for this might be that the pavements (or sidewalks, if you like) are&#8230; well&#8230; shit. Anytime you have a height difference of more than an inch between two slabs&#8230; that&#8217;s bad.</p>
-
-<p>Slightly thankful that there were no other pedestrians to see me trip, I arrived at the building in question. Externally, it&#8217;s kind of neat. You might mistake it for the headquarters of some hip new tech startup. If it wasn&#8217;t for the big sign saying &#8220;Computer history Museum&#8221; outside, obviously. Inside, though, it reminded me quite of bit of the Science Museum (&#8220;which science museum?&#8221; &#8220;The Science Museum&#8221;). It&#8217;s nowhere near as grandiose, and has a much narrower focus, but the comparison feels apt.</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/e01ff01b-d1b9-454d-afd7-cbc96bdfc9ed6.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/e01ff01b-d1b9-454d-afd7-cbc96bdfc9ed6.jpg"><!-- header_img http://harveynick.files.wordpress.com/2011/06/e01ff01b-d1b9-454d-afd7-cbc96bdfc9ed6.jpg --></a></p>
-
-<p>The scope of the exhibits is quite impressive, starting with slide rules and abaci, moving though Babbage (oh, I&#8217;ll come back to Babbage), on to Turing and right up to the present day. Here are a couple of examples of things which made me smile:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/ab03b781-9c94-46de-851f-711679d9a0e90.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/ab03b781-9c94-46de-851f-711679d9a0e90.jpg"></a></p>
-
-<p>The Altair 8800, quite an important machine in the history of Microsoft, of which the fictionalised version of Steve Jobs in Pirates of Silicon Valley says &#8220;I never had any problem with the Altair&#8230; until I tried to use it.&#8221;</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/b17fcbeb-6b46-46e5-93f7-91c5995b999d1.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/b17fcbeb-6b46-46e5-93f7-91c5995b999d1.jpg"></a></p>
-
-<p>You know what&#8217;s better than that, though? A computer made out of wood. If you bought an <em>Apple I</em> you received a box of parts and some schematics. You hade to supply the case yourself. You know what else is awesome? UNIX is awesome:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/11d69f5d-3b06-4df6-bc7a-0b85aaf6ca362.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/11d69f5d-3b06-4df6-bc7a-0b85aaf6ca362.jpg"></a></p>
-
-<p>You see? There&#8217;s a badge and everything. What says awesome more than a badge? Oh wait, I know:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/7a115add-1257-44eb-9fa7-6dc114378d8f3.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/7a115add-1257-44eb-9fa7-6dc114378d8f3.jpg"></a></p>
-
-<p>Oh yeah. That&#8217;s right. I bet you wish you were cool enough to have that licence plate. As a side note: I wonder if anyone does have that licence plate, since I assume this one isn&#8217;t real. Furthermore: what kind of car would you put that on? This is fodder for <em>Pimp My Ride</em> right here. They should get on that (&#8220;Yo, we heard you like UNIX&#8230;&#8221;).</p>
-
-<p>There was a lot more at the museum. Too much, in fact. I arrived about an hour after it opened and literally left as they locked the door behind me. I probably skipped about half of the section on the internet, and only had time for a brief look at the exhibit on the history of computer chess. Did I mention that they have half of Deep Blue? They also have something else very, very cool, and that&#8217;s one of the two Babbage <a href="http://en.wikipedia.org/wiki/Difference_engine">Difference Engines</a> which we only very recently developed the capability to actually build:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/a677c6d3-c432-4285-9d81-1085791eeed14.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/a677c6d3-c432-4285-9d81-1085791eeed14.jpg"></a></p>
-
-<p>You really can&#8217;t do justice to this thing in a photograph. It&#8217;s beautiful. A marvel of engineering, it actually works exactly as Babbage said it would, and he built it entirely on paper. In 1849. Somebody should build an <a href="http://en.wikipedia.org/wiki/Analytical_engine">Analytical Engine</a>. That, my friends, would truly be something.</p>
-
-<p>One last thing:</p>
-
-<p><a href="http://harveynick.files.wordpress.com/2011/06/c4843570-b8d8-4251-bf11-2e49bc097e955.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/c4843570-b8d8-4251-bf11-2e49bc097e955.jpg"></a></p>
-
-<p>I think this might be THE teapot.</p>
-
-<p>Update: <a href="http://www.plan28.org/">Someone</a> is building an analytical engine!</p>
-
-<p>Another update: there is a follow up post <a href="http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder/">here</a>.</p>
 ]]></content>
   </entry>
   
