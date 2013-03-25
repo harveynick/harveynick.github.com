@@ -4,7 +4,7 @@
   <title><![CDATA[HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-03-22T00:49:49+00:00</updated>
+  <updated>2013-03-25T23:13:01+00:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Categories and Goals]]></title>
+    <link href="http://www.harveynick.com/blog/2013/03/25/categories-and-goals/"/>
+    <updated>2013-03-25T22:53:00+00:00</updated>
+    <id>http://www.harveynick.com/blog/2013/03/25/categories-and-goals</id>
+    <content type="html"><![CDATA[<p>It&#8217;s good to have goals. Even if you fail to meet them. Sometimes especially when you fail to meet them. It&#8217;s quite widely publicized that at Google we&#8217;re expected to score 0.7 (on a scale where 0 is a complete failure and 1 means all targets were met) when assessing our OKRs (objectives and key results). Generally this is good. It means you&#8217;re always striving, always raising your eyes, hitting the top of the tree by aiming for the sky.</p>
+
+<p>In my personal life, though, this probably isn&#8217;t the best approach. Be that as it may, this year I have goals.</p>
+
+<!-- More -->
+
+
+<p>1. Get myself in shape.</p>
+
+<p>Also known as: project &#8220;look good naked&#8221;. There&#8217;s a bit more to it than this, of course. There&#8217;s also a bit of a story behind it, which I&#8217;ll probably tell in a later post. I also have some ideas around this area which might turn into something else. If I&#8217;m going to set goals, I need a way to measure success, after all.</p>
+
+<p>Talking about this here leaves me with a slightly odd problem, though. When I relaunched this blog I adjusted all of my category names to be descriptive nouns, which means a can auto-generate the part of the about text (on the right) which references them. I don&#8217;t know what the appropriate noun is for someone who participates in and thinks about fitness related activities. This is a stupid problem to have, but it is a problem, nevertheless.</p>
+
+<p>2. Get my House in order.</p>
+
+<p>In the literal sense. One of the reasons things went dark on this blog last year is that I actually took the plunge and bought a flat. This ate a lot of my time and left my life in a bit of an inconsistent state for a month or so. Now I&#8217;m in, though, and having spent a winter in the place I&#8217;ve taken stock. It needs some work. It needs to be warmer when the weather is cold. It needs a bit more personality… and some of the really odd design decisions made by the previous owners need to be reversed.</p>
+
+<p>It&#8217;s also a whole new playground for me to seek adventures in. My Clockwork Aphid project was a casualty of the upheaval in my life last year and I&#8217;m not sure how much attention it&#8217;ll get this year… because this year I&#8217;d also like to start playing with home automation. Nothing crazy. No robot butlers; but we&#8217;ll see.</p>
+
+<p>3. Read. Travel. Watch. Write.</p>
+
+<p>This one is more straight forward. I&#8217;d like to start more closely measuring how much a read, travel, watch (mainly in terms of films) and write, on this blog an elsewhere.</p>
+
+<p>Reading is straightforward, I think. I read a lot. On my way to work, before bed, in coffee shops at the weekend, But I&#8217;m curious to try and keep tabs on what I&#8217;m reading and how much. It frustrates the hell out of me that my kindle can&#8217;t easily supply me with the information.</p>
+
+<p>One of my friends has a goal for this year that she will get out of Edinburgh at least once every month. That&#8217;s not a bad goal to have at all. For me, I&#8217;d just like to see and experience more of the wider world in general, but also the part of it which I inhabit.</p>
+
+<p>As for watching films and keeping tabs on what I saw… well… I already have <a href="http://ohsohumbleopinion.tumblr.com">a place to keep tabs on that</a>. Simple. This is mostly a matter of &#8220;keep it up&#8221;.</p>
+
+<p>Lastly: writing. Er… yes. I don&#8217;t have such a great record with this one. Obviously I want to get back to posting regularly on this blog… but I&#8217;d also like to try and do something with the two screenplays I wrote during university (and the pile of partially developed ones). I used to regularly do some sort of creative writing and lately I&#8217;m starting to feel the lack of it in my life.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ch-Ch-Ch-Changes]]></title>
@@ -32,7 +70,7 @@
 <blockquote><p>Say what? Oh no your didn&#8217;t! Why? WHY!?</p></blockquote>
 
 
-<p>As you may or may not be aware, I work on the <a href="http://www.google.com/adsense">AdSense</a> team at Google, and our management has encouraged us you actually because AdSense publishers. I&#8217;ve been resisting this change for quite some time, but decided it was probably time to bite the bullet and start eating my team&#8217;s dog food. It bothers me a bit, I have to admit. I&#8217;m going to play with moving it around and changing the settings on the AdSense Front End and see if I can achieve a situation where:</p>
+<p>As you may or may not be aware, I work on the <a href="http://www.google.com/adsense">AdSense</a> team at Google, and our management has encouraged us to actually become AdSense publishers. I&#8217;ve been resisting this change for quite some time, but decided it was probably time to bite the bullet and start eating my team&#8217;s dog food. It bothers me a bit, I have to admit. I&#8217;m going to play with moving it around and changing the settings on the AdSense Front End and see if I can achieve a situation where:</p>
 
 <ul>
 <li>It doesn&#8217;t bother me so much;</li>
@@ -1218,39 +1256,6 @@ The museum has an entire section devoted to the evolution of storage, and it&#82
 <p><img class="center" src="http://farm4.static.flickr.com/3543/5799108082_ceb1e2603d.jpg"></p>
 
 <p>That is all.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Process and the Platform]]></title>
-    <link href="http://www.harveynick.com/blog/2011/06/03/the-process-and-the-platform/"/>
-    <updated>2011-06-03T05:24:55+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/06/03/the-process-and-the-platform</id>
-    <content type="html"><![CDATA[<p>The effort required to actually publish that <a href="http://harveynick.wordpress.com/2011/06/03/in-which-i-go-full-nerd-2/">last post</a> was&#8230; considerable. Several factors contributed to this:</p>
-
-<ul>
-<li>I have slow internet access at my hotel;</li>
-<li>Currently, my only (full) computer is my work laptop;</li>
-<li>This doesn&#8217;t have iPhoto installed (this is mostly for reasons of simplicity, I&#8217;d probably get it if I asked).</li>
-</ul>
-
-
-<p>In the end, I wrote the text of the post in Evernote on my iPad (using an external keyboard), since I&#8217;m supposed to install an absolute minimum of third party software on the laptop. Next, I did a copy paste into BlogPress, a blogging app which lets you insert images inline. In theory the official WordPress app also does this, except that the upload always fails for me. As you may have gathered, I inserted the images here. This also rescales them, so you don&#8217;t need to upload all 12 megapixels. Next, I uploaded it to my actual blog as a draft, and used the web interface to fix any formatting errors and add any extra formatting, since BlogPress doesn&#8217;t allow bold or italic text (that I&#8217;ve found). That done, I hit the publish button, and: presto!</p>
-
-<!-- more -->
-
-
-<p>Needless to say, this is not an ideal workflow. I like using Evernote for writing the actual text (on both iPad and Mac) because it has about the right amount of functionality and it backs everything up and synchronises it between all of my devices. I like having that always available record which I can look back over and search as I see fit. I also like being able to drop one device, pick up another and keep working on the same document more or less seamlessly.</p>
-
-<p>Digression: I also like that I can use it as a permanent record of my notes. Before I moved down to London I was part way through scanning my notebooks from my PhD into Evernote. Evernote runs OCR on the images, finds the text (when my handwriting makes this feasible) and make it searchable. Brilliant. It&#8217;s like being able to carry all of my old note books around with me, all of the time.</p>
-
-<p>What Evernote doesn&#8217;t allow you to do is freely mix text and images, however. The WordPress interface does (obviously), but that leaves me with the problem of uploading the images. This is where the low bandwidth and lack of iPhoto were became problems. I suspect the cleanest workflow would be to immediately upload an album to Flickr (or other photo sharing site) and then use the appropriate URL to include the image in the blog post. Searching through the iPhoto library manually sure as hell isn&#8217;t ideal, and that&#8217;s the only real option for doing it image by image in the web interface.</p>
-
-<p>The most pleasant experience I&#8217;ve had for putting together blog posts with both text and pictures was actually iWeb, and by a metric mile. iWeb uses the built in OSX controls and lets you select images according to meta-data and what they look like, rather than their file name, as though you were working with a file system specifically designed for serving you images. The iPad does more or less the same thing, in fact, so that part wasn&#8217;t actually too bad. Using iWeb leaves you with very limited options for your blog, however. It&#8217;s made me think I should look at using a dedicated program, such as <a href="http://www.red-sweater.com/marsedit/">MarsEdit</a>, for writing my posts, or at least for the final stages.</p>
-
-<p>Ideally, I need to find a decent workflow, which doesn&#8217;t break down when I&#8217;m away from home and likely to actually have semi interesting things to blog about, but doesn&#8217;t restrict me when I am at home. Ideally, it should allow me to jump between different machines with a minimum of effort, and not require me  to always add the final touches from the same machine. The workflow should also not break down when no internet connection is available. Text is fairly easy. Images make things more difficult, especially if the images were recorded using my own camera.</p>
-
-<p>Lastly, I&#8217;m giving some consideration to porting this blog over to Blogger (only if I can transfer all of my posts and comments, however). It&#8217;s not a coincidence that I now work for the company responsible for Blogger&#8217;s infrastructure. Becoming more familiar with that platform can only really be a good thing for me here. Blogger also gives me a couple of options which WordPress doesn&#8217;t, though. Thoughts?</p>
 ]]></content>
   </entry>
   
