@@ -4,7 +4,7 @@
   <title><![CDATA[HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-05-21T21:10:55+01:00</updated>
+  <updated>2013-06-16T18:09:26+01:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[That Ad]]></title>
+    <link href="http://www.harveynick.com/blog/2013/06/16/that-ad/"/>
+    <updated>2013-06-16T16:36:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/06/16/that-ad</id>
+    <content type="html"><![CDATA[<p>So. There has been a small(ish) ad off to the right hand side of this blog for a couple of months now. It is as small as <a href="https://www.google.com/adsense">AdSense</a> will let me make it, though ideally I&#8217;d prefer if it had a size not unlike those used by <a href="http://mattgemmell.com/">Matt Gemmell</a> and
+<a href="http://www.marco.org/">Marco Arment</a>. On the whole, though, it doesn&#8217;t bother me as much as I worried it might, aside from the occasional animated flash ad.</p>
+
+<!-- More -->
+
+
+<p>As <a href="http://harveynick.com/blog/2013/03/22/ch-ch-ch-changes/">previously explained</a>, it&#8217;s not there in any sort of attempt to make money from this blog (I&#8217;ll come back to that, though), but more as an exercise in learning more about the product I work on. To that end, it&#8217;s been quite successful. Having an account of your own (with actual numbers flowing through it) turns out to be very useful. I now have experience of the AdSense website as an actual end user. I have a better handle on what works well (and not so well). I&#8217;m also more familiar with the end products of the various sub-teams I work with, which is always a good idea.</p>
+
+<p>So what about earnings, then? Will I be packing in my day job to instead pursue the glamorous life of a blogger? That would be a no. A <em>hell no</em>, in fact. Before I talk about this more: a little bit of background.  Advertising is <em>COMPLICATED</em>. Ad serving, in particular, is insanely complicated. You would not believe the amount effort it took to make that 200 by 200 square appear over to the right hand side of this page and in the grander scheme of things this example was very, very simple.</p>
+
+<p>Ad revenue is also quite complicated. I&#8217;m over simplifying, but there are essentially four ways a publisher might get paid for the ads on their site:</p>
+
+<ol>
+<li><p><strong>Cost per Click (CPC).</strong> This is (in some ways) the simplest and probably the one you expect. If someone clicks on ad on your site, the advertiser pays you. How much varies wildly, based on a variety of factors.</p></li>
+<li><p><strong>Cost per Mille (CPM).</strong> In this model the publisher gets paid per thousand impressions. That is: people seeing the ads but not clicking on them. It is generally the case that this pays a lot less than CPC.</p></li>
+<li><p><strong>Cost per Action (CPA).</strong> This is the affiliate model. You know those times when you look at pair of shoes (or, so I&#8217;m told: an&#8230; item of adult paraphernalia) on Amazon, and then they follow you around the internet? Chances are if you actually click on one of those ads, the publisher doesn&#8217;t get paid unless you then proceed to buy the item in question (or possibly something else in the same session).</p></li>
+<li><p><strong>Cost per Day (CPD).</strong> This one is the closest to traditional advertising, in my opinion. Basically, the advertiser pays a set amount for their ad to appear on the publisher&#8217;s site for a set period of time.</p></li>
+</ol>
+
+
+<p>The meagre revenue I see in AdSense comes entirely from CPC and CPM. To put it into perspective: on a particularly good day, harveynick.com might have a <em>Revenue per Mille</em> (RPM, the corollary of CPM) of £0.18. That means that if I get a thousand page views, AdSense will pay me 18p. On a good day, this site gets maybe 50 page views. I get the occasional click, and the revenue from that eclipses any CPM revenue to such an extent as to make it essentially invisible. My total revenue to date is in single figures of pounds. AdSense does not, in fact, pay you until your revenue reaches the equivalent of $100.</p>
+
+<p>So no, I&#8217;m not going to be making money off this site any time soon. That&#8217;s okay, though, because it&#8217;s not my intent and I&#8217;ve not really been trying to do so.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Further Watching and Reading]]></title>
@@ -1411,40 +1442,6 @@ For the most part, this site is stock Octopress. I&#8217;ve played with the font
 
 <p>* This makes me feel old, but I suspect it makes him feel older&#8230;<br/>
 ** The same, of course, goes for the ladies of Yorkshire, but &#8220;Yorkshireman&#8221; scans so much better than any unisex pronoun I could think of.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Dogfood, Nom Nom Nom]]></title>
-    <link href="http://www.harveynick.com/blog/2011/08/26/dogfood-nom-nom-nom/"/>
-    <updated>2011-08-26T09:00:04+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/08/26/dogfood-nom-nom-nom</id>
-    <content type="html"><![CDATA[<p>Dog food, the common noun, is reasonably self explanatory (pro tip: it&#8217;s food for dogs). Dogfood the verb or dogfooding the verbal noun, though, might require a little bit of explanation.</p>
-
-<p>At the root of it is this: if you make dog food, you should feed it to your own dogs. There are essentially two reasons for this:</p>
-
-<ol>
-<li>If you don&#8217;t personally test it, how will know if it&#8217;s any good?</li>
-<li>If your dogs don&#8217;t eat it, why the hell should anyone else&#8217;s?</li>
-</ol>
-
-
-<p>The same principle applies to software.</p>
-
-<!-- more -->
-
-
-<p>Even more so in fact, as it&#8217;s something you&#8217;re more able to test directly. As a simple example: in Google, we use Google docs for most documentation purposes (design docs, presentations, etc.). I&#8217;m willing to bet that folks at Apple use iWork for much the same purpose. I&#8217;m absolutely certain that Microsoft employes use Office, excepting those times when it&#8217;s necessary to write a document in the blood of a green eyed virgin upon the pressed skin of an albino goat.</p>
-
-<p>This process is called dogfooding. You use the software internally before it&#8217;s released to users, ensuring that it gets a lot more test usage. As an added bonus, developers who actually use the software they create are more likely to create software that&#8217;s actually worth using. That&#8217;s not always the case, of course, since most developers don&#8217;t really fall into the &#8220;average users&#8221; category. Case in point: upgrading my computer to Lion broke my installation of Steam. I fixed it with a quick command line incantation, then performed a couple more in order to make <a href="http://www.moddb.com/mods/the-stanley-parable">The Stanley Parable</a> functional under OSX. Most computer users would not be comfortable doing something like this, nor should they have to.</p>
-
-<p>As well as using your company&#8217;s products at work, it&#8217;s generally a good idea to use them at home. It&#8217;s always good to have a feel for what your company actually does and get more experience with it. I&#8217;ve used Google search more or less exclusively for at least ten years. That&#8217;s not really a hard choice. It gives the best results. Likewise, I started using Google Chrome is my main web browser pretty much as soon as it was available for the platforms I used (in my last job that was actually Windows, OSX and Linux). I use iPhone in preference to Android, however, though I do have an upgrade due me towards the end of the year and it&#8217;s not completely inconceivable that I might switch. For the time being at least, I&#8217;m definitely sticking with Wordpress, so I won&#8217;t get to play with Blogger, Google Analytics or AdSense, either.</p>
-
-<p>As well as dogfooding Google products at work, we also dogfood technologies and platforms. This sounds fairly obvious, but it&#8217;s not always the case with companies who create platform technology. Microsoft, for instance, used to be famous for not using the technologies they provided to developers internally, though they are getting better now. Some of Google&#8217;s technologies are open source, and thus available for everyone to use. <a href="http://code.google.com/p/google-guice/">Guice</a> and <a href="http://code.google.com/p/protobuf/">Protocol Buffers</a> are pretty good examples of this. Guice is amazing, by the way. This being the case, there&#8217;s nothing to stop me using them on personal projects, should that be appropriate. Personal projects such as Clockwork Aphid, for example.</p>
-
-<p>I&#8217;ll talk about which particular Google technologies I think might be useful in later blog posts, but since I brought it up, I suppose I should probably say something about Clockwork Aphid. I&#8217;ve blown the dust off the code, tweaked a couple of things and got a feature I&#8217;d left half finished back on track. I tried switching my current implementation from jMonkeyEngine version 2 to version 3, only to find that while it does appear a lot faster and improved in several other ways, the documentation is pretty crappy, and it&#8217;s less… functional.</p>
-
-<p>I&#8217;ll talk about that more later, but for now just know that things are once again happening.</p>
 ]]></content>
   </entry>
   
