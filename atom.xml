@@ -4,7 +4,7 @@
   <title><![CDATA[HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-06-16T18:09:26+01:00</updated>
+  <updated>2013-08-10T15:40:20+01:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[So I made an iPhone App]]></title>
+    <link href="http://www.harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app/"/>
+    <updated>2013-08-10T14:11:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app</id>
+    <content type="html"><![CDATA[<p>Various things have kept me busy and away from this blog just recently. I&#8217;ve done a bit of traveling (both for business and pleasure), I&#8217;ve discovered Netflix (and Crunchyroll), and, somewhat more productively, I followed through on what started off as my &#8220;20% time&#8221; project.</p>
+
+<p>There is, <a href="https://itunes.apple.com/app/id680739529?mt=8">right now in the iPhone App Store</a>, an app nominally <em>by Google Inc</em> which was written almost entirely by my own good hands. Obviously I wasn&#8217;t entirely a one man band in this. I had a lot of help from designers and UX people, my code was reviewed by those who were available to do so, and I had support at the product management level. I also had a very understanding manager who was willing to let me devote an increasing amount of my time to this.</p>
+
+<!-- More -->
+
+
+<p>The app itself is, at this point, very simple. It provides a basic overview of an AdSense account, together with couple of other reports. It looks a little bit like this, in fact:</p>
+
+<center>
+<img src="http://a1.mzstatic.com/us/r30/Purple4/v4/60/de/7c/60de7c65-6927-ae70-630a-c1c104a0113c/screen568x568.jpeg"><!-- header_img http://a1.mzstatic.com/us/r30/Purple4/v4/60/de/7c/60de7c65-6927-ae70-630a-c1c104a0113c/screen568x568.jpeg -->
+</center>
+
+
+<p>Actually getting to a place where I could get such a simple app published was not itself such a simple process, however.</p>
+
+<p>First of all I had to learn a new programming language. I&#8217;m not a complete stranger to Objective-C, <a href="http://www.harveynick.com/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/">I wrote about it before</a> in fact, but there was definitely a learning process involved. Objective-C is a bit of a strange beast. At times it behaves like C, at other times more like Ruby. It can be forgiving at times, while at others it will explode in your face without warning or explanation.</p>
+
+<p>Things which are considered fairly normal in Objective-C would be considered completely insane in most other programming languages. It&#8217;s also very, very verbose. Your method calls can quite easily stretch over eight lines. I keep joking that learning Objective-C decreased my ability to communicate in English. Too many languages in one head. At least I think I&#8217;m joking&#8230;</p>
+
+<p>I also had to learn a new platform and set of tools. UIKit is, in my opinion, a brilliant framework. As soon as you start adding something like <a href="http://nimbuskit.info/">NimbusKit</a> into the mix you&#8217;re working with really powerful tools which let you put together beautiful and incredibly smooth applications in a very natural manner. XCode, though, took a little bit of getting used to. Likewise, many of the standard build tools I&#8217;m used to working with at Google simply weren&#8217;t available to me.</p>
+
+<p>Once the app was built and tested, tweaked and ready, the next step came. The one iPhone developers seem to dread. Submitting the app to Apple for review. In my case this was fairly straight forward (if complicated by the Apple developer site&#8217;s recent downtime). The iTunes connect interface gets the job done quite well. There were no weird problems and no stonewalling.</p>
+
+<p>So there you have it. I&#8217;m officially an iOS developer. I enjoyed this and I plan to keep doing it. If you&#8217;re an AdSense user and carry an iPhone, I encourage you to <a href="https://itunes.apple.com/app/id680739529?mt=8">install the app</a> and send me feedback. If you carry an Android phone, on the other hand, I encourage you to download <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.ads.publisher">the equivalent Android app</a>, developed by my colleague Agnieszka.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[That Ad]]></title>
@@ -38,7 +71,9 @@
 </ol>
 
 
-<p>The meagre revenue I see in AdSense comes entirely from CPC and CPM. To put it into perspective: on a particularly good day, harveynick.com might have a <em>Revenue per Mille</em> (RPM, the corollary of CPM) of £0.18. That means that if I get a thousand page views, AdSense will pay me 18p. On a good day, this site gets maybe 50 page views. I get the occasional click, and the revenue from that eclipses any CPM revenue to such an extent as to make it essentially invisible. My total revenue to date is in single figures of pounds. AdSense does not, in fact, pay you until your revenue reaches the equivalent of $100.</p>
+<p>The meagre revenue I see in AdSense comes entirely from CPC and CPM. To put it into perspective: on a particularly good day, harveynick.com might have a <em>Revenue per Mille</em> (RPM, the corollary of CPM) of £0.18. That means that if I get a thousand page views, AdSense will pay me 18p. On a good day, this site gets maybe 50 page views. I should note here, though: those two definitions of &#8220;a good day&#8221; rarely line up with each other.</p>
+
+<p>I get the occasional click, and the revenue from that eclipses any CPM revenue to such an extent as to make it essentially invisible. My total revenue to date is in single figures of pounds. AdSense does not, in fact, pay you until your revenue reaches the equivalent of $100.</p>
 
 <p>So no, I&#8217;m not going to be making money off this site any time soon. That&#8217;s okay, though, because it&#8217;s not my intent and I&#8217;ve not really been trying to do so.</p>
 ]]></content>
@@ -188,7 +223,7 @@
 
 <p>At school I would collapse the ground after running the 1500m, then proceed to lay there panting and feeling my heart pounding (for some reason) in my butt cheeks. Now I usually end up running for a little under 6km on my Saturday runs, and at some point I plan to run an actual organised 5k. I think my time might actually be quite reasonable.</p>
 
-<p>I&#8217;m also going to say that I look better (naked or otherwise) than I have at any previous point in my life. This is REALLY not hard. At some point in the last ten or fifteen years I moved from the &#8220;skinny&#8221; category to the &#8220;skinny fat&#8221; category. That oh so sexy combination of podgy belly, visible ribs, pipe cleaner arms and incipient man boobs. Now I&#8217;ve gone down two waste sizes and clothes are more likely be tight around my chest than my belly. Friends have remarked that I&#8217;ve lost weight and have a bit more in the way of shoulders.</p>
+<p>I&#8217;m also going to say that I look better (naked or otherwise) than I have at any previous point in my life. This is REALLY not difficult. At some point in the last ten or fifteen years I moved from the &#8220;skinny&#8221; category to the &#8220;skinny fat&#8221; category. That oh so sexy combination of podgy belly, visible ribs, pipe cleaner arms and incipient man boobs. Now I&#8217;ve gone down two waste sizes and clothes are more likely be tight around my chest than my belly. Friends have remarked that I&#8217;ve lost weight and have a bit more in the way of shoulders.</p>
 
 <p>Brad Pitt in Fight Club I am not, but I don&#8217;t hate what I see when I look in the mirror anymore, either. There are things wrapped around my skeleton which I could describe as muscles without worrying that I might be sniggered at. Stand me next to <strike>The Rock</strike> Dwayne Johnson and I&#8217;ll still look like I&#8217;m made out of plastic spoons and low quality play dough, but I feel like I&#8217;m making progress in the right direction.</p>
 
@@ -1410,38 +1445,6 @@ For the most part, this site is stock Octopress. I&#8217;ve played with the font
 
 <p>* Such as the Harry Potter books, which I had stubbornly refused to read until just before the first film was released.<br/>
 ** Such as when I noticed that the Twilight books had taken up the first four places on the Waterstone&#8217;s chart and decided I aught to find out what all the fuss was about.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Ol' Homestead]]></title>
-    <link href="http://www.harveynick.com/blog/2011/09/11/the-ol-homestead/"/>
-    <updated>2011-09-11T16:59:41+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/09/11/the-ol-homestead</id>
-    <content type="html"><![CDATA[<p>You may or may not be aware that, though I now lived in London and previously lived in Edinburgh, I&#8217;m originally from South Yorkshire. Since I visited my parents this weekend for my father&#8217;s 60th birthday*, I though I&#8217;d take a moment to talk about a couple of Yorkshire related titbits which have crossed my mind recently.</p>
-
-<p>The first is the fact that no matter how far you go from your your roots, they have a way of inserting themselves into your life in unexpected places. The other day (or &#8220;t&#8217;other day&#8221; if we&#8217;re going to be properly Yorkshire about this) I was walking through Waterloo train station on my way to meet some friends for dinner. There&#8217;s a theatre attached to the station which is showing &#8220;The Railway Children&#8221;, and thus it has been named &#8220;The Yorkshire Theatre&#8221;. Next to the theatre is a booth organised by &#8220;Visit Yorkshire&#8221;, which is essentially the Yorkshire Tourist Board. As is often the case with these booths, it has a couple of large posters showing sights intended to entice you to… well… visit Yorkshire.</p>
-
-<!-- more -->
-
-
-<p>So far, so normal, but the beautiful yet ruined abbey in one of the pictures looked very familiar indeed. In fact, it looked a lot like the very beautiful yet ruined abbey just outside my otherwise almost entirely unremarkable home town. A little bit of Googling later and I confirmed that, sure enough, there was a great big picture of Roche Abbey sitting in Waterloo train station. See for yourself:</p>
-
-<p><img class="center" src="http://www.ntopsearch.com/media/images/f/f/ffba50d6-a214-4204-8fe8-9562dae62447/ffba50d6-a214-4204-8fe8-9562dae62447.jpg"><!-- header_img http://www.ntopsearch.com/media/images/f/f/ffba50d6-a214-4204-8fe8-9562dae62447/ffba50d6-a214-4204-8fe8-9562dae62447.jpg --></p>
-
-<p>Maltby was once a proud coal mining town, but those days are very much gone. Now it&#8217;s mostly a hub for people who commute into the surrounding larger towns and cities. There&#8217;s not a lot here. To my knowledge, not even a Starbucks or Subway. Thus, it was a pleasant surprise to see one of the local sights held up next to the Jorvic Viking Centre as one of the main attractions in Yorkshire. Go us.</p>
-
-<p>Something which is potentially less of an attraction in Yorkshire is the people. They&#8217;re not unfriendly, but but they can seem a little cold, and don&#8217;t aways warm to a person as quickly as they might. Know this, though: if I Yorkshireman calls you friend, he <em>means</em> it**. There is also strong streak on competitiveness in the Yorkshire folk, and a fierce pride in working class roots, though it feels as though this is being eroded in Yorkshire as it is everywhere in the UK. Some years ago, Monty Python sent this up almost perfectly in what I consider to be the finest comedy sketch every written:</p>
-
-<iframe src="http://www.youtube.com/embed/Xe1a1wHxTyo" width="" height="" frameborder="0" allowfullscreen></iframe>
-
-
-<p>(There&#8217;s also an alternative version <a href="http://www.youtube.com/watch?v=-eDaSvRO9xA">here</a>)</p>
-
-<p>I say best written because the performance does not, in my opinion, quite live up to the writing. The delivery is fantastic, but most of the accents aren&#8217;t quite right. But still, <em>beggars can&#8217;t me choosers</em>. Also: <em>waste not, want not</em>, and <em>close your mouth, there&#8217;s a bus coming</em>.</p>
-
-<p>* This makes me feel old, but I suspect it makes him feel older&#8230;<br/>
-** The same, of course, goes for the ladies of Yorkshire, but &#8220;Yorkshireman&#8221; scans so much better than any unisex pronoun I could think of.</p>
 ]]></content>
   </entry>
   
