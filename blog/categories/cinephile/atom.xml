@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cinephile | HarveyNick.com]]></title>
   <link href="http://www.harveynick.com/blog/categories/cinephile/atom.xml" rel="self"/>
   <link href="http://www.harveynick.com/"/>
-  <updated>2013-08-11T22:26:26+01:00</updated>
+  <updated>2013-09-16T09:12:43+01:00</updated>
   <id>http://www.harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
@@ -12,6 +12,107 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Some Thoughts on Gamification]]></title>
+    <link href="http://www.harveynick.com/blog/2013/09/14/am-i-winning/"/>
+    <updated>2013-09-14T16:01:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/09/14/am-i-winning</id>
+    <content type="html"><![CDATA[<p>If you're playing any sort of a game, the question "Am I winning?" is usually quite easy to answer. "Is my score higher than the other guy?" usually covers it (though if you're playing something like chess it might be a little more complicated than that). If you're playing a computer game the fact that your character is still alive may well be enough to settle this question in your favour.</p>
+
+<p>In life, though, it is a much harder question to answer. It may well be true that, to the healthy mind, it's not something which should ever really matter, but <a href="http://harveynick.com/blog/2013/05/06/do-you-even-lift/">as noted before</a>, gamification works really (embarrassingly) well for me.</p>
+
+<p>I suspect that deep down most people have their own ways of keeping score. Their bank balance. Their air miles account. How far they ran today. More abstract things, such as their perceived quality of the of the photos they took this weekend, leaning to less abstract things, actual scores, such as might be gleaned from <a href="https://www.fitocracy.com/">Fitocracy</a> or <a href="https://foursquare.com">Foursquare</a>.</p>
+
+<!-- More -->
+
+
+<p>Life is not a computer game, but even so it's nice to have a way of tracking your progress. I'll say it again: gamification works really well for me. As a result, I found myself looking to games directly for inspiration. If you haven't picked up on this already: this is going to be quite the nerdy blog post. You have been warned.</p>
+
+<p>In a certain kind of game, it's quite common to not only have a single main score (usually called something like "experience points"), but also a set of attributes which describe the capabilities of your character.</p>
+
+<p>If we go right back the main influence for a lot of these sort of games (Dungeons and Dragons, though I'll be drawing from <a href="http://paizo.com/pathfinder">Pathfinder</a>, a alternative modern implementation) we find six main attributes:</p>
+
+<ul>
+<li><em>Strength</em> measures muscle and physical power;</li>
+<li><em>Dexterity</em> measures agility, reflexes, and balance;</li>
+<li><em>Constitution</em> represents your character's health and stamina;</li>
+<li><em>Intelligence</em>  determines how well your character learns and reasons;</li>
+<li><em>Wisdom</em> describes a character's willpower, common sense, awareness, and intuition;</li>
+<li><em>Charisma</em> measures a character's personality, personal magnetism, ability to lead, and appearance.</li>
+</ul>
+
+
+<p>In Pathfinder you have a score for each of these values, with a (theoretical) maximum of 18, though anything less than 10 is considered very bad. For all intents and purposes your character is born with these scores, chosen semi-randomly using dice, and has very little in the way of opportunity for improving them directly.</p>
+
+<p>Tangent: that last part has always annoyed me. In <em>D&amp;D</em> and <em>Pathfinder</em>, doing (for example) strength based activities has no effect on your strength score, and increases in strength have no connection to strength based activities your character may have performed.</p>
+
+<p>That aside, I think these are actually quite good metrics for a person to use when measuring their personal development (or less marketing speak-ey words to that effect). Here are some more buzz words for you (and the Google crawlers): personal analytics, the quantified self. The question then becomes one of measurement.</p>
+
+<h3>Strength</h3>
+
+<p>Strength would appear to be the easier to measure directly (and the ones which ties in most easily with many of my other posts). Basically: how much can you lift? We're looking for a single normalised value here, though, not a collection of eight absolute ones (4 "primary" barbell lifts * 2 (weight + repetitions)).</p>
+
+<p>We can transform the eight values into four quite simply using a technique similar to that employed by <a href="http://www.strstd.com/">Strength Standards</a> to turn a weight and number of reps into a single theoretical "one rep max". <a href="http://en.wikipedia.org/wiki/One-repetition_maximum#Calculating_approximate_1RM">Wikipedia provides</a> a wealth of formulas for calculating this.</p>
+
+<p>So far so good, but we still have four numbers when we need one. Adding them together won't help, since this doesn't take the weight of the individual performing the lifts into account and also assumes that all four values have the same scale. This is categorically not the case. My dead lift max is almost three times that of my shoulder press, but the latter is no less important than the former. Normalisation is required.</p>
+
+<p>The other trick Strength Standards performs is to plot your theoretical one rep max on a scale which starts at "untrained" and tops out at "elite" (which roughly translates to "Olympic Athlete"), with values selected by weight. These also happen to be not unlike those (reluctantly) <a href="http://startingstrength.com/files/standards.pdf">laid out by Mark Riptoe</a>.</p>
+
+<p>That's the key here, I think. If we make "untrained"/"Cat. I" a 10 and "elite"/"Cat. V" an 18 we end up with four normalised values. Average these and: boom. We have our score for strength, I think.</p>
+
+<p>This doesn't completely prevent a decent squat from compensating for a terrible bench press (like in my case), but it does mitigate the effect somewhat. That said: I am prepared to admit that a more fair measure might cap the total at some value measured from the weakest of the four. We'll see. Also, the rate at which this should decay presents an additional complication here, for reasons I'm not going to go into, but might in another post.</p>
+
+<p>The other five values are not as easy as all that. Rather than actually get into the nitty gritty of those here, I'll instead discuss what I think if the right approach and possibly revisit them later.</p>
+
+<h3>Dexterity</h3>
+
+<p>Dexterity, I have to confess, has me almost completely flummoxed. How do you measure agility or aim in a way which can actually be reflected in everyday life? If you're a member of a gun or archery club, then problem solved. Maybe. Otherwise I'm not so sure. Likewise, if you study a martial art I think that probably counts as "Dexterity"… but how do you compare <a href="http://en.wikipedia.org/wiki/Kendo">Kendo</a> to <a href="http://en.wikipedia.org/wiki/Krav_Maga">Krav Maga</a>?</p>
+
+<h3>Constitution</h3>
+
+<p>Constitution would appear to be a little more straightforward. This is a measure of what your body can take. Have far can you run, cycle or swim? How long does it take you? How many press/chin/pull ups can you do (maybe)? Perhaps even steps taken (I'm looking at you <a href="http://www.fitbit.com/uk">Fitbit</a> / <a href="https://jawbone.com/up">Jawbone Up</a> / <a href="http://www.nike.com/cdp/fuelband/us/en_us/">Nike+ Fuelband</a> / <a href="http://www.withings.com/en/pulse">Withings Pulse</a>)? What I don't have yet is the metric to fuse this all together.</p>
+
+<h3>Intelligence</h3>
+
+<p>There is, of course, a fairly standard method of measuring intelligence. Dropping in "IQ test" here and saying "job done," would definitely be the simplest solution. For an alternative proposal, though, I will defer to a good friend of mine. Tyrion Lannister.</p>
+
+<p><blockquote><p>“My brother has his sword, King Robert has his warhammer and I have my mind… and a mind needs books as a sword needs a whetstone if it is to keep its edge.”</p><footer><strong>Tyrion Lannister</strong> <cite>George R.R. Martin's a Game of Thrones</cite></footer></blockquote></p>
+
+<p>So then, perhaps this measure could actually relate to rate of reading. Whether this should be measured in terms of books, pages or words I'm not sure yet. These get increasingly accurate… and increasingly faffy* to measure. Another thing to consider is whether all books are created equal. I don't want to get (too) pretentious here, but I'm inclined to consider some books… more beneficial to improving one's mind than others. Yes, I enjoyed the hell out of the Da Vinci Code, and I don't care who knows it, but I was (if anything) less intelligent after I finished reading it.</p>
+
+<p>It's also not clear to me whether this category should include consumption of movies. What about plays? Magazines? Articles on the Web? Perhaps even TV shows (Breaking Bad <em>yes</em>, X Factor <em>no</em>)?</p>
+
+<h3>Wisdom</h3>
+
+<p>Wisdom is quite nebulous as presented here. The willpower part of it would tend suggest some sort of measure of personal discipline. How well you keep to your diet, how consistently you exercise (perhaps this category is where the step trackers fit).</p>
+
+<p>For me, though, wisdom suggests experience and I'm inclined to connect that to travel. On the wall of my flat is a map with pins pushed in for each of the countries (or cities in the case of the big ones) I've visited. This is the sort of thing I'm thinking of. Pins on a map. Stamps in a passport. These are a bit on the analogue side though, and this is the digital age, baby. Besides, EU countries don't stamp my bloody passport anymore. I'm inclined to point towards services such as <a href="https://foursquare.com">Foursquare</a> and <a href="http://en.fogofworld.com/">Fog of World</a> when it comes to measuring things like this.</p>
+
+<p>The former divvies everything up nicely and gives you lots of other ways of measuring experience ("Your first Korean Restaurant!"), while the latter gives you an actual percentage of the world which you've explored. Obviously this only works if you keep the app running (so say goodbye to your battery life) or manually input tracks from an external GPS (faff!), and is also guaranteed to be a distressingly small number which grows at an almost imperceptible rate.</p>
+
+<p>Again, there is a ghost of the potential for a metric here.</p>
+
+<h3>Charisma</h3>
+
+<p>Charisma is similarly nebulous. I refuse to declare this a measure of how sexy a person is. A don't even know how we would go about measuring that anyway (selfies placed on Hot or Not?** Maybe not…). Instead I'd be inclined to make it a counterpart to intelligence, in a similar way that strength is essentially a counterpart to constitution: The first a measure of what you put out, the second a measure of what you take in… and my suggestion for intelligence was a measure of the creative work a person takes in.</p>
+
+<p>So then: I suggest a measure of charisma related to a person's creative output. Words written. Content produced and published. This could be in terms of your blog, the novel you've been working on or that personal coding project. An additional measure for this could be how much others actually engage with the content you produce. In the case of anything web based <a href="http://www.google.com/analytics/">Google Analytics</a> (and similar) make a good way of measuring this, I think. The others would be somewhat harder to measure directly.</p>
+
+<h3>Lastly</h3>
+
+<p>Something you might have noticed here: that first one was quite easy to map onto the Dungeons and Dragons 0-18 scale; the others  not so much. They're much harder to calibrate and, in some cases, quantify. Some might only work as qualitative measures, in fact.</p>
+
+<p>But then, as you might have guessed, I'm really thinking out loud here. These ideas are only half baked, but who doesn't love the smell of half finished baking?</p>
+
+<br/>
+
+
+<p>* Perhaps you need to Google this word. Know this: <a href="http://www.urbandictionary.com/define.php?term=faffy">Urban Dictionary</a> is wrong on every count, at least for the meaning I'm assigning to it. <a href="http://www.collinsdictionary.com/submission/2/faffy">Collins Online Dictionary</a> gets it spot on.</p>
+
+<p>** News Flash! <a href="http://hotornot.com/">Hot or Not</a> is still a thing!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Categories and Goals]]></title>
@@ -165,19 +266,6 @@ For the most part, this site is stock Octopress. I've played with the fonts, mad
 <p>* For the record: conversation with my coworkers has revealed to me that had I done so, I could simply have told them I was listening to a bit of Queen and this otherwise odd behaviour would have become at least marginally understandable.</p>
 
 <p>** Yes, the first one. It has a wonderful lightness of touch and flow, which, though it doesn't excuse the film's complete lack of a third act, does make it very dear to me.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Who Likes Short Shorts?]]></title>
-    <link href="http://www.harveynick.com/blog/2011/08/24/who-likes-short-shorts/"/>
-    <updated>2011-08-24T11:38:07+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/08/24/who-likes-short-shorts</id>
-    <content type="html"><![CDATA[<p>I think I love almost everything about this short film. That being the case, I'll quit my chin wagging and just get on with showing it:</p>
-
-<p><iframe src="http://www.youtube.com/embed/4drucg1A6Xk" width="" height="" frameborder="0" allowfullscreen></iframe></p>
-
-<p>Mucho kudos to Dan Trachtenburg, Danielle Rayne, and everyone else envolved. No get back to it. I want more!</p>
 ]]></content>
   </entry>
   
