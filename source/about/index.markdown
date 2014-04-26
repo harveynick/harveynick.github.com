@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "A Little Bit More"
-date: 2012-01-28 13:23
+title: "about"
+date: 2012-07-24 03:16
 comments: false
 sharing: false
-footer: true
+footer: false
 ---
-This is the person blog of Dr. Nick Johnson PhD.
+Sample!
