@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Call by the What Now? - HarveyNick.com</title>
+  <meta name="author" content="Nick Johnson">
+
+  
+  <meta name="description" content="Some not work related computery bits and pieces have been percolating around my head for some time now. I think we should talk about them for a while &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.harveynick.com/blog/2009/02/24/call-by-the-what-now">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="http://feeds.feedburner.com/Harveynick" rel="alternate" title="HarveyNick.com" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28082281-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">HarveyNick.com</a></h1>
+  
+    <h2>Something nerdy this way comes.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/Harveynick" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.harveynick.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Call by the What Now?</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-02-24T23:40:04+00:00" pubdate data-updated="true">Feb 24<span>th</span>, 2009</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://www.harveynick.com">Comments</a>
+        
+        
+          
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Some not work related computery bits and pieces have been percolating around my head for some time now. I think we should talk about them for a while. That is: I&rsquo;ll talk. You listen.</p>
+
+<p>I&rsquo;m probably going to write a couple of more techy blogs, all loosely interrelated. I am going somewhere with them, but I&rsquo;m not entirely certain as to how much of this journey I will share with you.</p>
+
+<!-- more -->
+
+
+<p>First of all, I&rsquo;m going to talk about the fairly simple computer related concept of &ldquo;Call by reference&rdquo; versus &ldquo;Call by value&rdquo;. This is fairly basic computer science (though I wish they&rsquo;d taught it properly earlier on in my course). It&rsquo;s possible (probable, even) that this example (or variations of it) has been used a thousand times before. I&rsquo;m not going to go look for one (or the absence of one), I&rsquo;m just going to write down my own particular take on it. I assure you that any plagiarism I&rsquo;m about to commit is in no way deliberate. So, without further ado&hellip;</p>
+
+<p>Let&rsquo;s say you want to send a specific piece of information to someone via email. Let&rsquo;s say it&rsquo;s part of today&rsquo;s featured article on Wikipedia (William I of Orange, at the time of writing). In today&rsquo;s connected digital world, you have too main options. First of all, you could send them the information itself, like so:</p>
+
+<blockquote><p>William was born in the castle of <a href="http://en.wikipedia.org/wiki/Dillenburg">Dillenburg</a> in <a href="http://en.wikipedia.org/wiki/Nassau_(duchy">Nassau</a>), present-day <a href="http://en.wikipedia.org/wiki/Germany">Germany</a>. He was the eldest son of <a href="http://en.wikipedia.org/wiki/William_I,_Count_of_Nassau-Dillenburg">William, Count of Nassau</a> and <a href="http://en.wikipedia.org/wiki/Juliana_of_Stolberg">Juliana of Stolberg-Werningerode</a>, and was raised a <a href="http://en.wikipedia.org/wiki/Lutheran_Church">Lutheran</a>. He had four younger brothers and seven younger sisters: <a href="http://en.wikipedia.org/wiki/Johan_of_Nassau">John</a>, Hermanna, <a href="http://en.wikipedia.org/wiki/Louis_of_Nassau">Louis</a>, <a href="http://en.wikipedia.org/w/index.php?title=Mary_of_Nassau&amp;action=edit&amp;redlink=1">Mary</a>, Anna, Elisabeth, Katharine, Juliane, Magdalene, <a href="http://en.wikipedia.org/wiki/Adolf_of_Nassau">Adolf</a> and <a href="http://en.wikipedia.org/wiki/Henry_of_Nassau-Dillenburg">Henry</a>.</p></blockquote>
+
+<p>There are several things your recipient can do with this. They can read it. They can edit it, but this will only edit their local copy. The original remains unchanged. If they want to request that a change be made, they can, however, edit it and send it back to you. This is &ldquo;calling by value.&rdquo;</p>
+
+<p>Your second option is to send them a link to the information:</p>
+
+<blockquote><p><a href="http://en.wikipedia.org/wiki/William_I_of_Orange#Early_life">http://en.wikipedia.org/wiki/William_I_of_Orange#Early_life</a></p></blockquote>
+
+<p>This, again, allows them to read it. They have to follow the link to the information it points to first, though. This time, if they make an edit (this being wikipedia) they actually are changing the original copy. They can also see what other information is around it, and if they feel so inclined they can change that is well. You might consider this to be an undesirable consequence. This method has the aditional advantage, however, that you did not have to take the time and effort to make a copy, and the amount of information you had to actually send is significantly smaller. This is &ldquo;calling by reference.&rdquo;</p>
+
+<p>If you deal with this sort of thing on a day to day basis, you may well be aware that when you do this sort of thing in a computer program you have another option. You can send a constant reference, which would be analagious to sending a link to a website the recipient has no write access to. For example:</p>
+
+<blockquote><p><a href="http://www.britannica.com/EBchecked/topic/644041/William-I">http://www.britannica.com/EBchecked/topic/644041/William-I</a></p></blockquote>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">harveynick</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-02-24T23:40:04+00:00" pubdate data-updated="true">Feb 24<span>th</span>, 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/hacker/'>Hacker</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2009/01/13/serendipitous-nostalgia/" title="Previous Post: Serendipitous Nostalgia">&laquo; Serendipitous Nostalgia</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2009/02/26/spending-to-make/" title="Next Post: Spending to make...">Spending to make... &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About This Blog</h1>
+  <p>A blog about hacking, food, movies, books, music, and whatever else happens to pop into my head.</p>
+</section>
+<section>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Blog Sidebar -->
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:200px;height:200px"
+       data-ad-client="ca-pub-5573133722944342"
+       data-ad-slot="3775287017"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/27/is-it-that-time-again/">Is It Time to Change Blogs Again?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/14/am-i-winning/">Some Thoughts on Gamification</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/11/whilst-not-running-in-australia/">Whilst Not Running in Australia (With Photos!)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/10/so-i-made-an-iphone-app/">So I Made an iPhone App</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/16/that-ad/">That Ad</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/21/further-watching-and-reading/">Further Watching and Reading</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/19/barbell-training-follow-up/">Barbell Training Follow Up</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs/">A (Very) Rough Guide to Beginners' Barbell Training Programs</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/06/do-you-even-lift/">Do You Even Lift, Bro?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/05/the-wheel-weaves-as-the-wheel-wills/">The Wheel Weaves as the Wheel Wills</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("harveynick", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/harveynick" class="twitter-follow-button" data-show-count="false">Follow @harveynick</a>
+  
+</section>
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/103951349449629293779?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Nick Johnson -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'harveynick-com';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.harveynick.com/blog/2009/02/24/call-by-the-what-now/';
+        var disqus_url = 'http://www.harveynick.com/blog/2009/02/24/call-by-the-what-now/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

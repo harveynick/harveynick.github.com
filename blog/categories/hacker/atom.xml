@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Hacker | HarveyNick.com]]></title>
+  <link href="http://www.harveynick.com/blog/categories/hacker/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2014-04-27T15:27:48+01:00</updated>
+  <id>http://www.harveynick.com/</id>
+  <author>
+    <name><![CDATA[Nick Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[So I Made an iPhone App]]></title>
+    <link href="http://www.harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app/"/>
+    <updated>2013-08-10T14:11:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app</id>
+    <content type="html"><![CDATA[<p>Various things have kept me busy and away from this blog just recently. I&rsquo;ve done a bit of traveling (both for business and pleasure), I&rsquo;ve discovered Netflix (and Crunchyroll), and, somewhat more productively, I followed through on what started off as my &ldquo;20% time&rdquo; project.</p>
+
+<p>There is, <a href="https://itunes.apple.com/app/id680739529?mt=8">right now in the iPhone App Store</a>, an app nominally <em>by Google Inc</em> which was written almost entirely by my own good hands. Obviously I wasn&rsquo;t entirely a one man band in this. I had a lot of help from designers and UX people, my code was reviewed by those who were available to do so, and I had support at the product management level. I also had a very understanding manager who was willing to let me devote an increasing amount of my time to this.</p>
+
+<!-- More -->
+
+
+<p>The app itself is, at this point, very simple. It provides a basic overview of an AdSense account, together with couple of other reports. It looks a little bit like this, in fact:</p>
+
+<center>
+<img src="http://a1.mzstatic.com/us/r30/Purple4/v4/60/de/7c/60de7c65-6927-ae70-630a-c1c104a0113c/screen568x568.jpeg"><!-- header_img http://a1.mzstatic.com/us/r30/Purple4/v4/60/de/7c/60de7c65-6927-ae70-630a-c1c104a0113c/screen568x568.jpeg -->
+</center>
+
+
+<p>Actually getting to a place where I could get such a simple app published was not itself such a simple process, however.</p>
+
+<p>First of all I had to learn a new programming language. I&rsquo;m not a complete stranger to Objective-C, <a href="/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/">I wrote about it before</a> in fact, but there was definitely a learning process involved. Objective-C is a bit of a strange beast. At times it behaves like C, at other times more like Ruby. It can be forgiving at times, while at others it will explode in your face without warning or explanation.</p>
+
+<p>Things which are considered fairly normal in Objective-C would be considered completely insane in most other programming languages. It&rsquo;s also very, very verbose. Your method calls can quite easily stretch over eight lines. I keep joking that learning Objective-C decreased my ability to communicate in English. Too many languages in one head. At least I think I&rsquo;m joking&hellip;</p>
+
+<p>I also had to learn a new platform and set of tools. UIKit is, in my opinion, a brilliant framework. As soon as you start adding something like <a href="http://nimbuskit.info/">NimbusKit</a> into the mix you&rsquo;re working with really powerful tools which let you put together beautiful and incredibly smooth applications in a very natural manner. XCode, though, took a little bit of getting used to. Likewise, many of the standard build tools I&rsquo;m used to working with at Google simply weren&rsquo;t available to me.</p>
+
+<p>Once the app was built and tested, tweaked and ready, the next step came. The one iPhone developers seem to dread. Submitting the app to Apple for review. In my case this was fairly straight forward (if complicated by the Apple developer site&rsquo;s recent downtime). The iTunes connect interface gets the job done quite well. There were no weird problems and no stonewalling.</p>
+
+<p>So there you have it. I&rsquo;m officially an iOS developer. I enjoyed this and I plan to keep doing it. If you&rsquo;re an AdSense user and carry an iPhone, I encourage you to <a href="https://itunes.apple.com/app/id680739529?mt=8">install the app</a> and send me feedback. If you carry an Android phone, on the other hand, I encourage you to download <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.ads.publisher">the equivalent Android app</a>, developed by my colleague Agnieszka.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Now We're Blogging With Photos!]]></title>
+    <link href="http://www.harveynick.com/blog/2012/04/14/now-were-blogging-with-photos/"/>
+    <updated>2012-04-14T10:42:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2012/04/14/now-were-blogging-with-photos</id>
+    <content type="html"><![CDATA[<p><em>Fair warning: this is going to be a bit of a programming heavy blog post. It&rsquo;s also going to be quite Mac specific.</em></p>
+
+<p>One of the things I wanted to change about the format of this blog was to make it more visual, specifically with pictures. This first part of this was to add pictures to the front page. There were a couple of options for doing so. I could just scan through an article, look for the first image tag and use this. Alternatively I could add a mechanism which allowed me to choose the image, in a similar manner to the way <a href="http://octopress.org/">Octopress</a> allows me to choose the except which appears on the front page. I decided to go with option two.</p>
+
+<!-- more -->
+
+
+<p>The first part of this was to modify the image tag plug-in like so:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>image_tag.rb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;module Jekyll&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="k">class</span> <span class="nc">ImageTag</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="ss">Liquid</span><span class="p">:</span><span class="ss">:Tag</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;@img = nil</span>
+</span><span class='line'><span class="sr">@header = &quot;&quot; </span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">def initialize(tag_name, markup, tokens)</span>
+</span><span class='line'><span class="sr">  attributes = [&#39;class&#39;, &#39;src&#39;, &#39;width&#39;, &#39;height&#39;, &#39;title&#39;]</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">  if markup =~ /</span><span class="p">(?</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">class</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;\</span><span class="n">S</span><span class="o">.</span><span class="n">*</span><span class="p">\</span><span class="n">s</span><span class="o">+</span><span class="p">)</span><span class="sc">?(</span><span class="p">?</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">src</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;(?</span><span class="ss">:https?</span><span class="p">:\</span><span class="o">/</span><span class="p">\</span><span class="o">/|</span><span class="p">\</span><span class="o">/|</span><span class="p">\</span><span class="n">S</span><span class="o">+</span><span class="p">\</span><span class="o">/</span><span class="p">)\</span><span class="n">S</span><span class="o">+</span><span class="p">)(</span><span class="sc">?:</span><span class="p">\</span><span class="n">s</span><span class="o">+</span><span class="p">(?</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">width</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;\</span><span class="n">d</span><span class="o">+</span><span class="p">))</span><span class="sc">?(?:</span><span class="p">\</span><span class="n">s</span><span class="o">+</span><span class="p">(?</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">height</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;\</span><span class="n">d</span><span class="o">+</span><span class="p">))</span><span class="sc">?(</span><span class="p">?</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">title</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;\</span><span class="n">s</span><span class="o">+.</span><span class="n">+</span><span class="p">)?</span><span class="o">/</span><span class="n">i</span>
+</span><span class='line'>    <span class="vi">@img</span> <span class="o">=</span> <span class="n">attributes</span><span class="o">.</span><span class="n">reduce</span><span class="p">({})</span> <span class="p">{</span> <span class="o">|</span><span class="n">img</span><span class="p">,</span> <span class="kp">attr</span><span class="o">|</span> <span class="n">img</span><span class="o">[</span><span class="kp">attr</span><span class="o">]</span> <span class="o">=</span> <span class="vg">$~</span><span class="o">[</span><span class="kp">attr</span><span class="o">].</span><span class="n">strip</span> <span class="k">if</span> <span class="vg">$~</span><span class="o">[</span><span class="kp">attr</span><span class="o">]</span><span class="p">;</span> <span class="n">img</span> <span class="p">}</span>
+</span><span class='line'>    <span class="k">if</span> <span class="sr">/(?:&quot;|&#39;)(?&amp;lt;title&amp;gt;[^&quot;&#39;]+)?(?:&quot;|&#39;)\s+(?:&quot;|&#39;)(?&amp;lt;alt&amp;gt;[^&quot;&#39;]+)?(?:&quot;|&#39;)/</span> <span class="o">=~</span> <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;title&#39;</span><span class="o">]</span>
+</span><span class='line'>      <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;title&#39;</span><span class="o">]</span>  <span class="o">=</span> <span class="n">title</span>
+</span><span class='line'>      <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;alt&#39;</span><span class="o">]</span>    <span class="o">=</span> <span class="n">alt</span>
+</span><span class='line'>    <span class="k">else</span>
+</span><span class='line'>      <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;alt&#39;</span><span class="o">]</span>    <span class="o">=</span> <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;title&#39;</span><span class="o">].</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">/&quot;/</span><span class="p">,</span> <span class="s1">&#39;&amp;amp;#34;&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;title&#39;</span><span class="o">]</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>    <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;class&#39;</span><span class="o">].</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">/&quot;/</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;class&#39;</span><span class="o">]</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">tag_name</span> <span class="o">==</span> <span class="s2">&quot;header_img&quot;</span>
+</span><span class='line'>      <span class="vi">@header</span> <span class="o">=</span> <span class="s2">&quot;&amp;lt;!-- header_img </span><span class="si">#{</span><span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;src&#39;</span><span class="o">]</span><span class="si">}</span><span class="s2"> --&amp;gt;&quot;</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>  <span class="k">super</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="vi">@img</span>
+</span><span class='line'>    <span class="s2">&quot;&amp;lt;img </span><span class="si">#{</span><span class="vi">@img</span><span class="o">.</span><span class="n">collect</span> <span class="p">{</span><span class="o">|</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="o">|</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">k</span><span class="si">}</span><span class="s2">=</span><span class="se">\&quot;</span><span class="si">#{</span><span class="n">v</span><span class="si">}</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="k">if</span> <span class="n">v</span><span class="si">}</span><span class="s2">.join(&quot;</span> <span class="s2">&quot;)}&amp;gt;</span><span class="si">#{</span><span class="vi">@header</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="s2">&quot;Error processing input, expected syntax: &lt;img class=&quot;</span><span class="o">[</span><span class="k">class</span> <span class="nb">name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">]</span><span class="s2">&quot; src=&quot;</span><span class="o">[</span><span class="n">http</span><span class="o">[</span><span class="n">s</span><span class="o">]</span><span class="ss">:/</span><span class="o">]/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">image</span><span class="s2">&quot; title=&quot;</span><span class="o">[</span><span class="n">width</span> <span class="o">[</span><span class="n">height</span><span class="o">]]</span> <span class="o">[</span><span class="n">title</span> <span class="n">text</span> <span class="o">|</span> <span class="p">\</span><span class="o">&amp;</span><span class="c1">#34;title text\&amp;#34; [\&amp;#34;alt text\&amp;#34;]]&quot; alt=&quot;[width [height]] [title text | \&amp;#34;title text\&amp;#34; [\&amp;#34;alt text\&amp;#34;]]&quot;&gt;&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;Liquid::Template.register_tag(&amp;lsquo;img&amp;rsquo;, Jekyll::ImageTag)</span>
+</span><span class='line'><span class="sr">Liquid::Template.register_tag(&amp;lsquo;header_img&amp;rsquo;, Jekyll::ImageTag)&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>This adds an <code>html</code> comment containing the image path to the page when I use <code>header_img</code> as a <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> tag name rather than the original <code>img</code>. Next I need to do something with this comment. I created an additional Liquid filter which pulls the path out and replaces it with an actual image embed:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>harveynick_filters.rb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;module HarveyNickFilters&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="c1"># Used on the blog index to split posts on the &lt;!--more--&gt; marker</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">header_image</span><span class="p">(</span><span class="n">input</span><span class="p">)</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;if input =~ /</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">!--</span> <span class="n">header_img</span> <span class="p">(?</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">src</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;(?</span><span class="ss">:https?</span><span class="p">:\</span><span class="o">/</span><span class="p">\</span><span class="o">/|</span><span class="p">\</span><span class="o">/|</span><span class="p">\</span><span class="n">S</span><span class="o">+</span><span class="p">\</span><span class="o">/</span><span class="p">)\</span><span class="n">S</span><span class="o">+</span><span class="p">)</span> <span class="o">--&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">/</span>
+</span><span class='line'>  <span class="s2">&quot;&amp;lt;img class=</span><span class="se">\&quot;</span><span class="s2">header</span><span class="se">\&quot;</span><span class="s2"> src=</span><span class="se">\&quot;</span><span class="si">#{</span><span class="vg">$~</span><span class="o">[</span><span class="s1">&#39;src&#39;</span><span class="o">]</span><span class="si">}</span><span class="se">\&quot;</span><span class="s2">/&amp;gt;&quot;</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'>  <span class="s2">&quot;&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;Liquid::Template.register_filter(HarveyNickFilters)&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Next I modified my theme to run this filter over the page contents just before the one which creates the except on the front page. I&rsquo;ll leave this as an exercise for the reader. Lastly, I needed to account for the fact that the created image could be just about any size, while I want some uniformity on the front page. Those of you playing at home will have noticed I assigned <code>header</code> as the class of the image. This allows me to control the appearance of the front page images by adding the following to the <code>sass</code> files in my theme (which are used to generate the <code>css</code>):</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>_styles.scss </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">img</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">&amp;</span><span class="nt">amp</span><span class="o">;</span><span class="nc">.header</span><span class="p">{</span><span class="na">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="na">&lt;pre&gt;&lt;code&gt;float</span><span class="o">:</span> <span class="no">left</span><span class="p">;</span>
+</span><span class='line'><span class="na">width</span><span class="o">:</span> <span class="mi">250</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'><span class="na">max-width</span><span class="o">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+</span><span class='line'><span class="na">margin-right</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'><span class="na">margin-bottom</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'><span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="na">width</span><span class="o">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="na">max-width</span><span class="o">:</span> <span class="mi">250</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span> <span class="nt">400px</span><span class="o">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="na">width</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="na">max-width</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span><span class='line'>  <span class="na">margin-right</span><span class="o">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="nt">code</span><span class="o">&gt;&lt;/</span><span class="nt">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Presto. Front page images.</p>
+
+<p>Next, I wanted to try and make it easier to include pictures which I myself have taken with an actual camera (or, more likely, my phone). There really isn&rsquo;t any problem when you&rsquo;re linking to images elsewhere on the internet, but things can get a bit stickier when you want to include your own images on an Octopress blog. One option is to use a hosted service, like Flickr or PhotoBucket, but this only works when you have an internet connection. I really love that Octopress allows me to work on my site while offline, and I didn&rsquo;t want to lose this advantage when I&rsquo;m posting pictures. Thus, I decided to just stick the images in my blog&rsquo;s images folder.</p>
+
+<p>iPhoto is pretty great for organising and sharing photos (with supported services), but definitely doesn&rsquo;t make your life easy if you want to actually get at the image files themselves. That&rsquo;s the first problem. The second is that I also want to resize them to something reasonable for my blog. Lastly I want this to be low hassle. I came to the conclusion that an <a href="http://en.wikipedia.org/wiki/AppleScript">Applescript</a> is what was required, and this is what I came up with:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>bloggify.script </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+</pre></td><td class='code'><pre><code class='applescript'><span class='line'><span class="o">&lt;/</span><span class="nv">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nv">p</span><span class="o">&gt;</span><span class="k">set</span> <span class="nv">blog_path</span> <span class="k">to</span> <span class="o">&amp;</span><span class="nv">ldquo</span><span class="err">;~</span><span class="o">/</span><span class="nv">GitHub</span><span class="o">/</span><span class="nv">octopress</span><span class="o">/</span><span class="na">source</span><span class="o">&amp;</span><span class="nv">rdquo</span><span class="err">;</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">images_path</span> <span class="k">to</span> <span class="o">&amp;</span><span class="nv">ldquo</span><span class="err">;</span><span class="o">/</span><span class="nb">images</span><span class="o">/</span><span class="nv">blog</span><span class="o">/&amp;</span><span class="nv">rdquo</span><span class="err">;</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">blog_image_path</span> <span class="k">to</span> <span class="nv">blog_path</span> <span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span> <span class="nv">images_path</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">max_width</span> <span class="k">to</span> <span class="mi">992</span><span class="o">&lt;/</span><span class="nv">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nv">p</span><span class="o">&gt;</span><span class="k">set</span> <span class="p">{</span><span class="nb">year</span><span class="p">:</span><span class="nv">y</span><span class="p">,</span> <span class="nb">month</span><span class="p">:</span><span class="nv">m</span><span class="p">,</span> <span class="nb">day</span><span class="p">:</span><span class="nv">d</span><span class="p">}</span> <span class="k">to</span> <span class="p">(</span><span class="nb">current date</span><span class="p">)</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">date_string</span> <span class="k">to</span> <span class="o">&amp;</span><span class="nv">ldquo</span><span class="err">;</span><span class="o">&amp;</span><span class="nv">rdquo</span><span class="err">;</span> <span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span> <span class="nv">y</span> <span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span> <span class="o">&amp;</span><span class="nv">ldquo</span><span class="err">;</span><span class="o">/&amp;</span><span class="nv">rdquo</span><span class="err">;</span> <span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span> <span class="nv">two_digits</span><span class="p">(</span><span class="nv">m</span> <span class="o">*</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span> <span class="o">&amp;</span><span class="nv">ldquo</span><span class="err">;</span><span class="o">/&amp;</span><span class="nv">rdquo</span><span class="err">;</span> <span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span> <span class="nv">two_digits</span><span class="p">(</span><span class="nv">d</span><span class="p">)</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">folder_path</span> <span class="k">to</span> <span class="nv">blog_image_path</span> <span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span> <span class="nv">date_string</span> <span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span> <span class="o">&amp;</span><span class="nv">ldquo</span><span class="err">;</span><span class="o">/&amp;</span><span class="nv">rdquo</span><span class="err">;</span><span class="o">&lt;/</span><span class="nv">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nv">p</span><span class="o">&gt;</span><span class="nb">do shell script</span> <span class="o">&amp;</span><span class="nv">ldquo</span><span class="err">;</span><span class="nv">mkdir</span> <span class="o">-</span><span class="nv">p</span> <span class="o">&amp;</span><span class="nv">rdquo</span><span class="err">;</span> <span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span> <span class="nv">folder_path</span><span class="o">&lt;/</span><span class="nv">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nv">p</span><span class="o">&gt;</span><span class="k">tell</span> <span class="nb">application</span> <span class="o">&amp;</span><span class="nv">ldquo</span><span class="err">;</span><span class="nv">iPhoto</span><span class="o">&amp;</span><span class="nv">rdquo</span><span class="err">;</span><span class="o">&lt;/</span><span class="nv">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nv">pre</span><span class="o">&gt;&lt;</span><span class="nv">code</span><span class="o">&gt;</span><span class="k">set</span> <span class="nv">the_photos</span> <span class="k">to</span> <span class="nv">selection</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">the_photo</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">1</span> <span class="k">of</span> <span class="nv">the_photos</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">image_path</span> <span class="k">to</span> <span class="na">image</span> <span class="na">path</span> <span class="k">of</span> <span class="nv">the_photo</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">image_name</span> <span class="k">to</span> <span class="na">name</span> <span class="k">of</span> <span class="nv">the_photo</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="nv">code</span><span class="o">&gt;&lt;/</span><span class="nv">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nv">p</span><span class="o">&gt;</span><span class="k">end</span> <span class="k">tell</span><span class="o">&lt;/</span><span class="nv">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nv">p</span><span class="o">&gt;</span><span class="k">tell</span> <span class="nb">application</span> <span class="o">&amp;</span><span class="nv">ldquo</span><span class="err">;</span><span class="nv">Image</span> <span class="nv">Events</span><span class="o">&amp;</span><span class="nv">rdquo</span><span class="err">;</span><span class="o">&lt;/</span><span class="nv">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nv">pre</span><span class="o">&gt;&lt;</span><span class="nv">code</span><span class="o">&gt;</span><span class="k">set</span> <span class="nv">current_image</span> <span class="k">to</span> <span class="nb">open</span> <span class="nv">image_path</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">image_type</span> <span class="k">to</span> <span class="nv">current_image</span>&#39;s <span class="na">file type</span>
+</span><span class='line'><span class="k">set</span> <span class="no">AppleScript</span>&#39;s <span class="no">text item delimiters</span> <span class="k">to</span> <span class="s2">&quot;/&quot;</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">image_path</span> <span class="k">to</span> <span class="nb">last</span> <span class="nb">item</span> <span class="k">of</span> <span class="nb">text</span> <span class="nb">items</span> <span class="k">of</span> <span class="nv">image_path</span>
+</span><span class='line'><span class="k">set</span> <span class="no">AppleScript</span>&#39;s <span class="no">text item delimiters</span> <span class="k">to</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'><span class="nv">scale</span> <span class="nv">current_image</span> <span class="k">to</span> <span class="na">size</span> <span class="nv">max_width</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">new_image</span> <span class="k">to</span> <span class="nv">folder_path</span> <span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span> <span class="nv">image_path</span>
+</span><span class='line'><span class="nv">save</span> <span class="nv">current_image</span> <span class="k">in</span> <span class="nv">new_image</span> <span class="k">as</span> <span class="nv">image_type</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="nv">code</span><span class="o">&gt;&lt;/</span><span class="nv">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nv">p</span><span class="o">&gt;</span><span class="k">end</span> <span class="k">tell</span><span class="o">&lt;/</span><span class="nv">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nv">p</span><span class="o">&gt;</span><span class="nb">set the clipboard to</span> <span class="nv">images_path</span> <span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span> <span class="nv">date_string</span> <span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span> <span class="o">&amp;</span><span class="nv">ldquo</span><span class="err">;</span><span class="o">/&amp;</span><span class="nv">rdquo</span><span class="err">;</span> <span class="o">&amp;</span><span class="nv">amp</span><span class="err">;</span> <span class="nv">image_path</span><span class="o">&lt;/</span><span class="nv">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nv">p</span><span class="o">&gt;</span><span class="nb">on</span> <span class="nv">two_digits</span><span class="p">(</span><span class="nv">the_number</span><span class="p">)</span><span class="o">&lt;/</span><span class="nv">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nv">pre</span><span class="o">&gt;&lt;</span><span class="nv">code</span><span class="o">&gt;</span><span class="no">return</span> <span class="p">(</span><span class="nb">text</span> <span class="o">-</span><span class="mi">2</span> <span class="nb">thru</span> <span class="o">-</span><span class="mi">1</span> <span class="k">of</span> <span class="p">((</span><span class="nv">the_number</span> <span class="o">+</span> <span class="mi">100</span><span class="p">)</span> <span class="k">as </span><span class="nc">string</span><span class="p">))</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="nv">code</span><span class="o">&gt;&lt;/</span><span class="nv">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nv">p</span><span class="o">&gt;</span><span class="k">end</span> <span class="nv">two_digits</span><span class="o">&lt;/</span><span class="nv">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nv">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Now, Applescript the programming language is completely mental and can be a complete pain in the arse to get right, but Applescript the mechanism is spectacularly powerful. You can do some serious automation with it. This script grabs the path to the currently selected photograph in iPhoto, resizes it and copies it to a folder inside my blog, generated using today&rsquo;s date to avoid duplication. Lastly, it places the location of the image on the clipboard, in the form it&rsquo;s needed.</p>
+
+<p>To use it, I enabled the scripts menu (it&rsquo;s an option in the Applescript editor) and copied the script to the iPhoto scripts folder, which will be something like <code>/Users/&lt;user&gt;/Library/Scripts/Applications/iPhoto</code>. This might be hidden by default, but you can find it via the scripts menu while in iPhoto.</p>
+
+<p>Then, all that is required is to select a photo, trigger the script, and then hit cmd-c in the post I&rsquo;m writing. Bingo!</p>
+
+<p>After getting this working, I remembered an <a href="http://arstechnica.com/apple/guides/2011/09/tutorial-os-x-automation-with-macruby-and-the-scripting-bridge.ars/2">ArsTecnica article</a> about using <a href="http://www.ruby-lang.org/en/">Ruby</a> in place of Applescript for this purpose, so I converted the script to Ruby as an exercise. This is what I came up with:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>blogify.rb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h1&gt;!/us</span><span class="n">r</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">macruby</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;framework &amp;ldquo;ScriptingBridge&amp;rdquo;&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="n">blog_path</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">~</span><span class="sr">/GitHub/o</span><span class="n">ctopress</span><span class="o">/</span><span class="n">source</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span>
+</span><span class='line'><span class="n">images_path</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">blog</span><span class="o">/&amp;</span><span class="n">rdquo</span><span class="p">;</span>
+</span><span class='line'><span class="n">max_width</span> <span class="o">=</span> <span class="mi">992</span>
+</span><span class='line'><span class="n">convert</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">convert</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;date_string = Time.now.strftime(&amp;ldquo;%Y/</span><span class="o">%</span><span class="n">m</span><span class="o">/%</span><span class="n">d</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;source_path = SBApplication.applicationWithBundleIdentifier(&amp;ldquo;com.apple.iPhoto&amp;rdquo;).selection[0].imagePath.sub(&amp;ldquo; &amp;rdquo;, &amp;ldquo;\ &amp;rdquo;)</span>
+</span><span class='line'><span class="sr">image_name = source_path.split(&amp;ldquo;/</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span><span class="o">[-</span><span class="mi">1</span><span class="o">]</span>
+</span><span class='line'><span class="n">destination_folder</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="c1">#{blog_path}#{images_path}#{date_string}&amp;rdquo;.sub(&amp;ldquo; &amp;rdquo;, &amp;ldquo;\ &amp;rdquo;)</span>
+</span><span class='line'><span class="n">destination_path</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="c1">#{destination_folder}/#{image_name}&amp;rdquo;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="n">ensure_dir_cmd</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">mkdir</span> <span class="o">-</span><span class="nb">p</span> <span class="c1">#{destination_folder}&amp;rdquo;</span>
+</span><span class='line'><span class="nb">puts</span> <span class="n">ensure_dir_cmd</span>
+</span><span class='line'><span class="nb">system</span> <span class="n">ensure_dir_cmd</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;convert_cmd = &amp;ldquo;</span><span class="si">#{</span><span class="n">convert</span><span class="si">}</span><span class="sr"> </span><span class="si">#{</span><span class="n">source_path</span><span class="si">}</span><span class="sr"> -resize </span><span class="si">#{</span><span class="n">max_width</span><span class="si">}</span><span class="sr">x2000 </span><span class="si">#{</span><span class="n">destination_path</span><span class="si">}</span><span class="sr">&amp;rdquo;</span>
+</span><span class='line'><span class="sr">puts convert_cmd</span>
+</span><span class='line'><span class="sr">system convert_cmd&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="no">IO</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">pbcopy</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">w</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;)</span><span class="o">.</span><span class="n">print</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="c1">#{images_path}#{date_string}/#{image_name}&amp;rdquo;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Ruby is a much more sensible language, and this, to me, is a lot easier to follow. I&rsquo;m fairly new to Ruby, so this might not actually be the most Ruby-ish way of doing it, mind. It should be noted that it will only work with <a href="http://www.macruby.org/">MacRuby</a>, though. You will also need <a href="http://www.imagemagick.org/script/index.php">ImageMagick</a> installed. I made this executable with a quick <code>chmod +x</code> and moved it to the iPhoto scripts folder as well, where it seems to work just fine. So now I have two options. Hopefully, someone out there finds this useful.</p>
+
+<p>Finally, to prove it works, and because it feels a little strange to not actually have any pictures in this entry: here&rsquo;s a nice shot taken at Kew Gardens (which hopefully I&rsquo;ll talk about more later):</p>
+
+<p><img class="center" src="/images/blog/2012/04/14/IMG_0442.JPG"><!-- header_img /images/blog/2012/04/14/IMG_0442.JPG --></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Origin Story, Raspberry Pi, and the ZX Spectrum]]></title>
+    <link href="http://www.harveynick.com/blog/2012/03/27/origin/"/>
+    <updated>2012-03-27T23:41:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2012/03/27/origin</id>
+    <content type="html"><![CDATA[<p>One of the fun things about working for Google is that from time to time interesting people come into the office to give talks. We had Richard Dawkins a few weeks ago, who gave an interesting if… uncompromising talk. Yesterday we had one of the founders of the <a href="http://www.raspberrypi.org/">Raspberry Pi</a> foundation. For those of you who aren&rsquo;t aware, the Raspberry Pi is an extremely small (exactly credit card sized) and cheap ($25), yet very capable computing platform. The foundation is the charity formed to produce this hardware.</p>
+
+<p>Why is a charity building computer hardware? Because there is a need for it, caused by a problem you&rsquo;re possibly not even aware of. Let me explain; for I am part of the problem. These days when I play computer games it&rsquo;s usually on my X-Box or iPhone. They make my life very easy in this regard, since I never have to worry about whether a game will actually run or not. It just works. They are essentially closed systems, though. There is a reasonably high barrier to entry if I actually want to start playing with them as a developer. Specifically: I can&rsquo;t do it on the device itself. Furthermore, the very simplicity of the device works against me in this regard, because very little action on my part is required to make it work.</p>
+
+<p>It was not always this way. Let me tell you a story.</p>
+
+<!-- more -->
+
+
+<p>When I was 9 years old (I think), my parents bought me a <em>Sinclair ZX Spectrum +2A</em> computer. It&rsquo;s highly likely those words mean nothing to you. It looked like this:</p>
+
+<p><img class="center <a" src="href="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Spectrum_128-2.png/800px-Spectrum_128-2.png">http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Spectrum_128-2.png/800px-Spectrum_128-2.png</a>"><!-- header_img href="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Spectrum_128-2.png/800px-Spectrum_128-2.png">http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Spectrum_128-2.png/800px-Spectrum_128-2.png</a> --></p>
+
+<p>Truly, it was a wondrous machine, with its 128kB of memory and complete lack of long term storage, and I was utterly thrilled with it. I&rsquo;m a nerd. Of course I was. They also bought me a joystick, and a copy of <em>Teenage Mutant Ninja Turtles</em>. To load this game, you placed the tape (yes, as in audio cassette) into the drive and hit play, having selected the right option from the machine&rsquo;s opening menu. You then wandered off for a while to let the machine screech and whine away to itself while it loaded the game. Partly for this reason I quickly tired of the game. I got others eventually, but I was a curious and easily bored child, so I started to read the manual which came with the system.</p>
+
+<p>The vast majority of this was actually a guide to programming in the version of the <a href="http://en.wikipedia.org/wiki/BASIC">BASIC</a> (Beginners' All Purpose Symbolic Instruction Code) supported by the <em>+2A</em>. I read it, and I started to tinker. The <em>Sinclair</em> gave you essentially three options after booting:</p>
+
+<ol>
+<li>Loading a program from tape;</li>
+<li>Program in +2A mode;</li>
+<li>Program in 48k mode.</li>
+</ol>
+
+
+<p>The first two are fairly straight forward, but the third was a bit of an odd beast. It emulated the older <em>ZX Spectrum 48k</em>, which looked like this:</p>
+
+<p><img class="center <a" src="href="http://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ZXSpectrum48k.jpg/800px-ZXSpectrum48k.jpg">http://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ZXSpectrum48k.jpg/800px-ZXSpectrum48k.jpg</a>"></p>
+
+<p>You might notice that there seems to be an awful lot of extra writing on those keys. This is because each key had one or more BASIC keywords bound to it. In 48k mode you couldn&rsquo;t just type your program, you have to press the right key for the keyword you were looking for. This could be fast, or it could be <em>slow</em>. Especially if your keyboard lacked this extra data.</p>
+
+<p>The <em>Spectrum</em> also had one or two other interesting quirks. For example, take a look at this screen shot from the classic <em>Treasure Island Dizzy</em>:</p>
+
+<p><img class="center <a" src="href="http://upload.wikimedia.org/wikipedia/en/4/44/Treasure_Island_Dizzy.png">http://upload.wikimedia.org/wikipedia/en/4/44/Treasure_Island_Dizzy.png</a>"></p>
+
+<p>For a start, this screen shot is showing fully more than half of the colours the <em>Sinclair</em> was capable of producing. Secondly, you might notice that there&rsquo;s something slightly odd about the distribution of these colours. Specifically: each block of 8x8 pixels contains at most two, because this was the maximum allowed. Given the limitations of the system, you had to be quite creative if you wanted to produce something worthwhile. Nevertheless, it happened. Not by me, though, because I did very little more than tinker with it.</p>
+
+<p>It did give me a feel for programming, such that I knew more or less what was expected of me when I arrived at Edinburgh University to study Computer Science, though. A course which did its level best to beat every last scrap of BASIC out of me, because BASIC, quite frankly, is a horrible language. It was a reasonable place to start, though, and it was how I started out, so I guess it wasn&rsquo;t all bad.</p>
+
+<p>Today&rsquo;s computers are clearly a lot easier to use than the <em>Spectrum</em> ever was. For the general consumer, this is a very good thing (in my opinion), because you should not need to be a software engineer to operate one any more than you should need to be a mechanic to operate a car. I don&rsquo;t own any general purpose computers which aren&rsquo;t made by Apple. As a result (I would say), operating my computer requires an extremely low amount of hassle. I don&rsquo;t need to know how it works. If I did want to do some programming, in the simplest possible case, I could follow these steps:</p>
+
+<ol>
+<li>Push &lt;CMD> + &lt;Space></li>
+<li>Type &ldquo;Terminal&lt;Enter>&rdquo;</li>
+<li>Wait a moment for the terminal to load</li>
+<li>Type &ldquo;python&lt;Enter>&rdquo;</li>
+</ol>
+
+
+<p>I can now start fiddling with the <a href="http://python.org">Python</a> programming language, which is a much better place to start than BASIC ever was. A more likely scenario is that I might have to load a couple of other programs to help me, such as a good programmer&rsquo;s text editor. The point here is that I would have to know how to get my computer in this state in the first place, though. It&rsquo;s not front and centre as soon as I turn it on. The <em>Spectrum</em> <a href="http://en.wikipedia.org/wiki/Affordance">afforded</a> programming in ways that modern computers don&rsquo;t. As a result, a curious youngster is much less likely to start tinkering with their computer than they might have been *cough* 21 years ago *cough*.</p>
+
+<p>Modern computers are very much not toys, at least not in the way a bucket of Lego bricks is. They are expensive pieces of equipment. You don&rsquo;t don&rsquo;t want kids carrying them backwards and forwards from school. Which is where the Raspberry Pi comes in. It is designed to be played with, and cheap enough that if play gets rough and the system breaks it&rsquo;s not actually that much of a big deal. It might be quite important for the economy of the UK (and perhaps your country too) that children start playing with computers again. Playing the way you can play with Lego, not the way you play with Action Man. Building things; breaking them; building them again: better.</p>
+
+<p><img class="center <a" src="href="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Raspberry_Pi_Beta_Board.jpg/800px-Raspberry_Pi_Beta_Board.jpg">http://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Raspberry_Pi_Beta_Board.jpg/800px-Raspberry_Pi_Beta_Board.jpg</a>"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New (Ish) Year, New (Ish) Blog]]></title>
+    <link href="http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog/"/>
+    <updated>2012-03-17T11:22:00+00:00</updated>
+    <id>http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog</id>
+    <content type="html"><![CDATA[<p>2011 was an interesting year for me. A lot changed. I turned 30. After 10 years of residency I moved away from Edinburgh, a city I love dearly, and took a job in London. With <a href="/blog/tags/google">Google</a>. As a result, I no longer work with <a href="/blog/tags/autonomous-underwater-vehicles">Autonomous Underwater Vehicles</a> for a living. Instead I build web services. Quite the change, I&rsquo;m sure you&rsquo;ll agree. In the early months of the year I finally completed the corrections to my <a href="/blog/tags/phd">PhD</a>, and then in the summer: I graduated. It took 6 years (all together) but I am now Dr. Nick Johnson. I also <a href="/blog/2011/07/18/the-sound-of-one-hand-clapping/">lost my grandmother</a>, a fact which still brings me to tears on occasion.</p>
+
+<p>In this light, the fact that I decided, towards the end of the year, to shift my blog away from <a href="http://wordpress.org">Wordpress</a> and over to its own domain barely even casts a shadow. I did, though, and as a result you&rsquo;re now reading these words on a site built using <a href="http://octopress.org">Octopress</a>, which is hosted at harveynick.com. As you may have noticed, all of the old posts from my <a href="http://harveynick.wordpress.com">wordpress site</a> have been ported over, minus the short film reviews, which you&rsquo;ll find <a href="http://ohsohumbleopinion.tumblr.com">here</a>. I&rsquo;m not going to go into how I accomplished this, except to say: I did it the same way <a href="http://mattgemmell.com/2011/09/12/blogging-with-octopress/">Matt Gemmel did</a>.</p>
+
+<!-- more -->
+
+
+<p>Surround your pullquote like this {" text to be quoted "}</p>
+
+<p>What will I be writing about though? Well:</p>
+
+<p>I plan to have <a href="/blog/tags/clockwork-aphid">Clockwork Aphid</a> actually doing something of use this year. I&rsquo;m going to enhance the current Java version up to a point where it can generate interesting landscapes efficiently and in a parallel fashion. I&rsquo;m then going to then have a crack at porting it to <a href="http://golang.org">Go</a>, which I think may turn out to be an excellent language for writing computer games.</p>
+
+<p>I like films. Perchance you may have noticed. I may chat a bit more in depth about a couple of this year&rsquo;s releases. Just to pick three with a common theme off the top of my head:</p>
+
+<ul>
+<li><strong>The Amazing Spider-Man</strong>. I went to a preview event for this in Leicester Square a month or two ago and was very impressed with what I saw. I&rsquo;m hopeful they made a Spider-Man movie in the same way that Christopher Nolan makes Batman movies. Really really.</li>
+<li><strong>The Dark Knight Rises</strong>. Speaking of which. This <em>is</em> exciting. It&rsquo;s the last of the trilogy. It&rsquo;s got a lot to live up to, especially since the last film Nolan made was <em>Inception</em>. I wouldn&rsquo;t bet against it, though.</li>
+<li><strong>The Avengers</strong>. Now here&rsquo;s a film with some scope. All these characters in one film? With this cast? Written and directed by <a href="http://en.wikipedia.org/wiki/Joss_Whedon">Joss Mother Fucking* Whedon</a>? Please, please let this film live up to the frankly stupid amount of potential it has.</li>
+</ul>
+
+
+<p>Quite recently, at the aforementioned age of 30, I started playing Dungeons and Dragons with a selection of my colleagues. Well, we&rsquo;re actually playing <a href="http://en.wikipedia.org/wiki/Pathfinder_Roleplaying_Game">Pathfinder</a>, but let us not quibble about semantics. I&rsquo;m having a really great time on several different levels. It&rsquo;s an interesting experience for someone who has played computer games for most of their life, but never dabbled in table top RPGs.</p>
+
+<p>I mentioned before that I now have a shiny new PhD, with the letters before and after my name to prove it. I&rsquo;m of the opinion that the work which led to this is quite interesting (but then I would be). It&rsquo;s also not completely divorced from my Clockwork Aphid project. I&rsquo;m of a mind to try talking about this some, also.</p>
+
+<p>See you when we get there.</p>
+
+<p>* I think these are his actual middle names.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Simplifying the Landscape]]></title>
+    <link href="http://www.harveynick.com/blog/2011/12/01/simplifying-the-landscape/"/>
+    <updated>2011-12-01T09:28:05+00:00</updated>
+    <id>http://www.harveynick.com/blog/2011/12/01/simplifying-the-landscape</id>
+    <content type="html"><![CDATA[<p>At the end of the <a href="/blog/2010/10/22/now-in-eye-popping-3d/">last post</a> I wrote about the actual implementation of my Clockwork Aphid project, I said the next step was going to be display simplification. At that point I&rsquo;d generated a few landscapes which were just starting barely starting to test the limits of my computer, though they were nothing like the size or complexity I had in mind. That said, it was looking at landscapes containing 1579008 polygons and it was obvious that not all of these needed to be put on screen. Moreover, because my landscapes are essentially made up of discrete samples (or nodes): I needed to reduce the number of samples which were displayed to the user, otherwise my performance was really going to tank as the landscapes increased in size.</p>
+
+<!-- more -->
+
+
+<p>Shamus Young talked about terrain simplification <a href="http://www.shamusyoung.com/twentysidedtale/?p=142">some time ago</a> during his original terrain project. This seemed as good a place as any to start, so I grabbed a copy of <a href="http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.14.4771">the paper</a> he used to build his algorithm. I didn&rsquo;t find it as complicated as it appears he did, but this is probably because I&rsquo;m more used to reading papers like this (I must have read hundreds during my PhD, and even wrote a couple), so I&rsquo;m reasonably fluent in academicese. It was, as I suspected, a good starting point, though I wouldn&rsquo;t be able to use the algorithm wholesale as it&rsquo;s not directly compatible with the representation I&rsquo;m using. Happily, my representation does make it very simple to use the core idea, though.</p>
+
+<p>If you <a href="/blog/2010/10/19/youre-speaking-my-landscape-baby/">remember</a>, my representation stores the individual points in a sparse array, indexed using fractional coordinates. This makes it very flexible, and allows me to use an irregular level of detail (more on that later). Unlike the representation used in the paper, this means a can&rsquo;t make optimisations based on the assumption that my data is stored in a regular grid. Thankfully, the first stage of the simplification algorithm doesn&rsquo;t care about this and examines points individually. Also thankfully, the simplification algorithm uses the same parent/child based tessellation strategy that I do.</p>
+
+<p>The first step is decide which points are &ldquo;active&rdquo;. This is essentially based on two variables:</p>
+
+<ul>
+<li>The amount of &ldquo;object space error&rdquo; a point has (i.e. how much it differs from its parents);</li>
+<li>The distance between the point and the &ldquo;camera&rdquo;.</li>
+</ul>
+
+
+<p>A local constant is also present for each point:</p>
+
+<ul>
+<li>The point&rsquo;s bounding radius, or the distance to its furthest child (if it has children);</li>
+</ul>
+
+
+<p>I&rsquo;m not sure if I actually need this last in my current implementation (my gut says no, I&rsquo;ll explain why later), but I&rsquo;m leaving it in for the time being. Finally, two global constants are used for tuning, and we end up with this:</p>
+
+<p><img class="center <a" src="href="http://harveynick.files.wordpress.com/2011/12/simplificationequation21.png">http://harveynick.files.wordpress.com/2011/12/simplificationequation21.png</a>"></p>
+
+<p>Where:</p>
+
+<ul>
+<li><em>i</em> = the point in question</li>
+<li><em>λ</em> = a constant</li>
+<li><em>ε<sub>i</sub></em> = the object space error of <em>i</em></li>
+<li><em>d<sub>i</sub></em> = the distance between <em>i</em> and the camera</li>
+<li><em>r<sub>i</sub></em> = the bounding radius of <em>i</em></li>
+<li><em>τ</em> = another constant</li>
+</ul>
+
+
+<p>This is not entirely optimal for processing, but a little bit of maths wizardry transforms this like so:</p>
+
+<p><img class="center <a" src="href="http://harveynick.files.wordpress.com/2011/12/simplificationequation31.png">http://harveynick.files.wordpress.com/2011/12/simplificationequation31.png</a>"></p>
+
+<p>This looks more complicated, and it&rsquo;s less intuitive to see what it actually does, but from the point of view of the computer it&rsquo;s a lot simpler, as it avoids the square root needed to calculate the distance between the point and the camera. Now we get to the fun part: diagrams! Consider the following small landscape, coloured as to the granularity of each of the points (aka the distance to the node&rsquo;s parents, see <a href="/blog/2010/10/22/fractal-errata/">this post</a>):</p>
+
+<p><img class="center <a" src="href="http://harveynick.files.wordpress.com/2011/12/allpoints.jpg">http://harveynick.files.wordpress.com/2011/12/allpoints.jpg</a>"></p>
+
+<p>Next, we&rsquo;ll pick some arbitrary values for the constants mentioned above (ones which work well for explanatory purposes), and place the viewpoint in the top left hand corner, and we end up with this the following active points (inactive points are hidden):</p>
+
+<p><img class="center <a" src="href="http://harveynick.files.wordpress.com/2011/12/activepoints.jpg">http://harveynick.files.wordpress.com/2011/12/activepoints.jpg</a>"></p>
+
+<p>Now, we take the active points with the smallest granularity, and we have them draw their polygons, <a href="/blog/2010/10/22/now-in-eye-popping-3d/">exactly as before</a>, which looks like this:</p>
+
+<p><img class="center <a" src="href="http://harveynick.files.wordpress.com/2011/12/smallestpolygons.jpg">http://harveynick.files.wordpress.com/2011/12/smallestpolygons.jpg</a>"></p>
+
+<p>When we come to draw the polygons of the next highest granularity you&rsquo;ll see that we have a problem, though. The previous set of polygons have encroached on their territory. To avoid this, each node informs its parents that it is active and then the parent doesn&rsquo;t draw any polygons in the direction of its active children. If we add in the polygons drawn by the each of the other levels of granularity, we now end up with this:</p>
+
+<p><img class="center <a" src="href="http://harveynick.files.wordpress.com/2011/12/filledpolygons.jpg">http://harveynick.files.wordpress.com/2011/12/filledpolygons.jpg</a>"></p>
+
+<p>Oh no! There&rsquo;s a hole in my landscape! I was actually expecting that my simplistic approach would lead to more or less this result, but it was still a little annoying when it happened. If I was a proper analytical type I would next have sat down and worked over the geometry at play here, then attempted to find a formulation which would prevent this from happening. Instead, though, I stared at it for a good long while, displaying it in various different ways, and waited for something to jump out at me.</p>
+
+<p>Eventually it did, and thankfully it was a very simple rule. Each parent stores a list of the directions in which it has active children in order to prevent overdrawing (as mentioned above). The new rule is that a node is also considered active if this list is non-empty. With this addition, our tessellated landscape now look alike this:</p>
+
+<p><img class="center <a" src="href="http://harveynick.files.wordpress.com/2011/12/backfilledpolygons.jpg">http://harveynick.files.wordpress.com/2011/12/backfilledpolygons.jpg</a>"></p>
+
+<p>Presto! A nice simple rule which fills in all of the gaps in the landscape without any over or under simplification, or any overdrawing. I suspect this rule also negates the need for the bounding radius mentioned above, though I have not as yet tested that thought. To recap, we have three simple rules:</p>
+
+<ol>
+<li> A node is active if the object space error/distance equation says it is;</li>
+<li> A node is active if any of its children are active;</li>
+<li> Polygons are tessellated for each active point, but not in the direction of any active children.</li>
+</ol>
+
+
+<p>But what does this look like in actual eye poppingly 3D landscapes? Well, here&rsquo;s an example, using the height based colouring I&rsquo;ve used before:</p>
+
+<p><img class="center <a" src="href="http://harveynick.files.wordpress.com/2011/12/simplifiedlandscape.jpg">http://harveynick.files.wordpress.com/2011/12/simplifiedlandscape.jpg</a>"><!-- header_img href="http://harveynick.files.wordpress.com/2011/12/simplifiedlandscape.jpg">http://harveynick.files.wordpress.com/2011/12/simplifiedlandscape.jpg</a> --></p>
+
+<p>I&rsquo;m quite pleased with this, though what I&rsquo;m doing here is still quite inefficient and in need of some serious tuning. There are a couple of further simplification tricks I can try (including the next step from the (paper) paper). More to come later. Honest.</p>
+]]></content>
+  </entry>
+  
+</feed>

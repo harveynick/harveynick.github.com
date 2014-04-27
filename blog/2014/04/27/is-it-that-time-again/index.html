@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>HarveyNick.com</title>
+  <title>Is It Time to Change Blogs Again? - HarveyNick.com</title>
   <meta name="author" content="Nick Johnson">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.harveynick.com">
+  <link rel="canonical" href="http://www.harveynick.com/blog/2014/04/27/is-it-that-time-again">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="http://feeds.feedburner.com/Harveynick" rel="alternate" title="HarveyNick.com" type="application/atom+xml">
@@ -75,15 +75,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/04/27/is-it-that-time-again/">Is It Time to Change Blogs Again?</a></h1>
+      <h1 class="entry-title">Is It Time to Change Blogs Again?</h1>
     
     
       <p class="meta">
@@ -101,16 +98,18 @@
 
 <time datetime="2014-04-27T00:48:20+01:00" pubdate data-updated="true">Apr 27<span>th</span>, 2014</time>
         
-           | <a href="/blog/2014/04/27/is-it-that-time-again/#disqus_thread"
-             data-disqus-identifier="http://www.harveynick.com/blog/2014/04/27/is-it-that-time-again/">Comments</a>
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://www.harveynick.com">Comments</a>
         
+        
+          
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>So you may have noticed that it&rsquo;s been a little quiet around here as of late. There are a few reasons for this. Firstly, I&rsquo;ve been stupidly busy with work and the amount of&hellip; faff involved with adding a new post using <a href="http://octopress.org">Octopress</a> has been something of a blocker.</p>
+<div class="entry-content"><p>So you may have noticed that it&rsquo;s been a little quiet around here as of late. There are a few reasons for this. Firstly, I&rsquo;ve been stupidly busy with work and the amount of&hellip; faff involved with adding a new post using <a href="http://octopress.org">Octopress</a> has been something of a blocker.</p>
 
 <p>You see, Octopress Isn&rsquo;t like Wordpress or Blogger. It doesn&rsquo;t run on a server out there in the cloud. It&rsquo;s a program and a set of files on your local machine. You create new posts as text files, then run the program. This generates a set of HTML files, which you then upload to a server. In some ways this is a lot closer to programming than regular writing.</p>
 
@@ -118,76 +117,73 @@
 
 <p>So, I got to thinking&hellip; perhaps it&rsquo;s time to look at other options. Again.</p>
 
+<!-- More -->
+
+
+<p>With this in mind I came up with a list. Who doesn&rsquo;t like lists? I want to:</p>
+
+<ul>
+<li>Write posts in markdown format. WYSIWYG editors end up being more trouble than they&rsquo;re worth, sooner or later;</li>
+<li>Own my posts. That is: I want them to be stored in a place I can see and access, not hidden away in a database;</li>
+<li>Be able to preview the final appearance of a post;</li>
+<li>Have good options for analytics. Given that I wrote <a href="https://itunes.apple.com/app/google-adsense/id680739529?mt=8">AdSense for iPhone</a>, it would be nice if AdSense was one of those options;</li>
+<li>Not have to pay the earth. I&rsquo;m not adverse to paying here&hellip; but I&rsquo;m not going to pay a lot;</li>
+<li>Be able to easily edit a post on the go. For example: If I notice a spelling or grammar error (or someone points one out to me);</li>
+<li>Have a minimum of faff involved in in creating and publishing a post;</li>
+<li>Have a clean, responsive and flexible design;</li>
+<li>Make it really easy to include an image as part of a post, or use one as a header image;</li>
+<li>Be able to time the publication of a post.</li>
+</ul>
+
+
+<p>&hellip;and here are the options I&rsquo;m looking at:</p>
+
+<h3><a href="http://octopress.org">Octopress</a></h3>
+
+<p>Basically: keep doing what I&rsquo;m doing now. The least amount of faff in the short term, but the most in the ongoing sense. It nicely hits the first five points above, storing all posts as text files in a git repository and allowing you to view a local version of the site, but misses on just about all of the others.</p>
+
+<p>In particular: if I have Internet access, I can change the site. But if I&rsquo;m not at a computer with the entire environment set up it&rsquo;s a faily annoying process, since I have to make any change in two places: the HTML and the source file.</p>
+
+<h3><a href="http://jekyllrb.com">Jekyll</a></h3>
+
+<p>You could call this diet Octopress, though actually Octopress is built on top of Jekyll. If you use this and host it on GitHub Pages (which is what I&rsquo;m already doing) some of the headaches I have with Octopress go away, namely: the need to manually regenerate the site with any change. But&hellip; it&rsquo;s also a lot less powerful. Hosting it in this way does not allow you to use any plug-ins, so some things (such as including a YouTube video as part of a post) become much more annoying.</p>
+
+<h3>Octopress plus&hellip; additional magic</h3>
+
+<p>This is probably the most hacker like of all of the options here. Thus: the one which is most likely to go horribly, horribly wrong. What I&rsquo;m talking about here is something like what is described in <a href="https://www.bitballoon.com/blog/2013/12/13/continous-deployments-for-jekyll-sites">this post</a>. Essentially: I would write the blog and post it to a git repository exactly as I have been doing all along, but rather than it then being published by GitHub Pages, the change would then be picked up by an external system, which would automatically build the website and publish it.</p>
+
+<p>Obviously this adds a lot of complication, but also combines the strength of the two options above. I would get the power and flexibility of Octopress, plus any change to the source file would result in the website being updated. GitHub actually allows you to edit a file and commit the change via their site, but this is not the only option. I might also be able to use this approach to time the publishing of posts. Maybe.</p>
+
+<h3><a href="http://www.tumblr.com">Tumblr</a></h3>
+
+<p>I&rsquo;m actually already using for my (also slightly neglected) <a href="http://ohsohumbleopinion.tumblr.com">short film reviews blog</a>. It&rsquo;s a really solid hosted blog platform, and the functionality for scheduling posts is absolutely top notch&hellip; but it just doesn&rsquo;t feel right for long form writing to me. It feels more like &ldquo;Twitter with knobs on.&rdquo;</p>
+
+<p>Still, it is worth considering.</p>
+
+<h3><a href="http://postach.io">Postach.io</a></h3>
+
+<p>This is an interesting one. The idea is that you write your posts as notes in <a href="http://www.evernote.com">Evernote</a>, and then Postach.io picks them up via the Evernote API posts them to your blog. It also seems to have functionality for <a href="http://help.postach.io/creating-posts-pages-with-dropbox">pulling posts</a> out of DrobBox in a similar fashion. In a lot of ways this sounds pretty ideal to me, especially in terms of workflow.</p>
+
+<p>See also: <a href="http://skrivr.com">Skrivr</a>, <a href="http://calepin.co">Calepin</a> and <a href="http://Scriptogr.am">Scriptogr.am</a>, all of which I&rsquo;m going to take a look at.</p>
+
+<h3><a href="https://ghost.org">Ghost</a></h3>
+
+<p>Ghost is a very interesting looking blogging platform which emerged from a recent Kickstarter Campaign&hellip; and that&rsquo;s about all I know about it so far.</p>
+
+<h3>The Plan</h3>
+
+<p>Basically: I&rsquo;m going to post this entry, another one I&rsquo;ve had in mind for a little while, the &ldquo;Whilst not running in Australia&rdquo; post and probably one other to a few of these options to find out just how painful it is. Then we&rsquo;ll see.</p>
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/04/27/is-it-that-time-again/">Read more &rarr;</a>
-    </footer>
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/09/14/am-i-winning/">Some Thoughts on Gamification</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Nick Johnson</span></span>
 
-<time datetime="2013-09-14T16:01:00+01:00" pubdate data-updated="true">Sep 14<span>th</span>, 2013</time>
-        
-           | <a href="/blog/2013/09/14/am-i-winning/#disqus_thread"
-             data-disqus-identifier="http://www.harveynick.com/blog/2013/09/14/am-i-winning/">Comments</a>
-        
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>If you&rsquo;re playing any sort of a game, the question &ldquo;Am I winning?&rdquo; is usually quite easy to answer. &ldquo;Is my score higher than the other guy?&rdquo; usually covers it (though if you&rsquo;re playing something like chess it might be a little more complicated than that). If you&rsquo;re playing a computer game the fact that your character is still alive may well be enough to settle this question in your favour.</p>
-
-<p>In life, though, it is a much harder question to answer. It may well be true that, to the healthy mind, it&rsquo;s not something which should ever really matter, but <a href="http://harveynick.com/blog/2013/05/06/do-you-even-lift/">as noted before</a>, gamification works really (embarrassingly) well for me.</p>
-
-<p>I suspect that deep down most people have their own ways of keeping score. Their bank balance. Their air miles account. How far they ran today. More abstract things, such as their perceived quality of the of the photos they took this weekend, leaning to less abstract things, actual scores, such as might be gleaned from <a href="https://www.fitocracy.com/">Fitocracy</a> or <a href="https://foursquare.com">Foursquare</a>.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/09/14/am-i-winning/">Read more &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/11/whilst-not-running-in-australia/">Whilst Not Running in Australia (With Photos!)</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -199,133 +195,46 @@
   
 
 
-<time datetime="2013-08-11T14:10:00+01:00" pubdate data-updated="true">Aug 11<span>th</span>, 2013</time>
-        
-           | <a href="/blog/2013/08/11/whilst-not-running-in-australia/#disqus_thread"
-             data-disqus-identifier="http://www.harveynick.com/blog/2013/08/11/whilst-not-running-in-australia/">Comments</a>
-        
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>In throwing up a few pictures of my trip down under in that <a href="blog/2013/04/07/running-the-first-time/">previous running related post</a>, I realised I hadn&rsquo;t really posted much else about that particular trip to the inter webs. I also realised that picking through those photos is a bit of a bad idea, because I&rsquo;d forgotten just how much I enjoyed Perth.</p>
-
-<p>I tend to say that I &ldquo;spent about 10 weeks in Australia in 2010.&rdquo; I use this slightly odd wording because I actually had two trips out there with a short break in-between. That break was partly due to logistics and also because the customer decided to finally announce they wanted me on site a little under six weeks before the single date for the entire of 2010 for which I refused to be anywhere other than St Andrews, Scotland. This was the date of a good friend&rsquo;s wedding, at which I was to be a groomsman (among the biggest honours which has ever by extended to me) and thus it was not even on the negotiating table. &ldquo;Don&rsquo;t worry,&rdquo; they said. &ldquo;Our operations calendar is such that we won&rsquo;t need you for more than a couple of weeks.&rdquo; I&rsquo;m sure you can see where this is going…</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/08/11/whilst-not-running-in-australia/">Read more &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
+<time datetime="2014-04-27T00:48:20+01:00" pubdate data-updated="true">Apr 27<span>th</span>, 2014</time>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/10/so-i-made-an-iphone-app/">So I Made an iPhone App</a></h1>
-    
-    
-      <p class="meta">
-        
 
-
-
-
-
-
-
-
+<span class="categories">
   
+    <a class='category' href='/blog/categories/blogger/'>blogger</a>
+  
+</span>
 
 
-<time datetime="2013-08-10T14:11:00+01:00" pubdate data-updated="true">Aug 10<span>th</span>, 2013</time>
-        
-           | <a href="/blog/2013/08/10/so-i-made-an-iphone-app/#disqus_thread"
-             data-disqus-identifier="http://www.harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app/">Comments</a>
-        
-        
-      </p>
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>Various things have kept me busy and away from this blog just recently. I&rsquo;ve done a bit of traveling (both for business and pleasure), I&rsquo;ve discovered Netflix (and Crunchyroll), and, somewhat more productively, I followed through on what started off as my &ldquo;20% time&rdquo; project.</p>
-
-<p>There is, <a href="https://itunes.apple.com/app/id680739529?mt=8">right now in the iPhone App Store</a>, an app nominally <em>by Google Inc</em> which was written almost entirely by my own good hands. Obviously I wasn&rsquo;t entirely a one man band in this. I had a lot of help from designers and UX people, my code was reviewed by those who were available to do so, and I had support at the product management level. I also had a very understanding manager who was willing to let me devote an increasing amount of my time to this.</p>
-
+      <div class="sharing">
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/08/10/so-i-made-an-iphone-app/">Read more &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  
-    <article>
+    
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/16/that-ad/">That Ad</a></h1>
-    
-    
-      <p class="meta">
-        
+        <a class="basic-alignment left" href="/blog/2013/09/14/am-i-winning/" title="Previous Post: Some Thoughts on Gamification">&laquo; Some Thoughts on Gamification</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-16T16:36:00+01:00" pubdate data-updated="true">Jun 16<span>th</span>, 2013</time>
-        
-           | <a href="/blog/2013/06/16/that-ad/#disqus_thread"
-             data-disqus-identifier="http://www.harveynick.com/blog/2013/06/16/that-ad/">Comments</a>
-        
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>So. There has been a small(ish) ad off to the right hand side of this blog for a couple of months now. It is as small as <a href="https://www.google.com/adsense">AdSense</a> will let me make it, though ideally I&rsquo;d prefer if it had a size not unlike those used by <a href="http://mattgemmell.com/">Matt Gemmell</a> and
-<a href="http://www.marco.org/">Marco Arment</a>. On the whole, though, it doesn&rsquo;t bother me as much as I worried it might, aside from the occasional animated flash ad.</p>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/06/16/that-ad/">Read more &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-      <a class="prev" href="/blog/page/2/">&larr; Older</a>
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -375,7 +284,7 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs/">A (Very) Rough Guide to Beginners&#8217; Barbell Training Programs</a>
+        <a href="/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs/">A (Very) Rough Guide to Beginners' Barbell Training Programs</a>
       </li>
     
       <li class="post">
@@ -392,7 +301,7 @@
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -420,6 +329,7 @@
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -434,7 +344,10 @@
       var disqus_shortname = 'harveynick-com';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.harveynick.com/blog/2014/04/27/is-it-that-time-again/';
+        var disqus_url = 'http://www.harveynick.com/blog/2014/04/27/is-it-that-time-again/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

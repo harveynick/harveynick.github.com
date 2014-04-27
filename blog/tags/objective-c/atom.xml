@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: Objective-C | HarveyNick.com]]></title>
+  <link href="http://www.harveynick.com/blog/tags/objective-c/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2014-04-27T15:27:48+01:00</updated>
+  <id>http://www.harveynick.com/</id>
+  <author>
+    <name><![CDATA[Nick Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[You're Speaking my Language, Baby. Part 4: Objective-C]]></title>
+    <link href="http://www.harveynick.com/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/"/>
+    <updated>2010-10-12T12:00:01+01:00</updated>
+    <id>http://www.harveynick.com/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c</id>
+    <content type="html"><![CDATA[<p>The last language I&rsquo;m considering is <strong>Objective-C</strong>. I know this language the least of three. To make matters worse, while Java and C++ share a similar syntax, Objective-C is completely different in places. That being said, it&rsquo;s semantically very similar to Java (more so than C++) and people who know it well speak very highly of it. i.e. it does not appear to be anywhere near as broken as C++. The language itself has some dynamic capability built in, but also has all of the additional dynamic options available to C++ (more on that later) and an excellent Ruby implementation which sits directly on top of the Objective-C runtime (<a href="http://www.macruby.org/">MacRuby</a>).</p>
+
+<!-- more -->
+
+
+<p>In general, Objective-C should be faster than Java, but not as fast as C++. It doesn&rsquo;t use a virtual machine, but it does have a minimal run time which is used to implement the more dynamic message passing paradigm it uses in place of standard message calls between objects. It also has optional garbage collection, allowing you to make a choice between stability and performance when you need to (i.e. you can get the code working and worry about the memory allocation later). It&rsquo;s also able to leverage all of the power of both the <a href="http://llvm.org/">LLVM</a> back end and the newer <a href="http://clang.llvm.org/">Clang</a> front end, which C++ currently can&rsquo;t.</p>
+
+<p>While there aren&rsquo;t a lot of directly relevant tools available for Objective-C itself, it is able to directly use any code or library written in either C or C++. No problems there, then.</p>
+
+<p>It&rsquo;s the last metric which is the kick in the teeth fot Objective-C, though. In short: no one really uses it unless they&rsquo;re programming for an Apple platform. As a result, unless you&rsquo;re programming specifically for either OSX or iOS you&rsquo;ll loose out on a lot of frameworks. Objective-C is a first class language in the Gnu Compiler Collection (GCC), so it can be deployed easily enough under Linux (minus a lot of the good frameworks). This is not the case under windows, however, where there doesn&rsquo;t seem to be any good deployment options. I have no problem ignoring Windows, but directly precluding it would appear to be somewhat foolhardy when building a piece of technology related to computer games. It wouldn&rsquo;t be too much of a problem if I was only doing this as an academic exercise, but I actually have delusions of people using it.</p>
+]]></content>
+  </entry>
+  
+</feed>

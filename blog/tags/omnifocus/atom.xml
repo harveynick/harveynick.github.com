@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: Omnifocus | HarveyNick.com]]></title>
+  <link href="http://www.harveynick.com/blog/tags/omnifocus/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2014-04-27T15:27:48+01:00</updated>
+  <id>http://www.harveynick.com/</id>
+  <author>
+    <name><![CDATA[Nick Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[What todo?]]></title>
+    <link href="http://www.harveynick.com/blog/2010/10/28/what-todo/"/>
+    <updated>2010-10-28T11:00:08+01:00</updated>
+    <id>http://www.harveynick.com/blog/2010/10/28/what-todo</id>
+    <content type="html"><![CDATA[<p>The return train ride after a visit to my parents' house is, if anything, more pleasant that the outward journey. This is not least, of course, because it ends in Edinburgh, rather than <em>Doncaster</em>*. Be that as it may, this is perhaps a good time to pick up the thought I left hanging at the end of my <a href="http://harveynick.wordpress.com/2010/10/26/the-journey-home/">last entry</a>, in which I talked a little about ways of keeping notes and writing down ideas. Having dealt with information, we now come to action. From stasis, to process. Less obliquely: what, exactly, are you going to do about those ideas?</p>
+
+<p>For the longest time I never kept todo lists. I tried to keep my goals and the individual steps required to reach them inside my head. Sometimes this worked quite well; thoughts are things which are simple to rearrange and update as requirements change, after all. Other times, not so much. In short: I forgot things.</p>
+
+<!-- more -->
+
+
+<p>My first attempt at organising these things was quite simple. I wrote a todo list down in my lab book. Paper is always I good place to start for a lot of things. Simple is generally a good place to start, also. I&rsquo;d say this worked almost flawlessly on the occasions when I finished every item on the todo list I wrote on a particular morning by the end of that day. The problem appears on the days when this doesn&rsquo;t happen. You don&rsquo;t always carry out the tasks in the order you wrote them down, because that doesn&rsquo;t always make sense, and there&rsquo;s no way to rearrange the order of the items short of rewriting the list (yeah, right). As result, you end up with a partially completed list to be carried over to the next day. Worse still, often times a single item will subdivide into numerous smaller tasks when you come to take a closer look at it. So now you have two lists on different pages of your book, with some miscellaneous notes (and quickly jotted down take-away orders) separating them.</p>
+
+<p>Version 2 worked a lot better, and I still use it from time to time. Basically, you write each item down on a post-it note (the 2.5*7.5cm ones are ideal, though a little hard to find) and stick it on a flat surface close to where you work. You&rsquo;re then free to re-arrange them to you hearts content and, best of all, when you finish an item you get to take it down, screw it up into a little ball, and throw it in the bin. Very satisfying. Take <em>that</em> todo list! Obviously this isn&rsquo;t as mobile as version one, though you can pull the post-its down and stick them in a book to take with you. If you always work in the same place it&rsquo;s pretty great though. It&rsquo;s also fairly obvious, so apologies if I&rsquo;m not telling you anything new here.</p>
+
+<p>What version 2 doesn&rsquo;t do is allow you to easily add things wherever you are, share your todo lists, or integrate into your more everyday todo type scenarios. In particular, I do not recommend using this approach for shopping lists. That isn&rsquo;t going to work. As a result, I started looking at more computer based approaches (surprise, surprise). I gave <a href="http://www.rememberthemilk.com/">Remember The Milk</a> a try for a while, but the browser based approach doesn&rsquo;t work for me. I like applications to integrate with my desktop.</p>
+
+<p>This was around the time that the brilliant <a href="http://www.omnigroup.com/">OmniGroup</a> announced <a href="http://www.omnigroup.com/products/omnifocus/">OmniFocus</a>. I already use (and <em>love</em>) <a href="http://www.omnigroup.com/products/omnioutliner/">OmniOutliner</a> and <a href="http://www.omnigroup.com/products/omnigraffle/">OmniGraffle</a>, so this looked like a pretty good bet. Plus they later announced that an <a href="http://www.omnigroup.com/products/omnifocus_for_iphone/">iPhone version</a> was coming as well. Perfect, or so I thought. As it turned out, I much prefer Cultured Code&rsquo;s <a href="http://culturedcode.com/things/">Things</a>, however. It is, quite frankly, the desktop todo manager of my dreams. It&rsquo;s Mac only though, which doesn&rsquo;t help me if I think of something at the office, or on the bus. Fortunately, there are also <a href="http://culturedcode.com/things/iphone/">iPhone</a> and <a href="http://culturedcode.com/things/ipad/">iPad</a> apps available, which are equally sweet. They like one crucial feature, though: web sync. Sure, I can sync them over wireless, but this is much less use to me. I have to actively do it, rather than just fire up the application and wait for the magic to happen. It&rsquo;s on the <a href="http://culturedcode.com/status/">road map</a>, but I&rsquo;m still waiting. Side note: OmniGraffle does have web sync, but I don&rsquo;t like it as much, and it&rsquo;s a lot more expensive. It might be perfect for your needs, however.</p>
+
+<p>Which brings me sort of full circle, to my shiny new Clockwork Aphid project. At this point I&rsquo;ve mostly just been implementing things as the mood takes me, maybe planning a couple of steps ahead. I probably need a bit more structure than that. The post-it note and Things based approaches both have their benefits, but their are a couple other things to take into consideration. First of all, I&rsquo;m using the fabulous <a href="http://bitbucket.org/">BitBucket.org</a> to host my source code, and that come with a handy <a href="http://bitbucket.org/harveynick/clockworkaphidjava/issues?status=new&amp;status=open">issue tracker</a>. Especially handy should anyone else join the project once it get a little bit more fleshed out. Another interesting possibility is the <a href="http://www.eclipse.org/mylyn/">Mylyn</a> plug-in for eclipse (my code editor of choice), which provides you with a &ldquo;task based interface.&rdquo; In other words, it hides the clutter and shows you only the parts of your project you need to care about for the particular task you&rsquo;re working on. That&rsquo;s quite interesting, but works best when you link it up to a central issue tracker. Frustratingly, it doesn&rsquo;t work with the BitBucket issue tracker. It does work with <a href="http://www.atlassian.com/">Atlasian&rsquo;s</a> Jira, however, and Atlasian <a href="http://blog.bitbucket.org/2010/09/29/bitbucket-joins-atlassian/">recently acquired</a> BitBucket, so hope is not lost.</p>
+
+<p>These approaches are clearly better tailored to what I&rsquo;m actually doing, but neither is as user friendly as either the post-its or Things, especially when it comes to adding new tasks, and that&rsquo;s the bit you need to do quickly, brain-dump style. The search continues&hellip;</p>
+
+<p>I, of course, welcome any alternative todo list solutions you&rsquo;d like you leave in the comments. &lt;subliminal>Please comment on my blog.&lt;/subliminal></p>
+
+<ul>
+<li>Know this: no written text, regardless of italicisation, can accurately reproduce the tone of my voice when I say the word &ldquo;Doncaster.&rdquo;</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

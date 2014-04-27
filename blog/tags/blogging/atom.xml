@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: Blogging | HarveyNick.com]]></title>
+  <link href="http://www.harveynick.com/blog/tags/blogging/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2014-04-27T15:27:48+01:00</updated>
+  <id>http://www.harveynick.com/</id>
+  <author>
+    <name><![CDATA[Nick Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Process and the Platform]]></title>
+    <link href="http://www.harveynick.com/blog/2011/06/03/the-process-and-the-platform/"/>
+    <updated>2011-06-03T05:24:55+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/06/03/the-process-and-the-platform</id>
+    <content type="html"><![CDATA[<p>The effort required to actually publish that <a href="http://harveynick.wordpress.com/2011/06/03/in-which-i-go-full-nerd-2/">last post</a> was&hellip; considerable. Several factors contributed to this:</p>
+
+<ul>
+<li>I have slow internet access at my hotel;</li>
+<li>Currently, my only (full) computer is my work laptop;</li>
+<li>This doesn&rsquo;t have iPhoto installed (this is mostly for reasons of simplicity, I&rsquo;d probably get it if I asked).</li>
+</ul>
+
+
+<p>In the end, I wrote the text of the post in Evernote on my iPad (using an external keyboard), since I&rsquo;m supposed to install an absolute minimum of third party software on the laptop. Next, I did a copy paste into BlogPress, a blogging app which lets you insert images inline. In theory the official WordPress app also does this, except that the upload always fails for me. As you may have gathered, I inserted the images here. This also rescales them, so you don&rsquo;t need to upload all 12 megapixels. Next, I uploaded it to my actual blog as a draft, and used the web interface to fix any formatting errors and add any extra formatting, since BlogPress doesn&rsquo;t allow bold or italic text (that I&rsquo;ve found). That done, I hit the publish button, and: presto!</p>
+
+<!-- more -->
+
+
+<p>Needless to say, this is not an ideal workflow. I like using Evernote for writing the actual text (on both iPad and Mac) because it has about the right amount of functionality and it backs everything up and synchronises it between all of my devices. I like having that always available record which I can look back over and search as I see fit. I also like being able to drop one device, pick up another and keep working on the same document more or less seamlessly.</p>
+
+<p>Digression: I also like that I can use it as a permanent record of my notes. Before I moved down to London I was part way through scanning my notebooks from my PhD into Evernote. Evernote runs OCR on the images, finds the text (when my handwriting makes this feasible) and make it searchable. Brilliant. It&rsquo;s like being able to carry all of my old note books around with me, all of the time.</p>
+
+<p>What Evernote doesn&rsquo;t allow you to do is freely mix text and images, however. The WordPress interface does (obviously), but that leaves me with the problem of uploading the images. This is where the low bandwidth and lack of iPhoto were became problems. I suspect the cleanest workflow would be to immediately upload an album to Flickr (or other photo sharing site) and then use the appropriate URL to include the image in the blog post. Searching through the iPhoto library manually sure as hell isn&rsquo;t ideal, and that&rsquo;s the only real option for doing it image by image in the web interface.</p>
+
+<p>The most pleasant experience I&rsquo;ve had for putting together blog posts with both text and pictures was actually iWeb, and by a metric mile. iWeb uses the built in OSX controls and lets you select images according to meta-data and what they look like, rather than their file name, as though you were working with a file system specifically designed for serving you images. The iPad does more or less the same thing, in fact, so that part wasn&rsquo;t actually too bad. Using iWeb leaves you with very limited options for your blog, however. It&rsquo;s made me think I should look at using a dedicated program, such as <a href="http://www.red-sweater.com/marsedit/">MarsEdit</a>, for writing my posts, or at least for the final stages.</p>
+
+<p>Ideally, I need to find a decent workflow, which doesn&rsquo;t break down when I&rsquo;m away from home and likely to actually have semi interesting things to blog about, but doesn&rsquo;t restrict me when I am at home. Ideally, it should allow me to jump between different machines with a minimum of effort, and not require me  to always add the final touches from the same machine. The workflow should also not break down when no internet connection is available. Text is fairly easy. Images make things more difficult, especially if the images were recorded using my own camera.</p>
+
+<p>Lastly, I&rsquo;m giving some consideration to porting this blog over to Blogger (only if I can transfer all of my posts and comments, however). It&rsquo;s not a coincidence that I now work for the company responsible for Blogger&rsquo;s infrastructure. Becoming more familiar with that platform can only really be a good thing for me here. Blogger also gives me a couple of options which WordPress doesn&rsquo;t, though. Thoughts?</p>
+]]></content>
+  </entry>
+  
+</feed>

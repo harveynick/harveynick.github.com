@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Now in Eye Popping 3D! - HarveyNick.com</title>
+  <meta name="author" content="Nick Johnson">
+
+  
+  <meta name="description" content="It took a little bit of fighting with bugs that weren&rsquo;t showing up in the 2D view, and a bit of time to figure out what was going on with the &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.harveynick.com/blog/2010/10/22/now-in-eye-popping-3d">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="http://feeds.feedburner.com/Harveynick" rel="alternate" title="HarveyNick.com" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28082281-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">HarveyNick.com</a></h1>
+  
+    <h2>Something nerdy this way comes.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/Harveynick" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.harveynick.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Now in Eye Popping 3D!</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-10-22T12:09:33+01:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2010</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://www.harveynick.com">Comments</a>
+        
+        
+          
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>It took a little bit of fighting with bugs that weren&rsquo;t showing up in the 2D view, and a bit of time to figure out what was going on with the lighting system in <a href="http://www.jmonkeyengine.org/">JME</a>, but I finally got the 3D display of the <a href="http://harveynick.wordpress.com/2010/10/20/some-random-landscapes/">fractal</a> working.</p>
+
+<p>The first stage was just displaying each node as a discrete point so I could see that each was in about the right place. It looks a little bit like this:</p>
+
+<!-- more -->
+
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot.png"></p>
+
+<p>I did this by simply piping the spatial coordinates and colour information of each node into a pair of standard Java <a href="http://download.oracle.com/javase/1.4.2/docs/api/java/nio/FloatBuffer.html">FloatBuffers</a>, passing these to a JME Point class (which should really be called PointSet, in my opinion) and attaching this to the root display node of my JME <a href="http://bitbucket.org/harveynick/clockworkaphidjava/src/tip/src/com/clockworkaphid/display/threedimensional/PointDisplay.java">application</a>. The colouring scheme is the same as the one used for the 2D display. Some things don&rsquo;t look quite right, largely due to the fact that I&rsquo;ve just drawn the &ldquo;underwater&rdquo; points as blue, rather than adding any actual &ldquo;water.&rdquo; Don&rsquo;t fret, it&rsquo;s on the todo list.</p>
+
+<p>That said, the landscape looks about right. All the points seem to be in their correct location. As a quick implementation note, I&rsquo;m defining the <code>(x, y, z)</code> coordinates of the scene in the following way:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">x</span> <span class="o">=</span> <span class="n">east</span>
+</span><span class='line'><span class="n">y</span> <span class="o">=</span> <span class="n">altitude</span>
+</span><span class='line'><span class="n">z</span> <span class="o">=</span> <span class="o">-</span><span class="n">north</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>With some scaling factors used to map the values from the <code>[0,1]</code> range used to address them to slightly more real world like dimensions.</p>
+
+<p>The next stage was to display the landscape in wireframe to make sure the connections I&rsquo;ll be using create a more solid looking polygon based display are all working correctly. Why not just go directly to polygons? You can see the the detail better in the wireframe display, making debugging much easier. I&#8217;ll definitely be using it again later.</p>
+
+<p>This time, instead of piping each and every node into the vertex array, only the nodes at the highest level of detail are used. These are the nodes generated during the final &ldquo;square stage&rdquo; of the fractal algorithm, for those of you playing at home. Each draws a triangle (consisting of three separate lines) into the vertex buffer for each pair of parents it has in the landscape. The result looks something like this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot2-e1287747142352.png"></p>
+
+<p>Everything seems to be in good order there, I think. One or two things don&rsquo;t look quite right, particularly the beaches, but the tessellation and coverage of the polygons looks right. Here&rsquo;s a closer in look at some of the polygons so you can see what the tessellation scheme actually produces:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot4.png"></p>
+
+<p>You can (hopefully) see that each of the &ldquo;active&rdquo; nodes sits at the centre of a diamond formed from the shape of its parents, so it&rsquo;s the points with four lines branching from them (rather than eight) which are actually being used to draw the scene.</p>
+
+<p>Next: polygons. Again, only the nodes at the highest level of detail are used. This time, each inserts itself into the vertex buffer, then adds its parents if they&rsquo;re not in there already. Each node remembers its postion in the vertex buffer, and these indices are then used to draw the actual polygons. These are declared by passing the indices in sets of three into a standard Java <a href="http://download.oracle.com/javase/1.4.2/docs/api/java/nio/IntBuffer.html">IntBuffer</a>. The buffers are then passed to one of JME TriMesh geometry classes and displayed, like this:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot1.png"><!-- header_img http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot1.png --></p>
+
+<p>Again, the beaches don&rsquo;t look quite right, but otherwise I&rsquo;m reasonably pleased. I still need to add the actual water and improve the form of the landscape itself (and about a million other things), but in terms of display this is looking pretty good. Except for one thing: I&rsquo;m using far more detail than I need to. Let me illustrate this with a slightly more extreme example. The pictures I&rsquo;ve posed so far were generated using seven iterations of the diamond square algorithm. Here&rsquo;s what happens when I use ten iterations (remember, the number of points increases exponentially):</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot5-e1287704750521.png"></p>
+
+<p>On the bright side the beaches look better, but that&rsquo;s a lot of polygons. Far more then we actually need to display. 1579008 polygons, in fact. We need to reduce that somewhat, if we&rsquo;re going to make things more complicated <em>and</em> maintain a reasonable frame rate (I&rsquo;m getting about 60fps with this view at the moment). You can see the problem more clearly if I show you the same view using lines rather than polygons:</p>
+
+<p><img class="center" src="http://harveynick.files.wordpress.com/2010/10/simplegamescreenshot6-e1287704836984.png"></p>
+
+<p>You can just about see the individual triangles up close, but further away the lines just mush together. I think we can afford to reduce the level of detail as we get further away, don&rsquo;t you?</p>
+
+<p>Well, I&rsquo;ll get right on that, then&hellip;</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">harveynick</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-10-22T12:09:33+01:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/hacker/'>Hacker</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2010/10/20/some-random-landscapes/" title="Previous Post: Some Random Landscapes">&laquo; Some Random Landscapes</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2010/10/22/fractal-errata/" title="Next Post: Fractal Errata">Fractal Errata &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About This Blog</h1>
+  <p>A blog about hacking, food, movies, books, music, and whatever else happens to pop into my head.</p>
+</section>
+<section>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Blog Sidebar -->
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:200px;height:200px"
+       data-ad-client="ca-pub-5573133722944342"
+       data-ad-slot="3775287017"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/27/is-it-that-time-again/">Is It Time to Change Blogs Again?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/14/am-i-winning/">Some Thoughts on Gamification</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/11/whilst-not-running-in-australia/">Whilst Not Running in Australia (With Photos!)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/10/so-i-made-an-iphone-app/">So I Made an iPhone App</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/16/that-ad/">That Ad</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/21/further-watching-and-reading/">Further Watching and Reading</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/19/barbell-training-follow-up/">Barbell Training Follow Up</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs/">A (Very) Rough Guide to Beginners' Barbell Training Programs</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/06/do-you-even-lift/">Do You Even Lift, Bro?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/05/the-wheel-weaves-as-the-wheel-wills/">The Wheel Weaves as the Wheel Wills</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("harveynick", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/harveynick" class="twitter-follow-button" data-show-count="false">Follow @harveynick</a>
+  
+</section>
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/103951349449629293779?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Nick Johnson -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'harveynick-com';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.harveynick.com/blog/2010/10/22/now-in-eye-popping-3d/';
+        var disqus_url = 'http://www.harveynick.com/blog/2010/10/22/now-in-eye-popping-3d/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: guild wars | HarveyNick.com]]></title>
+  <link href="http://www.harveynick.com/blog/tags/guild-wars/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2014-04-27T15:27:48+01:00</updated>
+  <id>http://www.harveynick.com/</id>
+  <author>
+    <name><![CDATA[Nick Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[There Can be Only... Several...]]></title>
+    <link href="http://www.harveynick.com/blog/2010/10/14/323/"/>
+    <updated>2010-10-14T21:22:15+01:00</updated>
+    <id>http://www.harveynick.com/blog/2010/10/14/323</id>
+    <content type="html"><![CDATA[<p>As I&rsquo;ve previously mentioned, my project (Clockwork Aphid) has been bubbling away in the bearded cauldron that is my head for quite some time. As a result, I have quite a bit I want to say about it. I want to blog about the process of building it because I think it might be a good exercise to go through, and also because I think it might help me work the whole thing out. I&rsquo;m going to talk more about what it actually is quite soon, partly because I want to start talking about implementation and partly because I&rsquo;ve been prompted by someone else&rsquo;s project which I suspect might be quite similar. More about that later.</p>
+
+<!-- more -->
+
+
+<p>What to do when something like that happens? I think there are two reactions you can to a situation like that: you can feel threatened; or you can feel vindicated. Clearly the second is the more healthy approach, so I&rsquo;ll go with that one. This is probably for the best, since there are other parties who seem to be coming at the same problem as I am. I mentioned at the end of my <a href="/blog/2010/10/08/wow-oh-wow/">post</a> about World of Warcraft that I wasn&rsquo;t the only one frustrated by the static nature of its world, nor the only one attempting a solution of sorts. Specifically, I was talking about ArenaNet&rsquo;s upcoming Guild Wars 2. They&rsquo;ll probably explain it a little better than me, so I&rsquo;ll let <a href="(http://www.guildwars2.com/en/media/videos/">them</a>):</p>
+
+<p>Now&hellip; clearly they have more resources than I do, which could potentially make me feel a little bit like I was staring up at a shear rock face. A rock face covered in bees. Happily, though, they&rsquo;re going about it in a different way, though some of our goals are the same. Guess that means I&rsquo;ll just have to come up with some pretty creative solutions, huh?</p>
+
+<p>Surround your pullquote like this {" text to be quoted "}</p>
+
+<p>While, I&rsquo;m talking about Guild Wars 2, though it is worth taking a moment to marvel over just how stunning those visuals are. The comparison I find myself making is that World of Warcraft looks like it was made out of clay:</p>
+
+<p><img class="center <a" src="href="http://www.file-extensions.org/imgs/app-picture/3744/world-of-warcraft.jpg">http://www.file-extensions.org/imgs/app-picture/3744/world-of-warcraft.jpg</a>"></p>
+
+<p>While Guild Wars 2, on the other hand, looks as though it was made out of china:</p>
+
+<p><img class="center <a" src="href="http://www.guildwars2.com/global/includes/images/screenshots/dynamic-events/gw2-dynamic-006.jpg">http://www.guildwars2.com/global/includes/images/screenshots/dynamic-events/gw2-dynamic-006.jpg</a>"><!-- header_img href="http://www.guildwars2.com/global/includes/images/screenshots/dynamic-events/gw2-dynamic-006.jpg">http://www.guildwars2.com/global/includes/images/screenshots/dynamic-events/gw2-dynamic-006.jpg</a> --></p>
+
+<p>Now before you cry foul and point out that GW2 is a much newer game, it&rsquo;s worth taking into account that this china like quality was also true of the original Guild Wars:</p>
+
+<p><img class="center <a" src="href="http://www.guildwars.com/images/screenshots/gwscreen047-page.jpg">http://www.guildwars.com/images/screenshots/gwscreen047-page.jpg</a>"></p>
+
+<p>Obviously some of this has to do with the different graphics engines being used, but I think that actual quality of the design is definitely a factor as well. It&rsquo;s evident in the 2D promotional art, as well.</p>
+
+<p>I&rsquo;m also quite taken with the difference in the mythology of the two games, but perhaps I&rsquo;ll talk about that later. Mythology will be quite a relevant subject, later.</p>
+]]></content>
+  </entry>
+  
+</feed>

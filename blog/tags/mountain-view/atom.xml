@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag: Mountain View | HarveyNick.com]]></title>
+  <link href="http://www.harveynick.com/blog/tags/mountain-view/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2014-04-27T15:27:48+01:00</updated>
+  <id>http://www.harveynick.com/</id>
+  <author>
+    <name><![CDATA[Nick Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Full Nerd II: Nerd Harder]]></title>
+    <link href="http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder/"/>
+    <updated>2011-06-06T02:36:54+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder</id>
+    <content type="html"><![CDATA[<p>It seems that people really enjoyed my post about the <a href="/blog/2011/06/03/in-which-i-go-full-nerd-2/">computer history museum</a>. At the time I wrote it, I was worried that it might constitute just a little bit too much nerd, so I held back on my initial impulse to put in more pictures and gush enthusiastically about how awesome it all was.</p>
+
+<p>With hindsight, perhaps I can afford to ignore that particular mental stopcock, at least for a little while. I do not, I regret to tell you, have anymore pictures of <em>the</em> teapot. I do intend to buy myself a Melitta teapot at some point quite soon, however, so that it may sit in my flat and act as a most nerdy in-joke.</p>
+
+<!-- more -->
+
+
+<p><blockquote><p>&ldquo;Tea, anyone?"<br/><br/>"Yes, please."<br/><br/>Pause.<br/><br/>"Why are you grinning like that?&rdquo;</p></blockquote></p>
+
+<p>I do, however, have pictures of many other fun things. Let&rsquo;s start with a reference to my current employer:</p>
+
+<p><img class="center <a" src="href="http://farm3.static.flickr.com/2561/5798552483_0c9a55f471.jpg">http://farm3.static.flickr.com/2561/5798552483_0c9a55f471.jpg</a>"></p>
+
+<p>This is one of the original Google server racks. At one point, if you typed a query into the Google homepage, this is where the magic happened. If you have any familiarity at all with how servers usually look, you might be scratching your heading and thinking that this one does not look entirely right. Let me help you with that:</p>
+
+<p><img class="center <a" src="href="http://farm4.static.flickr.com/3596/5799103540_e8c797886d.jpg">http://farm4.static.flickr.com/3596/5799103540_e8c797886d.jpg</a>"></p>
+
+<p>Yes, you can see all of the components. No, that is not normal. Yes, each individual server would normally have its own case. No, under normal circumstances sheets of cardboard would not be used as the insulation between motherboard and shelf. Yes, that is an awful lot of servers to fit into a single rack. Yes again, that would require very good air circulation, but you&rsquo;ll have a bloody difficult time finding a case that gives better circulation than no case at all. No, you would not expect a server to bow in the middle like that&hellip;</p>
+
+<p>Two things the early Google was known for: providing the best search results; and being very, very frugal when it came to equipment purchasing.</p>
+
+<p>Let&rsquo;s talk about something a bit more fundamental, though. Hard disks, for example. The one in the computer I&rsquo;m writing this on has a capacity of around 120 GB (depending on how you measure a giga byte, but that&rsquo;s a different story). Wikipedia tells me that is measures around 69.85 mm × 15 mm × 100 mm, so quite small. This is also a hard drive:</p>
+
+<p><img class="center <a" src="href="http://farm3.static.flickr.com/2432/5798550925_2b0852594f.jpg">http://farm3.static.flickr.com/2432/5798550925_2b0852594f.jpg</a>"></p>
+
+<p>Assuming I haven&rsquo;t gotten mixed up here somewhere, this is the worlds first hard disk, and is made up of 50 24" disks, holding a grand total of 5 million characters. Now, if  each of those characters is a one byte ASCII character (or similar) that&rsquo;s approximately 5 MB, or 0.005 GB. Quite the difference in storage density, no?</p>
+
+<p>Here&rsquo;s a (slightly) more recent example of a hard disk, one which I&rsquo;m told is actually still in use to some extent:</p>
+
+<p><img class="center <a" src="href="http://farm3.static.flickr.com/2057/5798550747_4ba81989e3.jpg">http://farm3.static.flickr.com/2057/5798550747_4ba81989e3.jpg</a>"></p>
+
+<p>Now, if my understanding is correct, this next piece looks like a hard drive, but is much closer in function to RAM:</p>
+
+<p><img class="center <a" src="href="http://farm3.static.flickr.com/2197/5798550973_6d011d98a4.jpg">http://farm3.static.flickr.com/2197/5798550973_6d011d98a4.jpg</a>"><!-- header_img href="http://farm3.static.flickr.com/2197/5798550973_6d011d98a4.jpg">http://farm3.static.flickr.com/2197/5798550973_6d011d98a4.jpg</a> --></p>
+
+<p>What&rsquo;s particularly neat is that it&rsquo;s based on an original design by the regrettably late, extremely great, and utterly brilliant Alan Turing.<br/>
+The museum has an entire section devoted to the evolution of storage, and it&rsquo;s quite fascinating. Another of the forebears of modern RAM is magnetic core memory, which looks like this:</p>
+
+<p><img class="center <a" src="href="http://farm6.static.flickr.com/5023/5798550969_307c5c0b9b.jpg">http://farm6.static.flickr.com/5023/5798550969_307c5c0b9b.jpg</a>"></p>
+
+<p>Now that&rsquo;s quite cool, but I&rsquo;d say that it&rsquo;s also quite pleasing to the eye. I think I&rsquo;d happily frame that, mount it, and have it hanging from the wall in my flat (somewhere close to the teapot). People walk through castles and talk in hushed tones of all the many things &ldquo;these stones&rdquo; have seen. All of the stories they might tell, if they could only speak. But this&hellip; unlike your average rock, this is unquestionably <em>memory</em>, and memory which lived through very exciting times in the development of our society. Here&rsquo;s something I look at and wonder what stories it might be able to tell, and what stories it has been forced to forget.</p>
+
+<p>There are many things at the Computer History Museum which are very cool and certainly raise a smile (as well as an appreciative thought as to how far things have come). There are also things which just plain stop you in your tracks; the Difference Engine, for example. Well, at the risk of repeating myself, I&rsquo;m going to post another picture of it, this time from the other side, so you can see a little bit more of the mechanism:</p>
+
+<p><img class="center <a" src="href="http://farm6.static.flickr.com/5154/5799104044_672ed38476.jpg">http://farm6.static.flickr.com/5154/5799104044_672ed38476.jpg</a>"></p>
+
+<p>Now there&rsquo;s a thing I would really and truly <em>love</em> to have in my flat. Ideally in a more coffee table friendly size, of course.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Different Kind of Tourism]]></title>
+    <link href="http://www.harveynick.com/blog/2011/06/05/a-different-kind-of-tourism/"/>
+    <updated>2011-06-05T07:04:39+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/06/05/a-different-kind-of-tourism</id>
+    <content type="html"><![CDATA[<p>If a person were to walk from downtown Mountain View (in so far as Mountain View has a town to be down of) to the Computer History Museum, and then kept going, they might find themselves wandering into Shoreline Business Park. This is where you would find the silicon in this part of the valley.</p>
+
+<p>Of course, there isn&rsquo;t actually a lot of touristing to do in your average industrial park. We&rsquo;re in Silicon Valley here, though, surely there must be something to see? Well&hellip; there are signs for reasonably exciting tech companies, with logos and everything&hellip; for example:</p>
+
+<!-- more -->
+
+
+<p><img class="center <a" src="href="http://farm4.static.flickr.com/3005/5799103956_bc27e02f68.jpg">http://farm4.static.flickr.com/3005/5799103956_bc27e02f68.jpg</a>"><!-- header_img href="http://farm4.static.flickr.com/3005/5799103956_bc27e02f68.jpg">http://farm4.static.flickr.com/3005/5799103956_bc27e02f68.jpg</a> --></p>
+
+<p>Here&rsquo;s a fun one. 23 and Me is either a very cool company, or an utterly terrifying one, depending on your point of view. The basic idea is that you send them some of your spit (and some money). They use this to do some basic DNA profiling and tell you about your genetic predisposition towards certain diseases, your genetic predisposition to certain drugs, and a limited amount regarding your actual genetic ancestry. This all comes wrapped up in a neat web interface which updates as new discoveries are made. I&rsquo;m generally of the the view that this is pretty cool.</p>
+
+<p>Further in we find even more companies, at least one of which you might have even heard of:</p>
+
+<p><img class="center <a" src="href="http://farm4.static.flickr.com/3123/5799103942_418f7a2a37.jpg">http://farm4.static.flickr.com/3123/5799103942_418f7a2a37.jpg</a>"></p>
+
+<p>LinkedIn is basically a professional version Facebook. Sort of a fancy online business card holder, networking centre, recruitment system and industry conference all rolled into one. As such, it allows you to show your respectable side to your business contacts, whilst still being able to display that photo set proving that you <em>can</em> get your entire fist in your mouth to your friends. It can be quite useful, but more on that in a moment. I had no idea who the other companies on the sign are, and have not, as yet, felt too much of a need to enlighten myself.</p>
+
+<p>There is, of course, another tech company with a fairly large presence in this business park, but I can&rsquo;t for the life of me remember their name. Oh, wait, yes. I remember:</p>
+
+<p><img class="center <a" src="href="http://farm3.static.flickr.com/2536/5799103924_e8db3349eb.jpg">http://farm3.static.flickr.com/2536/5799103924_e8db3349eb.jpg</a>"></p>
+
+<p>When in doubt, follow the street signs. While I&rsquo;m sure it is helpful to have signs pointing to <em>stuff</em> (other examples in this estate include &ldquo;movies&rdquo; and &ldquo;amphitheatre&rdquo;) hanging above the road, making them indistinguishable from street signs is bloody confusing, in my opinion.</p>
+
+<p>Google is, of course, the whole reason I&rsquo;m in this town, and in fact in this country for these two weeks. For the record, I was recruited via LinkedIn, so it definitely does have it&rsquo;s uses. One of the reasons for this wander was to get a general idea of the lay of the land surrounding the Googleplex. My overall opinion: it&rsquo;s big. Luckily, the Google bikes were very much in evidence:</p>
+
+<p><img class="center <a" src="href="http://farm6.static.flickr.com/5302/5798555777_9a73976a1c.jpg">http://farm6.static.flickr.com/5302/5798555777_9a73976a1c.jpg</a>"></p>
+
+<p>Often being found looking slightly forlorn in the strangest places. I&rsquo;m fairly sure the local teens play a bit of cat and mouse with security guards and joyride around the park on them at weekends. This one was close to one of the volleyball courts:</p>
+
+<p><img class="center <a" src="href="http://farm6.static.flickr.com/5276/5799104166_5e5af56a28.jpg">http://farm6.static.flickr.com/5276/5799104166_5e5af56a28.jpg</a>"></p>
+
+<p>There actually is a reasonable amount to see, wandering around the campus. Google really does live up to a lot of its hype. One of the more famous landmarks of the campus was actually bloody difficult to find, though. It took a serious amount of detective work, comparing photos from the web to views from Google Maps, but I finally tracked down the &ldquo;Android Lawn&rdquo;:</p>
+
+<p><img class="center <a" src="href="http://farm3.static.flickr.com/2158/5798559713_a16b044a86.jpg">http://farm3.static.flickr.com/2158/5798559713_a16b044a86.jpg</a>"></p>
+
+<p><img class="center <a" src="href="http://farm4.static.flickr.com/3533/5798559919_da0f44242b.jpg">http://farm4.static.flickr.com/3533/5798559919_da0f44242b.jpg</a>"></p>
+
+<p><img class="center <a" src="href="http://farm3.static.flickr.com/2757/5798560063_64d6567a61.jpg">http://farm3.static.flickr.com/2757/5798560063_64d6567a61.jpg</a>"></p>
+
+<p><img class="center <a" src="href="http://farm3.static.flickr.com/2016/5798560409_d1608f766e.jpg">http://farm3.static.flickr.com/2016/5798560409_d1608f766e.jpg</a>"></p>
+
+<p>As it turned out, if I&rsquo;d just stood up and looked over my right shoulder from the place I was performing all of this furious Googling, I probably would have just spotted the damn thing. Such is life. Strangely enough, I was feeling a little hungry at this point, so I headed home.</p>
+
+<p>Finally, it is important to note that while all of this touristing around is fun, and Google is a fuzzy and well meaning company, you should never forget that these are serious guys, doing a serious job. One most always strive to live up to the standard set by those who come before you, and always act in a professional and responsible manner when surrounded by such a high caliber of people.</p>
+
+<p>Seriousness. Responsibility. Decorum.</p>
+
+<p><img class="center <a" src="href="http://farm4.static.flickr.com/3543/5799108082_ceb1e2603d.jpg">http://farm4.static.flickr.com/3543/5799108082_ceb1e2603d.jpg</a>"></p>
+
+<p>That is all.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[...In Which I Go Full Nerd]]></title>
+    <link href="http://www.harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2/"/>
+    <updated>2011-06-03T01:43:18+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2</id>
+    <content type="html"><![CDATA[<p>Jet lag is a funny thing. Right now it actually seems to be working in my favour; it&rsquo;s managed to knock a couple of bad habits out of me. Specifically, these happen to be the not entirely unrelated habits of going to bed too late (then making it later by reading for a good long while) and getting up too late. Right now I seem to be fighting to keep my eyes open by around nine, and then being wide awake by seven. Which is more or less the position I found myself in on Sunday. Since day one at Google camp was a couple of days away I thought I&rsquo;d check out my immediate surroundings.</p>
+
+<p>This may come as a bit of a surprise to you, but there isn&rsquo;t actually a lot to do in Mountain View. One of the things there is to do, however, is the computer history museum, which I&rsquo;d been told is exactly as awesome as it sounds. In case my meaning isn&rsquo;t clear: really awesome. There is no sarcasm here. Look at my face. Awesome. This is not my sarcastic face. Awesome. Face. Awesome.</p>
+
+<!-- more -->
+
+
+<p>I have a rental car, but the brakes scare the shit out of me, and the place didn&rsquo;t look too far away, so I decided to walk. Now, I&rsquo;d been warned that no one walks in America, but I wasn&rsquo;t quite prepared for it to be true. I must have walked 5 miles on Sunday and saw a grand total of perhaps 3 other pedestrians, and found that drivers looked at me as though I was a crazy person. I think perhaps one reason for this might be that the pavements (or sidewalks, if you like) are&hellip; well&hellip; shit. Anytime you have a height difference of more than an inch between two slabs&hellip; that&rsquo;s bad.</p>
+
+<p>Slightly thankful that there were no other pedestrians to see me trip, I arrived at the building in question. Externally, it&rsquo;s kind of neat. You might mistake it for the headquarters of some hip new tech startup. If it wasn&rsquo;t for the big sign saying &ldquo;Computer history Museum&rdquo; outside, obviously. Inside, though, it reminded me quite of bit of the Science Museum (&ldquo;which science museum?&rdquo; &ldquo;The Science Museum&rdquo;). It&rsquo;s nowhere near as grandiose, and has a much narrower focus, but the comparison feels apt.</p>
+
+<p><a href="http://harveynick.files.wordpress.com/2011/06/e01ff01b-d1b9-454d-afd7-cbc96bdfc9ed6.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/e01ff01b-d1b9-454d-afd7-cbc96bdfc9ed6.jpg"><!-- header_img http://harveynick.files.wordpress.com/2011/06/e01ff01b-d1b9-454d-afd7-cbc96bdfc9ed6.jpg --></a></p>
+
+<p>The scope of the exhibits is quite impressive, starting with slide rules and abaci, moving though Babbage (oh, I&rsquo;ll come back to Babbage), on to Turing and right up to the present day. Here are a couple of examples of things which made me smile:</p>
+
+<p><a href="http://harveynick.files.wordpress.com/2011/06/ab03b781-9c94-46de-851f-711679d9a0e90.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/ab03b781-9c94-46de-851f-711679d9a0e90.jpg"></a></p>
+
+<p>The Altair 8800, quite an important machine in the history of Microsoft, of which the fictionalised version of Steve Jobs in Pirates of Silicon Valley says &ldquo;I never had any problem with the Altair&hellip; until I tried to use it.&rdquo;</p>
+
+<p><a href="http://harveynick.files.wordpress.com/2011/06/b17fcbeb-6b46-46e5-93f7-91c5995b999d1.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/b17fcbeb-6b46-46e5-93f7-91c5995b999d1.jpg"></a></p>
+
+<p>You know what&rsquo;s better than that, though? A computer made out of wood. If you bought an <em>Apple I</em> you received a box of parts and some schematics. You hade to supply the case yourself. You know what else is awesome? UNIX is awesome:</p>
+
+<p><a href="http://harveynick.files.wordpress.com/2011/06/11d69f5d-3b06-4df6-bc7a-0b85aaf6ca362.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/11d69f5d-3b06-4df6-bc7a-0b85aaf6ca362.jpg"></a></p>
+
+<p>You see? There&rsquo;s a badge and everything. What says awesome more than a badge? Oh wait, I know:</p>
+
+<p><a href="http://harveynick.files.wordpress.com/2011/06/7a115add-1257-44eb-9fa7-6dc114378d8f3.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/7a115add-1257-44eb-9fa7-6dc114378d8f3.jpg"></a></p>
+
+<p>Oh yeah. That&rsquo;s right. I bet you wish you were cool enough to have that licence plate. As a side note: I wonder if anyone does have that licence plate, since I assume this one isn&rsquo;t real. Furthermore: what kind of car would you put that on? This is fodder for <em>Pimp My Ride</em> right here. They should get on that (&ldquo;Yo, we heard you like UNIX&hellip;&rdquo;).</p>
+
+<p>There was a lot more at the museum. Too much, in fact. I arrived about an hour after it opened and literally left as they locked the door behind me. I probably skipped about half of the section on the internet, and only had time for a brief look at the exhibit on the history of computer chess. Did I mention that they have half of Deep Blue? They also have something else very, very cool, and that&rsquo;s one of the two Babbage <a href="http://en.wikipedia.org/wiki/Difference_engine">Difference Engines</a> which we only very recently developed the capability to actually build:</p>
+
+<p><a href="http://harveynick.files.wordpress.com/2011/06/a677c6d3-c432-4285-9d81-1085791eeed14.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/a677c6d3-c432-4285-9d81-1085791eeed14.jpg"></a></p>
+
+<p>You really can&rsquo;t do justice to this thing in a photograph. It&rsquo;s beautiful. A marvel of engineering, it actually works exactly as Babbage said it would, and he built it entirely on paper. In 1849. Somebody should build an <a href="http://en.wikipedia.org/wiki/Analytical_engine">Analytical Engine</a>. That, my friends, would truly be something.</p>
+
+<p>One last thing:</p>
+
+<p><a href="http://harveynick.files.wordpress.com/2011/06/c4843570-b8d8-4251-bf11-2e49bc097e955.jpg"><img class="center" src="http://harveynick.files.wordpress.com/2011/06/c4843570-b8d8-4251-bf11-2e49bc097e955.jpg"></a></p>
+
+<p>I think this might be THE teapot.</p>
+
+<p>Update: <a href="http://www.plan28.org/">Someone</a> is building an analytical engine!</p>
+
+<p>Another update: there is a follow up post <a href="/blog/2011/06/06/full-nerd-ii-nerd-harder/">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[This Morning.]]></title>
+    <link href="http://www.harveynick.com/blog/2011/06/02/this-morning/"/>
+    <updated>2011-06-02T05:14:19+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/06/02/this-morning</id>
+    <content type="html"><![CDATA[<p>You&rsquo;re going to have to wait a little while longer for the Computer History Museum, Silicon Valley Wandering and San Francisco based updates I had in mind, since I still haven&rsquo;t found a good way of adding the images I wanted to. In the meantime, I thought I&rsquo;d tell you about my morning, in a similar (if significantly smaller in scope) fashion to <a href="http://www.tbray.org/ongoing/When/201x/2010/04/12/Google-Vignettes">Tim Bray&rsquo;s semi-famous post</a>.</p>
+
+<p>Now, Google is very transparent internally, but also has fairly strict rules about what you can and can&rsquo;t talk to people about, regardless of whether you&rsquo;re talking to your friends, your family, random people on the street, or potentially random people on the information super highway (that&rsquo;s you). I haven&rsquo;t entirely gotten my head around them yet, so I&rsquo;m limiting myself to things you could find out by yourself, either via the internet, by wandering around in the general vicinity of a Google office, or being invited in as a lunch guest. This latter option is not too uncommon; it&rsquo;s actually something we&rsquo;re encouraged to do (up to a point).</p>
+
+<!-- more -->
+
+
+<p>Be that as it may, this morning I drove in to the campus, and parked in a nice easy space a reasonable distance from the building. I&rsquo;m not entirely used to driving on the <del>right</del> wrong side of the road and I&rsquo;m not going to take any chances, so I was looking for a space with no other cars around. Someone had left one of the Google bikes next to where I parked, so I jumped on, rode straight past the the building my class was due to be in (I&rsquo;m here for training) and headed over to one I knew had a cafe which served a decent breakfast.</p>
+
+<p>Side note: the Google bikes are distinctive in many fashions, one of which is that they lack brakes. This is good knowledge to have, and personally I would have liked to have found out when I was a little further away from the speed bump. Now you know. You&rsquo;re welcome.</p>
+
+<p>I stood the bike up near the door, next to a pack of its siblings, and badged my way into the building. The breakfast did not dispoint, and I actually broke down and grabbed a smallish portion of the french toast /crispy bacon / maple syrup combo which always tests my willpower (but thankfully doesn&rsquo;t seem to be an option at the London office). It was, on the whole, a very good breakfast. It does, however, leave me with a bit of a dilema: do I return to this cafe tomorrow, or try a different one?</p>
+
+<p>As I was leaving, a girl walked her bike into the cafe and propped it up while she filled a takeaway container with yummy, yummy breakfast food. Then, as I was gabbing a coffee before my class, a guy wandered past with his St. Bernard. Google is a very different kind of a workplace, that&rsquo;s for sure. Did I mention the building my classes were in yesterday has a four lane bowling allay and a dance studio?</p>
+
+<p>After that, I&hellip;  <strong>REDACTED</strong>  &hellip;all of which was very interesting. In all seriousness, though: I&rsquo;m getting a lot out of this trip.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A brief update]]></title>
+    <link href="http://www.harveynick.com/blog/2011/05/31/a-brief-update/"/>
+    <updated>2011-05-31T05:57:45+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/05/31/a-brief-update</id>
+    <content type="html"><![CDATA[<p>Most people can definitively trace at least one or two traits directly back to one of their parents. In my case I can definitely lay the blame for two at the feet of my father:</p>
+
+<ol>
+<li> I know the rules of cricket inside out;</li>
+<li> Walking right across town doesn&rsquo;t faze me in the slightest.</li>
+</ol>
+
+
+<p>The first isn&rsquo;t really important right now (unless you need to know the specifics of the leg before wicket rule STAT), while the second is the result of a father who likes to walk. A lot. In fact many of my childhood holidays consisted of a series of walks across various British cities, often culled from the pages of an impressively large (and impressively modular) Reader&rsquo;s Digest walkers guide&hellip; to British cities.</p>
+
+<!-- more -->
+
+
+<p>Thus, for the past two days I eschewed the use of my rental car and went wandering. Yesterday (that&rsquo;s Sunday) I wandered around Mountain View itself and today I took a train to San Francisco and did the same thing there. I want to tell you about it. I plan to tell you about it. SOme of it is actually worth telling you about. But I want to throw some of the pictures I took into the mix, and right now I don&rsquo;t have a good way of doing that. The Google provided free WiFi which covers the entire of Mountain View is very useful indeed, but it&rsquo;s not super fast and thus not ideal for uploading a bunch of pictures.</p>
+
+<p>Tomorrow I&rsquo;m heading into the office for day one of my Google training (I&rsquo;m told there&rsquo;s some awesome Kool-Aid, so I&rsquo;m looking forward to trying that) and I think I may have access to a slightly better connection there (just a hunch), so I&rsquo;ll see what I can do.</p>
+]]></content>
+  </entry>
+  
+</feed>

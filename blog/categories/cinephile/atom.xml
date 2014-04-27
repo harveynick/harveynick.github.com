@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Cinephile | HarveyNick.com]]></title>
+  <link href="http://www.harveynick.com/blog/categories/cinephile/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2014-04-27T15:27:48+01:00</updated>
+  <id>http://www.harveynick.com/</id>
+  <author>
+    <name><![CDATA[Nick Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Some Thoughts on Gamification]]></title>
+    <link href="http://www.harveynick.com/blog/2013/09/14/am-i-winning/"/>
+    <updated>2013-09-14T16:01:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/09/14/am-i-winning</id>
+    <content type="html"><![CDATA[<p>If you&rsquo;re playing any sort of a game, the question &ldquo;Am I winning?&rdquo; is usually quite easy to answer. &ldquo;Is my score higher than the other guy?&rdquo; usually covers it (though if you&rsquo;re playing something like chess it might be a little more complicated than that). If you&rsquo;re playing a computer game the fact that your character is still alive may well be enough to settle this question in your favour.</p>
+
+<p>In life, though, it is a much harder question to answer. It may well be true that, to the healthy mind, it&rsquo;s not something which should ever really matter, but <a href="http://harveynick.com/blog/2013/05/06/do-you-even-lift/">as noted before</a>, gamification works really (embarrassingly) well for me.</p>
+
+<p>I suspect that deep down most people have their own ways of keeping score. Their bank balance. Their air miles account. How far they ran today. More abstract things, such as their perceived quality of the of the photos they took this weekend, leaning to less abstract things, actual scores, such as might be gleaned from <a href="https://www.fitocracy.com/">Fitocracy</a> or <a href="https://foursquare.com">Foursquare</a>.</p>
+
+<!-- More -->
+
+
+<p>Life is not a computer game, but even so it&rsquo;s nice to have a way of tracking your progress. I&rsquo;ll say it again: gamification works really well for me. As a result, I found myself looking to games directly for inspiration. If you haven&rsquo;t picked up on this already: this is going to be quite the nerdy blog post. You have been warned.</p>
+
+<p>In a certain kind of game, it&rsquo;s quite common to not only have a single main score (usually called something like &ldquo;experience points&rdquo;), but also a set of attributes which describe the capabilities of your character.</p>
+
+<p>If we go right back the main influence for a lot of these sort of games (Dungeons and Dragons, though I&rsquo;ll be drawing from <a href="http://paizo.com/pathfinder">Pathfinder</a>, a alternative modern implementation) we find six main attributes:</p>
+
+<ul>
+<li><em>Strength</em> measures muscle and physical power;</li>
+<li><em>Dexterity</em> measures agility, reflexes, and balance;</li>
+<li><em>Constitution</em> represents your character&rsquo;s health and stamina;</li>
+<li><em>Intelligence</em>  determines how well your character learns and reasons;</li>
+<li><em>Wisdom</em> describes a character&rsquo;s willpower, common sense, awareness, and intuition;</li>
+<li><em>Charisma</em> measures a character&rsquo;s personality, personal magnetism, ability to lead, and appearance.</li>
+</ul>
+
+
+<p>In Pathfinder you have a score for each of these values, with a (theoretical) maximum of 18, though anything less than 10 is considered very bad. For all intents and purposes your character is born with these scores, chosen semi-randomly using dice, and has very little in the way of opportunity for improving them directly.</p>
+
+<p>Tangent: that last part has always annoyed me. In <em>D&amp;D</em> and <em>Pathfinder</em>, doing (for example) strength based activities has no effect on your strength score, and increases in strength have no connection to strength based activities your character may have performed.</p>
+
+<p>That aside, I think these are actually quite good metrics for a person to use when measuring their personal development (or less marketing speak-ey words to that effect). Here are some more buzz words for you (and the Google crawlers): personal analytics, the quantified self. The question then becomes one of measurement.</p>
+
+<h3>Strength</h3>
+
+<p>Strength would appear to be the easier to measure directly (and the ones which ties in most easily with many of my other posts). Basically: how much can you lift? We&rsquo;re looking for a single normalised value here, though, not a collection of eight absolute ones (4 &ldquo;primary&rdquo; barbell lifts * 2 (weight + repetitions)).</p>
+
+<p>We can transform the eight values into four quite simply using a technique similar to that employed by <a href="http://www.strstd.com/">Strength Standards</a> to turn a weight and number of reps into a single theoretical &ldquo;one rep max&rdquo;. <a href="http://en.wikipedia.org/wiki/One-repetition_maximum#Calculating_approximate_1RM">Wikipedia provides</a> a wealth of formulas for calculating this.</p>
+
+<p>So far so good, but we still have four numbers when we need one. Adding them together won&rsquo;t help, since this doesn&rsquo;t take the weight of the individual performing the lifts into account and also assumes that all four values have the same scale. This is categorically not the case. My dead lift max is almost three times that of my shoulder press, but the latter is no less important than the former. Normalisation is required.</p>
+
+<p>The other trick Strength Standards performs is to plot your theoretical one rep max on a scale which starts at &ldquo;untrained&rdquo; and tops out at &ldquo;elite&rdquo; (which roughly translates to &ldquo;Olympic Athlete&rdquo;), with values selected by weight. These also happen to be not unlike those (reluctantly) <a href="http://startingstrength.com/files/standards.pdf">laid out by Mark Riptoe</a>.</p>
+
+<p>That&rsquo;s the key here, I think. If we make &ldquo;untrained&rdquo;/&ldquo;Cat. I&rdquo; a 10 and &ldquo;elite&rdquo;/&ldquo;Cat. V&rdquo; an 18 we end up with four normalised values. Average these and: boom. We have our score for strength, I think.</p>
+
+<p>This doesn&rsquo;t completely prevent a decent squat from compensating for a terrible bench press (like in my case), but it does mitigate the effect somewhat. That said: I am prepared to admit that a more fair measure might cap the total at some value measured from the weakest of the four. We&rsquo;ll see. Also, the rate at which this should decay presents an additional complication here, for reasons I&rsquo;m not going to go into, but might in another post.</p>
+
+<p>The other five values are not as easy as all that. Rather than actually get into the nitty gritty of those here, I&rsquo;ll instead discuss what I think if the right approach and possibly revisit them later.</p>
+
+<h3>Dexterity</h3>
+
+<p>Dexterity, I have to confess, has me almost completely flummoxed. How do you measure agility or aim in a way which can actually be reflected in everyday life? If you&rsquo;re a member of a gun or archery club, then problem solved. Maybe. Otherwise I&rsquo;m not so sure. Likewise, if you study a martial art I think that probably counts as &ldquo;Dexterity"… but how do you compare <a href="http://en.wikipedia.org/wiki/Kendo">Kendo</a> to <a href="http://en.wikipedia.org/wiki/Krav_Maga">Krav Maga</a>?</p>
+
+<h3>Constitution</h3>
+
+<p>Constitution would appear to be a little more straightforward. This is a measure of what your body can take. Have far can you run, cycle or swim? How long does it take you? How many press/chin/pull ups can you do (maybe)? Perhaps even steps taken (I&rsquo;m looking at you <a href="http://www.fitbit.com/uk">Fitbit</a> / <a href="https://jawbone.com/up">Jawbone Up</a> / <a href="http://www.nike.com/cdp/fuelband/us/en_us/">Nike+ Fuelband</a> / <a href="http://www.withings.com/en/pulse">Withings Pulse</a>)? What I don&rsquo;t have yet is the metric to fuse this all together.</p>
+
+<h3>Intelligence</h3>
+
+<p>There is, of course, a fairly standard method of measuring intelligence. Dropping in &ldquo;IQ test&rdquo; here and saying &ldquo;job done,&rdquo; would definitely be the simplest solution. For an alternative proposal, though, I will defer to a good friend of mine. Tyrion Lannister.</p>
+
+<p><blockquote><p>“My brother has his sword, King Robert has his warhammer and I have my mind… and a mind needs books as a sword needs a whetstone if it is to keep its edge.”</p><footer><strong>Tyrion Lannister</strong> <cite>George R.R. Martin&rsquo;s a Game of Thrones</cite></footer></blockquote></p>
+
+<p>So then, perhaps this measure could actually relate to rate of reading. Whether this should be measured in terms of books, pages or words I&rsquo;m not sure yet. These get increasingly accurate… and increasingly faffy* to measure. Another thing to consider is whether all books are created equal. I don&rsquo;t want to get (too) pretentious here, but I&rsquo;m inclined to consider some books… more beneficial to improving one&rsquo;s mind than others. Yes, I enjoyed the hell out of the Da Vinci Code, and I don&rsquo;t care who knows it, but I was (if anything) less intelligent after I finished reading it.</p>
+
+<p>It&rsquo;s also not clear to me whether this category should include consumption of movies. What about plays? Magazines? Articles on the Web? Perhaps even TV shows (Breaking Bad <em>yes</em>, X Factor <em>no</em>)?</p>
+
+<h3>Wisdom</h3>
+
+<p>Wisdom is quite nebulous as presented here. The willpower part of it would tend suggest some sort of measure of personal discipline. How well you keep to your diet, how consistently you exercise (perhaps this category is where the step trackers fit).</p>
+
+<p>For me, though, wisdom suggests experience and I&rsquo;m inclined to connect that to travel. On the wall of my flat is a map with pins pushed in for each of the countries (or cities in the case of the big ones) I&rsquo;ve visited. This is the sort of thing I&rsquo;m thinking of. Pins on a map. Stamps in a passport. These are a bit on the analogue side though, and this is the digital age, baby. Besides, EU countries don&rsquo;t stamp my bloody passport anymore. I&rsquo;m inclined to point towards services such as <a href="https://foursquare.com">Foursquare</a> and <a href="http://en.fogofworld.com/">Fog of World</a> when it comes to measuring things like this.</p>
+
+<p>The former divvies everything up nicely and gives you lots of other ways of measuring experience (&ldquo;Your first Korean Restaurant!&rdquo;), while the latter gives you an actual percentage of the world which you&rsquo;ve explored. Obviously this only works if you keep the app running (so say goodbye to your battery life) or manually input tracks from an external GPS (faff!), and is also guaranteed to be a distressingly small number which grows at an almost imperceptible rate.</p>
+
+<p>Again, there is a ghost of the potential for a metric here.</p>
+
+<h3>Charisma</h3>
+
+<p>Charisma is similarly nebulous. I refuse to declare this a measure of how sexy a person is. A don&rsquo;t even know how we would go about measuring that anyway (selfies placed on Hot or Not?** Maybe not…). Instead I&rsquo;d be inclined to make it a counterpart to intelligence, in a similar way that strength is essentially a counterpart to constitution: The first a measure of what you put out, the second a measure of what you take in… and my suggestion for intelligence was a measure of the creative work a person takes in.</p>
+
+<p>So then: I suggest a measure of charisma related to a person&rsquo;s creative output. Words written. Content produced and published. This could be in terms of your blog, the novel you&rsquo;ve been working on or that personal coding project. An additional measure for this could be how much others actually engage with the content you produce. In the case of anything web based <a href="http://www.google.com/analytics/">Google Analytics</a> (and similar) make a good way of measuring this, I think. The others would be somewhat harder to measure directly.</p>
+
+<h3>Lastly</h3>
+
+<p>Something you might have noticed here: that first one was quite easy to map onto the Dungeons and Dragons 0-18 scale; the others  not so much. They&rsquo;re much harder to calibrate and, in some cases, quantify. Some might only work as qualitative measures, in fact.</p>
+
+<p>But then, as you might have guessed, I&rsquo;m really thinking out loud here. These ideas are only half baked, but who doesn&rsquo;t love the smell of half finished baking?</p>
+
+<br/>
+
+
+<p>* Perhaps you need to Google this word. Know this: <a href="http://www.urbandictionary.com/define.php?term=faffy">Urban Dictionary</a> is wrong on every count, at least for the meaning I&rsquo;m assigning to it. <a href="http://www.collinsdictionary.com/submission/2/faffy">Collins Online Dictionary</a> gets it spot on.</p>
+
+<p>** News Flash! <a href="http://hotornot.com/">Hot or Not</a> is still a thing!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Categories and Goals]]></title>
+    <link href="http://www.harveynick.com/blog/2013/03/25/categories-and-goals/"/>
+    <updated>2013-03-25T22:53:00+00:00</updated>
+    <id>http://www.harveynick.com/blog/2013/03/25/categories-and-goals</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s good to have goals. Even if you fail to meet them. Sometimes especially when you fail to meet them. It&rsquo;s quite widely publicized that at Google we&rsquo;re expected to score 0.7 (on a scale where 0 is a complete failure and 1 means all targets were met) when assessing our OKRs (objectives and key results). Generally this is good. It means you&rsquo;re always striving, always raising your eyes, hitting the top of the tree by aiming for the sky.</p>
+
+<p>In my personal life, though, this probably isn&rsquo;t the best approach. Be that as it may, this year I have goals.</p>
+
+<!-- More -->
+
+
+<p>1. Get myself in shape.</p>
+
+<p>Also known as: project &ldquo;look good naked&rdquo;. There&rsquo;s a bit more to it than this, of course. There&rsquo;s also a bit of a story behind it, which I&rsquo;ll probably tell in a later post. I also have some ideas around this area which might turn into something else. If I&rsquo;m going to set goals, I need a way to measure success, after all.</p>
+
+<p>Talking about this here leaves me with a slightly odd problem, though. When I relaunched this blog I adjusted all of my category names to be descriptive nouns, which means a can auto-generate the part of the about text (on the right) which references them. I don&rsquo;t know what the appropriate noun is for someone who participates in and thinks about fitness related activities. This is a stupid problem to have, but it is a problem, nevertheless.</p>
+
+<p>2. Get my House in order.</p>
+
+<p>In the literal sense. One of the reasons things went dark on this blog last year is that I actually took the plunge and bought a flat. This ate a lot of my time and left my life in a bit of an inconsistent state for a month or so. Now I&rsquo;m in, though, and having spent a winter in the place I&rsquo;ve taken stock. It needs some work. It needs to be warmer when the weather is cold. It needs a bit more personality… and some of the really odd design decisions made by the previous owners need to be reversed.</p>
+
+<p>It&rsquo;s also a whole new playground for me to seek adventures in. My Clockwork Aphid project was a casualty of the upheaval in my life last year and I&rsquo;m not sure how much attention it&rsquo;ll get this year… because this year I&rsquo;d also like to start playing with home automation. Nothing crazy. No robot butlers; but we&rsquo;ll see.</p>
+
+<p>3. Read. Travel. Watch. Write.</p>
+
+<p>This one is more straight forward. I&rsquo;d like to start more closely measuring how much a read, travel, watch (mainly in terms of films) and write, on this blog an elsewhere.</p>
+
+<p>Reading is straightforward, I think. I read a lot. On my way to work, before bed, in coffee shops at the weekend, But I&rsquo;m curious to try and keep tabs on what I&rsquo;m reading and how much. It frustrates the hell out of me that my kindle can&rsquo;t easily supply me with the information.</p>
+
+<p>One of my friends has a goal for this year that she will get out of Edinburgh at least once every month. That&rsquo;s not a bad goal to have at all. For me, I&rsquo;d just like to see and experience more of the wider world in general, but also the part of it which I inhabit.</p>
+
+<p>As for watching films and keeping tabs on what I saw… well… I already have <a href="http://ohsohumbleopinion.tumblr.com">a place to keep tabs on that</a>. Simple. This is mostly a matter of &ldquo;keep it up&rdquo;.</p>
+
+<p>Lastly: writing. Er… yes. I don&rsquo;t have such a great record with this one. Obviously I want to get back to posting regularly on this blog… but I&rsquo;d also like to try and do something with the two screenplays I wrote during university (and the pile of partially developed ones). I used to regularly do some sort of creative writing and lately I&rsquo;m starting to feel the lack of it in my life.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[I Disagree With Film Critic Hulk]]></title>
+    <link href="http://www.harveynick.com/blog/2013/03/17/i-disagree-with-film-critic-hulk/"/>
+    <updated>2013-03-17T17:52:00+00:00</updated>
+    <id>http://www.harveynick.com/blog/2013/03/17/i-disagree-with-film-critic-hulk</id>
+    <content type="html"><![CDATA[<p>While <a href="http://badassdigest.com/2013/01/09/film-crit-hulk-smash-hulk-vs.-tom-hooper-and-art-of-cinematic-affectation/">Film Critic Hulk&rsquo;s argument</a> generally seems quite well reasoned, I find it a little difficult to stomach someone attempting to lecture me on the theory behind the form of anything in ALL CAPS, and at such length. Also, he makes the unforgivable (in my opinion) mistake of representing his opinion as fact. He states the film falls flat, not that he <strong>believes</strong> it falls flat. No one, apparently, thought to mention this to the legions of people who rated Les Mis so highly on IMDB and Rotten Tomatoes.</p>
+
+<!-- more -->
+
+
+<p>At the end of the day in film, just like any other art form, theory is merely a tool. It doesn&rsquo;t really matter. Emotional response is what actually matters. Banging on about theory in situations like this just makes you look like someone standing on the deck of the Titanic, harping on to anyone who&rsquo;ll listen about how the ship is unsinkable.</p>
+
+<p>I quite like the visual presentation of the film, as did almost everyone else I spoke to about it. When I brought the matter of how it was shot, and how this flies in the face of film theory, they usually laughed and replied: &ldquo;So?&rdquo;</p>
+
+<p>Also: yes. I&rsquo;m back. I hope.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New (Ish) Year, New (Ish) Blog]]></title>
+    <link href="http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog/"/>
+    <updated>2012-03-17T11:22:00+00:00</updated>
+    <id>http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog</id>
+    <content type="html"><![CDATA[<p>2011 was an interesting year for me. A lot changed. I turned 30. After 10 years of residency I moved away from Edinburgh, a city I love dearly, and took a job in London. With <a href="/blog/tags/google">Google</a>. As a result, I no longer work with <a href="/blog/tags/autonomous-underwater-vehicles">Autonomous Underwater Vehicles</a> for a living. Instead I build web services. Quite the change, I&rsquo;m sure you&rsquo;ll agree. In the early months of the year I finally completed the corrections to my <a href="/blog/tags/phd">PhD</a>, and then in the summer: I graduated. It took 6 years (all together) but I am now Dr. Nick Johnson. I also <a href="/blog/2011/07/18/the-sound-of-one-hand-clapping/">lost my grandmother</a>, a fact which still brings me to tears on occasion.</p>
+
+<p>In this light, the fact that I decided, towards the end of the year, to shift my blog away from <a href="http://wordpress.org">Wordpress</a> and over to its own domain barely even casts a shadow. I did, though, and as a result you&rsquo;re now reading these words on a site built using <a href="http://octopress.org">Octopress</a>, which is hosted at harveynick.com. As you may have noticed, all of the old posts from my <a href="http://harveynick.wordpress.com">wordpress site</a> have been ported over, minus the short film reviews, which you&rsquo;ll find <a href="http://ohsohumbleopinion.tumblr.com">here</a>. I&rsquo;m not going to go into how I accomplished this, except to say: I did it the same way <a href="http://mattgemmell.com/2011/09/12/blogging-with-octopress/">Matt Gemmel did</a>.</p>
+
+<!-- more -->
+
+
+<p>Surround your pullquote like this {" text to be quoted "}</p>
+
+<p>What will I be writing about though? Well:</p>
+
+<p>I plan to have <a href="/blog/tags/clockwork-aphid">Clockwork Aphid</a> actually doing something of use this year. I&rsquo;m going to enhance the current Java version up to a point where it can generate interesting landscapes efficiently and in a parallel fashion. I&rsquo;m then going to then have a crack at porting it to <a href="http://golang.org">Go</a>, which I think may turn out to be an excellent language for writing computer games.</p>
+
+<p>I like films. Perchance you may have noticed. I may chat a bit more in depth about a couple of this year&rsquo;s releases. Just to pick three with a common theme off the top of my head:</p>
+
+<ul>
+<li><strong>The Amazing Spider-Man</strong>. I went to a preview event for this in Leicester Square a month or two ago and was very impressed with what I saw. I&rsquo;m hopeful they made a Spider-Man movie in the same way that Christopher Nolan makes Batman movies. Really really.</li>
+<li><strong>The Dark Knight Rises</strong>. Speaking of which. This <em>is</em> exciting. It&rsquo;s the last of the trilogy. It&rsquo;s got a lot to live up to, especially since the last film Nolan made was <em>Inception</em>. I wouldn&rsquo;t bet against it, though.</li>
+<li><strong>The Avengers</strong>. Now here&rsquo;s a film with some scope. All these characters in one film? With this cast? Written and directed by <a href="http://en.wikipedia.org/wiki/Joss_Whedon">Joss Mother Fucking* Whedon</a>? Please, please let this film live up to the frankly stupid amount of potential it has.</li>
+</ul>
+
+
+<p>Quite recently, at the aforementioned age of 30, I started playing Dungeons and Dragons with a selection of my colleagues. Well, we&rsquo;re actually playing <a href="http://en.wikipedia.org/wiki/Pathfinder_Roleplaying_Game">Pathfinder</a>, but let us not quibble about semantics. I&rsquo;m having a really great time on several different levels. It&rsquo;s an interesting experience for someone who has played computer games for most of their life, but never dabbled in table top RPGs.</p>
+
+<p>I mentioned before that I now have a shiny new PhD, with the letters before and after my name to prove it. I&rsquo;m of the opinion that the work which led to this is quite interesting (but then I would be). It&rsquo;s also not completely divorced from my Clockwork Aphid project. I&rsquo;m of a mind to try talking about this some, also.</p>
+
+<p>See you when we get there.</p>
+
+<p>* I think these are his actual middle names.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mercury Rising]]></title>
+    <link href="http://www.harveynick.com/blog/2011/09/20/mercury-rising/"/>
+    <updated>2011-09-20T10:00:44+01:00</updated>
+    <id>http://www.harveynick.com/blog/2011/09/20/mercury-rising</id>
+    <content type="html"><![CDATA[<p>Monday the 5th of September was Freddie Mercury day. The day he would have turned 65, had he lived. This makes me feel a little old, but that&rsquo;s not the point. The day&rsquo;s <a href="http://www.youtube.com/watch?v=KX2BQM0D01M">Google doodle</a> (pointed out to me with furious glee by one of my coworkers) led me to YouTube and numerous videos of Queen performing live. As I often do, I&rsquo;d forgotten just how good they were. I spent much of the day fighting the urge to pump my fist and throw shapes at my desk*. Since I had so much fun with this, I&rsquo;m going to pepper this post with some of the videos I found the most fun. Anything under the videos and written in italics is a comment on the video itself, and not strictly related to the rest of this post.</p>
+
+<!-- more -->
+
+
+<p><iframe src="http://www.youtube.com/embed/LncAQR47eZo" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+
+<p><em>If you have to start somewhere, you might as well start here. File under: moments which made history.</em></p>
+
+<p>As I was walking to the cinema yesterday to see <a href="http://ohsohumbleopinion.tumblr.com/post/10360864080/tinker-tailor-soldier-spy">Tinker Tailer Soldier Spy</a>, I found myself thinking back to the Queen videos, but also to the <a href="/blog/2011/08/07/film-related-blog-post/">post</a> I previously wrote about how much I hated the last two Transformers films, and how much I adored Fast 5. I started wondering if a person&rsquo;s taste in music might be reflected in their taste in film. I have fairly eclectic fast in music. I like a bit of <em>Dido</em>, a bit of <em>Bjork</em>. I love me some <em>Avenged Sevenfold</em> and some <em>In Flames</em>. I&rsquo;m as likely to throw on a bit of <em>Massive Attack</em> as I am a bit of <em>Linkin Park</em>. Today I might be listening to <em>At The Drive-In</em>, where as on my walk yesterday my choice of backdrop was <em>Spiritual Beggars</em>. Like my mother before me, I&rsquo;m also a bit of a Queen fan.</p>
+
+<p><iframe src="http://www.youtube.com/embed/oozJH6jSr2U" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+
+<p><em>Obviously I have to include this one. Queen at their operatic best.</em></p>
+
+<p>When challenged to name my favourite films, I&rsquo;ve been picking the same five for quite some time (in no particular order):</p>
+
+<ul>
+<li>Fight Club;</li>
+<li>American Beauty;</li>
+<li>Donnie Darko;</li>
+<li>Amelie;</li>
+<li>The Matrix.</li>
+</ul>
+
+
+<p>I might also offer up three others I really love:</p>
+
+<ul>
+<li>Out of Sight;</li>
+<li>Pitch Black;</li>
+<li>X-Men**.</li>
+</ul>
+
+
+<p>Perhaps I might also add the first <em>Pirates of the Caribbean</em> film (or maybe <em>Zoolander</em>) to that list. Be that as it may, I&rsquo;d say the list is reasonably eclectic. Not entirely evident in this list is my love of a really good action movie. <em>Bad Boys</em>. <em>The Transporter. Rambo (2008). Fast 5. Demolition Man. Army of Darkness. Welcome to the Jungle. The Long Kiss Goodnight. Die Hard.</em> I&rsquo;m not going to try and match items from my musical taste to each of the films I&rsquo;ve named here, because I don&rsquo;t think the analogy is that exact, but I think Queen serves as an excellent peer to these action films.</p>
+
+<p><iframe src="http://www.youtube.com/embed/kXOOwNS2qk0" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+
+<p><em>I love this intro. That is how you work a crowd.</em></p>
+
+<p>Freddie Mercury did not so much walk around the stage as stay perfectly still at the centre of everyone&rsquo;s vision while the stage moved around him. He worked the crowd like a master while knocking every single note right out of the stadium. It wasn&rsquo;t just about him, though. The band behind him was as tight as a gnat&rsquo;s arse. Everything clicked together like the internals of a cuckoo clock. Queen songs were not generally high art, but they flowed brilliantly and they just <em>took hold</em> of you.</p>
+
+<p>This is how a good action film should be. I want the characters to chew the scenery and have it feel right. I want the characters to be fleshed out enough to feel worthwhile. They don&rsquo;t have to be Lester Burnham or Jack Foley, but I do need to give a shit about what happens to them. The plot should feel, if not possible, then plausible. If something doesn&rsquo;t quite make sense then it should be okay because I&rsquo;m having too much fun to care. I want to laugh joyously at the outrageousness of it. I want to feel like pumping my fist along with the protagonists' success and then leave the cinema with a huge smile on my face. I&rsquo;ll listen to some Emilíana Torrini soon, there&rsquo;ll be time enough for that later. Right now, <em>we are the champions</em>, baby!</p>
+
+<p><iframe src="http://www.youtube.com/embed/pCA6b36pCro" width="" height="" frameborder="0" allowfullscreen></iframe></p>
+
+<p><em>A beautiful, melancholic and very appropriate song. Seems like a good place to stop.</em></p>
+
+<p>* For the record: conversation with my coworkers has revealed to me that had I done so, I could simply have told them I was listening to a bit of Queen and this otherwise odd behaviour would have become at least marginally understandable.</p>
+
+<p>** Yes, the first one. It has a wonderful lightness of touch and flow, which, though it doesn&rsquo;t excuse the film&rsquo;s complete lack of a third act, does make it very dear to me.</p>
+]]></content>
+  </entry>
+  
+</feed>

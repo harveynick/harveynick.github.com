@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>So I Made an iPhone App - HarveyNick.com</title>
+  <meta name="author" content="Nick Johnson">
+
+  
+  <meta name="description" content="Various things have kept me busy and away from this blog just recently. I&rsquo;ve done a bit of traveling (both for business and pleasure), I&rsquo; &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="http://feeds.feedburner.com/Harveynick" rel="alternate" title="HarveyNick.com" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28082281-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">HarveyNick.com</a></h1>
+  
+    <h2>Something nerdy this way comes.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/Harveynick" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.harveynick.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">So I Made an iPhone App</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-10T14:11:00+01:00" pubdate data-updated="true">Aug 10<span>th</span>, 2013</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://www.harveynick.com">Comments</a>
+        
+        
+          
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Various things have kept me busy and away from this blog just recently. I&rsquo;ve done a bit of traveling (both for business and pleasure), I&rsquo;ve discovered Netflix (and Crunchyroll), and, somewhat more productively, I followed through on what started off as my &ldquo;20% time&rdquo; project.</p>
+
+<p>There is, <a href="https://itunes.apple.com/app/id680739529?mt=8">right now in the iPhone App Store</a>, an app nominally <em>by Google Inc</em> which was written almost entirely by my own good hands. Obviously I wasn&rsquo;t entirely a one man band in this. I had a lot of help from designers and UX people, my code was reviewed by those who were available to do so, and I had support at the product management level. I also had a very understanding manager who was willing to let me devote an increasing amount of my time to this.</p>
+
+<!-- More -->
+
+
+<p>The app itself is, at this point, very simple. It provides a basic overview of an AdSense account, together with couple of other reports. It looks a little bit like this, in fact:</p>
+
+<center>
+<img src="http://a1.mzstatic.com/us/r30/Purple4/v4/60/de/7c/60de7c65-6927-ae70-630a-c1c104a0113c/screen568x568.jpeg"><!-- header_img http://a1.mzstatic.com/us/r30/Purple4/v4/60/de/7c/60de7c65-6927-ae70-630a-c1c104a0113c/screen568x568.jpeg -->
+</center>
+
+
+<p>Actually getting to a place where I could get such a simple app published was not itself such a simple process, however.</p>
+
+<p>First of all I had to learn a new programming language. I&rsquo;m not a complete stranger to Objective-C, <a href="/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/">I wrote about it before</a> in fact, but there was definitely a learning process involved. Objective-C is a bit of a strange beast. At times it behaves like C, at other times more like Ruby. It can be forgiving at times, while at others it will explode in your face without warning or explanation.</p>
+
+<p>Things which are considered fairly normal in Objective-C would be considered completely insane in most other programming languages. It&rsquo;s also very, very verbose. Your method calls can quite easily stretch over eight lines. I keep joking that learning Objective-C decreased my ability to communicate in English. Too many languages in one head. At least I think I&rsquo;m joking&hellip;</p>
+
+<p>I also had to learn a new platform and set of tools. UIKit is, in my opinion, a brilliant framework. As soon as you start adding something like <a href="http://nimbuskit.info/">NimbusKit</a> into the mix you&rsquo;re working with really powerful tools which let you put together beautiful and incredibly smooth applications in a very natural manner. XCode, though, took a little bit of getting used to. Likewise, many of the standard build tools I&rsquo;m used to working with at Google simply weren&rsquo;t available to me.</p>
+
+<p>Once the app was built and tested, tweaked and ready, the next step came. The one iPhone developers seem to dread. Submitting the app to Apple for review. In my case this was fairly straight forward (if complicated by the Apple developer site&rsquo;s recent downtime). The iTunes connect interface gets the job done quite well. There were no weird problems and no stonewalling.</p>
+
+<p>So there you have it. I&rsquo;m officially an iOS developer. I enjoyed this and I plan to keep doing it. If you&rsquo;re an AdSense user and carry an iPhone, I encourage you to <a href="https://itunes.apple.com/app/id680739529?mt=8">install the app</a> and send me feedback. If you carry an Android phone, on the other hand, I encourage you to download <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.ads.publisher">the equivalent Android app</a>, developed by my colleague Agnieszka.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Nick Johnson</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-10T14:11:00+01:00" pubdate data-updated="true">Aug 10<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/hacker/'>Hacker</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/06/16/that-ad/" title="Previous Post: That Ad">&laquo; That Ad</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/08/11/whilst-not-running-in-australia/" title="Next Post: Whilst Not Running in Australia (With Photos!)">Whilst Not Running in Australia (With Photos!) &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About This Blog</h1>
+  <p>A blog about hacking, food, movies, books, music, and whatever else happens to pop into my head.</p>
+</section>
+<section>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Blog Sidebar -->
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:200px;height:200px"
+       data-ad-client="ca-pub-5573133722944342"
+       data-ad-slot="3775287017"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/27/is-it-that-time-again/">Is It Time to Change Blogs Again?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/14/am-i-winning/">Some Thoughts on Gamification</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/11/whilst-not-running-in-australia/">Whilst Not Running in Australia (With Photos!)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/10/so-i-made-an-iphone-app/">So I Made an iPhone App</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/16/that-ad/">That Ad</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/21/further-watching-and-reading/">Further Watching and Reading</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/19/barbell-training-follow-up/">Barbell Training Follow Up</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs/">A (Very) Rough Guide to Beginners' Barbell Training Programs</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/06/do-you-even-lift/">Do You Even Lift, Bro?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/05/the-wheel-weaves-as-the-wheel-wills/">The Wheel Weaves as the Wheel Wills</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("harveynick", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/harveynick" class="twitter-follow-button" data-show-count="false">Follow @harveynick</a>
+  
+</section>
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/103951349449629293779?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Nick Johnson -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'harveynick-com';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app/';
+        var disqus_url = 'http://www.harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

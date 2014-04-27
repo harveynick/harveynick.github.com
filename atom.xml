@@ -1,0 +1,1357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[HarveyNick.com]]></title>
+  <link href="http://www.harveynick.com/atom.xml" rel="self"/>
+  <link href="http://www.harveynick.com/"/>
+  <updated>2014-04-27T15:27:48+01:00</updated>
+  <id>http://www.harveynick.com/</id>
+  <author>
+    <name><![CDATA[Nick Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Is It Time to Change Blogs Again?]]></title>
+    <link href="http://www.harveynick.com/blog/2014/04/27/is-it-that-time-again/"/>
+    <updated>2014-04-27T00:48:20+01:00</updated>
+    <id>http://www.harveynick.com/blog/2014/04/27/is-it-that-time-again</id>
+    <content type="html"><![CDATA[<p>So you may have noticed that it&rsquo;s been a little quiet around here as of late. There are a few reasons for this. Firstly, I&rsquo;ve been stupidly busy with work and the amount of&hellip; faff involved with adding a new post using <a href="http://octopress.org">Octopress</a> has been something of a blocker.</p>
+
+<p>You see, Octopress Isn&rsquo;t like Wordpress or Blogger. It doesn&rsquo;t run on a server out there in the cloud. It&rsquo;s a program and a set of files on your local machine. You create new posts as text files, then run the program. This generates a set of HTML files, which you then upload to a server. In some ways this is a lot closer to programming than regular writing.</p>
+
+<p>So when I upgraded my computer it was more than a small amount of effort to reassemble all of the different components required for this. It took me a while to work up the enthusiasm. Plus: not everything worked. Hence the fact that I&rsquo;m back on the default theme.</p>
+
+<p>So, I got to thinking&hellip; perhaps it&rsquo;s time to look at other options. Again.</p>
+
+<!-- More -->
+
+
+<p>With this in mind I came up with a list. Who doesn&rsquo;t like lists? I want to:</p>
+
+<ul>
+<li>Write posts in markdown format. WYSIWYG editors end up being more trouble than they&rsquo;re worth, sooner or later;</li>
+<li>Own my posts. That is: I want them to be stored in a place I can see and access, not hidden away in a database;</li>
+<li>Be able to preview the final appearance of a post;</li>
+<li>Have good options for analytics. Given that I wrote <a href="https://itunes.apple.com/app/google-adsense/id680739529?mt=8">AdSense for iPhone</a>, it would be nice if AdSense was one of those options;</li>
+<li>Not have to pay the earth. I&rsquo;m not adverse to paying here&hellip; but I&rsquo;m not going to pay a lot;</li>
+<li>Be able to easily edit a post on the go. For example: If I notice a spelling or grammar error (or someone points one out to me);</li>
+<li>Have a minimum of faff involved in in creating and publishing a post;</li>
+<li>Have a clean, responsive and flexible design;</li>
+<li>Make it really easy to include an image as part of a post, or use one as a header image;</li>
+<li>Be able to time the publication of a post.</li>
+</ul>
+
+
+<p>&hellip;and here are the options I&rsquo;m looking at:</p>
+
+<h3><a href="http://octopress.org">Octopress</a></h3>
+
+<p>Basically: keep doing what I&rsquo;m doing now. The least amount of faff in the short term, but the most in the ongoing sense. It nicely hits the first five points above, storing all posts as text files in a git repository and allowing you to view a local version of the site, but misses on just about all of the others.</p>
+
+<p>In particular: if I have Internet access, I can change the site. But if I&rsquo;m not at a computer with the entire environment set up it&rsquo;s a faily annoying process, since I have to make any change in two places: the HTML and the source file.</p>
+
+<h3><a href="http://jekyllrb.com">Jekyll</a></h3>
+
+<p>You could call this diet Octopress, though actually Octopress is built on top of Jekyll. If you use this and host it on GitHub Pages (which is what I&rsquo;m already doing) some of the headaches I have with Octopress go away, namely: the need to manually regenerate the site with any change. But&hellip; it&rsquo;s also a lot less powerful. Hosting it in this way does not allow you to use any plug-ins, so some things (such as including a YouTube video as part of a post) become much more annoying.</p>
+
+<h3>Octopress plus&hellip; additional magic</h3>
+
+<p>This is probably the most hacker like of all of the options here. Thus: the one which is most likely to go horribly, horribly wrong. What I&rsquo;m talking about here is something like what is described in <a href="https://www.bitballoon.com/blog/2013/12/13/continous-deployments-for-jekyll-sites">this post</a>. Essentially: I would write the blog and post it to a git repository exactly as I have been doing all along, but rather than it then being published by GitHub Pages, the change would then be picked up by an external system, which would automatically build the website and publish it.</p>
+
+<p>Obviously this adds a lot of complication, but also combines the strength of the two options above. I would get the power and flexibility of Octopress, plus any change to the source file would result in the website being updated. GitHub actually allows you to edit a file and commit the change via their site, but this is not the only option. I might also be able to use this approach to time the publishing of posts. Maybe.</p>
+
+<h3><a href="http://www.tumblr.com">Tumblr</a></h3>
+
+<p>I&rsquo;m actually already using for my (also slightly neglected) <a href="http://ohsohumbleopinion.tumblr.com">short film reviews blog</a>. It&rsquo;s a really solid hosted blog platform, and the functionality for scheduling posts is absolutely top notch&hellip; but it just doesn&rsquo;t feel right for long form writing to me. It feels more like &ldquo;Twitter with knobs on.&rdquo;</p>
+
+<p>Still, it is worth considering.</p>
+
+<h3><a href="http://postach.io">Postach.io</a></h3>
+
+<p>This is an interesting one. The idea is that you write your posts as notes in <a href="http://www.evernote.com">Evernote</a>, and then Postach.io picks them up via the Evernote API posts them to your blog. It also seems to have functionality for <a href="http://help.postach.io/creating-posts-pages-with-dropbox">pulling posts</a> out of DrobBox in a similar fashion. In a lot of ways this sounds pretty ideal to me, especially in terms of workflow.</p>
+
+<p>See also: <a href="http://skrivr.com">Skrivr</a>, <a href="http://calepin.co">Calepin</a> and <a href="http://Scriptogr.am">Scriptogr.am</a>, all of which I&rsquo;m going to take a look at.</p>
+
+<h3><a href="https://ghost.org">Ghost</a></h3>
+
+<p>Ghost is a very interesting looking blogging platform which emerged from a recent Kickstarter Campaign&hellip; and that&rsquo;s about all I know about it so far.</p>
+
+<h3>The Plan</h3>
+
+<p>Basically: I&rsquo;m going to post this entry, another one I&rsquo;ve had in mind for a little while, the &ldquo;Whilst not running in Australia&rdquo; post and probably one other to a few of these options to find out just how painful it is. Then we&rsquo;ll see.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Some Thoughts on Gamification]]></title>
+    <link href="http://www.harveynick.com/blog/2013/09/14/am-i-winning/"/>
+    <updated>2013-09-14T16:01:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/09/14/am-i-winning</id>
+    <content type="html"><![CDATA[<p>If you&rsquo;re playing any sort of a game, the question &ldquo;Am I winning?&rdquo; is usually quite easy to answer. &ldquo;Is my score higher than the other guy?&rdquo; usually covers it (though if you&rsquo;re playing something like chess it might be a little more complicated than that). If you&rsquo;re playing a computer game the fact that your character is still alive may well be enough to settle this question in your favour.</p>
+
+<p>In life, though, it is a much harder question to answer. It may well be true that, to the healthy mind, it&rsquo;s not something which should ever really matter, but <a href="http://harveynick.com/blog/2013/05/06/do-you-even-lift/">as noted before</a>, gamification works really (embarrassingly) well for me.</p>
+
+<p>I suspect that deep down most people have their own ways of keeping score. Their bank balance. Their air miles account. How far they ran today. More abstract things, such as their perceived quality of the of the photos they took this weekend, leaning to less abstract things, actual scores, such as might be gleaned from <a href="https://www.fitocracy.com/">Fitocracy</a> or <a href="https://foursquare.com">Foursquare</a>.</p>
+
+<!-- More -->
+
+
+<p>Life is not a computer game, but even so it&rsquo;s nice to have a way of tracking your progress. I&rsquo;ll say it again: gamification works really well for me. As a result, I found myself looking to games directly for inspiration. If you haven&rsquo;t picked up on this already: this is going to be quite the nerdy blog post. You have been warned.</p>
+
+<p>In a certain kind of game, it&rsquo;s quite common to not only have a single main score (usually called something like &ldquo;experience points&rdquo;), but also a set of attributes which describe the capabilities of your character.</p>
+
+<p>If we go right back the main influence for a lot of these sort of games (Dungeons and Dragons, though I&rsquo;ll be drawing from <a href="http://paizo.com/pathfinder">Pathfinder</a>, a alternative modern implementation) we find six main attributes:</p>
+
+<ul>
+<li><em>Strength</em> measures muscle and physical power;</li>
+<li><em>Dexterity</em> measures agility, reflexes, and balance;</li>
+<li><em>Constitution</em> represents your character&rsquo;s health and stamina;</li>
+<li><em>Intelligence</em>  determines how well your character learns and reasons;</li>
+<li><em>Wisdom</em> describes a character&rsquo;s willpower, common sense, awareness, and intuition;</li>
+<li><em>Charisma</em> measures a character&rsquo;s personality, personal magnetism, ability to lead, and appearance.</li>
+</ul>
+
+
+<p>In Pathfinder you have a score for each of these values, with a (theoretical) maximum of 18, though anything less than 10 is considered very bad. For all intents and purposes your character is born with these scores, chosen semi-randomly using dice, and has very little in the way of opportunity for improving them directly.</p>
+
+<p>Tangent: that last part has always annoyed me. In <em>D&amp;D</em> and <em>Pathfinder</em>, doing (for example) strength based activities has no effect on your strength score, and increases in strength have no connection to strength based activities your character may have performed.</p>
+
+<p>That aside, I think these are actually quite good metrics for a person to use when measuring their personal development (or less marketing speak-ey words to that effect). Here are some more buzz words for you (and the Google crawlers): personal analytics, the quantified self. The question then becomes one of measurement.</p>
+
+<h3>Strength</h3>
+
+<p>Strength would appear to be the easier to measure directly (and the ones which ties in most easily with many of my other posts). Basically: how much can you lift? We&rsquo;re looking for a single normalised value here, though, not a collection of eight absolute ones (4 &ldquo;primary&rdquo; barbell lifts * 2 (weight + repetitions)).</p>
+
+<p>We can transform the eight values into four quite simply using a technique similar to that employed by <a href="http://www.strstd.com/">Strength Standards</a> to turn a weight and number of reps into a single theoretical &ldquo;one rep max&rdquo;. <a href="http://en.wikipedia.org/wiki/One-repetition_maximum#Calculating_approximate_1RM">Wikipedia provides</a> a wealth of formulas for calculating this.</p>
+
+<p>So far so good, but we still have four numbers when we need one. Adding them together won&rsquo;t help, since this doesn&rsquo;t take the weight of the individual performing the lifts into account and also assumes that all four values have the same scale. This is categorically not the case. My dead lift max is almost three times that of my shoulder press, but the latter is no less important than the former. Normalisation is required.</p>
+
+<p>The other trick Strength Standards performs is to plot your theoretical one rep max on a scale which starts at &ldquo;untrained&rdquo; and tops out at &ldquo;elite&rdquo; (which roughly translates to &ldquo;Olympic Athlete&rdquo;), with values selected by weight. These also happen to be not unlike those (reluctantly) <a href="http://startingstrength.com/files/standards.pdf">laid out by Mark Riptoe</a>.</p>
+
+<p>That&rsquo;s the key here, I think. If we make &ldquo;untrained&rdquo;/&ldquo;Cat. I&rdquo; a 10 and &ldquo;elite&rdquo;/&ldquo;Cat. V&rdquo; an 18 we end up with four normalised values. Average these and: boom. We have our score for strength, I think.</p>
+
+<p>This doesn&rsquo;t completely prevent a decent squat from compensating for a terrible bench press (like in my case), but it does mitigate the effect somewhat. That said: I am prepared to admit that a more fair measure might cap the total at some value measured from the weakest of the four. We&rsquo;ll see. Also, the rate at which this should decay presents an additional complication here, for reasons I&rsquo;m not going to go into, but might in another post.</p>
+
+<p>The other five values are not as easy as all that. Rather than actually get into the nitty gritty of those here, I&rsquo;ll instead discuss what I think if the right approach and possibly revisit them later.</p>
+
+<h3>Dexterity</h3>
+
+<p>Dexterity, I have to confess, has me almost completely flummoxed. How do you measure agility or aim in a way which can actually be reflected in everyday life? If you&rsquo;re a member of a gun or archery club, then problem solved. Maybe. Otherwise I&rsquo;m not so sure. Likewise, if you study a martial art I think that probably counts as &ldquo;Dexterity&#8221;… but how do you compare <a href="http://en.wikipedia.org/wiki/Kendo">Kendo</a> to <a href="http://en.wikipedia.org/wiki/Krav_Maga">Krav Maga</a>?</p>
+
+<h3>Constitution</h3>
+
+<p>Constitution would appear to be a little more straightforward. This is a measure of what your body can take. Have far can you run, cycle or swim? How long does it take you? How many press/chin/pull ups can you do (maybe)? Perhaps even steps taken (I&rsquo;m looking at you <a href="http://www.fitbit.com/uk">Fitbit</a> / <a href="https://jawbone.com/up">Jawbone Up</a> / <a href="http://www.nike.com/cdp/fuelband/us/en_us/">Nike+ Fuelband</a> / <a href="http://www.withings.com/en/pulse">Withings Pulse</a>)? What I don&rsquo;t have yet is the metric to fuse this all together.</p>
+
+<h3>Intelligence</h3>
+
+<p>There is, of course, a fairly standard method of measuring intelligence. Dropping in &ldquo;IQ test&rdquo; here and saying &ldquo;job done,&rdquo; would definitely be the simplest solution. For an alternative proposal, though, I will defer to a good friend of mine. Tyrion Lannister.</p>
+
+<blockquote><p>“My brother has his sword, King Robert has his warhammer and I have my mind… and a mind needs books as a sword needs a whetstone if it is to keep its edge.”</p><footer><strong>Tyrion Lannister</strong> <cite>George R.R. Martin&#8217;s a Game of Thrones</cite></footer></blockquote>
+
+
+<p>So then, perhaps this measure could actually relate to rate of reading. Whether this should be measured in terms of books, pages or words I&rsquo;m not sure yet. These get increasingly accurate… and increasingly faffy* to measure. Another thing to consider is whether all books are created equal. I don&rsquo;t want to get (too) pretentious here, but I&rsquo;m inclined to consider some books… more beneficial to improving one&rsquo;s mind than others. Yes, I enjoyed the hell out of the Da Vinci Code, and I don&rsquo;t care who knows it, but I was (if anything) less intelligent after I finished reading it.</p>
+
+<p>It&rsquo;s also not clear to me whether this category should include consumption of movies. What about plays? Magazines? Articles on the Web? Perhaps even TV shows (Breaking Bad <em>yes</em>, X Factor <em>no</em>)?</p>
+
+<h3>Wisdom</h3>
+
+<p>Wisdom is quite nebulous as presented here. The willpower part of it would tend suggest some sort of measure of personal discipline. How well you keep to your diet, how consistently you exercise (perhaps this category is where the step trackers fit).</p>
+
+<p>For me, though, wisdom suggests experience and I&rsquo;m inclined to connect that to travel. On the wall of my flat is a map with pins pushed in for each of the countries (or cities in the case of the big ones) I&rsquo;ve visited. This is the sort of thing I&rsquo;m thinking of. Pins on a map. Stamps in a passport. These are a bit on the analogue side though, and this is the digital age, baby. Besides, EU countries don&rsquo;t stamp my bloody passport anymore. I&rsquo;m inclined to point towards services such as <a href="https://foursquare.com">Foursquare</a> and <a href="http://en.fogofworld.com/">Fog of World</a> when it comes to measuring things like this.</p>
+
+<p>The former divvies everything up nicely and gives you lots of other ways of measuring experience (&ldquo;Your first Korean Restaurant!&rdquo;), while the latter gives you an actual percentage of the world which you&rsquo;ve explored. Obviously this only works if you keep the app running (so say goodbye to your battery life) or manually input tracks from an external GPS (faff!), and is also guaranteed to be a distressingly small number which grows at an almost imperceptible rate.</p>
+
+<p>Again, there is a ghost of the potential for a metric here.</p>
+
+<h3>Charisma</h3>
+
+<p>Charisma is similarly nebulous. I refuse to declare this a measure of how sexy a person is. A don&rsquo;t even know how we would go about measuring that anyway (selfies placed on Hot or Not?** Maybe not…). Instead I&rsquo;d be inclined to make it a counterpart to intelligence, in a similar way that strength is essentially a counterpart to constitution: The first a measure of what you put out, the second a measure of what you take in… and my suggestion for intelligence was a measure of the creative work a person takes in.</p>
+
+<p>So then: I suggest a measure of charisma related to a person&rsquo;s creative output. Words written. Content produced and published. This could be in terms of your blog, the novel you&rsquo;ve been working on or that personal coding project. An additional measure for this could be how much others actually engage with the content you produce. In the case of anything web based <a href="http://www.google.com/analytics/">Google Analytics</a> (and similar) make a good way of measuring this, I think. The others would be somewhat harder to measure directly.</p>
+
+<h3>Lastly</h3>
+
+<p>Something you might have noticed here: that first one was quite easy to map onto the Dungeons and Dragons 0-18 scale; the others  not so much. They&rsquo;re much harder to calibrate and, in some cases, quantify. Some might only work as qualitative measures, in fact.</p>
+
+<p>But then, as you might have guessed, I&rsquo;m really thinking out loud here. These ideas are only half baked, but who doesn&rsquo;t love the smell of half finished baking?</p>
+
+<br/>
+
+
+<p>* Perhaps you need to Google this word. Know this: <a href="http://www.urbandictionary.com/define.php?term=faffy">Urban Dictionary</a> is wrong on every count, at least for the meaning I&rsquo;m assigning to it. <a href="http://www.collinsdictionary.com/submission/2/faffy">Collins Online Dictionary</a> gets it spot on.</p>
+
+<p>** News Flash! <a href="http://hotornot.com/">Hot or Not</a> is still a thing!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Whilst Not Running in Australia (With Photos!)]]></title>
+    <link href="http://www.harveynick.com/blog/2013/08/11/whilst-not-running-in-australia/"/>
+    <updated>2013-08-11T14:10:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/08/11/whilst-not-running-in-australia</id>
+    <content type="html"><![CDATA[<p>In throwing up a few pictures of my trip down under in that <a href="blog/2013/04/07/running-the-first-time/">previous running related post</a>, I realised I hadn&rsquo;t really posted much else about that particular trip to the inter webs. I also realised that picking through those photos is a bit of a bad idea, because I&rsquo;d forgotten just how much I enjoyed Perth.</p>
+
+<p>I tend to say that I &ldquo;spent about 10 weeks in Australia in 2010.&rdquo; I use this slightly odd wording because I actually had two trips out there with a short break in-between. That break was partly due to logistics and also because the customer decided to finally announce they wanted me on site a little under six weeks before the single date for the entire of 2010 for which I refused to be anywhere other than St Andrews, Scotland. This was the date of a good friend&rsquo;s wedding, at which I was to be a groomsman (among the biggest honours which has ever by extended to me) and thus it was not even on the negotiating table. &ldquo;Don&rsquo;t worry,&rdquo; they said. &ldquo;Our operations calendar is such that we won&rsquo;t need you for more than a couple of weeks.&rdquo; I&rsquo;m sure you can see where this is going…</p>
+
+<!-- More -->
+
+
+<p>First of all let me assure you that travelling from Edinburgh to Perth in cattle class is no fun what so ever. Especially via what appears to be a budget carrier. Twenty seven hours in the metaphorical saddle left me staggering out of Perth airport and into a rental car at around 4am.</p>
+
+<p><em>Side note: this was the first time I&rsquo;d made use of a rental car whilst by myself. If you ever find yourself in this situation and you&rsquo;re given the option of a sat nav: take it.</em></p>
+
+<p>I found my way to my beachside motel, stripped the bed down to check for spiders (yes, I was bloody paranoid), re-dressed it, and then fell asleep for something in the region of 12 hours. This was jet lag on an epic scale. Having prised myself out of bed and checked in with the customer the next day I had a bit of time at liberty. I was also quite close to King&rsquo;s Park, one of the things the internet had recommended. I figured it was worth half an hour of my time&hellip;</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00782.JPG"></p>
+
+<p>Three or four hours later I got back in the car. King&rsquo;s Park is, not to put too fine a point on it, utterly beautiful. Walking around it I found one delightful surprise after another.</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00829.JPG"></p>
+
+<p>It&rsquo;s perched on a hill close to the river and the central business district, giving you a a fantastic view of what&rsquo;s actually a very attractive city anyway.</p>
+
+<center>
+<img src="http://www.harveynick.com/images/blog/2013/08/11/DSC00816.JPG"><!-- header_img /images/blog/2013/08/11/DSC00816.JPG -->
+</center>
+
+
+<p>This was also where I saw my first free roaming parrot. At the time I thought this was incredibly special. Later I would discover that Perth has parrots in the same way London has pigeons.</p>
+
+<p>After this it was back to work for a week or so. I did, however, get to spend some time hanging out at a beautiful secluded beach with incredibly clear water…</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00872.JPG"></p>
+
+<p>…shame about the factory piers to either side, though. With the beach trials completed I was shipped out for the first of four trips to Karratha in the North of Western Australia, which is very hot, very red and has very beautiful sunsets.</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00904.JPG"></p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/P1000253.JPG"></p>
+
+<p>It also has a gas refinery, which (believe it or not) is essentially the setting for a <a href="http://www.imdb.com/title/tt0803061/">2011 romantic comedy</a>.</p>
+
+<p>Back in Perth I found some time to do more touristing, this time with a cohort in tow. Caversham Wildlife Park is a good place to get up close and personal with some kangaroos:</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00969.JPG"></p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00971.JPG"></p>
+
+<p>You can also pet a koala here, though I remain firmly convinced it had no idea we were even there.</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00964.JPG"></p>
+
+<p>Case in point: this koala is almost certainly walking in the exact opposite direction to the one you would expect:</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00966.JPG"></p>
+
+<p>&hellip;and I&rsquo;m going to split this in half here, and return with some attempts at more arty shots in a later post.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[So I Made an iPhone App]]></title>
+    <link href="http://www.harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app/"/>
+    <updated>2013-08-10T14:11:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app</id>
+    <content type="html"><![CDATA[<p>Various things have kept me busy and away from this blog just recently. I&rsquo;ve done a bit of traveling (both for business and pleasure), I&rsquo;ve discovered Netflix (and Crunchyroll), and, somewhat more productively, I followed through on what started off as my &ldquo;20% time&rdquo; project.</p>
+
+<p>There is, <a href="https://itunes.apple.com/app/id680739529?mt=8">right now in the iPhone App Store</a>, an app nominally <em>by Google Inc</em> which was written almost entirely by my own good hands. Obviously I wasn&rsquo;t entirely a one man band in this. I had a lot of help from designers and UX people, my code was reviewed by those who were available to do so, and I had support at the product management level. I also had a very understanding manager who was willing to let me devote an increasing amount of my time to this.</p>
+
+<!-- More -->
+
+
+<p>The app itself is, at this point, very simple. It provides a basic overview of an AdSense account, together with couple of other reports. It looks a little bit like this, in fact:</p>
+
+<center>
+<img src="http://a1.mzstatic.com/us/r30/Purple4/v4/60/de/7c/60de7c65-6927-ae70-630a-c1c104a0113c/screen568x568.jpeg"><!-- header_img http://a1.mzstatic.com/us/r30/Purple4/v4/60/de/7c/60de7c65-6927-ae70-630a-c1c104a0113c/screen568x568.jpeg -->
+</center>
+
+
+<p>Actually getting to a place where I could get such a simple app published was not itself such a simple process, however.</p>
+
+<p>First of all I had to learn a new programming language. I&rsquo;m not a complete stranger to Objective-C, <a href="http://www.harveynick.com/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/">I wrote about it before</a> in fact, but there was definitely a learning process involved. Objective-C is a bit of a strange beast. At times it behaves like C, at other times more like Ruby. It can be forgiving at times, while at others it will explode in your face without warning or explanation.</p>
+
+<p>Things which are considered fairly normal in Objective-C would be considered completely insane in most other programming languages. It&rsquo;s also very, very verbose. Your method calls can quite easily stretch over eight lines. I keep joking that learning Objective-C decreased my ability to communicate in English. Too many languages in one head. At least I think I&rsquo;m joking&hellip;</p>
+
+<p>I also had to learn a new platform and set of tools. UIKit is, in my opinion, a brilliant framework. As soon as you start adding something like <a href="http://nimbuskit.info/">NimbusKit</a> into the mix you&rsquo;re working with really powerful tools which let you put together beautiful and incredibly smooth applications in a very natural manner. XCode, though, took a little bit of getting used to. Likewise, many of the standard build tools I&rsquo;m used to working with at Google simply weren&rsquo;t available to me.</p>
+
+<p>Once the app was built and tested, tweaked and ready, the next step came. The one iPhone developers seem to dread. Submitting the app to Apple for review. In my case this was fairly straight forward (if complicated by the Apple developer site&rsquo;s recent downtime). The iTunes connect interface gets the job done quite well. There were no weird problems and no stonewalling.</p>
+
+<p>So there you have it. I&rsquo;m officially an iOS developer. I enjoyed this and I plan to keep doing it. If you&rsquo;re an AdSense user and carry an iPhone, I encourage you to <a href="https://itunes.apple.com/app/id680739529?mt=8">install the app</a> and send me feedback. If you carry an Android phone, on the other hand, I encourage you to download <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.ads.publisher">the equivalent Android app</a>, developed by my colleague Agnieszka.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[That Ad]]></title>
+    <link href="http://www.harveynick.com/blog/2013/06/16/that-ad/"/>
+    <updated>2013-06-16T16:36:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/06/16/that-ad</id>
+    <content type="html"><![CDATA[<p>So. There has been a small(ish) ad off to the right hand side of this blog for a couple of months now. It is as small as <a href="https://www.google.com/adsense">AdSense</a> will let me make it, though ideally I&rsquo;d prefer if it had a size not unlike those used by <a href="http://mattgemmell.com/">Matt Gemmell</a> and
+<a href="http://www.marco.org/">Marco Arment</a>. On the whole, though, it doesn&rsquo;t bother me as much as I worried it might, aside from the occasional animated flash ad.</p>
+
+<!-- More -->
+
+
+<p>As <a href="http://harveynick.com/blog/2013/03/22/ch-ch-ch-changes/">previously explained</a>, it&rsquo;s not there in any sort of attempt to make money from this blog (I&rsquo;ll come back to that, though), but more as an exercise in learning more about the product I work on. To that end, it&rsquo;s been quite successful. Having an account of your own (with actual numbers flowing through it) turns out to be very useful. I now have experience of the AdSense website as an actual end user. I have a better handle on what works well (and not so well). I&rsquo;m also more familiar with the end products of the various sub-teams I work with, which is always a good idea.</p>
+
+<p>So what about earnings, then? Will I be packing in my day job to instead pursue the glamorous life of a blogger? That would be a no. A <em>hell no</em>, in fact. Before I talk about this more: a little bit of background.  Advertising is <em>COMPLICATED</em>. Ad serving, in particular, is insanely complicated. You would not believe the amount effort it took to make that 200 by 200 square appear over to the right hand side of this page and in the grander scheme of things this example was very, very simple.</p>
+
+<p>Ad revenue is also quite complicated. I&rsquo;m over simplifying, but there are essentially four ways a publisher might get paid for the ads on their site:</p>
+
+<ol>
+<li><p><strong>Cost per Click (CPC).</strong> This is (in some ways) the simplest and probably the one you expect. If someone clicks on ad on your site, the advertiser pays you. How much varies wildly, based on a variety of factors.</p></li>
+<li><p><strong>Cost per Mille (CPM).</strong> In this model the publisher gets paid per thousand impressions. That is: people seeing the ads but not clicking on them. It is generally the case that this pays a lot less than CPC.</p></li>
+<li><p><strong>Cost per Action (CPA).</strong> This is the affiliate model. You know those times when you look at pair of shoes (or, so I&rsquo;m told: an&hellip; item of adult paraphernalia) on Amazon, and then they follow you around the internet? Chances are if you actually click on one of those ads, the publisher doesn&rsquo;t get paid unless you then proceed to buy the item in question (or possibly something else in the same session).</p></li>
+<li><p><strong>Cost per Day (CPD).</strong> This one is the closest to traditional advertising, in my opinion. Basically, the advertiser pays a set amount for their ad to appear on the publisher&rsquo;s site for a set period of time.</p></li>
+</ol>
+
+
+<p>The meagre revenue I see in AdSense comes entirely from CPC and CPM. To put it into perspective: on a particularly good day, harveynick.com might have a <em>Revenue per Mille</em> (RPM, the corollary of CPM) of £0.18. That means that if I get a thousand page views, AdSense will pay me 18p. On a good day, this site gets maybe 50 page views. I should note here, though: those two definitions of &ldquo;a good day&rdquo; rarely line up with each other.</p>
+
+<p>I get the occasional click, and the revenue from that eclipses any CPM revenue to such an extent as to make it essentially invisible. My total revenue to date is in single figures of pounds. AdSense does not, in fact, pay you until your revenue reaches the equivalent of $100.</p>
+
+<p>So no, I&rsquo;m not going to be making money off this site any time soon. That&rsquo;s okay, though, because it&rsquo;s not my intent and I&rsquo;ve not really been trying to do so.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Further Watching and Reading]]></title>
+    <link href="http://www.harveynick.com/blog/2013/05/21/further-watching-and-reading/"/>
+    <updated>2013-05-21T20:37:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/05/21/further-watching-and-reading</id>
+    <content type="html"><![CDATA[<p>This was supposed to go at the end of my last post, but it was running a little long. Basically, here is collection of writings about fitness from around the internet which I&rsquo;ve found either useful, thought provoking, or fun.</p>
+
+<p><em>Warning: the blog post features two pictures of women in bikinis. It&rsquo;s totally relevant in context, be in case that isn&rsquo;t safe for your work: be warned.</em></p>
+
+<!-- More -->
+
+
+<h3><a href="http://www.mensjournal.com/magazine/everything-you-know-about-fitness-is-a-lie-20120504">Everything You Know About fitness is a Lie</a></h3>
+
+<p>I really have to start here, because I think this is possibly the best article about fitness I&rsquo;ve ever read. The internet, by and large, seems to agree with me. I&rsquo;ll keep me commentary on it to a minimum. Seriously. Go read it.</p>
+
+<h3><a href="http://matt.might.net/articles/hacking-strength/">Matt Might on Gaining Muscle with Least Resistance</a></h3>
+
+<p><a href="http://matt.might.net/">Matt Might</a> is an assistant professor in Computer Science at the University of Utah. His posts on programming languages are a fairly common sight towards the top of <a href="http://news.ycombinator.com/">Hacker News</a>. Then out of nowhere he wrote this post about how he&rsquo;d gone about getting himself into shape. I don&rsquo;t agree with everything he writes here*, but this is a well written post which is worth reading for three things in particular:</p>
+
+<ol>
+<li>His motivations, which I can understand completely, even though I don&rsquo;t have kids of my own;</li>
+<li>The improvement in his overall quality of life;</li>
+<li>It&rsquo;s basically an ode to the principle of &ldquo;the best workout program is the one which works for you&rdquo;.</li>
+</ol>
+
+
+<h3><a href="http://www.soheefit.com/cardio-bunny-stop-it-stop-it-now/">Sohee Lee on Why Being a Cardio Bunny is Bad for Your Butt</a></h3>
+
+<p>This one (and the next one) is for you, H. You know who you are.</p>
+
+<p>Here&rsquo;s an article by Sohee Lee, who is actually the online trainer I worked with. That really didn&rsquo;t work out, but I still have a lot of respect for her and the philosophy behind a lot of her writing. The TL;DR here is that if you (girls) want your ass to look like this:</p>
+
+<p><img class="center" src="http://www.soheefit.com/wp-content/uploads/2012/01/Screen-shot-2012-01-23-at-12.10.22-AM1.png" title="Definitely copyright Sohee Lee" ></p>
+
+<p>&hellip;you should do heavy squats, <em>not</em> cardio. Let&rsquo;s continue along that thread some.</p>
+
+<h3>Miss America&rsquo;s Workout Program</h3>
+
+<p>Now let&rsquo;s talk a little bit about one of Miss Sohee Lee&rsquo;s clients. It seems to be the case that women don&rsquo;t want to lift weights, because they&rsquo;re worried it will make them bulky. I guess that depends on how you define bulky. This is a picture of Mallory Hagan, the current Miss America:</p>
+
+<p><img class="center" src="http://www.aceshowbiz.com/images/wennpic/mallory-hagan-2013-miss-america-final-competition-04.jpg"></p>
+
+<p>Now, I can only speak for myself here, but I do not look at that picture and think &ldquo;too bulky.&rdquo; To pull a quote from the West Wing, I look at that picture and think something along the lines of &ldquo;That&rsquo;s a fine looking woman.&rdquo; If you&rsquo;re thinking the same thing, perhaps you&rsquo;re curious about her training program. I&rsquo;ll let her explain:</p>
+
+<iframe src="http://www.youtube.com/embed/NfnyBOpCZOU" width="" height="" frameborder="0" allowfullscreen></iframe>
+
+
+<p>I guess the takeaway here is that if you&rsquo;re female, lifting heavy weights isn&rsquo;t going to suddenly make you look like an Olympic weight lifter. If you work incredibly hard you might end looking a bit more like an Olympic heptathlete though, if you catch my drift.</p>
+
+<p>Why do I care? It&rsquo;s not entirely un self serving. I personally think that healthy is more attractive than skinny. See also: <a href="http://www.bodbot.com/Blog/Rise_of_the_Hardbodied_Woman.html">The Rise of the Hard Bodied Woman</a> and <a href="http://i2.cdnds.net/13/12/618x335/movies_star-trek-into-darkness.jpg">Alice Eve in Star Trek Into Darkness</a>.</p>
+
+<h3><a href="http://www.youtube.com/channel/UCduKuJToxWPizJ7I2E6n1kA">Bro Science Life</a></h3>
+
+<p>Okay, time for a little bit of comedy. Bro Science Life is a YouTube channel featuring a series of fitness / gym related comedy videos. I find most of them utterly hilarious (but then I used to think <a href="http://askaninja.com/">Ask a Ninja</a> was hilarious as well).</p>
+
+<p>The videos are, in particular, making fun of &ldquo;bro culture&rdquo;, which in my experience does exist, but is not as prevalent as you might think. There&rsquo;s also actually a surprising amount of solid information in the videos, if you can separate the &ldquo;funny because it&rsquo;s true&rdquo; from the hyperbole and comedy bro science. <a href="http://www.youtube.com/watch?v=_0WxyKGD7sU">For example</a>:</p>
+
+<iframe src="http://www.youtube.com/embed/0WxyKGD7sU" width="" height="" frameborder="0" allowfullscreen></iframe>
+
+
+<p>I think I actually agree with all of that… except for the thing about not using small plates. Slow and steady wins the race.</p>
+
+<h3><a href="http://www.strstd.com/">Strength Standards</a></h3>
+
+<p>Lastly here&rsquo;s a site a friend introduced me to, and which I&rsquo;ve come to find quite useful. Basically: plug in your gender and weight, then your weight and reps for each of the four primary barbell lifts. It then gives you a theoretical one rep max, and places you on a scale from &ldquo;Untrained&rdquo; to &ldquo;Elite&rdquo;. I find it to be a fairly useful progress tracking tool. Also: I like graphs.</p>
+
+<p>* I wouldn&rsquo;t go anywhere near that &ldquo;strength training&rdquo; contraption.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Barbell Training Follow Up]]></title>
+    <link href="http://www.harveynick.com/blog/2013/05/19/barbell-training-follow-up/"/>
+    <updated>2013-05-19T18:23:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/05/19/barbell-training-follow-up</id>
+    <content type="html"><![CDATA[<p>So: after writing that giant post about the three main beginners programs I read up on while trying to figure out the best way to get myself into some sort of (non round) shape, I thought I&rsquo;d switch to a topic on which I can confidently talk with some authority: me.</p>
+
+<p>More specifically, in case you are interested: the program I&rsquo;ve ended up putting myself on, the other things which are important and how this all is actually working out for me.</p>
+
+<!-- More -->
+
+
+<h2>The Program I&rsquo;m Following</h2>
+
+<p>As I mentioned in my <a href="http://harveynick.com/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs/">previous post</a>, I&rsquo;m currently following the <a href="http://strengthvillain.com/forum/viewtopic.php?f=9&amp;t=89">Greyskull LP</a> (Linear Progression) barbell training program, having previously spent a few months on <a href="http://stronglifts.com/">Strong Lifts 5x5</a> and then working with an online trainer for three months (which is another story entirely). Greyskull is made up of a &ldquo;core program&rdquo; (which I waffled about at length in my previous post, so will try to avoid repeating myself here) and a set of &ldquo;plug-ins&rdquo;* which add exercises or rearrange the program in order to add flexibility or meet specific goals.</p>
+
+<p>I do the core program as previously described and add the following &ldquo;plug-ins&rdquo;:</p>
+
+<ol>
+<li>On bench days I perform two sets of barbell curls, on press days two sets of V-Bar lat pulldowns, though I&rsquo;ll be switching that to weighted chin ups next time around;</li>
+<li>On bench days I do two sets of either reverse crunches or knees to elbows, press days two sets of planks;</li>
+<li>On &ldquo;non training&rdquo; week days I walk for around 40 minutes before breakfast (so completely fasted);</li>
+<li>On Saturdays I go for a run. Fifteen minutes of intervals (Thirty seconds on, one minute off, times ten), followed by a fifteen minute steady jog;</li>
+<li>Every evening before bed I do chin-up &ldquo;ladders&rdquo; (1 rep, 2 reps, 3 reps, 4 reps, 5 reps, 1 rep, and so on).</li>
+</ol>
+
+
+<p>The first of these is lifted directly from Johnny Pain&rsquo;s original forum post describing the program. The second is my replacement for the &ldquo;neck harness&rdquo; work also included in the forum post. I don&rsquo;t want a giant neck, but I would quite like to have abs. I also primarily put on fat around my middle and figure anything I can do to shift the muscle/fat ratio in that area is probably a good thing.</p>
+
+<p>The fasted walk idea is suggested in the <a href="http://www.amazon.co.uk/The-Greyskull-LP-Edition-ebook/dp/B007WNC50Q">Greyskull LP book</a> as something to help with fat loss, and I figure &ldquo;what the hell, can&rsquo;t hurt&rdquo;. I also like to do something active on my off days, as it seems conducive to keeping in good habits.</p>
+
+<p>The Saturday run is something which was added to my program by the online trainer I worked with, and I found I really enjoyed. Working on stamina (when almost everything else I do is focussed on strength) seems like a good idea as well… especially in terms of being prepared for the <a href="http://www.youtube.com/watch?v=6TiXUF9xbTo">zombie apocalypse</a>. We all know the importance of cardio in those circumstances.</p>
+
+<p>In my experience there is no better exercise than chin-ups for making you feel strong. Sure, you lift the heaviest in deadlift, and shoulder press actually lets you throw something above your head… but neither of these is quite the same as lifting yourself off the ground and into the air. Psychologically, that&rsquo;s huge. (Greyskull LP author) Johnny Pain actually recommends doing sets of chin-ups throughout the day, gradually increasing the number of set and reps, but suggests doing a ladder before bed as an alternative if this isn&rsquo;t practical for you. Option A is not even a little bit practical for me, so option B it is.</p>
+
+<p>In general I&rsquo;m really happy with this program and how I&rsquo;m progressing. If my progress slows down, or I seem to need extra work in one area in particular, I&rsquo;ll likely switch to the four day version of the program. Hopefully neither of these will come up for a while, though.</p>
+
+<p>Is this program right for you? Maybe. Maybe not. The ideal workout program is a lot like the ideal diet: it&rsquo;s the one you stick to.</p>
+
+<h2>Other Variables</h2>
+
+<p>It seems pretty logical that working out in the gym makes you stronger. Actually the opposite is true. Working out in the gym makes you weaker, if you&rsquo;re doing it right. When you lift heavy weights you damage your muscles and, in the short term, decrease their capability.</p>
+
+<p>Your muscles don&rsquo;t get stronger until later, while you&rsquo;re asleep. Even then, they only do so if you&rsquo;ve taken in adequate nutrition to feed their growth. Thus it&rsquo;s vitally important to ensure you&rsquo;re taking in enough food and getting enough sleep.</p>
+
+<center>
+<img src="http://varsitysideline.com/wp-content/uploads/2013/05/May13_2013.jpg"><!-- header_img http://varsitysideline.com/wp-content/uploads/2013/05/May13_2013.jpg -->
+</center>
+
+
+<p>Consistently getting quality sleep has always been a bit of a problem for me, but I do the best I can. My diet is more in my control, though. In general, I tend to concentrate on getting enough protein, which means plenty of chicken, fish or (more rarely) steak at lunch and dinner, and plenty of eggs at breakfast. I also tend top this up with one or two protein shakes a day.</p>
+
+<p><em>Oh no! Supplements!</em></p>
+
+<p>I&rsquo;m generally of the opinion that most fitness related supplements to be complete bollocks, and likely to do you at least as much harm as good. That said, I don&rsquo;t include protein shakes in this category. It&rsquo;s basically food, if mildly suboptimal food. It is convenient, however, and sometime convenience is king. Choose the right brand** and drinking the things doesn&rsquo;t need to be a completely miserable experience, either.</p>
+
+<p>I also try to make sure I get plenty of carbs, especially on days I work out. Yes, carbs. Evil, evil, insulin spiking carbs. I try to cut them out towards the the end of the day, though, a practice for which I&rsquo;ve heard several explanations with varying degrees of &ldquo;BroScience&rdquo;. Here&rsquo;s an example:</p>
+
+<blockquote><p>The insulin created by the body to process and absorb carbs eaten stops the use of fat as an energy source. Your body naturally burns the most fat while sleeping, and so going to sleep with elevated insulin levels interferes with fat loss.</p><footer><strong>Micheal Matthews</strong> <cite><a href='http://www.amazon.co.uk/Bigger-Leaner-Stronger-Building-ebook/dp/B006XF5BTG'>&#8220;Bigger, Leaner, Stronger&#8221;</a></cite></footer></blockquote>
+
+
+<p>All of this being said: I am still a foodie. I still love eating good food with good food with good friends. Food is still an end in and of itself, and not just a source of nutrients. It&rsquo;s just that now I keep a much closer eye on what I&rsquo;m consuming 90% of the time.</p>
+
+<h2>How I&rsquo;m Actually Doing</h2>
+
+<p>Upcoming immodesty alert.</p>
+
+<p>I think I can say at this point that I am without a shadow of a doubt in the best shape of my life. You need to understand here, though, that this is an extremely low bar for me to have lept over. This bar was basically underground.</p>
+
+<p>Right now I am definitely stronger than I have been at any previous point in my life. Again, not hard. I&rsquo;m definitely not &ldquo;strong&rdquo; in the absolute sense, but I am considerably stronger than I was before. Going climbing recently for the first time in years really brought this home.</p>
+
+<p>At school I would collapse the ground after running the 1500m, then proceed to lay there panting and feeling my heart pounding (for some reason) in my butt cheeks. Now I usually end up running for a little under 6km on my Saturday runs, and at some point I plan to run an actual organised 5k. I think my time might actually be quite reasonable.</p>
+
+<p>I&rsquo;m also going to say that I look better (naked or otherwise) than I have at any previous point in my life. This is REALLY not difficult. At some point in the last ten or fifteen years I moved from the &ldquo;skinny&rdquo; category to the &ldquo;skinny fat&rdquo; category. That oh so sexy combination of podgy belly, visible ribs, pipe cleaner arms and incipient man boobs. Now I&rsquo;ve gone down two waste sizes and clothes are more likely be tight around my chest than my belly. Friends have remarked that I&rsquo;ve lost weight and have a bit more in the way of shoulders.</p>
+
+<p>Brad Pitt in Fight Club I am not, but I don&rsquo;t hate what I see when I look in the mirror anymore, either. There are things wrapped around my skeleton which I could describe as muscles without worrying that I might be sniggered at. Stand me next to <strike>The Rock</strike> Dwayne Johnson and I&rsquo;ll still look like I&rsquo;m made out of plastic spoons and low quality play dough, but I feel like I&rsquo;m making progress in the right direction.</p>
+
+<p>* Yes, &ldquo;plug-ins&rdquo;. I&rsquo;m sure you couldn&rsquo;t possibly imagine why this terminology might appeal to me.</p>
+
+<p>** I tend to use PhD Nutrition Pharma Whey. It actually tastes pretty good&hellip; and alright, yes, fine, using a brand with that name kind of amuses me. My Dad likes Reflex, and one of my work colleagues goes for Optimum. Another uses PhD. Your millage may vary. Flavour wise: chocolate or banana, all the way.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A (Very) Rough Guide to Beginners' Barbell Training Programs]]></title>
+    <link href="http://www.harveynick.com/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs/"/>
+    <updated>2013-05-10T16:30:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs</id>
+    <content type="html"><![CDATA[<p>As I promised in my <a href="blog/2013/05/06/do-you-even-lift/">last post</a>, I&rsquo;d now like to talk a bit about the different weight lifting programs I ended up researching. I spent a fairly silly amount of time here, so I&rsquo;m hoping that you find it useful.</p>
+
+<p>I&rsquo;m going to talk about the three primary beginners lifters programs I read up on, tell you what they actually involve… and also what I think the person behind them is trying to sell you.</p>
+
+<p><span class='pullquote-right' data-pullquote='Disclaimer: I am not an expert on any of this.'>
+<em>Disclaimer: I am not an expert on any of this. I am, at best, an amateaur of the sort who tends to read everything he can find about a subject which interests him (translation: a geek). You should consider the majority of what&rsquo;s written here to be opinion and look into these things yourself. I hope I can provide a good jumping off point, though.</em>
+</span></p>
+
+<!-- More -->
+
+
+<p>Pretty much all the programs I&rsquo;ve found centre around four barbell lifts. So I figured I&rsquo;d start by quickly describing them:</p>
+
+<ul>
+<li><em>Bench press.</em> You know what this one is. It&rsquo;s the one you saw in the montages of all those action movies. Lie with your back against the bench and lift the barbell from your nipples straight up until your arms are fully locked.</li>
+<li><em>Shoulder press.</em> Stand with the barbell held approximately level with your shoulders, forearms vertical. Lift the bar directly upwards until your arms are fully locked. This has more nuance than it sounds.</li>
+<li><em>Squat.</em> Stand with the bar braced across your shoulders, ideally resting on your lats. Drop down into a squatting position (duh) keeping your feet flat against the floor and pushing your knees apart. Stand, pushing up through your heels.</li>
+<li><em>Deadlift.</em> I&rsquo;m not going to try and explain this one. That&rsquo;s a lawsuit waiting to happen. Here&rsquo;s a video:</li>
+</ul>
+
+
+<iframe src="http://www.youtube.com/embed/Syt7A23YnpA" width="" height="" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Having thrown a Mark Ripptoe video in this post already, it seems only right that I start with…</p>
+
+<h3>Starting Strength (SS)</h3>
+
+<p>Starting Strength is essentially three things:</p>
+
+<ul>
+<li>A barbell lifting program for beginners;</li>
+<li>A <a href="http://www.amazon.co.uk/Starting-Strength-3rd-Mark-Rippetoe/dp/0982522738">book</a> which describes the lifts in the program in <em>incredible</em> biomechanical detail;</li>
+<li>A series of seminars.</li>
+</ul>
+
+
+<p>The man behind all three of these is one Mark Ripptoe, whose dulcet tones guided you through the deadlift in the video above. Pretty obviously: he wants to sell you a copy of his book (though hard copies are <em>really</em> hard to come by) or possibly a ticket to a seminar. In fairness there is pretty much nothing else like the book out there. It might arguably be more detail than you need, but it&rsquo;s still seriously impressive.</p>
+
+<p>&ldquo;Rip&rdquo; is also something of personality. There are <a href="http://startingstrength.wikia.com/wiki/Wit_and_Wisdom_of_Mark_Rippetoe">entire websites</a> dedicates to things he&rsquo;s said. Here&rsquo;s one which made me laugh:</p>
+
+<blockquote><p>&#8220;I don&#8217;t go to titty bars much anymore. They have never really appealed to me. Like going into an expensive restaurant, reading the menu for 2 hours, drinking a little, then getting up and leaving without having had anything to eat but paying the bill anyway.&#8221;</p><footer><strong>Mark Ripptoe</strong> <cite><a href='http://startingstrength.wikia.com/wiki/Wit_and_Wisdom_of_Mark_Rippetoe'>startingstrength.wikia.com/wiki/&hellip;</a></cite></footer></blockquote>
+
+
+<p>…and here&rsquo;s one which actually has something to do with what I&rsquo;m supposed to be taking about here:</p>
+
+<blockquote><p>&#8220;There is simply no other exercise, and certainly no machine, that produces the level of central nervous system activity, improved balance and coordination, skeletal loading and bone density enhancement, muscular stimulation and growth, connective tissue stress and strength, psychological demand and toughness, and overall systemic conditioning than the correctly performed full squat.&#8221;</p><footer><strong>Mark Ripptoe</strong> <cite><a href='http://startingstrength.wikia.com/wiki/Wit_and_Wisdom_of_Mark_Rippetoe'>startingstrength.wikia.com/wiki/&hellip;</a></cite></footer></blockquote>
+
+
+<p>I&rsquo;m going to admit right away that there is more to the actual program than I originally thought there was. I&rsquo;ll describe what I&rsquo;ve seen called the &ldquo;core&rdquo; program here, but you can find a more complete explanation over at the <a href="http://www.fitocracy.com/knowledge/official-starting-strength-guide-for-fitocrats/">Fitocracy knowledge base</a>.</p>
+
+<p>Each lift in the program is preceded by a warm up, which is the case for ever lift in every program here, even if I don&rsquo;t mention it. You start with the empty bar* and then increase the weight in stages until you reach your work weight.</p>
+
+<p>In the Starting Strength program** you work out Monday, Wednesday and Friday, performing three lifts each day. There are two workouts, which you rotate:</p>
+
+<ul>
+<li>Workout A: Squat 3x5, shoulder press 3x5, deadlift 1x5.</li>
+<li>Workout B: Squat 3x5, bench press 3x5, power clean 5x3.</li>
+</ul>
+
+
+<p>&ldquo;Rotate&rdquo; means that your first week would look like this:</p>
+
+<ul>
+<li>Monday: Workout A</li>
+<li>Wednesday: Workout B</li>
+<li>Friday: Workout A</li>
+</ul>
+
+
+<p>&hellip;then your second week would look like so:</p>
+
+<ul>
+<li>Monday: Workout B</li>
+<li>Wednesday: Workout A</li>
+<li>Friday: Workout B</li>
+</ul>
+
+
+<p>&hellip;and so on.</p>
+
+<p>Firstly, the numbers after each of the lifts are in the form &lt;sets>x&lt;repetitions>. Secondly, the sharp eyed amongst you will probably have noticed that I snuck an extra lift in there. So, what exactly is a power clean? Basically, it&rsquo;s like a deadlift… but you keep going, explosively lifting the weight up to your shoulders (though not above your head).</p>
+
+<p>Generally speaking weights should be increased gradually after each successful workout, and not usually by more than 2.5kg (except perhaps for the deadlift). Again, see the link to the Fitrocracy knowledge base above for more details, but I would also be quite remiss if I did not mention <a href="http://startingstrength.com/">StartingStrength.com</a>.</p>
+
+<p>Also: anytime you want to see a good demonstration of a barbell lift, try typing &ldquo;Mark Ripptoe &lt;name of lift>&rdquo; into YouTube. This is a man who knows what he&rsquo;s talking about.</p>
+
+<h3>Strong Lifts 5x5 (SL)</h3>
+
+<p><span class='pullquote-right' data-pullquote='This is the secret training program used by Arnold Schwarzenegger, apparently.'>
+Strong Lifts 5x5 is very much a program from the internet. In fact, if you were to go <a href="http://stronglifts.com">stronglifts.com</a> there is a good chance that you might come away with the impression that Mehdi (the guy behind it) is trying to sell you snake oil. This is the secret training program used by Arnold Schwarzenegger, apparently. Ignore that, though, since insofar as I can tell this program is up there with SS for the amount respect it gets for a beginners program. Mehdi wants you to come to his website and make use of the resources there (which are actually pretty good), because he&rsquo;s monetized the site with ads. He would also like you to sign up for the paid &ldquo;Strong lifts inner circle&rdquo; members only community.
+</span></p>
+
+<p>SL is very similar in structure to SS in that it&rsquo;s the four main lifts plus one extra, with two alternating workouts each featuring three lifts to be performed on Mondays, Wednesdays and Fridays. The two workouts look like this:</p>
+
+<ul>
+<li>Workout A: Squat 5x5, bench press 5x5, Pendley Row 5x5.</li>
+<li>Workout B: Squat 5x5, shoulder press 5x5, deadlift 1x5.</li>
+</ul>
+
+
+<p>This time around the fifth lift is the bent over (or Pendley) row, which is basically the exact opposite of the bench press. Yes, this is exactly as awkward as it sounds and, like the deadlift, is a really good way to knacker your back if performed incorrectly. That being the case, I&rsquo;ll let the man Glen Pendley himself explain it to you rather than trying to do the job myself:</p>
+
+<iframe src="http://www.youtube.com/embed/ZlRrIsoDpKg" width="" height="" frameborder="0" allowfullscreen></iframe>
+
+
+<p>The other differences to SS are that with SL you perform five sets of five reps at your work weight (deadlift is again one set), and you you have a strictly defined methodology for increasing the weight of your lifts:</p>
+
+<ul>
+<li>If you hit five reps on all five sets you add 2.5kg the next time you do the lift (5kg for deadlift);</li>
+<li>If you miss any reps, you stay at the same weight;</li>
+<li>If you miss reps multiple times, you deload by 10% and then work your way back up.</li>
+</ul>
+
+
+<p>This is the program I originally started doing, largely because it was easier to find a strict definition of what the program actually <em>was</em> than was the case for SS. It worked pretty well for me in the beginning, but as you increase the weight you&rsquo;ll also tend to increase the rest between sets, so after a couple of months I just seemed to be spending forever in the gym. In the end I stopped doing the program to try working with an online trainer, which I might talk about some in a later post.</p>
+
+<h3>Greyskull Linear Progression (GLP)</h3>
+
+<p>Greyskull LP is the beginners lifting program used at the Greyskull Barbell Club on the East Coast of the USA and created by the club&rsquo;s owner, John Sheaffer aka &ldquo;Johnny Pain&rdquo;, a former student of Mark Ripptoe (remember him?).</p>
+
+<p>What Johnny Pain is trying to sell you is the idea that you might like to train at his gym, and failing that maybe one of his books, such as the very one which <a href="http://www.amazon.co.uk/Greyskull-LP-Second-John-Sheaffer/dp/0615635571">describes the program</a>. You can also find one variation of the program described in some detail by the man himself on <a href="http://strengthvillain.com/forum/viewtopic.php?f=9&amp;t=89#p376">the forums at StrengthVillain.com</a>, though not in anywhere near as much detail as in the book.</p>
+
+<p>Side note about the book: I bought it. I think it&rsquo;s a really good resource and actually quite well written (I laughed out loud more than once), but perhaps not for the feint of heart. Dear old Johnny Pain can get a little bawdy, from time to time.</p>
+
+<p>This is, again, very similar to Starting Strength, but with more of a focus on maintaining the linear progression for as long as possible. This is also a very flexible program, being made of a core program and a set of &ldquo;plug-ins&rdquo;.</p>
+
+<p>The core program is three days a week, again: Monday, Wednesday and Friday. For your first lift on each day, you alternate bench press and shoulder press. On Mondays and Fridays you then do squats. On Wednesdays: Deadlift. After warming up, you move on to three sets at your work weight. Again like SS, your first two sets are of five reps, however your third set is to failure (or as close to it as you&rsquo;re prepared to go), so basically as may reps as you can do, but at least five. The exception is the deadlift, for which you just perform a single set of as many reps as you can manage.</p>
+
+<p>If you manage to hit at least 5 reps for each of your work sets, you increase the weight. 2.5kg for squat and deadlift, 1.25kg for bench and shoulder press. This last is actually quite tricky, since it involves using &ldquo;fractional&rdquo; plates, which most gyms don&rsquo;t carry and I, as yet, have not been able to find a good place to buy. If you fail to hit your five reps on each set you knock 10% off the weight for the next time (rounding down) and start working your way back up.</p>
+
+<p><span class='pullquote-right' data-pullquote='Seeing that you can now do eights reps at a weight you could only manage five at before drives home that you have gotten stronger and are making progress.'>
+The upshot of this is that firstly the relaxed pace (two main lifts a day and small increases in weight) means that you&rsquo;re much less likely to stall and so will continue the linear progression for longer. Secondly, doing the third set to failure mean that you&rsquo;ll build a little more muscle (hypertrophy) and also you&rsquo;ll tend to hit either a reps or weight personal best every time you lift. Deloading can be frustrating in that it feels like moving backwards. Seeing that you can now do eights reps at a weight you could only manage five at before drives home that you have gotten stronger and are making progress.
+</span></p>
+
+<p>Given the amount of time I&rsquo;ve spent talking about it, you might have worked out that this is the program I&rsquo;m actually following at the moment. I liked the more gradual approach to increasing the weight here, and I like the additional flexibility of the plug-ins, which I&rsquo;ll talk about in another post.</p>
+
+<p>* Or as close as possible, clearly that isn&rsquo;t going to work for the conventional deadlift. If you <em>do</em> need to start at a lower weight, however, you can improvise by either propping the weights up on spare plates, or perform a <a href="http://www.bodybuilding.com/exercises/detail/view/name/romanian-deadlift">Romanian Deadlift</a> instead.</p>
+
+<p>** Calling it the SS program seems… wrong.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Do You Even Lift, Bro?]]></title>
+    <link href="http://www.harveynick.com/blog/2013/05/06/do-you-even-lift/"/>
+    <updated>2013-05-06T15:24:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/05/06/do-you-even-lift</id>
+    <content type="html"><![CDATA[<p>After I arrived in London I decided to take a second stab at Couch to 5k, having abandoned it <a href="blog/2013/04/07/running-the-first-time/">the first time around</a>. The problem now was finding a time and place. At first I tried running in the evenings around Wandsworth Common, conveniently close to where I was staying. That started to feel more than a little unsafe, however, especially on the evenings I got home safe enough to push me through -twilight- dusk and into full dark. I&rsquo;m fortunate enough to work very close to Hyde Park, however, so I transplanted my runs here and started taking time out of my work day. Running through Hyde Park in the sun is awesome, by the way.</p>
+
+<p>All was fine and dandy until I fell off a surf board during a short break and cracked the top of my foot against the sea bed. I&rsquo;d twisted myself into a slightly odd position in order to accomplishing this, and so it had the added bonus effect of pushing my foot much further back than it&rsquo;s really supposed to go. By the time I got back to London, my entire foot had turned a lovely combination of purple and yellow. Shit.</p>
+
+<!-- More -->
+
+
+<p>Needless to say, this put a fairly major obstacle in the way of any running that I might try to do, given that it really hurt to even walk. So, once again, the running stopped. In parallel to all of this, however, I&rsquo;d spent some time clicking around the &ldquo;connected apps&rdquo; section on Run Keeper&rsquo;s website and found something called <a href="https://www.fitocracy.com">&ldquo;Fitocracy&rdquo;</a>. It was two things rolled into one:</p>
+
+<ol>
+<li>A fitness related social network;</li>
+<li>A gamification system which awards points and achievements based on fitness activities performed.</li>
+</ol>
+
+
+<p><span class='pullquote-right' data-pullquote='Gamification works ridiculously well on my computer game addled brain.'>
+Gamification works ridiculously well on my computer game addled brain. Scoring those points (and levelling up!) worked as an excellent motivator for me while I was running. When I signed up to the site I also joined the mailing list. Against all normal logic, some of those emails actually turned out to be quite interesting. A lot of them were member spotlights, and a lot of these members were talking about the fact that it was lifting weights, and not doing cardio, which got them into shape.
+</span></p>
+
+<p>
+<center>
+<a href="http://xkcd.com/940/">
+<img src="http://imgs.xkcd.com/comics/oversight.png"><!-- header_img http://imgs.xkcd.com/comics/oversight.png -->
+</a>
+</center>
+</p>
+
+
+<p>I did some more reading and found myself pointed at <a href="http://reddit.com/r/fitness">/r/fitness</a>, where a lot of people were saying very similar things. Two workout programs were suggested for beginners, <a href="http://startingstrength.com/">Starting Strength</a> and <a href="http://stronglifts.com/">Strong Lifts 5x5</a>. Having made <a href="blog/2013/04/01/a-fitness-story/">the decision to get myself back in shape</a>, I decided I would have a go at one of these programs. As for which, why, and what they entail: that&rsquo;s actually post of its own, because there are actually a couple of other programs I want to talk about as well. Stay tuned.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Wheel Weaves as the Wheel Wills]]></title>
+    <link href="http://www.harveynick.com/blog/2013/05/05/the-wheel-weaves-as-the-wheel-wills/"/>
+    <updated>2013-05-05T15:53:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/05/05/the-wheel-weaves-as-the-wheel-wills</id>
+    <content type="html"><![CDATA[<p>On what was, all things considered, otherwise a fairly shitty day, I finished reading A Memory of Light, the final volume of <a href="http://en.wikipedia.org/wiki/The_Wheel_of_Time">The Wheel of Time</a>. This is, if you don&rsquo;t know, a fourteen book epic fantasy series whose author died prior to its completion. Each of these books is, by itself, around the size of the entire Lord of the Rings trilogy. One or two of them are really very dry, and finishing them comes dangerously close to feeling like work.</p>
+
+<p>So do I recommend that you set out on this 12 thousand page, 4 million word journey? Emphatically yes.</p>
+
+<!-- More -->
+
+
+<p>I should probably admit up front that I only really set out to read the series because knew it was being completed, after Robert Jordan&rsquo;s death, by Brandon Sanderson, whom I think I may have mentioned being <a href="blog/2011/03/14/brave-new-worlds/">a bit of a fan of</a> in the past. The books are quite intimidating, to say the least, and do have a (well deserved) reputation for being quite meandering and (in places) slow.</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/en/0/00/WoT01_TheEyeOfTheWorld.jpg"></p>
+
+<p>What they also have, though, is a truly excellent set of characters and an incredibly detailed and epic world. This is, essentially, the story of five country bumpkins who leave their small village in fear of their lives, and slowly accept the mantle of legendary heroes which is placed upon their unwilling shoulders. There are many, many other characters, but everything for the most part revolves around these five. A don&rsquo;t want to say too much about them specifically, because I don&rsquo;t want to spoil anything, but I will say this: the character I started off liking the least ended up being my absolute favourite. There are some excellent character arcs here.</p>
+
+<p>It&rsquo;s also the story of a world which was once a utopia, but was (literally) broken due to the actions of those striving for more power. A world filled with magic and wonder… but also bone chilling evil. A world on the brink of destruction, where magic is a path to madness and death for any man who wields it, while female magic users (channellers) are both feared and respected.</p>
+
+<p>It&rsquo;s not a perfect series by any means. A couple of the books towards the middle are particularly slow and uneventful. It&rsquo;s also not a series which coddles you. The actual events of the prologue, which begins just as the greatest hero of the last age has succumbed to his madness* and unwittingly killed everyone he loves, are not fully illuminated until something like the sixth book. It&rsquo;s also quite jarring when Brandon Sanderson takes over the reins of the series in book 12. The voice of the characters changes subtly, but noticeably.</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/en/0/06/TheGatheringStormUSCover.jpg" title="center" ></p>
+
+<p>When one side of the seesaw goes down, the other rises, however. Sanderson writes action better than just about any other author I&rsquo;ve ever read and the finale <em>really</em> doesn&rsquo;t disappoint. A lot of plot threads are woven together and the series many, many characters are mostly given satisfying conclusions (even if that conclusion is sometimes &ldquo;No! Why did they have to die!?&rdquo;). Sanderson also understands &ldquo;awesome moments&rdquo;, and there was much in the last three books which left me grinning from ear to ear.</p>
+
+<p>Actually that&rsquo;s not entirely true, one thing does disappoint: I want more. I want to know what happens to these characters next, and there aren&rsquo;t too many higher recommendations than that. I&rsquo;m very glad I took the time to read this series, and would do so again.</p>
+
+<center>
+<img src="http://upload.wikimedia.org/wikipedia/en/2/27/A_Memory_of_Light_cover.jpg"><!-- header_img http://upload.wikimedia.org/wikipedia/en/2/27/A_Memory_of_Light_cover.jpg -->
+</center>
+
+
+<p>* Possibly a minor spoiler: The madness is a result of his own actions. He saved the world, but imperfectly, and in the process damned all male magic users, including himself, to this fate. He&rsquo;s an incredibly tragic character, is Lews Therin Telamon. The once saviour of the world, but one who has been remembered for thousands of years only as &ldquo;Lews Therin Kin Slayer&rdquo;.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Perilously Close to Perfection]]></title>
+    <link href="http://www.harveynick.com/blog/2013/04/19/perilously-close-to-perfection/"/>
+    <updated>2013-04-19T17:09:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/04/19/perilously-close-to-perfection</id>
+    <content type="html"><![CDATA[<p>A friend told me about a restaurant he&rsquo;d visited on a trip to New York. There was essentially no menu. You walked in, you are seated, and you are asked a single question:</p>
+
+<blockquote><p>&#8220;How would you like your steak cooked?&#8221;</p></blockquote>
+
+
+<p>Then they bring you an utterly fantastic steak with fries and bernaise sauce. They do this <em>one</em> thing, they do it incredibly well, and they do it cheaply because they can take advantage of economies of scale.</p>
+
+<p>I love this mindset of setting out to do something as utterly right as humanly possible. The example I had previously was a cafe in Edinburgh called Loudon&rsquo;s. This is obviously the result of someone setting out to create as perfect a cafe as possible. It&rsquo;s incredibly well laid out. Lots of tables, but not even a little bit cramped. So much so, in fact, that the presence of parents with small children doesn&rsquo;t ruin the atmosphere. They just get lost in the space. This is not enough by itself, obviously. The coffee is also very good and the food is absolutely first rate. Don&rsquo;t even get me started on either the quantity or the quality of the cakes.</p>
+
+<p>So where am I going with this? Well, this last week during a short(ish) break in Austria, I found another one.</p>
+
+<!-- More -->
+
+
+<p>Bad weather led us to take a day trip into Salzburg, which we wandered around aimlessly for a few hours. Getting dinner in town pushed us to a late train… but where to get dinner and what to do to entertain ourselves for a few hours. Someone mentioned a brewery one of our PMs (Product Managers) had recommended. A brewery with attached drinking hall which serves food. Apparently they served the best beer he&rsquo;d ever tasted. Even coming from a PM* this is the sort of claim which needs to be be tested… and what the hell, it was on the way to the station (ish) anyway.</p>
+
+<p>So we take a wander to this brewery… and I&rsquo;m here to tell you that I&rsquo;m very glad that we did. We walked in. We were asked (at this point) three questions:</p>
+
+<ol>
+<li>How many people?</li>
+<li>Smoking or non-smoking?</li>
+<li>How many beers would you like?</li>
+</ol>
+
+
+<p>Beautiful. We were shown to a table in a fairly massive room (one of three). Simple chairs simple tables. A friendly buzz, but in no way crowded.</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/18/IMG_1171.jpg"></p>
+
+<p>Within minutes the very same guy had reappeared at our table carrying <em>eight litres of beer</em>. How good was this beer? It was pretty awesome. Frankly I&rsquo;m still craving it. How much was this beer? I&rsquo;ll come back to that.</p>
+
+<p>There was no table service for food, but just outside of the room was, for all intents and purposes, a small food market.</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/19/IMG_1169.jpg"></p>
+
+<p>I wondered back and forth for a little while before deciding on half a roast chicken with a small pretzel on the side. Huge grin firmly affixed on face (as Spartacus might say) I proceeded to gleefully wash this meat and starch based feast down with more of that wonderful beer.</p>
+
+<p>Some hours later we stood, fully satiated and mildly inebriated. We waited with beer baited breath to see what the bill would say. How much was this beer?</p>
+
+<p>€6.70 a litre.</p>
+
+<p>You&rsquo;re basically paying that for a <em>pint</em> in London, and it&rsquo;s probably not as good. Not even close. For me, they really knocked this one out of the park.</p>
+
+<p>If you&rsquo;re in Salzburg, by all means see the kirk (it&rsquo;s beautiful), drop by the castle (it&rsquo;s really interesting… though you might want to stay out of the creepy marionette museum) and eat a slice of Sachertorte (it&rsquo;s tasty). But when you&rsquo;re looking for some hearty food and perhaps an adult beverage or three, you really need to drop by the church of beer, meat and starch. You&rsquo;ll be glad you did.</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/18/IMG_1166.jpg"><!-- header_img /images/blog/2013/04/18/IMG_1166.jpg --></p>
+
+<p>* You can&rsquo;t trust &lsquo;em ;&ndash;)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Running, the First Time]]></title>
+    <link href="http://www.harveynick.com/blog/2013/04/07/running-the-first-time/"/>
+    <updated>2013-04-07T22:54:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/04/07/running-the-first-time</id>
+    <content type="html"><![CDATA[<p>When I decided to drag myself back on to the fitness wagon, it seemed to me that running was the answer. Getting myself to an actual gym clearly wasn&rsquo;t working, but I lived a short walk from a large and beautiful park (oh The Meadows, how I miss you still). I went out and spent what I still consider to be a fair amount of money on a pair of running shoes (Nike+ compatible, obviously). I&rsquo;ve had knee issues in the past, which motivated me to err towards the top end of the range, I swear. The presence of the striking red headed shop assistant with her beautiful blue eyes and athletic physique had absolutely nothing to do with my decision.</p>
+
+<p>What was I talking about? Running! Right.</p>
+
+<!-- More -->
+
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/07/P1000436.JPG"><!-- header_img /images/blog/2013/04/07/P1000436.JPG --></p>
+
+<p>Thusly equipped, I began striking out in the evenings and doing mixed running and walking intervals. Given my complete lack of a plan, I decided to work my way around the Meadows&#8217; sign posted mile long circuit, alternately running and walking the segments. After a couple of sessions of this, a few things become clear:</p>
+
+<ul>
+<li>I had absolutely no idea what sort of progress I was making. I was gathering no data;</li>
+<li>I could only make fairly rough guesses at my actual pace;</li>
+<li>I had no plan for how to increase the difficulty of my runs;</li>
+<li>I wasn&rsquo;t having any fun. No data equals no graphs. No Graphs equals no fun. Obviously.</li>
+</ul>
+
+
+<p>As luck would have it, it was around that time when I stumbled across an ArsTecnica <a href="http://arstechnica.com/gadgets/2009/11/reader-favorites-fitness-tech/">article which mentioned RunKeeper</a>, a combination of a website and (at the time) iPhone app which could be used to plan and track your runs. It would draw your route on a map, and draw all manner graphs of the data you generated. My. Oh. My.</p>
+
+<p>Also mentioned in the review was the <a href="http://www.nhs.uk/Livewell/c25k/Pages/couch-to-5k-plan.aspx">Couch to 5K program</a>, an NHS approved to program to take you from doing no running at all to being able to run 5K in one session over a period of several weeks, with a particular focus on preventing you getting either a) injured or b) bored. Seemed like a plan. I didn&rsquo;t want to be either of those things.</p>
+
+<p>Like any good nerd I didn&rsquo;t go right out and sign up with RunKeeper, but spent a good long while reading reviews of other apps, some of which were C25K specific. RunKeeper won out in the end, though, and I started following the program during my lunch breaks (much more manageable than the evenings if you live in Scotland and don&rsquo;t want to run in the dark). Then the thing I&rsquo;d been waiting over a year for happened. I got on a plane to Australia to support <a href="http://www.unmanned.co.uk/unmanned-vehicles-news/unmanned-autonomous-underwater-vehicles-uuv-auv-news/seebyte-breaks-record-with-gavia-auv/">Fugro&rsquo;s first foray into autonomous pipeline tracking</a>.</p>
+
+<p>Now I was in Perth (the warm one) with a fair amount of spare time on my hands. Sometimes running around Edinburgh could be a serious chore. Even in summer it&rsquo;s not exactly warm a lot of the time and often times it&rsquo;s a bit on the rainy side. Perth was something else altogether, however. I&rsquo;d chosen to stay in a small motel in the west of the city because:</p>
+
+<ul>
+<li>It was close to where I would be doing my work in the first phase of the job, so my commute would be short;</li>
+<li>It was much cheaper than the more central hotels my company would normally have used, so I could spend more of the budget on food.</li>
+</ul>
+
+
+<p>Somehow, the thing which I hadn&rsquo;t factored into my planning was that the motel was also about a minute&rsquo;s walk from the coast road. That was a nice surprise, I can tell you. A long, helpfully flat, road with a minimum of interruptions which winds around a beautiful beach… and, oh yeah, looks sort of like this around sunset:</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/07/P1000203.JPG"></p>
+
+<p>Let me tell you: running under these circumstances is not a chore. Don&rsquo;t get me wrong: generally speaking it&rsquo;s something I like having done, rather than something I actually like doing. But these are pretty ideal circumstances. While waiting for the operations to actually get into gear (a common theme with any work in this field) a managed to get in a fair few runs.</p>
+
+<p>I&rsquo;ll tell you what&rsquo;s not ideal for running, though: getting sent to Karratha, a baking hot oil and gas company town in the North of Western Australia, which unlike Perth has a lot of really small things which can kill you really, really quickly. Quickly <em>and</em> painfully.</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/07/DSC01052.JPG"></p>
+
+<p>Even less ideal is actually being sent offshore and spending a week or so floating on a small boat. Less ideal still is if that boat turns out to be a catamaran, and this is how you find out that catamarans make you very, very seasick. I&rsquo;d worked offshore previously and even in bad weather, so I swear I&rsquo;m not usually that much of a delicate flower when it comes to a bit of pitch and roll… but the evidence doesn&rsquo;t lie. I&rsquo;ve never spent more time hugging either a railing or a toilet bowl than I did on that trip. Try working a laptop under <em>those</em> circumstances. But I digress&hellip;</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/07/DSC00889.JPG"></p>
+
+<p>The final nail in the coffin of this crack at C25K was actually arriving back in Edinburgh and finding that in summer the weather was far less clement that Perth&rsquo;s winter climate. Going outside and running just plain wasn&rsquo;t something I had the will for.</p>
+
+<p>I don&rsquo;t want to be too unfair to Edinburgh, though. I mean, Perth doesn&rsquo;t have any of this:</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/07/P1000458.JPG"></p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/07/P1000426.JPG"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Fitness Story]]></title>
+    <link href="http://www.harveynick.com/blog/2013/04/01/a-fitness-story/"/>
+    <updated>2013-04-01T20:07:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2013/04/01/a-fitness-story</id>
+    <content type="html"><![CDATA[<p>During most of university I was in pretty crap shape, but in the second year of my PhD my physical condition got particularly lousy. I caught a bus every morning which left from directly outside my flat and took me directly to the university. I did pretty much no exercise and ate an awful lot of takeaway. A few of my friends remarked that I&rsquo;d gained weight. &ldquo;Don&rsquo;t worry,&rdquo; they said &ldquo;it&rsquo;s fine,&rdquo; in response to my mortified expression, I&rsquo;m sure &ldquo;You look well with it&rdquo;. But I knew I looked nothing of the sort.  To paraphrase Eddie Izzard: when I looked in the mirror I sure as hell didn&rsquo;t want to have sex with myself.</p>
+
+<!-- More -->
+
+
+<p>Then, as part of the job which ran in tandem with my studies I spend a couple of weeks working offshore on a maintenance ship. Where there was pretty much nothing to do. A worked, I ate, I slept. I played my way through Grand Theft Auto: San Andreas. But I also started to make use of the small gym on board the ship. Every day at around the same time I would go down, use the rowing machine for a while, use the cross trainer for a bit, maybe fiddle with the pec deck or the lat pulldown machine. Basically: I had no idea what I was doing… but I knew I had to do something.</p>
+
+<p>Back on dry land I signed up for a gym and was given a workout program as part of a complementary training session. I told the trainer I wanted to use the machines and not the free weights, basically because I thought the guys who used the free weights were a bit douchey (based on the evidence I&rsquo;d seen on the ship and the one time I&rsquo;d visited the university gym). So for a year or two I diligently hit the gym three evenings a week and gradually increased the amount of weight I was moving around. Equally gradually I also started to like what I was seeing in the mirror.</p>
+
+<p>It didn&rsquo;t last, though. My circumstances changed and I found myself working full time in a different part of the city, while also needing to finish writing my thesis. Getting to the gym in the evenings was now a lot harder… and so started to not happen. I fell back into bad habits and put back on a lot of the weight I&rsquo;d lost.</p>
+
+<p>I kept trying to get back on the wagon. Twice I started <a href="http://www.nhs.uk/Livewell/c25k/Pages/couch-to-5k-plan.aspx">Couch to 5k</a>, and twice I failed to make it all the way through. The first, ironically, because I was sent to work offshore again in my previous job, and then my second attempt was scuppered by a foot injury. Every once in a while I would manage to drag myself to the work gym down here in London… but I didn&rsquo;t have any sort of a plan and I didn&rsquo;t really make any sort of progress.</p>
+
+<p>Then it happened. This is the part of the story I&rsquo;m very hesitant about discussing further. It&rsquo;s deeply personal. But it&rsquo;s also key.</p>
+
+<p>I found myself in a rather fantastic situation with a very attractive member of the opposite sex. One I&rsquo;d wanted to be in for some time. It was, as I&rsquo;m sure you can imagine, a very positive experience. But it was also mortifying, because I found myself looking at this gorgeous lady and realizing how hard I was trying <em>not</em> to look at myself. The contrast between us was, to me, quite shocking. It was then that I thought to myself (and yes, I&rsquo;m aware of the cliche) &ldquo;I have to get myself in shape&rdquo; and this time I really, really meant it.</p>
+
+<p>What happened next? Well… fitness wise I got really geeky about it. Really geeky indeed. I&rsquo;ll talk about it more in a different post, but I will say this: I&rsquo;m definitely making progress, much more successfully than I every did before. Project &ldquo;look good naked&rdquo; is in effect, and I&rsquo;m bringing the technologies.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Categories and Goals]]></title>
+    <link href="http://www.harveynick.com/blog/2013/03/25/categories-and-goals/"/>
+    <updated>2013-03-25T22:53:00+00:00</updated>
+    <id>http://www.harveynick.com/blog/2013/03/25/categories-and-goals</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s good to have goals. Even if you fail to meet them. Sometimes especially when you fail to meet them. It&rsquo;s quite widely publicized that at Google we&rsquo;re expected to score 0.7 (on a scale where 0 is a complete failure and 1 means all targets were met) when assessing our OKRs (objectives and key results). Generally this is good. It means you&rsquo;re always striving, always raising your eyes, hitting the top of the tree by aiming for the sky.</p>
+
+<p>In my personal life, though, this probably isn&rsquo;t the best approach. Be that as it may, this year I have goals.</p>
+
+<!-- More -->
+
+
+<p>1. Get myself in shape.</p>
+
+<p>Also known as: project &ldquo;look good naked&rdquo;. There&rsquo;s a bit more to it than this, of course. There&rsquo;s also a bit of a story behind it, which I&rsquo;ll probably tell in a later post. I also have some ideas around this area which might turn into something else. If I&rsquo;m going to set goals, I need a way to measure success, after all.</p>
+
+<p>Talking about this here leaves me with a slightly odd problem, though. When I relaunched this blog I adjusted all of my category names to be descriptive nouns, which means a can auto-generate the part of the about text (on the right) which references them. I don&rsquo;t know what the appropriate noun is for someone who participates in and thinks about fitness related activities. This is a stupid problem to have, but it is a problem, nevertheless.</p>
+
+<p>2. Get my House in order.</p>
+
+<p>In the literal sense. One of the reasons things went dark on this blog last year is that I actually took the plunge and bought a flat. This ate a lot of my time and left my life in a bit of an inconsistent state for a month or so. Now I&rsquo;m in, though, and having spent a winter in the place I&rsquo;ve taken stock. It needs some work. It needs to be warmer when the weather is cold. It needs a bit more personality… and some of the really odd design decisions made by the previous owners need to be reversed.</p>
+
+<p>It&rsquo;s also a whole new playground for me to seek adventures in. My Clockwork Aphid project was a casualty of the upheaval in my life last year and I&rsquo;m not sure how much attention it&rsquo;ll get this year… because this year I&rsquo;d also like to start playing with home automation. Nothing crazy. No robot butlers; but we&rsquo;ll see.</p>
+
+<p>3. Read. Travel. Watch. Write.</p>
+
+<p>This one is more straight forward. I&rsquo;d like to start more closely measuring how much a read, travel, watch (mainly in terms of films) and write, on this blog an elsewhere.</p>
+
+<p>Reading is straightforward, I think. I read a lot. On my way to work, before bed, in coffee shops at the weekend, But I&rsquo;m curious to try and keep tabs on what I&rsquo;m reading and how much. It frustrates the hell out of me that my kindle can&rsquo;t easily supply me with the information.</p>
+
+<p>One of my friends has a goal for this year that she will get out of Edinburgh at least once every month. That&rsquo;s not a bad goal to have at all. For me, I&rsquo;d just like to see and experience more of the wider world in general, but also the part of it which I inhabit.</p>
+
+<p>As for watching films and keeping tabs on what I saw… well… I already have <a href="http://ohsohumbleopinion.tumblr.com">a place to keep tabs on that</a>. Simple. This is mostly a matter of &ldquo;keep it up&rdquo;.</p>
+
+<p>Lastly: writing. Er… yes. I don&rsquo;t have such a great record with this one. Obviously I want to get back to posting regularly on this blog… but I&rsquo;d also like to try and do something with the two screenplays I wrote during university (and the pile of partially developed ones). I used to regularly do some sort of creative writing and lately I&rsquo;m starting to feel the lack of it in my life.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ch-Ch-Ch-Changes]]></title>
+    <link href="http://www.harveynick.com/blog/2013/03/22/ch-ch-ch-changes/"/>
+    <updated>2013-03-22T00:30:00+00:00</updated>
+    <id>http://www.harveynick.com/blog/2013/03/22/ch-ch-ch-changes</id>
+    <content type="html"><![CDATA[<p>So a couple of things about this website have changed. Perhaps you&rsquo;ve noticed.</p>
+
+<p>Firstly, I changed the background. Much as I love that dark linen image I was using, it&rsquo;s really obviously &ldquo;the apple background&rdquo;, which carries connotations I didn&rsquo;t really want to project. The first place I saw it was on an apple device, granted, but I wasn&rsquo;t using it <em>because</em> it&rsquo;s the apple background. The new one is similar aesthetically, yet distinct enough that I don&rsquo;t think it screams &ldquo;fanboi&rdquo;. It&rsquo;ll do for now. More on that later.</p>
+
+<p>I&rsquo;ve also removed that cool effect where the background and title remained static, and the actual content appear to slide up an over them. Again, I loved it, but it made the scrolling really janky on a lot of devices. I&rsquo;m choosing to assume it was the combination of the drop shadow and static background which was causing this&hellip; and since the slide effect doesn&rsquo;t work anywhere near as well without the drop shadow, but the drop shadow seems just fine without the slide I&rsquo;ve decided to move over to plain old normal scrolling. Unless you&rsquo;re on a really small screen, in which case the drop shadow should disappear as well (try resizing your browser window, you&rsquo;ll see what I mean).</p>
+
+<!-- More -->
+
+
+<p>Lastly, there&rsquo;s a small ad at the bottom of the sidebar.</p>
+
+<blockquote><p>Say what? Oh no your didn&#8217;t! Why? WHY!?</p></blockquote>
+
+
+<p>As you may or may not be aware, I work on the <a href="http://www.google.com/adsense">AdSense</a> team at Google, and our management has encouraged us to actually become AdSense publishers. I&rsquo;ve been resisting this change for quite some time, but decided it was probably time to bite the bullet and start eating my team&rsquo;s dog food. It bothers me a bit, I have to admit. I&rsquo;m going to play with moving it around and changing the settings on the AdSense Front End and see if I can achieve a situation where:</p>
+
+<ul>
+<li>It doesn&rsquo;t bother me so much;</li>
+<li>It&rsquo;s actually effective.</li>
+</ul>
+
+
+<p>I hope it doesn&rsquo;t bother you too much. Don&rsquo;t worry, this isn&rsquo;t me trying to monetize you. There will probably more some more changes coming, but let&rsquo;s not get ahead of ourselves.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[I Disagree With Film Critic Hulk]]></title>
+    <link href="http://www.harveynick.com/blog/2013/03/17/i-disagree-with-film-critic-hulk/"/>
+    <updated>2013-03-17T17:52:00+00:00</updated>
+    <id>http://www.harveynick.com/blog/2013/03/17/i-disagree-with-film-critic-hulk</id>
+    <content type="html"><![CDATA[<p>While <a href="http://badassdigest.com/2013/01/09/film-crit-hulk-smash-hulk-vs.-tom-hooper-and-art-of-cinematic-affectation/">Film Critic Hulk&rsquo;s argument</a> generally seems quite well reasoned, I find it a little difficult to stomach someone attempting to lecture me on the theory behind the form of anything in ALL CAPS, and at such length. Also, he makes the unforgivable (in my opinion) mistake of representing his opinion as fact. He states the film falls flat, not that he <strong>believes</strong> it falls flat. No one, apparently, thought to mention this to the legions of people who rated Les Mis so highly on IMDB and Rotten Tomatoes.</p>
+
+<!-- more -->
+
+
+<p>At the end of the day in film, just like any other art form, theory is merely a tool. It doesn&rsquo;t really matter. Emotional response is what actually matters. Banging on about theory in situations like this just makes you look like someone standing on the deck of the Titanic, harping on to anyone who&rsquo;ll listen about how the ship is unsinkable.</p>
+
+<p>I quite like the visual presentation of the film, as did almost everyone else I spoke to about it. When I brought the matter of how it was shot, and how this flies in the face of film theory, they usually laughed and replied: &ldquo;So?&rdquo;</p>
+
+<p>Also: yes. I&rsquo;m back. I hope.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Problem With Pingdom]]></title>
+    <link href="http://www.harveynick.com/blog/2012/07/22/the-problem-with-pingdom/"/>
+    <updated>2012-07-22T19:13:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2012/07/22/the-problem-with-pingdom</id>
+    <content type="html"><![CDATA[
+
+<figure class='code'><figcaption><span>Time to be Awesome - awesome.rb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="nb">puts</span> <span class="s2">&quot;Awesome!&quot;</span> <span class="k">unless</span> <span class="n">lame</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="http://www.pingdom.com%20Pingdom">The problem with pingdom.</a></p>
+
+<p>My money&rsquo;s in that office, right? If she start giving me some bullshit about it ain&rsquo;t there, and we got to go someplace else and get it, I&rsquo;m gonna shoot you in the head then and there. Then I&rsquo;m gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I&rsquo;m talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
+
+<blockquote><p>Blockquote is what goes
+inside this block here
+would you believe that
+bullshit?</p></blockquote>
+
+<p>Well, the way they make shows is, they make one show. That show&rsquo;s called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they&rsquo;re going to make more shows. Some pilots get picked and become television programs. Some don&rsquo;t, become nothing. She starred in one of the ones that became nothing.</p>
+
+<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother&rsquo;s keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+
+<p>Your bones don&rsquo;t break, mine do. That&rsquo;s clear. Your cells react to bacteria and viruses differently than mine. You don&rsquo;t get sick, I do. That&rsquo;s also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We&rsquo;re on the same curve, just on opposite ends.</p>
+
+<p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that&rsquo;s what you see at a toy store. And you must think you&rsquo;re in a toy store, because you&rsquo;re here shopping for an infant named Jeb.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Intro]]></title>
+    <link href="http://www.harveynick.com/blog/2012/07/22/intro/"/>
+    <updated>2012-07-22T08:23:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2012/07/22/intro</id>
+    <content type="html"><![CDATA[<p>Testing!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin, massa eu vestibulum laoreet, nibh ante vulputate lorem, ac lobortis ante tellus eu mi. Duis sem nisi, luctus at feugiat eget, fringilla ut tellus. Nam a molestie justo. Sed pulvinar est vitae tellus semper tincidunt. Fusce euismod luctus lacus nec placerat. Mauris rutrum scelerisque nulla ut tempor. Nunc porttitor posuere mi, aliquet vehicula lorem feugiat in. Ut ut fermentum risus. Aliquam tincidunt ultricies ante sit amet bibendum. Cras nec sapien odio. Duis posuere congue sem, at congue massa faucibus at.</p>
+
+<p>Integer ut sapien eget nisl auctor faucibus ut fermentum arcu. Nunc rutrum urna non risus congue et tristique felis eleifend. Maecenas blandit est eu mauris aliquam aliquet. Quisque porttitor enim eget risus blandit in mollis orci eleifend. Nam malesuada nulla sed lacus elementum placerat accumsan arcu rhoncus. Phasellus feugiat cursus turpis nec facilisis. Duis eget metus arcu, eget commodo velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer cursus vulputate enim, vel gravida velit faucibus et. Ut a urna vitae tellus cursus rhoncus. Maecenas at odio eget quam cursus elementum. Aliquam vitae eros quis tellus laoreet accumsan sed id lorem. Suspendisse et rutrum leo. Integer scelerisque vestibulum adipiscing. In posuere, libero ac accumsan suscipit, nulla ligula gravida erat, ut tempor odio erat nec sem. Quisque justo ipsum, adipiscing volutpat varius vitae, blandit eget nisi.</p>
+
+<p>Nullam adipiscing neque ac lacus commodo vitae imperdiet dui sollicitudin. Ut ac nunc augue. Nam at sem ut quam commodo aliquet vitae vitae dui. Vivamus scelerisque felis eget dolor cursus feugiat. Phasellus at dui sed lectus scelerisque pretium. Etiam nec massa ut justo vestibulum fringilla ac vitae urna. Morbi tortor erat, tempus sed consectetur at, elementum nec eros. Vivamus mattis arcu a sapien semper non lacinia eros pretium.</p>
+
+<p>Proin ut hendrerit arcu. Maecenas ullamcorper tristique magna vel mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tincidunt euismod viverra. In sit amet neque turpis. Suspendisse ac sapien mi, id blandit purus. Ut tortor turpis, rutrum ac tempor at, accumsan sit amet erat. Etiam ultricies eleifend dolor, eget tempus justo tristique vitae. In hac habitasse platea dictumst. Aliquam eu enim neque.</p>
+
+<p>Morbi massa lorem, viverra non dictum at, malesuada vel nibh. Nam fermentum lobortis varius. Sed a nulla lacus, quis posuere risus. Nunc id urna libero, quis rutrum mi. In gravida felis urna. Praesent nec dolor ac urna tempor fermentum. Curabitur rutrum arcu et lorem volutpat viverra.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Wandering Around London]]></title>
+    <link href="http://www.harveynick.com/blog/2012/05/17/wandering-around-london/"/>
+    <updated>2012-05-17T21:57:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2012/05/17/wandering-around-london</id>
+    <content type="html"><![CDATA[<p>Apologies, once again, for the radio silence. Over the past couple of months there have been some complications in my private life, and a remarkable amount of my attention has been taken up with figuring out where exactly I&rsquo;m going to be living after my current lease runs out (more on that later, perhaps).</p>
+
+<p>Be that as it may, after almost a year, I did find some time to go wandering around the city I now call home. Whilst I took every opportunity to make a brisk constitutional around Edinburgh, I&rsquo;d never managed to really do this in London. Part of the reason, I think, is while that you can essentially wander across central Edinburgh in an hour or two, this is really not the case in London. Nipping across town via public transport can take <em>hours</em>.</p>
+
+<p>Recently, though, two excellent excuses presented themselves. Firstly, my father came to visit for a few days and professed an interest to go take a good look at <a href="http://www.kew.org/">Kew Gardens</a>, the Japanese themed portion in particular.</p>
+
+<!-- more -->
+
+
+<p>First stop was the <a href="http://www.kew.org/visit-kew-gardens/garden-attractions-A-Z/Pagoda.htm">Pagoda</a>:</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/13/IMG_0402.jpg"></p>
+
+<p>This is a fairly impressive and imposing building, at least from a distance. Close up it&rsquo;s curiously less so. I think it&rsquo;s the red brick construction which does it. I&rsquo;ve never visited Japan, but this seems a slightly inappropriate building material to me. My father, who has, concurred.</p>
+
+<p>Next was the <a href="http://www.kew.org/visit-kew-gardens/garden-attractions-A-Z/japanese-gateway.htm">Japanese Gateway</a> which, in conjunction with the weather, gave me an excellent opportunity to try out the HDR mode on my phone&rsquo;s camera. Here it is without the benefit of HDR:</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/17/IMG_0408.jpg"></p>
+
+<p>…and here it is with the HDR turned on:</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/13/IMG_0409.jpg"></p>
+
+<p>I&rsquo;ll be listing that featuring under &ldquo;worthwhile&rdquo; from here on out. At this point it&rsquo;s probably worth confirming a slightly frustrating fact which I suspect is now true of many people: the camera on my phone has completely killed any use of my point and shoot camera. It&rsquo;s extremely convenient (being as I <em>always</em> have it with me) and, since my last upgrade, actually very capable. The only thing it lacks is zoom, which is a trade off I&rsquo;m willing to make. If I plan on going on a serious photo taking excursion at any point in the future I may bite the bullet and pick up a decent digital SLR. The point and shoot just feels like a weird middle gear at this point.</p>
+
+<p>Back to Kew Gardens, though. Tucked off to one side and not especially well advertised is the Bonsai house. It&rsquo;s small, but quite cool, and something my dad specifically wanted to see (Bonsai being a hobby of his).</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/13/IMG_0448.jpg"></p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/13/IMG_0450.jpg"></p>
+
+<p>Next, we moved away from the specifically Asian attractions and took a look in the <a href="http://www.kew.org/visit-kew-gardens/garden-attractions-A-Z/Palm-House.htm">Palm House</a>. This really is an impressive building, if uncomfortably hot and humid. Be ready to sweat, all ye who enter here. Besides the tropical plants (which I don&rsquo;t seem to have taken any pictures of), the green house itself has an impressive art deco* construction:</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/13/IMG_0451.jpg"></p>
+
+<p>Shortly after this, we took the train from Richmond back to my flat, and I had the fun of explaining to my father the difference between underground and overground trains this far out of the centre (&ldquo;you can tell that&rsquo;s an underground train because it says &lsquo;underground&rsquo; on it…&rdquo;).</p>
+
+<p>A week or two later, I professed a desire to go see <a href="http://ohsohumbleopinion.tumblr.com/post/19950925968/john-carter">John Carter</a> to friend who suggested we see it in Canary Wharf, allowing us to go wandering around the area beforehand. So we did.</p>
+
+<p>Canary Wharf is one of the parts of London containing buildings which can legitimately be called skyscrapers (I think). I believe it&rsquo;s also London&rsquo;s financial district. Surprisingly, I actually find it a very pleasant place to be. The taller buildings make you feel as though you&rsquo;re walking through canyons, and the area is very clean, though not to the point of feeling antiseptic.</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/13/IMG_0463.jpg"></p>
+
+<p>At the weekend it&rsquo;s extremely quiet without quite feeling like a ghost town and there are a surprising amount of things to find. These include a large underground mall, some very cool riverside buildings:</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/17/IMG_0460.jpg"></p>
+
+<p>…and one or two very cool statue / landmark type things:</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/13/IMG_0456.jpg"><!-- header_img /images/blog/2012/05/13/IMG_0456.jpg --></p>
+
+<p>Interestingly, the whole area is also private property, so you might have submit to a vehicle search on the way in. Be that as may, I can recommend it as a reasonable place to wander around at the weekend.</p>
+
+<p>Until next time&hellip;</p>
+
+<p>* This is art deco, right?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Now We're Blogging With Photos!]]></title>
+    <link href="http://www.harveynick.com/blog/2012/04/14/now-were-blogging-with-photos/"/>
+    <updated>2012-04-14T10:42:00+01:00</updated>
+    <id>http://www.harveynick.com/blog/2012/04/14/now-were-blogging-with-photos</id>
+    <content type="html"><![CDATA[<p><em>Fair warning: this is going to be a bit of a programming heavy blog post. It&rsquo;s also going to be quite Mac specific.</em></p>
+
+<p>One of the things I wanted to change about the format of this blog was to make it more visual, specifically with pictures. This first part of this was to add pictures to the front page. There were a couple of options for doing so. I could just scan through an article, look for the first image tag and use this. Alternatively I could add a mechanism which allowed me to choose the image, in a similar manner to the way <a href="http://octopress.org/">Octopress</a> allows me to choose the except which appears on the front page. I decided to go with option two.</p>
+
+<!-- more -->
+
+
+<p>The first part of this was to modify the image tag plug-in like so:</p>
+
+<figure class='code'><figcaption><span>image_tag.rb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">module</span> <span class="nn">Jekyll</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">class</span> <span class="nc">ImageTag</span> <span class="o">&lt;</span> <span class="ss">Liquid</span><span class="p">:</span><span class="ss">:Tag</span>
+</span><span class='line'>    <span class="vi">@img</span> <span class="o">=</span> <span class="kp">nil</span>
+</span><span class='line'>    <span class="vi">@header</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">tag_name</span><span class="p">,</span> <span class="n">markup</span><span class="p">,</span> <span class="n">tokens</span><span class="p">)</span>
+</span><span class='line'>      <span class="n">attributes</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;src&#39;</span><span class="p">,</span> <span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="s1">&#39;height&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="k">if</span> <span class="n">markup</span> <span class="o">=~</span> <span class="sr">/(?&lt;class&gt;\S.*\s+)?(?&lt;src&gt;(?:https?:\/\/|\/|\S+\/)\S+)(?:\s+(?&lt;width&gt;\d+))?(?:\s+(?&lt;height&gt;\d+))?(?&lt;title&gt;\s+.+)?/i</span>
+</span><span class='line'>        <span class="vi">@img</span> <span class="o">=</span> <span class="n">attributes</span><span class="o">.</span><span class="n">reduce</span><span class="p">({})</span> <span class="p">{</span> <span class="o">|</span><span class="n">img</span><span class="p">,</span> <span class="kp">attr</span><span class="o">|</span> <span class="n">img</span><span class="o">[</span><span class="kp">attr</span><span class="o">]</span> <span class="o">=</span> <span class="vg">$~</span><span class="o">[</span><span class="kp">attr</span><span class="o">].</span><span class="n">strip</span> <span class="k">if</span> <span class="vg">$~</span><span class="o">[</span><span class="kp">attr</span><span class="o">]</span><span class="p">;</span> <span class="n">img</span> <span class="p">}</span>
+</span><span class='line'>        <span class="k">if</span> <span class="sr">/(?:&quot;|&#39;)(?&lt;title&gt;[^&quot;&#39;]+)?(?:&quot;|&#39;)\s+(?:&quot;|&#39;)(?&lt;alt&gt;[^&quot;&#39;]+)?(?:&quot;|&#39;)/</span> <span class="o">=~</span> <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;title&#39;</span><span class="o">]</span>
+</span><span class='line'>          <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;title&#39;</span><span class="o">]</span>  <span class="o">=</span> <span class="n">title</span>
+</span><span class='line'>          <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;alt&#39;</span><span class="o">]</span>    <span class="o">=</span> <span class="n">alt</span>
+</span><span class='line'>        <span class="k">else</span>
+</span><span class='line'>          <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;alt&#39;</span><span class="o">]</span>    <span class="o">=</span> <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;title&#39;</span><span class="o">].</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">/&quot;/</span><span class="p">,</span> <span class="s1">&#39;&amp;#34;&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;title&#39;</span><span class="o">]</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>        <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;class&#39;</span><span class="o">].</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">/&quot;/</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;class&#39;</span><span class="o">]</span>
+</span><span class='line'>        <span class="k">if</span> <span class="n">tag_name</span> <span class="o">==</span> <span class="s2">&quot;header_img&quot;</span>
+</span><span class='line'>          <span class="vi">@header</span> <span class="o">=</span> <span class="s2">&quot;&lt;!-- header_img </span><span class="si">#{</span><span class="vi">@img</span><span class="o">[</span><span class="s1">&#39;src&#39;</span><span class="o">]</span><span class="si">}</span><span class="s2"> --&gt;&quot;</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>      <span class="k">super</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+</span><span class='line'>      <span class="k">if</span> <span class="vi">@img</span>
+</span><span class='line'>        <span class="s2">&quot;&lt;img </span><span class="si">#{</span><span class="vi">@img</span><span class="o">.</span><span class="n">collect</span> <span class="p">{</span><span class="o">|</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="o">|</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">k</span><span class="si">}</span><span class="s2">=</span><span class="se">\&quot;</span><span class="si">#{</span><span class="n">v</span><span class="si">}</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="k">if</span> <span class="n">v</span><span class="si">}</span><span class="s2">.join(&quot;</span> <span class="s2">&quot;)}&gt;</span><span class="si">#{</span><span class="vi">@header</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>      <span class="k">else</span>
+</span><span class='line'>        <span class="s2">&quot;Error processing input, expected syntax: &lt;img class=&quot;</span><span class="o">[</span><span class="k">class</span> <span class="nb">name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">]</span><span class="s2">&quot; src=&quot;</span><span class="o">[</span><span class="n">http</span><span class="o">[</span><span class="n">s</span><span class="o">]</span><span class="ss">:/</span><span class="o">]/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">image</span><span class="s2">&quot; title=&quot;</span><span class="o">[</span><span class="n">width</span> <span class="o">[</span><span class="n">height</span><span class="o">]]</span> <span class="o">[</span><span class="n">title</span> <span class="n">text</span> <span class="o">|</span> <span class="p">\</span><span class="o">&amp;</span><span class="c1">#34;title text\&amp;#34; [\&amp;#34;alt text\&amp;#34;]]&quot; alt=&quot;[width [height]] [title text | \&amp;#34;title text\&amp;#34; [\&amp;#34;alt text\&amp;#34;]]&quot;&gt;&quot;</span>
+</span><span class='line'>      <span class="k">end</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="ss">Liquid</span><span class="p">:</span><span class="ss">:Template</span><span class="o">.</span><span class="n">register_tag</span><span class="p">(</span><span class="s1">&#39;img&#39;</span><span class="p">,</span> <span class="ss">Jekyll</span><span class="p">:</span><span class="ss">:ImageTag</span><span class="p">)</span>
+</span><span class='line'><span class="ss">Liquid</span><span class="p">:</span><span class="ss">:Template</span><span class="o">.</span><span class="n">register_tag</span><span class="p">(</span><span class="s1">&#39;header_img&#39;</span><span class="p">,</span> <span class="ss">Jekyll</span><span class="p">:</span><span class="ss">:ImageTag</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This adds an <code>html</code> comment containing the image path to the page when I use <code>header_img</code> as a <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> tag name rather than the original <code>img</code>. Next I need to do something with this comment. I created an additional Liquid filter which pulls the path out and replaces it with an actual image embed:</p>
+
+<figure class='code'><figcaption><span>harveynick_filters.rb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">module</span> <span class="nn">HarveyNickFilters</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1"># Used on the blog index to split posts on the &lt;!--more--&gt; marker</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">header_image</span><span class="p">(</span><span class="n">input</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">input</span> <span class="o">=~</span> <span class="sr">/&lt;!-- header_img (?&lt;src&gt;(?:https?:\/\/|\/|\S+\/)\S+) --&gt;/</span>
+</span><span class='line'>      <span class="s2">&quot;&lt;img class=</span><span class="se">\&quot;</span><span class="s2">header</span><span class="se">\&quot;</span><span class="s2"> src=</span><span class="se">\&quot;</span><span class="si">#{</span><span class="vg">$~</span><span class="o">[</span><span class="s1">&#39;src&#39;</span><span class="o">]</span><span class="si">}</span><span class="se">\&quot;</span><span class="s2">/&gt;&quot;</span>
+</span><span class='line'>    <span class="k">else</span>
+</span><span class='line'>      <span class="s2">&quot;&quot;</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="ss">Liquid</span><span class="p">:</span><span class="ss">:Template</span><span class="o">.</span><span class="n">register_filter</span><span class="p">(</span><span class="no">HarveyNickFilters</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Next I modified my theme to run this filter over the page contents just before the one which creates the except on the front page. I&rsquo;ll leave this as an exercise for the reader. Lastly, I needed to account for the fact that the created image could be just about any size, while I want some uniformity on the front page. Those of you playing at home will have noticed I assigned <code>header</code> as the class of the image. This allows me to control the appearance of the front page images by adding the following to the <code>sass</code> files in my theme (which are used to generate the <code>css</code>):</p>
+
+<figure class='code'><figcaption><span>_styles.scss </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='scss'><span class='line'><span class="nt">img</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">&amp;</span><span class="nc">.header</span><span class="p">{</span>
+</span><span class='line'>    <span class="na">float</span><span class="o">:</span> <span class="no">left</span><span class="p">;</span>
+</span><span class='line'>    <span class="na">width</span><span class="o">:</span> <span class="mi">250</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="na">max-width</span><span class="o">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+</span><span class='line'>    <span class="na">margin-right</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="na">margin-bottom</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="na">width</span><span class="o">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+</span><span class='line'>      <span class="na">max-width</span><span class="o">:</span> <span class="mi">250</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span> <span class="nt">400px</span><span class="o">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="na">width</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span><span class='line'>      <span class="na">max-width</span><span class="o">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span><span class='line'>      <span class="na">margin-right</span><span class="o">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Presto. Front page images.</p>
+
+<p>Next, I wanted to try and make it easier to include pictures which I myself have taken with an actual camera (or, more likely, my phone). There really isn&rsquo;t any problem when you&rsquo;re linking to images elsewhere on the internet, but things can get a bit stickier when you want to include your own images on an Octopress blog. One option is to use a hosted service, like Flickr or PhotoBucket, but this only works when you have an internet connection. I really love that Octopress allows me to work on my site while offline, and I didn&rsquo;t want to lose this advantage when I&rsquo;m posting pictures. Thus, I decided to just stick the images in my blog&rsquo;s images folder.</p>
+
+<p>iPhoto is pretty great for organising and sharing photos (with supported services), but definitely doesn&rsquo;t make your life easy if you want to actually get at the image files themselves. That&rsquo;s the first problem. The second is that I also want to resize them to something reasonable for my blog. Lastly I want this to be low hassle. I came to the conclusion that an <a href="http://en.wikipedia.org/wiki/AppleScript">Applescript</a> is what was required, and this is what I came up with:</p>
+
+<figure class='code'><figcaption><span>bloggify.script </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='applescript'><span class='line'><span class="k">set</span> <span class="nv">blog_path</span> <span class="k">to</span> <span class="s2">&quot;~/GitHub/octopress/source&quot;</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">images_path</span> <span class="k">to</span> <span class="s2">&quot;/images/blog/&quot;</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">blog_image_path</span> <span class="k">to</span> <span class="nv">blog_path</span> <span class="o">&amp;</span> <span class="nv">images_path</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">max_width</span> <span class="k">to</span> <span class="mi">992</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">set</span> <span class="p">{</span><span class="nb">year</span><span class="p">:</span><span class="nv">y</span><span class="p">,</span> <span class="nb">month</span><span class="p">:</span><span class="nv">m</span><span class="p">,</span> <span class="nb">day</span><span class="p">:</span><span class="nv">d</span><span class="p">}</span> <span class="k">to</span> <span class="p">(</span><span class="nb">current date</span><span class="p">)</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">date_string</span> <span class="k">to</span> <span class="s2">&quot;&quot;</span> <span class="o">&amp;</span> <span class="nv">y</span> <span class="o">&amp;</span> <span class="s2">&quot;/&quot;</span> <span class="o">&amp;</span> <span class="nv">two_digits</span><span class="p">(</span><span class="nv">m</span> <span class="o">*</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="s2">&quot;/&quot;</span> <span class="o">&amp;</span> <span class="nv">two_digits</span><span class="p">(</span><span class="nv">d</span><span class="p">)</span>
+</span><span class='line'><span class="k">set</span> <span class="nv">folder_path</span> <span class="k">to</span> <span class="nv">blog_image_path</span> <span class="o">&amp;</span> <span class="nv">date_string</span> <span class="o">&amp;</span> <span class="s2">&quot;/&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">do shell script</span> <span class="s2">&quot;mkdir -p &quot;</span> <span class="o">&amp;</span> <span class="nv">folder_path</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;iPhoto&quot;</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">the_photos</span> <span class="k">to</span> <span class="nv">selection</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">the_photo</span> <span class="k">to</span> <span class="nb">item</span> <span class="mi">1</span> <span class="k">of</span> <span class="nv">the_photos</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">image_path</span> <span class="k">to</span> <span class="na">image</span> <span class="na">path</span> <span class="k">of</span> <span class="nv">the_photo</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">image_name</span> <span class="k">to</span> <span class="na">name</span> <span class="k">of</span> <span class="nv">the_photo</span>
+</span><span class='line'><span class="k">end</span> <span class="k">tell</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;Image Events&quot;</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">current_image</span> <span class="k">to</span> <span class="nb">open</span> <span class="nv">image_path</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">image_type</span> <span class="k">to</span> <span class="nv">current_image</span>&#39;s <span class="na">file type</span>
+</span><span class='line'>  <span class="k">set</span> <span class="no">AppleScript</span>&#39;s <span class="no">text item delimiters</span> <span class="k">to</span> <span class="s2">&quot;/&quot;</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">image_path</span> <span class="k">to</span> <span class="nb">last</span> <span class="nb">item</span> <span class="k">of</span> <span class="nb">text</span> <span class="nb">items</span> <span class="k">of</span> <span class="nv">image_path</span>
+</span><span class='line'>  <span class="k">set</span> <span class="no">AppleScript</span>&#39;s <span class="no">text item delimiters</span> <span class="k">to</span> <span class="s2">&quot;&quot;</span>
+</span><span class='line'>  <span class="nv">scale</span> <span class="nv">current_image</span> <span class="k">to</span> <span class="na">size</span> <span class="nv">max_width</span>
+</span><span class='line'>  <span class="k">set</span> <span class="nv">new_image</span> <span class="k">to</span> <span class="nv">folder_path</span> <span class="o">&amp;</span> <span class="nv">image_path</span>
+</span><span class='line'>  <span class="nv">save</span> <span class="nv">current_image</span> <span class="k">in</span> <span class="nv">new_image</span> <span class="k">as</span> <span class="nv">image_type</span>
+</span><span class='line'><span class="k">end</span> <span class="k">tell</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">set the clipboard to</span> <span class="nv">images_path</span> <span class="o">&amp;</span> <span class="nv">date_string</span> <span class="o">&amp;</span> <span class="s2">&quot;/&quot;</span> <span class="o">&amp;</span> <span class="nv">image_path</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">on</span> <span class="nv">two_digits</span><span class="p">(</span><span class="nv">the_number</span><span class="p">)</span>
+</span><span class='line'>  <span class="no">return</span> <span class="p">(</span><span class="nb">text</span> <span class="o">-</span><span class="mi">2</span> <span class="nb">thru</span> <span class="o">-</span><span class="mi">1</span> <span class="k">of</span> <span class="p">((</span><span class="nv">the_number</span> <span class="o">+</span> <span class="mi">100</span><span class="p">)</span> <span class="k">as </span><span class="nc">string</span><span class="p">))</span>
+</span><span class='line'><span class="k">end</span> <span class="nv">two_digits</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, Applescript the programming language is completely mental and can be a complete pain in the arse to get right, but Applescript the mechanism is spectacularly powerful. You can do some serious automation with it. This script grabs the path to the currently selected photograph in iPhoto, resizes it and copies it to a folder inside my blog, generated using today&rsquo;s date to avoid duplication. Lastly, it places the location of the image on the clipboard, in the form it&rsquo;s needed.</p>
+
+<p>To use it, I enabled the scripts menu (it&rsquo;s an option in the Applescript editor) and copied the script to the iPhoto scripts folder, which will be something like <code>/Users/&lt;user&gt;/Library/Scripts/Applications/iPhoto</code>. This might be hidden by default, but you can find it via the scripts menu while in iPhoto.</p>
+
+<p>Then, all that is required is to select a photo, trigger the script, and then hit cmd-c in the post I&rsquo;m writing. Bingo!</p>
+
+<p>After getting this working, I remembered an <a href="http://arstechnica.com/apple/guides/2011/09/tutorial-os-x-automation-with-macruby-and-the-scripting-bridge.ars/2">ArsTecnica article</a> about using <a href="http://www.ruby-lang.org/en/">Ruby</a> in place of Applescript for this purpose, so I converted the script to Ruby as an exercise. This is what I came up with:</p>
+
+<figure class='code'><figcaption><span>blogify.rb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">#!/usr/local/bin/macruby  </span>
+</span><span class='line'>
+</span><span class='line'><span class="n">framework</span> <span class="s2">&quot;ScriptingBridge&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">blog_path</span> <span class="o">=</span> <span class="s2">&quot;~/GitHub/octopress/source&quot;</span>
+</span><span class='line'><span class="n">images_path</span> <span class="o">=</span> <span class="s2">&quot;/images/blog/&quot;</span>
+</span><span class='line'><span class="n">max_width</span> <span class="o">=</span> <span class="mi">992</span>
+</span><span class='line'><span class="n">convert</span> <span class="o">=</span> <span class="s2">&quot;/opt/local/bin/convert&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">date_string</span> <span class="o">=</span> <span class="no">Time</span><span class="o">.</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y/%m/%d&quot;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">source_path</span> <span class="o">=</span> <span class="no">SBApplication</span><span class="o">.</span><span class="n">applicationWithBundleIdentifier</span><span class="p">(</span><span class="s2">&quot;com.apple.iPhoto&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">selection</span><span class="o">[</span><span class="mi">0</span><span class="o">].</span><span class="n">imagePath</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2"> &quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">image_name</span> <span class="o">=</span> <span class="n">source_path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span><span class="o">[-</span><span class="mi">1</span><span class="o">]</span>
+</span><span class='line'><span class="n">destination_folder</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">blog_path</span><span class="si">}#{</span><span class="n">images_path</span><span class="si">}#{</span><span class="n">date_string</span><span class="si">}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2"> &quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">destination_path</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">destination_folder</span><span class="si">}</span><span class="s2">/</span><span class="si">#{</span><span class="n">image_name</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">ensure_dir_cmd</span> <span class="o">=</span> <span class="s2">&quot;mkdir -p </span><span class="si">#{</span><span class="n">destination_folder</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="nb">puts</span> <span class="n">ensure_dir_cmd</span>
+</span><span class='line'><span class="nb">system</span> <span class="n">ensure_dir_cmd</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="n">convert_cmd</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">convert</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">source_path</span><span class="si">}</span><span class="s2"> -resize </span><span class="si">#{</span><span class="n">max_width</span><span class="si">}</span><span class="s2">x2000 </span><span class="si">#{</span><span class="n">destination_path</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="nb">puts</span> <span class="n">convert_cmd</span>
+</span><span class='line'><span class="nb">system</span> <span class="n">convert_cmd</span>
+</span><span class='line'>
+</span><span class='line'><span class="no">IO</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s1">&#39;pbcopy&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">print</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">images_path</span><span class="si">}#{</span><span class="n">date_string</span><span class="si">}</span><span class="s2">/</span><span class="si">#{</span><span class="n">image_name</span><span class="si">}</span><span class="s2">&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ruby is a much more sensible language, and this, to me, is a lot easier to follow. I&rsquo;m fairly new to Ruby, so this might not actually be the most Ruby-ish way of doing it, mind. It should be noted that it will only work with <a href="http://www.macruby.org/">MacRuby</a>, though. You will also need <a href="http://www.imagemagick.org/script/index.php">ImageMagick</a> installed. I made this executable with a quick <code>chmod +x</code> and moved it to the iPhoto scripts folder as well, where it seems to work just fine. So now I have two options. Hopefully, someone out there finds this useful.</p>
+
+<p>Finally, to prove it works, and because it feels a little strange to not actually have any pictures in this entry: here&rsquo;s a nice shot taken at Kew Gardens (which hopefully I&rsquo;ll talk about more later):</p>
+
+<p><img class="center" src="http://www.harveynick.com/images/blog/2012/04/14/IMG_0442.JPG"><!-- header_img /images/blog/2012/04/14/IMG_0442.JPG --></p>
+]]></content>
+  </entry>
+  
+</feed>
