@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: london | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/london/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/london/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[New (ish) Year, New (ish) Blog]]></title>
-    <link href="http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog/"/>
+    <link href="http://harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog/"/>
     <updated>2012-03-17T11:22:00+00:00</updated>
-    <id>http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog</id>
+    <id>http://harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog</id>
     <content type="html"><![CDATA[<p>2011 was an interesting year for me. A lot changed. I turned 30. After 10 years of residency I moved away from Edinburgh, a city I love dearly, and took a job in London. With <a href="/blog/tags/google">Google</a>. As a result, I no longer work with <a href="/blog/tags/autonomous-underwater-vehicles">Autonomous Underwater Vehicles</a> for a living. Instead I build web services. Quite the change, I&rsquo;m sure you&rsquo;ll agree. In the early months of the year I finally completed the corrections to my <a href="/blog/tags/phd">PhD</a>, and then in the summer: I graduated. It took 6 years (all together) but I am now Dr. Nick Johnson. I also <a href="/blog/2011/07/18/the-sound-of-one-hand-clapping/">lost my grandmother</a>, a fact which still brings me to tears on occasion.</p>
 
 <p>In this light, the fact that I decided, towards the end of the year, to shift my blog away from <a href="http://wordpress.org">Wordpress</a> and over to its own domain barely even casts a shadow. I did, though, and as a result you&rsquo;re now reading these words on a site built using <a href="http://octopress.org">Octopress</a>, which is hosted at harveynick.com. As you may have noticed, all of the old posts from my <a href="http://harveynick.wordpress.com">wordpress site</a> have been ported over, minus the short film reviews, which you&rsquo;ll find <a href="http://ohsohumbleopinion.tumblr.com">here</a>. I&rsquo;m not going to go into how I accomplished this, except to say: I did it the same way <a href="http://mattgemmell.com/2011/09/12/blogging-with-octopress/">Matt Gemmel did</a>.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Geek | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/categories/geek/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/categories/geek/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Some Thoughts on Gamification]]></title>
-    <link href="http://www.harveynick.com/blog/2013/09/14/am-i-winning/"/>
+    <link href="http://harveynick.com/blog/2013/09/14/am-i-winning/"/>
     <updated>2013-09-14T16:01:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/09/14/am-i-winning</id>
+    <id>http://harveynick.com/blog/2013/09/14/am-i-winning</id>
     <content type="html"><![CDATA[<p>If you&rsquo;re playing any sort of a game, the question &ldquo;Am I winning?&rdquo; is usually quite easy to answer. &ldquo;Is my score higher than the other guy?&rdquo; usually covers it (though if you&rsquo;re playing something like chess it might be a little more complicated than that). If you&rsquo;re playing a computer game the fact that your character is still alive may well be enough to settle this question in your favour.</p>
 
 <p>In life, though, it is a much harder question to answer. It may well be true that, to the healthy mind, it&rsquo;s not something which should ever really matter, but <a href="http://harveynick.com/blog/2013/05/06/do-you-even-lift/">as noted before</a>, gamification works really (embarrassingly) well for me.</p>
@@ -116,9 +116,9 @@
   
   <entry>
     <title type="html"><![CDATA[A (Very) Rough Guide to Beginners' Barbell Training Programs]]></title>
-    <link href="http://www.harveynick.com/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs/"/>
+    <link href="http://harveynick.com/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs/"/>
     <updated>2013-05-10T16:30:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs</id>
+    <id>http://harveynick.com/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs</id>
     <content type="html"><![CDATA[<p>As I promised in my <a href="blog/2013/05/06/do-you-even-lift/">last post</a>, I&rsquo;d now like to talk a bit about the different weight lifting programs I ended up researching. I spent a fairly silly amount of time here, so I&rsquo;m hoping that you find it useful.</p>
 
 <p>I&rsquo;m going to talk about the three primary beginners lifters programs I read up on, tell you what they actually involve… and also what I think the person behind them is trying to sell you.</p>
@@ -254,9 +254,9 @@
   
   <entry>
     <title type="html"><![CDATA[Do You Even Lift, Bro?]]></title>
-    <link href="http://www.harveynick.com/blog/2013/05/06/do-you-even-lift/"/>
+    <link href="http://harveynick.com/blog/2013/05/06/do-you-even-lift/"/>
     <updated>2013-05-06T15:24:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/05/06/do-you-even-lift</id>
+    <id>http://harveynick.com/blog/2013/05/06/do-you-even-lift</id>
     <content type="html"><![CDATA[<p>After I arrived in London I decided to take a second stab at Couch to 5k, having abandoned it <a href="blog/2013/04/07/running-the-first-time/">the first time around</a>. The problem now was finding a time and place. At first I tried running in the evenings around Wandsworth Common, conveniently close to where I was staying. That started to feel more than a little unsafe, however, especially on the evenings I got home safe enough to push me through -twilight- dusk and into full dark. I&rsquo;m fortunate enough to work very close to Hyde Park, however, so I transplanted my runs here and started taking time out of my work day. Running through Hyde Park in the sun is awesome, by the way.</p>
 
 <p>All was fine and dandy until I fell off a surf board during a short break and cracked the top of my foot against the sea bed. I&rsquo;d twisted myself into a slightly odd position in order to accomplishing this, and so it had the added bonus effect of pushing my foot much further back than it&rsquo;s really supposed to go. By the time I got back to London, my entire foot had turned a lovely combination of purple and yellow. Shit.</p>
@@ -289,9 +289,9 @@
   
   <entry>
     <title type="html"><![CDATA[Running, the First Time]]></title>
-    <link href="http://www.harveynick.com/blog/2013/04/07/running-the-first-time/"/>
+    <link href="http://harveynick.com/blog/2013/04/07/running-the-first-time/"/>
     <updated>2013-04-07T22:54:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/04/07/running-the-first-time</id>
+    <id>http://harveynick.com/blog/2013/04/07/running-the-first-time</id>
     <content type="html"><![CDATA[<p>When I decided to drag myself back on to the fitness wagon, it seemed to me that running was the answer. Getting myself to an actual gym clearly wasn&rsquo;t working, but I lived a short walk from a large and beautiful park (oh The Meadows, how I miss you still). I went out and spent what I still consider to be a fair amount of money on a pair of running shoes (Nike+ compatible, obviously). I&rsquo;ve had knee issues in the past, which motivated me to err towards the top end of the range, I swear. The presence of the striking red headed shop assistant with her beautiful blue eyes and athletic physique had absolutely nothing to do with my decision.</p>
 
 <p>What was I talking about? Running! Right.</p>
@@ -351,9 +351,9 @@
   
   <entry>
     <title type="html"><![CDATA[A Fitness Story]]></title>
-    <link href="http://www.harveynick.com/blog/2013/04/01/a-fitness-story/"/>
+    <link href="http://harveynick.com/blog/2013/04/01/a-fitness-story/"/>
     <updated>2013-04-01T20:07:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/04/01/a-fitness-story</id>
+    <id>http://harveynick.com/blog/2013/04/01/a-fitness-story</id>
     <content type="html"><![CDATA[<p>During most of university I was in pretty crap shape, but in the second year of my PhD my physical condition got particularly lousy. I caught a bus every morning which left from directly outside my flat and took me directly to the university. I did pretty much no exercise and ate an awful lot of takeaway. A few of my friends remarked that I&rsquo;d gained weight. &ldquo;Don&rsquo;t worry,&rdquo; they said &ldquo;it&rsquo;s fine,&rdquo; in response to my mortified expression, I&rsquo;m sure &ldquo;You look well with it&rdquo;. But I knew I looked nothing of the sort.  To paraphrase Eddie Izzard: when I looked in the mirror I sure as hell didn&rsquo;t want to have sex with myself.</p>
 
 <!-- More -->

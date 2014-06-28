@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: Scala | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/scala/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/scala/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Revisiting the Language Issue]]></title>
-    <link href="http://www.harveynick.com/blog/2011/09/14/revisiting-the-language-issue/"/>
+    <link href="http://harveynick.com/blog/2011/09/14/revisiting-the-language-issue/"/>
     <updated>2011-09-14T10:00:14+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/09/14/revisiting-the-language-issue</id>
+    <id>http://harveynick.com/blog/2011/09/14/revisiting-the-language-issue</id>
     <content type="html"><![CDATA[<p>Some time ago, I wrote a <a href="/blog/2010/10/09/youre-speaking-my-language-baby-part-1-introduction/">series</a> <a href="/blog/2010/10/10/youre-speaking-my-language-baby-part-2-java/">of</a> <a href="/blog/2010/10/11/youre-speaking-my-language-baby-part-3-c/">posts</a> <a href="/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/">about</a> <a href="/blog/2010/10/13/youre-speaking-my-language-baby-part-5-conclusion/">language</a> choice for my Clockwork Aphid project. In the end I decided to start the project in Java, this being the language I&rsquo;m most comfortable with. Once the project reaches a stable state, with some minimum amount of functionality, the plan is to port it to C++ for comparison purposes, this being the language which is likely to provide the best performance.</p>
 
 <p>I still plan on doing this, but I&rsquo;ve also decided to add a couple of extra candidate languages to the melting pot and get an even broader comparison. The first of these languages is Go, a relatively new language developed at Google. This is not coincidence. I&rsquo;ve been doing some reading about it lately and finding a lot of things I really like. It has the potential to provide the benefits of both Java <em>and</em> C++, whilst avoiding many of the pitfalls. This is definitely a good thing. It will also give me chance to dogfood (there&rsquo;s <a href="/blog/2011/08/26/dogfood-nom-nom-nom/">that word</a> again!) some more Google technology.</p>

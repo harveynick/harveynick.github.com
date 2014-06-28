@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: iPad | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/ipad/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/ipad/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Process and the Platform]]></title>
-    <link href="http://www.harveynick.com/blog/2011/06/03/the-process-and-the-platform/"/>
+    <link href="http://harveynick.com/blog/2011/06/03/the-process-and-the-platform/"/>
     <updated>2011-06-03T05:24:55+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/06/03/the-process-and-the-platform</id>
+    <id>http://harveynick.com/blog/2011/06/03/the-process-and-the-platform</id>
     <content type="html"><![CDATA[<p>The effort required to actually publish that <a href="http://harveynick.wordpress.com/2011/06/03/in-which-i-go-full-nerd-2/">last post</a> was&hellip; considerable. Several factors contributed to this:</p>
 
 <ul>
@@ -48,9 +48,9 @@
   
   <entry>
     <title type="html"><![CDATA[...And Another Couple Of Things]]></title>
-    <link href="http://www.harveynick.com/blog/2010/02/07/and-another-couple-of-things/"/>
+    <link href="http://harveynick.com/blog/2010/02/07/and-another-couple-of-things/"/>
     <updated>2010-02-07T22:16:05+00:00</updated>
-    <id>http://www.harveynick.com/blog/2010/02/07/and-another-couple-of-things</id>
+    <id>http://harveynick.com/blog/2010/02/07/and-another-couple-of-things</id>
     <content type="html"><![CDATA[<p>Something I forgot to mention in my last post was my trying to look at the iPad from a developer&rsquo;s perspective. I talked before about a programming side project that I&rsquo;ve had bouncing around in my head for a while. Previously, I mentioned that I wasn&rsquo;t sure if it was a website, an application, or some combination of the two. Then again I could see some use cases in which a laptop might be a bit cumbersome and a smart phone too small and underpowered. In which case neither the application of the website is entirely satisfactory. I&rsquo;m actually now starting to think that the iPad could be the exact right platform for it. Perhaps I should actually start working my way through the Objective-C text book I&rsquo;ve had sitting on my shelf for over a year now&hellip;</p>
 
 <!-- more -->
@@ -74,9 +74,9 @@
   
   <entry>
     <title type="html"><![CDATA[That iPad thing]]></title>
-    <link href="http://www.harveynick.com/blog/2010/02/03/that-ipad-thing/"/>
+    <link href="http://harveynick.com/blog/2010/02/03/that-ipad-thing/"/>
     <updated>2010-02-03T23:24:46+00:00</updated>
-    <id>http://www.harveynick.com/blog/2010/02/03/that-ipad-thing</id>
+    <id>http://harveynick.com/blog/2010/02/03/that-ipad-thing</id>
     <content type="html"><![CDATA[<p>Originally, right after I got around the watching the keynote presentation which launched the iPad, I was going to write a blog post about how disappointed I was. I thought they&rsquo;d screwed the pooch and I, for one, was seriously underwhelmed.</p>
 
 <p>Needless to say, I didn&rsquo;t quite get around to writing it. Since then I&rsquo;ve read all the criticism by the naysayers and Apple haters, all the gushing praise from the fanatics and all the stuff in between from the more sensible people*. Now, after some reflection, I find myself somewhere in the middle. I flip back and forwards between thoughts of &ldquo;that could be awesome,&rdquo; and &ldquo;that&rsquo;s far too much of a compromise.&rdquo;</p>

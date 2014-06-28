@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: Things | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/things/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/things/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[What todo?]]></title>
-    <link href="http://www.harveynick.com/blog/2010/10/28/what-todo/"/>
+    <link href="http://harveynick.com/blog/2010/10/28/what-todo/"/>
     <updated>2010-10-28T11:00:08+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/10/28/what-todo</id>
+    <id>http://harveynick.com/blog/2010/10/28/what-todo</id>
     <content type="html"><![CDATA[<p>The return train ride after a visit to my parents' house is, if anything, more pleasant that the outward journey. This is not least, of course, because it ends in Edinburgh, rather than <em>Doncaster</em>*. Be that as it may, this is perhaps a good time to pick up the thought I left hanging at the end of my <a href="http://harveynick.wordpress.com/2010/10/26/the-journey-home/">last entry</a>, in which I talked a little about ways of keeping notes and writing down ideas. Having dealt with information, we now come to action. From stasis, to process. Less obliquely: what, exactly, are you going to do about those ideas?</p>
 
 <p>For the longest time I never kept todo lists. I tried to keep my goals and the individual steps required to reach them inside my head. Sometimes this worked quite well; thoughts are things which are simple to rearrange and update as requirements change, after all. Other times, not so much. In short: I forgot things.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: guild wars | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/guild-wars/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/guild-wars/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[There Can be Only... Several...]]></title>
-    <link href="http://www.harveynick.com/blog/2010/10/14/323/"/>
+    <link href="http://harveynick.com/blog/2010/10/14/323/"/>
     <updated>2010-10-14T21:22:15+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/10/14/323</id>
+    <id>http://harveynick.com/blog/2010/10/14/323</id>
     <content type="html"><![CDATA[<p>As I&rsquo;ve previously mentioned, my project (Clockwork Aphid) has been bubbling away in the bearded cauldron that is my head for quite some time. As a result, I have quite a bit I want to say about it. I want to blog about the process of building it because I think it might be a good exercise to go through, and also because I think it might help me work the whole thing out. I&rsquo;m going to talk more about what it actually is quite soon, partly because I want to start talking about implementation and partly because I&rsquo;ve been prompted by someone else&rsquo;s project which I suspect might be quite similar. More about that later.</p>
 
 <!-- more -->

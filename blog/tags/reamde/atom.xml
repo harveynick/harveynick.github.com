@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: Reamde | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/reamde/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/reamde/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Book Related Blog Post]]></title>
-    <link href="http://www.harveynick.com/blog/2011/08/23/book-related-blog-post/"/>
+    <link href="http://harveynick.com/blog/2011/08/23/book-related-blog-post/"/>
     <updated>2011-08-23T10:00:02+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/08/23/book-related-blog-post</id>
+    <id>http://harveynick.com/blog/2011/08/23/book-related-blog-post</id>
     <content type="html"><![CDATA[<p>I finally broke.</p>
 
 <p>I’ve been saying for some time that if the Kindle, or a similarly capable eReader, went under the £100 mark I would splash out and buy one. Until quite recently I had been quite tempted, but this condition was never satisfied. Had I seen one for sale in a bricks and mortar store while I was over in the US of A, I think I probably would have just snapped it up, dollar to stirling exchange rates and relative prices being what they are. But I didn’t, so I didn’t.</p>

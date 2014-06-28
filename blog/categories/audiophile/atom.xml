@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Audiophile | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/categories/audiophile/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/categories/audiophile/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Mercury Rising]]></title>
-    <link href="http://www.harveynick.com/blog/2011/09/20/mercury-rising/"/>
+    <link href="http://harveynick.com/blog/2011/09/20/mercury-rising/"/>
     <updated>2011-09-20T10:00:44+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/09/20/mercury-rising</id>
+    <id>http://harveynick.com/blog/2011/09/20/mercury-rising</id>
     <content type="html"><![CDATA[<p>Monday the 5th of September was Freddie Mercury day. The day he would have turned 65, had he lived. This makes me feel a little old, but that&rsquo;s not the point. The day&rsquo;s <a href="http://www.youtube.com/watch?v=KX2BQM0D01M">Google doodle</a> (pointed out to me with furious glee by one of my coworkers) led me to YouTube and numerous videos of Queen performing live. As I often do, I&rsquo;d forgotten just how good they were. I spent much of the day fighting the urge to pump my fist and throw shapes at my desk*. Since I had so much fun with this, I&rsquo;m going to pepper this post with some of the videos I found the most fun. Anything under the videos and written in italics is a comment on the video itself, and not strictly related to the rest of this post.</p>
 
 <!-- more -->
@@ -75,9 +75,9 @@
   
   <entry>
     <title type="html"><![CDATA[Epic Googleyep and Other Stories]]></title>
-    <link href="http://www.harveynick.com/blog/2010/10/17/epic-googleyep-and-other-stories/"/>
+    <link href="http://harveynick.com/blog/2010/10/17/epic-googleyep-and-other-stories/"/>
     <updated>2010-10-17T14:52:53+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/10/17/epic-googleyep-and-other-stories</id>
+    <id>http://harveynick.com/blog/2010/10/17/epic-googleyep-and-other-stories</id>
     <content type="html"><![CDATA[<p>I&rsquo;m currently doing some tests on a couple of different data structure implementations for Clockwork Aphid, so while they&rsquo;re running I thought I&rsquo;d a bit of time to write a music related post, since I haven&rsquo;t done one in a while. So, contained within are three music related mini posts for your viewing pleasure.</p>
 
 <!-- more -->
@@ -121,9 +121,9 @@
   
   <entry>
     <title type="html"><![CDATA[Musical Arithmetic]]></title>
-    <link href="http://www.harveynick.com/blog/2010/08/15/musical-arithmetic/"/>
+    <link href="http://harveynick.com/blog/2010/08/15/musical-arithmetic/"/>
     <updated>2010-08-15T12:40:46+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/08/15/musical-arithmetic</id>
+    <id>http://harveynick.com/blog/2010/08/15/musical-arithmetic</id>
     <content type="html"><![CDATA[<p>Okay, so here&rsquo;s the formula:</p>
 
 <pre><code>(A - B) + C = D
@@ -164,9 +164,9 @@
   
   <entry>
     <title type="html"><![CDATA[Serendipitous Nostalgia]]></title>
-    <link href="http://www.harveynick.com/blog/2009/01/13/serendipitous-nostalgia/"/>
+    <link href="http://harveynick.com/blog/2009/01/13/serendipitous-nostalgia/"/>
     <updated>2009-01-13T23:31:13+00:00</updated>
-    <id>http://www.harveynick.com/blog/2009/01/13/serendipitous-nostalgia</id>
+    <id>http://harveynick.com/blog/2009/01/13/serendipitous-nostalgia</id>
     <content type="html"><![CDATA[<p>Today I was walking home from work and absent-mindedly listening to music, when I noticed that that my supposedly shuffled iPod was displaying a definite preference for one band in particular. A band I haven&rsquo;t really spared a seconds thought in some years. As I walked I hatched a plot a write a blog post regarding the nostalgia this inspired. So I arrived home and thought to have a look on youTube for some reference material to post&hellip;</p>
 
 <!-- more -->
@@ -214,9 +214,9 @@
   
   <entry>
     <title type="html"><![CDATA[Flip Side]]></title>
-    <link href="http://www.harveynick.com/blog/2008/09/30/flip-side/"/>
+    <link href="http://harveynick.com/blog/2008/09/30/flip-side/"/>
     <updated>2008-09-30T20:54:06+01:00</updated>
-    <id>http://www.harveynick.com/blog/2008/09/30/flip-side</id>
+    <id>http://harveynick.com/blog/2008/09/30/flip-side</id>
     <content type="html"><![CDATA[<p>Two updates in one day shocker!</p>
 
 <p>The last one was a little downcast, though, and I felt a need to pass on something awesome by way of balance. Here it is:</p>

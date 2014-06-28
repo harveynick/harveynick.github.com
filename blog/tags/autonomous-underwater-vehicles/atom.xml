@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: Autonomous Underwater Vehicles | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/autonomous-underwater-vehicles/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/autonomous-underwater-vehicles/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Day Job Part 2: Let's get SAUC-E!]]></title>
-    <link href="http://www.harveynick.com/blog/2011/01/22/the-day-job-part-2-lets-get-sauc-e/"/>
+    <link href="http://harveynick.com/blog/2011/01/22/the-day-job-part-2-lets-get-sauc-e/"/>
     <updated>2011-01-22T17:08:34+00:00</updated>
-    <id>http://www.harveynick.com/blog/2011/01/22/the-day-job-part-2-lets-get-sauc-e</id>
+    <id>http://harveynick.com/blog/2011/01/22/the-day-job-part-2-lets-get-sauc-e</id>
     <content type="html"><![CDATA[<p>If you know when I started my PhD you&rsquo;ll be aware that it took quite some time for me to finish it. There are various reasons for this. One is that I spent quite a bit of time working and getting industrial experience during it. The other is that it took me something in the region of 18 months to figure out what it was I was actually going to do. This happens quite a bit at the Ocean Systems Laboratory, you don&rsquo;t actually start working on a particular project or problem, you just sort of find something which seems to need doing. It also didn&rsquo;t help that it talk me 9 months to get any feedback on the first draft of my thesis. One of the major things which took up my time, though, was the Student Autonomous Underwater Challenge &ndash; Europe, or SAUC-E for short.</p>
 
 <p>This post is going to focus on my own part in the proceedings, but you should assume that everyone else on the teams worked at least as hard as I did, and their contribution was at least as important as my own. This is <em>my</em> blog, though, so I&rsquo;ll mainly be talking about me.</p>
@@ -71,9 +71,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Day Job: Autonomous Underwater Vehicles]]></title>
-    <link href="http://www.harveynick.com/blog/2010/11/19/the-day-job-autonomous-underwater-vehicles/"/>
+    <link href="http://harveynick.com/blog/2010/11/19/the-day-job-autonomous-underwater-vehicles/"/>
     <updated>2010-11-19T17:33:44+00:00</updated>
-    <id>http://www.harveynick.com/blog/2010/11/19/the-day-job-autonomous-underwater-vehicles</id>
+    <id>http://harveynick.com/blog/2010/11/19/the-day-job-autonomous-underwater-vehicles</id>
     <content type="html"><![CDATA[<p>If you&rsquo;re reading this blog and don&rsquo;t actually know me in the real world then you might be wondering &ldquo;who actually is this guy?&rdquo; and possibly even &ldquo;what is it that he actually does, aside from starting to talk about procedural landscape generation, and then falling suddenly silent?&rdquo; Well, clearly I&rsquo;m a person who is currently coming to the end of a PhD, and I have a full time job. But doing what, exactly?</p>
 
 <p>If in fact you do know me in the real world, you still might be wondering about that.</p>

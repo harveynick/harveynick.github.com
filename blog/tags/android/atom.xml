@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: Android | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/android/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/android/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[A Different Kind of Tourism]]></title>
-    <link href="http://www.harveynick.com/blog/2011/06/05/a-different-kind-of-tourism/"/>
+    <link href="http://harveynick.com/blog/2011/06/05/a-different-kind-of-tourism/"/>
     <updated>2011-06-05T07:04:39+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/06/05/a-different-kind-of-tourism</id>
+    <id>http://harveynick.com/blog/2011/06/05/a-different-kind-of-tourism</id>
     <content type="html"><![CDATA[<p>If a person were to walk from downtown Mountain View (in so far as Mountain View has a town to be down of) to the Computer History Museum, and then kept going, they might find themselves wandering into Shoreline Business Park. This is where you would find the silicon in this part of the valley.</p>
 
 <p>Of course, there isn&rsquo;t actually a lot of touristing to do in your average industrial park. We&rsquo;re in Silicon Valley here, though, surely there must be something to see? Well&hellip; there are signs for reasonably exciting tech companies, with logos and everything&hellip; for example:</p>
@@ -73,9 +73,9 @@
   
   <entry>
     <title type="html"><![CDATA[Web Frameworks, Desktop Application and My Newly Melted Brain]]></title>
-    <link href="http://www.harveynick.com/blog/2009/09/01/web-frameworks-desktop-application-and-my-newly-melted-brain/"/>
+    <link href="http://harveynick.com/blog/2009/09/01/web-frameworks-desktop-application-and-my-newly-melted-brain/"/>
     <updated>2009-09-01T00:14:07+01:00</updated>
-    <id>http://www.harveynick.com/blog/2009/09/01/web-frameworks-desktop-application-and-my-newly-melted-brain</id>
+    <id>http://harveynick.com/blog/2009/09/01/web-frameworks-desktop-application-and-my-newly-melted-brain</id>
     <content type="html"><![CDATA[<p>Let&rsquo;s get the preliminaries out of the way: Hello, long time no see, how have you been? Etc&hellip;</p>
 
 <p>So, whilst writing up my PhD (experiments finally finished!) and working three days a week (going fully full time at the end of September!) I have a fair bit on my plate at the moment. So obviously I&rsquo;ve also started cooking up a side project&hellip;</p>

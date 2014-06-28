@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Hacker | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/categories/hacker/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/categories/hacker/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[So I Made an iPhone App]]></title>
-    <link href="http://www.harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app/"/>
+    <link href="http://harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app/"/>
     <updated>2013-08-10T14:11:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app</id>
+    <id>http://harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app</id>
     <content type="html"><![CDATA[<p>Various things have kept me busy and away from this blog just recently. I&rsquo;ve done a bit of traveling (both for business and pleasure), I&rsquo;ve discovered Netflix (and Crunchyroll), and, somewhat more productively, I followed through on what started off as my &ldquo;20% time&rdquo; project.</p>
 
 <p>There is, <a href="https://itunes.apple.com/app/id680739529?mt=8">right now in the iPhone App Store</a>, an app nominally <em>by Google Inc</em> which was written almost entirely by my own good hands. Obviously I wasn&rsquo;t entirely a one man band in this. I had a lot of help from designers and UX people, my code was reviewed by those who were available to do so, and I had support at the product management level. I also had a very understanding manager who was willing to let me devote an increasing amount of my time to this.</p>
@@ -48,9 +48,9 @@
   
   <entry>
     <title type="html"><![CDATA[Now We're Blogging With Photos!]]></title>
-    <link href="http://www.harveynick.com/blog/2012/04/14/now-were-blogging-with-photos/"/>
+    <link href="http://harveynick.com/blog/2012/04/14/now-were-blogging-with-photos/"/>
     <updated>2012-04-14T10:42:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2012/04/14/now-were-blogging-with-photos</id>
+    <id>http://harveynick.com/blog/2012/04/14/now-were-blogging-with-photos</id>
     <content type="html"><![CDATA[<p><em>Fair warning: this is going to be a bit of a programming heavy blog post. It&rsquo;s also going to be quite Mac specific.</em></p>
 
 <p>One of the things I wanted to change about the format of this blog was to make it more visual, specifically with pictures. This first part of this was to add pictures to the front page. There were a couple of options for doing so. I could just scan through an article, look for the first image tag and use this. Alternatively I could add a mechanism which allowed me to choose the image, in a similar manner to the way <a href="http://octopress.org/">Octopress</a> allows me to choose the except which appears on the front page. I decided to go with option two.</p>
@@ -137,7 +137,7 @@
 </span><span class='line'>  <span class="k">if</span> <span class="vi">@img</span>
 </span><span class='line'>    <span class="s2">&quot;&amp;lt;img </span><span class="si">#{</span><span class="vi">@img</span><span class="o">.</span><span class="n">collect</span> <span class="p">{</span><span class="o">|</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="o">|</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">k</span><span class="si">}</span><span class="s2">=</span><span class="se">\&quot;</span><span class="si">#{</span><span class="n">v</span><span class="si">}</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="k">if</span> <span class="n">v</span><span class="si">}</span><span class="s2">.join(&quot;</span> <span class="s2">&quot;)}&amp;gt;</span><span class="si">#{</span><span class="vi">@header</span><span class="si">}</span><span class="s2">&quot;</span>
 </span><span class='line'>  <span class="k">else</span>
-</span><span class='line'>    <span class="s2">&quot;Error processing input, expected syntax: &lt;img class=&quot;</span><span class="o">[</span><span class="k">class</span> <span class="nb">name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">]</span><span class="s2">&quot; src=&quot;</span><span class="o">[</span><span class="n">http</span><span class="o">[</span><span class="n">s</span><span class="o">]</span><span class="ss">:/</span><span class="o">]/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">image</span><span class="s2">&quot; title=&quot;</span><span class="o">[</span><span class="n">width</span> <span class="o">[</span><span class="n">height</span><span class="o">]]</span> <span class="o">[</span><span class="n">title</span> <span class="n">text</span> <span class="o">|</span> <span class="p">\</span><span class="o">&amp;</span><span class="c1">#34;title text\&amp;#34; [\&amp;#34;alt text\&amp;#34;]]&quot; alt=&quot;[width [height]] [title text | \&amp;#34;title text\&amp;#34; [\&amp;#34;alt text\&amp;#34;]]&quot;&gt;&quot;</span>
+</span><span class='line'>    <span class="s2">&quot;Error processing input, expected syntax:  img [class name(s)] [http[s]:/]/path/to/image [width [height]] [title text | </span><span class="se">\&quot;</span><span class="s2">title text</span><span class="se">\&quot;</span><span class="s2"> [</span><span class="se">\&quot;</span><span class="s2">alt text</span><span class="se">\&quot;</span><span class="s2">]] &quot;</span>
 </span><span class='line'>  <span class="k">end</span>
 </span><span class='line'><span class="k">end</span>
 </span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
@@ -433,9 +433,9 @@
   
   <entry>
     <title type="html"><![CDATA[Origin Story, Raspberry Pi, and the ZX Spectrum]]></title>
-    <link href="http://www.harveynick.com/blog/2012/03/27/origin/"/>
+    <link href="http://harveynick.com/blog/2012/03/27/origin/"/>
     <updated>2012-03-27T23:41:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2012/03/27/origin</id>
+    <id>http://harveynick.com/blog/2012/03/27/origin</id>
     <content type="html"><![CDATA[<p>One of the fun things about working for Google is that from time to time interesting people come into the office to give talks. We had Richard Dawkins a few weeks ago, who gave an interesting if… uncompromising talk. Yesterday we had one of the founders of the <a href="http://www.raspberrypi.org/">Raspberry Pi</a> foundation. For those of you who aren&rsquo;t aware, the Raspberry Pi is an extremely small (exactly credit card sized) and cheap ($25), yet very capable computing platform. The foundation is the charity formed to produce this hardware.</p>
 
 <p>Why is a charity building computer hardware? Because there is a need for it, caused by a problem you&rsquo;re possibly not even aware of. Let me explain; for I am part of the problem. These days when I play computer games it&rsquo;s usually on my X-Box or iPhone. They make my life very easy in this regard, since I never have to worry about whether a game will actually run or not. It just works. They are essentially closed systems, though. There is a reasonably high barrier to entry if I actually want to start playing with them as a developer. Specifically: I can&rsquo;t do it on the device itself. Furthermore, the very simplicity of the device works against me in this regard, because very little action on my part is required to make it work.</p>
@@ -494,9 +494,9 @@
   
   <entry>
     <title type="html"><![CDATA[New (Ish) Year, New (Ish) Blog]]></title>
-    <link href="http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog/"/>
+    <link href="http://harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog/"/>
     <updated>2012-03-17T11:22:00+00:00</updated>
-    <id>http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog</id>
+    <id>http://harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog</id>
     <content type="html"><![CDATA[<p>2011 was an interesting year for me. A lot changed. I turned 30. After 10 years of residency I moved away from Edinburgh, a city I love dearly, and took a job in London. With <a href="/blog/tags/google">Google</a>. As a result, I no longer work with <a href="/blog/tags/autonomous-underwater-vehicles">Autonomous Underwater Vehicles</a> for a living. Instead I build web services. Quite the change, I&rsquo;m sure you&rsquo;ll agree. In the early months of the year I finally completed the corrections to my <a href="/blog/tags/phd">PhD</a>, and then in the summer: I graduated. It took 6 years (all together) but I am now Dr. Nick Johnson. I also <a href="/blog/2011/07/18/the-sound-of-one-hand-clapping/">lost my grandmother</a>, a fact which still brings me to tears on occasion.</p>
 
 <p>In this light, the fact that I decided, towards the end of the year, to shift my blog away from <a href="http://wordpress.org">Wordpress</a> and over to its own domain barely even casts a shadow. I did, though, and as a result you&rsquo;re now reading these words on a site built using <a href="http://octopress.org">Octopress</a>, which is hosted at harveynick.com. As you may have noticed, all of the old posts from my <a href="http://harveynick.wordpress.com">wordpress site</a> have been ported over, minus the short film reviews, which you&rsquo;ll find <a href="http://ohsohumbleopinion.tumblr.com">here</a>. I&rsquo;m not going to go into how I accomplished this, except to say: I did it the same way <a href="http://mattgemmell.com/2011/09/12/blogging-with-octopress/">Matt Gemmel did</a>.</p>
@@ -531,9 +531,9 @@
   
   <entry>
     <title type="html"><![CDATA[Simplifying the Landscape]]></title>
-    <link href="http://www.harveynick.com/blog/2011/12/01/simplifying-the-landscape/"/>
+    <link href="http://harveynick.com/blog/2011/12/01/simplifying-the-landscape/"/>
     <updated>2011-12-01T09:28:05+00:00</updated>
-    <id>http://www.harveynick.com/blog/2011/12/01/simplifying-the-landscape</id>
+    <id>http://harveynick.com/blog/2011/12/01/simplifying-the-landscape</id>
     <content type="html"><![CDATA[<p>At the end of the <a href="/blog/2010/10/22/now-in-eye-popping-3d/">last post</a> I wrote about the actual implementation of my Clockwork Aphid project, I said the next step was going to be display simplification. At that point I&rsquo;d generated a few landscapes which were just starting barely starting to test the limits of my computer, though they were nothing like the size or complexity I had in mind. That said, it was looking at landscapes containing 1579008 polygons and it was obvious that not all of these needed to be put on screen. Moreover, because my landscapes are essentially made up of discrete samples (or nodes): I needed to reduce the number of samples which were displayed to the user, otherwise my performance was really going to tank as the landscapes increased in size.</p>
 
 <!-- more -->

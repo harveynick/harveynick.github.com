@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: Clockwork Aphid | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/clockwork-aphid/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/clockwork-aphid/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Simplifying the Landscape]]></title>
-    <link href="http://www.harveynick.com/blog/2011/12/01/simplifying-the-landscape/"/>
+    <link href="http://harveynick.com/blog/2011/12/01/simplifying-the-landscape/"/>
     <updated>2011-12-01T09:28:05+00:00</updated>
-    <id>http://www.harveynick.com/blog/2011/12/01/simplifying-the-landscape</id>
+    <id>http://harveynick.com/blog/2011/12/01/simplifying-the-landscape</id>
     <content type="html"><![CDATA[<p>At the end of the <a href="/blog/2010/10/22/now-in-eye-popping-3d/">last post</a> I wrote about the actual implementation of my Clockwork Aphid project, I said the next step was going to be display simplification. At that point I&rsquo;d generated a few landscapes which were just starting barely starting to test the limits of my computer, though they were nothing like the size or complexity I had in mind. That said, it was looking at landscapes containing 1579008 polygons and it was obvious that not all of these needed to be put on screen. Moreover, because my landscapes are essentially made up of discrete samples (or nodes): I needed to reduce the number of samples which were displayed to the user, otherwise my performance was really going to tank as the landscapes increased in size.</p>
 
 <!-- more -->
@@ -103,9 +103,9 @@
   
   <entry>
     <title type="html"><![CDATA[Dogfood, Nom Nom Nom]]></title>
-    <link href="http://www.harveynick.com/blog/2011/08/26/dogfood-nom-nom-nom/"/>
+    <link href="http://harveynick.com/blog/2011/08/26/dogfood-nom-nom-nom/"/>
     <updated>2011-08-26T09:00:04+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/08/26/dogfood-nom-nom-nom</id>
+    <id>http://harveynick.com/blog/2011/08/26/dogfood-nom-nom-nom</id>
     <content type="html"><![CDATA[<p>Dog food, the common noun, is reasonably self explanatory (pro tip: it&rsquo;s food for dogs). Dogfood the verb or dogfooding the verbal noun, though, might require a little bit of explanation.</p>
 
 <p>At the root of it is this: if you make dog food, you should feed it to your own dogs. There are essentially two reasons for this:</p>
@@ -137,9 +137,9 @@
   
   <entry>
     <title type="html"><![CDATA[Features]]></title>
-    <link href="http://www.harveynick.com/blog/2011/03/24/features/"/>
+    <link href="http://harveynick.com/blog/2011/03/24/features/"/>
     <updated>2011-03-24T10:00:09+00:00</updated>
-    <id>http://www.harveynick.com/blog/2011/03/24/features</id>
+    <id>http://harveynick.com/blog/2011/03/24/features</id>
     <content type="html"><![CDATA[<p>So, in my <a href="http://harveynick.wordpress.com/2011/03/14/brave-new-worlds/">last post</a> I remarked that for procedurally generated landscapes to be interesting, they would need features. But what sort of features was I talking about? Population centres, in particular, tend to to be found close to certain kinds of&hellip; things. The first of these which always comes to my mind is the &ldquo;defensible position.&rdquo; Something like, say, Edinburgh Castle.</p>
 
 <!-- more -->
@@ -188,9 +188,9 @@
   
   <entry>
     <title type="html"><![CDATA[Brave New Worlds]]></title>
-    <link href="http://www.harveynick.com/blog/2011/03/14/brave-new-worlds/"/>
+    <link href="http://harveynick.com/blog/2011/03/14/brave-new-worlds/"/>
     <updated>2011-03-14T22:48:18+00:00</updated>
-    <id>http://www.harveynick.com/blog/2011/03/14/brave-new-worlds</id>
+    <id>http://harveynick.com/blog/2011/03/14/brave-new-worlds</id>
     <content type="html"><![CDATA[<p>If you were writing a taxonomy of stories you might choose books as a good place to start. Flicking your way through the world&rsquo;s libraries, time and the Dewey Decimal System would eventually bring you to the fantasy genre. There is a lot of fantasy writing out there, and you might choose to subdivide it further. A one potential way of cutting it neatly in twain is like so:</p>
 
 <ol>
@@ -242,9 +242,9 @@ First, though, I need some terrain simplification and some unit tests. The unit 
   
   <entry>
     <title type="html"><![CDATA[The Elephant in the Room]]></title>
-    <link href="http://www.harveynick.com/blog/2010/12/07/the-elephant-in-the-room/"/>
+    <link href="http://harveynick.com/blog/2010/12/07/the-elephant-in-the-room/"/>
     <updated>2010-12-07T11:00:33+00:00</updated>
-    <id>http://www.harveynick.com/blog/2010/12/07/the-elephant-in-the-room</id>
+    <id>http://harveynick.com/blog/2010/12/07/the-elephant-in-the-room</id>
     <content type="html"><![CDATA[<p>Since I haven&rsquo;t been able to do any actual work on my Clockwork Aphid project as of late, I suppose I may as well talk about the background behind it a little more. Those who talk about it the most are the ones doing it the least, and all that. I&rsquo;ve spoken a little about virtual worlds before and focussed <a href="http://harveynick.wordpress.com/2010/10/08/wow-oh-wow/">almost entirely</a> on World of Warcraft, because it&rsquo;s a the big one. It&rsquo;s not the only MMORPG, and it definitely wasn&rsquo;t the first. It is the one that I have most experience with, and statistically the one most other people are likely to have experience with, as well.</p>
 
 <p>There are several other virtual worlds I really should talk about, but the elephant in the room is another extremely large, and very notable, virtual world. One which has double relevance, because I&rsquo;ve made an oblique reference to it already in <a href="http://harveynick.wordpress.com/2010/10/19/youre-speaking-my-landscape-baby/">another post</a>.</p>

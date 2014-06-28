@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Blogger | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/categories/blogger/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/categories/blogger/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Is It Time to Change Blogs Again?]]></title>
-    <link href="http://www.harveynick.com/blog/2014/04/27/is-it-that-time-again/"/>
+    <link href="http://harveynick.com/blog/2014/04/27/is-it-that-time-again/"/>
     <updated>2014-04-27T00:48:20+01:00</updated>
-    <id>http://www.harveynick.com/blog/2014/04/27/is-it-that-time-again</id>
+    <id>http://harveynick.com/blog/2014/04/27/is-it-that-time-again</id>
     <content type="html"><![CDATA[<p>So you may have noticed that it&rsquo;s been a little quiet around here as of late. There are a few reasons for this. Firstly, I&rsquo;ve been stupidly busy with work and the amount of&hellip; faff involved with adding a new post using <a href="http://octopress.org">Octopress</a> has been something of a blocker.</p>
 
 <p>You see, Octopress Isn&rsquo;t like Wordpress or Blogger. It doesn&rsquo;t run on a server out there in the cloud. It&rsquo;s a program and a set of files on your local machine. You create new posts as text files, then run the program. This generates a set of HTML files, which you then upload to a server. In some ways this is a lot closer to programming than regular writing.</p>

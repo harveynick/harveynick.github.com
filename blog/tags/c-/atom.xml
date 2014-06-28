@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: c++ | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/c-/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/c-/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Language Post Mortem and Some Other Notes]]></title>
-    <link href="http://www.harveynick.com/blog/2010/10/16/language-post-mortem-and-some-other-notes/"/>
+    <link href="http://harveynick.com/blog/2010/10/16/language-post-mortem-and-some-other-notes/"/>
     <updated>2010-10-16T11:53:40+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/10/16/language-post-mortem-and-some-other-notes</id>
+    <id>http://harveynick.com/blog/2010/10/16/language-post-mortem-and-some-other-notes</id>
     <content type="html"><![CDATA[<p>A couple nuggets of knowledge came out of my &ldquo;You&rsquo;re Speaking My Language, Baby&rdquo; series of posts, so I though I&rsquo;d just take a quick moment to talk about them.</p>
 
 <p>The first two are perhaps the most obvious by far. Firstly: if you actually write blog posts, people are more likely to read your blog. Funny that, huh? While my post on installing <a href="/blog/2008/08/24/mdl-celtx-on-the-acer-aspire-one/">Celtx on the Acer Aspire one</a> is still my most popular by some margin (probably because it actually provides some utility), I actually had my highest numbers of hits per day during the last week. Secondly: I get less hits over the weekend. Lax working habits for the win!</p>

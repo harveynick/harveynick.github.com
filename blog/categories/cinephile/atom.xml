@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Cinephile | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/categories/cinephile/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/categories/cinephile/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Some Thoughts on Gamification]]></title>
-    <link href="http://www.harveynick.com/blog/2013/09/14/am-i-winning/"/>
+    <link href="http://harveynick.com/blog/2013/09/14/am-i-winning/"/>
     <updated>2013-09-14T16:01:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/09/14/am-i-winning</id>
+    <id>http://harveynick.com/blog/2013/09/14/am-i-winning</id>
     <content type="html"><![CDATA[<p>If you&rsquo;re playing any sort of a game, the question &ldquo;Am I winning?&rdquo; is usually quite easy to answer. &ldquo;Is my score higher than the other guy?&rdquo; usually covers it (though if you&rsquo;re playing something like chess it might be a little more complicated than that). If you&rsquo;re playing a computer game the fact that your character is still alive may well be enough to settle this question in your favour.</p>
 
 <p>In life, though, it is a much harder question to answer. It may well be true that, to the healthy mind, it&rsquo;s not something which should ever really matter, but <a href="http://harveynick.com/blog/2013/05/06/do-you-even-lift/">as noted before</a>, gamification works really (embarrassingly) well for me.</p>
@@ -116,9 +116,9 @@
   
   <entry>
     <title type="html"><![CDATA[Categories and Goals]]></title>
-    <link href="http://www.harveynick.com/blog/2013/03/25/categories-and-goals/"/>
+    <link href="http://harveynick.com/blog/2013/03/25/categories-and-goals/"/>
     <updated>2013-03-25T22:53:00+00:00</updated>
-    <id>http://www.harveynick.com/blog/2013/03/25/categories-and-goals</id>
+    <id>http://harveynick.com/blog/2013/03/25/categories-and-goals</id>
     <content type="html"><![CDATA[<p>It&rsquo;s good to have goals. Even if you fail to meet them. Sometimes especially when you fail to meet them. It&rsquo;s quite widely publicized that at Google we&rsquo;re expected to score 0.7 (on a scale where 0 is a complete failure and 1 means all targets were met) when assessing our OKRs (objectives and key results). Generally this is good. It means you&rsquo;re always striving, always raising your eyes, hitting the top of the tree by aiming for the sky.</p>
 
 <p>In my personal life, though, this probably isn&rsquo;t the best approach. Be that as it may, this year I have goals.</p>
@@ -154,9 +154,9 @@
   
   <entry>
     <title type="html"><![CDATA[I Disagree With Film Critic Hulk]]></title>
-    <link href="http://www.harveynick.com/blog/2013/03/17/i-disagree-with-film-critic-hulk/"/>
+    <link href="http://harveynick.com/blog/2013/03/17/i-disagree-with-film-critic-hulk/"/>
     <updated>2013-03-17T17:52:00+00:00</updated>
-    <id>http://www.harveynick.com/blog/2013/03/17/i-disagree-with-film-critic-hulk</id>
+    <id>http://harveynick.com/blog/2013/03/17/i-disagree-with-film-critic-hulk</id>
     <content type="html"><![CDATA[<p>While <a href="http://badassdigest.com/2013/01/09/film-crit-hulk-smash-hulk-vs.-tom-hooper-and-art-of-cinematic-affectation/">Film Critic Hulk&rsquo;s argument</a> generally seems quite well reasoned, I find it a little difficult to stomach someone attempting to lecture me on the theory behind the form of anything in ALL CAPS, and at such length. Also, he makes the unforgivable (in my opinion) mistake of representing his opinion as fact. He states the film falls flat, not that he <strong>believes</strong> it falls flat. No one, apparently, thought to mention this to the legions of people who rated Les Mis so highly on IMDB and Rotten Tomatoes.</p>
 
 <!-- more -->
@@ -172,9 +172,9 @@
   
   <entry>
     <title type="html"><![CDATA[New (Ish) Year, New (Ish) Blog]]></title>
-    <link href="http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog/"/>
+    <link href="http://harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog/"/>
     <updated>2012-03-17T11:22:00+00:00</updated>
-    <id>http://www.harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog</id>
+    <id>http://harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog</id>
     <content type="html"><![CDATA[<p>2011 was an interesting year for me. A lot changed. I turned 30. After 10 years of residency I moved away from Edinburgh, a city I love dearly, and took a job in London. With <a href="/blog/tags/google">Google</a>. As a result, I no longer work with <a href="/blog/tags/autonomous-underwater-vehicles">Autonomous Underwater Vehicles</a> for a living. Instead I build web services. Quite the change, I&rsquo;m sure you&rsquo;ll agree. In the early months of the year I finally completed the corrections to my <a href="/blog/tags/phd">PhD</a>, and then in the summer: I graduated. It took 6 years (all together) but I am now Dr. Nick Johnson. I also <a href="/blog/2011/07/18/the-sound-of-one-hand-clapping/">lost my grandmother</a>, a fact which still brings me to tears on occasion.</p>
 
 <p>In this light, the fact that I decided, towards the end of the year, to shift my blog away from <a href="http://wordpress.org">Wordpress</a> and over to its own domain barely even casts a shadow. I did, though, and as a result you&rsquo;re now reading these words on a site built using <a href="http://octopress.org">Octopress</a>, which is hosted at harveynick.com. As you may have noticed, all of the old posts from my <a href="http://harveynick.wordpress.com">wordpress site</a> have been ported over, minus the short film reviews, which you&rsquo;ll find <a href="http://ohsohumbleopinion.tumblr.com">here</a>. I&rsquo;m not going to go into how I accomplished this, except to say: I did it the same way <a href="http://mattgemmell.com/2011/09/12/blogging-with-octopress/">Matt Gemmel did</a>.</p>
@@ -209,9 +209,9 @@
   
   <entry>
     <title type="html"><![CDATA[Mercury Rising]]></title>
-    <link href="http://www.harveynick.com/blog/2011/09/20/mercury-rising/"/>
+    <link href="http://harveynick.com/blog/2011/09/20/mercury-rising/"/>
     <updated>2011-09-20T10:00:44+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/09/20/mercury-rising</id>
+    <id>http://harveynick.com/blog/2011/09/20/mercury-rising</id>
     <content type="html"><![CDATA[<p>Monday the 5th of September was Freddie Mercury day. The day he would have turned 65, had he lived. This makes me feel a little old, but that&rsquo;s not the point. The day&rsquo;s <a href="http://www.youtube.com/watch?v=KX2BQM0D01M">Google doodle</a> (pointed out to me with furious glee by one of my coworkers) led me to YouTube and numerous videos of Queen performing live. As I often do, I&rsquo;d forgotten just how good they were. I spent much of the day fighting the urge to pump my fist and throw shapes at my desk*. Since I had so much fun with this, I&rsquo;m going to pepper this post with some of the videos I found the most fun. Anything under the videos and written in italics is a comment on the video itself, and not strictly related to the rest of this post.</p>
 
 <!-- more -->

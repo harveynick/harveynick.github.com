@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: Evernote | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/evernote/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/evernote/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Process and the Platform]]></title>
-    <link href="http://www.harveynick.com/blog/2011/06/03/the-process-and-the-platform/"/>
+    <link href="http://harveynick.com/blog/2011/06/03/the-process-and-the-platform/"/>
     <updated>2011-06-03T05:24:55+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/06/03/the-process-and-the-platform</id>
+    <id>http://harveynick.com/blog/2011/06/03/the-process-and-the-platform</id>
     <content type="html"><![CDATA[<p>The effort required to actually publish that <a href="http://harveynick.wordpress.com/2011/06/03/in-which-i-go-full-nerd-2/">last post</a> was&hellip; considerable. Several factors contributed to this:</p>
 
 <ul>

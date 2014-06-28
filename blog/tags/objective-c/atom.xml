@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: Objective-C | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/objective-c/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/objective-c/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[You're Speaking my Language, Baby. Part 4: Objective-C]]></title>
-    <link href="http://www.harveynick.com/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/"/>
+    <link href="http://harveynick.com/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/"/>
     <updated>2010-10-12T12:00:01+01:00</updated>
-    <id>http://www.harveynick.com/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c</id>
+    <id>http://harveynick.com/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c</id>
     <content type="html"><![CDATA[<p>The last language I&rsquo;m considering is <strong>Objective-C</strong>. I know this language the least of three. To make matters worse, while Java and C++ share a similar syntax, Objective-C is completely different in places. That being said, it&rsquo;s semantically very similar to Java (more so than C++) and people who know it well speak very highly of it. i.e. it does not appear to be anywhere near as broken as C++. The language itself has some dynamic capability built in, but also has all of the additional dynamic options available to C++ (more on that later) and an excellent Ruby implementation which sits directly on top of the Objective-C runtime (<a href="http://www.macruby.org/">MacRuby</a>).</p>
 
 <!-- more -->

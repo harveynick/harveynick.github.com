@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Is It Time to Change Blogs Again?]]></title>
-    <link href="http://www.harveynick.com/blog/2014/04/27/is-it-that-time-again/"/>
+    <link href="http://harveynick.com/blog/2014/04/27/is-it-that-time-again/"/>
     <updated>2014-04-27T00:48:20+01:00</updated>
-    <id>http://www.harveynick.com/blog/2014/04/27/is-it-that-time-again</id>
+    <id>http://harveynick.com/blog/2014/04/27/is-it-that-time-again</id>
     <content type="html"><![CDATA[<p>So you may have noticed that it&rsquo;s been a little quiet around here as of late. There are a few reasons for this. Firstly, I&rsquo;ve been stupidly busy with work and the amount of&hellip; faff involved with adding a new post using <a href="http://octopress.org">Octopress</a> has been something of a blocker.</p>
 
 <p>You see, Octopress Isn&rsquo;t like Wordpress or Blogger. It doesn&rsquo;t run on a server out there in the cloud. It&rsquo;s a program and a set of files on your local machine. You create new posts as text files, then run the program. This generates a set of HTML files, which you then upload to a server. In some ways this is a lot closer to programming than regular writing.</p>
@@ -87,9 +87,9 @@
   
   <entry>
     <title type="html"><![CDATA[Some Thoughts on Gamification]]></title>
-    <link href="http://www.harveynick.com/blog/2013/09/14/am-i-winning/"/>
+    <link href="http://harveynick.com/blog/2013/09/14/am-i-winning/"/>
     <updated>2013-09-14T16:01:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/09/14/am-i-winning</id>
+    <id>http://harveynick.com/blog/2013/09/14/am-i-winning</id>
     <content type="html"><![CDATA[<p>If you&rsquo;re playing any sort of a game, the question &ldquo;Am I winning?&rdquo; is usually quite easy to answer. &ldquo;Is my score higher than the other guy?&rdquo; usually covers it (though if you&rsquo;re playing something like chess it might be a little more complicated than that). If you&rsquo;re playing a computer game the fact that your character is still alive may well be enough to settle this question in your favour.</p>
 
 <p>In life, though, it is a much harder question to answer. It may well be true that, to the healthy mind, it&rsquo;s not something which should ever really matter, but <a href="http://harveynick.com/blog/2013/05/06/do-you-even-lift/">as noted before</a>, gamification works really (embarrassingly) well for me.</p>
@@ -189,9 +189,9 @@
   
   <entry>
     <title type="html"><![CDATA[Whilst Not Running in Australia (With Photos!)]]></title>
-    <link href="http://www.harveynick.com/blog/2013/08/11/whilst-not-running-in-australia/"/>
+    <link href="http://harveynick.com/blog/2013/08/11/whilst-not-running-in-australia/"/>
     <updated>2013-08-11T14:10:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/08/11/whilst-not-running-in-australia</id>
+    <id>http://harveynick.com/blog/2013/08/11/whilst-not-running-in-australia</id>
     <content type="html"><![CDATA[<p>In throwing up a few pictures of my trip down under in that <a href="blog/2013/04/07/running-the-first-time/">previous running related post</a>, I realised I hadn&rsquo;t really posted much else about that particular trip to the inter webs. I also realised that picking through those photos is a bit of a bad idea, because I&rsquo;d forgotten just how much I enjoyed Perth.</p>
 
 <p>I tend to say that I &ldquo;spent about 10 weeks in Australia in 2010.&rdquo; I use this slightly odd wording because I actually had two trips out there with a short break in-between. That break was partly due to logistics and also because the customer decided to finally announce they wanted me on site a little under six weeks before the single date for the entire of 2010 for which I refused to be anywhere other than St Andrews, Scotland. This was the date of a good friend&rsquo;s wedding, at which I was to be a groomsman (among the biggest honours which has ever by extended to me) and thus it was not even on the negotiating table. &ldquo;Don&rsquo;t worry,&rdquo; they said. &ldquo;Our operations calendar is such that we won&rsquo;t need you for more than a couple of weeks.&rdquo; I&rsquo;m sure you can see where this is going…</p>
@@ -205,16 +205,16 @@
 
 <p>I found my way to my beachside motel, stripped the bed down to check for spiders (yes, I was bloody paranoid), re-dressed it, and then fell asleep for something in the region of 12 hours. This was jet lag on an epic scale. Having prised myself out of bed and checked in with the customer the next day I had a bit of time at liberty. I was also quite close to King&rsquo;s Park, one of the things the internet had recommended. I figured it was worth half an hour of my time&hellip;</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00782.JPG"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/08/11/DSC00782.JPG"></p>
 
 <p>Three or four hours later I got back in the car. King&rsquo;s Park is, not to put too fine a point on it, utterly beautiful. Walking around it I found one delightful surprise after another.</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00829.JPG"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/08/11/DSC00829.JPG"></p>
 
 <p>It&rsquo;s perched on a hill close to the river and the central business district, giving you a a fantastic view of what&rsquo;s actually a very attractive city anyway.</p>
 
 <center>
-<img src="http://www.harveynick.com/images/blog/2013/08/11/DSC00816.JPG"><!-- header_img /images/blog/2013/08/11/DSC00816.JPG -->
+<img src="http://harveynick.com/images/blog/2013/08/11/DSC00816.JPG"><!-- header_img /images/blog/2013/08/11/DSC00816.JPG -->
 </center>
 
 
@@ -222,29 +222,29 @@
 
 <p>After this it was back to work for a week or so. I did, however, get to spend some time hanging out at a beautiful secluded beach with incredibly clear water…</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00872.JPG"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/08/11/DSC00872.JPG"></p>
 
 <p>…shame about the factory piers to either side, though. With the beach trials completed I was shipped out for the first of four trips to Karratha in the North of Western Australia, which is very hot, very red and has very beautiful sunsets.</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00904.JPG"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/08/11/DSC00904.JPG"></p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/P1000253.JPG"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/08/11/P1000253.JPG"></p>
 
 <p>It also has a gas refinery, which (believe it or not) is essentially the setting for a <a href="http://www.imdb.com/title/tt0803061/">2011 romantic comedy</a>.</p>
 
 <p>Back in Perth I found some time to do more touristing, this time with a cohort in tow. Caversham Wildlife Park is a good place to get up close and personal with some kangaroos:</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00969.JPG"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/08/11/DSC00969.JPG"></p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00971.JPG"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/08/11/DSC00971.JPG"></p>
 
 <p>You can also pet a koala here, though I remain firmly convinced it had no idea we were even there.</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00964.JPG"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/08/11/DSC00964.JPG"></p>
 
 <p>Case in point: this koala is almost certainly walking in the exact opposite direction to the one you would expect:</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/08/11/DSC00966.JPG"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/08/11/DSC00966.JPG"></p>
 
 <p>&hellip;and I&rsquo;m going to split this in half here, and return with some attempts at more arty shots in a later post.</p>
 ]]></content>
@@ -252,9 +252,9 @@
   
   <entry>
     <title type="html"><![CDATA[So I Made an iPhone App]]></title>
-    <link href="http://www.harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app/"/>
+    <link href="http://harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app/"/>
     <updated>2013-08-10T14:11:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app</id>
+    <id>http://harveynick.com/blog/2013/08/10/so-i-made-an-iphone-app</id>
     <content type="html"><![CDATA[<p>Various things have kept me busy and away from this blog just recently. I&rsquo;ve done a bit of traveling (both for business and pleasure), I&rsquo;ve discovered Netflix (and Crunchyroll), and, somewhat more productively, I followed through on what started off as my &ldquo;20% time&rdquo; project.</p>
 
 <p>There is, <a href="https://itunes.apple.com/app/id680739529?mt=8">right now in the iPhone App Store</a>, an app nominally <em>by Google Inc</em> which was written almost entirely by my own good hands. Obviously I wasn&rsquo;t entirely a one man band in this. I had a lot of help from designers and UX people, my code was reviewed by those who were available to do so, and I had support at the product management level. I also had a very understanding manager who was willing to let me devote an increasing amount of my time to this.</p>
@@ -271,7 +271,7 @@
 
 <p>Actually getting to a place where I could get such a simple app published was not itself such a simple process, however.</p>
 
-<p>First of all I had to learn a new programming language. I&rsquo;m not a complete stranger to Objective-C, <a href="http://www.harveynick.com/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/">I wrote about it before</a> in fact, but there was definitely a learning process involved. Objective-C is a bit of a strange beast. At times it behaves like C, at other times more like Ruby. It can be forgiving at times, while at others it will explode in your face without warning or explanation.</p>
+<p>First of all I had to learn a new programming language. I&rsquo;m not a complete stranger to Objective-C, <a href="http://harveynick.com/blog/2010/10/12/youre-speaking-my-language-baby-part-4-objective-c/">I wrote about it before</a> in fact, but there was definitely a learning process involved. Objective-C is a bit of a strange beast. At times it behaves like C, at other times more like Ruby. It can be forgiving at times, while at others it will explode in your face without warning or explanation.</p>
 
 <p>Things which are considered fairly normal in Objective-C would be considered completely insane in most other programming languages. It&rsquo;s also very, very verbose. Your method calls can quite easily stretch over eight lines. I keep joking that learning Objective-C decreased my ability to communicate in English. Too many languages in one head. At least I think I&rsquo;m joking&hellip;</p>
 
@@ -285,9 +285,9 @@
   
   <entry>
     <title type="html"><![CDATA[That Ad]]></title>
-    <link href="http://www.harveynick.com/blog/2013/06/16/that-ad/"/>
+    <link href="http://harveynick.com/blog/2013/06/16/that-ad/"/>
     <updated>2013-06-16T16:36:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/06/16/that-ad</id>
+    <id>http://harveynick.com/blog/2013/06/16/that-ad</id>
     <content type="html"><![CDATA[<p>So. There has been a small(ish) ad off to the right hand side of this blog for a couple of months now. It is as small as <a href="https://www.google.com/adsense">AdSense</a> will let me make it, though ideally I&rsquo;d prefer if it had a size not unlike those used by <a href="http://mattgemmell.com/">Matt Gemmell</a> and
 <a href="http://www.marco.org/">Marco Arment</a>. On the whole, though, it doesn&rsquo;t bother me as much as I worried it might, aside from the occasional animated flash ad.</p>
 
@@ -318,9 +318,9 @@
   
   <entry>
     <title type="html"><![CDATA[Further Watching and Reading]]></title>
-    <link href="http://www.harveynick.com/blog/2013/05/21/further-watching-and-reading/"/>
+    <link href="http://harveynick.com/blog/2013/05/21/further-watching-and-reading/"/>
     <updated>2013-05-21T20:37:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/05/21/further-watching-and-reading</id>
+    <id>http://harveynick.com/blog/2013/05/21/further-watching-and-reading</id>
     <content type="html"><![CDATA[<p>This was supposed to go at the end of my last post, but it was running a little long. Basically, here is collection of writings about fitness from around the internet which I&rsquo;ve found either useful, thought provoking, or fun.</p>
 
 <p><em>Warning: the blog post features two pictures of women in bikinis. It&rsquo;s totally relevant in context, be in case that isn&rsquo;t safe for your work: be warned.</em></p>
@@ -389,9 +389,9 @@
   
   <entry>
     <title type="html"><![CDATA[Barbell Training Follow Up]]></title>
-    <link href="http://www.harveynick.com/blog/2013/05/19/barbell-training-follow-up/"/>
+    <link href="http://harveynick.com/blog/2013/05/19/barbell-training-follow-up/"/>
     <updated>2013-05-19T18:23:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/05/19/barbell-training-follow-up</id>
+    <id>http://harveynick.com/blog/2013/05/19/barbell-training-follow-up</id>
     <content type="html"><![CDATA[<p>So: after writing that giant post about the three main beginners programs I read up on while trying to figure out the best way to get myself into some sort of (non round) shape, I thought I&rsquo;d switch to a topic on which I can confidently talk with some authority: me.</p>
 
 <p>More specifically, in case you are interested: the program I&rsquo;ve ended up putting myself on, the other things which are important and how this all is actually working out for me.</p>
@@ -472,9 +472,9 @@
   
   <entry>
     <title type="html"><![CDATA[A (Very) Rough Guide to Beginners' Barbell Training Programs]]></title>
-    <link href="http://www.harveynick.com/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs/"/>
+    <link href="http://harveynick.com/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs/"/>
     <updated>2013-05-10T16:30:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs</id>
+    <id>http://harveynick.com/blog/2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs</id>
     <content type="html"><![CDATA[<p>As I promised in my <a href="blog/2013/05/06/do-you-even-lift/">last post</a>, I&rsquo;d now like to talk a bit about the different weight lifting programs I ended up researching. I spent a fairly silly amount of time here, so I&rsquo;m hoping that you find it useful.</p>
 
 <p>I&rsquo;m going to talk about the three primary beginners lifters programs I read up on, tell you what they actually involve… and also what I think the person behind them is trying to sell you.</p>
@@ -620,9 +620,9 @@ The upshot of this is that firstly the relaxed pace (two main lifts a day and sm
   
   <entry>
     <title type="html"><![CDATA[Do You Even Lift, Bro?]]></title>
-    <link href="http://www.harveynick.com/blog/2013/05/06/do-you-even-lift/"/>
+    <link href="http://harveynick.com/blog/2013/05/06/do-you-even-lift/"/>
     <updated>2013-05-06T15:24:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/05/06/do-you-even-lift</id>
+    <id>http://harveynick.com/blog/2013/05/06/do-you-even-lift</id>
     <content type="html"><![CDATA[<p>After I arrived in London I decided to take a second stab at Couch to 5k, having abandoned it <a href="blog/2013/04/07/running-the-first-time/">the first time around</a>. The problem now was finding a time and place. At first I tried running in the evenings around Wandsworth Common, conveniently close to where I was staying. That started to feel more than a little unsafe, however, especially on the evenings I got home safe enough to push me through -twilight- dusk and into full dark. I&rsquo;m fortunate enough to work very close to Hyde Park, however, so I transplanted my runs here and started taking time out of my work day. Running through Hyde Park in the sun is awesome, by the way.</p>
 
 <p>All was fine and dandy until I fell off a surf board during a short break and cracked the top of my foot against the sea bed. I&rsquo;d twisted myself into a slightly odd position in order to accomplishing this, and so it had the added bonus effect of pushing my foot much further back than it&rsquo;s really supposed to go. By the time I got back to London, my entire foot had turned a lovely combination of purple and yellow. Shit.</p>
@@ -657,9 +657,9 @@ Gamification works ridiculously well on my computer game addled brain. Scoring t
   
   <entry>
     <title type="html"><![CDATA[The Wheel Weaves as the Wheel Wills]]></title>
-    <link href="http://www.harveynick.com/blog/2013/05/05/the-wheel-weaves-as-the-wheel-wills/"/>
+    <link href="http://harveynick.com/blog/2013/05/05/the-wheel-weaves-as-the-wheel-wills/"/>
     <updated>2013-05-05T15:53:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/05/05/the-wheel-weaves-as-the-wheel-wills</id>
+    <id>http://harveynick.com/blog/2013/05/05/the-wheel-weaves-as-the-wheel-wills</id>
     <content type="html"><![CDATA[<p>On what was, all things considered, otherwise a fairly shitty day, I finished reading A Memory of Light, the final volume of <a href="http://en.wikipedia.org/wiki/The_Wheel_of_Time">The Wheel of Time</a>. This is, if you don&rsquo;t know, a fourteen book epic fantasy series whose author died prior to its completion. Each of these books is, by itself, around the size of the entire Lord of the Rings trilogy. One or two of them are really very dry, and finishing them comes dangerously close to feeling like work.</p>
 
 <p>So do I recommend that you set out on this 12 thousand page, 4 million word journey? Emphatically yes.</p>
@@ -694,9 +694,9 @@ Gamification works ridiculously well on my computer game addled brain. Scoring t
   
   <entry>
     <title type="html"><![CDATA[Perilously Close to Perfection]]></title>
-    <link href="http://www.harveynick.com/blog/2013/04/19/perilously-close-to-perfection/"/>
+    <link href="http://harveynick.com/blog/2013/04/19/perilously-close-to-perfection/"/>
     <updated>2013-04-19T17:09:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/04/19/perilously-close-to-perfection</id>
+    <id>http://harveynick.com/blog/2013/04/19/perilously-close-to-perfection</id>
     <content type="html"><![CDATA[<p>A friend told me about a restaurant he&rsquo;d visited on a trip to New York. There was essentially no menu. You walked in, you are seated, and you are asked a single question:</p>
 
 <blockquote><p>&#8220;How would you like your steak cooked?&#8221;</p></blockquote>
@@ -724,13 +724,13 @@ Gamification works ridiculously well on my computer game addled brain. Scoring t
 
 <p>Beautiful. We were shown to a table in a fairly massive room (one of three). Simple chairs simple tables. A friendly buzz, but in no way crowded.</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/18/IMG_1171.jpg"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/04/18/IMG_1171.jpg"></p>
 
 <p>Within minutes the very same guy had reappeared at our table carrying <em>eight litres of beer</em>. How good was this beer? It was pretty awesome. Frankly I&rsquo;m still craving it. How much was this beer? I&rsquo;ll come back to that.</p>
 
 <p>There was no table service for food, but just outside of the room was, for all intents and purposes, a small food market.</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/19/IMG_1169.jpg"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/04/19/IMG_1169.jpg"></p>
 
 <p>I wondered back and forth for a little while before deciding on half a roast chicken with a small pretzel on the side. Huge grin firmly affixed on face (as Spartacus might say) I proceeded to gleefully wash this meat and starch based feast down with more of that wonderful beer.</p>
 
@@ -742,7 +742,7 @@ Gamification works ridiculously well on my computer game addled brain. Scoring t
 
 <p>If you&rsquo;re in Salzburg, by all means see the kirk (it&rsquo;s beautiful), drop by the castle (it&rsquo;s really interesting… though you might want to stay out of the creepy marionette museum) and eat a slice of Sachertorte (it&rsquo;s tasty). But when you&rsquo;re looking for some hearty food and perhaps an adult beverage or three, you really need to drop by the church of beer, meat and starch. You&rsquo;ll be glad you did.</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/18/IMG_1166.jpg"><!-- header_img /images/blog/2013/04/18/IMG_1166.jpg --></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/04/18/IMG_1166.jpg"><!-- header_img /images/blog/2013/04/18/IMG_1166.jpg --></p>
 
 <p>* You can&rsquo;t trust &lsquo;em ;&ndash;)</p>
 ]]></content>
@@ -750,9 +750,9 @@ Gamification works ridiculously well on my computer game addled brain. Scoring t
   
   <entry>
     <title type="html"><![CDATA[Running, the First Time]]></title>
-    <link href="http://www.harveynick.com/blog/2013/04/07/running-the-first-time/"/>
+    <link href="http://harveynick.com/blog/2013/04/07/running-the-first-time/"/>
     <updated>2013-04-07T22:54:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/04/07/running-the-first-time</id>
+    <id>http://harveynick.com/blog/2013/04/07/running-the-first-time</id>
     <content type="html"><![CDATA[<p>When I decided to drag myself back on to the fitness wagon, it seemed to me that running was the answer. Getting myself to an actual gym clearly wasn&rsquo;t working, but I lived a short walk from a large and beautiful park (oh The Meadows, how I miss you still). I went out and spent what I still consider to be a fair amount of money on a pair of running shoes (Nike+ compatible, obviously). I&rsquo;ve had knee issues in the past, which motivated me to err towards the top end of the range, I swear. The presence of the striking red headed shop assistant with her beautiful blue eyes and athletic physique had absolutely nothing to do with my decision.</p>
 
 <p>What was I talking about? Running! Right.</p>
@@ -760,7 +760,7 @@ Gamification works ridiculously well on my computer game addled brain. Scoring t
 <!-- More -->
 
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/07/P1000436.JPG"><!-- header_img /images/blog/2013/04/07/P1000436.JPG --></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/04/07/P1000436.JPG"><!-- header_img /images/blog/2013/04/07/P1000436.JPG --></p>
 
 <p>Thusly equipped, I began striking out in the evenings and doing mixed running and walking intervals. Given my complete lack of a plan, I decided to work my way around the Meadows&#8217; sign posted mile long circuit, alternately running and walking the segments. After a couple of sessions of this, a few things become clear:</p>
 
@@ -788,33 +788,33 @@ Gamification works ridiculously well on my computer game addled brain. Scoring t
 
 <p>Somehow, the thing which I hadn&rsquo;t factored into my planning was that the motel was also about a minute&rsquo;s walk from the coast road. That was a nice surprise, I can tell you. A long, helpfully flat, road with a minimum of interruptions which winds around a beautiful beach… and, oh yeah, looks sort of like this around sunset:</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/07/P1000203.JPG"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/04/07/P1000203.JPG"></p>
 
 <p>Let me tell you: running under these circumstances is not a chore. Don&rsquo;t get me wrong: generally speaking it&rsquo;s something I like having done, rather than something I actually like doing. But these are pretty ideal circumstances. While waiting for the operations to actually get into gear (a common theme with any work in this field) a managed to get in a fair few runs.</p>
 
 <p>I&rsquo;ll tell you what&rsquo;s not ideal for running, though: getting sent to Karratha, a baking hot oil and gas company town in the North of Western Australia, which unlike Perth has a lot of really small things which can kill you really, really quickly. Quickly <em>and</em> painfully.</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/07/DSC01052.JPG"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/04/07/DSC01052.JPG"></p>
 
 <p>Even less ideal is actually being sent offshore and spending a week or so floating on a small boat. Less ideal still is if that boat turns out to be a catamaran, and this is how you find out that catamarans make you very, very seasick. I&rsquo;d worked offshore previously and even in bad weather, so I swear I&rsquo;m not usually that much of a delicate flower when it comes to a bit of pitch and roll… but the evidence doesn&rsquo;t lie. I&rsquo;ve never spent more time hugging either a railing or a toilet bowl than I did on that trip. Try working a laptop under <em>those</em> circumstances. But I digress&hellip;</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/07/DSC00889.JPG"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/04/07/DSC00889.JPG"></p>
 
 <p>The final nail in the coffin of this crack at C25K was actually arriving back in Edinburgh and finding that in summer the weather was far less clement that Perth&rsquo;s winter climate. Going outside and running just plain wasn&rsquo;t something I had the will for.</p>
 
 <p>I don&rsquo;t want to be too unfair to Edinburgh, though. I mean, Perth doesn&rsquo;t have any of this:</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/07/P1000458.JPG"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/04/07/P1000458.JPG"></p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2013/04/07/P1000426.JPG"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2013/04/07/P1000426.JPG"></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[A Fitness Story]]></title>
-    <link href="http://www.harveynick.com/blog/2013/04/01/a-fitness-story/"/>
+    <link href="http://harveynick.com/blog/2013/04/01/a-fitness-story/"/>
     <updated>2013-04-01T20:07:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2013/04/01/a-fitness-story</id>
+    <id>http://harveynick.com/blog/2013/04/01/a-fitness-story</id>
     <content type="html"><![CDATA[<p>During most of university I was in pretty crap shape, but in the second year of my PhD my physical condition got particularly lousy. I caught a bus every morning which left from directly outside my flat and took me directly to the university. I did pretty much no exercise and ate an awful lot of takeaway. A few of my friends remarked that I&rsquo;d gained weight. &ldquo;Don&rsquo;t worry,&rdquo; they said &ldquo;it&rsquo;s fine,&rdquo; in response to my mortified expression, I&rsquo;m sure &ldquo;You look well with it&rdquo;. But I knew I looked nothing of the sort.  To paraphrase Eddie Izzard: when I looked in the mirror I sure as hell didn&rsquo;t want to have sex with myself.</p>
 
 <!-- More -->
@@ -838,9 +838,9 @@ Gamification works ridiculously well on my computer game addled brain. Scoring t
   
   <entry>
     <title type="html"><![CDATA[Categories and Goals]]></title>
-    <link href="http://www.harveynick.com/blog/2013/03/25/categories-and-goals/"/>
+    <link href="http://harveynick.com/blog/2013/03/25/categories-and-goals/"/>
     <updated>2013-03-25T22:53:00+00:00</updated>
-    <id>http://www.harveynick.com/blog/2013/03/25/categories-and-goals</id>
+    <id>http://harveynick.com/blog/2013/03/25/categories-and-goals</id>
     <content type="html"><![CDATA[<p>It&rsquo;s good to have goals. Even if you fail to meet them. Sometimes especially when you fail to meet them. It&rsquo;s quite widely publicized that at Google we&rsquo;re expected to score 0.7 (on a scale where 0 is a complete failure and 1 means all targets were met) when assessing our OKRs (objectives and key results). Generally this is good. It means you&rsquo;re always striving, always raising your eyes, hitting the top of the tree by aiming for the sky.</p>
 
 <p>In my personal life, though, this probably isn&rsquo;t the best approach. Be that as it may, this year I have goals.</p>
@@ -876,9 +876,9 @@ Gamification works ridiculously well on my computer game addled brain. Scoring t
   
   <entry>
     <title type="html"><![CDATA[Ch-Ch-Ch-Changes]]></title>
-    <link href="http://www.harveynick.com/blog/2013/03/22/ch-ch-ch-changes/"/>
+    <link href="http://harveynick.com/blog/2013/03/22/ch-ch-ch-changes/"/>
     <updated>2013-03-22T00:30:00+00:00</updated>
-    <id>http://www.harveynick.com/blog/2013/03/22/ch-ch-ch-changes</id>
+    <id>http://harveynick.com/blog/2013/03/22/ch-ch-ch-changes</id>
     <content type="html"><![CDATA[<p>So a couple of things about this website have changed. Perhaps you&rsquo;ve noticed.</p>
 
 <p>Firstly, I changed the background. Much as I love that dark linen image I was using, it&rsquo;s really obviously &ldquo;the apple background&rdquo;, which carries connotations I didn&rsquo;t really want to project. The first place I saw it was on an apple device, granted, but I wasn&rsquo;t using it <em>because</em> it&rsquo;s the apple background. The new one is similar aesthetically, yet distinct enough that I don&rsquo;t think it screams &ldquo;fanboi&rdquo;. It&rsquo;ll do for now. More on that later.</p>
@@ -907,9 +907,9 @@ Gamification works ridiculously well on my computer game addled brain. Scoring t
   
   <entry>
     <title type="html"><![CDATA[I Disagree With Film Critic Hulk]]></title>
-    <link href="http://www.harveynick.com/blog/2013/03/17/i-disagree-with-film-critic-hulk/"/>
+    <link href="http://harveynick.com/blog/2013/03/17/i-disagree-with-film-critic-hulk/"/>
     <updated>2013-03-17T17:52:00+00:00</updated>
-    <id>http://www.harveynick.com/blog/2013/03/17/i-disagree-with-film-critic-hulk</id>
+    <id>http://harveynick.com/blog/2013/03/17/i-disagree-with-film-critic-hulk</id>
     <content type="html"><![CDATA[<p>While <a href="http://badassdigest.com/2013/01/09/film-crit-hulk-smash-hulk-vs.-tom-hooper-and-art-of-cinematic-affectation/">Film Critic Hulk&rsquo;s argument</a> generally seems quite well reasoned, I find it a little difficult to stomach someone attempting to lecture me on the theory behind the form of anything in ALL CAPS, and at such length. Also, he makes the unforgivable (in my opinion) mistake of representing his opinion as fact. He states the film falls flat, not that he <strong>believes</strong> it falls flat. No one, apparently, thought to mention this to the legions of people who rated Les Mis so highly on IMDB and Rotten Tomatoes.</p>
 
 <!-- more -->
@@ -924,61 +924,10 @@ Gamification works ridiculously well on my computer game addled brain. Scoring t
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[The Problem With Pingdom]]></title>
-    <link href="http://www.harveynick.com/blog/2012/07/22/the-problem-with-pingdom/"/>
-    <updated>2012-07-22T19:13:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2012/07/22/the-problem-with-pingdom</id>
-    <content type="html"><![CDATA[
-
-<figure class='code'><figcaption><span>Time to be Awesome - awesome.rb </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="nb">puts</span> <span class="s2">&quot;Awesome!&quot;</span> <span class="k">unless</span> <span class="n">lame</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><a href="http://www.pingdom.com%20Pingdom">The problem with pingdom.</a></p>
-
-<p>My money&rsquo;s in that office, right? If she start giving me some bullshit about it ain&rsquo;t there, and we got to go someplace else and get it, I&rsquo;m gonna shoot you in the head then and there. Then I&rsquo;m gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I&rsquo;m talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
-
-<blockquote><p>Blockquote is what goes
-inside this block here
-would you believe that
-bullshit?</p></blockquote>
-
-<p>Well, the way they make shows is, they make one show. That show&rsquo;s called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they&rsquo;re going to make more shows. Some pilots get picked and become television programs. Some don&rsquo;t, become nothing. She starred in one of the ones that became nothing.</p>
-
-<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother&rsquo;s keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
-
-<p>Your bones don&rsquo;t break, mine do. That&rsquo;s clear. Your cells react to bacteria and viruses differently than mine. You don&rsquo;t get sick, I do. That&rsquo;s also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We&rsquo;re on the same curve, just on opposite ends.</p>
-
-<p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that&rsquo;s what you see at a toy store. And you must think you&rsquo;re in a toy store, because you&rsquo;re here shopping for an infant named Jeb.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Intro]]></title>
-    <link href="http://www.harveynick.com/blog/2012/07/22/intro/"/>
-    <updated>2012-07-22T08:23:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2012/07/22/intro</id>
-    <content type="html"><![CDATA[<p>Testing!</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin, massa eu vestibulum laoreet, nibh ante vulputate lorem, ac lobortis ante tellus eu mi. Duis sem nisi, luctus at feugiat eget, fringilla ut tellus. Nam a molestie justo. Sed pulvinar est vitae tellus semper tincidunt. Fusce euismod luctus lacus nec placerat. Mauris rutrum scelerisque nulla ut tempor. Nunc porttitor posuere mi, aliquet vehicula lorem feugiat in. Ut ut fermentum risus. Aliquam tincidunt ultricies ante sit amet bibendum. Cras nec sapien odio. Duis posuere congue sem, at congue massa faucibus at.</p>
-
-<p>Integer ut sapien eget nisl auctor faucibus ut fermentum arcu. Nunc rutrum urna non risus congue et tristique felis eleifend. Maecenas blandit est eu mauris aliquam aliquet. Quisque porttitor enim eget risus blandit in mollis orci eleifend. Nam malesuada nulla sed lacus elementum placerat accumsan arcu rhoncus. Phasellus feugiat cursus turpis nec facilisis. Duis eget metus arcu, eget commodo velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer cursus vulputate enim, vel gravida velit faucibus et. Ut a urna vitae tellus cursus rhoncus. Maecenas at odio eget quam cursus elementum. Aliquam vitae eros quis tellus laoreet accumsan sed id lorem. Suspendisse et rutrum leo. Integer scelerisque vestibulum adipiscing. In posuere, libero ac accumsan suscipit, nulla ligula gravida erat, ut tempor odio erat nec sem. Quisque justo ipsum, adipiscing volutpat varius vitae, blandit eget nisi.</p>
-
-<p>Nullam adipiscing neque ac lacus commodo vitae imperdiet dui sollicitudin. Ut ac nunc augue. Nam at sem ut quam commodo aliquet vitae vitae dui. Vivamus scelerisque felis eget dolor cursus feugiat. Phasellus at dui sed lectus scelerisque pretium. Etiam nec massa ut justo vestibulum fringilla ac vitae urna. Morbi tortor erat, tempus sed consectetur at, elementum nec eros. Vivamus mattis arcu a sapien semper non lacinia eros pretium.</p>
-
-<p>Proin ut hendrerit arcu. Maecenas ullamcorper tristique magna vel mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tincidunt euismod viverra. In sit amet neque turpis. Suspendisse ac sapien mi, id blandit purus. Ut tortor turpis, rutrum ac tempor at, accumsan sit amet erat. Etiam ultricies eleifend dolor, eget tempus justo tristique vitae. In hac habitasse platea dictumst. Aliquam eu enim neque.</p>
-
-<p>Morbi massa lorem, viverra non dictum at, malesuada vel nibh. Nam fermentum lobortis varius. Sed a nulla lacus, quis posuere risus. Nunc id urna libero, quis rutrum mi. In gravida felis urna. Praesent nec dolor ac urna tempor fermentum. Curabitur rutrum arcu et lorem volutpat viverra.</p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[Wandering Around London]]></title>
-    <link href="http://www.harveynick.com/blog/2012/05/17/wandering-around-london/"/>
+    <link href="http://harveynick.com/blog/2012/05/17/wandering-around-london/"/>
     <updated>2012-05-17T21:57:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2012/05/17/wandering-around-london</id>
+    <id>http://harveynick.com/blog/2012/05/17/wandering-around-london</id>
     <content type="html"><![CDATA[<p>Apologies, once again, for the radio silence. Over the past couple of months there have been some complications in my private life, and a remarkable amount of my attention has been taken up with figuring out where exactly I&rsquo;m going to be living after my current lease runs out (more on that later, perhaps).</p>
 
 <p>Be that as it may, after almost a year, I did find some time to go wandering around the city I now call home. Whilst I took every opportunity to make a brisk constitutional around Edinburgh, I&rsquo;d never managed to really do this in London. Part of the reason, I think, is while that you can essentially wander across central Edinburgh in an hour or two, this is really not the case in London. Nipping across town via public transport can take <em>hours</em>.</p>
@@ -990,29 +939,29 @@ bullshit?</p></blockquote>
 
 <p>First stop was the <a href="http://www.kew.org/visit-kew-gardens/garden-attractions-A-Z/Pagoda.htm">Pagoda</a>:</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/13/IMG_0402.jpg"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2012/05/13/IMG_0402.jpg"></p>
 
 <p>This is a fairly impressive and imposing building, at least from a distance. Close up it&rsquo;s curiously less so. I think it&rsquo;s the red brick construction which does it. I&rsquo;ve never visited Japan, but this seems a slightly inappropriate building material to me. My father, who has, concurred.</p>
 
 <p>Next was the <a href="http://www.kew.org/visit-kew-gardens/garden-attractions-A-Z/japanese-gateway.htm">Japanese Gateway</a> which, in conjunction with the weather, gave me an excellent opportunity to try out the HDR mode on my phone&rsquo;s camera. Here it is without the benefit of HDR:</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/17/IMG_0408.jpg"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2012/05/17/IMG_0408.jpg"></p>
 
 <p>…and here it is with the HDR turned on:</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/13/IMG_0409.jpg"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2012/05/13/IMG_0409.jpg"></p>
 
 <p>I&rsquo;ll be listing that featuring under &ldquo;worthwhile&rdquo; from here on out. At this point it&rsquo;s probably worth confirming a slightly frustrating fact which I suspect is now true of many people: the camera on my phone has completely killed any use of my point and shoot camera. It&rsquo;s extremely convenient (being as I <em>always</em> have it with me) and, since my last upgrade, actually very capable. The only thing it lacks is zoom, which is a trade off I&rsquo;m willing to make. If I plan on going on a serious photo taking excursion at any point in the future I may bite the bullet and pick up a decent digital SLR. The point and shoot just feels like a weird middle gear at this point.</p>
 
 <p>Back to Kew Gardens, though. Tucked off to one side and not especially well advertised is the Bonsai house. It&rsquo;s small, but quite cool, and something my dad specifically wanted to see (Bonsai being a hobby of his).</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/13/IMG_0448.jpg"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2012/05/13/IMG_0448.jpg"></p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/13/IMG_0450.jpg"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2012/05/13/IMG_0450.jpg"></p>
 
 <p>Next, we moved away from the specifically Asian attractions and took a look in the <a href="http://www.kew.org/visit-kew-gardens/garden-attractions-A-Z/Palm-House.htm">Palm House</a>. This really is an impressive building, if uncomfortably hot and humid. Be ready to sweat, all ye who enter here. Besides the tropical plants (which I don&rsquo;t seem to have taken any pictures of), the green house itself has an impressive art deco* construction:</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/13/IMG_0451.jpg"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2012/05/13/IMG_0451.jpg"></p>
 
 <p>Shortly after this, we took the train from Richmond back to my flat, and I had the fun of explaining to my father the difference between underground and overground trains this far out of the centre (&ldquo;you can tell that&rsquo;s an underground train because it says &lsquo;underground&rsquo; on it…&rdquo;).</p>
 
@@ -1020,15 +969,15 @@ bullshit?</p></blockquote>
 
 <p>Canary Wharf is one of the parts of London containing buildings which can legitimately be called skyscrapers (I think). I believe it&rsquo;s also London&rsquo;s financial district. Surprisingly, I actually find it a very pleasant place to be. The taller buildings make you feel as though you&rsquo;re walking through canyons, and the area is very clean, though not to the point of feeling antiseptic.</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/13/IMG_0463.jpg"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2012/05/13/IMG_0463.jpg"></p>
 
 <p>At the weekend it&rsquo;s extremely quiet without quite feeling like a ghost town and there are a surprising amount of things to find. These include a large underground mall, some very cool riverside buildings:</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/17/IMG_0460.jpg"></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2012/05/17/IMG_0460.jpg"></p>
 
 <p>…and one or two very cool statue / landmark type things:</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2012/05/13/IMG_0456.jpg"><!-- header_img /images/blog/2012/05/13/IMG_0456.jpg --></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2012/05/13/IMG_0456.jpg"><!-- header_img /images/blog/2012/05/13/IMG_0456.jpg --></p>
 
 <p>Interestingly, the whole area is also private property, so you might have submit to a vehicle search on the way in. Be that as may, I can recommend it as a reasonable place to wander around at the weekend.</p>
 
@@ -1040,9 +989,9 @@ bullshit?</p></blockquote>
   
   <entry>
     <title type="html"><![CDATA[Now We're Blogging With Photos!]]></title>
-    <link href="http://www.harveynick.com/blog/2012/04/14/now-were-blogging-with-photos/"/>
+    <link href="http://harveynick.com/blog/2012/04/14/now-were-blogging-with-photos/"/>
     <updated>2012-04-14T10:42:00+01:00</updated>
-    <id>http://www.harveynick.com/blog/2012/04/14/now-were-blogging-with-photos</id>
+    <id>http://harveynick.com/blog/2012/04/14/now-were-blogging-with-photos</id>
     <content type="html"><![CDATA[<p><em>Fair warning: this is going to be a bit of a programming heavy blog post. It&rsquo;s also going to be quite Mac specific.</em></p>
 
 <p>One of the things I wanted to change about the format of this blog was to make it more visual, specifically with pictures. This first part of this was to add pictures to the front page. There were a couple of options for doing so. I could just scan through an article, look for the first image tag and use this. Alternatively I could add a mechanism which allowed me to choose the image, in a similar manner to the way <a href="http://octopress.org/">Octopress</a> allows me to choose the except which appears on the front page. I decided to go with option two.</p>
@@ -1119,7 +1068,7 @@ bullshit?</p></blockquote>
 </span><span class='line'>      <span class="k">if</span> <span class="vi">@img</span>
 </span><span class='line'>        <span class="s2">&quot;&lt;img </span><span class="si">#{</span><span class="vi">@img</span><span class="o">.</span><span class="n">collect</span> <span class="p">{</span><span class="o">|</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="o">|</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">k</span><span class="si">}</span><span class="s2">=</span><span class="se">\&quot;</span><span class="si">#{</span><span class="n">v</span><span class="si">}</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="k">if</span> <span class="n">v</span><span class="si">}</span><span class="s2">.join(&quot;</span> <span class="s2">&quot;)}&gt;</span><span class="si">#{</span><span class="vi">@header</span><span class="si">}</span><span class="s2">&quot;</span>
 </span><span class='line'>      <span class="k">else</span>
-</span><span class='line'>        <span class="s2">&quot;Error processing input, expected syntax: &lt;img class=&quot;</span><span class="o">[</span><span class="k">class</span> <span class="nb">name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">]</span><span class="s2">&quot; src=&quot;</span><span class="o">[</span><span class="n">http</span><span class="o">[</span><span class="n">s</span><span class="o">]</span><span class="ss">:/</span><span class="o">]/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">image</span><span class="s2">&quot; title=&quot;</span><span class="o">[</span><span class="n">width</span> <span class="o">[</span><span class="n">height</span><span class="o">]]</span> <span class="o">[</span><span class="n">title</span> <span class="n">text</span> <span class="o">|</span> <span class="p">\</span><span class="o">&amp;</span><span class="c1">#34;title text\&amp;#34; [\&amp;#34;alt text\&amp;#34;]]&quot; alt=&quot;[width [height]] [title text | \&amp;#34;title text\&amp;#34; [\&amp;#34;alt text\&amp;#34;]]&quot;&gt;&quot;</span>
+</span><span class='line'>        <span class="s2">&quot;Error processing input, expected syntax:  img [class name(s)] [http[s]:/]/path/to/image [width [height]] [title text | </span><span class="se">\&quot;</span><span class="s2">title text</span><span class="se">\&quot;</span><span class="s2"> [</span><span class="se">\&quot;</span><span class="s2">alt text</span><span class="se">\&quot;</span><span class="s2">]] &quot;</span>
 </span><span class='line'>      <span class="k">end</span>
 </span><span class='line'>    <span class="k">end</span>
 </span><span class='line'>  <span class="k">end</span>
@@ -1350,7 +1299,107 @@ bullshit?</p></blockquote>
 
 <p>Finally, to prove it works, and because it feels a little strange to not actually have any pictures in this entry: here&rsquo;s a nice shot taken at Kew Gardens (which hopefully I&rsquo;ll talk about more later):</p>
 
-<p><img class="center" src="http://www.harveynick.com/images/blog/2012/04/14/IMG_0442.JPG"><!-- header_img /images/blog/2012/04/14/IMG_0442.JPG --></p>
+<p><img class="center" src="http://harveynick.com/images/blog/2012/04/14/IMG_0442.JPG"><!-- header_img /images/blog/2012/04/14/IMG_0442.JPG --></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Origin Story, Raspberry Pi, and the ZX Spectrum]]></title>
+    <link href="http://harveynick.com/blog/2012/03/27/origin/"/>
+    <updated>2012-03-27T23:41:00+01:00</updated>
+    <id>http://harveynick.com/blog/2012/03/27/origin</id>
+    <content type="html"><![CDATA[<p>One of the fun things about working for Google is that from time to time interesting people come into the office to give talks. We had Richard Dawkins a few weeks ago, who gave an interesting if… uncompromising talk. Yesterday we had one of the founders of the <a href="http://www.raspberrypi.org/">Raspberry Pi</a> foundation. For those of you who aren&rsquo;t aware, the Raspberry Pi is an extremely small (exactly credit card sized) and cheap ($25), yet very capable computing platform. The foundation is the charity formed to produce this hardware.</p>
+
+<p>Why is a charity building computer hardware? Because there is a need for it, caused by a problem you&rsquo;re possibly not even aware of. Let me explain; for I am part of the problem. These days when I play computer games it&rsquo;s usually on my X-Box or iPhone. They make my life very easy in this regard, since I never have to worry about whether a game will actually run or not. It just works. They are essentially closed systems, though. There is a reasonably high barrier to entry if I actually want to start playing with them as a developer. Specifically: I can&rsquo;t do it on the device itself. Furthermore, the very simplicity of the device works against me in this regard, because very little action on my part is required to make it work.</p>
+
+<p>It was not always this way. Let me tell you a story.</p>
+
+<!-- more -->
+
+
+<p>When I was 9 years old (I think), my parents bought me a <em>Sinclair ZX Spectrum +2A</em> computer. It&rsquo;s highly likely those words mean nothing to you. It looked like this:</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Spectrum_128-2.png/800px-Spectrum_128-2.png"><!-- header_img http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Spectrum_128-2.png/800px-Spectrum_128-2.png --></p>
+
+<p>Truly, it was a wondrous machine, with its 128kB of memory and complete lack of long term storage, and I was utterly thrilled with it. I&rsquo;m a nerd. Of course I was. They also bought me a joystick, and a copy of <em>Teenage Mutant Ninja Turtles</em>. To load this game, you placed the tape (yes, as in audio cassette) into the drive and hit play, having selected the right option from the machine&rsquo;s opening menu. You then wandered off for a while to let the machine screech and whine away to itself while it loaded the game. Partly for this reason I quickly tired of the game. I got others eventually, but I was a curious and easily bored child, so I started to read the manual which came with the system.</p>
+
+<p>The vast majority of this was actually a guide to programming in the version of the <a href="http://en.wikipedia.org/wiki/BASIC">BASIC</a> (Beginners&#8217; All Purpose Symbolic Instruction Code) supported by the <em>+2A</em>. I read it, and I started to tinker. The <em>Sinclair</em> gave you essentially three options after booting:</p>
+
+<ol>
+<li>Loading a program from tape;</li>
+<li>Program in +2A mode;</li>
+<li>Program in 48k mode.</li>
+</ol>
+
+
+<p>The first two are fairly straight forward, but the third was a bit of an odd beast. It emulated the older <em>ZX Spectrum 48k</em>, which looked like this:</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ZXSpectrum48k.jpg/800px-ZXSpectrum48k.jpg"></p>
+
+<p>You might notice that there seems to be an awful lot of extra writing on those keys. This is because each key had one or more BASIC keywords bound to it. In 48k mode you couldn&rsquo;t just type your program, you have to press the right key for the keyword you were looking for. This could be fast, or it could be <em>slow</em>. Especially if your keyboard lacked this extra data.</p>
+
+<p>The <em>Spectrum</em> also had one or two other interesting quirks. For example, take a look at this screen shot from the classic <em>Treasure Island Dizzy</em>:</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/en/4/44/Treasure_Island_Dizzy.png"></p>
+
+<p>For a start, this screen shot is showing fully more than half of the colours the <em>Sinclair</em> was capable of producing. Secondly, you might notice that there&rsquo;s something slightly odd about the distribution of these colours. Specifically: each block of 8x8 pixels contains at most two, because this was the maximum allowed. Given the limitations of the system, you had to be quite creative if you wanted to produce something worthwhile. Nevertheless, it happened. Not by me, though, because I did very little more than tinker with it.</p>
+
+<p>It did give me a feel for programming, such that I knew more or less what was expected of me when I arrived at Edinburgh University to study Computer Science, though. A course which did its level best to beat every last scrap of BASIC out of me, because BASIC, quite frankly, is a horrible language. It was a reasonable place to start, though, and it was how I started out, so I guess it wasn&rsquo;t all bad.</p>
+
+<p>Today&rsquo;s computers are clearly a lot easier to use than the <em>Spectrum</em> ever was. For the general consumer, this is a very good thing (in my opinion), because you should not need to be a software engineer to operate one any more than you should need to be a mechanic to operate a car. I don&rsquo;t own any general purpose computers which aren&rsquo;t made by Apple. As a result (I would say), operating my computer requires an extremely low amount of hassle. I don&rsquo;t need to know how it works. If I did want to do some programming, in the simplest possible case, I could follow these steps:</p>
+
+<ol>
+<li>Push &lt;CMD> + &lt;Space></li>
+<li>Type &ldquo;Terminal&lt;Enter>&rdquo;</li>
+<li>Wait a moment for the terminal to load</li>
+<li>Type &ldquo;python&lt;Enter>&rdquo;</li>
+</ol>
+
+
+<p>I can now start fiddling with the <a href="http://python.org">Python</a> programming language, which is a much better place to start than BASIC ever was. A more likely scenario is that I might have to load a couple of other programs to help me, such as a good programmer&rsquo;s text editor. The point here is that I would have to know how to get my computer in this state in the first place, though. It&rsquo;s not front and centre as soon as I turn it on. The <em>Spectrum</em> <a href="http://en.wikipedia.org/wiki/Affordance">afforded</a> programming in ways that modern computers don&rsquo;t. As a result, a curious youngster is much less likely to start tinkering with their computer than they might have been *cough* 21 years ago *cough*.</p>
+
+<p>Modern computers are very much not toys, at least not in the way a bucket of Lego bricks is. They are expensive pieces of equipment. You don&rsquo;t don&rsquo;t want kids carrying them backwards and forwards from school. Which is where the Raspberry Pi comes in. It is designed to be played with, and cheap enough that if play gets rough and the system breaks it&rsquo;s not actually that much of a big deal. It might be quite important for the economy of the UK (and perhaps your country too) that children start playing with computers again. Playing the way you can play with Lego, not the way you play with Action Man. Building things; breaking them; building them again: better.</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Raspberry_Pi_Beta_Board.jpg/800px-Raspberry_Pi_Beta_Board.jpg"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New (Ish) Year, New (Ish) Blog]]></title>
+    <link href="http://harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog/"/>
+    <updated>2012-03-17T11:22:00+00:00</updated>
+    <id>http://harveynick.com/blog/2012/03/17/new-ish-year-new-ish-blog</id>
+    <content type="html"><![CDATA[<p>2011 was an interesting year for me. A lot changed. I turned 30. After 10 years of residency I moved away from Edinburgh, a city I love dearly, and took a job in London. With <a href="http://harveynick.com/blog/tags/google">Google</a>. As a result, I no longer work with <a href="http://harveynick.com/blog/tags/autonomous-underwater-vehicles">Autonomous Underwater Vehicles</a> for a living. Instead I build web services. Quite the change, I&rsquo;m sure you&rsquo;ll agree. In the early months of the year I finally completed the corrections to my <a href="http://harveynick.com/blog/tags/phd">PhD</a>, and then in the summer: I graduated. It took 6 years (all together) but I am now Dr. Nick Johnson. I also <a href="http://harveynick.com/blog/2011/07/18/the-sound-of-one-hand-clapping/">lost my grandmother</a>, a fact which still brings me to tears on occasion.</p>
+
+<p>In this light, the fact that I decided, towards the end of the year, to shift my blog away from <a href="http://wordpress.org">Wordpress</a> and over to its own domain barely even casts a shadow. I did, though, and as a result you&rsquo;re now reading these words on a site built using <a href="http://octopress.org">Octopress</a>, which is hosted at harveynick.com. As you may have noticed, all of the old posts from my <a href="http://harveynick.wordpress.com">wordpress site</a> have been ported over, minus the short film reviews, which you&rsquo;ll find <a href="http://ohsohumbleopinion.tumblr.com">here</a>. I&rsquo;m not going to go into how I accomplished this, except to say: I did it the same way <a href="http://mattgemmell.com/2011/09/12/blogging-with-octopress/">Matt Gemmel did</a>.</p>
+
+<!-- more -->
+
+
+<p><span class='pullquote-right' data-pullquote='It&#8217;s not finished, but it will serve well enough for me to try and start producing actual content again'>
+For the most part, this site is stock Octopress. I&rsquo;ve played with the fonts, made the heading and background static and added a little more infrastructure (index pages for tags, embed scripts for YouTube and Vimeo videos and a couple of other bits). It&rsquo;s not finished, but it will serve well enough for me to try and start producing actual content again. I do want to make it a bit more visual, particularly the front page, and somehow integrate other content I produce into it. I also want to make it work a little better on mobile browsers and, lastly, make it a little bit more my own. The colours will change, and I&rsquo;ll try to find a background which doesn&rsquo;t require such a large file and isn&rsquo;t so closely associated with Apple.
+</span></p>
+
+<p>What will I be writing about though? Well:</p>
+
+<p>I plan to have <a href="http://harveynick.com/blog/tags/clockwork-aphid">Clockwork Aphid</a> actually doing something of use this year. I&rsquo;m going to enhance the current Java version up to a point where it can generate interesting landscapes efficiently and in a parallel fashion. I&rsquo;m then going to then have a crack at porting it to <a href="http://golang.org">Go</a>, which I think may turn out to be an excellent language for writing computer games.</p>
+
+<p>I like films. Perchance you may have noticed. I may chat a bit more in depth about a couple of this year&rsquo;s releases. Just to pick three with a common theme off the top of my head:</p>
+
+<ul>
+<li><strong>The Amazing Spider-Man</strong>. I went to a preview event for this in Leicester Square a month or two ago and was very impressed with what I saw. I&rsquo;m hopeful they made a Spider-Man movie in the same way that Christopher Nolan makes Batman movies. Really really.</li>
+<li><strong>The Dark Knight Rises</strong>. Speaking of which. This <em>is</em> exciting. It&rsquo;s the last of the trilogy. It&rsquo;s got a lot to live up to, especially since the last film Nolan made was <em>Inception</em>. I wouldn&rsquo;t bet against it, though.</li>
+<li><strong>The Avengers</strong>. Now here&rsquo;s a film with some scope. All these characters in one film? With this cast? Written and directed by <a href="http://en.wikipedia.org/wiki/Joss_Whedon">Joss Mother Fucking* Whedon</a>? Please, please let this film live up to the frankly stupid amount of potential it has.</li>
+</ul>
+
+
+<p>Quite recently, at the aforementioned age of 30, I started playing Dungeons and Dragons with a selection of my colleagues. Well, we&rsquo;re actually playing <a href="http://en.wikipedia.org/wiki/Pathfinder_Roleplaying_Game">Pathfinder</a>, but let us not quibble about semantics. I&rsquo;m having a really great time on several different levels. It&rsquo;s an interesting experience for someone who has played computer games for most of their life, but never dabbled in table top RPGs.</p>
+
+<p>I mentioned before that I now have a shiny new PhD, with the letters before and after my name to prove it. I&rsquo;m of the opinion that the work which led to this is quite interesting (but then I would be). It&rsquo;s also not completely divorced from my Clockwork Aphid project. I&rsquo;m of a mind to try talking about this some, also.</p>
+
+<p>See you when we get there.</p>
+
+<p>* I think these are his actual middle names.</p>
 ]]></content>
   </entry>
   

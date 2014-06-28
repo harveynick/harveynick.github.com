@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: eco | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/eco/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/eco/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Spending to make...]]></title>
-    <link href="http://www.harveynick.com/blog/2009/02/26/spending-to-make/"/>
+    <link href="http://harveynick.com/blog/2009/02/26/spending-to-make/"/>
     <updated>2009-02-26T23:23:03+00:00</updated>
-    <id>http://www.harveynick.com/blog/2009/02/26/spending-to-make</id>
+    <id>http://harveynick.com/blog/2009/02/26/spending-to-make</id>
     <content type="html"><![CDATA[<p>While it&rsquo;s a fairly common and reasonably accurate maxim that you have to spend money to make money, I find myself wondering if the same is true of energy. To reword and disentangle the metaphor: Can you save energy by using energy?</p>
 
 <p>Here&rsquo;s a my train of thought: You have curtains in your house. It&rsquo;s possible to fit a motorised unit and automate the opening and closing of the same. This would same ostentatious, lazy and wasteful. To have a computer, sitting, always on, in your house, which decides when this should happen would seem to increase these negative factors.</p>

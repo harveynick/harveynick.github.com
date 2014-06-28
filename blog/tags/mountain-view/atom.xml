@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: Mountain View | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/mountain-view/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/mountain-view/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Full Nerd II: Nerd Harder]]></title>
-    <link href="http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder/"/>
+    <link href="http://harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder/"/>
     <updated>2011-06-06T02:36:54+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder</id>
+    <id>http://harveynick.com/blog/2011/06/06/full-nerd-ii-nerd-harder</id>
     <content type="html"><![CDATA[<p>It seems that people really enjoyed my post about the <a href="/blog/2011/06/03/in-which-i-go-full-nerd-2/">computer history museum</a>. At the time I wrote it, I was worried that it might constitute just a little bit too much nerd, so I held back on my initial impulse to put in more pictures and gush enthusiastically about how awesome it all was.</p>
 
 <p>With hindsight, perhaps I can afford to ignore that particular mental stopcock, at least for a little while. I do not, I regret to tell you, have anymore pictures of <em>the</em> teapot. I do intend to buy myself a Melitta teapot at some point quite soon, however, so that it may sit in my flat and act as a most nerdy in-joke.</p>
@@ -70,9 +70,9 @@ The museum has an entire section devoted to the evolution of storage, and it&rsq
   
   <entry>
     <title type="html"><![CDATA[A Different Kind of Tourism]]></title>
-    <link href="http://www.harveynick.com/blog/2011/06/05/a-different-kind-of-tourism/"/>
+    <link href="http://harveynick.com/blog/2011/06/05/a-different-kind-of-tourism/"/>
     <updated>2011-06-05T07:04:39+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/06/05/a-different-kind-of-tourism</id>
+    <id>http://harveynick.com/blog/2011/06/05/a-different-kind-of-tourism</id>
     <content type="html"><![CDATA[<p>If a person were to walk from downtown Mountain View (in so far as Mountain View has a town to be down of) to the Computer History Museum, and then kept going, they might find themselves wandering into Shoreline Business Park. This is where you would find the silicon in this part of the valley.</p>
 
 <p>Of course, there isn&rsquo;t actually a lot of touristing to do in your average industrial park. We&rsquo;re in Silicon Valley here, though, surely there must be something to see? Well&hellip; there are signs for reasonably exciting tech companies, with logos and everything&hellip; for example:</p>
@@ -128,9 +128,9 @@ The museum has an entire section devoted to the evolution of storage, and it&rsq
   
   <entry>
     <title type="html"><![CDATA[...In Which I Go Full Nerd]]></title>
-    <link href="http://www.harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2/"/>
+    <link href="http://harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2/"/>
     <updated>2011-06-03T01:43:18+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2</id>
+    <id>http://harveynick.com/blog/2011/06/03/in-which-i-go-full-nerd-2</id>
     <content type="html"><![CDATA[<p>Jet lag is a funny thing. Right now it actually seems to be working in my favour; it&rsquo;s managed to knock a couple of bad habits out of me. Specifically, these happen to be the not entirely unrelated habits of going to bed too late (then making it later by reading for a good long while) and getting up too late. Right now I seem to be fighting to keep my eyes open by around nine, and then being wide awake by seven. Which is more or less the position I found myself in on Sunday. Since day one at Google camp was a couple of days away I thought I&rsquo;d check out my immediate surroundings.</p>
 
 <p>This may come as a bit of a surprise to you, but there isn&rsquo;t actually a lot to do in Mountain View. One of the things there is to do, however, is the computer history museum, which I&rsquo;d been told is exactly as awesome as it sounds. In case my meaning isn&rsquo;t clear: really awesome. There is no sarcasm here. Look at my face. Awesome. This is not my sarcastic face. Awesome. Face. Awesome.</p>
@@ -182,9 +182,9 @@ The museum has an entire section devoted to the evolution of storage, and it&rsq
   
   <entry>
     <title type="html"><![CDATA[This Morning.]]></title>
-    <link href="http://www.harveynick.com/blog/2011/06/02/this-morning/"/>
+    <link href="http://harveynick.com/blog/2011/06/02/this-morning/"/>
     <updated>2011-06-02T05:14:19+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/06/02/this-morning</id>
+    <id>http://harveynick.com/blog/2011/06/02/this-morning</id>
     <content type="html"><![CDATA[<p>You&rsquo;re going to have to wait a little while longer for the Computer History Museum, Silicon Valley Wandering and San Francisco based updates I had in mind, since I still haven&rsquo;t found a good way of adding the images I wanted to. In the meantime, I thought I&rsquo;d tell you about my morning, in a similar (if significantly smaller in scope) fashion to <a href="http://www.tbray.org/ongoing/When/201x/2010/04/12/Google-Vignettes">Tim Bray&rsquo;s semi-famous post</a>.</p>
 
 <p>Now, Google is very transparent internally, but also has fairly strict rules about what you can and can&rsquo;t talk to people about, regardless of whether you&rsquo;re talking to your friends, your family, random people on the street, or potentially random people on the information super highway (that&rsquo;s you). I haven&rsquo;t entirely gotten my head around them yet, so I&rsquo;m limiting myself to things you could find out by yourself, either via the internet, by wandering around in the general vicinity of a Google office, or being invited in as a lunch guest. This latter option is not too uncommon; it&rsquo;s actually something we&rsquo;re encouraged to do (up to a point).</p>
@@ -206,9 +206,9 @@ The museum has an entire section devoted to the evolution of storage, and it&rsq
   
   <entry>
     <title type="html"><![CDATA[A brief update]]></title>
-    <link href="http://www.harveynick.com/blog/2011/05/31/a-brief-update/"/>
+    <link href="http://harveynick.com/blog/2011/05/31/a-brief-update/"/>
     <updated>2011-05-31T05:57:45+01:00</updated>
-    <id>http://www.harveynick.com/blog/2011/05/31/a-brief-update</id>
+    <id>http://harveynick.com/blog/2011/05/31/a-brief-update</id>
     <content type="html"><![CDATA[<p>Most people can definitively trace at least one or two traits directly back to one of their parents. In my case I can definitely lay the blame for two at the feet of my father:</p>
 
 <ol>

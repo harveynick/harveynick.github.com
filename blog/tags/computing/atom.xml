@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: computing | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/computing/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/computing/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[I'll see your eee and raise you One]]></title>
-    <link href="http://www.harveynick.com/blog/2008/08/18/my-digital-life-ill-see-your-eee-and-raise-you-one/"/>
+    <link href="http://harveynick.com/blog/2008/08/18/my-digital-life-ill-see-your-eee-and-raise-you-one/"/>
     <updated>2008-08-18T22:53:47+01:00</updated>
-    <id>http://www.harveynick.com/blog/2008/08/18/my-digital-life-ill-see-your-eee-and-raise-you-one</id>
+    <id>http://harveynick.com/blog/2008/08/18/my-digital-life-ill-see-your-eee-and-raise-you-one</id>
     <content type="html"><![CDATA[<p>My good friend Dougal got himself an Asus eee pc (relatively) recently. He likes it a lot. I like the idea of it, but not so much the implementation. On his version at least, the screen is too small for me, and the later versions are a bit too pricey. I love the idea of a small, light and eminently carriable laptop though. It&rsquo;s the premise I originally bought my MacBook under, but I found even that machine to be too bulky and heavy to carry around constantly. The MacBook Air might work, but it&rsquo;s very expensive (from the direction I&rsquo;m looking at it from, anyway) and not really something I&rsquo;d be prepared to pull out of my bag and start working on while sitting on the Meadows.</p>
 
 <!-- more -->

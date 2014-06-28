@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: Reykjavik | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/reykjavik/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/reykjavik/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Why Bristol Depressed Me, and Other Stories...]]></title>
-    <link href="http://www.harveynick.com/blog/2008/10/02/why-bristol-depressed-me-and-other-stories/"/>
+    <link href="http://harveynick.com/blog/2008/10/02/why-bristol-depressed-me-and-other-stories/"/>
     <updated>2008-10-02T23:01:01+01:00</updated>
-    <id>http://www.harveynick.com/blog/2008/10/02/why-bristol-depressed-me-and-other-stories</id>
+    <id>http://harveynick.com/blog/2008/10/02/why-bristol-depressed-me-and-other-stories</id>
     <content type="html"><![CDATA[<p>So.</p>
 
 <p>It&rsquo;s not that I feel that Bristol is an intrinsically bad or depressing place. My attitude to it was coloured by the fact that I was a little tired of travelling, tired in general and didn&rsquo;t entirely want to be there. Also, and this is the key fact, I&rsquo;d just got back from Iceland. I liked Iceland a lot, despite the twelve hour days I felt almost no stress the entire I was there. There&rsquo;s something very chilled about the place, and there was almost no traffic congestion, even considering that we drove through the middle of Reykjavik every morning during hush hour. But there&rsquo;s something else.</p>
@@ -43,9 +43,9 @@
   
   <entry>
     <title type="html"><![CDATA[Well... Here I am...]]></title>
-    <link href="http://www.harveynick.com/blog/2008/09/02/well-here-i-am/"/>
+    <link href="http://harveynick.com/blog/2008/09/02/well-here-i-am/"/>
     <updated>2008-09-02T20:42:40+01:00</updated>
-    <id>http://www.harveynick.com/blog/2008/09/02/well-here-i-am</id>
+    <id>http://harveynick.com/blog/2008/09/02/well-here-i-am</id>
     <content type="html"><![CDATA[<p>&hellip;In Iceland!</p>
 
 <p>I wanted to come here for a long time (this is no secret), and as the result of a highly unsubtle campaign of strategic hint dropping, here I find myself. It&rsquo;s not under ideal circumstances, though. I&rsquo;m here for work and so I&rsquo;ll be spending most of my time working 12 hour days, doing fiddly embedded computer programming and ridding about in boats waiting for robots to do their thing. I&rsquo;m also here with my boss (or someone far higher up the chain of command than myself, at least), and though he&rsquo;s a really nice guy there&rsquo;s always going to be a significant disconnect. He&rsquo;s not my first choice(s)* to share this experience with. I&rsquo;d rather be here with my friends. My friends are awesome, you see.</p>

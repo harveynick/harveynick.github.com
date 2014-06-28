@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag: Fractal Landscape | HarveyNick.com]]></title>
-  <link href="http://www.harveynick.com/blog/tags/fractal-landscape/atom.xml" rel="self"/>
-  <link href="http://www.harveynick.com/"/>
-  <updated>2014-04-27T15:27:48+01:00</updated>
-  <id>http://www.harveynick.com/</id>
+  <link href="http://harveynick.com/blog/tags/fractal-landscape/atom.xml" rel="self"/>
+  <link href="http://harveynick.com/"/>
+  <updated>2014-06-28T17:11:56+01:00</updated>
+  <id>http://harveynick.com/</id>
   <author>
     <name><![CDATA[Nick Johnson]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Simplifying the Landscape]]></title>
-    <link href="http://www.harveynick.com/blog/2011/12/01/simplifying-the-landscape/"/>
+    <link href="http://harveynick.com/blog/2011/12/01/simplifying-the-landscape/"/>
     <updated>2011-12-01T09:28:05+00:00</updated>
-    <id>http://www.harveynick.com/blog/2011/12/01/simplifying-the-landscape</id>
+    <id>http://harveynick.com/blog/2011/12/01/simplifying-the-landscape</id>
     <content type="html"><![CDATA[<p>At the end of the <a href="/blog/2010/10/22/now-in-eye-popping-3d/">last post</a> I wrote about the actual implementation of my Clockwork Aphid project, I said the next step was going to be display simplification. At that point I&rsquo;d generated a few landscapes which were just starting barely starting to test the limits of my computer, though they were nothing like the size or complexity I had in mind. That said, it was looking at landscapes containing 1579008 polygons and it was obvious that not all of these needed to be put on screen. Moreover, because my landscapes are essentially made up of discrete samples (or nodes): I needed to reduce the number of samples which were displayed to the user, otherwise my performance was really going to tank as the landscapes increased in size.</p>
 
 <!-- more -->
