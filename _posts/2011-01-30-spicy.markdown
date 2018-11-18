@@ -1,0 +1,47 @@
+---
+layout: post
+title: Spicy!
+date: '2011-01-30 15:19:26'
+tags:
+- blogger
+---
+
+What, in your opinion, qualifies something as a good advert? Answers on postcard, or alternatively in the comments section below, if you find that easier.  
+
+In the technical sense the main thing is surely that you actually end up buying the product in question. In terms of absolute results, I suspect that subtlety is probably key. If an advert manages to plant the suggestion that you want to buy something without ever making you feel advertised to, then it's likely to achieve its goals. The problem is that if a person realises this is happening then a fairly strong negative reaction might result, and they might not buy your product out of spite. For example, I'll probably never buy anything I see [Derren Brown] holding, just in case.  
+
+[Derren Brown]: http://en.wikipedia.org/wiki/Derren_Brown
+
+<!-- More -->
+
+Personally, I've always liked adverts which abandon all subtlety and turn the whole thing into a joke. If your advert shows up next to my wall in Facebook then I'll probably ignore it (unless it actually looks interesting), but if makes me laugh then there's a good chance I'll try your product just for the hell of it. Boddingtons used to be one of my favourite beers (it probably still would be if I could find the stuff), but there's a good chance I'd never had tried it if it wasn't for frankly magnificent adverts like this:  
+
+{% include youtube.html video="XEEU1nQeGNA" %}
+
+There are a host of other great adverts from the Boddingtons people, but that one has always been my favourite. Years later it still makes me giggle. It's a fantastic set up, followed by at least four quality punch lines one after the other. It seems clear to me, on reflection, that I'm vulnerable to the appeal of surreal adverts. Very, very obvious and over the top seems to work as well, though, because I think the (fairly) recent run of Old Spice adverts are solid gold genius too. It all started with this one:  
+
+{% include youtube.html video="owGykVbfgUE" %}
+
+There really is nothing like a bit of comically over the top hard sell, is there? Happily they followed it up with more of the same:  
+
+{% include youtube.html video="uLTIowBF0kE" %} 
+
+Aside from the fact that that wasn't actually a swan dive, I think I prefer the sequel to the original. But it gets better. For a while, the "Old Spice Guy" would answer questions adressed to him via YouTube, Twitter, Facebook and other online sources. There are literally hundreds of these thirty second clips, but I think this particular dialogue with Alyssa Milano might be my favourite:  
+
+{% include youtube.html video="-oElH6M_5i4" %}
+
+{% include youtube.html video="Q-hUXTUXOMY" %}
+
+{% include youtube.html video="s5KIYhXa_8E" %}
+
+{% include youtube.html video="U5Y7MZV_bD0" %}
+
+Now, of all the words I might have associtated with Alyssa Milano, "comedy" and "timing" probably aren't that close to the top of the list, but colour me impressed with her reply:  
+
+{% include youtube.html video="WVkqOfa936U" %}
+
+This is about as close to being entertainment as advertising can get, in my opinion. I would likely give Old Spice a try if I could find any near me in Edinburgh. But I can't, so 10 out of 10 for effort and creativity, Old Spice, but you kinda dropped the ball on the follow through. Unless you're reading this, of course, and you want to send me some in the post. That would be acceptable.  
+
+I'll leave you with one last highly entertaining, but also functional, clip:  
+
+{% include youtube.html video="-8JsvwUcok0" %}

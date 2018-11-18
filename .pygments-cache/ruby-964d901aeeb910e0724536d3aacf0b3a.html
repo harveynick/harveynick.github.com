@@ -1,0 +1,21 @@
+<div class="highlight"><pre><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+
+<span class="sr">&lt;p&gt;module HarveyNickFilters&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="c1"># Used on the blog index to split posts on the &lt;!--more--&gt; marker</span>
+  <span class="k">def</span> <span class="nf">header_image</span><span class="p">(</span><span class="n">input</span><span class="p">)</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+
+<span class="sr">&lt;pre&gt;&lt;code&gt;if input =~ /</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">!--</span> <span class="n">header_img</span> <span class="p">(?</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">src</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;(?</span><span class="ss">:https?</span><span class="p">:\</span><span class="o">/</span><span class="p">\</span><span class="o">/|</span><span class="p">\</span><span class="o">/|</span><span class="p">\</span><span class="n">S</span><span class="o">+</span><span class="p">\</span><span class="o">/</span><span class="p">)\</span><span class="n">S</span><span class="o">+</span><span class="p">)</span> <span class="o">--&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">/</span>
+  <span class="s2">&quot;&amp;lt;img class=</span><span class="se">\&quot;</span><span class="s2">header</span><span class="se">\&quot;</span><span class="s2"> src=</span><span class="se">\&quot;</span><span class="si">#{</span><span class="vg">$~</span><span class="o">[</span><span class="s1">&#39;src&#39;</span><span class="o">]</span><span class="si">}</span><span class="se">\&quot;</span><span class="s2">/&amp;gt;&quot;</span>
+<span class="k">else</span>
+  <span class="s2">&quot;&quot;</span>
+<span class="k">end</span>
+<span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="k">end</span>
+<span class="k">end</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+
+<span class="sr">&lt;p&gt;Liquid::Template.register_filter(HarveyNickFilters)&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>
+</pre></div>

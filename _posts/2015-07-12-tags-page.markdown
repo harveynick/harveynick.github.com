@@ -1,0 +1,16 @@
+---
+layout: post
+title: Tags On This Blog
+date: '2015-07-12 23:07:40'
+tags:
+- blogger
+- hacker
+- bibliophile
+- cinephile
+- foodie
+- geek
+- gym-rat
+- globe-trotter
+---
+
+This is a test.

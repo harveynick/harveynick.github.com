@@ -1,0 +1,176 @@
+---
+layout: post
+title: Goals for 2017
+date: '2017-02-10 14:53:06'
+tags:
+- blogger
+- hacker
+- cinephile
+- geek
+- gym-rat
+- globe-trotter
+---
+
+I don’t really do new years resolutions. They just don’t seem to work for me. I don’t see that there’s anything that special about January 1st. It isn’t even the first day of the year for a reasonable portion of the planet. Expecting to make sudden and positive life changes on that day just seems to silly and destined to fail. Especially given that I’m probably hungover. That said, setting goals for the year ahead does work for me, though I realise it’s a fairly arbitrary distinction.
+
+Previously I’ve set vague goals, and only vaguely worked towards them. This year I’m actually stating them formally. In actual pen and ink in my [bullet journal], no less. I’m also formally stating them here, to the whole internet, with they aim of keeping myself honest.
+
+[bullet journal]: http://bulletjournal.com
+
+So, in no particular order, here they are:
+
+## Watch all of the Theatrical Studio Ghibli Movies
+
+A fun one to start with. I wanted to have at least a couple of goals in here which I knew I would definitely *not* feel like chores.
+
+My partner recently (ish) told me that [Nausicaa of the Valley of the Wind] is one of her all time favourite movies. This got me thinking that despite being a giant film nerd, and [Studio Ghibli]’s movies receiving near universal love, I’d only seen two of them.
+
+[Nausicaa of the Valley of the Wind]: http://amzn.to/2lpSP4d
+[Studio Ghibli]: https://en.wikipedia.org/wiki/Studio_Ghibli
+
+Watching them all in high quality is something we actually started doing last year, but this year I decided to formally state the intent. As a bonus: progress towards this goal is really easy to track.
+
+![](http://images.harveynick.com/2017-02-09-goals-for-2017_totoro.jpg)
+
+As an even bigger bonus, the films are utterly phenomenal.
+
+
+## 100% Completion of all (2D) Super Mario Games
+
+Another fun one, albeit one which requires a lot more work. I was a Sonic kid growing up and it’s only in the last couple of years that I’ve discovered Nintendo games. Long story short: I love them now. I’m mildly obsessed with just about anything with “Mario”, “Zelda” or “Fire Emblem” in the title.
+
+![](http://images.harveynick.com/2017-02-09-goals-for-2017_mario-stars.jpg)
+
+My partner and I recently managed to get 100% completion of [New Super Mario Bros U], and it was (for me at least) an absolute blast. So here’s my next goal: 100% completion of all of the Super Mario games, with the 2D ones being the first priority. I’m using the [Super Mario Wikipedia article] as my canonical reference of what actually counts as a Super Mario game. Essentially: No spinoffs, no RPGs. Happily I have both a Wii U and a 3DS, so I have the ability to play all of the games I’m prioritising. Win!
+
+[New Super Mario Bros U]: http://amzn.to/2lq9NPS
+[Super Mario Wikipedia article]: https://en.wikipedia.org/wiki/Super_Mario
+
+This one is actually harder to track than you might think, as the definition of 100% completion is somewhat nebulous. The original Super Mario Bros. has eight worlds with fours levels each. Complete those and you’re done. But every game which follows features some extra set of things to do. Sometimes there are special items to be collected in each level (usually stars or star coins). Sometimes secret levels or entire secret worlds. For example, here’s what was required to get all five “profile stars” in New Super Mario Bros U:
+
+- Defeat Bowser at the end of World 8;
+- Complete every level in the game, including the secret ones (but not the secret world);
+- Collect every star coin in the eight non secret worlds;
+- Collect every star coin in the first eight levels of Superstar Road (the secret world);
+- Do everything else (seriously). This includes:
+    * Get all the star coins in Superstar Road level 9;
+    * Catch [Nabbit] in every world he appears;
+    * Find all 94 flag poles. In other words: complete every level via its normal exit, and its secret exit if it has one.
+
+[Nabbit]: https://www.mariowiki.com/Nabbit
+
+Given the number of games on the list, requiring all of these sorts of things for each of them is likely to make this task virtually impossible. At least if I plan to accomplish anything else in 2017. So we’ll see how that goes… 
+
+## Maintain Physical Fitness Forward Momentum
+
+I’m going to be deliberately vague here, because I want to talk about it in a future post, but as I noted [previously]: I am back on the physical fitness horse, and I plan to stay on it.
+
+[previously]: http://harveynick.com/2016/05/28/getting-back-on-the-horse-s/
+
+The goal is to stick to the training program I’m on, and perform the specified workouts every week. Unless I have a very good reason not to. For example: skiing is exertion enough. I’m not going to risk overtraining by also doing additional workouts.
+
+I have all manner of charts to help me track this, but more on that later.
+
+
+## Consistently Satisfy Nutrition Habits
+
+Similarly to the above, I’m also paying a lot of attention to my nutrition at the moment.
+
+I’m aiming for very strict adherence to the nutrition program I’m following. That’s not nearly as bad as it sounds, because it’s actually a very practical program.
+
+My details later in the future post mentioned above. 
+
+
+## Publish a New Blog Post Every Fortnight
+
+Hah hah. Yes. We’ll see how this one goes. I feel sure I’ve said various things like this before. I originally planned to make this goal to publish a new blog post every month… but that seemed like aiming *too* low. Likewise one a week just seemed deeply unlikely to happen.
+
+I plan to be strict with this one: at least one blog post in the first two weeks of 2017 (check), at least one in the second two, and so on. No “catching up” for missed posts and no building a surplus. Exception: I’ll allow this to slip if I’m travelling. Like this this one did…
+
+Maybe, just maybe, that future post mentioned above will happen this time.
+
+
+## Ship a Working Chess Game to the App Store
+
+I have an officially sanctioned (by my employer) side project, which is a chess app with a bit of a twist. Starting it came from three places:
+
+* A desire to spend some time playing with Apple’s very shiny [Swift] programming language;
+* A fascination with artificial intelligence;
+* Wanting to build a simplified test bed for a larger idea with the same twist.
+
+[Swift]: https://en.wikipedia.org/wiki/Swift_(programming_language)
+
+Be those as they may, a very (very) basic version of the idea has been sitting on my hard drive for some time. This year I’d like to actually send the damn thing out into the world and see if it has legs.
+
+The goal is to actually put some version of the app in the iOS App store (possibly English language only, but we’ll see) by the end of 2017. I’m going to put together a set of milestones to help me plan this, and I’ll track my progress against those.
+
+
+## Learn how to Use My Camera (and Do So)
+
+A few years ago, I bought myself a pretty solid digital SLR camera. Nothing especially high end, but a solid beginners option (it was a [Nikon D3200], for the record).
+
+[Nikon D3200]: http://amzn.to/2jMwJIz
+
+![](http://images.harveynick.com/2017-02-09-goals-for-2017_camera-old-waterfall.jpg)
+
+Even having no idea what the hell I was doing, the pictures I took with it were still orders of magnitude better than those I can take with my phone (the first two pictures in this section were taken with it). The problem was that it was gigantic. Like: the size of my head (this may be hyperbole). As a result I was highly reluctant to actually take it anywhere, and so I never used it.
+
+![](http://images.harveynick.com/2017-02-09-goals-for-2017_camera-old-mist.jpg)
+
+In an attempt to get the best of both worlds, I decided to go mirrorless. After spending a *bunch* of [time][] [reading][] [reviews] I landed on the [Olympus OM-D E-M10] (that link points at the mark II, while I actually have the mark I), which legend has it strikes a very nice middle ground between features and complexity. Once again, it takes much better photos than my phone (see below).
+
+[time]: http://toolsandtoys.net/reviews/the-olympus-om-d-e-m10/
+[reading]: http://thewirecutter.com/reviews/best-mirrorless-camera-under-1000/
+[reviews]: https://www.caseyliss.com/2014/10/24/olympus-om-d-e-m10-quick-thoughts
+[Olympus OM-D E-M10]: http://amzn.to/2k2PPIY
+
+![](http://images.harveynick.com/2017-02-09-goals-for-2017_camera-new-flowers.jpg)
+
+One of the original problems remains, though: I still have no idea how to use the damn thing. So this year I’m going to put myself on a short course in order to figure that out. The vague plan is to improve to the point that I can take pictures worth hanging on the wall.
+
+
+## Plan and Go On Two Extended Trips and One Skiing Holiday
+
+The exact phrasing of this comes from something Tim Ferris said on a [recent episode of his podcast]. The idea is that the anticipation of a holiday is almost as big a part of the enjoyment as the holiday itself. Thus, you should take at least two extended trips (I take this to mean at least seven days) in the year, and plan them well ahead of time. Simple. In theory.
+
+[recent episode of his podcast]: http://tim.blog/2016/12/29/2016-what-ive-learned/
+
+![](http://images.harveynick.com/2017-02-09-goals-for-2017_skiing.jpg)
+
+Tim’s original suggestion was the two extended trips. I added the skiing holiday myself. If it came down to it, that’s one of the last luxuries I’d choose to give up.
+
+
+## Participate in National Novel Writing Month
+
+This one really speaks for itself. It’s also probably the goal for which I’m most likely to fall flat on my face. In fact the blog posts goal above is here at least in part as practice for this on.
+
+So, in case you don’t know what [NaNoWriMo] is:
+
+> On November 1, participants begin working towards the goal of writing a 50,000 word novel by 11:59 PM on November 30.
+
+[NaNoWriMo]: http://nanowrimo.org
+
+I’ve wanted to have a crack at this for years. This year we’ll see.
+
+
+## One Machine Learning Lesson a Week
+
+I’m starting to think that maybe, just maybe, artificial intelligence is going to be kind of a big deal in the not too distant future. For real.
+
+Seriously, though, Machine Learning (a subset of AI) is a big deal right now. It’s something I sort of understand, but my knowledge is about ten years out of date. So this year I’m going to make my way through all of [Udacity]’s machine learning courses (starting with their [Intro]), in the interests of getting my head around the subject. A lot of it has to do with statistics, which I used to hate. So that should be interesting.
+
+[Udacity]: https://www.udacity.com
+[Intro]: https://www.udacity.com/course/intro-to-machine-learning--ud120
+
+The goal here is one subject area / lesson (as defined by Udacity’s system) a week. Unlike the blog post writing goal, I am going to allow myself to fall behind / catch up with this one. Mostly because I’m already one (or two) behind.
+
+
+## Finish the Renovations of My Flat
+
+Last; probably the most important (when you get right down to it); definitely the most expensive; and obviously the hardest to track. My home is very much a “unique fixer-upper opportunity”, and this year I really need to follow through on that opportunity and turn it into a more pleasant place to live.
+
+This is one which will be done when it’s done, but hopefully I’ll be able to come up with some milestones and track progress towards those.
+
+—
+
+So there you go. Do you have any goals or resolutions for 2017? Drop my a line on twitter or elsewhere if you do.

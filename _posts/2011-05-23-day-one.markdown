@@ -1,0 +1,13 @@
+---
+layout: post
+title: Day One
+date: '2011-05-23 20:29:36'
+tags:
+- hacker
+---
+
+This is going to be short. Suffice to say: almost everything you've heard about working for Google is true. That being the case, there is no slide in my office. I'm told they have them in Mountain View and Zurich, however, and I'll apparently be visiting both this year (Mountain View next week!).  
+
+The food / restaurants / kitchens are awesome in a "we've thought of everything you need" kind of way. The people are really nice, but also intimidatingly smart. For a tech firm, a lot of them are girls as well, which makes for a more balanced working environment.  
+
+On the whole it was a good first day, though mostly consisting of administration. I'm itching to get into the code!

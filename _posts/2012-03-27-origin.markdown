@@ -1,0 +1,61 @@
+---
+layout: post
+title: Origin Story, Raspberry Pi, and the ZX Spectrum
+date: '2012-03-27 21:41:00'
+tags:
+- hacker
+---
+
+One of the fun things about working for Google is that from time to time interesting people come into the office to give talks. We had Richard Dawkins a few weeks ago, who gave an interesting if… uncompromising talk. Yesterday we had one of the founders of the [Raspberry Pi] foundation. For those of you who aren't aware, the Raspberry Pi is an extremely small (exactly credit card sized) and cheap ($25), yet very capable computing platform. The foundation is the charity formed to produce this hardware.
+
+[Raspberry Pi]: http://www.raspberrypi.org/
+
+Why is a charity building computer hardware? Because there is a need for it, caused by a problem you're possibly not even aware of. Let me explain; for I am part of the problem. These days when I play computer games it's usually on my X-Box or iPhone. They make my life very easy in this regard, since I never have to worry about whether a game will actually run or not. It just works. They are essentially closed systems, though. There is a reasonably high barrier to entry if I actually want to start playing with them as a developer. Specifically: I can't do it on the device itself. Furthermore, the very simplicity of the device works against me in this regard, because very little action on my part is required to make it work. 
+
+It was not always this way. Let me tell you a story.
+
+<!-- More -->
+
+When I was 9 years old (I think), my parents bought me a *Sinclair ZX Spectrum +2A* computer. It's highly likely those words mean nothing to you. It looked like this:
+
+![](http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Spectrum_128-2.png/800px-Spectrum_128-2.png) 
+
+Truly, it was a wondrous machine, with its 128kB of memory and complete lack of long term storage, and I was utterly thrilled with it. I'm a nerd. Of course I was. They also bought me a joystick, and a copy of *Teenage Mutant Ninja Turtles*. To load this game, you placed the tape (yes, as in audio cassette) into the drive and hit play, having selected the right option from the machine's opening menu. You then wandered off for a while to let the machine screech and whine away to itself while it loaded the game. Partly for this reason I quickly tired of the game. I got others eventually, but I was a curious and easily bored child, so I started to read the manual which came with the system.
+
+The vast majority of this was actually a guide to programming in the version of the [BASIC] (Beginners' All Purpose Symbolic Instruction Code) supported by the *+2A*. I read it, and I started to tinker. The *Sinclair* gave you essentially three options after booting:
+
+[BASIC]: http://en.wikipedia.org/wiki/BASIC
+
+1. Loading a program from tape;
+2. Program in +2A mode;
+3. Program in 48k mode.
+
+The first two are fairly straight forward, but the third was a bit of an odd beast. It emulated the older *ZX Spectrum 48k*, which looked like this:
+
+![](http://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ZXSpectrum48k.jpg/800px-ZXSpectrum48k.jpg)
+
+You might notice that there seems to be an awful lot of extra writing on those keys. This is because each key had one or more BASIC keywords bound to it. In 48k mode you couldn't just type your program, you have to press the right key for the keyword you were looking for. This could be fast, or it could be *slow*. Especially if your keyboard lacked this extra data.
+
+The *Spectrum* also had one or two other interesting quirks. For example, take a look at this screen shot from the classic *Treasure Island Dizzy*:
+
+![](http://upload.wikimedia.org/wikipedia/en/4/44/Treasure_Island_Dizzy.png)
+
+For a start, this screen shot is showing fully more than half of the colours the *Sinclair* was capable of producing. Secondly, you might notice that there's something slightly odd about the distribution of these colours. Specifically: each block of 8x8 pixels contains at most two, because this was the maximum allowed. Given the limitations of the system, you had to be quite creative if you wanted to produce something worthwhile. Nevertheless, it happened. Not by me, though, because I did very little more than tinker with it.
+
+It did give me a feel for programming, such that I knew more or less what was expected of me when I arrived at Edinburgh University to study Computer Science, though. A course which did its level best to beat every last scrap of BASIC out of me, because BASIC, quite frankly, is a horrible language. It was a reasonable place to start, though, and it was how I started out, so I guess it wasn't all bad.
+
+Today's computers are clearly a lot easier to use than the *Spectrum* ever was. For the general consumer, this is a very good thing (in my opinion), because you should not need to be a software engineer to operate one any more than you should need to be a mechanic to operate a car. I don't own any general purpose computers which aren't made by Apple. As a result (I would say), operating my computer requires an extremely low amount of hassle. I don't need to know how it works. If I did want to do some programming, in the simplest possible case, I could follow these steps:
+
+1. Push \<CMD\> + \<Space\>
+2. Type "Terminal\<Enter\>"
+3. Wait a moment for the terminal to load
+4. Type "python\<Enter\>"
+
+I can now start fiddling with the [Python] programming language, which is a much better place to start than BASIC ever was. A more likely scenario is that I might have to load a couple of other programs to help me, such as a good programmer's text editor. The point here is that I would have to know how to get my computer in this state in the first place, though. It's not front and centre as soon as I turn it on. The *Spectrum* [afforded] programming in ways that modern computers don't. As a result, a curious youngster is much less likely to start tinkering with their computer than they might have been \*cough\* 21 years ago \*cough\*.
+
+[Python]: http://python.org
+[afforded]: http://en.wikipedia.org/wiki/Affordance
+
+Modern computers are very much not toys, at least not in the way a bucket of Lego bricks is. They are expensive pieces of equipment. You don't don't want kids carrying them backwards and forwards from school. Which is where the Raspberry Pi comes in. It is designed to be played with, and cheap enough that if play gets rough and the system breaks it's not actually that much of a big deal. It might be quite important for the economy of the UK (and perhaps your country too) that children start playing with computers again. Playing the way you can play with Lego, not the way you play with Action Man. Building things; breaking them; building them again: better.
+
+![](http://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Raspberry_Pi_Beta_Board.jpg/800px-Raspberry_Pi_Beta_Board.jpg)

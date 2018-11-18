@@ -1,0 +1,43 @@
+---
+layout: post
+title: New Blog!
+date: '2014-06-22 15:57:00'
+tags:
+- blogger
+---
+
+Well. This has taken a little while. After trying out just about all of the options I mentioned in a [previous post] I decided that most were still a little on the under baked side. As fun as it can be to be on the bleeding edge, I actually would mostly like a blog which just works.
+
+[previous post]: /2014/04/27/is-it-that-time-again/
+
+I already had one of those, you might argue, but as previously mentioned the "just works" part came with more than a few caveats. Specifically, it required a "compile phase" to turn the "source" (being the actually document written by me) into the output you (the reader) actually peruse. In fact just about all blogging systems need this (unless your name happens to be John Sircussa), but [Octopress] makes that _your_ responsibility.
+
+[Octopress]: http://octopress.org
+
+<!-- More -->
+
+The upshot here is that I've moved to native [Jekyll] \(upon which Octopress is based) and so now I have what is at once a more rigid and more flexible blog, which is not the oxymoron you might suspect. It does less, and so I can do more with it and in more flexible ways. For a start there are essentially no plugins, but I can work around this using the "include" system. So, when I want to add a YouTube video to a post, this:
+
+[Jekyll]: http://jekyllrb.com
+
+    {% youtube l33tsp3ak %}
+
+becomes this:
+
+    {% include youtube.html video="l33tsp3ak" %}
+
+Which is not too bad at all.
+
+Next: the layout is now much simpler, since I had to write a lot of it myself and my html and css foo is weak. In particular, I'm not massively confident in the responsive set up I have at the moment. Other things I lack confidence in include the colours and typography, but I'll likely revisit those later.
+
+I've also removed the comments (or at least not bothered to add them back). What I'd like instead is something which displayed the comments people have made on Twitter, Facebook, Google+ etc, but I've not really had much chance to look into this yet.
+
+That tiny ad is still there, and now a little tinier, but displayed closer to the top (moving to the very top on phones, for now). As previously noted, this is partly to make it easier for me to test [AdSense for iPhone] \(plug plug plug), partly curiosity.
+
+[AdSense for iPhone]: https://itunes.apple.com/app/id680739529?mt=8
+
+Finally, I'm going to be moving some content elsewhere, in a manner of speaking. One of my complaints about Octopress was that it doesn't give you too many options for writing on the go or scheduling posts. After thinking about it I realised that the posts I wanted to schedule were shorter posts, often about one subject in particular: travel. So I started a new Tumblr blog called [Colouring in the Map] for that purpose.
+
+[Colouring in the Map]: http://colouringinthemap.tumblr.com
+
+So, thematically, I'll finish with one of the reasons it's taken me a while to put this site up, though it's been practically ready for almost a month: I've just gotten back from a work trip to California, which a followed with a short trip up the Pacific North West. I'll actually be writing a little more about that very soon over at... well, I'm sure you can guess.

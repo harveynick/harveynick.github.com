@@ -1,0 +1,14 @@
+<div class="highlight"><pre><span class="k">module</span> <span class="nn">HarveyNickFilters</span>
+
+  <span class="c1"># Used on the blog index to split posts on the &lt;!--more--&gt; marker</span>
+  <span class="k">def</span> <span class="nf">header_image</span><span class="p">(</span><span class="n">input</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">input</span> <span class="o">=~</span> <span class="sr">/&lt;!-- header_img (?&lt;src&gt;(?:https?:\/\/|\/|\S+\/)\S+) --&gt;/</span>
+      <span class="s2">&quot;&lt;img class=</span><span class="se">\&quot;</span><span class="s2">header</span><span class="se">\&quot;</span><span class="s2"> src=</span><span class="se">\&quot;</span><span class="si">#{</span><span class="vg">$~</span><span class="o">[</span><span class="s1">&#39;src&#39;</span><span class="o">]</span><span class="si">}</span><span class="se">\&quot;</span><span class="s2">/&gt;&quot;</span>
+    <span class="k">else</span>
+      <span class="s2">&quot;&quot;</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="ss">Liquid</span><span class="p">:</span><span class="ss">:Template</span><span class="o">.</span><span class="n">register_filter</span><span class="p">(</span><span class="no">HarveyNickFilters</span><span class="p">)</span>
+</pre></div>

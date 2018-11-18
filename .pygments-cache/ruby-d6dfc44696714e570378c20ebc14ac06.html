@@ -1,0 +1,30 @@
+<div class="highlight"><pre><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+
+<span class="sr">&lt;h1&gt;!/us</span><span class="n">r</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">macruby</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span>
+
+<span class="sr">&lt;p&gt;framework &amp;ldquo;ScriptingBridge&amp;rdquo;&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="n">blog_path</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">~</span><span class="sr">/GitHub/o</span><span class="n">ctopress</span><span class="o">/</span><span class="n">source</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span>
+<span class="n">images_path</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">blog</span><span class="o">/&amp;</span><span class="n">rdquo</span><span class="p">;</span>
+<span class="n">max_width</span> <span class="o">=</span> <span class="mi">992</span>
+<span class="n">convert</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">convert</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+
+<span class="sr">&lt;p&gt;date_string = Time.now.strftime(&amp;ldquo;%Y/</span><span class="o">%</span><span class="n">m</span><span class="o">/%</span><span class="n">d</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+
+<span class="sr">&lt;p&gt;source_path = SBApplication.applicationWithBundleIdentifier(&amp;ldquo;com.apple.iPhoto&amp;rdquo;).selection[0].imagePath.sub(&amp;ldquo; &amp;rdquo;, &amp;ldquo;\ &amp;rdquo;)</span>
+<span class="sr">image_name = source_path.split(&amp;ldquo;/</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;)</span><span class="o">[-</span><span class="mi">1</span><span class="o">]</span>
+<span class="n">destination_folder</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="c1">#{blog_path}#{images_path}#{date_string}&amp;rdquo;.sub(&amp;ldquo; &amp;rdquo;, &amp;ldquo;\ &amp;rdquo;)</span>
+<span class="n">destination_path</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="c1">#{destination_folder}/#{image_name}&amp;rdquo;&lt;/p&gt;</span>
+
+<span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="n">ensure_dir_cmd</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">mkdir</span> <span class="o">-</span><span class="nb">p</span> <span class="c1">#{destination_folder}&amp;rdquo;</span>
+<span class="nb">puts</span> <span class="n">ensure_dir_cmd</span>
+<span class="nb">system</span> <span class="n">ensure_dir_cmd</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+
+<span class="sr">&lt;p&gt;convert_cmd = &amp;ldquo;</span><span class="si">#{</span><span class="n">convert</span><span class="si">}</span><span class="sr"> </span><span class="si">#{</span><span class="n">source_path</span><span class="si">}</span><span class="sr"> -resize </span><span class="si">#{</span><span class="n">max_width</span><span class="si">}</span><span class="sr">x2000 </span><span class="si">#{</span><span class="n">destination_path</span><span class="si">}</span><span class="sr">&amp;rdquo;</span>
+<span class="sr">puts convert_cmd</span>
+<span class="sr">system convert_cmd&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="no">IO</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">pbcopy</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;,</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="n">w</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;)</span><span class="o">.</span><span class="n">print</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="c1">#{images_path}#{date_string}/#{image_name}&amp;rdquo;&lt;/p&gt;</span>
+
+<span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>
+</pre></div>

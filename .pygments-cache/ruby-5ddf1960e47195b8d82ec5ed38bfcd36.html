@@ -1,0 +1,27 @@
+<div class="highlight"><pre><span class="c1">#!/usr/local/bin/macruby  </span>
+  
+<span class="n">framework</span> <span class="s2">&quot;ScriptingBridge&quot;</span>
+
+<span class="n">blog_path</span> <span class="o">=</span> <span class="s2">&quot;~/GitHub/octopress/source&quot;</span>
+<span class="n">images_path</span> <span class="o">=</span> <span class="s2">&quot;/images/blog/&quot;</span>
+<span class="n">max_width</span> <span class="o">=</span> <span class="mi">992</span>
+<span class="n">convert</span> <span class="o">=</span> <span class="s2">&quot;/opt/local/bin/convert&quot;</span>
+
+<span class="n">date_string</span> <span class="o">=</span> <span class="no">Time</span><span class="o">.</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y/%m/%d&quot;</span><span class="p">)</span>
+
+<span class="n">source_path</span> <span class="o">=</span> <span class="no">SBApplication</span><span class="o">.</span><span class="n">applicationWithBundleIdentifier</span><span class="p">(</span><span class="s2">&quot;com.apple.iPhoto&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">selection</span><span class="o">[</span><span class="mi">0</span><span class="o">].</span><span class="n">imagePath</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2"> &quot;</span><span class="p">)</span>
+<span class="n">image_name</span> <span class="o">=</span> <span class="n">source_path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span><span class="o">[-</span><span class="mi">1</span><span class="o">]</span>
+<span class="n">destination_folder</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">blog_path</span><span class="si">}#{</span><span class="n">images_path</span><span class="si">}#{</span><span class="n">date_string</span><span class="si">}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2"> &quot;</span><span class="p">)</span>
+<span class="n">destination_path</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">destination_folder</span><span class="si">}</span><span class="s2">/</span><span class="si">#{</span><span class="n">image_name</span><span class="si">}</span><span class="s2">&quot;</span>
+
+<span class="n">ensure_dir_cmd</span> <span class="o">=</span> <span class="s2">&quot;mkdir -p </span><span class="si">#{</span><span class="n">destination_folder</span><span class="si">}</span><span class="s2">&quot;</span> 
+<span class="nb">puts</span> <span class="n">ensure_dir_cmd</span> 
+<span class="nb">system</span> <span class="n">ensure_dir_cmd</span>
+
+
+<span class="n">convert_cmd</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">convert</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">source_path</span><span class="si">}</span><span class="s2"> -resize </span><span class="si">#{</span><span class="n">max_width</span><span class="si">}</span><span class="s2">x2000 </span><span class="si">#{</span><span class="n">destination_path</span><span class="si">}</span><span class="s2">&quot;</span> 
+<span class="nb">puts</span> <span class="n">convert_cmd</span>
+<span class="nb">system</span> <span class="n">convert_cmd</span> 
+
+<span class="no">IO</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s1">&#39;pbcopy&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">print</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">images_path</span><span class="si">}#{</span><span class="n">date_string</span><span class="si">}</span><span class="s2">/</span><span class="si">#{</span><span class="n">image_name</span><span class="si">}</span><span class="s2">&quot;</span>
+</pre></div>

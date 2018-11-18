@@ -1,0 +1,33 @@
+---
+layout: post
+title: That Ad
+date: '2013-06-16 14:36:00'
+---
+
+So. There has been a small(ish) ad off to the right hand side of this blog for a couple of months now. It is as small as [AdSense] will let me make it, though ideally I'd prefer if it had a size not unlike those used by [Matt Gemmell] and 
+[Marco Arment]. On the whole, though, it doesn't bother me as much as I worried it might, aside from the occasional animated flash ad.
+
+[AdSense]: https://www.google.com/adsense
+[Matt Gemmell]: http://mattgemmell.com/
+[Marco Arment]: http://www.marco.org/
+
+<!-- More -->
+
+As [previously explained], it's not there in any sort of attempt to make money from this blog (I'll come back to that, though), but more as an exercise in learning more about the product I work on. To that end, it's been quite successful. Having an account of your own (with actual numbers flowing through it) turns out to be very useful. I now have experience of the AdSense website as an actual end user. I have a better handle on what works well (and not so well). I'm also more familiar with the end products of the various sub-teams I work with, which is always a good idea.
+
+[previously explained]: /2013/03/22/ch-ch-ch-changes
+
+So what about earnings, then? Will I be packing in my day job to instead pursue the glamorous life of a blogger? That would be a no. A _hell no_, in fact. Before I talk about this more: a little bit of background.  Advertising is *COMPLICATED*. Ad serving, in particular, is insanely complicated. You would not believe the amount effort it took to make that 200 by 200 square appear over to the right hand side of this page and in the grander scheme of things this example was very, very simple.
+
+Ad revenue is also quite complicated. I'm over simplifying, but there are essentially four ways a publisher might get paid for the ads on their site:
+
+1. **Cost per Click (CPC).** This is (in some ways) the simplest and probably the one you expect. If someone clicks on ad on your site, the advertiser pays you. How much varies wildly, based on a variety of factors.
+2. **Cost per Mille (CPM).** In this model the publisher gets paid per thousand impressions. That is: people seeing the ads but not clicking on them. It is generally the case that this pays a lot less than CPC.
+3. **Cost per Action (CPA).** This is the affiliate model. You know those times when you look at pair of shoes (or, so I'm told: an... item of adult paraphernalia) on Amazon, and then they follow you around the internet? Chances are if you actually click on one of those ads, the publisher doesn't get paid unless you then proceed to buy the item in question (or possibly something else in the same session).
+4. **Cost per Day (CPD).** This one is the closest to traditional advertising, in my opinion. Basically, the advertiser pays a set amount for their ad to appear on the publisher's site for a set period of time.
+
+The meagre revenue I see in AdSense comes entirely from CPC and CPM. To put it into perspective: on a particularly good day, harveynick.com might have a _Revenue per Mille_ (RPM, the corollary of CPM) of £0.18. That means that if I get a thousand page views, AdSense will pay me 18p. On a good day, this site gets maybe 50 page views. I should note here, though: those two definitions of "a good day" rarely line up with each other.
+
+I get the occasional click, and the revenue from that eclipses any CPM revenue to such an extent as to make it essentially invisible. My total revenue to date is in single figures of pounds. AdSense does not, in fact, pay you until your revenue reaches the equivalent of $100.
+
+So no, I'm not going to be making money off this site any time soon. That's okay, though, because it's not my intent and I've not really been trying to do so.
