@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: 'A Swing and a Miss: Trying to Reduce English Uncertainty in IMDB Review Classification'
 date: '2018-07-22 18:15:14'
 tags:

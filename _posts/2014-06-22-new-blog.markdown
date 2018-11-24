@@ -20,11 +20,19 @@ The upshot here is that I've moved to native [Jekyll] \(upon which Octopress is 
 
 [Jekyll]: http://jekyllrb.com
 
-    {% youtube l33tsp3ak %}
+{% raw %}
+```
+{% youtube l33tsp3ak %}
+```
+{% endraw %}
 
 becomes this:
 
-    {% include youtube.html video="l33tsp3ak" %}
+{% raw %}
+```
+{% include youtube.html video="l33tsp3ak" %}
+```
+{% endraw %}
 
 Which is not too bad at all.
 

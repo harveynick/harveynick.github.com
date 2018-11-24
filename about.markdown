@@ -1,7 +1,7 @@
 ---
-layout: post
-title: About This Blog
-date: '2015-07-07 23:35:41'
+layout: page
+title: About
+permalink: /about/
 ---
 
 I'm Nick Johnson, a senior software engineer at Google, cinefile, foodie, bibliophile, gym rat, machine which turns coffee into code and general purpose nerd. Technically, my name is Dr. Nick Johnson PhD.

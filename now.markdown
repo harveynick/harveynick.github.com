@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: page
 title: Now
 date: '2018-07-30 09:00:46'
+permalink: /now/
 ---
 
 ## 💬 Quote

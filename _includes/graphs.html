@@ -1,0 +1,19 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2/dist/Chart.min.js"></script>
+<script>
+  window.hvynck_charts = {};
+  window.onload = function() {
+	for (const key in window.hvynck_charts) {
+	  var ctx = document
+		  .getElementById(key)
+		  .getContext('2d');
+	  new Chart(ctx, window.hvynck_charts[key]);
+	}
+  };
+  window.hvynck_clrs = {
+	RED: 'rgb(255, 99, 132)',
+	BLUE: 'rgb(54, 162, 235)',
+	YELLOW: 'rgb(255, 205, 86)',
+	GREEN: 'rgb(75, 192, 192)',
+	GREY: 'rgb(201, 203, 207)',
+  };
+</script>

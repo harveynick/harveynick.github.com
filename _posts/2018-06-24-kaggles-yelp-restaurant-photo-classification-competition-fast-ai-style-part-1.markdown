@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: 'Kaggle’s Yelp Restaurant Photo Classification Competition, Fast.ai Style:
   Part 1'
 date: '2018-06-24 18:07:13'
