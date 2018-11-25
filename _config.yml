@@ -16,8 +16,8 @@
 title: HarveyNick.com
 email: contact@harveynick.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm Nick Johnson, a machine which turns coffee into code for money. I also enjoy
-  photography, cinema, reading and skiing.
+  A blog
+author: 'Nick Johnson'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: harveynick
@@ -26,8 +26,8 @@ instagram_username: harveynick
 
 # Build settings
 markdown: kramdown
-theme: minima
-#remote_theme: broccolini/swiss
+# theme: minima
+remote_theme: harveynick/lagrange
 plugins:
   - jekyll-feed
   - jekyll-paginate
@@ -37,6 +37,10 @@ plugins:
 show_excerpts: false
 rss: rss
 google_analytics: UA-28082281-1
+paginate: 5
+
+github:
+  url: ''
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
