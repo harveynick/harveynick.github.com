@@ -1,0 +1,23 @@
+---
+# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
+---
+
+$link-hover-color: #268bd2;
+
+@import "lagrange";
+
+@media (max-width: $fill-width-mobile-breakpoint) {
+	.masthead-subtitle {
+	  display: block;
+	  margin-top: 2px;
+	}
+}
+
+.social-sharing {
+	display: flex;
+
+	.sharing-icons {
+		margin-left: 10px;
+	}
+}
