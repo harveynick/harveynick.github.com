@@ -17,7 +17,7 @@ The first part of this was to modify the image tag plug-in like so:
 
 [Octopress]: http://octopress.org/
 
-```
+```ruby
 module Jekyll
 
   class ImageTag < Liquid::Tag
@@ -61,7 +61,7 @@ This adds an `html` comment containing the image path to the page when I use `he
 
 [Liquid]: https://github.com/Shopify/liquid/wiki
 
-```
+```ruby
 module HarveyNickFilters
 
   # Used on the blog index to split posts on the <!--more--> marker
@@ -79,7 +79,7 @@ Liquid::Template.register_filter(HarveyNickFilters)
 
 Next I modified my theme to run this filter over the page contents just before the one which creates the except on the front page. I'll leave this as an exercise for the reader. Lastly, I needed to account for the fact that the created image could be just about any size, while I want some uniformity on the front page. Those of you playing at home will have noticed I assigned `header` as the class of the image. This allows me to control the appearance of the front page images by adding the following to the `sass` files in my theme (which are used to generate the `css`):
 
-```
+```scss
 img {
   &.header{
     float: left;
@@ -108,7 +108,7 @@ iPhoto is pretty great for organising and sharing photos (with supported service
 
 [Applescript]: http://en.wikipedia.org/wiki/AppleScript
 
-```
+```applescript
 set blog_path to "~/GitHub/octopress/source"
 set images_path to "/images/blog/"
 set blog_image_path to blog_path & images_path
@@ -121,27 +121,27 @@ set folder_path to blog_image_path & date_string & "/"
 do shell script "mkdir -p " & folder_path
 
 tell application "iPhoto"
-	set the_photos to selection
-	set the_photo to item 1 of the_photos
-	set image_path to image path of the_photo
-	set image_name to name of the_photo
+  set the_photos to selection
+  set the_photo to item 1 of the_photos
+  set image_path to image path of the_photo
+  set image_name to name of the_photo
 end tell
 
 tell application "Image Events"
-	set current_image to open image_path
-	set image_type to current_image's file type
-	set AppleScript's text item delimiters to "/"
-	set image_path to last item of text items of image_path
-	set AppleScript's text item delimiters to ""
-	scale current_image to size max_width
-	set new_image to folder_path & image_path
-	save current_image in new_image as image_type
+  set current_image to open image_path
+  set image_type to current_image's file type
+  set AppleScript's text item delimiters to "/"
+  set image_path to last item of text items of image_path
+  set AppleScript's text item delimiters to ""
+  scale current_image to size max_width
+  set new_image to folder_path & image_path
+  save current_image in new_image as image_type
 end tell
 
 set the clipboard to images_path & date_string & "/" & image_path
 
 on two_digits(the_number)
-	return (text -2 thru -1 of ((the_number + 100) as string))
+  return (text -2 thru -1 of ((the_number + 100) as string))
 end two_digits
 ```
 
@@ -156,7 +156,7 @@ After getting this working, I remembered an [ArsTecnica article] about using [Ru
 [ArsTecnica article]: http://arstechnica.com/apple/guides/2011/09/tutorial-os-x-automation-with-macruby-and-the-scripting-bridge.ars/2
 [Ruby]: http://www.ruby-lang.org/en/
 
-```
+```ruby
 #!/usr/local/bin/macruby  
   
 framework "ScriptingBridge"

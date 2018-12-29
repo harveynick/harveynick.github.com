@@ -13,7 +13,7 @@ Every once in a while, a film trailer comes along that I can’t seem to stop my
 
 <!-- More -->
 
-You might be noticing a dramatic music related theme here, but visuals and dialogue are important too. It all has to click together. You’ve heard it said, I’m sure, that part (or even half) of the the pleasure of a present is in the unwrapping. Same thing, right here. Which brings me back to the latest object of desire I’m metaphorically tugging at the ribbon of. It’s the shiny new trailer for [Tron Legacy], long awaited sequel to the 1982 cyber cult classic. I have something of a weakness for stories which which turn computer programmers\* into heroes anyway (I’m sure you couldn’t possibly imagine why), but everything in this trailer works for me. There _was_ an initial warning sign, to wit: one of the principle protagonists would appear to be the son of the original hero. 
+You might be noticing a dramatic music related theme here, but visuals and dialogue are important too. It all has to click together. You’ve heard it said, I’m sure, that part (or even half) of the the pleasure of a present is in the unwrapping. Same thing, right here. Which brings me back to the latest object of desire I’m metaphorically tugging at the ribbon of. It’s the shiny new trailer for [Tron Legacy], long awaited sequel to the 1982 cyber cult classic. I have something of a weakness for stories which which turn computer programmers[^1] into heroes anyway (I’m sure you couldn’t possibly imagine why), but everything in this trailer works for me. There _was_ an initial warning sign, to wit: one of the principle protagonists would appear to be the son of the original hero. 
 
 [Tron Legacy]: http://trailers.apple.com/trailers/disney/tronlegacy/
 
@@ -24,4 +24,4 @@ But wait... Maybe he’s _not_ a complete tool of a character, because I absolut
 [gravitas]: http://en.wikipedia.org/wiki/John_Sheridan_(Babylon_5)
 [Olivia Wilde]: http://en.wikipedia.org/wiki/Olivia_Wilde
 
-\* Apparently, “software engineer” is the more politically correct term, but screw you, I know what I am. :)
+[^1]: Apparently, “software engineer” is the more politically correct term, but screw you, I know what I am. :)

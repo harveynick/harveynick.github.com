@@ -25,7 +25,7 @@ Needless to say, this put a fairly major obstacle in the way of any running that
 Gamification works ridiculously well on my computer game addled brain. Scoring those points (and levelling up!) worked as an excellent motivator for me while I was running. When I signed up to the site I also joined the mailing list. Against all normal logic, some of those emails actually turned out to be quite interesting. A lot of them were member spotlights, and a lot of these members were talking about the fact that it was lifting weights, and not doing cardio, which got them into shape.
 
 <p class="wide">
-<img src="http://images.harveynick.com/2013-05-06-do-you-even-lift-oversight.jpg"></img>
+<img src="http://images.harveynick.com/2013-05-06-do-you-even-lift-oversight.jpg"/>
 </p>
 
 I did some more reading and found myself pointed at [/r/fitness], where a lot of people were saying very similar things. Two workout programs were suggested for beginners, [Starting Strength] and [Strong Lifts 5x5]. Having made [the decision to get myself back in shape], I decided I would have a go at one of these programs. As for which, why, and what they entail: that's actually post of its own, because there are actually a couple of other programs I want to talk about as well. Stay tuned.

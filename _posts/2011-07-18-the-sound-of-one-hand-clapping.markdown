@@ -29,6 +29,6 @@ I'll be back with more to say soon. Future topics of conversation will include: 
 [Shamus Young]: http://www.shamusyoung.com/twentysidedtale/?p=11874
 [Michael Goodfellow]: http://www.sea-of-memes.com/
 
-RIP Cath / Kath Johnson\*
+RIP Cath / Kath Johnson[^1]
 
-\* Funny story about my Nan: no one is 100% sure of what her first name actually was.
+[^1]: Funny story about my Nan: no one is 100% sure of what her first name actually was.

@@ -24,8 +24,8 @@ github_username:  harveynick
 instagram_username: harveynick
 
 # Build settings
+permalink: /:year/:month/:day/:title/
 markdown: kramdown
-# theme: minima
 remote_theme: harveynick/lagrange
 plugins:
   - jekyll-feed

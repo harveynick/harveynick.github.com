@@ -89,7 +89,7 @@ There is, of course, a fairly standard method of measuring intelligence. Droppin
 > “My brother has his sword, King Robert has his warhammer and I have my mind… and a mind needs books as a sword needs a whetstone if it is to keep its edge.”
 
 
-So then, perhaps this measure could actually relate to rate of reading. Whether this should be measured in terms of books, pages or words I'm not sure yet. These get increasingly accurate… and increasingly faffy[^n] to measure. Another thing to consider is whether all books are created equal. I don't want to get (too) pretentious here, but I'm inclined to consider some books… more beneficial to improving one's mind than others. Yes, I enjoyed the hell out of the Da Vinci Code, and I don't care who knows it, but I was (if anything) less intelligent after I finished reading it.
+So then, perhaps this measure could actually relate to rate of reading. Whether this should be measured in terms of books, pages or words I'm not sure yet. These get increasingly accurate… and increasingly faffy[^1] to measure. Another thing to consider is whether all books are created equal. I don't want to get (too) pretentious here, but I'm inclined to consider some books… more beneficial to improving one's mind than others. Yes, I enjoyed the hell out of the Da Vinci Code, and I don't care who knows it, but I was (if anything) less intelligent after I finished reading it.
 
 It's also not clear to me whether this category should include consumption of movies. What about plays? Magazines? Articles on the Web? Perhaps even TV shows (Breaking Bad _yes_, X Factor _no_)?
 
@@ -108,7 +108,7 @@ Again, there is a ghost of the potential for a metric here.
 
 ## Charisma
 
-Charisma is similarly nebulous. I refuse to declare this a measure of how sexy a person is. A don't even know how we would go about measuring that anyway (selfies placed on Hot or Not?[^n] Maybe not…). Instead I'd be inclined to make it a counterpart to intelligence, in a similar way that strength is essentially a counterpart to constitution: The first a measure of what you put out, the second a measure of what you take in… and my suggestion for intelligence was a measure of the creative work a person takes in.
+Charisma is similarly nebulous. I refuse to declare this a measure of how sexy a person is. A don't even know how we would go about measuring that anyway (selfies placed on Hot or Not?[^2] Maybe not…). Instead I'd be inclined to make it a counterpart to intelligence, in a similar way that strength is essentially a counterpart to constitution: The first a measure of what you put out, the second a measure of what you take in… and my suggestion for intelligence was a measure of the creative work a person takes in.
 
 So then: I suggest a measure of charisma related to a person's creative output. Words written. Content produced and published. This could be in terms of your blog, the novel you've been working on or that personal coding project. An additional measure for this could be how much others actually engage with the content you produce. In the case of anything web based [Google Analytics] (and similar) make a good way of measuring this, I think. The others would be somewhat harder to measure directly.
 
@@ -122,6 +122,6 @@ But then, as you might have guessed, I'm really thinking out loud here. These id
 
 <br/>
 
-[^n]: Perhaps you need to Google this word. Know this: [Urban Dictionary](http://www.urbandictionary.com/define.php?term=faffy) is wrong on every count, at least for the meaning I'm assigning to it. [Collins Online Dictionary](http://www.collinsdictionary.com/submission/2/faffy) gets it spot on.
+[^1]: Perhaps you need to Google this word. Know this: [Urban Dictionary](http://www.urbandictionary.com/define.php?term=faffy) is wrong on every count, at least for the meaning I'm assigning to it. [Collins Online Dictionary](http://www.collinsdictionary.com/submission/2/faffy) gets it spot on.
 
-[^n]: News Flash! [Hot or Not](http://hotornot.com/) is still a thing!
+[^2]: News Flash! [Hot or Not](http://hotornot.com/) is still a thing!

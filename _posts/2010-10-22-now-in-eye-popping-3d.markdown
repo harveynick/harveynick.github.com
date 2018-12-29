@@ -25,7 +25,7 @@ I did this by simply piping the spatial coordinates and colour information of ea
 
 That said, the landscape looks about right. All the points seem to be in their correct location. As a quick implementation note, I'm defining the `(x, y, z)` coordinates of the scene in the following way: 
 
-```
+```java
 x = east  
 y = altitude  
 z = -north

@@ -78,7 +78,7 @@ Which then is transformed like this to generate the actual landscape:
 
 What you you can't see from the diagrams is that I'm using fractions to address the individual nodes. So, for instance, the node in the centre is (1/2,1/2) and the node on the centre right is (1/1, 1/2). This means I don't need to worry about how many nodes I have in the landscape, and the adress of each never has to change. The next set of nodes will be addressed using fractions with 4 as the denominator, then 8, 16 and so on. Before looking up a node you first reduce its coordinates down to a lowest common denominator (which is a factor of 2) and then pull it out of the correct layer. I'm currently using maps as sparse arrays to store the data in a structure which looks like this: 
 
-```
+```java
 Map<int, Map<int, Map<int, LandscapeNode>
 ```
 

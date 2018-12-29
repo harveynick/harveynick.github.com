@@ -48,4 +48,4 @@ That said, if I have a decent PC back at home base then possibly I don't *need* 
 
 So... what's my conclusion? I really like the idea, and will probably go ahead with it... at some point. Right now I really don't want to spend the money, but when my MacBook Adorable hits end of life I think it might be the next thing for me. A reasonable iMac at home (maybe) and an iPad Pro for when I'm not at my desk. It seems like a good division of labour. 
 
-[^1] anything with pictures, or that you might want to flick around in, essentially.
+[^1]: anything with pictures, or that you might want to flick around in, essentially.

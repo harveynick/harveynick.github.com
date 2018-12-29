@@ -7,7 +7,7 @@ tags:
 - cinephile
 ---
 
-Monday the 5th of September was Freddie Mercury day. The day he would have turned 65, had he lived. This makes me feel a little old, but that's not the point. The day's [Google doodle] (pointed out to me with furious glee by one of my coworkers) led me to YouTube and numerous videos of Queen performing live. As I often do, I'd forgotten just how good they were. I spent much of the day fighting the urge to pump my fist and throw shapes at my desk[^n]. Since I had so much fun with this, I'm going to pepper this post with some of the videos I found the most fun. Anything under the videos and written in italics is a comment on the video itself, and not strictly related to the rest of this post. 
+Monday the 5th of September was Freddie Mercury day. The day he would have turned 65, had he lived. This makes me feel a little old, but that's not the point. The day's [Google doodle] (pointed out to me with furious glee by one of my coworkers) led me to YouTube and numerous videos of Queen performing live. As I often do, I'd forgotten just how good they were. I spent much of the day fighting the urge to pump my fist and throw shapes at my desk[^1]. Since I had so much fun with this, I'm going to pepper this post with some of the videos I found the most fun. Anything under the videos and written in italics is a comment on the video itself, and not strictly related to the rest of this post. 
 
 [Google doodle]: http://www.youtube.com/watch?v=KX2BQM0D01M
 
@@ -38,7 +38,7 @@ I might also offer up three others I really love:
 
   * Out of Sight;
   * Pitch Black;
-  * X-Men[^n].
+  * X-Men[^2].
 
 Perhaps I might also add the first _Pirates of the Caribbean_ film (or maybe _Zoolander_) to that list. Be that as it may, I'd say the list is reasonably eclectic. Not entirely evident in this list is my love of a really good action movie. _Bad Boys_. _The Transporter. Rambo (2008). Fast 5. Demolition Man. Army of Darkness. Welcome to the Jungle. The Long Kiss Goodnight. Die Hard._ I'm not going to try and match items from my musical taste to each of the films I've named here, because I don't think the analogy is that exact, but I think Queen serves as an excellent peer to these action films. 
 
@@ -54,6 +54,6 @@ This is how a good action film should be. I want the characters to chew the scen
 
 _A beautiful, melancholic and very appropriate song. Seems like a good place to stop._
 
-[^n]: For the record: conversation with my coworkers has revealed to me that had I done so, I could simply have told them I was listening to a bit of Queen and this otherwise odd behaviour would have become at least marginally understandable.  
+[^1]: For the record: conversation with my coworkers has revealed to me that had I done so, I could simply have told them I was listening to a bit of Queen and this otherwise odd behaviour would have become at least marginally understandable.  
 
-[^n]: Yes, the first one. It has a wonderful lightness of touch and flow, which, though it doesn't excuse the film's complete lack of a third act, does make it very dear to me.
+[^2]: Yes, the first one. It has a wonderful lightness of touch and flow, which, though it doesn't excuse the film's complete lack of a third act, does make it very dear to me.

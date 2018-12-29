@@ -60,85 +60,98 @@ The Flutter UI APIs are very different to both [UIKit](https://developer.apple.c
 
 Consider a simple static text label. Using Swift and iOS that would look something like this:
 
-	let label = UILabel()
-	label.text = "Hello world!"
+```swift
+let label = UILabel()
+label.text = "Hello world!"
+```
 
 In Flutter it would look quite similar:
 
-	final label = Text("Hello world!");
+```dart
+final label = Text("Hello world!");
+```
 
 The differences become more obvious when we want the displayed text to change. Here’s one way of doing that in Swift:
 
-	let label = UILabel()
-	label.text = "Hello world!"
-	
-	func setText(text: String) {
-	  label.text = text
-	}
+```swift
+let label = UILabel()
+label.text = "Hello world!"
+
+func setText(text: String) {
+  label.text = text
+}
+```
 
 UIKit’s labels are mutable, making this very easy. Flutter’s `Text` widget is stateless and immutable, though. To update its value we’d need to wrap it in a `StatefulWidget` and do something like this:
 
-	class TextWidget extends StatefulWidget {
-	
-	  @override
-	  TextWidgetState createState() => TextWidgetState();
-	}
-	
-	class TextWidgetState extends State<TextWidget> {
-	  String text = "hello world";
-	
-	  void setText(String text) {
-	    // setState takes a function which updates the local state
-	    // as input, then rebuilds the tree from this point down.
-	    setState(() {
-	      this.text = text;
-	    });
-	  }
-	
-	  @override
-	  Widget build(BuildContext context) => Text(text);
-	}
+```dart
+class TextWidget extends StatefulWidget {
+
+  @override
+  TextWidgetState createState() => TextWidgetState();
+}
+
+class TextWidgetState extends State<TextWidget> {
+  String text = "hello world";
+
+  void setText(String text) {
+    // setState takes a function which updates the local state
+    // as input, then rebuilds the tree from this point down.
+    setState(() {
+      this.text = text;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) => Text(text);
+}
+```
 
 This is imperfect, however. There’s no good way to get hold of that setter on the state object. Instead we need to handle the change reactively, using something like a Dart [`Stream`](https://www.dartlang.org/tutorials/language/streams):
 
-	class TextWidget extends StatefulWidget {
-	  final Stream<String> textStream;
-	
-	  // This is the neat constructor syntax I mentioned before.
-	  TextWidget(this.textStream);
-	
-	  @override
-	  TextWidgetState createState() => TextWidgetState();
-	}
-	
-	class TextWidgetState extends State<TextWidget> {
-	  String text = "hello world";
-	
-	  @override
-	  void initState() {
-	    super.initState();
-	    // This will call [setText] whenever the contents of [textStream] changes.
-	    widget.textStream.listen(setText);
-	  }
-	
-	  void setText(String text) {
-	    // [setState] takes a function which updates the local state
-	    // as input, then rebuilds the tree from this point down.
-	    setState(() {
-	      this.text = text;
-	    });
-	  }
-	
-	  @override
-	  Widget build(BuildContext context) => Text(text);
-	}
+```dart
+class TextWidget extends StatefulWidget {
+  final Stream<String> textStream;
+
+  // This is the neat constructor syntax I mentioned before.
+  TextWidget(this.textStream);
+
+  @override
+  TextWidgetState createState() => TextWidgetState();
+}
+
+class TextWidgetState extends State<TextWidget> {
+  String text = "hello world";
+
+  @override
+  void initState() {
+    super.initState();
+    // This will call [setText] whenever the contents of [textStream]
+    // changes.
+    widget.textStream.listen(setText);
+  }
+
+  void setText(String text) {
+    // [setState] takes a function which updates the local state
+    // as input, then rebuilds the tree from this point down.
+    setState(() {
+      this.text = text;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) => Text(text);
+}
+```
 
 Perhaps a better Swift comparison would be to use [rxSwift](https://github.com/ReactiveX/RxSwift). That would look something like this:
 
-	let label = UILabel()
-	label.text = "Hello world!"
-	let textObservable: Observable<String?>
-	textObservable.bindTo(label.rx.text)
+```swift
+let label = UILabel()
+label.text = "Hello world!"
+let textObservable: Observable<String?>
+textObservable.bindTo(label.rx.text)
+```
 
 In either case: Flutter requires more code for these examples, but that’s because I’m leaving out some of the additional code which would be needed for UIKit. The Flutter is self contained, and it makes the state transforms much more explicit. In the UIKit example, anything which can get a reference to the label can modify its state. Not so for Flutter. The `Stream` is the only means by which the text can be updated. The `setState` method is the only means by which the local state and child widgets of a `StatefulWidget` can be updated in turn. That removes whole classes of bugs.
 

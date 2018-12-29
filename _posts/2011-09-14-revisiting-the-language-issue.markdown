@@ -22,7 +22,7 @@ One of Go's features which I really like is implicit interfaces. Allow me to exp
 
 [that word]: /2011/08/26/dogfood-nom-nom-nom
     
-```
+```java
 class Counter {
   int value;
   int get() {
@@ -33,27 +33,27 @@ class Counter {
 
 Here we have defined an class which declares a single method which returns an integer value. I might then make use of this an instance of this class elsewhere: 
     
-```
+```java
 class Printer {
   void update(Counter counter) {
-	System.out.println(counter.get());
+    System.out.println(counter.get());
   }
 }
 ```
 
 All is good with the world, unless I decide I want to change the behaviour of the code. Perhaps I want the value to increment after each call, for example. I could extend the Counter class and change its behaviour that way: 
     
-```
+```java
 class IncrementingCounter extends Counter {
   int get() {
-	return value++;
+    return value++;
   }
 }
 ```
 
 I can now pass an instance of this new class into the update method of the Handler. Done. Right? Well... no. This is a bit of a clumsy way to go about this. It doesn't scale and it's not always possible. A better way to handle this is to use an interface: 
     
-```
+```java
 interface CounterInterface {
   int get();
 }
@@ -61,21 +61,21 @@ interface CounterInterface {
 
 This specifies the interface of the methods, but not their implementation. We can then change the Printer class to use this interface, rather than the concrete class: 
     
-```
+```java
 class Printer {
   void update(CounterInterface counter) {
-	System.out.println(counter.get());
+    System.out.println(counter.get());
   }
 }
 ```
 
 Now any class which implements this interface can be passed to the Printer. So, going to back to our original example: 
 
-```
+```java
 class Counter implements CounterInterface {
   int value;
   int get() {
-	return value;
+    return value;
   }
 }
 ```
@@ -84,7 +84,7 @@ We can now make any number of alternative implementations (incrementing, decreme
 
 In dynamically typed languages, such as Python and Ruby, things work a little differently. These languages are often referred to as being "duck" typed, as they make the assumption that if something "looks like a duck and quacks like a duck, treat it as though it's a duck." In this case we wouldn't bother with any of the interfaces and our Printer class would look more like this: 
     
-```
+```python
 class Printer:
   def update(counter):
     print counter.get()

@@ -71,8 +71,11 @@ Consider that there are 9 labels:
 Now consider business `485` from the data above. It has every label apart form 0 (good for lunch) and 8 (good for kids). Associated with it are these 4 images:
 
 ![](http://images.harveynick.com/2018-06-24-kaggles-yelp-restaurant-part-1-1-278973.jpg)
+
 ![](http://images.harveynick.com/2018-06-24-kaggles-yelp-restaurant-part-1-2-195284.jpg)
+
 ![](http://images.harveynick.com/2018-06-24-kaggles-yelp-restaurant-part-1-3-19992.jpg)
+
 ![](http://images.harveynick.com/2018-06-24-kaggles-yelp-restaurant-part-1-4-80748.jpg)
 
 Do each of those images demonstrate each of those labels? I can certainly see that the the presence of wine glasses in the last suggests that alcoholic drinks are available. But there’s nothing in any of the other three pictures which suggests booze is on the menu to my eyes. Likewise I’m not sure the third image suggests any of the labels, yet in training it will be expected to match all of them.

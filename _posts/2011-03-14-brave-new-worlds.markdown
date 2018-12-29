@@ -11,7 +11,7 @@ If you were writing a taxonomy of stories you might choose books as a good place
   1. Stories set in our world;
   2. Stories not set in our world.
   
-Simple. Harry Potter, for instance, is set in our world. That's a big part of the appeal. Likewise so are [Neverwhere], [Kracken] (if you like'd Neverwhere, you'll want to read this), and most of Stephen King's work. Lord of the Rings is not set in our world. Simple. There are other options, of course. What about the  Chronicles of Narnia, for example (which is set in a world beyond our own)? Or Magic Bites* (which is set in an alternate version of our world)? Clearly we're looking at some shades of grey here as well, but I'm sticking the with the original idea while it still serves my purpose.  
+Simple. Harry Potter, for instance, is set in our world. That's a big part of the appeal. Likewise so are [Neverwhere], [Kracken] (if you liked Neverwhere, you'll want to read this), and most of Stephen King's work. Lord of the Rings is not set in our world. Simple. There are other options, of course. What about the  Chronicles of Narnia, for example (which is set in a world beyond our own)? Or Magic Bites[^1] (which is set in an alternate version of our world)? Clearly we're looking at some shades of grey here as well, but I'm sticking the with the original idea while it still serves my purpose.  
 
 [Neverwhere]: http://www.amazon.co.uk/Neverwhere-Authors-Preferred-Neil-Gaiman/dp/0755322800/ref=sr_1_1?ie=UTF8&qid=1300142138&sr=8-1
 [Kracken]: http://www.amazon.co.uk/Kraken-China-Mieville/dp/0330492322/ref=sr_1_1?s=books&ie=UTF8&qid=1300142157&sr=1-1
@@ -52,4 +52,4 @@ First, though, I need some terrain simplification and some unit tests. The unit 
 
 PS I wanted to include the world from Brandon Sanderson's utterly spectacular "Mistborn" series here as well, but I couldn't find a good map online. These books are truly awesome, though. As well as been part of a series, each actually stands alone and completes it's own story, unlike the fast majority series in the fantasy genre. Seriously. [Read them](http://www.amazon.co.uk/Final-Empire-Mistborn-Book-One/dp/0575089911/ref=sr_1_1?s=books&ie=UTF8&qid=1300142644&sr=1-1).  
 
-\* Confession: I enjoyed this book, even if there is a gramatical error in the first sentence. The very first sentence.
+[^1]: Confession: I enjoyed this book, even if there is a gramatical error in the first sentence. The very first sentence.

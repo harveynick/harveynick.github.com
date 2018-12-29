@@ -23,7 +23,7 @@ The nodes created by the square step are orthogonal to their parents, so the d
 The nodes created by the diagonal step, on the other hand, are diagonal to their parents. This means that the distance to their parents is the pythagorean root of this same distance, so in this specific case: 
 
 ```
-sqrt(½\*½+½\*½) = sqrt(¼+¼) = sqrt(½) = something
+sqrt(½*½ + ½*½) = sqrt(¼+¼) = sqrt(½) = something
 ```
 
 Once again, the key fraction used to work this out has the same denominator as those used to address the node in the landscape. Thus, if d is equal to the denominator we're using to address a node, the basic scaling factor used to offset a new node from its parents would be the following: 

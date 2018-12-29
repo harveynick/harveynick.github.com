@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ideas Which Changed My Perspective Part 2 of 5:  Dr John and Fat Tony"
+slug: ideas-which-changed-my-perspective-part-2-of-5-dr-john-and-fat-tony
 date: 2018-11-11
 author: harveynick
 tags:
@@ -12,10 +13,15 @@ Let’s get this out of the way first: [Nassim Nicholas Taleb](https://en.wikipe
 The standout idea for me (and so it seems for most others I’ve spoken to about these books) is a spin on a logical fallacy which tends to come up in during probability lessons. The human mind wants to think that if a coin is flipped ten times and comes up heads, they it must be more likely to come up tails next time. It’s sometimes called [the gamblers fallacy](https://en.wikipedia.org/wiki/Gambler%27s_fallacy). The truth is that the chance is always 50/50, regardless of the previous flips. Or is it? Enter Nassim Taleb:
 
 > NNT (that is, me): Assume that a coin is fair, i.e., has an equal probability of coming up heads or tails when flipped. I flip it ninety-nine times and get heads each time. What are the odds of my getting tails on my next throw?
+>
 > Dr. John: Trivial question. One half, of course, since you are assuming 50 percent odds for each and independence between draws.
+>
 > NNT: What do you say, Tony?
+>
 > Fat Tony: I’d say no more than 1 percent, of course.
+>
 > NNT: Why so? I gave you the initial assumption of a fair coin, meaning that it was 50 percent either way.
+>
 > Fat Tony: You are either full of crap or a pure sucker to buy that “50 pehcent” business. The coin gotta be loaded. It can’t be a fair game. (Translation: It is far more likely that your assumptions about the fairness are wrong than the coin delivering ninety-nine heads in ninety-nine throws.)
 
 This is essentially a version of [Occam’s Razor](https://en.wikipedia.org/wiki/Occam%27s_razor) which encourages you to question *every* complication, even the rules themselves. Why do you believe a tossed coin is fair in the first place? Have you checked?

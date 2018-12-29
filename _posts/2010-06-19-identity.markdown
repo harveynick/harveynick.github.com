@@ -15,7 +15,7 @@ This post shall be about something else.
 
 I have a side project that I've chomping at the bit to get started on, and while I've been here I've worked up a couple of fairly good ideas for it. I can't start work on it, though, because I only have my work computer with me, and a studiously avoid doing any side projects or personal work on it, just to be on the safe side, intellectual property wise. Aside from reading up on things and doing some scribblings on paper, the other thing I can do is set up a bit of infrastructure. 
 
-I'm going to make the project public, both in terms of open sourcing the code and blogging about the ideas behind it (at least to begin with). But where, though? Here's my dilema: I'm HarveyNick on wordpress, Tumblr, Twitter* and now BitBucket (the place I'll be hosting the code - side note: I'll be going with Mercurial for revision control). Should I write the blog entries here (and have them trickle down to tumblr and twitter), and host the code directly under HarveyNick's account on BitBucket? Let's say I name the project after my old band, the repository would be  
+I'm going to make the project public, both in terms of open sourcing the code and blogging about the ideas behind it (at least to begin with). But where, though? Here's my dilema: I'm HarveyNick on wordpress, Tumblr, Twitter[^1] and now BitBucket (the place I'll be hosting the code - side note: I'll be going with Mercurial for revision control). Should I write the blog entries here (and have them trickle down to tumblr and twitter), and host the code directly under HarveyNick's account on BitBucket? Let's say I name the project after my old band, the repository would be  
 
 	bitbucket.org/harveynick/hinge  
 
@@ -27,4 +27,4 @@ I could then start a deadcitywalking.wordpress.com blog to talk about it, and pe
 
 You're probably not interested in this. I'm mostly just thinking out loud. But if you have any thoughts, I'd love to hear them.  
 
-\* Why do I have all three of these? I'm not entirely sure yet, other than because they're there.
+[^1]: Why do I have all three of these? I'm not entirely sure yet, other than because they're there.

@@ -8,7 +8,7 @@ tags:
 
 Originally, right after I got around the watching the keynote presentation which launched the iPad, I was going to write a blog post about how disappointed I was. I thought they'd screwed the pooch and I, for one, was seriously underwhelmed.
 
-Needless to say, I didn't quite get around to writing it. Since then I've read all the criticism by the naysayers and Apple haters, all the gushing praise from the fanatics and all the stuff in between from the more sensible people\*. Now, after some reflection, I find myself somewhere in the middle. I flip back and forwards between thoughts of "that could be awesome," and "that's far too much of a compromise."
+Needless to say, I didn't quite get around to writing it. Since then I've read all the criticism by the naysayers and Apple haters, all the gushing praise from the fanatics and all the stuff in between from the more sensible people[^1]. Now, after some reflection, I find myself somewhere in the middle. I flip back and forwards between thoughts of "that could be awesome," and "that's far too much of a compromise."
 
 <!-- More -->
 
@@ -22,4 +22,4 @@ Bottom line: I'll go and have a play with one after they come out. Then we'll se
 
 PS For my parents, though, the damn thing is almost perfect.
 
-\* Well... I say "all"... what I actually mean is "some."
+[^1]: Well... I say "all"... what I actually mean is "some."

@@ -26,10 +26,8 @@ Pretty much all the programs I've found centre around four barbell lifts. So I f
 * *Squat.* Stand with the bar braced across your shoulders, ideally resting on your lats. Drop down into a squatting position (duh) keeping your feet flat against the floor and pushing your knees apart. Stand, pushing up through your heels.
 * *Deadlift.* I'm not going to try and explain this one. That's a lawsuit waiting to happen. Here's a video:
 
-<div>
 <div class="videoWrapper">
 <iframe src="https://www.youtube.com/embed/Syt7A23YnpA" frameborder="0" allowfullscreen></iframe>
-</div>
 </div>
 
 Having thrown a Mark Ripptoe video in this post already, it seems only right that I start with…
@@ -62,9 +60,9 @@ I'm going to admit right away that there is more to the actual program than I or
 
 [Fitocracy knowledge base]: http://www.fitocracy.com/knowledge/official-starting-strength-guide-for-fitocrats/
 
-Each lift in the program is preceded by a warm up, which is the case for ever lift in every program here, even if I don't mention it. You start with the empty bar[^n] and then increase the weight in stages until you reach your work weight.
+Each lift in the program is preceded by a warm up, which is the case for ever lift in every program here, even if I don't mention it. You start with the empty bar[^1] and then increase the weight in stages until you reach your work weight.
 
-In the Starting Strength program[^n] you work out Monday, Wednesday and Friday, performing three lifts each day. There are two workouts, which you rotate:
+In the Starting Strength program[^2] you work out Monday, Wednesday and Friday, performing three lifts each day. There are two workouts, which you rotate:
 
 * Workout A: Squat 3x5, shoulder press 3x5, deadlift 1x5.
 * Workout B: Squat 3x5, bench press 3x5, power clean 5x3.
@@ -106,10 +104,8 @@ SL is very similar in structure to SS in that it's the four main lifts plus one 
 
 This time around the fifth lift is the bent over (or Pendley) row, which is basically the exact opposite of the bench press. Yes, this is exactly as awkward as it sounds and, like the deadlift, is a really good way to knacker your back if performed incorrectly. That being the case, I'll let the man Glen Pendley himself explain it to you rather than trying to do the job myself:
 
-<div>
 <div class="videoWrapper">
 <iframe src="https://www.youtube.com/embed/ZlRrIsoDpKg" frameborder="0" allowfullscreen></iframe>
-</div>
 </div>
 
 The other differences to SS are that with SL you perform five sets of five reps at your work weight (deadlift is again one set), and you you have a strictly defined methodology for increasing the weight of your lifts:
@@ -143,6 +139,6 @@ The upshot of this is that firstly the relaxed pace (two main lifts a day and sm
 
 Given the amount of time I've spent talking about it, you might have worked out that this is the program I'm actually following at the moment. I liked the more gradual approach to increasing the weight here, and I like the additional flexibility of the plug-ins, which I'll talk about in another post.
 
-[^n]: Or as close as possible, clearly that isn't going to work for the conventional deadlift. If you _do_ need to start at a lower weight, however, you can improvise by either propping the weights up on spare plates, or perform a [Romanian Deadlift](http://www.bodybuilding.com/exercises/detail/view/name/romanian-deadlift) instead.
+[^1]: Or as close as possible, clearly that isn't going to work for the conventional deadlift. If you _do_ need to start at a lower weight, however, you can improvise by either propping the weights up on spare plates, or perform a [Romanian Deadlift](http://www.bodybuilding.com/exercises/detail/view/name/romanian-deadlift) instead.
 
-[^n]: Calling it the SS program seems… wrong.
+[^2]: Calling it the SS program seems… wrong.

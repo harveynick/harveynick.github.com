@@ -31,7 +31,7 @@ Beautiful. We were shown to a table in a fairly massive room (one of three). Sim
 
 ![](http://images.harveynick.com/2013-04-19-perilously-close-to-perfection_IMG_1171.jpg)
 
-Within minutes the very same guy had reappeared at our table carrying *eight litres of beer[^n]. How good was this beer? It was pretty awesome. Frankly I'm still craving it. How much was this beer? I'll come back to that.
+Within minutes the very same guy had reappeared at our table carrying *eight litres of beer[^1]. How good was this beer? It was pretty awesome. Frankly I'm still craving it. How much was this beer? I'll come back to that.
 
 There was no table service for food, but just outside of the room was, for all intents and purposes, a small food market. 
 
@@ -49,4 +49,4 @@ If you're in Salzburg, by all means see the kirk (it's beautiful), drop by the c
 
 ![](http://images.harveynick.com/2013-04-19-perilously-close-to-perfection_IMG_1166.jpg) 
 
-[^n]: You can't trust 'em ;-)
+[^1]: You can't trust 'em ;-)

@@ -11,7 +11,7 @@ Being British, I have a story about tea. It goes like this: For my entire life, 
 
 Why did I just tell you a story about tea? What does that have to do with Apple? Well, the fact is that I had a very similar feeling the first time I used a Mac in earnest. Then it happened again with the iPhone. It's not just Apple products, mind you. The physics of a Mario game and the feel in the hand of an X-Box 360 controller also gave me this feeling. Recently, though, I haven't had this "Oh, this is *right*" feeling quite so much. I can only think of two examples, and they're so small that they probably qualify as "features" more so than "products".
 
-# Apple Pay
+## Apple Pay
 
 When Apple Pay first appeared it was a way of paying with your phone. You know, that feature which Android phones had had for years. But Google (my employer) had utterly failed to capitalise on this or make any headway with it.
 
@@ -25,7 +25,7 @@ No, what I'm talking about is *in app* Apple Pay. My favourite example is the fo
 
 Even slicker is that this can also work when you're not even directly using your phone. EasyJet has Apple Pay as a payment option on the web. Select it and your phone lights up and asks for your fingerprint. Press down your thumb (or whatever) and you've paid for your flights. It's utterly seamless.
 
-# Airpods
+## Airpods
 
 Apple's Airpod headphones are far from perfect. They lack (functional) physical controls, have middling sound quality comparable to their wired sibling, and look a bit odd in your ears[^5].
 
@@ -43,7 +43,7 @@ As an extra bonus convenience they charge via lightning, so I was able to buy [t
 
 [this tidy dock]: http://amzn.to/2qKoZdJ
 
-# What's Next?
+## What's Next?
 
 I don't think Apple is the only company which can do this. In fact it's a little sad that *these* are the Apple products I'm talking about so effusively. Amazon is quite close with the Echo. I haven't gotten my hands on one yet, but it seems Nintendo is edging into this territory with the Switch[^6].
 

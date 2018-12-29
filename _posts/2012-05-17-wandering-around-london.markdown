@@ -43,7 +43,7 @@ Back to Kew Gardens, though. Tucked off to one side and not especially well adve
 
 ![](http://images.harveynick.com/2012-05-17-wandering-around-london_IMG_0450.jpg)
 
-Next, we moved away from the specifically Asian attractions and took a look in the [Palm House]. This really is an impressive building, if uncomfortably hot and humid. Be ready to sweat, all ye who enter here. Besides the tropical plants (which I don't seem to have taken any pictures of), the green house itself has an impressive art deco[^n] construction:
+Next, we moved away from the specifically Asian attractions and took a look in the [Palm House]. This really is an impressive building, if uncomfortably hot and humid. Be ready to sweat, all ye who enter here. Besides the tropical plants (which I don't seem to have taken any pictures of), the green house itself has an impressive art deco[^1] construction:
 
 [Palm House]: http://www.kew.org/visit-kew-gardens/garden-attractions-A-Z/Palm-House.htm
 
@@ -71,4 +71,4 @@ Interestingly, the whole area is also private property, so you might have submit
 
 Until next time...
 
-[^n]: This is art deco, right?
+[^1]: This is art deco, right?

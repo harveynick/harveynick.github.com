@@ -6,7 +6,7 @@ tags:
 - hacker
 ---
 
-The return train ride after a visit to my parents' house is, if anything, more pleasant that the outward journey. This is not least, of course, because it ends in Edinburgh, rather than _Doncaster_\*. Be that as it may, this is perhaps a good time to pick up the thought I left hanging at the end of my [last entry], in which I talked a little about ways of keeping notes and writing down ideas. Having dealt with information, we now come to action. From stasis, to process. Less obliquely: what, exactly, are you going to do about those ideas?  
+The return train ride after a visit to my parents' house is, if anything, more pleasant that the outward journey. This is not least, of course, because it ends in Edinburgh, rather than _Doncaster_[^1]. Be that as it may, this is perhaps a good time to pick up the thought I left hanging at the end of my [last entry], in which I talked a little about ways of keeping notes and writing down ideas. Having dealt with information, we now come to action. From stasis, to process. Less obliquely: what, exactly, are you going to do about those ideas?  
 
 [last entry]: http://harveynick.wordpress.com/2010/10/26/the-journey-home/
 
@@ -46,4 +46,4 @@ I, of course, welcome any alternative todo list solutions you'd like you leave i
 [Atlasian's]: http://www.atlassian.com/
 [recently acquired]: http://blog.bitbucket.org/2010/09/29/bitbucket-joins-atlassian/
 
-* Know this: no written text, regardless of italicisation, can accurately reproduce the tone of my voice when I say the word "Doncaster." 
+[^1]: Know this: no written text, regardless of italicisation, can accurately reproduce the tone of my voice when I say the word "Doncaster." 

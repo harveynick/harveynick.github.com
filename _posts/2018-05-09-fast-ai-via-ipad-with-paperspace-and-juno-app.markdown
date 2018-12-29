@@ -27,22 +27,30 @@ Step 3 and 4 don’t work so well for Juno, and step 2 is also pretty superfluou
 
 Password authentication comes first, which will make connecting via Juno a lot easier. I’m assuming you’ve followed the setup I linked to above. Start your instance and log in via the terminal. Now run this on the commend line:
 
-	cd fastai
-	jupyter notebook password
+```bash
+cd fastai
+jupyter notebook password
+```
 
 Then give it your chosen password. Next: run Jupyter on startup. Type this on the command line:
 
-	crontab -e
+```bash
+crontab -e
+```
 
 Now add this to the bottom of the file which opens:
 
-	@reboot cd /fastai; source /.bashrc; /anaconda3/envs/fastai/bin/jupyter notebook >>/cronrun.log 2>&1
+```
+@reboot cd /fastai; source /.bashrc; /anaconda3/envs/fastai/bin/jupyter notebook >>/cronrun.log 2>&1
+```
 
 Even though Jupyter will now start automatically, there are still reasons to log in. You’re going to need to download additional datasets, for one thing. `ssh` would be the usual means of doing so, but from the iPad `mosh` (short for [“Mobile Shell”](https://mosh.org)) is a more robust option. I’m using an app called [Blink](http://www.blink.sh) for that.
 
 Paperspace machines are not set up to allow the ports mosh uses by default. So you’ll need to open one, like so:
 
-	sudo ufw allow 60001
+```bash
+sudo ufw allow 60001
+```
 
 After that mosh should work just fine.
 

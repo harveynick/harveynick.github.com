@@ -9,7 +9,7 @@ tags:
 
 I can probably be described as a wearable tech true believer. I bought in fairly early and have more or less stuck with it. As a device class it's still in the early stages, I think, but has a lot of potential. After all, humans have been putting computers on their wrists for a long time now (albeit ones which only compute the time).
 
-# My History with Smart Watches 
+## My History with Smart Watches 
 
 I was an early backer of the original Pebble on [Kickstarter]. It looked (at the time) like everything I wanted out of a watch. It told the time, had a decent battery life, showed notifications from my phone, and could be extended with simple apps. I practice it was clunky as hell, and while the battery life of the watch itself was fine, it tended to half the battery life of the phone you connected it to. The latter issue was fixed eventually, though, and I generally found it really useful.
 
@@ -84,7 +84,7 @@ I do find myself looking wistfully at the [Mondaine Helvetica Smart] \([amazon](
 
 ![wide](http://images.harveynick.com/2017-07-02-smart-watches-and-pilots-associates_mondaine.jpg)
 
-# (Hopefully) My Future with Smart Watches
+## (Hopefully) My Future with Smart Watches
 
 The pilots associate is something I came across during the early research for my PhD. The gist is of it is this: it takes over the screens in a fighter jet or helicopter and tries to show the pilot contextually appropriate information. Are they getting low on fuel? It shows directions to the closest refuelling stop. Approaching an airport? It shows the correct landing procedure. Playing volleyball? It advises them to remove their shirt[^2]. You can find links to the relevant papers [here], if you’re interested.
 

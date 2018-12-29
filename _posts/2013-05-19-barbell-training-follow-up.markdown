@@ -14,7 +14,7 @@ More specifically, in case you are interested: the program I've ended up putting
 
 ## The Program I'm Following
 
-As I mentioned in my [previous post], I'm currently following the [Greyskull LP] (Linear Progression) barbell training program, having previously spent a few months on [Strong Lifts 5x5] and then working with an online trainer for three months (which is another story entirely). Greyskull is made up of a "core program" (which I waffled about at length in my previous post, so will try to avoid repeating myself here) and a set of "plug-ins"[^n] which add exercises or rearrange the program in order to add flexibility or meet specific goals.
+As I mentioned in my [previous post], I'm currently following the [Greyskull LP] (Linear Progression) barbell training program, having previously spent a few months on [Strong Lifts 5x5] and then working with an online trainer for three months (which is another story entirely). Greyskull is made up of a "core program" (which I waffled about at length in my previous post, so will try to avoid repeating myself here) and a set of "plug-ins"[^1] which add exercises or rearrange the program in order to add flexibility or meet specific goals.
 
 [previous post]: /2013/05/10/a-very-rough-guide-to-beginners-barbell-training-programs
 [Greyskull LP]: http://strengthvillain.com/forum/viewtopic.php?f=9&t=89
@@ -56,7 +56,7 @@ Consistently getting quality sleep has always been a bit of a problem for me, bu
 
 _Oh no! Supplements!_
 
-I'm generally of the opinion that most fitness related supplements to be complete bollocks, and likely to do you at least as much harm as good. That said, I don't include protein shakes in this category. It's basically food, if mildly suboptimal food. It is convenient, however, and sometime convenience is king. Choose the right brand[^n] and drinking the things doesn't need to be a completely miserable experience, either.
+I'm generally of the opinion that most fitness related supplements to be complete bollocks, and likely to do you at least as much harm as good. That said, I don't include protein shakes in this category. It's basically food, if mildly suboptimal food. It is convenient, however, and sometime convenience is king. Choose the right brand[^2] and drinking the things doesn't need to be a completely miserable experience, either.
 
 I also try to make sure I get plenty of carbs, especially on days I work out. Yes, carbs. Evil, evil, insulin spiking carbs. I try to cut them out towards the the end of the day, though, a practice for which I've heard several explanations with varying degrees of "BroScience". Here's an example:
 
@@ -79,6 +79,6 @@ I'm also going to say that I look better (naked or otherwise) than I have at any
 
 Brad Pitt in Fight Club I am not, but I don't hate what I see when I look in the mirror anymore, either. There are things wrapped around my skeleton which I could describe as muscles without worrying that I might be sniggered at. Stand me next to <strike>The Rock</strike> Dwayne Johnson and I'll still look like I'm made out of plastic spoons and low quality play dough, but I feel like I'm making progress in the right direction.
 
-[^n]: Yes, "plug-ins". I'm sure you couldn't possibly imagine why this terminology might appeal to me.
+[^1]: Yes, "plug-ins". I'm sure you couldn't possibly imagine why this terminology might appeal to me.
 
-[^n]: I tend to use PhD Nutrition Pharma Whey. It actually tastes pretty good... and alright, yes, fine, using a brand with that name kind of amuses me. My Dad likes Reflex, and one of my work colleagues goes for Optimum. Another uses PhD. Your millage may vary. Flavour wise: chocolate or banana, all the way.
+[^2]: I tend to use PhD Nutrition Pharma Whey. It actually tastes pretty good... and alright, yes, fine, using a brand with that name kind of amuses me. My Dad likes Reflex, and one of my work colleagues goes for Optimum. Another uses PhD. Your millage may vary. Flavour wise: chocolate or banana, all the way.

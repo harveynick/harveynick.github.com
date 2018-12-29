@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: A Short Word About GDPR
 date: '2018-05-28 14:11:48'
 tags:

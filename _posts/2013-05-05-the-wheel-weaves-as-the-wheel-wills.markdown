@@ -24,7 +24,7 @@ What they also have, though, is a truly excellent set of characters and an incre
 
 It's also the story of a world which was once a utopia, but was (literally) broken due to the actions of those striving for more power. A world filled with magic and wonder… but also bone chilling evil. A world on the brink of destruction, where magic is a path to madness and death for any man who wields it, while female magic users (channellers) are both feared and respected.
 
-It's not a perfect series by any means. A couple of the books towards the middle are particularly slow and uneventful. It's also not a series which coddles you. The actual events of the prologue, which begins just as the greatest hero of the last age has succumbed to his madness[^n] and unwittingly killed everyone he loves, are not fully illuminated until something like the sixth book. It's also quite jarring when Brandon Sanderson takes over the reins of the series in book 12. The voice of the characters changes subtly, but noticeably.
+It's not a perfect series by any means. A couple of the books towards the middle are particularly slow and uneventful. It's also not a series which coddles you. The actual events of the prologue, which begins just as the greatest hero of the last age has succumbed to his madness[^1] and unwittingly killed everyone he loves, are not fully illuminated until something like the sixth book. It's also quite jarring when Brandon Sanderson takes over the reins of the series in book 12. The voice of the characters changes subtly, but noticeably.
 
 ![](http://upload.wikimedia.org/wikipedia/en/0/06/TheGatheringStormUSCover.jpg)
 
@@ -36,4 +36,4 @@ Actually that's not entirely true, one thing does disappoint: I want more. I wan
 ![](http://upload.wikimedia.org/wikipedia/en/2/27/A_Memory_of_Light_cover.jpg) 
 
 
-[^n]: Possibly a minor spoiler: The madness is a result of his own actions. He saved the world, but imperfectly, and in the process damned all male magic users, including himself, to this fate. He's an incredibly tragic character, is Lews Therin Telamon. The once saviour of the world, but one who has been remembered for thousands of years only as "Lews Therin Kin Slayer".
+[^1]: Possibly a minor spoiler: The madness is a result of his own actions. He saved the world, but imperfectly, and in the process damned all male magic users, including himself, to this fate. He's an incredibly tragic character, is Lews Therin Telamon. The once saviour of the world, but one who has been remembered for thousands of years only as "Lews Therin Kin Slayer".

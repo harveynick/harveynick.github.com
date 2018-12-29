@@ -32,7 +32,11 @@ A local constant is also present for each point:
 
 I'm not sure if I actually need this last in my current implementation (my gut says no, I'll explain why later), but I'm leaving it in for the time being. Finally, two global constants are used for tuning, and we end up with this: 
 
-![](http://harveynick.files.wordpress.com/2011/12/simplificationequation21.png)
+$$ active(i)= λ\frac{ε_i}{d_i - r_i} > τ $$
+
+<noscript>
+<img src="http://harveynick.files.wordpress.com/2011/12/simplificationequation21.png"/>
+</noscript>
 
 Where: 
 
@@ -45,7 +49,11 @@ Where:
   
 This is not entirely optimal for processing, but a little bit of maths wizardry transforms this like so: 
 
-![](http://harveynick.files.wordpress.com/2011/12/simplificationequation31.png)
+$$ active(i)= (\frac{λ}{τ}ε_i + r_i)^2  > d^2_i $$
+
+<noscript>
+<img src="http://harveynick.files.wordpress.com/2011/12/simplificationequation31.png"/>
+</noscript>
 
 This looks more complicated, and it's less intuitive to see what it actually does, but from the point of view of the computer it's a lot simpler, as it avoids the square root needed to calculate the distance between the point and the camera. Now we get to the fun part: diagrams! Consider the following small landscape, coloured as to the granularity of each of the points (aka the distance to the node's parents, see [this post]):
 

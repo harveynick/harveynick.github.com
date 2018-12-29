@@ -41,7 +41,7 @@ I like films. Perchance you may have noticed. I may chat a bit more in depth abo
 
 * **The Amazing Spider-Man**. I went to a preview event for this in Leicester Square a month or two ago and was very impressed with what I saw. I'm hopeful they made a Spider-Man movie in the same way that Christopher Nolan makes Batman movies. Really really.
 * **The Dark Knight Rises**. Speaking of which. This *is* exciting. It's the last of the trilogy. It's got a lot to live up to, especially since the last film Nolan made was *Inception*. I wouldn't bet against it, though.
-* **The Avengers**. Now here's a film with some scope. All these characters in one film? With this cast? Written and directed by Joss Mother Fucking[^n] [Whedon](http://en.wikipedia.org/wiki/Joss_Whedon)? Please, please let this film live up to the frankly stupid amount of potential it has.
+* **The Avengers**. Now here's a film with some scope. All these characters in one film? With this cast? Written and directed by Joss Mother Fucking[^1] [Whedon](http://en.wikipedia.org/wiki/Joss_Whedon)? Please, please let this film live up to the frankly stupid amount of potential it has.
 
 [Whedon]: http://en.wikipedia.org/wiki/Joss_Whedon
 
@@ -53,4 +53,4 @@ I mentioned before that I now have a shiny new PhD, with the letters before and 
 
 See you when we get there.
 
-[^n]: I think these are his actual middle names.
+[^1]: I think these are his actual middle names.
