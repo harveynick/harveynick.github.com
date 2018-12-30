@@ -61,10 +61,8 @@ The timing of the decision coincided with a trip up to the Edinburgh Fringe. As 
 
 [Gravity and Other Myths]: http://gravityandothermyths.com.au
 
-<div>
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/Fio_KPtkjjY" frameborder="0" allowfullscreen></iframe>
-</div>
+<div class="video-wrapper">
+	<iframe src="https://www.youtube.com/embed/Fio_KPtkjjY" frameborder="0" allowfullscreen></iframe>
 </div>
 
 That should give you an idea of what's going on, but it's 100 times more impressive when it's happening just in front of you. I came out of the theatre inspired; my mind spinning. I knew I'd never be able to do 99% of it. But still, I wanted to try. So: *Gymnastic Bodies* it was.

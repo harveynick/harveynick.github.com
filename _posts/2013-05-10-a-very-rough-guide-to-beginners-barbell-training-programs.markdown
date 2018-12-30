@@ -26,8 +26,8 @@ Pretty much all the programs I've found centre around four barbell lifts. So I f
 * *Squat.* Stand with the bar braced across your shoulders, ideally resting on your lats. Drop down into a squatting position (duh) keeping your feet flat against the floor and pushing your knees apart. Stand, pushing up through your heels.
 * *Deadlift.* I'm not going to try and explain this one. That's a lawsuit waiting to happen. Here's a video:
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/Syt7A23YnpA" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper">
+	<iframe src="https://www.youtube.com/embed/Syt7A23YnpA" frameborder="0" allowfullscreen></iframe>
 </div>
 
 Having thrown a Mark Ripptoe video in this post already, it seems only right that I start with…
@@ -104,8 +104,8 @@ SL is very similar in structure to SS in that it's the four main lifts plus one 
 
 This time around the fifth lift is the bent over (or Pendley) row, which is basically the exact opposite of the bench press. Yes, this is exactly as awkward as it sounds and, like the deadlift, is a really good way to knacker your back if performed incorrectly. That being the case, I'll let the man Glen Pendley himself explain it to you rather than trying to do the job myself:
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/ZlRrIsoDpKg" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper">
+	<iframe src="https://www.youtube.com/embed/ZlRrIsoDpKg" frameborder="0" allowfullscreen></iframe>
 </div>
 
 The other differences to SS are that with SL you perform five sets of five reps at your work weight (deadlift is again one set), and you you have a strictly defined methodology for increasing the weight of your lifts:

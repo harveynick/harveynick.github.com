@@ -46,8 +46,8 @@ Now let's talk a little bit about one of Miss Sohee Lee's clients. It seems to b
 
 Now, I can only speak for myself here, but I do not look at that picture and think "too bulky." To pull a quote from the West Wing, I look at that picture and think something along the lines of "That's a fine looking woman." If you're thinking the same thing, perhaps you're curious about her training program. I'll let her explain:
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/NfnyBOpCZOU" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper">
+	<iframe src="https://www.youtube.com/embed/NfnyBOpCZOU" frameborder="0" allowfullscreen></iframe>
 </div>
 
 I guess the takeaway here is that if you're female, lifting heavy weights isn't going to suddenly make you look like an Olympic weight lifter. If you work incredibly hard you might end looking a bit more like an Olympic heptathlete though, if you catch my drift.
@@ -67,10 +67,8 @@ The videos are, in particular, making fun of "bro culture", which in my experien
 
 [For example]: http://www.youtube.com/watch?v=_0WxyKGD7sU
 
-<div>
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/_0WxyKGD7sU" frameborder="0" allowfullscreen></iframe>
-</div>
+<div class="video-wrapper">
+	<iframe src="https://www.youtube.com/embed/_0WxyKGD7sU" frameborder="0" allowfullscreen></iframe>
 </div>
 
 I think I actually agree with all of that… except for the thing about not using small plates. Slow and steady wins the race.

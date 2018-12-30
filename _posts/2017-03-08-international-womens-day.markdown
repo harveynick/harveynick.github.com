@@ -36,9 +36,9 @@ It was she who gave me the flier for the PhD place at the Ocean Systems Laborato
 
 I saw her again more recently, at a conference in Tallinn. Still fierce. Still engaging. Still passionate about her subject. Still quite deadpan and sarcastic. To back those up, here's her inaugural lecture:
 
-<div class="videoWrapper">
+<p class="video-wrapper">
 	<iframe src="https://www.youtube.com/embed/aMeKvWU1CnQ" frameborder="0" allowfullscreen></iframe>
-</div>
+</p>
 
 ## Emily Pilton, My Maternal Grandmother
 
