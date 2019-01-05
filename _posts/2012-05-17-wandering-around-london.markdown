@@ -2,6 +2,7 @@
 layout: post
 title: Wandering Around London
 date: '2012-05-17 19:57:00'
+feature_image: http://images.harveynick.com/2012-05-17-wandering-around-london_IMG_0456.jpg
 tags:
 - blogger
 - globe-trotter

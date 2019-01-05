@@ -2,6 +2,7 @@
 layout: post
 title: Perilously Close to Perfection
 date: '2013-04-19 15:09:00'
+image: http://images.harveynick.com/2013-04-19-perilously-close-to-perfection_IMG_1166.jpg
 tags:
 - foodie
 - globe-trotter
@@ -46,7 +47,5 @@ Some hours later we stood, fully satiated and mildly inebriated. We waited with 
 You're basically paying that for a _pint_ in London, and it's probably not as good. Not even close. For me, they really knocked this one out of the park.
 
 If you're in Salzburg, by all means see the kirk (it's beautiful), drop by the castle (it's really interesting… though you might want to stay out of the creepy marionette museum) and eat a slice of Sachertorte (it's tasty). But when you're looking for some hearty food and perhaps an adult beverage or three, you really need to drop by the church of beer, meat and starch. You'll be glad you did.
-
-![](http://images.harveynick.com/2013-04-19-perilously-close-to-perfection_IMG_1166.jpg) 
 
 [^1]: You can't trust 'em ;-)

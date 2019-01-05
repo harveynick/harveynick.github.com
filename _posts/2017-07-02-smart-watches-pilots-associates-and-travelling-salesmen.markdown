@@ -2,6 +2,7 @@
 layout: post
 title: Smart Watches, Pilots’ Associates, and Travelling Salesmen
 date: '2017-07-02 13:12:36'
+feature_image: http://images.harveynick.com/2017-07-02-smart-watches-and-pilots-associents_pebble_steel.jpg
 tags:
 - hacker
 - geek

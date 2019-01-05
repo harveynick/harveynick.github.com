@@ -36,7 +36,7 @@ plugins:
 show_excerpts: false
 rss: rss
 google_analytics: UA-28082281-1
-paginate: 5
+paginate: 10
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

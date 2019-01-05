@@ -2,6 +2,7 @@
 layout: post
 title: Running, The First Time
 date: '2013-04-07 20:54:00'
+image: http://images.harveynick.com/2013-04-07-running-the-first-time_P1000436.JPG
 tags:
 - geek
 - gym-rat
@@ -13,7 +14,6 @@ What was I talking about? Running! Right.
 
 <!-- More -->
 
-![](http://images.harveynick.com/2013-04-07-running-the-first-time_P1000436.JPG) 
 
 Thusly equipped, I began striking out in the evenings and doing mixed running and walking intervals. Given my complete lack of a plan, I decided to work my way around the Meadows' sign posted mile long circuit, alternately running and walking the segments. After a couple of sessions of this, a few things become clear:
 

@@ -2,6 +2,7 @@
 layout: post
 title: Whilst Not Running in Australia (With Photos!)
 date: '2013-08-11 12:10:00'
+feature_image: http://images.harveynick.com/2013-08-11-whilst-not-running-in-australia-DSC00816.JPG
 tags:
 - globe-trotter
 ---

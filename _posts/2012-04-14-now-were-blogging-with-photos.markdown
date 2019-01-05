@@ -2,6 +2,7 @@
 layout: post
 title: Now We're Blogging with Photos!
 date: '2012-04-14 08:42:00'
+image: http://images.harveynick.com/2012-05-17-wandering-around-london_IMG_0450.jpg
 tags:
 - blogger
 - hacker

@@ -2,7 +2,7 @@
 layout: post
 title: Goals for 2017
 date: '2017-02-10 14:53:06'
-image: http://images.harveynick.com/2017-02-09-goals-for-2017_.jpg
+feature_image: http://images.harveynick.com/2017-02-09-goals-for-2017_totoro.jpg
 tags:
 - blogger
 - hacker

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About
-permalink: /about/
 ---
 
 I'm Nick Johnson, a software engineer, cinefile, foodie, bibliophile, gym rat, machine which turns coffee into code, and general purpose nerd. Technically, my name is Dr. Nick Johnson PhD.
