@@ -9,6 +9,7 @@ google-ID: 'UA-28082281-1'
 menu:
 - {name: 'About', path: 'navigation', url: 'about/'}
 - {name: 'Tags', path: 'navigation', url: 'tags/'}
+- {name: 'Projects', path: 'navigation', url: 'projects-and-series/'}
 - {name: 'Now', path: 'navigation', url: 'now/'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
@@ -27,21 +28,26 @@ post_tags: 'Tagged with'
 
 sharing_button_prompt: 'Share:'
 
+hacker_news_prompt: 'Discuss this post on Hacker News'
+
 post_date_prefix: 'Written on'
 
 post_navigation:
   # Options are 'category', and 'site'. 'category' will only used the first
   # category assigned to the post.
-  type: site
+  type: category
 
   # Available positions are 'top', and 'bottom'.
-  postion: ['bottom']
+  postion: []
 
   previous_title: 'Previous post'
 
   next_title: 'Next post'
 
 related_posts:
+
+  category_toc_heading: '{category}'
+
   # Text for heading above related posts.
   heading: 'Related Posts:'
 

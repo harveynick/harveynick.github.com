@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Ideas Which Changed My Perspective Part 2 of 5:  Dr John and Fat Tony"
+title: "Dr John and Fat Tony"
 slug: ideas-which-changed-my-perspective-part-2-of-5-dr-john-and-fat-tony
 date: 2018-11-11
-author: harveynick
+image: https://upload.wikimedia.org/wikipedia/commons/3/3e/DSA1004-Black_Swan_Pond_Spain-Castielli_CC0.jpg
 tags:
   - blogger
+category: "Ideas Which Changed My Perspective"
 ---
 
 Let’s get this out of the way first: [Nassim Nicholas Taleb](https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb) is a… difficult character. He can be pretty… reactionary in public forums. Especially Twitter. You might not want to get to know him better. But that doesn’t change the fact that [Fooled by Randomness](https://amzn.to/2z30s9d) and [The Black Swan](https://amzn.to/2z2Sw7M) are both fascinating and thought provoking books[^1]. Be warned: they are both written in a very flippant and meandering style, which I can only describe as “stream of consciousness”. I found both to be difficult, but definitely worth the effort.

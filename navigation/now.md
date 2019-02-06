@@ -1,28 +1,28 @@
 ---
 layout: page
 title: Now
-date: '2019-01-05 09:00:46'
+date: '2019-02-06 09:00:46'
 ---
 
 ## 💬 Quote
-> “Never do what you can’t undo until you’ve considered well what you can’t do once you’ve done it.”
-> - Robin Hobb (via Beloved)
+> “Any sufficiently advanced extraterrestrial intelligence is indistinguishable from God.”
+> - Shermer's last law
 
 ## 💪🏻 Challenge
-- Rebuild this blog. Again;
-- Kick off a new side project;
-- Build a new gym habit. Eat less cake.
+- Reshape this site to be more pleasing (to me);
+- Restart [fast.ai](https://www.fast.ai)'s course for the 2019 edition;
+- Keep my new gym habit going.
 
 ## 🔬 Focus
-- Getting my finances in order, and out of HSBC.
+- Making our flat no longer a building site.
 
 ## 👍🏻 Liking
-- Upcoming ski trip(s)!
-- Catching up with family over the holidays;
-- The Good Place.
+- The thought of being somewhere with non shitty weather;
+- Really good red wine and chocolate;
+- Hannibal.
 
 ## 📔 Reading
-- [Assassins Fate](https://amzn.to/2RCI5T6) - Robin Hobb
+- [Too Big to Fail](https://amzn.to/2Sg1V7t) - Andrew Ross Sorkin
 
 ## 🎧 Listening
 - Music:
@@ -31,4 +31,4 @@ date: '2019-01-05 09:00:46'
 	- [The Pretty Reckless](http://theprettyreckless.com);
 - A lot of podcasts.
 
-*Last Updated: 05/01/2019*
+*Last Updated: 06/02/2019*

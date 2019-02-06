@@ -614,7 +614,7 @@ So, without further ado, here are the final scores against the public and privat
 <tr><td>ResNet-50</td><td>0.8009</td><td>0.8062</td></tr>
 <tr><td>ResNext-50</td><td>0.7872</td><td>0.7830</td></tr>
 <tr><td>Ensemble</td><td>0.7896</td><td>0.8001</td></tr>
-<table>
+</table>
 </noscript>
 
 As you can see, ResNet-50 wins bother leaderboards pretty handily. That’s not a huge surprise, but I really wasn’t expecting ResNet-34 to beat ResNext-50 on the private leaderboard. The ensemble takes a respectable second place on both leaderboards. I would tend to blame overfitting for it not coming first. Overfitting is [Blofeld](https://en.wikipedia.org/wiki/Ernst_Stavro_Blofeld). Absent another obvious villain, it’s usually the culprit.

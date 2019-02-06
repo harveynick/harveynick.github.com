@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Ideas Which Changed My Perspective Part 1 of 5: Platypus Categorisation from Lila"
+title: "Platypus Categorisation"
 slug: ideas-which-changed-my-perspective-part-1-of-5-platypus-categorisation-from-lila
 date: 2018-10-28
-author: harveynick
+image: https://upload.wikimedia.org/wikipedia/commons/e/e0/Wild_Platypus_4.jpg
 tags:
 - hacker
 - blogger
+category: "Ideas Which Changed My Perspective"
 ---
 
 [Robert M. Pirsig](https://en.wikipedia.org/wiki/Robert_M._Pirsig)’s [Zen and the Art of Motorcycle Maintenance](https://amzn.to/2OTQy3J) is a book I recommend without hesitation, but with caveats. It’s an extremely difficult and heavy book. In fact I had to take a break in the middle of reading it for something a bit lighter. It’s less famous sequel [Lila](https://amzn.to/2OV0Bp2) manages to be heavier still. In fact I have a confession to make: many years after starting to read it, I still haven’t finished.
