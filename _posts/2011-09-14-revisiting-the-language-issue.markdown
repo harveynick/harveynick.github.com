@@ -4,6 +4,7 @@ title: Revisiting the Language Issue
 date: '2011-09-14 08:00:14'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 Some time ago, I wrote a [series][] [of][] [posts][] [about][] [language][] choice for my Clockwork Aphid project. In the end I decided to start the project in Java, this being the language I'm most comfortable with. Once the project reaches a stable state, with some minimum amount of functionality, the plan is to port it to C++ for comparison purposes, this being the language which is likely to provide the best performance. 

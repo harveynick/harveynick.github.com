@@ -4,6 +4,7 @@ title: Some Notes on Coursera’s Andrew Ng Deep Learning Speciality
 date: '2018-05-07 12:00:00'
 tags:
 - hacker
+category: "Relearning Machine Learning"
 ---
 
 Note: This is a repost from my [other blog](https://ftrsn.net).

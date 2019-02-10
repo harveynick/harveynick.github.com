@@ -4,6 +4,7 @@ title: 'A Swing and a Miss: Trying to Reduce English Uncertainty in IMDB Review 
 date: '2018-07-22 18:15:14'
 tags:
 - hacker
+category: "Relearning Machine Learning"
 ---
 
 When I was following the natural language processing / recurrent neural networks[^1] section of [Andrew Ng’s Deep Learning Specialisation](https://click.linksynergy.com/fs-bin/click?id=X5M728uyIs8&offerid=467035.278&type=3&subid=0), there was a detail which bothered me. Now, having reached the same subject area in [fast.ai’s own deep learning course](http://course.fast.ai/lessons/lesson4.html), the same detail is bothering me again. The structure of the fast.ai course is much more open ended, so I could indulge myself and try to figure it out.

@@ -4,6 +4,7 @@ title: Some Random Landscapes
 date: '2010-10-20 13:50:46'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 I don't have any 3D views of the [fractal landscapes I've been making] to show you yet, as I'm still working through the different implementation options. I did get a little distracted with the 2D views of the landscape this morning, though, and play with the colouring scheme.

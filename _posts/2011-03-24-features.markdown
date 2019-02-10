@@ -4,6 +4,7 @@ title: Features
 date: '2011-03-24 10:00:09'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 So, in my [last post] I remarked that for procedurally generated landscapes to be interesting, they would need features. But what sort of features was I talking about? Population centres, in particular, tend to to be found close to certain kinds of... things. The first of these which always comes to my mind is the "defensible position." Something like, say, Edinburgh Castle.  

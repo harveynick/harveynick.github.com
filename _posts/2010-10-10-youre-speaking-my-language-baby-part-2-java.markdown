@@ -4,6 +4,7 @@ title: 'You''re Speaking my Language, Baby. Part 2: Java'
 date: '2010-10-10 10:00:26'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 The first language I'm considering is **Java**. This is by far the language I'm most comfortable and proficient with. It was used for about 90% of my Bachelors degree, I wrote the entire codebase of my PhD using it, and it gets used here and there in my day job. I'm comfortable with Java, and find it to be quite a pleasant language to program in. Big tick on the question regarding my ability to use it, then. Java has some modest dynamic capabilities built in, but it also has a lot of small options for using higher level languages for the scripting, the cleanest of which is possibly Groovy.  

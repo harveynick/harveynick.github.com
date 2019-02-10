@@ -4,6 +4,7 @@ title: There Can be Only... Several...
 date: '2010-10-14 19:22:15'
 tags:
 - geek
+category: "Procedural Landscape Generation"
 ---
 
 As I've previously mentioned, my project (Clockwork Aphid) has been bubbling away in the bearded cauldron that is my head for quite some time. As a result, I have quite a bit I want to say about it. I want to blog about the process of building it because I think it might be a good exercise to go through, and also because I think it might help me work the whole thing out. I'm going to talk more about what it actually is quite soon, partly because I want to start talking about implementation and partly because I've been prompted by someone else's project which I suspect might be quite similar. More about that later.  

@@ -4,6 +4,7 @@ title: 'You''re Speaking my Language, Baby. Part 3: C++'
 date: '2010-10-11 10:00:48'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 The second language I'm considering is **C++**. This is the language that I use the most at my day job. It's also the language that's used to build the vast majority of computer games and one hell of a lot of commercial software. I'm not as familiar with it as I am with Java, but I know it well enough to be productive with it. I'm also familiar enough with it to know how horribly [broken](http://yosefk.com/c++fqa/) it is in many respects. One of the major design goals of Java (among other more modern programming languages) was to fix the problems with C++. It also has no dynamic capabilities what-so-ever, but it's possible to paper over this by using a minimal dynamic runtime such as [Lua](http://www.lua.org/) for scripting.  

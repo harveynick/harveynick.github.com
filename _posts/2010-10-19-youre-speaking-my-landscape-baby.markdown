@@ -4,6 +4,7 @@ title: You're Speaking My Landscape, Baby.
 date: '2010-10-19 14:55:39'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 No, that isn't a typo... but yes, it is a bad play on words. That's the bad news. The good news: finally! A Clockwork Aphid implementation post!  
