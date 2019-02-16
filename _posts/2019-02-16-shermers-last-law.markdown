@@ -1,13 +1,15 @@
 ---
 title: Shermer's Last Law
 tags: 
-
-category: 
+  - geek
+  - bibliophile
+category: "Ideas Which Changed My Perspective"
 layout: post
 image: 
 feature_image: /assets/img/2019-02-16-shermers-last-law/2001_a_space_odyssey_1280.jpg
 hidden: true
 ---
+
 
 [The Laundry Files](https://amzn.to/2I6DzbL) is a series of books which include several subjects which are guaranteed to draw my interest, especially when combined:
 
@@ -20,8 +22,6 @@ They’re very fun, but if I’m being entirely honest: somewhat forgettable. Ho
 > As the man put it: Any sufficiently advanced technology is indistinguishable from magic. Any sufficiently advanced alien intelligence is indistinguishable from God.
 
 That just about stopped my in tracks. It’s not originally Stross’.  In fact, as the title of this post suggests, it’s actually [Shermer’s last law](https://www.edge.org/response-detail/11150)[^1].
-
-![](/assets/img/2019-02-16-shermers-last-law/2001_a_space_odyssey_1280.jpg) 
 
 Stross is talking about eldritch horrors being our ken. Conversely [Person of Interest](https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series)) seems to have similar ideas regarding A.I., though it never uses this exact formulation of the idea[^2]. 
 
