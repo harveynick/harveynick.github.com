@@ -1,9 +1,8 @@
 ---
 title: Shermer's Last Law
 tags: 
-  - geek
-  - bibliophile
-category: "Ideas Which Changed My Perspective"
+
+category: ""
 layout: post
 image: 
 feature_image: /assets/img/2019-02-16-shermers-last-law/2001_a_space_odyssey_1280.jpg
