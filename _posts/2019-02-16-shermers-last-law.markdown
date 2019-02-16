@@ -5,8 +5,8 @@ tags:
   - bibliophile
 category: "Ideas Which Changed My Perspective"
 layout: post
-image: assets/img/2019-02-16-shermers-last-law/2001_a_space_odyssey_1280.jpg
-feature_image: assets/img/2019-02-16-shermers-last-law/2001_a_space_odyssey_1280.jpg
+image: /assets/img/2019-02-16-shermers-last-law/2001_a_space_odyssey_1280.jpg
+feature_image: /assets/img/2019-02-16-shermers-last-law/2001_a_space_odyssey_1280.jpg
 hidden: true
 ---
 
