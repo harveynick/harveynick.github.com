@@ -4,6 +4,7 @@ title: My Procedural Landscape Generation Project
 date: '2016-10-16 18:34:00'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 A while ago I started working on a procedural landscape generation project and then... I stopped. I didn't stop because I was no longer interested in the subject (I assure you I very much am), but because a) my free time got a lot more limited; and b) I'd bitten off more than I could chew and didn't know where to go next.

@@ -4,6 +4,7 @@ title: Language Post Mortem and Some Other Notes
 date: '2010-10-16 09:53:40'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 A couple nuggets of knowledge came out of my "You're Speaking My Language, Baby" series of posts, so I though I'd just take a quick moment to talk about them.  

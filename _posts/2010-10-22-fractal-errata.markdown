@@ -4,6 +4,7 @@ title: Fractal Errata
 date: '2010-10-22 15:41:33'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 Some of the particularly sharp/anal ones amongst you might have noticed that while the technique for generating fractal lanscapes I [previously described] works (and works well), it's not 100% _correct_. Specifically, the fact that it uses the the same scaling factor for nodes created by the diamond and square steps isn't quite right.  

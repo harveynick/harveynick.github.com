@@ -4,6 +4,7 @@ title: The Elephant in the Room
 date: '2010-12-07 11:00:33'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 Since I haven't been able to do any actual work on my Clockwork Aphid project as of late, I suppose I may as well talk about the background behind it a little more. Those who talk about it the most are the ones doing it the least, and all that. I've spoken a little about virtual worlds before and focussed [almost entirely][wow-oh-wow] on World of Warcraft, because it's a the big one. It's not the only MMORPG, and it definitely wasn't the first. It is the one that I have most experience with, and statistically the one most other people are likely to have experience with, as well.  

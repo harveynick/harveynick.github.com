@@ -4,6 +4,7 @@ title: Some Notes on the “Andrew Ng” Coursera Machine Learning Course
 date: '2018-04-25 08:30:13'
 tags:
 - hacker
+category: "Relearning Machine Learning"
 ---
 
 Note: This is a repost from my [other blog](https://ftrsn.net).

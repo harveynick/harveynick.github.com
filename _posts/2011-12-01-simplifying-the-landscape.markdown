@@ -4,6 +4,7 @@ title: Simplifying the Landscape
 date: '2011-12-01 09:28:05'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 At the end of the [last post] I wrote about the actual implementation of my Clockwork Aphid project, I said the next step was going to be display simplification. At that point I'd generated a few landscapes which were just starting barely starting to test the limits of my computer, though they were nothing like the size or complexity I had in mind. That said, it was looking at landscapes containing 1579008 polygons and it was obvious that not all of these needed to be put on screen. Moreover, because my landscapes are essentially made up of discrete samples (or nodes): I needed to reduce the number of samples which were displayed to the user, otherwise my performance was really going to tank as the landscapes increased in size. 

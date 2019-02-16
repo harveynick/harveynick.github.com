@@ -4,6 +4,7 @@ title: Now In Eye Popping 3D!
 date: '2010-10-22 10:09:33'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 It took a little bit of fighting with bugs that weren't showing up in the 2D view, and a bit of time to figure out what was going on with the lighting system in [JME], but I finally got the 3D display of the [fractal] [landscapes] working.  

@@ -4,6 +4,7 @@ title: Fast.ai via iPad with Paperspace and Juno App
 date: '2018-05-09 12:00:00'
 tags:
 - hacker
+category: "Relearning Machine Learning"
 ---
 
 Note: This is a repost from my [other blog](https://ftrsn.net).

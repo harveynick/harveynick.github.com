@@ -4,6 +4,7 @@ title: 'Youre Speaking My Language Baby Part 4: Objective-C'
 date: '2010-10-11 22:00:00'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 

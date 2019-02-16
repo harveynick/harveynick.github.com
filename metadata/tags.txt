@@ -1,0 +1,4 @@
+---
+---
+{% for tag in site.tags %}{{ tag | first }}
+{% endfor %}

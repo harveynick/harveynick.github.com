@@ -5,6 +5,7 @@ title: 'Kaggle’s Yelp Restaurant Photo Classification Competition, Fast.ai Sty
 date: '2018-06-24 18:07:13'
 tags:
 - hacker
+category: "Relearning Machine Learning"
 ---
 
 Lectures 3 and 4 of fast.ai’s [Practical Deep Learning for Coders](http://course.fast.ai) MOOC focuses in part on multi-label image classification. Teacher [Jeremy Howard](https://en.wikipedia.org/wiki/Jeremy_Howard_(entrepreneur)) uses the [Understanding the Amazon from Space](https://www.kaggle.com/c/planet-understanding-the-amazon-from-space) Kaggle competition for teaching purposes[^1], and sets homework to try other similar image classification competitions.

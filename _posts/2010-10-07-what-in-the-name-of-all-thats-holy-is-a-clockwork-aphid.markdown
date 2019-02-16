@@ -4,6 +4,7 @@ title: What in the Name of all that's Holy is a Clockwork Aphid?
 date: '2010-10-07 14:24:15'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 Clockwork Aphid is the name I'm giving to a side project I've had sitting at the back of head for a little while. I'm actually going to try and build it now. What it actually is is quite big and hard to explain, so I'm going to do it gradually, over time. This way I also get to maintain a little bit of mystery. Here's what I will say up front, though: 

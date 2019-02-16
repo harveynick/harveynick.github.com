@@ -4,6 +4,7 @@ title: 'You''re Speaking my Language, Baby. Part 5: Conclusion'
 date: '2010-10-13 11:00:04'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 So... what's the conclusion? It mostly comes back to the fact that I'm doing this mainly for fun (though you may have trouble believing it). That being the case I'm going to start working in Java. In fact I already have started working in Java, and I've already written the first bits of code. I'll talk about and make them available soon.  

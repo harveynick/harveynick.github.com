@@ -4,6 +4,7 @@ title: 'You''re Speaking my Language, Baby. Part 1: Introduction'
 date: '2010-10-09 10:00:33'
 tags:
 - hacker
+category: "Procedural Landscape Generation"
 ---
 
 If you're about to start on a programming project of some sort (and I am), then the first choice you have to make is the main programming language you're going to use. Now, if you're carrying out this project on your employers time they probably have very specific views about that. I'm not doing this project on company time, though, so the world is my oyster, figuratively speaking. There are, at a rough guess, shit loads of programming languages out there. There's a reasonably good list to be found [here][languages], though it is missing a couple of the weird ones. While constructing the project using a [language][lolcode] which uses LOL cat type speech for syntax, or takes its input in the form of [abstract art][piet] would be an excellent mental challenge, I'm sure, that's just not what I'm looking for.  

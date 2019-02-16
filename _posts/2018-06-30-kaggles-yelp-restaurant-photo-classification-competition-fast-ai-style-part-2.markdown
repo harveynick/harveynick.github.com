@@ -5,6 +5,7 @@ title: 'Kaggle’s Yelp Restaurant Photo Classification Competition, Fast.ai Sty
 date: '2018-06-30 09:35:20'
 tags:
 - hacker
+category: "Relearning Machine Learning"
 ---
 
 Note: This post has a lot of javascript graphs, but if you’re using a feed reader or have javascript turned off you’ll just get basic tables. Sorry about that.
