@@ -6,7 +6,6 @@ category: "Relearning Machine Learning"
 layout: post
 image: /assets/img/2019-02-19-lapped-by-fastai/Image%2017-02-2019,%2012-09.jpeg
 feature_image: /assets/img/2019-02-19-lapped-by-fastai/Image%2017-02-2019,%2012-09.jpeg
-hidden: true
 ---
 
 
