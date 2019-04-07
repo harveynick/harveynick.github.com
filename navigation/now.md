@@ -1,34 +1,36 @@
 ---
 layout: page
 title: Now
-date: '2019-02-06 09:00:46'
+date: '2019-04-07 18:55:46'
 ---
 
 ## 💬 Quote
-> “Any sufficiently advanced extraterrestrial intelligence is indistinguishable from God.”
-> - Shermer's last law
+> “Perfect is the enemy of good.”
+> - Unknown
 
 ## 💪🏻 Challenge
 - Reshape this site to be more pleasing (to me);
-- Restart [fast.ai](https://www.fast.ai)'s course for the 2019 edition;
-- Keep my new gym habit going.
+- Actually finish the 2019 edition of [fast.ai](https://www.fast.ai)'s first course;
+- Get my diet back in check.
 
 ## 🔬 Focus
 - Making our flat no longer a building site.
 
 ## 👍🏻 Liking
-- The thought of being somewhere with non shitty weather;
-- Really good red wine and chocolate;
-- Hannibal.
+- Entity component systems;
+- Good red wine and chocolate;
+- [Travelers].
+
+[Travelers]: https://en.wikipedia.org/wiki/Travelers_(TV_series)
 
 ## 📔 Reading
-- [Too Big to Fail](https://amzn.to/2Sg1V7t) - Andrew Ross Sorkin
+- [Tiamat's Wrath](https://amzn.to/2WSmPrq) - James S. A. Corey
 
 ## 🎧 Listening
 - Music:
-	- Kill Your Own - [Hundred Readons](http://www.hundredreasons.com);
-	- in•ter a•li•a - [At the Drive-In](http://www.atthedriveinmusic.com);
+	- Kill Your Own - [Hundred Reasons](http://www.hundredreasons.com);
+	- [In This Moment](https://www.inthismomentofficial.com);
 	- [The Pretty Reckless](http://theprettyreckless.com);
 - A lot of podcasts.
 
-*Last Updated: 06/02/2019*
+*Last Updated: 07/04/2019*
